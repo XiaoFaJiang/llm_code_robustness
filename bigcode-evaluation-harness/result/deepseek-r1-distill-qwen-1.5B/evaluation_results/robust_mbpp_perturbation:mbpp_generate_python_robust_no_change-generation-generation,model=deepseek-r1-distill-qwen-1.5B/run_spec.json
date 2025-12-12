@@ -1,0 +1,15 @@
+{
+  "name": "robust_mbpp_perturbation:mbpp_generate_python_robust_no_change-generation-generation,model=deepseek-r1-distill-qwen-1.5B",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_mbpp_perturbation",
+      "subset": "mbpp_generate_python_robust_no_change"
+    }
+  },
+  "adapter_spec": {
+    "model": "deepseek-r1-distill-qwen-1.5B"
+  },
+  "groups": [
+    "robust_mbpp_perturbation"
+  ]
+}

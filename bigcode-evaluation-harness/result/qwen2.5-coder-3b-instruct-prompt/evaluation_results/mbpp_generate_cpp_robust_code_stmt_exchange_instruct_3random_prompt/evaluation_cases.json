@@ -1,0 +1,240 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "1": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "2": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/vector:66,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_uninitialized.h: In instantiation of ‘_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _ForwardIterator = std::__cxx11::basic_string<char>*]’:\n/usr/include/c++/9/bits/stl_uninitialized.h:307:37:   required from ‘_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _ForwardIterator = std::__cxx11::basic_string<char>*; _Tp = std::__cxx11::basic_string<char>]’\n/usr/include/c++/9/bits/vector.tcc:751:34:   required from ‘void std::vector<_Tp, _Alloc>::_M_range_insert(std::vector<_Tp, _Alloc>::iterator, _ForwardIterator, _ForwardIterator, std::forward_iterator_tag) [with _ForwardIterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::__cxx11::basic_string<char>*]’\n/usr/include/c++/9/bits/stl_vector.h:1662:4:   required from ‘void std::vector<_Tp, _Alloc>::_M_insert_dispatch(std::vector<_Tp, _Alloc>::iterator, _InputIterator, _InputIterator, std::__false_type) [with _InputIterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::__cxx11::basic_string<char>*]’\n/usr/include/c++/9/bits/stl_vector.h:1380:4:   required from ‘std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; <template-parameter-2-2> = void; _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = std::__cxx11::basic_string<char>*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const std::__cxx11::basic_string<char>*]’\ntest.cpp:40:73:   required from here\n/usr/include/c++/9/bits/stl_uninitialized.h:127:72: error: static assertion failed: result type must be constructible from value type of input range\n  127 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::value,\n      |                                                                        ^~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "3": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function ‘int main()’:\ntest.cpp:42:37: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   42 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:43:30: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   43 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:44:33: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   44 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "4": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "5": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:46:5: error: ‘assert’ was not declared in this scope\n   46 |     assert(is_samepatterns({\"red\",\"green\",\"green\"}, {\"a\", \"b\", \"b\"}) == true);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 68,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:38:5: error: ‘assert’ was not declared in this scope\n   38 |     assert(word_len(\"Hadoop\") == false);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | using namespace std;\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "7": {
+    "task_id": 72,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:41: int main(): Assertion `get_Char(\"abc\") == 'f'' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "8": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:60:5: error: ‘assert’ was not declared in this scope\n   60 |     assert(amicable_numbers_sum(999) == 504);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "10": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:43:5: error: ‘assert’ was not declared in this scope\n   43 |     assert(check_last({5, 7, 10}, 3, 1) == \"ODD\");\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int closest(int)’:\ntest.cpp:28:13: error: ‘sum_digits_single’ was not declared in this scope\n   28 |         if (sum_digits_single(mid) >= sum_digits_single(x)) {\n      |             ^~~~~~~~~~~~~~~~~\ntest.cpp: In function ‘int main()’:\ntest.cpp:37:5: error: ‘assert’ was not declared in this scope\n   37 |     assert(closest(35) == 17);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "13": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:25:46: error: ‘encode_list’ was not declared in this scope\n   25 |     std::vector<std::vector<int>> encoded1 = encode_list(test1);\n      |                                              ^~~~~~~~~~~\ntest.cpp:27:5: error: ‘assert’ was not declared in this scope\n   27 |     assert(encoded1 == expected1);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | int main()\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "14": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "15": {
+    "task_id": 168,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:49:5: error: ‘assert’ was not declared in this scope\n   49 |     assert(is_num_keith(14) == true);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "16": {
+    "task_id": 178,
+    "passed": false,
+    "result": "failed: malloc(): corrupted top size\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "17": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:39:5: error: ‘assert’ was not declared in this scope\n   39 |     assert(minOperationsToEqual(2, 4) == 1);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "18": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:25:12: error: ‘is_majority’ was not declared in this scope\n   25 |     assert(is_majority({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true);\n      |            ^~~~~~~~~~~\ntest.cpp:25:5: error: ‘assert’ was not declared in this scope\n   25 |     assert(is_majority({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "19": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:59: int main(): Assertion `max_sum({1, 15, 51, 45, 33, 100, 12, 18, 9}, 9) == 194' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 244,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:26:51: error: ‘combinations_colors’ was not declared in this scope\n   26 |     std::vector<std::vector<std::string>> test1 = combinations_colors(colors, 1);\n      |                                                   ^~~~~~~~~~~~~~~~~~~\ntest.cpp:39:106: error: ‘compare_vectors’ was not declared in this scope\n   39 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\ntest.cpp:39:5: error: ‘assert’ was not declared in this scope\n   39 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | using namespace std;\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "22": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:44:5: error: ‘assert’ was not declared in this scope\n   44 |     assert(get_Position(arr1, 3, 2) == 2);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | using namespace std;\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:47:5: error: ‘assert’ was not declared in this scope\n   47 |     assert(max_sum_increasing_subseq({1, 101, 2, 3, 100, 4, 5}, 7, 4, 6) == 11);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "24": {
+    "task_id": 312,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:62: int main(): Assertion `re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 315,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:43:5: error: ‘assert’ was not declared in this scope\n   43 |     assert(most_occurrences({\"UTS is best for RTF\", \"RTF love UTS\", \"UTS is best\"}) == \"UTS\");\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "26": {
+    "task_id": 339,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:42:5: error: ‘assert’ was not declared in this scope\n   42 |     assert(minimum_Length(\"mnm\") == 1);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "27": {
+    "task_id": 340,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:25:12: error: ‘first_Element’ was not declared in this scope\n   25 |     assert(first_Element({0,1,2,3,4,5}, 6, 1) == 0);\n      |            ^~~~~~~~~~~~~\ntest.cpp:25:5: error: ‘assert’ was not declared in this scope\n   25 |     assert(first_Element({0,1,2,3,4,5}, 6, 1) == 0);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "28": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "29": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:60:5: error: ‘assert’ was not declared in this scope\n   60 |     assert((k_smallest_pairs(nums1_a, nums2_a, 2) == vector<vector<int>>{{1, 2}, {1, 4}}));\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "30": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "31": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:57:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   57 |     assert(is_palindrome(v1, 4) == 54545);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:28:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   28 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:60:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   60 |     assert(is_palindrome(v2, 6) == 5);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:28:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   28 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:63:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   63 |     assert(is_palindrome(v3, 5) == 9);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:28:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   28 | bool is_palindrome(int n) {\n      |                    ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "32": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:86: int main(): Assertion `polygons1.size() == 10' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "33": {
+    "task_id": 490,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:23:12: error: ‘num_comm_div’ was not declared in this scope\n   23 |     assert(num_comm_div(2, 4) == 2);\n      |            ^~~~~~~~~~~~\ntest.cpp:23:5: error: ‘assert’ was not declared in this scope\n   23 |     assert(num_comm_div(2, 4) == 2);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | using namespace std;\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  }
+}

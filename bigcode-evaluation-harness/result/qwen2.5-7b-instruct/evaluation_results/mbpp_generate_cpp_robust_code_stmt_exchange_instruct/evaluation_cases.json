@@ -1,0 +1,240 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 21,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 26,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018std::vector<std::__cxx11::basic_string<char> > sort_mixed_list(std::vector<std::__cxx11::basic_string<char> >)\u2019:\ntest.cpp:44:44: error: conversion from \u2018vector<int>\u2019 to non-scalar type \u2018vector<std::__cxx11::basic_string<char>>\u2019 requested\n   44 |     std::vector<std::string> sorted_list = int_part;\n      |                                            ^~~~~~~~\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h: In instantiation of \u2018_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _OIter = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _UnaryOperation = sort_mixed_list(std::vector<std::__cxx11::basic_string<char> >)::<lambda(int)>]\u2019:\ntest.cpp:40:111:   required from here\n/usr/include/c++/9/bits/stl_algo.h:4343:12: error: cannot convert \u2018std::__cxx11::basic_string<char>\u2019 to \u2018int\u2019 in assignment\n 4343 |  *__result = __unary_op(*__first);\n      |  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 34,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:48:37: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   48 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:49:30: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   49 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:50:33: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   50 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 43,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 63,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:54: int main(): Assertion `is_samepatterns({\"red\",\"green\",\"green\"}, {\"a\", \"b\", \"b\"}) == true' failed.\n",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 68,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 72,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 112,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:64: int main(): Assertion `amicable_numbers_sum(999) == 504' failed.\n",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 118,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 123,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:43: int main(): Assertion `check_last({5, 7, 10}, 3, 1) == \"ODD\"' failed.\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 137,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:46: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 141,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 146,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int main()\u2019:\ntest.cpp:43:63: error: no matching function for call to \u2018decode_list(std::vector<int>&)\u2019\n   43 |     std::vector<std::vector<int>> encoded1 = decode_list(test1);\n      |                                                               ^\ntest.cpp:28:16: note: candidate: \u2018template<class T> std::vector<_Tp> decode_list(const std::vector<std::vector<_Tp> >&)\u2019\n   28 | std::vector<T> decode_list(const std::vector<std::vector<T>>& encoded_list) {\n      |                ^~~~~~~~~~~\ntest.cpp:28:16: note:   template argument deduction/substitution failed:\ntest.cpp:43:63: note:   mismatched types \u2018std::vector<_Tp>\u2019 and \u2018int\u2019\n   43 |     std::vector<std::vector<int>> encoded1 = decode_list(test1);\n      |                                                               ^\ntest.cpp:48:66: error: no matching function for call to \u2018decode_list(std::vector<double>&)\u2019\n   48 |     std::vector<std::vector<double>> encoded2 = decode_list(test2);\n      |                                                                  ^\ntest.cpp:28:16: note: candidate: \u2018template<class T> std::vector<_Tp> decode_list(const std::vector<std::vector<_Tp> >&)\u2019\n   28 | std::vector<T> decode_list(const std::vector<std::vector<T>>& encoded_list) {\n      |                ^~~~~~~~~~~\ntest.cpp:28:16: note:   template argument deduction/substitution failed:\ntest.cpp:48:66: note:   mismatched types \u2018std::vector<_Tp>\u2019 and \u2018double\u2019\n   48 |     std::vector<std::vector<double>> encoded2 = decode_list(test2);\n      |                                                                  ^\ntest.cpp:54:64: error: no matching function for call to \u2018decode_list(std::string&)\u2019\n   54 |     std::vector<std::vector<char>> encoded3 = decode_list(test3);\n      |                                                                ^\ntest.cpp:28:16: note: candidate: \u2018template<class T> std::vector<_Tp> decode_list(const std::vector<std::vector<_Tp> >&)\u2019\n   28 | std::vector<T> decode_list(const std::vector<std::vector<T>>& encoded_list) {\n      |                ^~~~~~~~~~~\ntest.cpp:28:16: note:   template argument deduction/substitution failed:\ntest.cpp:54:64: note:   \u2018std::string\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019} is not derived from \u2018const std::vector<std::vector<_Tp> >\u2019\n   54 |     std::vector<std::vector<char>> encoded3 = decode_list(test3);\n      |                                                                ^\ntest.cpp:59:64: error: no matching function for call to \u2018decode_list(std::string&)\u2019\n   59 |     std::vector<std::vector<char>> encoded4 = decode_list(test4);\n      |                                                                ^\ntest.cpp:28:16: note: candidate: \u2018template<class T> std::vector<_Tp> decode_list(const std::vector<std::vector<_Tp> >&)\u2019\n   28 | std::vector<T> decode_list(const std::vector<std::vector<T>>& encoded_list) {\n      |                ^~~~~~~~~~~\ntest.cpp:28:16: note:   template argument deduction/substitution failed:\ntest.cpp:59:64: note:   \u2018std::string\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019} is not derived from \u2018const std::vector<std::vector<_Tp> >\u2019\n   59 |     std::vector<std::vector<char>> encoded4 = decode_list(test4);\n      |                                                                ^\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 148,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 168,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:54: int main(): Assertion `is_num_keith(12) == false' failed.\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 178,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int main()\u2019:\ntest.cpp:58:5: error: \u2018assert\u2019 was not declared in this scope\n   58 |     assert(first_Missing_Positive({1, 2, 3, -1, 5}, 5) == 4);\n      |     ^~~~~~\ntest.cpp:21:1: note: \u2018assert\u2019 is defined in header \u2018<cassert>\u2019; did you forget to \u2018#include <cassert>\u2019?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | #include <iostream>\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 207,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:43: int main(): Assertion `minOperationsToEqual(2, 4) == 1' failed.\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 212,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int binary_search(const std::vector<int>&, int, int, int)\u2019:\ntest.cpp:40:55: error: a function-definition is not allowed here before \u2018{\u2019 token\n   40 |     int find_majority_element(const vector<int>& arr) {\n      |                                                       ^\ntest.cpp:73:1: error: a function-definition is not allowed here before \u2018{\u2019 token\n   73 | {\n      | ^\ntest.cpp:77:1: error: expected \u2018}\u2019 at end of input\n   77 | }\n      | ^\ntest.cpp:26:69: note: to match this \u2018{\u2019\n   26 | int binary_search(const vector<int>& arr, int low, int high, int x) {\n      |                                                                     ^\ntest.cpp:77:1: warning: control reaches end of non-void function [-Wreturn-type]\n   77 | }\n      | ^\n",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 234,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 236,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 244,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:21:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:68:106: error: \u2018compare_vectors\u2019 was not declared in this scope\n   68 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\n",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 264,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:47: int main(): Assertion `get_Position(arr1, 3, 2) == 2' failed.\n",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 295,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:48: int main(): Assertion `max_sum_increasing_subseq({1, 101, 2, 3, 100, 4, 5}, 7, 4, 6) == 11' failed.\n",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 312,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:59: int main(): Assertion `re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0})' failed.\n",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 315,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:51: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 339,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:62: int main(): Assertion `minimum_Length(\"mnm\") == 1' failed.\n",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 340,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:45: int main(): Assertion `first_Element({2,3,4,3,5,7,1,2,3,5}, 10, 2) == 2' failed.\n",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 386,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 397,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 457,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 474,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:45:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   45 |     assert(is_palindrome(v1, 4) == 54545);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:48:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   48 |     assert(is_palindrome(v2, 6) == 5);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:51:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   51 |     assert(is_palindrome(v3, 5) == 9);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\n",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 482,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: ",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 490,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    }
+}

@@ -1,0 +1,240 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int main()\u2019:\ntest.cpp:37:5: error: \u2018assert\u2019 was not declared in this scope\n   37 |     assert(remove_Occ(\"hello\", 'l') == \"heo\");\n      |     ^~~~~~\ntest.cpp:23:1: note: \u2018assert\u2019 is defined in header \u2018<cassert>\u2019; did you forget to \u2018#include <cassert>\u2019?\n   22 | #include <cstring>\n  +++ |+#include <cassert>\n   23 | \n",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 21,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int max_Prime_Factors(int)\u2019:\ntest.cpp:27:8: error: expected \u2018(\u2019 before \u2018;\u2019 token\n   27 |     for;(n % 2 == 0);){\n      |        ^\n      |        (\n",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 26,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algobase.h: In instantiation of \u2018static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = int*; _OI = std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >]\u2019:\n/usr/include/c++/9/bits/stl_algobase.h:404:30:   required from \u2018_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = int*; _OI = std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >]\u2019\n/usr/include/c++/9/bits/stl_algobase.h:441:30:   required from \u2018_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _OI = std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >]\u2019\n/usr/include/c++/9/bits/stl_algobase.h:474:7:   required from \u2018_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; _OI = std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >]\u2019\ntest.cpp:45:75:   required from here\n/usr/include/c++/9/bits/stl_algobase.h:342:18: error: no match for \u2018operator=\u2019 (operand types are \u2018std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >\u2019 and \u2018int\u2019)\n  342 |        *__result = *__first;\n      |        ~~~~~~~~~~^~~~~~~~~~\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:513:7: note: candidate: \u2018std::back_insert_iterator<_Container>& std::back_insert_iterator<_Container>::operator=(const typename _Container::value_type&) [with _Container = std::vector<std::__cxx11::basic_string<char> >; typename _Container::value_type = std::__cxx11::basic_string<char>]\u2019\n  513 |       operator=(const typename _Container::value_type& __value)\n      |       ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:513:56: note:   no known conversion for argument 1 from \u2018int\u2019 to \u2018const value_type&\u2019 {aka \u2018const std::__cxx11::basic_string<char>&\u2019}\n  513 |       operator=(const typename _Container::value_type& __value)\n      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:520:7: note: candidate: \u2018std::back_insert_iterator<_Container>& std::back_insert_iterator<_Container>::operator=(typename _Container::value_type&&) [with _Container = std::vector<std::__cxx11::basic_string<char> >; typename _Container::value_type = std::__cxx11::basic_string<char>]\u2019\n  520 |       operator=(typename _Container::value_type&& __value)\n      |       ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:520:51: note:   no known conversion for argument 1 from \u2018int\u2019 to \u2018std::vector<std::__cxx11::basic_string<char> >::value_type&&\u2019 {aka \u2018std::__cxx11::basic_string<char>&&\u2019}\n  520 |       operator=(typename _Container::value_type&& __value)\n      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:478:11: note: candidate: \u2018constexpr std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >& std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >::operator=(const std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >&)\u2019\n  478 |     class back_insert_iterator\n      |           ^~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:478:11: note:   no known conversion for argument 1 from \u2018int\u2019 to \u2018const std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >&\u2019\n/usr/include/c++/9/bits/stl_iterator.h:478:11: note: candidate: \u2018constexpr std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >& std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >::operator=(std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >&&)\u2019\n/usr/include/c++/9/bits/stl_iterator.h:478:11: note:   no known conversion for argument 1 from \u2018int\u2019 to \u2018std::back_insert_iterator<std::vector<std::__cxx11::basic_string<char> > >&&\u2019\n",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 34,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:46:37: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   46 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:47:30: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   47 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:48:33: error: cannot convert \u2018<brace-enclosed initializer list>\u2019 to \u2018int\u2019\n   48 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of \u2018int find_gcd(int, int)\u2019\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 43,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 63,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018bool is_samepatterns(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)\u2019:\ntest.cpp:46:41: error: no match for \u2018operator!\u2019 (operand type is \u2018__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019})\n   46 |             if (sdict[p].size() != 1 || !sdict[p].front() == colors[i]) {\n      |                                         ^~~~~~~~~~~~~~~~~\ntest.cpp:46:41: note: candidate: \u2018operator!(bool)\u2019 <built-in>\ntest.cpp:46:41: note:   no known conversion for argument 1 from \u2018__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019} to \u2018bool\u2019\n",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 68,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 72,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:40: int main(): Assertion `get_Char(\"abc\") == 'f'' failed.\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 112,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:64: int main(): Assertion `amicable_numbers_sum(999) == 504' failed.\n",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 118,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 123,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:46: int main(): Assertion `check_last({5, 7, 10}, 3, 1) == \"ODD\"' failed.\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 137,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:45: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 141,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp:21:1: error: \u2018Complete\u2019 does not name a type\n   21 | Complete code\n      | ^~~~~~~~\n",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 146,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int main()\u2019:\ntest.cpp:61:64: error: no matching function for call to \u2018encode_list(std::string&)\u2019\n   61 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:28:29: note: candidate: \u2018template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)\u2019\n   28 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:28:29: note:   template argument deduction/substitution failed:\ntest.cpp:61:64: note:   \u2018std::string\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019} is not derived from \u2018const std::vector<_Tp>\u2019\n   61 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:66:64: error: no matching function for call to \u2018encode_list(std::string&)\u2019\n   66 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp:28:29: note: candidate: \u2018template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)\u2019\n   28 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:28:29: note:   template argument deduction/substitution failed:\ntest.cpp:66:64: note:   \u2018std::string\u2019 {aka \u2018std::__cxx11::basic_string<char>\u2019} is not derived from \u2018const std::vector<_Tp>\u2019\n   66 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp: In instantiation of \u2018std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&) [with T = double]\u2019:\ntest.cpp:55:66:   required from here\ntest.cpp:35:31: warning: narrowing conversion of \u2018count\u2019 from \u2018int\u2019 to \u2018double\u2019 [-Wnarrowing]\n   35 |             result.push_back({count, current_value});\n      |                               ^~~~~\ntest.cpp:35:31: warning: narrowing conversion of \u2018count\u2019 from \u2018int\u2019 to \u2018double\u2019 [-Wnarrowing]\ntest.cpp:43:23: warning: narrowing conversion of \u2018count\u2019 from \u2018int\u2019 to \u2018double\u2019 [-Wnarrowing]\n   43 |     result.push_back({count, current_value});\n      |                       ^~~~~\ntest.cpp:43:23: warning: narrowing conversion of \u2018count\u2019 from \u2018int\u2019 to \u2018double\u2019 [-Wnarrowing]\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 148,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp:21:1: error: \u2018Complete\u2019 does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 168,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp:21:1: error: \u2018Complete\u2019 does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 178,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:58: int main(): Assertion `first_Missing_Positive({1, 2, 3, -1, 5}, 5) == 4' failed.\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 207,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:45: int main(): Assertion `minOperations(4, 10) == 4' failed.\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 212,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:55: int main(): Assertion `check_majority({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true' failed.\n",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 234,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:53: int main(): Assertion `max_sum({1, 15, 51, 45, 33, 100, 12, 18, 9}, 9) == 194' failed.\n",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 236,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:48: int main(): Assertion `lps(\"TENS FOR TENS\") == 5' failed.\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 244,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:21:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:69:106: error: \u2018compare_vectors\u2019 was not declared in this scope\n   69 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\n",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 264,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:47: int main(): Assertion `get_Position(arr1, 3, 2) == 2' failed.\n",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 295,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: compilation error: test.cpp: In function \u2018int max_sum_increasing_subseq(std::vector<int>, int, int, int)\u2019:\ntest.cpp:43:53: error: invalid type argument of unary \u2018*\u2019 (have \u2018int\u2019)\n   43 |     return *max_element(dp[index][k], dp[index][k+1]);\n      |                                                     ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:71,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/predefined_ops.h: In instantiation of \u2018constexpr bool __gnu_cxx::__ops::_Iter_less_iter::operator()(_Iterator1, _Iterator2) const [with _Iterator1 = int; _Iterator2 = int]\u2019:\n/usr/include/c++/9/bits/stl_algo.h:5698:12:   required from \u2018constexpr _ForwardIterator std::__max_element(_ForwardIterator, _ForwardIterator, _Compare) [with _ForwardIterator = int; _Compare = __gnu_cxx::__ops::_Iter_less_iter]\u2019\n/usr/include/c++/9/bits/stl_algo.h:5722:43:   required from \u2018constexpr _FIter std::max_element(_FIter, _FIter) [with _FIter = int]\u2019\ntest.cpp:43:53:   required from here\n/usr/include/c++/9/bits/predefined_ops.h:43:16: error: invalid type argument of unary \u2018*\u2019 (have \u2018int\u2019)\n   43 |       { return *__it1 < *__it2; }\n      |                ^~~~~~\n/usr/include/c++/9/bits/predefined_ops.h:43:25: error: invalid type argument of unary \u2018*\u2019 (have \u2018int\u2019)\n   43 |       { return *__it1 < *__it2; }\n      |                         ^~~~~~\n",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 312,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:63: int main(): Assertion `re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0})' failed.\n",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 315,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:51: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 339,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 340,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 386,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 397,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:63: int main(): Assertion `(k_smallest_pairs(nums1_a, nums2_a, 2) == vector<vector<int>>{{1, 2}, {1, 4}})' failed.\n",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 457,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 474,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function \u2018int main()\u2019:\ntest.cpp:55:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   55 |     assert(is_palindrome(v1, 4) == 54545);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:58:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   58 |     assert(is_palindrome(v2, 6) == 5);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:61:26: error: cannot convert \u2018std::vector<int>\u2019 to \u2018int\u2019\n   61 |     assert(is_palindrome(v3, 5) == 9);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of \u2018bool is_palindrome(int)\u2019\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\n",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 482,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:77: int main(): Assertion `polygons1.size() == 10' failed.\n",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 490,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: a.out: test.cpp:51: int main(): Assertion `num_comm_div(12, 24) == 6' failed.\n",
+        "completion_id": 0
+    }
+}

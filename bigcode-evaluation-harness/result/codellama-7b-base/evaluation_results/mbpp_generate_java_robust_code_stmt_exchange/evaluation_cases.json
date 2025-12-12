@@ -1,0 +1,1318 @@
+{
+    "0": {
+        "task_id": 4,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 7,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:79: error: ';' expected\n        int count\n                 ^\nMain.java:81: error: illegal start of expression\npublic class Main {\n^\nMain.java:87: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 10,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 11,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 13,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 14,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 18,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:53: error: unclosed comment\n/*class Solution {\n^\nMain.java:63: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 19,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:65: error: <identifier> expected\n        System.\n               ^\nMain.java:65: error: not a statement\n        System.\n              ^\nMain.java:67: error: illegal start of expression\npublic class Main{\n^\nMain.java:73: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 21,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:90: error: illegal start of expression\npublic class Main{\n^\nMain.java:96: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 22,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int B_Number = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:60: error: class, interface, enum, or record expected\n        for(;(N != 0);){\n        ^\nMain.java:60: error: class, interface, enum, or record expected\n        for(;(N != 0);){\n             ^\nMain.java:60: error: class, interface, enum, or record expected\n        for(;(N != 0);){\n                      ^\nMain.java:64: error: class, interface, enum, or record expected\n            B_Number += rem * c;\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            N /= 2;\n            ^\nMain.java:66: error: class, interface, enum, or record expected\n            cnt++;\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:78: error: unclosed comment\n/*class Solution {\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 23,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 25,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ArithmeticException: / by zero\n\tat Solution.find_Nth_Digit(Main.java:31)\n\tat Main.main(Main.java:44)\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 28,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:81: error: illegal start of expression\npublic class Main{\n^\nMain.java:87: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 34,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:69: error: implicitly declared classes are a preview feature and are disabled by default.\n        int gcd = l[0];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:70: error: class, interface, enum, or record expected\n        for(int i = 1; i < l.length; i++){\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n        for(int i = 1; i < l.length; i++){\n                       ^\nMain.java:70: error: class, interface, enum, or record expected\n        for(int i = 1; i < l.length; i++){\n                                     ^\nMain.java:72: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:74: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:79: error: class, interface, enum, or record expected\n}\n^\nMain.java:82: error: unclosed comment\n/*class Solution {\n^\n8 errors\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 37,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 43,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:52: error: illegal start of expression\npublic class Main{\n^\nMain.java:69: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 45,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:78: error: cannot find symbol\n        assert !Solution.check(70);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:79: error: cannot find symbol\n        assert !Solution.check(23);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:80: error: cannot find symbol\n        assert Solution.check(73);\n                       ^\n  symbol:   method check(int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 46,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:34: error: illegal start of expression\n    public static void main(String[] args) {\n    ^\nMain.java:149: error: unclosed comment\n/*\n^\nMain.java:163: error: reached end of file while parsing\n3 errors\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 49,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 50,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:92: error: not a statement\n        mp\n        ^\nMain.java:92: error: ';' expected\n        mp\n          ^\nMain.java:94: error: illegal start of expression\npublic class Main{\n^\nMain.java:100: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 56,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:63: error: implicitly declared classes are a preview feature and are disabled by default.\n        long[][] bell = new long[n+1][n+1];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:64: error: class, interface, enum, or record expected\n        bell[0][0] = 1;\n        ^\nMain.java:65: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:67: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n            {\n            ^\nMain.java:71: error: class, interface, enum, or record expected\n                while(j <= i){\n                ^\nMain.java:74: error: class, interface, enum, or record expected\n                }\n                ^\nMain.java:79: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:85: error: class, interface, enum, or record expected\n}\n^\nMain.java:88: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 57,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 58,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 60,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:32: error: illegal start of expression\n            wfor(;(gaps + i < nums.length);){\n                 ^\nMain.java:32: error: not a statement\n            wfor(;(gaps + i < nums.length);){\n                  ^\nMain.java:32: error: illegal start of expression\n            wfor(;(gaps + i < nums.length);){\n                                           ^\nMain.java:46: error: illegal start of expression\n    public static void main(String[] args) {\n    ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 63,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 70,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:25: error: invalid method declaration; return type required\n    public Pair(T first, U second) {\n           ^\n1 error\n",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 72,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:63: error: implicitly declared classes are a preview feature and are disabled by default.\n        int summ = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:64: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n            while(i < strr.length()){\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n                    i++;\n                    ^\nMain.java:69: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:74: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:77: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:85: error: class, interface, enum, or record expected\n}\n^\nMain.java:87: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 81,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:38: error: illegal start of expression\n    public static void main(String[] args) {\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 85,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: implicitly declared classes are a preview feature and are disabled by default.\n        int x = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:60: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n            ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n                   ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n                           ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:77: error: class, interface, enum, or record expected\n}\n^\nMain.java:79: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 89,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:55: error: integer number too large\n        System.out.println(nextSmallestPalindrome(12345678901));\n                                                  ^\nMain.java:56: error: integer number too large\n        System.out.println(nextSmallestPalindrome(123456789012));\n                                                  ^\nMain.java:57: error: integer number too large\n        System.out.println(nextSmallestPalindrome(1234567890123));\n                                                  ^\nMain.java:58: error: integer number too large\n        System.out.println(nextSmallestPalindrome(12345678901234));\n                                                  ^\nMain.java:59: error: integer number too large\n        System.out.println(nextSmallestPalindrome(123456789012345));\n                                                  ^\nMain.java:60: error: integer number too large\n        System.out.println(nextSmallestPalindrome(1234567890123456));\n                                                  ^\nMain.java:61: error: integer number too large\n        System.out.println(nextSmallestPalindrome(12345678901234567));\n                                                  ^\nMain.java:62: error: ')' or ',' expected\n        System.out.println(nextSmallest\n                                       ^\nMain.java:64: error: illegal start of expression\npublic class Main{\n^\nMain.java:70: error: reached end of file while parsing\n}\n ^\n10 errors\n",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 90,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 98,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:38: error: unclosed string literal\n        String s = \"10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n                   ^\nMain.java:40: error: illegal start of expression\npublic class Main{\n^\nMain.java:46: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 108,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 111,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "34": {
+        "task_id": 112,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:80: error: class, interface, enum, or record expected\n        if (limit < 1) {\n        ^\nMain.java:82: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:84: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:86: error: class, interface, enum, or record expected\n            for (; num <= limit; num++) {\n            ^\nMain.java:86: error: class, interface, enum, or record expected\n            for (; num <= limit; num++) {\n                   ^\nMain.java:86: error: class, interface, enum, or record expected\n            for (; num <= limit; num++) {\n                                 ^\nMain.java:89: error: class, interface, enum, or record expected\n                    }\n                    ^\nMain.java:91: error: implicitly declared classes are a preview feature and are disabled by default.\n                    int sumFact2 = sumOfFactors(sumFact);\n                    ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:92: error: class, interface, enum, or record expected\n                    if (num == sumFact2 && num != sumFact) {\n                    ^\nMain.java:94: error: class, interface, enum, or record expected\n                        amicables.add(sumFact2);\n                        ^\nMain.java:95: error: class, interface, enum, or record expected\n                    }\n                    ^\n11 errors\n",
+        "completion_id": 0
+    },
+    "35": {
+        "task_id": 114,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "36": {
+        "task_id": 115,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "37": {
+        "task_id": 118,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:83: error: ';' expected\n        for (int i\n                  ^\nMain.java:85: error: illegal start of expression\npublic class Main{\n^\nMain.java:92: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "38": {
+        "task_id": 123,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:70: error: implicitly declared classes are a preview feature and are disabled by default.\n        int sum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:71: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:73: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n            ^\nMain.java:73: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n                   ^\nMain.java:73: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n                          ^\nMain.java:75: error: class, interface, enum, or record expected\n                }\n                ^\nMain.java:81: error: class, interface, enum, or record expected\n            } else {\n            ^\nMain.java:83: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:87: error: class, interface, enum, or record expected\n            } else {\n            ^\nMain.java:89: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:94: error: '}' expected\n        int[] arr = { 1, 2, 3, 4, 5\n                                   ^\nMain.java:96: error: illegal start of expression\npublic class Main{\n^\n12 errors\n",
+        "completion_id": 0
+    },
+    "39": {
+        "task_id": 130,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: illegal start of statement\n            }\n            ^\n1 error\n",
+        "completion_id": 0
+    },
+    "40": {
+        "task_id": 131,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "41": {
+        "task_id": 133,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "42": {
+        "task_id": 134,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "43": {
+        "task_id": 136,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "44": {
+        "task_id": 137,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(35) == 17;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\nMain.java:42: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(7) == 7;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\nMain.java:43: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(100) == 19;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "45": {
+        "task_id": 138,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:114: error: illegal start of expression\npublic class Main{\n^\nMain.java:121: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "46": {
+        "task_id": 140,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:43: error: cannot find symbol\n        assert Solution.isCoprime(17,13) == true;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:44: error: cannot find symbol\n        assert Solution.isCoprime(15,21) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:45: error: cannot find symbol\n        assert Solution.isCoprime(25,45) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "47": {
+        "task_id": 141,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:85: error: illegal start of expression\npublic class Main {\n^\nMain.java:101: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "48": {
+        "task_id": 144,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int res = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n             ^\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n                        ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n            temp = temp >> 1;\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:77: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "49": {
+        "task_id": 146,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:50: error: <identifier> expected\n            group.add(lastElement);\n                     ^\nMain.java:50: error: <identifier> expected\n            group.add(lastElement);\n                                 ^\nMain.java:51: error: <identifier> expected\n            result.add(group);\n                      ^\nMain.java:51: error: <identifier> expected\n            result.add(group);\n                            ^\nMain.java:53: error: class, interface, enum, or record expected\n        return result;\n        ^\nMain.java:54: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:100: error: not a statement\n        list1.\n             ^\nMain.java:56: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static void main(String[] args) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:100: error: <identifier> expected\n        list1.\n              ^\nMain.java:102: error: illegal start of expression\npublic class Main{\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "50": {
+        "task_id": 147,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:93: error: illegal start of expression\npublic class Main{\n^\nMain.java:99: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "51": {
+        "task_id": 149,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:61: error: illegal start of expression\npublic class Main{\n^\nMain.java:67: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "52": {
+        "task_id": 153,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: illegal start of expression\npublic class Main{\n^\nMain.java:66: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "53": {
+        "task_id": 154,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "54": {
+        "task_id": 155,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "55": {
+        "task_id": 156,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:62: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:63: error: class, interface, enum, or record expected\n        if (n > 0 && (n & (n - 1)) == 0) {\n        ^\nMain.java:65: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n             ^\nMain.java:66: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n                      ^\nMain.java:70: error: class, interface, enum, or record expected\n                n = n/2;\n                ^\nMain.java:71: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:74: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:77: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:83: error: class, interface, enum, or record expected\n}\n^\nMain.java:86: error: unclosed comment\n/*class Solution {\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "56": {
+        "task_id": 158,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: class, interface, enum, or record expected\n        if (n <= 2) {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:63: error: implicitly declared classes are a preview feature and are disabled by default.\n        int b = 2;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:64: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:71: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:77: error: class, interface, enum, or record expected\n}\n^\nMain.java:79: error: unclosed comment\n/*class Solution {\n^\n8 errors\n",
+        "completion_id": 0
+    },
+    "57": {
+        "task_id": 159,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "58": {
+        "task_id": 161,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            while(i < s.length() - 2){\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:77: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "59": {
+        "task_id": 168,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "60": {
+        "task_id": 170,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:66: error: unclosed string literal\n        String str27 = \"abcdefghijklmnopqrstuvwxyz7\n                       ^\nMain.java:68: error: illegal start of expression\npublic class Main{\n^\nMain.java:74: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "61": {
+        "task_id": 172,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:67: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:68: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n            while(i < n){\n            ^\nMain.java:73: error: class, interface, enum, or record expected\n                while(j < n){\n                ^\nMain.java:77: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:79: error: class, interface, enum, or record expected\n                }\n                ^\nMain.java:82: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:85: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:93: error: class, interface, enum, or record expected\n}\n^\nMain.java:95: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "62": {
+        "task_id": 178,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:81: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "63": {
+        "task_id": 183,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: implicitly declared classes are a preview feature and are disabled by default.\n        int num = n;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:63: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n             ^\nMain.java:63: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n                        ^\nMain.java:66: error: class, interface, enum, or record expected\n            dec_value += last_digit * base;\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n            base = base * 8;\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n            temp = temp / 10;\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:71: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:77: error: class, interface, enum, or record expected\n}\n^\nMain.java:80: error: unclosed comment\n/*class Solution {\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "64": {
+        "task_id": 184,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:86: error: unclosed string literal\n            System.out.println(\"Element not found\n                               ^\nMain.java:88: error: illegal start of expression\npublic class Main{\n^\nMain.java:94: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "65": {
+        "task_id": 186,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "66": {
+        "task_id": 188,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int res = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            while(i > 0){\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:77: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "67": {
+        "task_id": 191,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "68": {
+        "task_id": 192,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "69": {
+        "task_id": 193,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "70": {
+        "task_id": 195,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: implicitly declared classes are a preview feature and are disabled by default.\n        ArrayList<String> res = new ArrayList<>();\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup.length - 1; i++) {\n            ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup.length - 1; i++) {\n                   ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup.length - 1; i++) {\n                                            ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:68: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:79: error: class, interface, enum, or record expected\n}\n^\nMain.java:81: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "71": {
+        "task_id": 196,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "72": {
+        "task_id": 201,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "73": {
+        "task_id": 202,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: implicitly declared classes are a preview feature and are disabled by default.\n        String[] res = new String[test_tup1.length];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n            ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n                   ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n                                         ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:78: error: illegal start of expression\npublic class Main{\n^\n8 errors\n",
+        "completion_id": 0
+    },
+    "74": {
+        "task_id": 204,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:67: error: not a statement\n        alist\n        ^\nMain.java:67: error: ';' expected\n        alist\n             ^\nMain.java:69: error: illegal start of expression\npublic class Main{\n^\nMain.java:111: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "75": {
+        "task_id": 208,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "76": {
+        "task_id": 209,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "77": {
+        "task_id": 213,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:54: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n        ^\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n             ^\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n                      ^\nMain.java:58: error: class, interface, enum, or record expected\n            n = n >> 1;\n            ^\nMain.java:59: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:67: error: class, interface, enum, or record expected\n}\n^\nMain.java:85: error: class, interface, enum, or record expected\n        for(;(n != 0);\n        ^\nMain.java:85: error: class, interface, enum, or record expected\n        for(;(n != 0);\n             ^\n10 errors\n",
+        "completion_id": 0
+    },
+    "78": {
+        "task_id": 214,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "79": {
+        "task_id": 215,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:57: error: implicitly declared classes are a preview feature and are disabled by default.\n        StringBuilder result = new StringBuilder();\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:58: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:60: error: class, interface, enum, or record expected\n            while(i < str.length()){\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:73: error: class, interface, enum, or record expected\n}\n^\n6 errors\n",
+        "completion_id": 0
+    },
+    "80": {
+        "task_id": 218,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "81": {
+        "task_id": 220,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:92: error: class, interface, enum, or record expected\n        if (n > 1) {\n        ^\nMain.java:94: error: class, interface, enum, or record expected\n            tri[1][0] = tri[1\n            ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "82": {
+        "task_id": 221,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "83": {
+        "task_id": 224,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n             ^\nMain.java:61: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n                        ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n            temp = temp >> 1;\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:77: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "84": {
+        "task_id": 228,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:52: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "85": {
+        "task_id": 230,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:139: error: unclosed comment\n/*\n^\nMain.java:168: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "86": {
+        "task_id": 231,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:57: error: implicitly declared classes are a preview feature and are disabled by default.\n        int total = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:58: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:60: error: class, interface, enum, or record expected\n            for (; i < str1.length(); i++) {\n            ^\nMain.java:60: error: class, interface, enum, or record expected\n            for (; i < str1.length(); i++) {\n                   ^\nMain.java:60: error: class, interface, enum, or record expected\n            for (; i < str1.length(); i++) {\n                                      ^\nMain.java:63: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:73: error: class, interface, enum, or record expected\n}\n^\n8 errors\n",
+        "completion_id": 0
+    },
+    "87": {
+        "task_id": 234,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "88": {
+        "task_id": 235,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:37: error: illegal start of expression\n    public static void main(String[] args) {\n    ^\nMain.java:46: error: integer number too large\n        System.out.println(babylonianSquareroot(10000000000));\n                                                ^\nMain.java:47: error: integer number too large\n        System.out.println(babylonianSquareroot(100000000000));\n                                                ^\nMain.java:48: error: integer number too large\n        System.out.println(babylonianSquareroot(1000000000000));\n                                                ^\nMain.java:49: error: integer number too large\n        System.out.println(babylonianSquareroot(10000000000000));\n                                                ^\nMain.java:50: error: integer number too large\n        System.out.println(babylonianSquareroot(100000000000000));\n                                                ^\nMain.java:51: error: integer number too large\n        System.out.println(babylonianSquareroot(1000000000000000));\n                                                ^\nMain.java:52: error: integer number too large\n        System.out.println(babylonianSquareroot(10000000000000000));\n                                                ^\nMain.java:53: error: ')' or ',' expected\n        System.out.println(babylonianSquareroot(100000\n                                                      ^\nMain.java:55: error: illegal start of expression\npublic class Main{\n^\nMain.java:61: error: reached end of file while parsing\n}\n ^\n11 errors\n",
+        "completion_id": 0
+    },
+    "89": {
+        "task_id": 236,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "90": {
+        "task_id": 243,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "91": {
+        "task_id": 245,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "92": {
+        "task_id": 248,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "93": {
+        "task_id": 250,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: implicitly declared classes are a preview feature and are disabled by default.\n        int[] res = new int[test_tup1.length];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n            ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n                   ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < test_tup1.length; i++) {\n                                         ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: illegal start of expression\npublic class Main{\n^\n8 errors\n",
+        "completion_id": 0
+    },
+    "94": {
+        "task_id": 254,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:82: error: cannot find symbol\n        list1.listSplit('a');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:83: error: cannot find symbol\n        list1.listSplit('b');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:84: error: cannot find symbol\n        list1.listSplit('c');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:85: error: cannot find symbol\n        list1.listSplit('d');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:86: error: cannot find symbol\n        list1.listSplit('e');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:87: error: cannot find symbol\n        list1.listSplit('f');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:88: error: cannot find symbol\n        list1.listSplit('g');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:89: error: cannot find symbol\n        list1.listSplit('h');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:90: error: cannot find symbol\n        list1.listSplit('i');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:91: error: cannot find symbol\n        list1.listSplit('j');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:92: error: cannot find symbol\n        list1.listSplit('k');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:93: error: cannot find symbol\n        list1.listSplit('l');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:94: error: cannot find symbol\n        list1.listSplit('m');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:95: error: cannot find symbol\n        list1.listSplit('n');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:100: error: cannot find symbol\n            list2.listSplit(i);\n                 ^\n  symbol:   method listSplit(int)\n  location: variable list2 of type List<Object>\nMain.java:105: error: cannot find symbol\n        list3.listSplit(\"python\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:106: error: cannot find symbol\n        list3.listSplit(\"java\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:107: error: cannot find symbol\n        list3.listSplit(\"C\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:108: error: cannot find symbol\n        list3.listSplit(\"C++\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:109: error: cannot find symbol\n        list3.listSplit(\"DBMS\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:110: error: cannot find symbol\n        list3.listSplit(\"SQL\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\n21 errors\n",
+        "completion_id": 0
+    },
+    "95": {
+        "task_id": 259,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "96": {
+        "task_id": 260,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:55: error: implicitly declared classes are a preview feature and are disabled by default.\n        int sum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:56: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:58: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:61: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:69: error: class, interface, enum, or record expected\n}\n^\nMain.java:87: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:89: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\n8 errors\n",
+        "completion_id": 0
+    },
+    "97": {
+        "task_id": 262,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:45: error: unclosed comment\n/*\n^\nMain.java:54: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "98": {
+        "task_id": 264,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "99": {
+        "task_id": 269,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:63: error: implicitly declared classes are a preview feature and are disabled by default.\n        int pos = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:65: error: class, interface, enum, or record expected\n        for(;(pos < dlist.length && !found);){\n        ^\nMain.java:65: error: class, interface, enum, or record expected\n        for(;(pos < dlist.length && !found);){\n             ^\nMain.java:65: error: class, interface, enum, or record expected\n        for(;(pos < dlist.length && !found);){\n                                            ^\nMain.java:69: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:71: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:74: error: class, interface, enum, or record expected\n        } else {\n        ^\nMain.java:76: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:82: error: not a statement\n        int\n        ^\nMain.java:82: error: ';' expected\n        int\n           ^\nMain.java:84: error: illegal start of expression\npublic class Main{\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "100": {
+        "task_id": 271,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "101": {
+        "task_id": 272,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:62: error: class, interface, enum, or record expected\n        for (int i = 0; i < 10; i++) {\n        ^\nMain.java:62: error: class, interface, enum, or record expected\n        for (int i = 0; i < 10; i++) {\n                        ^\nMain.java:62: error: class, interface, enum, or record expected\n        for (int i = 0; i < 10; i++) {\n                                ^\nMain.java:64: error: implicitly declared classes are a preview feature and are disabled by default.\n            int count = 0;\n            ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:65: error: class, interface, enum, or record expected\n            for(;(temp != 0);){\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            for(;(temp != 0);){\n                 ^\nMain.java:65: error: class, interface, enum, or record expected\n            for(;(temp != 0);){\n                             ^\nMain.java:68: error: class, interface, enum, or record expected\n                }\n                ^\nMain.java:71: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:74: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:77: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:83: error: class, interface, enum, or record expected\n}\n^\nMain.java:85: error: unclosed comment\n/*class Solution {\n^\n13 errors\n",
+        "completion_id": 0
+    },
+    "102": {
+        "task_id": 275,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "103": {
+        "task_id": 277,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:61: error: implicitly declared classes are a preview feature and are disabled by default.\n        int currentElement = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:62: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:64: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n                   ^\nMain.java:64: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n                          ^\nMain.java:68: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:72: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:81: error: class, interface, enum, or record expected\n}\n^\nMain.java:83: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "104": {
+        "task_id": 284,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:62: error: implicitly declared classes are a preview feature and are disabled by default.\n        ArrayList<Integer> divisors = new ArrayList<Integer>();\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:63: error: class, interface, enum, or record expected\n        divisors.add(1);\n        ^\nMain.java:64: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n            while(i < number){\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:74: error: class, interface, enum, or record expected\n        for (int i = 0; i < divisors.size(); i++) {\n        ^\nMain.java:74: error: class, interface, enum, or record expected\n        for (int i = 0; i < divisors.size(); i++) {\n                        ^\nMain.java:74: error: class, interface, enum, or record expected\n        for (int i = 0; i < divisors.size(); i++) {\n                                             ^\nMain.java:76: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:78: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:83: error: class, interface, enum, or record expected\n}\n^\nMain.java:86: error: unclosed comment\n/*class Solution {\n^\n12 errors\n",
+        "completion_id": 0
+    },
+    "105": {
+        "task_id": 285,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:51: error: unclosed comment\n/*\n^\nMain.java:60: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "106": {
+        "task_id": 286,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:78: error: unclosed comment\n        /*\n        ^\nMain.java:93: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "107": {
+        "task_id": 289,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:45: error: unclosed comment\n/*\n^\nMain.java:54: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "108": {
+        "task_id": 292,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "109": {
+        "task_id": 295,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:122: error: ')' expected\n                while(j\n                       ^\nMain.java:124: error: illegal start of expression\npublic class Main{\n^\nMain.java:131: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "110": {
+        "task_id": 300,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:68: error: class, interface, enum, or record expected\n        if ((n & (n + 1)) == 0) {\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:72: error: class, interface, enum, or record expected\n        for(;(temp != 0);){\n        ^\nMain.java:72: error: class, interface, enum, or record expected\n        for(;(temp != 0);){\n             ^\nMain.java:72: error: class, interface, enum, or record expected\n        for(;(temp != 0);){\n                         ^\nMain.java:76: error: class, interface, enum, or record expected\n            temp = temp >> 1;\n            ^\nMain.java:77: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:80: error: class, interface, enum, or record expected\n                temp = temp >> 1;\n                ^\nMain.java:81: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:85: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:88: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:91: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static void main(String[] args) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:95: error: class, interface, enum, or record expected\n}\n^\nMain.java:98: error: unclosed comment\n/*class Solution {\n^\n14 errors\n",
+        "completion_id": 0
+    },
+    "111": {
+        "task_id": 303,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "112": {
+        "task_id": 304,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:74: error: implicitly declared classes are a preview feature and are disabled by default.\n        int n = str.length();\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:79: error: class, interface, enum, or record expected\n        for(;(i < n);){\n        ^\nMain.java:79: error: class, interface, enum, or record expected\n        for(;(i < n);){\n             ^\nMain.java:79: error: class, interface, enum, or record expected\n        for(;(i < n);){\n                     ^\nMain.java:84: error: class, interface, enum, or record expected\n                        st = i - currlen;\n                        ^\nMain.java:85: error: class, interface, enum, or record expected\n                    }\n                    ^\nMain.java:88: error: class, interface, enum, or record expected\n            } else {\n            ^\nMain.java:91: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:93: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:97: error: class, interface, enum, or record expected\n                st = i - currlen;\n                ^\nMain.java:98: error: class, interface, enum, or record expected\n            }\n            ^\n11 errors\n",
+        "completion_id": 0
+    },
+    "113": {
+        "task_id": 305,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "114": {
+        "task_id": 306,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:96: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "115": {
+        "task_id": 307,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:47: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "116": {
+        "task_id": 308,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:39: error: cannot find symbol\nfindLongWord(\"strem\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:41: error: cannot find symbol\nfindLongWord(\"Ultra\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:43: error: cannot find symbol\nfindLongWord(\"Media\");}});\n^\n  symbol: method findLongWord(String)\n3 errors\n",
+        "completion_id": 0
+    },
+    "117": {
+        "task_id": 309,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:57: error: implicitly declared classes are a preview feature and are disabled by default.\n        int sumOfSquares = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            for (; num <= n; num++) {\n            ^\nMain.java:61: error: class, interface, enum, or record expected\n            for (; num <= n; num++) {\n                   ^\nMain.java:61: error: class, interface, enum, or record expected\n            for (; num <= n; num++) {\n                             ^\nMain.java:64: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:68: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:73: error: class, interface, enum, or record expected\n}\n^\nMain.java:75: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "118": {
+        "task_id": 310,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n        assert solution.find_demlo(\"111111\").find_demlo(\"12345654321\");\n                                            ^\n  symbol:   method find_demlo(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.find_demlo(\"1111\").find_demlo(\"1234321\");\n                                          ^\n  symbol:   method find_demlo(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.find_demlo(\"13333122222\").find_demlo(\"123456789101110987654321\");\n                                                 ^\n  symbol:   method find_demlo(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "119": {
+        "task_id": 311,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:84: error: unclosed comment\n        /*\n        ^\nMain.java:104: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "120": {
+        "task_id": 312,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:56: error: ';' expected\n        for (int i = 0; i\n                         ^\nMain.java:58: error: illegal start of expression\npublic class Main{\n^\nMain.java:71: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "121": {
+        "task_id": 313,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "122": {
+        "task_id": 314,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:69: error: not a statement\n        System.out.\n                  ^\nMain.java:45: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static void main(String[] args) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:69: error: <identifier> expected\n        System.out.\n                   ^\nMain.java:71: error: illegal start of expression\npublic class Main{\n^\n4 errors\n",
+        "completion_id": 0
+    },
+    "123": {
+        "task_id": 319,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:77: error: unclosed comment\n/*\n^\nMain.java:104: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "124": {
+        "task_id": 320,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:57: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        for(;(x < n + 1);){\n        ^\nMain.java:59: error: class, interface, enum, or record expected\n        for(;(x < n + 1);){\n             ^\nMain.java:59: error: class, interface, enum, or record expected\n        for(;(x < n + 1);){\n                         ^\nMain.java:63: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:67: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:73: error: class, interface, enum, or record expected\n}\n^\nMain.java:76: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "125": {
+        "task_id": 327,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:65: error: <identifier> expected\n        System.\n               ^\nMain.java:65: error: not a statement\n        System.\n              ^\nMain.java:67: error: illegal start of expression\npublic class Main{\n^\nMain.java:73: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "126": {
+        "task_id": 329,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "127": {
+        "task_id": 331,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:13: error: invalid method declaration; return type required\n    public Node(int value, int listNum, int index) {\n           ^\nMain.java:23: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static int[] findMinimumRange(int[][] list) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:129: error: illegal start of expression\npublic class Main{\n^\n3 errors\n",
+        "completion_id": 0
+    },
+    "128": {
+        "task_id": 334,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "129": {
+        "task_id": 337,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:38: error: cannot find symbol\n        assert Solution.findWays(4) == 2;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:39: error: cannot find symbol\n        assert Solution.findWays(6) == 5;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:40: error: cannot find symbol\n        assert Solution.findWays(8) == 14;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "130": {
+        "task_id": 339,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "131": {
+        "task_id": 340,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "132": {
+        "task_id": 341,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "133": {
+        "task_id": 344,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "134": {
+        "task_id": 347,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "135": {
+        "task_id": 353,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:24: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:35: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:46: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:57: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:68: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:79: error: illegal start of expression\n    public static int getFlipCount(String str) {\n    ^\nMain.java:84: error: illegal start of expression\npublic class Main {\n^\nMain.java:90: error: reached end of file while parsing\n}\n ^\n8 errors\n",
+        "completion_id": 0
+    },
+    "136": {
+        "task_id": 354,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:54: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n        ^\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n             ^\nMain.java:55: error: class, interface, enum, or record expected\n        for(;(n != 0);){\n                      ^\nMain.java:58: error: class, interface, enum, or record expected\n            count++;\n            ^\nMain.java:59: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:67: error: class, interface, enum, or record expected\n}\n^\nMain.java:85: error: class, interface, enum, or record expected\n        for\n        ^\n9 errors\n",
+        "completion_id": 0
+    },
+    "137": {
+        "task_id": 355,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:42: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "138": {
+        "task_id": 357,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: implicitly declared classes are a preview feature and are disabled by default.\n        Object[] res = new Object[N];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n            ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n                   ^\nMain.java:63: error: class, interface, enum, or record expected\n            for (; i < N; i++) {\n                          ^\nMain.java:66: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:79: error: class, interface, enum, or record expected\n}\n^\nMain.java:81: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "139": {
+        "task_id": 363,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "140": {
+        "task_id": 365,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "141": {
+        "task_id": 366,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.remove_Char(\"aba\",'a').remove_Char(\"b\");\n                                              ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.remove_Char(\"toggle\",'g').remove_Char(\"tole\");\n                                                 ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.remove_Char(\"aabbc\",'b').remove_Char(\"aac\");\n                                                ^\n  symbol:   method remove_Char(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "142": {
+        "task_id": 369,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "143": {
+        "task_id": 371,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "144": {
+        "task_id": 372,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:56: error: implicitly declared classes are a preview feature and are disabled by default.\n        int res = 0, count = 0, temp = n;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:57: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n        ^\nMain.java:57: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n             ^\nMain.java:57: error: class, interface, enum, or record expected\n        for(;(temp > 0);){\n                        ^\nMain.java:60: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:63: error: class, interface, enum, or record expected\n            temp = temp >> 1;\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:71: error: class, interface, enum, or record expected\n}\n^\nMain.java:73: error: unclosed comment\n/*class Solution {\n^\n10 errors\n",
+        "completion_id": 0
+    },
+    "145": {
+        "task_id": 373,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "146": {
+        "task_id": 377,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int res = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            while(i > 0){\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:78: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "147": {
+        "task_id": 380,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "148": {
+        "task_id": 381,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:74: error: illegal start of expression\npublic class Main{\n^\nMain.java:81: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "149": {
+        "task_id": 388,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:60: error: implicitly declared classes are a preview feature and are disabled by default.\n        int[] res = new int[test_tup1.length];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n            while(i < test_tup1.length){\n            ^\nMain.java:66: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: illegal start of expression\npublic class Main{\n^\n6 errors\n",
+        "completion_id": 0
+    },
+    "150": {
+        "task_id": 390,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "151": {
+        "task_id": 391,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:65: error: implicitly declared classes are a preview feature and are disabled by default.\n        int[] C = new int[r+1];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:66: error: class, interface, enum, or record expected\n        C[0] = 1;\n        ^\nMain.java:67: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:72: error: class, interface, enum, or record expected\n                while(j > 0){\n                ^\nMain.java:75: error: class, interface, enum, or record expected\n                }\n                ^\nMain.java:80: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:89: error: class, interface, enum, or record expected\n}\n^\nMain.java:91: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "152": {
+        "task_id": 396,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "153": {
+        "task_id": 397,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "154": {
+        "task_id": 401,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        list1.remove_odd(1);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:42: error: cannot find symbol\n        list1.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:43: error: cannot find symbol\n        list1.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:46: error: cannot find symbol\nremove_odd(2);}});\n^\n  symbol: method remove_odd(int)\nMain.java:49: error: cannot find symbol\n        list2.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:50: error: cannot find symbol\n        list2.remove_odd(4);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:51: error: cannot find symbol\n        list2.remove_odd(6);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:54: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n^\n  symbol: method remove_odd(int)\nMain.java:54: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n               ^\n  symbol: method remove_odd(int)\nMain.java:54: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n                              ^\n  symbol: method remove_odd(int)\nMain.java:57: error: cannot find symbol\n        list3.remove_odd(10);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:58: error: cannot find symbol\n        list3.remove_odd(20);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:59: error: cannot find symbol\n        list3.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:62: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n^\n  symbol: method remove_odd(int)\nMain.java:62: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n                ^\n  symbol: method remove_odd(int)\n15 errors\n",
+        "completion_id": 0
+    },
+    "155": {
+        "task_id": 404,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "156": {
+        "task_id": 409,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:55: error: implicitly declared classes are a preview feature and are disabled by default.\n        int sum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:56: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:58: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:61: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:69: error: class, interface, enum, or record expected\n}\n^\nMain.java:87: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:89: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\n8 errors\n",
+        "completion_id": 0
+    },
+    "157": {
+        "task_id": 411,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:55: error: implicitly declared classes are a preview feature and are disabled by default.\n        double sum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:56: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:58: error: class, interface, enum, or record expected\n            while(i <= n){\n            ^\nMain.java:61: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:69: error: class, interface, enum, or record expected\n}\n^\nMain.java:87: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:89: error: class, interface, enum, or record expected\n            while(\n            ^\n8 errors\n",
+        "completion_id": 0
+    },
+    "158": {
+        "task_id": 412,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "159": {
+        "task_id": 417,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "160": {
+        "task_id": 418,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        int[] res = new int[test_tup1.length];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            while(i < test_tup1.length){\n            ^\nMain.java:64: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:78: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "161": {
+        "task_id": 426,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n        String str2 = \"\";\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:59: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:61: error: class, interface, enum, or record expected\n            while(i <= str1.length()){\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:75: error: class, interface, enum, or record expected\n}\n^\nMain.java:77: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "162": {
+        "task_id": 427,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:54: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "163": {
+        "task_id": 434,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:53: error: unclosed comment\n/*\n^\nMain.java:62: error: reached end of file while parsing\n2 errors\n",
+        "completion_id": 0
+    },
+    "164": {
+        "task_id": 442,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:80: error: ')' or ',' expected\n        System.out.println(sumofFactors\n                                       ^\nMain.java:82: error: illegal start of expression\npublic class Main{\n^\nMain.java:88: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "165": {
+        "task_id": 450,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:56: error: implicitly declared classes are a preview feature and are disabled by default.\n        int upperCtr = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:57: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:59: error: class, interface, enum, or record expected\n            while(i < str.length()){\n            ^\nMain.java:62: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:65: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:71: error: class, interface, enum, or record expected\n}\n^\nMain.java:73: error: unclosed comment\n/*class Solution {\n^\n7 errors\n",
+        "completion_id": 0
+    },
+    "166": {
+        "task_id": 452,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "167": {
+        "task_id": 456,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: implicitly declared classes are a preview feature and are disabled by default.\n        int octalNum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:62: error: class, interface, enum, or record expected\n        for(;(deciNum != 0);){\n        ^\nMain.java:62: error: class, interface, enum, or record expected\n        for(;(deciNum != 0);){\n             ^\nMain.java:62: error: class, interface, enum, or record expected\n        for(;(deciNum != 0);){\n                            ^\nMain.java:65: error: class, interface, enum, or record expected\n            octalNum += remainder * countval;\n            ^\nMain.java:66: error: class, interface, enum, or record expected\n            deciNum /= 8;\n            ^\nMain.java:67: error: class, interface, enum, or record expected\n            countval *= 10;\n            ^\nMain.java:68: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:70: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:77: error: class, interface, enum, or record expected\n}\n^\nMain.java:80: error: unclosed comment\n/*class Solution {\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "168": {
+        "task_id": 457,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "169": {
+        "task_id": 458,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: reached end of file while parsing\n}\n ^\n1 error\n",
+        "completion_id": 0
+    },
+    "170": {
+        "task_id": 459,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "171": {
+        "task_id": 460,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:59: error: implicitly declared classes are a preview feature and are disabled by default.\n        int mul = 1;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:60: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i < lens; i++) {\n            ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i < lens; i++) {\n                   ^\nMain.java:62: error: class, interface, enum, or record expected\n            for (; i < lens; i++) {\n                             ^\nMain.java:65: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:68: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:77: error: class, interface, enum, or record expected\n}\n^\nMain.java:79: error: unclosed comment\n/*class Solution {\n^\n9 errors\n",
+        "completion_id": 0
+    },
+    "172": {
+        "task_id": 461,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:35: error: illegal start of expression\n    public static void main(String[] args) {\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "173": {
+        "task_id": 468,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:51: error: class, interface, enum, or record expected\n        for(;(n >= 10);){\n        ^\nMain.java:51: error: class, interface, enum, or record expected\n        for(;(n >= 10);){\n             ^\nMain.java:51: error: class, interface, enum, or record expected\n        for(;(n >= 10);){\n                       ^\nMain.java:54: error: class, interface, enum, or record expected\n            return n % 10;\n            ^\nMain.java:55: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:58: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static void main(String[] args) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:61: error: class, interface, enum, or record expected\n}\n^\nMain.java:78: error: class, interface, enum, or record expected\n        for(;(n >= 10);){\n             ^\nMain.java:78: error: class, interface, enum, or record expected\n        for(;(n >= 10);){\n                       ^\nMain.java:81: error: class, interface, enum, or record expected\n            return n % 10\n            ^\n10 errors\n",
+        "completion_id": 0
+    },
+    "174": {
+        "task_id": 469,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "175": {
+        "task_id": 472,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "176": {
+        "task_id": 474,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:35: error: integer number too large\n        System.out.println(is_palindrome(12345678901));\n                                         ^\nMain.java:36: error: integer number too large\n        System.out.println(is_palindrome(123456789012));\n                                         ^\nMain.java:37: error: integer number too large\n        System.out.println(is_palindrome(1234567890123));\n                                         ^\nMain.java:38: error: integer number too large\n        System.out.println(is_palindrome(12345678901234));\n                                         ^\nMain.java:39: error: integer number too large\n        System.out.println(is_palindrome(123456789012345));\n                                         ^\nMain.java:40: error: integer number too large\n        System.out.println(is_palindrome(1234567890123456));\n                                         ^\nMain.java:41: error: integer number too large\n        System.out.println(is_palindrome(12345678901234567));\n                                         ^\nMain.java:42: error: integer number too large\n        System.out.println(is_palindrome(123456789012345678));\n                                         ^\nMain.java:43: error: integer number too large\n        System.out.println(is_palindrome(1234567890123456789));\n                                         ^\nMain.java:44: error: integer number too large\n        System.out.println(is_palindrome(12345678901234567890));\n                                         ^\nMain.java:45: error: integer number too large\n        System.out.println(is_palindrome(1234567890123456789\n                                         ^\nMain.java:45: error: ')' or ',' expected\n        System.out.println(is_palindrome(1234567890123456789\n                                                            ^\nMain.java:47: error: illegal start of expression\npublic class Main{\n^\nMain.java:53: error: reached end of file while parsing\n}\n ^\n14 errors\n",
+        "completion_id": 0
+    },
+    "177": {
+        "task_id": 475,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:33: error: cannot find symbol\n        assert Math.abs(Solution.binomial_probability(10, 5, 1.0/3) - 0.13656454808718185) < 1e-9;\n                                ^\n  symbol:   method binomial_probability(int,int,double)\n  location: class Solution\nMain.java:34: error: cannot find symbol\n        assert Math.abs(Solution.binomial_probability(11, 6, 2.0/4) - 0.2255859375) < 1e-9;\n                                ^\n  symbol:   method binomial_probability(int,int,double)\n  location: class Solution\nMain.java:35: error: cannot find symbol\n        assert Math.abs(Solution.binomial_probability(12, 7, 3.0/5) - 0.227030335488) < 1e-9;\n                                ^\n  symbol:   method binomial_probability(int,int,double)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "178": {
+        "task_id": 478,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:65: error: implicitly declared classes are a preview feature and are disabled by default.\n        int mn = arr[0];\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:67: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:69: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n            ^\nMain.java:69: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n                   ^\nMain.java:69: error: class, interface, enum, or record expected\n            for (; i < n; i++) {\n                          ^\nMain.java:72: error: class, interface, enum, or record expected\n                        freq = 1;\n                        ^\nMain.java:74: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:78: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:82: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:89: error: class, interface, enum, or record expected\n}\n^\nMain.java:91: error: unclosed comment\n/*class Solution {\n^\n11 errors\n",
+        "completion_id": 0
+    },
+    "179": {
+        "task_id": 481,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "180": {
+        "task_id": 482,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:46: error: illegal start of expression\n            wfor(;(startx < endx);){\n                 ^\nMain.java:46: error: not a statement\n            wfor(;(startx < endx);){\n                  ^\nMain.java:46: error: illegal start of expression\n            wfor(;(startx < endx);){\n                                  ^\nMain.java:99: error: unclosed comment\n/*\n^\nMain.java:128: error: reached end of file while parsing\n5 errors\n",
+        "completion_id": 0
+    },
+    "181": {
+        "task_id": 487,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "182": {
+        "task_id": 490,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:79: error: implicitly declared classes are a preview feature and are disabled by default.\n        int n = ngcd(x, y);\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:82: error: class, interface, enum, or record expected\n        result = x / n;\n        ^\nMain.java:83: error: class, interface, enum, or record expected\n        result = y / n;\n        ^\nMain.java:85: error: class, interface, enum, or record expected\n        return result;\n        ^\nMain.java:86: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:93: error: illegal start of expression\npublic class Main {\n^\n6 errors\n",
+        "completion_id": 0
+    },
+    "183": {
+        "task_id": 492,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "184": {
+        "task_id": 493,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:55: error: implicitly declared classes are a preview feature and are disabled by default.\n        int sum = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:56: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:58: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n            ^\nMain.java:58: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n                   ^\nMain.java:58: error: class, interface, enum, or record expected\n            for (; i <= n; i++) {\n                           ^\nMain.java:61: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:64: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:69: error: class, interface, enum, or record expected\n}\n^\nMain.java:87: error: class, interface, enum, or record expected\n        {\n        ^\nMain.java:89: error: class, interface, enum, or record expected\n            for (; i <= n; i\n            ^\nMain.java:89: error: class, interface, enum, or record expected\n            for (; i <= n; i\n                   ^\nMain.java:89: error: class, interface, enum, or record expected\n            for (; i <= n; i\n                           ^\n12 errors\n",
+        "completion_id": 0
+    },
+    "185": {
+        "task_id": 495,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "186": {
+        "task_id": 498,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:61: error: class, interface, enum, or record expected\n        if (n % 2 == 0) {\n        ^\nMain.java:63: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:65: error: implicitly declared classes are a preview feature and are disabled by default.\n        int count = 0;\n        ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:66: error: class, interface, enum, or record expected\n        for(;(n >= 1);){\n        ^\nMain.java:66: error: class, interface, enum, or record expected\n        for(;(n >= 1);){\n             ^\nMain.java:66: error: class, interface, enum, or record expected\n        for(;(n >= 1);){\n                      ^\nMain.java:70: error: class, interface, enum, or record expected\n                count++;\n                ^\nMain.java:71: error: class, interface, enum, or record expected\n            }\n            ^\nMain.java:74: error: class, interface, enum, or record expected\n        }\n        ^\nMain.java:76: error: class, interface, enum, or record expected\n    }\n    ^\nMain.java:81: error: class, interface, enum, or record expected\n}\n^\nMain.java:83: error: unclosed comment\n/*class Solution {\n^\n12 errors\n",
+        "completion_id": 0
+    },
+    "187": {
+        "task_id": 499,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    }
+}

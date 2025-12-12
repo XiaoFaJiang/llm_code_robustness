@@ -1,0 +1,43 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 5,
+    "generations": [
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport re\n\ndef check_integer(text):\n    text = text.strip()\n    if not(len(text) < 1):\n        if re.match(r'^\\d+$', text):\n            return True\n        else:\n            return False\n    else:\n        return None"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport copy\n\ndef merge_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    \n    mid = len(arr) // 2\n    left_half = merge_sort(arr[:mid])\n    right_half = merge_sort(arr[mid:])\n    \n    return merge(left_half, right_half)\n\ndef merge(a, b):\n    c = []\n    while len(a) != 0 and len(b) != 0:\n        if not(a[0] < b[0]):\n            c.append(b[0])\n            b.remove(b[0])\n        else:\n            c.append(a[0])\n            a.remove(a[0])\n    if len(a) == 0:\n        c += b\n    elif len(b) == 0:\n        c += a\n    \n    return c"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom typing import List\n\ndef is_majority(arr: List[int], n: int, x: int) -> bool:\n    i = binary_search(arr, 0, n-1, x)\n    if i == -1:\n        return False\n    if not(((i + n//2) <= (n -1)) and arr[i + n//2] == x):\n        return False\n    else:\n        return True\n\ndef binary_search(arr: List[int], low: int, high: int, x: int) -> int:\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] < x:\n            low = mid + 1\n        elif arr[mid] > x:\n            high = mid - 1\n        else:\n            return mid\n    return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\n\ndef No_of_Triangle(N,K):\n    if not((N < K)):\n        Tri_up = 0;\n        for i in range(1, N+1):\n            for j in range(i, N+1):\n                if math.sqrt((j-i)**2 + (j-i)**2) == (i-1):\n                    Tri_up += 1\n        return Tri_up\n    else:\n        return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom typing import List\n\ndef max_sum_increasing_subseq(a: List[int], n: int, index: int, k: int) -> int:\n    dp = [[0 for i in range(n)] \n            for i in range(n)]\n    \n    # Initialize the first row\n    for i in range(n):\n        if not(a[i] > a[0]):\n            dp[0][i] = a[i]\n        else:\n            dp[0][i] = a[i] + a[0]\n    \n    # Fill the DP table\n    for i in range(1, n):\n        for j in range(i):\n            if a[j] < a[i]:\n                dp[i][j] = max(dp[i][j], dp[i-1][j] + a[i])\n    \n    # Find the maximum sum including the kth element\n    max_sum = 0\n    for i in range(n):\n        if i <= index:\n            max_sum = max(max_sum, dp[index][i])\n        elif i > index and i <= k:\n            max_sum = max(max_sum, dp[k][i])\n    \n    return max_sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import Counter\n\ndef first_Element(arr,n,k):\n    count_map = Counter(arr) \n    for i in range(0, n): \n        if count_map[arr[i]] == k:\n            return arr[i]\n    return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import Counter\n\ndef first_non_repeating_character(str1):\n  char_order = []\n  ctr = Counter(str1)\n  for c in str1:\n    if ctr[c] == 1:\n      return c\n  return None"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom typing import List\n\ndef get_maxgold(gold: List[List[int]], m: int, n: int) -> int:\n    goldTable = [[0 for _ in range(n)] \n                        for _ in range(m)]   \n\n    for col in range(n-1, -1, -1): \n        for row in range(m):  \n            if not((col == n-1)):\n                right = goldTable[row][col+1]\n            else:\n                right = 0 \n            if (row == 0 or col == n-1): \n                right_up = 0\n            else:\n                right_up = goldTable[row-1][col+1]\n\n            goldTable[row][col] = max(right, right_up, gold[col]) + gold[row][col]\n\n    return max(goldTable[0])"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom typing import List\n\ndef max_profit(price: List[int], k: int) -> int:\n    n = len(price)\n    final_profit = [[None for x in range(n)] for y in range(k + 1)]\n    \n    for i in range(k + 1):\n        for j in range(n):\n            if not(i == 0 or j == 0):\n                final_profit[i][j] = max(final_profit[i - 1][j], final_profit[i][j - 1] - price[j])\n            else:\n                final_profit[i][j] = 0\n    \n    return final_profit[k][n - 1]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\n\ndef calculate_polygons(startx, starty, endx, endy, radius):\n    sl = (2 * radius) * math.tan(math.pi / 6)\n    p = sl * 0.5\n    b = sl * math.cos(math.radians(30))\n    w = b * 2\n    h = 2 * sl   \n    startx = startx - w\n    starty = starty - h\n    endx = endx + w\n    endy = endy + h\n    origx = startx\n    origy = starty\n    xoffset = b\n    yoffset = 3 * p\n    polygons = []\n    row = 1\n    counter = 0\n    while starty < endy:\n        if not(row % 2 == 0):\n            startx = origx\n        else:\n            startx = origx + xoffset\n        while startx < endx:\n            p1x = startx\n            p1y = starty + p\n            p2x = startx + w\n            p2y = starty + p\n            p3x = startx + w\n            p3y = starty + 2 * p\n            p4x = startx\n            p4y = starty + 2 * p\n            p5x = startx\n            p5y = starty + 3 * p\n            p6x = startx + b\n            p6y = starty + 3 * p\n            polygons.append([(p1x, p1y), (p2x, p2y), (p3x, p3y), (p4x, p4y), (p5x, p5y), (p6x, p6y)])\n            startx += w\n        starty += h\n        row += 1\n    return polygons"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

@@ -1,0 +1,1248 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\nAssertion failed: Test 4 failed\n",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 10,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 11,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpw59ftwgv/test.js:24\n    }else{\n     ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 13,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 14,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmptpv1f1d3/test.js:35\ntestfind_Product(); // invoke test\n                                  \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 18,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 19,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 21,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpvnuca3jg/test.js:25\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 22,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 23,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 25,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 28,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmpveorwoyp/test.js:122\n    console.assert(rearange_string(\"aab\") === \"aba\", \"Test 1 Failed\");\n            ^\n\nReferenceError: rearange_string is not defined\n    at testRearange_string (/tmp/tmpveorwoyp/test.js:122:13)\n    at Object.<anonymous> (/tmp/tmpveorwoyp/test.js:127:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 34,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 36,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 37,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 43,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 45,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 46,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 49,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 50,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 56,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpy_n086cd/test.js:101\ntestBell_number() // invoke test\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 58,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmphr9q6chk/test.js:29\n        } else {\n          ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 60,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp3czafsor/test.js:22\n        wfor(;(gaps + i < nums.length);){\n             ^\n\nSyntaxError: Unexpected token ';'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 63,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 70,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpfxal6a16/test.js:33\nconst zip_tuples = () => {\n      ^\n\nSyntaxError: Identifier 'zip_tuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 72,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 81,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpyqf28xp6/test.js:30\ntestIsUndulating(); // invoke test\n                                  \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 82,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpncc261iz/test.js:18\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 85,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 89,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 90,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpbkx_gl7r/test.js:37\ntestkth_element() // invoke test\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 98,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpy4lmu80r/test.js:22\n    }else{\n     ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 102,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpi8i86js2/test.js:20\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 108,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "34": {
+        "task_id": 111,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmps5qix4nu/test.js:43\ntestSmartNumber(); // invoke test\n                                 \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "35": {
+        "task_id": 112,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "36": {
+        "task_id": 114,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmptcdcs0ud/test.js:24\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "37": {
+        "task_id": 115,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpaes2docq/test.js:32\ntestSum(); // invoke test\n                         \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "38": {
+        "task_id": 116,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "39": {
+        "task_id": 118,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp32yneec9/test.js:46\n]));\n^\n\nSyntaxError: Unexpected token ']'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "40": {
+        "task_id": 119,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "41": {
+        "task_id": 123,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "42": {
+        "task_id": 125,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 1442.75, got 701.25\n",
+        "completion_id": 0
+    },
+    "43": {
+        "task_id": 130,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "44": {
+        "task_id": 131,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpj_miltqt/test.js:22\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "45": {
+        "task_id": 132,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "46": {
+        "task_id": 133,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "47": {
+        "task_id": 134,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpplsljt1l/test.js:131\ntestMax_Abs_Diff(); // invoke test\n                                  \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "48": {
+        "task_id": 135,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpag9eou6u/test.js:22\n    return i;\n    ^\n\nReferenceError: i is not defined\n    at ascii_value_string (/tmp/tmpag9eou6u/test.js:22:5)\n    at testascii_value_string (/tmp/tmpag9eou6u/test.js:60:20)\n    at Object.<anonymous> (/tmp/tmpag9eou6u/test.js:65:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "49": {
+        "task_id": 136,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpjxus2nsh/test.js:19\n            else {\n            ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "50": {
+        "task_id": 137,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "51": {
+        "task_id": 138,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "52": {
+        "task_id": 140,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "53": {
+        "task_id": 141,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp5rlqc0wq/test.js:3\n    for(;(a.length !== 0 && b.length !== 0);){\n                              ^\n\nTypeError: Cannot read properties of undefined (reading 'length')\n    at merge (/tmp/tmp5rlqc0wq/test.js:3:31)\n    at testMerge_sort (/tmp/tmp5rlqc0wq/test.js:22:20)\n    at Object.<anonymous> (/tmp/tmp5rlqc0wq/test.js:26:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "54": {
+        "task_id": 142,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp7hmi__fj/test.js:15\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "55": {
+        "task_id": 144,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "56": {
+        "task_id": 147,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmphovlfj2j/test.js:34\ntestMin_Ops() // invoke test\n                            \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "57": {
+        "task_id": 148,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "58": {
+        "task_id": 149,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "59": {
+        "task_id": 153,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "60": {
+        "task_id": 154,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpq4ymve6a/test.js:23\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "61": {
+        "task_id": 155,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "62": {
+        "task_id": 159,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "63": {
+        "task_id": 161,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmphehdq9dz/test.js:32\ntestcount_occurance() // invoke test\n                                    \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "64": {
+        "task_id": 168,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 failed\n",
+        "completion_id": 0
+    },
+    "65": {
+        "task_id": 170,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "66": {
+        "task_id": 172,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "67": {
+        "task_id": 176,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmp_a_yz8zn/test.js:17\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "68": {
+        "task_id": 178,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "69": {
+        "task_id": 183,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "70": {
+        "task_id": 184,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "71": {
+        "task_id": 188,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmphi9bb4hi/test.js:34\ntestHighest_Power_of_2(); // invoke test\n                                        \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "72": {
+        "task_id": 191,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "73": {
+        "task_id": 192,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "74": {
+        "task_id": 193,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpi9ujr5tk/test.js:32\ntestCount(); // invoke test\n                           \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "75": {
+        "task_id": 196,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp3tcgf1f4/test.js:27\n            } else {\n              ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "76": {
+        "task_id": 201,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "77": {
+        "task_id": 204,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpe4uxn0zd/test.js:18\n        else {\n        ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "78": {
+        "task_id": 207,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp4q5_euhw/test.js:106\ntestmin_Operations()\n                    \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "79": {
+        "task_id": 208,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "80": {
+        "task_id": 212,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "81": {
+        "task_id": 213,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "82": {
+        "task_id": 214,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpb2zb4z2z/test.js:19\n        else {\n        ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "83": {
+        "task_id": 215,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "84": {
+        "task_id": 216,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpnf0bycwf/test.js:19\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "85": {
+        "task_id": 218,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp8i4gyuev/test.js:32\nlet arr = [-1, 2, -3, 4, -5, 6, -7, 8, -9];\n    ^\n\nSyntaxError: Identifier 'arr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "86": {
+        "task_id": 220,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpw61y7wyw/test.js:89\ntestMax_sum() // invoke test\n                            \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "87": {
+        "task_id": 224,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "88": {
+        "task_id": 225,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpvg3evtoj/test.js:18\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "89": {
+        "task_id": 228,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "90": {
+        "task_id": 230,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpji02fprn/test.js:33\nlet array_3d = array_3d(3, 3, 3);\n    ^\n\nSyntaxError: Identifier 'array_3d' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "91": {
+        "task_id": 234,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "92": {
+        "task_id": 236,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpdl428hqu/test.js:138\ntestLps();\n          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "93": {
+        "task_id": 245,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "94": {
+        "task_id": 253,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmp5jrz9bkl/test.js:17\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "95": {
+        "task_id": 259,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "96": {
+        "task_id": 260,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "97": {
+        "task_id": 264,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "98": {
+        "task_id": 267,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "99": {
+        "task_id": 269,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "100": {
+        "task_id": 272,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpve1odza2/test.js:29\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "101": {
+        "task_id": 275,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "102": {
+        "task_id": 277,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp5r3zvdk_/test.js:35\ntestModular_inverse(); // invoke test\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "103": {
+        "task_id": 284,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "104": {
+        "task_id": 285,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "105": {
+        "task_id": 286,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp8ve7ehh6/test.js:21\n        let next = c_num.pop();\n                         ^\n\nTypeError: c_num.pop is not a function\n    at flattenList (/tmp/tmp8ve7ehh6/test.js:21:26)\n    at testFlattenList (/tmp/tmp8ve7ehh6/test.js:40:35)\n    at Object.<anonymous> (/tmp/tmp8ve7ehh6/test.js:44:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "106": {
+        "task_id": 289,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "107": {
+        "task_id": 292,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpzayuttk2/test.js:23\n    } else {\n      ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "108": {
+        "task_id": 293,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpt8hu17o5/test.js:44\ntestFind_Element();\n                   \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "109": {
+        "task_id": 295,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpqz3beetm/test.js:141\ntestMax_sum_increasing_subseq();\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "110": {
+        "task_id": 300,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "111": {
+        "task_id": 303,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpszep4pje/test.js:24\n    return excl_new;\n    ^\n\nReferenceError: excl_new is not defined\n    at max_sum_rectangular_grid (/tmp/tmpszep4pje/test.js:24:5)\n    at testMax_sum_rectangular_grid (/tmp/tmpszep4pje/test.js:27:20)\n    at Object.<anonymous> (/tmp/tmpszep4pje/test.js:31:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "112": {
+        "task_id": 304,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "113": {
+        "task_id": 305,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "114": {
+        "task_id": 306,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "115": {
+        "task_id": 307,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\n",
+        "completion_id": 0
+    },
+    "116": {
+        "task_id": 309,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 5434, got 0\nAssertion failed: Expected 41230, got 0\nAssertion failed: Expected 2151270, got 0\n",
+        "completion_id": 0
+    },
+    "117": {
+        "task_id": 310,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "118": {
+        "task_id": 312,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp5vj9i1ud/test.js:47\ntestRe_arrange(); // invoke test\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "119": {
+        "task_id": 313,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp5o3n8r0r/test.js:31\nlet testTuple = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n    ^\n\nSyntaxError: Identifier 'testTuple' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "120": {
+        "task_id": 314,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "121": {
+        "task_id": 315,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpgbywfm69/test.js:20\n        else {\n        ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "122": {
+        "task_id": 320,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "123": {
+        "task_id": 327,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "124": {
+        "task_id": 337,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpmr4pjwiw/test.js:109\ntestfind_ways();\n                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "125": {
+        "task_id": 338,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "126": {
+        "task_id": 339,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "127": {
+        "task_id": 340,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "128": {
+        "task_id": 341,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmptn148kbo/test.js:36\ntestUnique_Characters(); // invoke test\n                                       \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "129": {
+        "task_id": 344,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "130": {
+        "task_id": 353,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpcmiuhk9h/test.js:103\nconst testMinFlipToMakeStringAlternate = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "131": {
+        "task_id": 354,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "132": {
+        "task_id": 363,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "133": {
+        "task_id": 369,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "134": {
+        "task_id": 370,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmp9yaw0tz3/test.js:18\n        else {\n        ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "135": {
+        "task_id": 371,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "136": {
+        "task_id": 372,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "137": {
+        "task_id": 373,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "138": {
+        "task_id": 375,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpwwnmonvj/test.js:43\ntestswap_count() // invoke test\n                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "139": {
+        "task_id": 377,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "140": {
+        "task_id": 384,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpj9ka4pxy/test.js:22\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "141": {
+        "task_id": 386,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "142": {
+        "task_id": 391,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "143": {
+        "task_id": 396,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpovhc19b5/test.js:25\n    }else{\n     ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "144": {
+        "task_id": 397,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmpqf62oku0/test.js:106\n    console.assert(JSON.stringify(k_smallest_pairs([1,3,7],[2,4,6],2)) === JSON.stringify([[1, 2], [1, 4]]));\n                        ^\n\nReferenceError: k_smallest_pairs is not defined\n    at testK_smallest_pairs (/tmp/tmpqf62oku0/test.js:106:25)\n    at Object.<anonymous> (/tmp/tmpqf62oku0/test.js:111:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "145": {
+        "task_id": 401,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "146": {
+        "task_id": 404,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpb7r_j4vt/test.js:32\ntestMax_Product() // invoke test\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "147": {
+        "task_id": 409,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "148": {
+        "task_id": 411,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test failed at n = 2\nAssertion failed: Test failed at n = 3\nAssertion failed: Test failed at n = 1\n",
+        "completion_id": 0
+    },
+    "149": {
+        "task_id": 412,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "150": {
+        "task_id": 414,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "151": {
+        "task_id": 417,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "152": {
+        "task_id": 426,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpu0gqr_8g/test.js:33\ntestRemove_odd() // invoke test\n                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "153": {
+        "task_id": 427,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpycx8u6hw/test.js:106\nconst testCount_bidirectional = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "154": {
+        "task_id": 442,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp1l5qvk2a/test.js:41\ntestsumofFactors(); // invoke test\n                                  \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "155": {
+        "task_id": 450,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpx6_9knf4/test.js:27\nconst upper_ctr = () => {\n      ^\n\nSyntaxError: Identifier 'upper_ctr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "156": {
+        "task_id": 452,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpj9vuira6/test.js:25\n        else {\n        ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "157": {
+        "task_id": 455,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmph242rfqk/test.js:20\n    else {\n    ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "158": {
+        "task_id": 456,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "159": {
+        "task_id": 457,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpndkrktl8/test.js:56\ntestmax_product()\n                 \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "160": {
+        "task_id": 458,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpd53ba71e/test.js:33\n            } else {\n              ^^^^\n\nSyntaxError: Unexpected token 'else'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "161": {
+        "task_id": 460,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "162": {
+        "task_id": 461,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp1skgde2y/test.js:28\ntestcheck_Consecutive(); // invoke test\n                                       \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "163": {
+        "task_id": 468,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "164": {
+        "task_id": 469,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "165": {
+        "task_id": 472,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "166": {
+        "task_id": 474,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "167": {
+        "task_id": 475,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpey64m0i7/test.js:20\ntestBinomial_probability(); // invoke test\n                                          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "168": {
+        "task_id": 476,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpazn0ee_2/test.js:33\nlet tup = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]];\n    ^\n\nSyntaxError: Identifier 'tup' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "169": {
+        "task_id": 478,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpw6raxpqp/test.js:34\ntestFrequency_Of_Largest(); // invoke test\n                                          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "170": {
+        "task_id": 481,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\n",
+        "completion_id": 0
+    },
+    "171": {
+        "task_id": 482,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "172": {
+        "task_id": 487,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "173": {
+        "task_id": 490,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "174": {
+        "task_id": 493,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "175": {
+        "task_id": 495,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpvkb8jk_i/test.js:38\ntestPermutationCoefficient();\n                             \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "176": {
+        "task_id": 496,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "177": {
+        "task_id": 499,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmps1v47flo/test.js:116\ntestno_of_subsequences() // invoke test\n                                       \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    }
+}

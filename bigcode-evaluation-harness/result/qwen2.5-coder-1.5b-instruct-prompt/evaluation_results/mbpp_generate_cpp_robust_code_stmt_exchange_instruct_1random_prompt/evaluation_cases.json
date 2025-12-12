@@ -1,0 +1,240 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:43: int main(): Assertion `remove_Occ(\"hello\", 'l') == \"heo\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "1": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "2": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "3": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:35:37: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   35 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:26:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   26 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:36:30: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   36 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:26:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   26 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:37:33: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   37 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:26:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   26 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "4": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "5": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:60: int main(): Assertion `is_samepatterns({\"red\",\"green\",\"green\"}, {\"a\", \"b\", \"b\"}) == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "7": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "8": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:64: int main(): Assertion `amicable_numbers_sum(999) == 504' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "10": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:55: int main(): Assertion `check_last({5, 7, 10}, 3, 1) == \"ODD\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:62: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘void merge_sort(std::vector<int>&, int, int)’:\ntest.cpp:53:47: error: no matching function for call to ‘merge(std::vector<int>&, int&, int&)’\n   53 |         vector<int> left = merge(arr, low, mid);\n      |                                               ^\ntest.cpp:28:13: note: candidate: ‘std::vector<int> merge(std::vector<int>&, std::vector<int>&)’\n   28 | vector<int> merge(vector<int>& a, vector<int>& b) {\n      |             ^~~~~\ntest.cpp:28:13: note:   candidate expects 2 arguments, 3 provided\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter)’\n 4955 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note:   template argument deduction/substitution failed:\ntest.cpp:53:47: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   53 |         vector<int> left = merge(arr, low, mid);\n      |                                               ^\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter, class _Compare> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter, _Compare)’\n 5005 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note:   template argument deduction/substitution failed:\ntest.cpp:53:47: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   53 |         vector<int> left = merge(arr, low, mid);\n      |                                               ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator, class _Compare> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator, _Compare)’\n  412 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note:   template argument deduction/substitution failed:\ntest.cpp:53:47: note:   candidate expects 7 arguments, 3 provided\n   53 |         vector<int> left = merge(arr, low, mid);\n      |                                               ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator)’\n  417 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note:   template argument deduction/substitution failed:\ntest.cpp:53:47: note:   candidate expects 6 arguments, 3 provided\n   53 |         vector<int> left = merge(arr, low, mid);\n      |                                               ^\ntest.cpp:54:53: error: no matching function for call to ‘merge(std::vector<int>&, int, int&)’\n   54 |         vector<int> right = merge(arr, mid + 1, high);\n      |                                                     ^\ntest.cpp:28:13: note: candidate: ‘std::vector<int> merge(std::vector<int>&, std::vector<int>&)’\n   28 | vector<int> merge(vector<int>& a, vector<int>& b) {\n      |             ^~~~~\ntest.cpp:28:13: note:   candidate expects 2 arguments, 3 provided\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter)’\n 4955 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note:   template argument deduction/substitution failed:\ntest.cpp:54:53: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   54 |         vector<int> right = merge(arr, mid + 1, high);\n      |                                                     ^\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter, class _Compare> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter, _Compare)’\n 5005 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note:   template argument deduction/substitution failed:\ntest.cpp:54:53: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   54 |         vector<int> right = merge(arr, mid + 1, high);\n      |                                                     ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator, class _Compare> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator, _Compare)’\n  412 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note:   template argument deduction/substitution failed:\ntest.cpp:54:53: note:   candidate expects 7 arguments, 3 provided\n   54 |         vector<int> right = merge(arr, mid + 1, high);\n      |                                                     ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator)’\n  417 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note:   template argument deduction/substitution failed:\ntest.cpp:54:53: note:   candidate expects 6 arguments, 3 provided\n   54 |         vector<int> right = merge(arr, mid + 1, high);\n      |                                                     ^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:62:28: error: too few arguments to function ‘void merge_sort(std::vector<int>&, int, int)’\n   62 |     assert(merge_sort(test1) == vector<int>({1, 2, 3, 4, 5, 6, 7, 9}));\n      |                            ^\ntest.cpp:48:6: note: declared here\n   48 | void merge_sort(vector<int>& arr, int low, int high) {\n      |      ^~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:63:28: error: too few arguments to function ‘void merge_sort(std::vector<int>&, int, int)’\n   63 |     assert(merge_sort(test2) == vector<int>({7, 11, 19, 25, 33, 45, 78}));\n      |                            ^\ntest.cpp:48:6: note: declared here\n   48 | void merge_sort(vector<int>& arr, int low, int high) {\n      |      ^~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:64:28: error: too few arguments to function ‘void merge_sort(std::vector<int>&, int, int)’\n   64 |     assert(merge_sort(test3) == vector<int>({1, 3, 4, 8, 9}));\n      |                            ^\ntest.cpp:48:6: note: declared here\n   48 | void merge_sort(vector<int>& arr, int low, int high) {\n      |      ^~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "13": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:78:64: error: no matching function for call to ‘encode_list(std::string&)’\n   78 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:45:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   45 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:45:29: note:   template argument deduction/substitution failed:\ntest.cpp:78:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   78 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:83:64: error: no matching function for call to ‘encode_list(std::string&)’\n   83 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp:45:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   45 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:45:29: note:   template argument deduction/substitution failed:\ntest.cpp:83:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   83 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp: In instantiation of ‘std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&) [with T = double]’:\ntest.cpp:72:66:   required from here\ntest.cpp:52:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   52 |             result.push_back({count, current_value});\n      |                               ^~~~~\ntest.cpp:52:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\ntest.cpp:60:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   60 |     result.push_back({count, current_value});\n      |                       ^~~~~\ntest.cpp:60:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "14": {
+    "task_id": 148,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:49: int main(): Assertion `month_season(\"January\", 4) == \"winter\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "15": {
+    "task_id": 168,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "16": {
+    "task_id": 178,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:57: int main(): Assertion `first_Missing_Positive({1, 2, 3, -1, 5}, 5) == 4' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "17": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:46: int main(): Assertion `min_operations_to_equalize(4, 10) == 4' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "18": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function ‘int main()’:\ntest.cpp:62:60: error: too many arguments to function ‘int findMajorityElement(const std::vector<int>&)’\n   62 |     assert(findMajorityElement({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true);\n      |                                                            ^\ntest.cpp:42:5: note: declared here\n   42 | int findMajorityElement(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:63:62: error: too many arguments to function ‘int findMajorityElement(const std::vector<int>&)’\n   63 |     assert(findMajorityElement({1, 1, 2, 4, 4, 4, 6, 6}, 8, 4) == false);\n      |                                                              ^\ntest.cpp:42:5: note: declared here\n   42 | int findMajorityElement(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:64:53: error: too many arguments to function ‘int findMajorityElement(const std::vector<int>&)’\n   64 |     assert(findMajorityElement({1, 1, 1, 2, 2}, 5, 1) == true);\n      |                                                     ^\ntest.cpp:42:5: note: declared here\n   42 | int findMajorityElement(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "19": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:58: int main(): Assertion `max_sum({1, 15, 51, 45, 33, 100, 12, 18, 9}, 9) == 194' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 244,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function ‘int main()’:\ntest.cpp:69:106: error: ‘compare_vectors’ was not declared in this scope\n   69 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "22": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:66: int main(): Assertion `get_Position(arr1, 3, 2) == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:66: int main(): Assertion `max_sum_increasing_subseq({1, 101, 2, 3, 100, 4, 5}, 7, 4, 6) == 11' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "24": {
+    "task_id": 312,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:65: int main(): Assertion `re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 315,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:53: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "26": {
+    "task_id": 339,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "27": {
+    "task_id": 340,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "28": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "29": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::vector<std::vector<int> > k_smallest_pairs(std::vector<int>&, std::vector<int>&, int)’:\ntest.cpp:47:69: error: ‘comp’ was not declared in this scope\n   47 |     priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> pq(comp);\n      |                                                                     ^~~~\ntest.cpp:47:74: error: template argument 3 is invalid\n   47 |     priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> pq(comp);\n      |                                                                          ^\ntest.cpp:49:12: error: request for member ‘push’ in ‘pq’, which is of non-class type ‘int’\n   49 |         pq.push({nums1[i], 0});\n      |            ^~~~\ntest.cpp:52:16: error: request for member ‘empty’ in ‘pq’, which is of non-class type ‘int’\n   52 |     while (!pq.empty()) {\n      |                ^~~~~\ntest.cpp:53:32: error: request for member ‘top’ in ‘pq’, which is of non-class type ‘int’\n   53 |         auto [num1, num2] = pq.top();\n      |                                ^~~\ntest.cpp:54:12: error: request for member ‘pop’ in ‘pq’, which is of non-class type ‘int’\n   54 |         pq.pop();\n      |            ^~~\ntest.cpp:55:36: error: no matching function for call to ‘std::vector<std::vector<int> >::push_back(<brace-enclosed initializer list>)’\n   55 |         res.push_back({num1, nums2});\n      |                                    ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1184:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::vector<int>; _Alloc = std::allocator<std::vector<int> >; std::vector<_Tp, _Alloc>::value_type = std::vector<int>]’\n 1184 |       push_back(const value_type& __x)\n      |       ^~~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1184:35: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘const value_type&’ {aka ‘const std::vector<int>&’}\n 1184 |       push_back(const value_type& __x)\n      |                 ~~~~~~~~~~~~~~~~~~^~~\n/usr/include/c++/9/bits/stl_vector.h:1200:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::vector<int>; _Alloc = std::allocator<std::vector<int> >; std::vector<_Tp, _Alloc>::value_type = std::vector<int>]’\n 1200 |       push_back(value_type&& __x)\n      |       ^~~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1200:30: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘std::vector<std::vector<int> >::value_type&&’ {aka ‘std::vector<int>&&’}\n 1200 |       push_back(value_type&& __x)\n      |                 ~~~~~~~~~~~~~^~~\ntest.cpp:57:16: error: request for member ‘push’ in ‘pq’, which is of non-class type ‘int’\n   57 |             pq.push({num1, num2 + 1});\n      |                ^~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "30": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "31": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:61:41: error: too many arguments to function ‘int find_largest_palindrome(std::vector<int>&)’\n   61 |     assert(find_largest_palindrome(v1, 4) == 54545);\n      |                                         ^\ntest.cpp:44:5: note: declared here\n   44 | int find_largest_palindrome(vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:64:41: error: too many arguments to function ‘int find_largest_palindrome(std::vector<int>&)’\n   64 |     assert(find_largest_palindrome(v2, 6) == 5);\n      |                                         ^\ntest.cpp:44:5: note: declared here\n   44 | int find_largest_palindrome(vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:67:41: error: too many arguments to function ‘int find_largest_palindrome(std::vector<int>&)’\n   67 |     assert(find_largest_palindrome(v3, 5) == 9);\n      |                                         ^\ntest.cpp:44:5: note: declared here\n   44 | int find_largest_palindrome(vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "32": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:71: int main(): Assertion `polygons1.size() == 10' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "33": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  }
+}

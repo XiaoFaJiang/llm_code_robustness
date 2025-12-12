@@ -1,0 +1,3502 @@
+{
+  "0": {
+    "task_id": 0,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\nAssertion failed: Test 4 failed\n",
+    "completion_id": 0
+  },
+  "1": {
+    "task_id": 1,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpm813ohbw/test.js:87\ntestSortMatrix();\n                 \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "2": {
+    "task_id": 2,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "3": {
+    "task_id": 3,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "4": {
+    "task_id": 4,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "5": {
+    "task_id": 5,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpz4dwybct/test.js:50\nconst text_lowercase_underscore = () => {\n      ^\n\nSyntaxError: Identifier 'text_lowercase_underscore' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "6": {
+    "task_id": 6,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "7": {
+    "task_id": 7,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "8": {
+    "task_id": 8,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpzi9rtgfj/test.js:29\nconst test_duplicate = () => {\n      ^\n\nSyntaxError: Identifier 'test_duplicate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "9": {
+    "task_id": 9,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpm0id5zpu/test.js:3\n    console.assert(is_woodall(383) === true, \"Test case 1 failed\");\n            ^\n\nReferenceError: is_woodall is not defined\n    at testIs_woodall (/tmp/tmpm0id5zpu/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpm0id5zpu/test.js:11:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "10": {
+    "task_id": 10,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "11": {
+    "task_id": 11,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "12": {
+    "task_id": 12,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "13": {
+    "task_id": 13,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "14": {
+    "task_id": 14,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "15": {
+    "task_id": 15,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "16": {
+    "task_id": 16,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "17": {
+    "task_id": 17,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "18": {
+    "task_id": 18,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "19": {
+    "task_id": 19,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "20": {
+    "task_id": 20,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "21": {
+    "task_id": 21,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "22": {
+    "task_id": 22,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "23": {
+    "task_id": 23,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "24": {
+    "task_id": 24,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "25": {
+    "task_id": 25,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "26": {
+    "task_id": 26,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "27": {
+    "task_id": 27,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "28": {
+    "task_id": 28,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpjk428sbn/test.js:59\n    console.assert(rearange_string(\"aab\") === \"aba\", \"Test 1 Failed\");\n            ^\n\nReferenceError: rearange_string is not defined\n    at testRearange_string (/tmp/tmpjk428sbn/test.js:59:13)\n    at Object.<anonymous> (/tmp/tmpjk428sbn/test.js:64:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "29": {
+    "task_id": 29,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "30": {
+    "task_id": 30,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "31": {
+    "task_id": 31,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "32": {
+    "task_id": 32,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmph628tnt7/test.js:23\nconst text_match = () => {\n      ^\n\nSyntaxError: Identifier 'text_match' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "33": {
+    "task_id": 33,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpbso1m0tk/test.js:24\nconst text_match_string = () => {\n      ^\n\nSyntaxError: Identifier 'text_match_string' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "34": {
+    "task_id": 34,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp8xmcl0wt/test.js:11\n    let x = parseInt(readLine());\n            ^\n\nReferenceError: readLine is not defined\n    at main (/tmp/tmp8xmcl0wt/test.js:11:13)\n    at Object.<anonymous> (/tmp/tmp8xmcl0wt/test.js:16:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "35": {
+    "task_id": 35,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpti_6lhh0/test.js:3\n  console.assert(test_distinct([1,5,7,9]) === true);\n          ^\n\nReferenceError: test_distinct is not defined\n    at testTest_distinct (/tmp/tmpti_6lhh0/test.js:3:11)\n    at Object.<anonymous> (/tmp/tmpti_6lhh0/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "36": {
+    "task_id": 36,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "37": {
+    "task_id": 37,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "38": {
+    "task_id": 38,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "39": {
+    "task_id": 39,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "40": {
+    "task_id": 40,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "41": {
+    "task_id": 41,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "42": {
+    "task_id": 42,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "43": {
+    "task_id": 43,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "44": {
+    "task_id": 44,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2tmagbzk/test.js:21\nconst tn_gp = () => {\n      ^\n\nSyntaxError: Identifier 'tn_gp' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "45": {
+    "task_id": 45,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "46": {
+    "task_id": 46,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "47": {
+    "task_id": 47,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "48": {
+    "task_id": 48,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "49": {
+    "task_id": 49,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "50": {
+    "task_id": 50,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "51": {
+    "task_id": 51,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "52": {
+    "task_id": 52,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "53": {
+    "task_id": 53,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp7uxv2smj/test.js:22\nlet subjectMarks = [\n    ^\n\nSyntaxError: Identifier 'subjectMarks' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "54": {
+    "task_id": 54,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "55": {
+    "task_id": 55,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "56": {
+    "task_id": 56,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpts5zjnkq/test.js:3\n    console.assert(bell_number(2) === 2n, 'Test case 1 failed');\n            ^\n\nReferenceError: bell_number is not defined\n    at testBell_number (/tmp/tmpts5zjnkq/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpts5zjnkq/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "57": {
+    "task_id": 57,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp3qvsv49x/test.js:3\n    console.assert(is_Monotonic([6, 5, 4, 4]) === true, \"Test 1 failed\");\n            ^\n\nReferenceError: is_Monotonic is not defined\n    at testIs_Monotonic (/tmp/tmp3qvsv49x/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp3qvsv49x/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "58": {
+    "task_id": 58,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "59": {
+    "task_id": 59,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpk6lkkva5/test.js:18\nconst testGetEqual = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "60": {
+    "task_id": 60,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp5rq2uvag/test.js:3\n    console.assert(JSON.stringify(combSort([5, 15, 37, 25, 79])) === JSON.stringify([5, 15, 25, 37, 79]), 'Test failed');\n                        ^\n\nReferenceError: combSort is not defined\n    at testCombSort (/tmp/tmp5rq2uvag/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp5rq2uvag/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "61": {
+    "task_id": 61,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "62": {
+    "task_id": 62,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "63": {
+    "task_id": 63,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "64": {
+    "task_id": 64,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "65": {
+    "task_id": 65,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "66": {
+    "task_id": 66,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "67": {
+    "task_id": 67,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 failed\n",
+    "completion_id": 0
+  },
+  "68": {
+    "task_id": 68,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpyhz_u1v2/test.js:27\nconst word_len = () => {\n      ^\n\nSyntaxError: Identifier 'word_len' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "69": {
+    "task_id": 69,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpaj2xjaxd/test.js:1\n## 2. Write a function to find the nth tetrahedral number.\n^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "70": {
+    "task_id": 70,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp5bwujsp0/test.js:22\nconst zip_tuples = () => {\n      ^\n\nSyntaxError: Identifier 'zip_tuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "71": {
+    "task_id": 71,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp18gpelly/test.js:20\nconst volume_sphere = () => {\n      ^\n\nSyntaxError: Identifier 'volume_sphere' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "72": {
+    "task_id": 72,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "73": {
+    "task_id": 73,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\n",
+    "completion_id": 0
+  },
+  "74": {
+    "task_id": 74,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "75": {
+    "task_id": 75,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpo1py93bt/test.js:1\n## Solution\n^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "76": {
+    "task_id": 76,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "77": {
+    "task_id": 77,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "78": {
+    "task_id": 78,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpb_n1a41y/test.js:17\nconst testclosest_num = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "79": {
+    "task_id": 79,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "80": {
+    "task_id": 80,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "81": {
+    "task_id": 81,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 failed\n",
+    "completion_id": 0
+  },
+  "82": {
+    "task_id": 82,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "83": {
+    "task_id": 83,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "84": {
+    "task_id": 84,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "85": {
+    "task_id": 85,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "86": {
+    "task_id": 86,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "87": {
+    "task_id": 87,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "88": {
+    "task_id": 88,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "89": {
+    "task_id": 89,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "90": {
+    "task_id": 90,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "91": {
+    "task_id": 91,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "92": {
+    "task_id": 92,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "93": {
+    "task_id": 93,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "94": {
+    "task_id": 94,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "95": {
+    "task_id": 95,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "96": {
+    "task_id": 96,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0
+  },
+  "97": {
+    "task_id": 97,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpo5490yxa/test.js:3\n    console.assert(JSON.stringify(merge_sorted_list([25, 24, 15, 4, 5, 29, 110], [19, 20, 11, 56, 25, 233, 154], [24, 26, 54, 48])) === JSON.stringify([4, 5, 11, 15, 19, 20, 24, 24, 25, 25, 26, 29, 48, 54, 56, 110, 154, 233]));\n                        ^\n\nReferenceError: merge_sorted_list is not defined\n    at testMerge_sorted_list (/tmp/tmpo5490yxa/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpo5490yxa/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "98": {
+    "task_id": 98,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "99": {
+    "task_id": 99,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpikzb799s/test.js:35\nconst testExtract_missing = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "100": {
+    "task_id": 100,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp29ibj3oc/test.js:3\n    console.assert(JSON.stringify(commonInNestedLists([[12, 18, 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]]).sort()) === JSON.stringify([18, 12].sort()), 'Test 1 failed');\n                        ^\n\nReferenceError: commonInNestedLists is not defined\n    at testCommonInNestedLists (/tmp/tmp29ibj3oc/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp29ibj3oc/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "101": {
+    "task_id": 101,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "102": {
+    "task_id": 102,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "103": {
+    "task_id": 103,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpq27d55hl/test.js:77\nconst testAssign_freq = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "104": {
+    "task_id": 104,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "105": {
+    "task_id": 105,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpqrwzz7sk/test.js:23\nconst tupleToInt = () => {\n      ^\n\nSyntaxError: Identifier 'tupleToInt' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "106": {
+    "task_id": 106,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmppovfetgk/test.js:3\n    console.assert(list_to_float([[\"3\", \"4\"], [\"1\", \"26.45\"], [\"7.32\", \"8\"], [\"4\", \"8\"]]) === '[[3,4],[1,26.45],[7.32,8],[4,8]]');\n            ^\n\nReferenceError: list_to_float is not defined\n    at testListToFloat (/tmp/tmppovfetgk/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmppovfetgk/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "107": {
+    "task_id": 107,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp8gi6gl8h/test.js:3\n    console.assert(JSON.stringify(stringToList(\"python programming\")) === JSON.stringify(['python', 'programming']), \"Test 1 failed\");\n                        ^\n\nReferenceError: stringToList is not defined\n    at testStringToList (/tmp/tmp8gi6gl8h/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp8gi6gl8h/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "108": {
+    "task_id": 108,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "109": {
+    "task_id": 109,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "110": {
+    "task_id": 110,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "111": {
+    "task_id": 111,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 50 Failed\nAssertion failed: Test 1000 Failed\n",
+    "completion_id": 0
+  },
+  "112": {
+    "task_id": 112,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpc1_4an4a/test.js:3\n    console.assert(amicable_numbers_sum(999) === 504);\n            ^\n\nReferenceError: amicable_numbers_sum is not defined\n    at testAmicableNumbersSum (/tmp/tmpc1_4an4a/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpc1_4an4a/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "113": {
+    "task_id": 113,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2r_0c9c8/test.js:3\n    console.assert(angle_complex(0, 1) === 1.5707963267948966, \"Test 1 Failed\");\n            ^\n\nReferenceError: angle_complex is not defined\n    at testAngle_complex (/tmp/tmp2r_0c9c8/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp2r_0c9c8/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "114": {
+    "task_id": 114,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "115": {
+    "task_id": 115,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "116": {
+    "task_id": 116,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "117": {
+    "task_id": 117,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "118": {
+    "task_id": 118,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "119": {
+    "task_id": 119,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "120": {
+    "task_id": 120,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "121": {
+    "task_id": 121,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmppugl0hdw/test.js:19\nconst tup_string = () => {\n      ^\n\nSyntaxError: Identifier 'tup_string' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "122": {
+    "task_id": 122,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp3c2de99o/test.js:3\n  console.assert(sum_negativenum([2, 4, -6, -9, 11, -12, 14, -5, 17]) === -32);\n          ^\n\nReferenceError: sum_negativenum is not defined\n    at testSum_negativenum (/tmp/tmp3c2de99o/test.js:3:11)\n    at Object.<anonymous> (/tmp/tmp3c2de99o/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "123": {
+    "task_id": 123,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "124": {
+    "task_id": 124,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "125": {
+    "task_id": 125,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 1442.75, got 667.5\n",
+    "completion_id": 0
+  },
+  "126": {
+    "task_id": 126,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpv9mnpqfe/test.js:25\nconst zero_count = () => {\n      ^\n\nSyntaxError: Identifier 'zero_count' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "127": {
+    "task_id": 127,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "128": {
+    "task_id": 128,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp5rkt9a6j/test.js:3\n    console.assert(circle_circumference(10) === 62.830000000000005, \"Test failed for radius 10\");\n            ^\n\nReferenceError: circle_circumference is not defined\n    at testCircle_circumference (/tmp/tmp5rkt9a6j/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp5rkt9a6j/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "129": {
+    "task_id": 129,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpmjt7stpl/test.js:61\nconst testExtract_singly = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "130": {
+    "task_id": 130,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "131": {
+    "task_id": 131,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "132": {
+    "task_id": 132,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "133": {
+    "task_id": 133,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "134": {
+    "task_id": 134,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "135": {
+    "task_id": 135,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2bpbfazc/test.js:3\n    console.assert(ascii_value_string(\"python\") === 112, \"Test case 1 failed\");\n            ^\n\nReferenceError: ascii_value_string is not defined\n    at testascii_value_string (/tmp/tmp2bpbfazc/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp2bpbfazc/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "136": {
+    "task_id": 136,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "137": {
+    "task_id": 137,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpu6094zlf/test.js:53\ntestSum_digits_twoparts(); // invoke test\n                                         \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "138": {
+    "task_id": 138,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "139": {
+    "task_id": 139,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "140": {
+    "task_id": 140,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "141": {
+    "task_id": 141,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpkktq5vva/test.js:3\n    while (a.length !== 0 && b.length !== 0) {\n                               ^\n\nTypeError: Cannot read properties of undefined (reading 'length')\n    at merge (/tmp/tmpkktq5vva/test.js:3:32)\n    at testMerge_sort (/tmp/tmpkktq5vva/test.js:20:20)\n    at Object.<anonymous> (/tmp/tmpkktq5vva/test.js:24:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "142": {
+    "task_id": 142,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpn9z91565/test.js:20\n    console.assert(arraysEqual(parabola_vertex(5, 3, 2), [(-0.3).toFixed(8), (1.55).toFixed(8)]), \"Test 1 Failed\");\n                   ^\n\nReferenceError: parabola_vertex is not defined\n    at testParabola_vertex (/tmp/tmpn9z91565/test.js:20:20)\n    at Object.<anonymous> (/tmp/tmpn9z91565/test.js:25:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "143": {
+    "task_id": 143,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpvel1iyaq/test.js:3\n    console.assert(JSON.stringify(specified_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]], 0)) === JSON.stringify([1, 4, 7]), 'Test 1 failed');\n                        ^\n\nReferenceError: specified_element is not defined\n    at testSpecified_element (/tmp/tmpvel1iyaq/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpvel1iyaq/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "144": {
+    "task_id": 144,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "145": {
+    "task_id": 145,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp_fd8e378/test.js:18\n    let tupleStr = tupleStr.split(',');\n        ^\n\nSyntaxError: Identifier 'tupleStr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "146": {
+    "task_id": 146,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpig77d_i3/test.js:39\nconst testEncodeList = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "147": {
+    "task_id": 147,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "148": {
+    "task_id": 148,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "149": {
+    "task_id": 149,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0
+  },
+  "150": {
+    "task_id": 150,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "151": {
+    "task_id": 151,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "152": {
+    "task_id": 152,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "153": {
+    "task_id": 153,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmplb54q30g/test.js:3\n    console.assert(areEquivalent(36, 57) === false, \"Test 1 Failed\");\n            ^\n\nReferenceError: areEquivalent is not defined\n    at testareEquivalent (/tmp/tmplb54q30g/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmplb54q30g/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "154": {
+    "task_id": 154,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "155": {
+    "task_id": 155,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp61yfir1y/test.js:3\n    console.assert(find_even_Pair([5,4,7,2,1], 5) === 4);\n            ^\n\nReferenceError: find_even_Pair is not defined\n    at testfind_even_Pair (/tmp/tmp61yfir1y/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp61yfir1y/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "156": {
+    "task_id": 156,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "157": {
+    "task_id": 157,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "158": {
+    "task_id": 158,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "159": {
+    "task_id": 159,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "160": {
+    "task_id": 160,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpv4kqve6t/test.js:1\n## 2. Write a function to find the perimeter of a pentagon.\n^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "161": {
+    "task_id": 161,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "162": {
+    "task_id": 162,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "163": {
+    "task_id": 163,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmplv47r6dq/test.js:3\n    console.assert(JSON.stringify(group_keyvalue([['yellow', 1], ['blue', 2], ['yellow', 3], ['blue', 4], ['red', 1]])) === JSON.stringify({'yellow': [1, 3], 'blue': [2, 4], 'red': [1]}), \"Test 1 Failed\");\n                        ^\n\nReferenceError: group_keyvalue is not defined\n    at testGroup_keyvalue (/tmp/tmplv47r6dq/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmplv47r6dq/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "164": {
+    "task_id": 164,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "165": {
+    "task_id": 165,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "166": {
+    "task_id": 166,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "167": {
+    "task_id": 167,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "168": {
+    "task_id": 168,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "169": {
+    "task_id": 169,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp6uaej_ka/test.js:3\n    console.assert(distance_lat_long(23.5, 67.5, 25.5, 69.5) === 12179.372041317429, \"Test 1 Failed\");\n            ^\n\nReferenceError: distance_lat_long is not defined\n    at testDistance_lat_long (/tmp/tmp6uaej_ka/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp6uaej_ka/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "170": {
+    "task_id": 170,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "171": {
+    "task_id": 171,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "172": {
+    "task_id": 172,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "173": {
+    "task_id": 173,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "174": {
+    "task_id": 174,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "175": {
+    "task_id": 175,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "176": {
+    "task_id": 176,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "177": {
+    "task_id": 177,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "178": {
+    "task_id": 178,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "179": {
+    "task_id": 179,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "180": {
+    "task_id": 180,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "181": {
+    "task_id": 181,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "182": {
+    "task_id": 182,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpjh76ucph/test.js:3\n    console.assert(JSON.stringify(remove_tuple([1, 3, 5, 2, 3, 5, 1, 1, 3])) === JSON.stringify([1, 2, 3, 5]));\n                        ^\n\nReferenceError: remove_tuple is not defined\n    at testRemove_tuple (/tmp/tmpjh76ucph/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpjh76ucph/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "183": {
+    "task_id": 183,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2z3wkdzf/test.js:3\n    console.assert(octal_To_Decimal(25) === 21, \"Test 1 Failed\");\n            ^\n\nReferenceError: octal_To_Decimal is not defined\n    at testOctal_To_Decimal (/tmp/tmp2z3wkdzf/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp2z3wkdzf/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "184": {
+    "task_id": 184,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "185": {
+    "task_id": 185,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "186": {
+    "task_id": 186,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "187": {
+    "task_id": 187,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmps3jehv4z/test.js:3\n    console.assert(Math.abs(largest_triangle(4, 2) - 10.392304845413264)< 0.00001);\n                        ^\n\nReferenceError: largest_triangle is not defined\n    at testLargestTriangle (/tmp/tmps3jehv4z/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmps3jehv4z/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "188": {
+    "task_id": 188,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "189": {
+    "task_id": 189,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "190": {
+    "task_id": 190,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\n",
+    "completion_id": 0
+  },
+  "191": {
+    "task_id": 191,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "192": {
+    "task_id": 192,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "193": {
+    "task_id": 193,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "194": {
+    "task_id": 194,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpzojdni5i/test.js:3\n  console.assert(JSON.stringify(inversionElements([7, 8, 9, 1, 10, 7])) === JSON.stringify([-8, -9, -10, -2, -11, -8]), 'Test case 1 failed');\n                      ^\n\nReferenceError: inversionElements is not defined\n    at testInversionElements (/tmp/tmpzojdni5i/test.js:3:23)\n    at Object.<anonymous> (/tmp/tmpzojdni5i/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "195": {
+    "task_id": 195,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "196": {
+    "task_id": 196,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmphipjalun/test.js:3\n    console.assert(find_longest_repeating_subseq(\"AABEBCDD\") === 3, 'Test 1 failed');\n            ^\n\nReferenceError: find_longest_repeating_subseq is not defined\n    at testFind_longest_repeating_subseq (/tmp/tmphipjalun/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmphipjalun/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "197": {
+    "task_id": 197,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "198": {
+    "task_id": 198,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmps4mi1aaz/test.js:4\n    console.assert(JSON.stringify(heapReplace([25, 44, 68, 21, 39, 23, 89], 21)) === JSON.stringify([21, 25, 23, 44, 39, 68, 89].sort()));\n                        ^\n\nReferenceError: heapReplace is not defined\n    at testHeapReplace (/tmp/tmps4mi1aaz/test.js:4:25)\n    at Object.<anonymous> (/tmp/tmps4mi1aaz/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "199": {
+    "task_id": 199,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "200": {
+    "task_id": 200,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "201": {
+    "task_id": 201,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "202": {
+    "task_id": 202,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpyn2lh20v/test.js:3\n  console.assert(JSON.stringify(concatenateStrings([\"Manjeet\", \"Nikhil\", \"Akshat\"], [\" Singh\", \" Meherwal\", \" Garg\"])) === JSON.stringify(['Manjeet Singh', 'Nikhil Meherwal', 'Akshat Garg']));\n                      ^\n\nReferenceError: concatenateStrings is not defined\n    at testConcatenateStrings (/tmp/tmpyn2lh20v/test.js:3:23)\n    at Object.<anonymous> (/tmp/tmpyn2lh20v/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "203": {
+    "task_id": 203,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "204": {
+    "task_id": 204,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "205": {
+    "task_id": 205,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "206": {
+    "task_id": 206,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "207": {
+    "task_id": 207,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "208": {
+    "task_id": 208,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpfdoxbf7y/test.js:3\n    console.assert(JSON.stringify(extract_min_max([5, 20, 3, 7, 6, 8], 2)) === JSON.stringify([3, 5, 8, 20]), 'Test 1 failed');\n                        ^\n\nReferenceError: extract_min_max is not defined\n    at testExtract_min_max (/tmp/tmpfdoxbf7y/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpfdoxbf7y/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "209": {
+    "task_id": 209,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpwow4jlxt/test.js:3\n    console.assert(replace_max_specialchar('Python language, Programming language.', 2) === 'Python:language: Programming language.');\n            ^\n\nReferenceError: replace_max_specialchar is not defined\n    at testReplace_max_specialchar (/tmp/tmpwow4jlxt/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpwow4jlxt/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "210": {
+    "task_id": 210,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "211": {
+    "task_id": 211,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp_37c0gfc/test.js:3\n    console.assert(check_type([5, 6, 7, 3, 5, 6]) === true);\n            ^\n\nReferenceError: check_type is not defined\n    at testcheck_type (/tmp/tmp_37c0gfc/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp_37c0gfc/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "212": {
+    "task_id": 212,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "213": {
+    "task_id": 213,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "214": {
+    "task_id": 214,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "215": {
+    "task_id": 215,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "216": {
+    "task_id": 216,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "217": {
+    "task_id": 217,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "218": {
+    "task_id": 218,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "219": {
+    "task_id": 219,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "220": {
+    "task_id": 220,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "221": {
+    "task_id": 221,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "222": {
+    "task_id": 222,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp24v77pmt/test.js:3\n    console.assert(lateralsuface_cylinder(10, 5) === 314.15000000000003);\n            ^\n\nReferenceError: lateralsuface_cylinder is not defined\n    at testlateralsuface_cylinder (/tmp/tmp24v77pmt/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp24v77pmt/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "223": {
+    "task_id": 223,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmps6srxkhl/test.js:23\nconst volume_cube = () => {\n      ^\n\nSyntaxError: Identifier 'volume_cube' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "224": {
+    "task_id": 224,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "225": {
+    "task_id": 225,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\n",
+    "completion_id": 0
+  },
+  "226": {
+    "task_id": 226,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp3mx97xk9/test.js:32\n\\end{code}\n^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "227": {
+    "task_id": 227,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "228": {
+    "task_id": 228,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "229": {
+    "task_id": 229,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "230": {
+    "task_id": 230,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "231": {
+    "task_id": 231,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "232": {
+    "task_id": 232,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "233": {
+    "task_id": 233,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "234": {
+    "task_id": 234,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\n",
+    "completion_id": 0
+  },
+  "235": {
+    "task_id": 235,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 3.162277660168379 but got 3.1622777055095996\nAssertion failed: Expected 1.414213562373095 but got 1.4142135623746899\nAssertion failed: Expected 3.0 but got 3.0000000188143225\n",
+    "completion_id": 0
+  },
+  "236": {
+    "task_id": 236,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "237": {
+    "task_id": 237,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 2.5928571428571425, got 1.6153846153846154\nAssertion failed: Expected 2.083333333333333, got 1.6666666666666665\nAssertion failed: Expected 3.547739657143682, got 1.6180339631667064\n",
+    "completion_id": 0
+  },
+  "238": {
+    "task_id": 238,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "239": {
+    "task_id": 239,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "240": {
+    "task_id": 240,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "241": {
+    "task_id": 241,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "242": {
+    "task_id": 242,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "243": {
+    "task_id": 243,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp9fy10c08/test.js:3\n    console.assert(JSON.stringify(words_ae(\"python programe\")) === JSON.stringify(['ame']), \"Test 1 failed\");\n                        ^\n\nReferenceError: words_ae is not defined\n    at testWords_ae (/tmp/tmp9fy10c08/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp9fy10c08/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "244": {
+    "task_id": 244,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "245": {
+    "task_id": 245,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "246": {
+    "task_id": 246,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "247": {
+    "task_id": 247,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "248": {
+    "task_id": 248,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp89szo9lm/test.js:3\n    console.assert(JSON.stringify(maximize_elements([[1, 3], [4, 5], [2, 9], [1, 10]], [[6, 7], [3, 9], [1, 1], [7, 3]])) === JSON.stringify([[6, 7], [4, 9], [2, 9], [7, 10]]), 'Test 1 failed');\n                        ^\n\nReferenceError: maximize_elements is not defined\n    at testMaximize_elements (/tmp/tmp89szo9lm/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp89szo9lm/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "249": {
+    "task_id": 249,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "250": {
+    "task_id": 250,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "251": {
+    "task_id": 251,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpbxk4lau4/test.js:3\n    console.assert(JSON.stringify(split_two_parts([1, 1, 2, 3, 4, 4, 5, 1], 3)) === JSON.stringify([[1, 1, 2], [3, 4, 4, 5, 1]]), 'Test 1 failed');\n                        ^\n\nReferenceError: split_two_parts is not defined\n    at testSplit_two_parts (/tmp/tmpbxk4lau4/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpbxk4lau4/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "252": {
+    "task_id": 252,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "253": {
+    "task_id": 253,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpnwkrxiij/test.js:3\n    console.assert(dog_age(12) === 61, 'Test 1 failed');\n            ^\n\nReferenceError: dog_age is not defined\n    at testDog_age (/tmp/tmpnwkrxiij/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpnwkrxiij/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "254": {
+    "task_id": 254,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "255": {
+    "task_id": 255,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "256": {
+    "task_id": 256,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "257": {
+    "task_id": 257,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "258": {
+    "task_id": 258,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "259": {
+    "task_id": 259,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "260": {
+    "task_id": 260,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "261": {
+    "task_id": 261,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "262": {
+    "task_id": 262,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpaskpjt83/test.js:3\n    console.assert(JSON.stringify(subtractElements([10, 4, 5], [2, 5, 18])) === JSON.stringify([8, -1, -13]), \"Test 1 Failed\");\n                        ^\n\nReferenceError: subtractElements is not defined\n    at testSubtractElements (/tmp/tmpaskpjt83/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpaskpjt83/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "263": {
+    "task_id": 263,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "264": {
+    "task_id": 264,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "265": {
+    "task_id": 265,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp5ei4tkkg/test.js:20\nconst volume_cylinder = () => {\n      ^\n\nSyntaxError: Identifier 'volume_cylinder' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "266": {
+    "task_id": 266,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "267": {
+    "task_id": 267,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpxe25m15r/test.js:21\n    return count;\n    ^\n\nReferenceError: count is not defined\n    at countFirstElements (/tmp/tmpxe25m15r/test.js:21:5)\n    at testCountFirstElements (/tmp/tmpxe25m15r/test.js:24:20)\n    at Object.<anonymous> (/tmp/tmpxe25m15r/test.js:29:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "268": {
+    "task_id": 268,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp11k_t_xq/test.js:3\n    console.assert(is_num_decagonal(3) === 27);\n            ^\n\nReferenceError: is_num_decagonal is not defined\n    at testis_num_decagonal (/tmp/tmp11k_t_xq/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp11k_t_xq/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "269": {
+    "task_id": 269,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp0jcxq5v9/test.js:3\n    console.assert(JSON.stringify(sequential_search([11,23,58,31,56,77,43,12,65,19], 31)) === JSON.stringify([true, 3]), \"Test 1 failed\");\n                        ^\n\nReferenceError: sequential_search is not defined\n    at testSequential_search (/tmp/tmp0jcxq5v9/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp0jcxq5v9/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "270": {
+    "task_id": 270,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpxwd4gmpu/test.js:3\n    console.assert(all_unique([1, 2, 3]) === true, 'Test failed');\n            ^\n\nReferenceError: all_unique is not defined\n    at testAll_unique (/tmp/tmpxwd4gmpu/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpxwd4gmpu/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "271": {
+    "task_id": 271,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "272": {
+    "task_id": 272,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpm40t1kus/test.js:31\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "273": {
+    "task_id": 273,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "274": {
+    "task_id": 274,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpdkqh3vad/test.js:23\nconst text_match_two_three = () => {\n      ^\n\nSyntaxError: Identifier 'text_match_two_three' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "275": {
+    "task_id": 275,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "276": {
+    "task_id": 276,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "277": {
+    "task_id": 277,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "278": {
+    "task_id": 278,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "279": {
+    "task_id": 279,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpi2s8i5_d/test.js:71\nconst testMaxLength = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "280": {
+    "task_id": 280,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "281": {
+    "task_id": 281,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "282": {
+    "task_id": 282,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "283": {
+    "task_id": 283,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "284": {
+    "task_id": 284,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "285": {
+    "task_id": 285,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "286": {
+    "task_id": 286,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp4prt57x5/test.js:3\n    console.assert(JSON.stringify(flattenList([0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]])) === JSON.stringify([0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]), 'Test 1 Failed');\n                        ^\n\nReferenceError: flattenList is not defined\n    at testFlattenList (/tmp/tmp4prt57x5/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp4prt57x5/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "287": {
+    "task_id": 287,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "288": {
+    "task_id": 288,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmplmgt_6e4/test.js:96\n    ['\n     ^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "289": {
+    "task_id": 289,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "290": {
+    "task_id": 290,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpmqx5iln4/test.js:45\nconst testDictDepth = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "291": {
+    "task_id": 291,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test Failed for input 6\nAssertion failed: Test Failed for input 10\nAssertion failed: Test Failed for input 18\n",
+    "completion_id": 0
+  },
+  "292": {
+    "task_id": 292,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0
+  },
+  "293": {
+    "task_id": 293,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp28socce4/test.js:3\n    console.assert(find_Element([1, 2, 3, 4, 5], [[0, 2], [0, 3]], 2, 1) === 3, \"Test 1 failed\");\n            ^\n\nReferenceError: find_Element is not defined\n    at testFind_Element (/tmp/tmp28socce4/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp28socce4/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "294": {
+    "task_id": 294,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpimn_o2ij/test.js:28\nconst teststart_withp = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "295": {
+    "task_id": 295,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "296": {
+    "task_id": 296,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp724scb57/test.js:3\n    console.assert(JSON.stringify(colonTuplex([\"HELLO\", 5, [], true], 2, 50)) === JSON.stringify([\"HELLO\", 5, [50], true]));\n                        ^\n\nReferenceError: colonTuplex is not defined\n    at testColonTuplex (/tmp/tmp724scb57/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp724scb57/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "297": {
+    "task_id": 297,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmptikj08uu/test.js:3\n    console.assert(JSON.stringify(large_product([1, 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],3)) === JSON.stringify([60, 54, 50]), 'Test 1 Failed');\n                        ^\n\nReferenceError: large_product is not defined\n    at testlarge_product (/tmp/tmptikj08uu/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmptikj08uu/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "298": {
+    "task_id": 298,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "299": {
+    "task_id": 299,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpqo9d1hun/test.js:3\n    console.assert(JSON.stringify(stringToTuple(\"python 3.0\")) === JSON.stringify(['p', 'y', 't', 'h', 'o', 'n', '3', '.', '0']), \"Test 1 Failed\");\n                        ^\n\nReferenceError: stringToTuple is not defined\n    at testStringToTuple (/tmp/tmpqo9d1hun/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpqo9d1hun/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "300": {
+    "task_id": 300,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "301": {
+    "task_id": 301,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpwqzz1hdc/test.js:22\nconst volumeCone = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCone' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "302": {
+    "task_id": 302,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "303": {
+    "task_id": 303,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "304": {
+    "task_id": 304,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "305": {
+    "task_id": 305,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmph7rt7n7o/test.js:3\n    console.assert(find_last_occurrence([2, 5, 5, 5, 6, 6, 8, 9, 9, 9], 5) === 3, \"Test 1 Failed\");\n            ^\n\nReferenceError: find_last_occurrence is not defined\n    at testFind_last_occurrence (/tmp/tmph7rt7n7o/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmph7rt7n7o/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "306": {
+    "task_id": 306,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "307": {
+    "task_id": 307,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "308": {
+    "task_id": 308,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "309": {
+    "task_id": 309,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "310": {
+    "task_id": 310,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "311": {
+    "task_id": 311,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "312": {
+    "task_id": 312,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "313": {
+    "task_id": 313,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "314": {
+    "task_id": 314,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "315": {
+    "task_id": 315,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmprk4rfxcm/test.js:30\n  const testList = [\"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"hello world\", \"\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "316": {
+    "task_id": 316,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "317": {
+    "task_id": 317,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "318": {
+    "task_id": 318,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "319": {
+    "task_id": 319,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "320": {
+    "task_id": 320,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "321": {
+    "task_id": 321,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "322": {
+    "task_id": 322,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpaw7fm12b/test.js:23\nconst testSort = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "323": {
+    "task_id": 323,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpwt04rf4m/test.js:3\n    console.assert(check_Validity(1, 2, 3) === false);\n            ^\n\nReferenceError: check_Validity is not defined\n    at testCheck_Validity (/tmp/tmpwt04rf4m/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpwt04rf4m/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "324": {
+    "task_id": 324,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "325": {
+    "task_id": 325,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "326": {
+    "task_id": 326,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmppwrtxrcn/test.js:24\nconst text_match_word = () => {\n      ^\n\nSyntaxError: Identifier 'text_match_word' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "327": {
+    "task_id": 327,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "328": {
+    "task_id": 328,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "329": {
+    "task_id": 329,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "330": {
+    "task_id": 330,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "331": {
+    "task_id": 331,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "332": {
+    "task_id": 332,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpwbxazaoq/test.js:3\n    console.assert(JSON.stringify(dig_let(\"python\")) === JSON.stringify([6,0]), \"Test 1 Failed\");\n                        ^\n\nReferenceError: dig_let is not defined\n    at testdig_let (/tmp/tmpwbxazaoq/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpwbxazaoq/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "333": {
+    "task_id": 333,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "334": {
+    "task_id": 334,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "335": {
+    "task_id": 335,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2x3hfmo1/test.js:98\ntestZigzag(); // invoke test\n                            \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "336": {
+    "task_id": 336,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "337": {
+    "task_id": 337,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "338": {
+    "task_id": 338,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "339": {
+    "task_id": 339,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "340": {
+    "task_id": 340,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "341": {
+    "task_id": 341,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpcoxyjxbp/test.js:25\nconst unique_Characters = () => {\n      ^\n\nSyntaxError: Identifier 'unique_Characters' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "342": {
+    "task_id": 342,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "343": {
+    "task_id": 343,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpbtwl1v2m/test.js:3\n    console.assert(tn_ap(1, 5, 2) === 9);\n            ^\n\nReferenceError: tn_ap is not defined\n    at testtn_ap (/tmp/tmpbtwl1v2m/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpbtwl1v2m/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "344": {
+    "task_id": 344,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "345": {
+    "task_id": 345,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "346": {
+    "task_id": 346,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "347": {
+    "task_id": 347,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "348": {
+    "task_id": 348,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "349": {
+    "task_id": 349,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "350": {
+    "task_id": 350,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "351": {
+    "task_id": 351,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "352": {
+    "task_id": 352,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "353": {
+    "task_id": 353,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "354": {
+    "task_id": 354,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "355": {
+    "task_id": 355,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmplx97mcep/test.js:3\n    console.assert(adjacentNumProduct([1, 2, 3, 4, 5, 6]) === 30);\n            ^\n\nReferenceError: adjacentNumProduct is not defined\n    at testAdjacentNumProduct (/tmp/tmplx97mcep/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmplx97mcep/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "356": {
+    "task_id": 356,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpjzg0qplb/test.js:3\n    let root = new Node(1);\n               ^\n\nReferenceError: Node is not defined\n    at testis_tree_balanced (/tmp/tmpjzg0qplb/test.js:3:16)\n    at Object.<anonymous> (/tmp/tmpjzg0qplb/test.js:30:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "357": {
+    "task_id": 357,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "358": {
+    "task_id": 358,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "359": {
+    "task_id": 359,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "360": {
+    "task_id": 360,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpqml4du2f/test.js:30\nconst testSmallest_missing = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "361": {
+    "task_id": 361,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpb_7ub3d8/test.js:3\n    console.assert(JSON.stringify(heap_assending([18, 14, 10, 9, 8, 7, 9, 3, 2, 4, 1])) === JSON.stringify([1, 2, 3, 4, 7, 8, 9, 9, 10, 14, 18]), \"Test 1 failed\");\n                        ^\n\nReferenceError: heap_assending is not defined\n    at testheap_assending (/tmp/tmpb_7ub3d8/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpb_7ub3d8/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "362": {
+    "task_id": 362,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp9rx7xohm/test.js:20\nconst volume_cuboid = () => {\n      ^\n\nSyntaxError: Identifier 'volume_cuboid' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "363": {
+    "task_id": 363,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "364": {
+    "task_id": 364,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "365": {
+    "task_id": 365,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "366": {
+    "task_id": 366,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "367": {
+    "task_id": 367,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "368": {
+    "task_id": 368,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "369": {
+    "task_id": 369,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp23qczi9j/test.js:3\n  console.assert(JSON.stringify(multi_list(3,4)) === JSON.stringify([[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]]), 'Test 1 failed');\n                      ^\n\nReferenceError: multi_list is not defined\n    at testMulti_list (/tmp/tmp23qczi9j/test.js:3:23)\n    at Object.<anonymous> (/tmp/tmp23qczi9j/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "370": {
+    "task_id": 370,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpzdesnwo8/test.js:3\n    console.assert(JSON.stringify(indexOnInnerList([['Greyson Fulton', 98, 99], ['Brady Kent', 97, 96], ['Wyatt Knott', 91, 94], ['Beau Turnbull', 94, 98]], 0)) === JSON.stringify([['Beau Turnbull', 94, 98], ['Brady Kent', 97, 96], ['Greyson Fulton', 98, 99], ['Wyatt Knott', 91, 94]]));\n                        ^\n\nReferenceError: indexOnInnerList is not defined\n    at testIndexOnInnerList (/tmp/tmpzdesnwo8/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpzdesnwo8/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "371": {
+    "task_id": 371,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "372": {
+    "task_id": 372,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "373": {
+    "task_id": 373,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "374": {
+    "task_id": 374,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "375": {
+    "task_id": 375,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "376": {
+    "task_id": 376,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpj1287o0w/test.js:3\n    console.assert(even_or_odd(\"AB3454D\") == \"Odd\", \"Test 1 Failed\");\n            ^\n\nReferenceError: even_or_odd is not defined\n    at testEven_or_odd (/tmp/tmpj1287o0w/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpj1287o0w/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "377": {
+    "task_id": 377,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "378": {
+    "task_id": 378,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test failed for n = 9\nAssertion failed: Test failed for n = 4\nAssertion failed: Test failed for n = 3\n",
+    "completion_id": 0
+  },
+  "379": {
+    "task_id": 379,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpw49b3rll/test.js:3\n    console.assert(JSON.stringify(add_string([1,2,3,4], 'temp{0}')) === JSON.stringify(['temp1', 'temp2', 'temp3', 'temp4']));\n                        ^\n\nReferenceError: add_string is not defined\n    at testadd_string (/tmp/tmpw49b3rll/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpw49b3rll/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "380": {
+    "task_id": 380,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "381": {
+    "task_id": 381,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmplvg5f8ej/test.js:3\n    console.assert(get_max_sum(60) === 106, \"Test case 1 failed\");\n            ^\n\nReferenceError: get_max_sum is not defined\n    at testGet_max_sum (/tmp/tmplvg5f8ej/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmplvg5f8ej/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "382": {
+    "task_id": 382,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpdbh63_05/test.js:3\n    console.assert(JSON.stringify(max_length_list([[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]])) === JSON.stringify([3, [13, 15, 17]]), \"Test 1 Failed\");\n                        ^\n\nReferenceError: max_length_list is not defined\n    at testMaxLengthList (/tmp/tmpdbh63_05/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpdbh63_05/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "383": {
+    "task_id": 383,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "384": {
+    "task_id": 384,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "385": {
+    "task_id": 385,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "386": {
+    "task_id": 386,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "387": {
+    "task_id": 387,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpc71xw8jx/test.js:3\n    console.assert(sum_of_digits([10, 2, 56]) === 14, 'Test 1 failed');\n            ^\n\nReferenceError: sum_of_digits is not defined\n    at testSum_of_digits (/tmp/tmpc71xw8jx/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpc71xw8jx/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "388": {
+    "task_id": 388,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpggror3gw/test.js:3\n    console.assert(JSON.stringify(bitwise_xor([10, 4, 6, 9], [5, 2, 3, 3])) === JSON.stringify([15, 6, 5, 10]), 'Test 1 Failed');\n                        ^\n\nReferenceError: bitwise_xor is not defined\n    at testbitwise_xor (/tmp/tmpggror3gw/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpggror3gw/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "389": {
+    "task_id": 389,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "390": {
+    "task_id": 390,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp0qhypocj/test.js:3\n    console.assert(JSON.stringify(add_nested_tuples([[1, 3], [4, 5], [2, 9], [1, 10]], [[6, 7], [3, 9], [1, 1], [7, 3]])) === JSON.stringify([[7, 10], [7, 14], [3, 10], [8, 13]]));\n                        ^\n\nReferenceError: add_nested_tuples is not defined\n    at testAdd_nested_tuples (/tmp/tmp0qhypocj/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp0qhypocj/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "391": {
+    "task_id": 391,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpg30xgqtc/test.js:3\n    console.assert(ncr_modp(10, 2, 13) === 6, \"Test 1 failed\");\n            ^\n\nReferenceError: ncr_modp is not defined\n    at testncr_modp (/tmp/tmpg30xgqtc/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpg30xgqtc/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "392": {
+    "task_id": 392,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "393": {
+    "task_id": 393,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "394": {
+    "task_id": 394,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "395": {
+    "task_id": 395,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "396": {
+    "task_id": 396,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpe8c274o7/test.js:3\n    console.assert(rearrange_bigger(12) === 21, 'Test 1 Failed');\n            ^\n\nReferenceError: rearrange_bigger is not defined\n    at testRearrange_bigger (/tmp/tmpe8c274o7/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpe8c274o7/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "397": {
+    "task_id": 397,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpr_0sk7ax/test.js:124\n    console.assert(JSON.stringify(k_smallest_pairs([1,3,7],[2,4,6],2)) === JSON.stringify([[1, 2], [1, 4]]));\n                        ^\n\nReferenceError: k_smallest_pairs is not defined\n    at testK_smallest_pairs (/tmp/tmpr_0sk7ax/test.js:124:25)\n    at Object.<anonymous> (/tmp/tmpr_0sk7ax/test.js:129:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "398": {
+    "task_id": 398,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "399": {
+    "task_id": 399,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "400": {
+    "task_id": 400,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "401": {
+    "task_id": 401,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "402": {
+    "task_id": 402,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpvh_xt4o9/test.js:3\n    console.assert(JSON.stringify(extract_nth_element([['Greyson Fulton', 98, 99], ['Brady Kent', 97, 96], ['Wyatt Knott', 91, 94], ['Beau Turnbull', 94, 98]], 0)) === JSON.stringify(['Greyson Fulton', 'Brady Kent', 'Wyatt Knott', 'Beau Turnbull']), 'Test 1 failed');\n                        ^\n\nReferenceError: extract_nth_element is not defined\n    at testExtract_nth_element (/tmp/tmpvh_xt4o9/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpvh_xt4o9/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "403": {
+    "task_id": 403,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0
+  },
+  "404": {
+    "task_id": 404,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "405": {
+    "task_id": 405,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Expected breakSum(12) to be 13\nAssertion failed: Expected breakSum(24) to be 27\nAssertion failed: Expected breakSum(23) to be 23\n",
+    "completion_id": 0
+  },
+  "406": {
+    "task_id": 406,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "407": {
+    "task_id": 407,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "408": {
+    "task_id": 408,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "409": {
+    "task_id": 409,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "410": {
+    "task_id": 410,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpntseuxtm/test.js:3\n    console.assert(concatenate_tuple([\"ID\", \"is\", 4, \"UTS\"]) === 'ID-is-4-UTS', \"Test 1 Failed\");\n            ^\n\nReferenceError: concatenate_tuple is not defined\n    at testConcatenate_tuple (/tmp/tmpntseuxtm/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpntseuxtm/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "411": {
+    "task_id": 411,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "412": {
+    "task_id": 412,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpbx8uitdt/test.js:3\n    console.assert(get_maxgold([[1, 3, 1, 5],[2, 2, 4, 1],[5, 0, 2, 3],[0, 6, 1, 2]], 4, 4) === 16, \"Test 1 Failed\");\n            ^\n\nReferenceError: get_maxgold is not defined\n    at testGet_maxgold (/tmp/tmpbx8uitdt/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpbx8uitdt/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "413": {
+    "task_id": 413,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp6g9g458k/test.js:3\n    console.assert(JSON.stringify(extract_rear(['Mers', 'for', 'Vers'])) === JSON.stringify(['s', 'r', 's']), \"Test 1 failed\");\n                        ^\n\nReferenceError: extract_rear is not defined\n    at testExtract_rear (/tmp/tmp6g9g458k/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp6g9g458k/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "414": {
+    "task_id": 414,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "415": {
+    "task_id": 415,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpe80s7uxw/test.js:3\n    console.assert(JSON.stringify(filter_oddnumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) === JSON.stringify([1, 3, 5, 7, 9]), \"Test 1 Failed\");\n                        ^\n\nReferenceError: filter_oddnumbers is not defined\n    at testfilter_oddnumbers (/tmp/tmpe80s7uxw/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpe80s7uxw/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "416": {
+    "task_id": 416,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "417": {
+    "task_id": 417,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "418": {
+    "task_id": 418,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "419": {
+    "task_id": 419,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpa0cko5xw/test.js:3\n  console.assert(parabola_directrix(5, 3, 2) === -198);\n          ^\n\nReferenceError: parabola_directrix is not defined\n    at testParabola_directrix (/tmp/tmpa0cko5xw/test.js:3:11)\n    at Object.<anonymous> (/tmp/tmpa0cko5xw/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "420": {
+    "task_id": 420,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0
+  },
+  "421": {
+    "task_id": 421,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp2fcx8nul/test.js:3\n    console.assert(median_trapezium(15, 25, 35) === 20, \"Test 1 Failed\");\n            ^\n\nReferenceError: median_trapezium is not defined\n    at testMedianTrapezium (/tmp/tmp2fcx8nul/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp2fcx8nul/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "422": {
+    "task_id": 422,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0
+  },
+  "423": {
+    "task_id": 423,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp48n37ibe/test.js:24\nconst text_match_one = () => {\n      ^\n\nSyntaxError: Identifier 'text_match_one' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "424": {
+    "task_id": 424,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "425": {
+    "task_id": 425,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmppj00bb7x/test.js:3\n    console.assert(JSON.stringify(neg_nos([-1,4,5,-6])) === JSON.stringify([-1, -6]), \"Test 1 Failed\");\n                        ^\n\nReferenceError: neg_nos is not defined\n    at testNeg_nos (/tmp/tmppj00bb7x/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmppj00bb7x/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "426": {
+    "task_id": 426,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "427": {
+    "task_id": 427,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "428": {
+    "task_id": 428,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "429": {
+    "task_id": 429,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "430": {
+    "task_id": 430,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "431": {
+    "task_id": 431,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "432": {
+    "task_id": 432,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "433": {
+    "task_id": 433,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmppy3nssot/test.js:31\nconst trim_tuple = () => {\n      ^\n\nSyntaxError: Identifier 'trim_tuple' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "434": {
+    "task_id": 434,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "435": {
+    "task_id": 435,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "436": {
+    "task_id": 436,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpdepefqv5/test.js:3\n    console.assert(JSON.stringify(cube_nums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) === JSON.stringify([1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]), \"Test 1 failed\");\n                        ^\n\nReferenceError: cube_nums is not defined\n    at testCube_nums (/tmp/tmpdepefqv5/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpdepefqv5/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "437": {
+    "task_id": 437,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "438": {
+    "task_id": 438,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "439": {
+    "task_id": 439,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "440": {
+    "task_id": 440,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "441": {
+    "task_id": 441,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpqhfqkqm6/test.js:3\n    console.assert(loss_amount(1500, 1200) === null, \"Test 1 Failed\");\n            ^\n\nReferenceError: loss_amount is not defined\n    at testLoss_amount (/tmp/tmpqhfqkqm6/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpqhfqkqm6/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "442": {
+    "task_id": 442,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test failed for n = 18\nAssertion failed: Test failed for n = 30\nAssertion failed: Test failed for n = 6\n",
+    "completion_id": 0
+  },
+  "443": {
+    "task_id": 443,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp8e9zrtu9/test.js:26\nconst text_match_wordz = () => {\n      ^\n\nSyntaxError: Identifier 'text_match_wordz' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "444": {
+    "task_id": 444,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 2 failed\n",
+    "completion_id": 0
+  },
+  "445": {
+    "task_id": 445,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "446": {
+    "task_id": 446,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "447": {
+    "task_id": 447,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "448": {
+    "task_id": 448,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "449": {
+    "task_id": 449,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "450": {
+    "task_id": 450,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpkdxgqd9b/test.js:24\nconst upper_ctr = () => {\n      ^\n\nSyntaxError: Identifier 'upper_ctr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "451": {
+    "task_id": 451,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "452": {
+    "task_id": 452,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "453": {
+    "task_id": 453,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpli4xhy4g/test.js:53\nconst testCheckValue = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "454": {
+    "task_id": 454,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "455": {
+    "task_id": 455,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "456": {
+    "task_id": 456,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "457": {
+    "task_id": 457,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "458": {
+    "task_id": 458,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "459": {
+    "task_id": 459,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "460": {
+    "task_id": 460,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "461": {
+    "task_id": 461,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "462": {
+    "task_id": 462,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpeo6lcmm3/test.js:3\n    console.assert(JSON.stringify([...tuple_intersection([[3, 4], [5, 6], [9, 10], [4, 5]], [[5, 4], [3, 4], [6, 5], [9, 11]])].sort()) === JSON.stringify([[4, 5], [3, 4], [5, 6]].sort()));\n                        ^\n\nReferenceError: tuple_intersection is not defined\n    at testTuple_intersection (/tmp/tmpeo6lcmm3/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpeo6lcmm3/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "463": {
+    "task_id": 463,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "464": {
+    "task_id": 464,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "465": {
+    "task_id": 465,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "466": {
+    "task_id": 466,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "467": {
+    "task_id": 467,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "468": {
+    "task_id": 468,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "469": {
+    "task_id": 469,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "470": {
+    "task_id": 470,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "471": {
+    "task_id": 471,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "472": {
+    "task_id": 472,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test Case 3 Failed\n",
+    "completion_id": 0
+  },
+  "473": {
+    "task_id": 473,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpvhw_ccrk/test.js:35\nconst testRemove_matching_tuple = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "474": {
+    "task_id": 474,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "475": {
+    "task_id": 475,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "476": {
+    "task_id": 476,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp7hs4ia5t/test.js:32\nconst testSort_tuple = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "477": {
+    "task_id": 477,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "478": {
+    "task_id": 478,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "479": {
+    "task_id": 479,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp5_4v2gmc/test.js:93\nconst testExtract_symmetric = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "480": {
+    "task_id": 480,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp_ad54n6s/test.js:3\n    console.assert(sum_gp(1, 5, 2) === 31);\n            ^\n\nReferenceError: sum_gp is not defined\n    at testsum_gp (/tmp/tmp_ad54n6s/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp_ad54n6s/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "481": {
+    "task_id": 481,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "482": {
+    "task_id": 482,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0
+  },
+  "483": {
+    "task_id": 483,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmpo2q0pbhd/test.js:23\nconst testBinary_to_integer = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "484": {
+    "task_id": 484,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "485": {
+    "task_id": 485,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "486": {
+    "task_id": 486,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "487": {
+    "task_id": 487,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "488": {
+    "task_id": 488,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "489": {
+    "task_id": 489,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0
+  },
+  "490": {
+    "task_id": 490,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 failed\n",
+    "completion_id": 0
+  },
+  "491": {
+    "task_id": 491,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "492": {
+    "task_id": 492,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: /tmp/tmp__4pdg3t/test.js:3\n    console.assert(JSON.stringify(add_consecutive_nums([1, 1, 3, 4, 4, 5, 6, 7])) === JSON.stringify([2, 4, 7, 8, 9, 11, 13]), \"Test 1 failed\");\n                        ^\n\nReferenceError: add_consecutive_nums is not defined\n    at testAdd_consecutive_nums (/tmp/tmp__4pdg3t/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp__4pdg3t/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0
+  },
+  "493": {
+    "task_id": 493,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "494": {
+    "task_id": 494,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "495": {
+    "task_id": 495,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "496": {
+    "task_id": 496,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "497": {
+    "task_id": 497,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0
+  },
+  "498": {
+    "task_id": 498,
+    "perturbation_type": "no_change",
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0
+  },
+  "499": {
+    "task_id": 499,
+    "perturbation_type": "no_change",
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "humaneval_zero_shot-generation-generation:model=test_deepseek",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "humaneval_zero_shot",
+      "subset": null
+    }
+  },
+  "adapter_spec": {
+    "model": "test/deepseek"
+  },
+  "groups": [
+    "humaneval_zero_shot"
+  ]
+}

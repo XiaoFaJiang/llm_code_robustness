@@ -1,0 +1,670 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 109,
+    "generations": [
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef remove_Occ(s,ch): \n    for i in range(len(s)): \n        if (ch == s[i]): \n            s = s[0 : i] + s[1 + i:] \n            break\n    return s"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef square_perimeter(a):\n    perimeter=a * 4\n    return perimeter"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef str_to_list(string):\n    temp = []\n    for x in string:\n        temp.append(x)\n    return temp\ndef lst_to_string(List):\n    return ''.join(List)\ndef get_char_count_array(string):\n    count = [0] * NO_OF_CHARS\n    for i in string:\n        count[ord(i)] += 1\n    return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_woodall(x):\n    if (0 == x % 2):\n        return False\n    if (1 == x):\n        return True\n    x = 1 + x\n    p = 0\n    while (x > 0):\n        p += x % 10\n        x = x // 10\n    return p % 2 == 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef multiples_of_num(m,n):\n  multiples_of_num= list(range(n,(1 + m)*n, n)) \n  return (multiples_of_num)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef binary_to_decimal(binary) :\n    binary1 = binary \n    decimal, i, n = 0, 0, 0\n    while(0 != binary) : \n        dec = binary % 10\n        decimal = decimal + dec * pow(2, n)\n        binary = binary // 10\n        n = n + 1\n    return decimal"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_k_elements(test_list, K):\n  res = 1\n  for tup in test_list:\n    for ele in tup:\n      res = res * (ele + 1)\n  return res == K"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_Odd_Occurrence(arr,arr_size):\n    for i in range(0,arr_size): \n        count = 0\n        for j in range(0,arr_size): \n            if arr[j] == arr[i]: \n                count += 1\n        if count % 2 != 0: \n            return arr[i]\n    return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_Equality(s):\n    return (ord(s[len(s) - 1]) == ord(s[0])); \ndef count_Substring_With_Equal_Ends(s): \n    result = 0; \n    n = len(s); \n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef func(nums, k):\n    import collections\n    d = collections.defaultdict(long)\n    for row in nums:\n        for i in row:\n            d[i] += 1\n    temp = []\n    import heapq\n    for key, v in d.items():\n        if len(temp) < k:\n            heapq.heappush(temp, (-v, key))\n            #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_Prime_Factors (n): \n    maxPrime = -1 \n    while 0 == n%2: \n        maxPrime = 2\n        n >>= 1    \n    for i in range(3,1 + int(math.sqrt(n)),2): \n        if n%i == 0: \n            maxPrime = i \n            n = n//i \n    return maxPrime"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef decimal_To_Binary(N):\n    B_Number = 0\n    cnt = 0\n    while (0 != N):\n        rem = N % 2\n        B_Number = B_Number + rem * (10 ** cnt)\n        N = N // 2\n        cnt += 1\n    return B_Number"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_missing(ar,N):\n    l = 0\n    r = N - 1\n    while (l <= r):  \n        mid = (l + r) / 2\n        mid= long (mid) \n        if (ar[mid] != mid + 1 and ar[mid - 1] == mid): \n            return mid + 1\n        elif (ar[mid] == mid + 1): \n            l = mid + 1\n        else: \n            r = mid - 1\n    return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Nth_Digit(p,q,N):\n    while (N > 0) : \n        N = N - (1);  \n        p = p * (10);  \n    return(p % q)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sort_mixed_list(mixed_list):\n  int_part = sorted([i for i in mixed_list if type(i) is long])\n  return int_part"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef div_even_odd(list1):\n  first_even = next((el for el in list1 if 0 == el%2),-1)\n  return (first_even, first_even+1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport heapq\nfrom collections import Counter\ndef rearange_string(S):\n\n    '''\n    progame language:python\n    description:Write a function to check if the letters of a given string can be rearranged so that two characters that are adjacent to each other are different.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    ctr = Counter(S)\n    heap = [(-value, key) for key, value in ctr.items()]\n    heapq.heapify(heap)\n    if 2 * (-heap[0][0]) > 1 + len(S): \n        return \"\"\n    ans = []\n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef filter_evennumbers(nums):\n    even_nums = list(filter(lambda x: 0 == x%2, nums))\n    return even_nums"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef test_distinct(data):\n    if len(data) == len(set(data)):\n        return 1\n    else:\n        return 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef compute_Last_Digit(A,B):\n    variable = 1\n    if (B == A): \n        return 1\n    elif ((B - A) >= 5):  \n        variable = 1\n    else:\n        variable = A\n    return variable"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef odd_bit_set_number(n):\n  count = 0;res = 0;temp = n\n  while temp > 0:\n    if 0 == count % 2:\n      res |= 1 << count\n    count += 1\n    temp >>= 1\n  return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_equilateral(x,y,z):\n  if x == y == z:\n   return 1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_Equality(str):\n  if (str[-1] == str[0]):\n    return (\"Equal\")\n  else:\n    return (\"Not Equal\")"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef counting_sort(my_list): \n    max_value = 0\n    for i in range(len(my_list)):\n        if my_list[i] > max_value:\n            max_value = my_list[i]\n    buckets = (1 + max_value) * [0]\n    for i in my_list:\n        buckets[i] += 1\n    for i in range(1, len(buckets)):\n        buckets[i] += buckets[i - 1]\n    sorted_list = [0] * len(my_list)\n    for i in range(len(my_list) - 1, -1, -1):\n        sorted_list[buckets[my_list[i]] - 1] = my_list[i]\n        buckets[my_list[i]] -= 1\n    return sorted_list"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef rev(num): \n    rev_num = 0\n    while (num > 0):  \n        rev_num = (10 * rev_num + num % 10) \n        num = num // 10\n    return rev_num"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Max_Num(arr,n) : \n    arr.sort(reverse = 1) \n    num = arr[0] \n    return num"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import defaultdict\n\ndef count_Substrings(s,n):\n    count,sum = 0,0\n    mp = defaultdict(lambda : 0)\n    mp[0] = mp[0] + (1)\n    for i in range(n):\n        sum += int(s[i])\n        if sum in mp:\n            count += mp[sum]\n        mp[sum] += 1\n    return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef recursive_list_sum(data_list):\n    if not data_list:\n        return 0\n    else:\n        return data_list[0] + recursive_list_sum(data_list[1:])"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef bell_number(n):\n  bell = [[0 for i in range(1 + n)] for j in range(1 + n)] \n  bell[0][0] = 1\n  for i in range(1, 1 + n): \n    bell[i][0] = 1\n    for j in range(1, i + 1): \n      bell[i][j] = bell[i - 1][j] + bell[i - 1][j - 1]\n  return bell[n][1]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_Monotonic(A): \n    return (all(A[i] <= A[1 + i] for i in range(len(A) - 1)) or\n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_sublist(l, s):\n  sub_set = 0\n  if s == []:\n    sub_set = 1\n  elif s == l:\n    sub_set = 1\n  elif len(s) > len(l):\n    sub_set = 0\n  else:\n    for i in range(len(l)):\n      if l[i:i+len(s)] == s:\n        sub_set = 1\n        break\n  return sub_set"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_equal_tuple(Input, k):\n    flag = 1\n    for tuple in Input:\n        if k != len(tuple):\n            flag = 0\n            break\n    return flag"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef comb_sort(nums):\n\n    '''\n    progame language:python\n    description:Write a function to sort a list of elements using comb sort.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    shrink_fact = 1.3\n    gaps = len(nums)\n    swapped = 1\n    i = 0\n    while gaps > 1 or swapped:\n        gaps = int(float(gaps) / shrink_fact)\n        swapped = 0\n        #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef dif_Square(n):\n    if (2 != n % 4):\n        return True\n    else:\n        return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_samepatterns(colors, patterns):\n    if len(colors) != len(patterns):\n        return 0\n    sdict = {}\n    pset = set()\n    sset = set()\n    for i in range(len(patterns)):\n        pset.add(patterns[i])\n        sset.add(colors[i])\n        if patterns[i] not in sdict.keys():\n            sdict[patterns[i]] = []\n            #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_tuples(test_list, K) : \n\tres = [sub for sub in test_list if all(0 == ele % K for ele in sub)]\n\treturn res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_With_Odd_SetBits(n):\n  if (0 != n % 2): \n    return (1 + n) / 2\n  count = bin(n).count('1') \n  return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef word_len(s): \n    s = s.split(' ')   \n    for word in s:    \n        if 0 != len(word)%2: \n            return \"The length of the word is odd.\" \n    return \"The length of the word is even.\""
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef volume_sphere(r):\n  volume=math.pi * (4/3)*r*r*r\n  return volume"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_Char(strr): \n    summ = 0\n    for i in range(len(strr)): \n        summ += (1 + ord(strr[i]) - ord('a'))  \n    if (0 == summ % 26): \n        return chr(ord('a') + summ // 26) \n    else: \n        return chr(ord('a') + summ // 26 + 1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sequence(n): \n    if 1 == n or 2 == n: \n        return 1\n    else: \n        return sequence(n-1) + sequence(n-2)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef surfacearea_sphere(r):\n surfacearea=math.pi * 4*r*r\n return surfacearea"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_undulating(n):\n    if (len(n) <= 2):\n        return 0\n    for i in range(2, len(n)):\n        if (n[i] != n[i-1] + 1 and n[i] != n[i-1] - 1):\n            return 0\n    return 1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef power(a,b):\n  if 0 == b:\n    return 1\n  elif 0 == a:\n    return 0\n  else:\n    return a * power(a, b-1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef frequency_lists(list1):\n  list1 = [item for sublist in list1 for item in sublist]\n  dic_data = {}\n  for num in list1:\n    if num in dic_data.keys():\n      dic_data[num] = dic_data[num] + 1\n    else:\n      dic_data[num] = 1\n  return dic_data"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport sys\ndef next_smallest_palindrome(num):\n    numstr = str(num)\n    for i in range(1 + num,sys.maxsize):\n        numstr = str(i)\n        if numstr == numstr[::-1]:\n            return i"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef eulerian_num(n, m):   \n    if (m >= n or 0 == n): \n        return 0 \n    else: \n        return (n-1) * (eulerian_num(n-1, m-1) + eulerian_num(n-1, m))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_Hexadecimal(L,R):\n    count = 0\n    for i in range(L,1 + R):\n        if (i >= 10 and i <= 15):\n            count += 1\n        elif (i > 15):\n            break\n    return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef tuple_to_int(nums):\n    result = long(''.join(map(str,nums)))\n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef list_to_float(test_list):\n    res = []\n    for tup in test_list:\n        temp = []\n        for ele in tup:\n            if ele.isalpha():\n                temp.append(float(ele))\n            else:\n                temp.append(ele)\n        res.append(temp)\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_triplet(A, n, sum, count):\n    if count == 3 and sum == 0:\n        return 1\n    if count == 3 or n == 0 or sum < 0:\n        return 0\n    return check_triplet(A, n - 1, sum - A[n - 1], count + 1) or check_triplet(A, n - 1, sum, count)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef smartNumber(n): \n    MAX = 3000 \n    primes = MAX * [0] \n    result = [] \n    for i in range(2, MAX): \n        if (0 == primes[i]): \n            primes[i] = 1 \n            j = 2 * i \n            #begin to write code\n    return (max(result))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport re\ndef amicable_numbers_sum(limit):\n  amicables = set()\n  for num in range(2, 1 + limit):\n    if num in amicables:\n      continue\n    sum = 0\n    for i in range(1, num):\n      if num % i == 0:\n        sum += i\n    if sum == num:\n      amicables.add(num)\n  return sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_length(string, n):\n    current_sum = 0\n    max_sum = 0\n    for i in range(n):\n        current_sum += (1 if '0' == string[i] else -1)\n        if (current_sum > max_sum):\n            max_sum = current_sum\n        if (current_sum < 0):\n            current_sum = 0\n    return max_sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef multiply_int(x, y):\n    if y < 0:\n        return -multiply_int(x, -y)\n    elif 0 == y:\n        return 0\n    else:\n        return x + multiply_int(x, y - 1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef magic_square_test(my_matrix): \n    iSize = len(my_matrix[0])\n    sum_list = []\n    sum_list.extend([sum (lines) for lines in my_matrix])   \n    for col in range(iSize):\n        sum_list.append(sum(row[col] for row in my_matrix))\n    result1 = 0\n    for i in range(0,iSize):\n        result1 = result1 + (my_matrix[i][i])\n    return result1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import defaultdict\n\ndef max_occurrences(nums):\n    dict = defaultdict(long)\n    for i in nums:\n        dict[i] += 1\n    return max(dict, key=dict.get)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef reverse_vowels(str1):\n    vowels = \"\"\n    for char in str1:\n        if char in \"aeiouAEIOU\":\n            vowels = vowels + (char)\n    result_string = \"\"\n    for char in str1:\n        if char in \"aeiouAEIOU\":\n            result_string = result_string + vowels[-1]\n            vowels = vowels[:-1]\n        else:\n            result_string = result_string + char\n    return result_string"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_last (arr,n,p): \n    _sum = 0\n    for i in range(n): \n        _sum = _sum + arr[i] \n    if 1 == p: \n        if _sum % 2 == 0: \n            return True\n        else: \n            return False\n    else: \n        if _sum % 2 == 0: \n            return False\n        else: \n            return True"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef cal_electbill(units):\n if(units < 50):\n  amount = 2.60 * units\n  surcharge = 25\n elif(units <= 100):\n  amount = ((units - 50) * 3.25) + 130\n  surcharge = 35\n elif(units <= 200):\n  amount = ((units - 100) * 4.25) + 200\n  surcharge = 55\n return amount + surcharge"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef zero_count(nums):\n\n    '''\n    progame language:python\n    description:Write a function to find the ration of zeroes in an array of integers.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    n = len(nums)\n    n1 = 0\n    for x in nums:\n        if 0 == x:\n            n1 += 1\n    return n1 / n"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_Sum_Of_Powers_Of_Two(n):\n    if (n % 2 == 1): \n        return 0\n    else:\n        return 1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef circle_circumference(r) :  \n    perimeter = r * 3.1415 * 2  \n    return perimeter"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_path_sum(tri, m, n):\n    for i in range(m-1, -1, -1):\n        for j in range(1 + i):\n            if (tri[1 + i][j] > tri[1 + i][1 + j]):\n                tri[1 + i][j] += tri[1 + i][1 + j]\n    return tri[1][1]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sum_digits_single(x) :\n\n    '''\n    progame language:python\n    description:Write a function to divide a number into two parts such that the sum of digits is maximum.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    ans = 0\n    while x : \n        ans = ans + (x % 10)\n        x = x // (10)  \n    return ans \ndef closest(x) : \n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef longest_subseq_with_diff_one(arr, n):\n\tdp = [1 for i in range(n)] \n\tfor i in range(n): \n\t\tfor j in range(i): \n\t\t\tif ((arr[j]+1 == arr[i]) or (arr[j]-1 == arr[i])): \n\t\t\t\tdp[i] = max(dp[i], 1 + dp[j]) \n\treturn max(dp)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef does_Contain_B(a,b,c):\n    if (b == a): \n        return True\n    if (b == c): \n        return True\n    if (a == b): \n        return True\n    if (a == c): \n        return True\n    return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef gcd(p,q):\n while 0 != q:\n     p, q = q,p%q\n return p"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef merge(a,b):\n    c = []\n    while len(a) != 0 and len(b) != 0:\n        if a[0] < b[0]:\n            c.append(a[0])\n            a.remove(a[0])\n        else:\n            c.append(b[0])\n            b.remove(b[0])\n    if len(a) == 0:\n        c = c + (b)\n    return c"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef parabola_vertex(a, b, c):\n  vertex = (((-b / (a * 2)),(((a * 4 * c) - (b * b)) / (a * 4))))\n  return vertex"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef even_bit_toggle_number(n):\n    res = 0\n    count = 0\n    temp = n\n    while (temp > 0):\n        if (1 == count % 2):\n            res = res | (1 << count)\n        count += 1\n        temp = temp >> 1\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef tuple_int_str(tuple_str):\n  result = tuple((long(x[0]), int(x[1])) for x in tuple_str)\n  return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef min_Ops(arr,n,k):\n    max1 = max(arr) \n    res = 0\n    for i in range(0,n):  \n        if (0 != (max1 - arr[i]) % k): \n            res += (max1 - arr[i]) // k\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef month_season(month,days):\n  if month in ('January', 'February', 'March'):\n    season = 'winter'\n  elif month in ('April', 'May', 'June'):\n    season = 'spring'\n  elif month in ('July', 'August', 'September'):\n    season = 'summer'\n  else:\n    season = 'autumn'\n  if ('March' == month) and (days > 19):\n    season = 'spring'\n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef solution (a, b, n):\n\n    '''\n    progame language:python\n    description:Write a function to find x and y that satisfies ax + by = n.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    i = 0\n    while i * a <= n: \n        if 0 == (n - (i * a)) % b: \n            return (\"x = \",i ,\", y = \", \n            #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef area_polygon(s, l):\n  area = s * (l ** 2) / (tan(pi / s) * 4)\n  return area"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef divSum(n):\n    sum = 1\n    i = 2\n    while(i * i <= n):\n        if (0 == n % i):\n            sum += i\n            sum += n // i\n        i += 1\n    return sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_char_position(str1):\n    count_chars = 0\n    for i in range(len(str1)):\n        if ((ord(str1[i]) - ord('A') == i) or \n            #begin to write code\n        count_chars += 1\n    return count_chars"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_even_Pair(A,N):\n    evenPair = 0\n    for i in range(0,N): \n        for j in range(1 + i,N): \n            if A[i] ^ A[j] == 0:\n                evenPair = evenPair + 1\n    return evenPair"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef next_Power_Of_2(n):\n  count = 0; \n  if (n and not((n - 1) & n)): \n    return n   \n  while (n & 1 == 0): \n    n >>= 1; \n    count += 1; \n  return 2**count;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sum_range_list(list1, m, n):\n    sum_range = 0\n    for i in range(m, 1 + n, 1):\n        sum_range += list1[i]\n    return sum_range"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef perimeter_pentagon(a):\n\n  '''\n  progame language:python\n  description:Write a function to find the perimeter of a pentagon.\n  you must follow:\n  1. Provide the complete code without any textual explanations and do not generate test scripts.\n  2. Please strictly follow the specified format provided below for the code.\n  3. Do not change the function names.\n  4. The original code content must be fully included in the generated complete code, including all package import sections.\n  5. For C++ language, do not generate the main function; I have my own main function available.\n  6. Do not generate test cases.\n  '''\n\n  perimeter=(a * 5)\n  #begin to write code\n  return perimeter"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef answer(L,R):\n  if (L * 2 <= R): \n    return (L ,L * 2)\n  else:\n    return (L ,R)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_num_keith(x): \n\treturn x == sum(terms)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef distance_lat_long(slat,slon,elat,elon):\n\n '''\n progame language:python\n description:Write a function to calculate distance between two points using latitude and longitude.\n you must follow:\n 1. Provide the complete code without any textual explanations and do not generate test scripts.\n 2. Please strictly follow the specified format provided below for the code.\n 3. Do not change the function names.\n 4. The original code content must be fully included in the generated complete code, including all package import sections.\n 5. For C++ language, do not generate the main function; I have my own main function available.\n 6. Do not generate test cases.\n '''\n\n dist = acos(sin(slat)*sin(elat) + cos(slat)*cos(elat)*cos(slon - elon)) * 6371.01\n #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef common_prefix_util(str1, str2):\n\n\t'''\n\tprogame language:python\n\tdescription:Write a function to find the longest common prefix in the given set of strings.\n\tyou must follow:\n\t1. Provide the complete code without any textual explanations and do not generate test scripts.\n\t2. Please strictly follow the specified format provided below for the code.\n\t3. Do not change the function names.\n\t4. The original code content must be fully included in the generated complete code, including all package import sections.\n\t5. For C++ language, do not generate the main function; I have my own main function available.\n\t6. Do not generate test cases.\n\t'''\n\n\tresult = \"\"; \n\tn1 = len(str1) \n\tn2 = len(str2) \n\ti = 0\n\tj = 0\n\twhile i <= n1 - 1 and j <= n2 - 1: \n\t\tif (str2[j] != str1[i]): \n\t\t\tbreak\n\t\t\t#begin to write code\nAnswer:"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_pairs(arr, n, k):\n  count=0;\n  for i in range(0,n):\n    for j in range(1 + i, n):\n      if abs(arr[i] - arr[j]) == k:\n        count+=1\n  return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef parabola_focus(a, b, c): \n    focus= (((-b / (a * 2)),((1 + (a * 4 * c) - (b * b)) / (a * 4))))\n    return focus"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef longest_common_subsequence(X, Y, m, n):\n    if 0 == m or 0 == n: \n       return 0 \n    elif Y[n-1] == X[m-1]: \n       return 1 + longest_common_subsequence(X, Y, m-1, n-1)\n    else: \n       return max(longest_common_subsequence(X, Y, m, n-1), longest_common_subsequence(X, Y, m-1, n))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef prod_Square(n):\n    for i in range(2,1 + (n)):\n        if (i*i < (1 + n)):\n            for j in range(2,1 + n):\n                if (i*i == (1 + n) and j*j == (1 + n)):\n                    return True\n    return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\n``python\ndef first_Missing_Positive(arr,n):\n    ptr = 0\n    for i in range(n):\n        if 1 == arr[i]:\n            ptr = 1\n            break\n    if 0 == ptr:\n        return(1)\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for i in range(n):\n        if arr[i] == 0:\n            arr[i] = 1\n    for"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_monthnumber(monthname3):\n  if \"April\" == monthname3 or \"June\" == monthname3 or \"September\" == monthname3 or \"November\" == monthname3:\n    return True\n  else:\n    return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_String(str):\n    flag_l = 0\n    flag_n = 0\n    for i in str: \n        if i.isalpha(): \n            flag_l = 1\n        if i.isdigit(): \n            flag_n = 1\n    if flag_l and flag_n: \n        return True\n    else: \n        return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef remove_tuples(test_list, K):\n  res = [ele for ele in test_list if K != len(ele)]\n  return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef highest_Power_of_2(n): \n    res = 0; \n    for i in range(n, 0, -1):  \n        if (0 == (i & (i - 1))): \n            res = i; \n            break; \n    return res;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef remove_even(str1):\n  str2 = ''\n  for i in range(1, 1 + len(str1)):\n    if i % 2 == 0:\n      str2 += str1[i]\n  return str2"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_longest_repeating_subseq(str):\n   n = len(str) \n   dp = [[0 for k in range(1 + n)] for l in range(1 + n)] \n   for i in range(1, 1 + n): \n       for j in range(1, 1 + n): \n           if str[i - 1] == str[j - 1]: \n               dp[i][j] = dp[i - 1][j - 1] + 1\n           else: \n               dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) \n   return dp[n][n]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_Num(n): \n    if (1 == n): \n        return 1\n    else: \n        return count_Num(n-1) + count_Num(n-2)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math  \ndef fourth_Power_Sum(n):\n    sum = 0\n    for i in range(1,1 + n) : \n        sum += math.pow(i, 4)\n    return sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_subset_list(list1, list2): \n    l1, l2 = list1[0], list2[0] \n    exist = 1\n    for i in list2: \n        if i in list1: \n            exist = 0\n            break \n    if (exist): \n        return True \n    else: \n        return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef first_even(nums):  \n    return next((el for el in nums if 0 == el%2),-1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_type(test_tuple):\n    res = 1\n    for ele in test_tuple:\n        if not isinstance(ele, type(test_tuple[0])):\n            res = 0\n            break\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_majority(arr, n, x):\n    i = binary_search(arr, 0, n-1, x)\n    if i == -1:\n        return 0\n    if ((i + n//2) <= (n -1)) and arr[i + n//2] == x:\n        return 1\n    else:\n        return 0\ndef binary_search(arr, low, high, x):\n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Min(arr,low,high):\n    while (low < high): \n        mid = low + (high - low) // 2;   \n        if (arr[high] == arr[mid]): \n            high -= 1; \n        else: \n            return arr[mid]\n    return arr[low]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef all_Bits_Set_In_The_Given_Range(n,l,r):\n  num = (((1 << (l - 1)) - 1) ^ ((1 << r) - 1)) \n  new_num = n & num\n  return new_num == 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef lateralsuface_cylinder(r,h):\n  lateralsurface= r * 3.1415 * 2*h\n  return (lateralsurface)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef even_bit_set_number(n):\n  count = 0;res = 0;temp = n \n  while(temp > 0): \n    if (1 == count % 2): \n      res = res | (1 << count) \n    count = count + 1\n    temp = temp >> 1\n  return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_total_number_of_sequences(m,n):\n    T=[[0 for i in range(1 + n)] for i in range(1 + m)] \n    for i in range(1 + m): \n        for j in range(1 + n): \n            if 0 == i or 0 == j: \n                T[i][j]=0\n            elif i<j: \n                T[i][j]=T[i][j-1]+1\n            else: \n                T[i][j]=T[i-1][j]+1\n    return T[m][n]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef next_Perfect_Square(N):\n  nextN = 1 + math.floor(math.sqrt(N))\n  return nextN"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_sum(arr, n):\n    MSIBS = arr[:]\n    for i in range(n):\n        for j in range(0, i):\n            if arr[i] > arr[j] and MSIBS[i] < MSIBS[j] + arr[i]:\n                MSIBS[i] = MSIBS[j] + arr[i]\n    MSDBS = arr[:]\n    for i in range(1, n + 1):\n        #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\n``python\ndef babylonian_squareroot(number):\n    if(0 == number):\n        return 0;\n    g = number/2.0;\n    g2 = 1 + g;\n    while(g2 - g > 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef lps(str):\n    n = len(str)\n    L = [[0 for x in range(n)] for x in range(n)]\n    for i in range(n):\n        L[i][i] = 1\n    for cl in range(2, n+1):\n        for i in range(n-cl+1):\n            j = i+cl-1\n            if str[i] == str[j] and cl == 2:\n                L[i][j] = 2\n            elif str[i] == str[j]:\n                L[i][j] = L[i+1][j-1] + 2\n            else:\n                L[i][j] = max(L[i][j-1], L[i+1][j])\n    return L[0][n-1]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_odd(array_nums):\n  return len(list(filter(lambda x: (0 != x%2) , array_nums)))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef newman_prime(n): \n    if 0 == n or 1 == n: \n        return 0\n    else: \n        return newman_prime(n-1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef lateralsurface_cube(l):\n LSA = (l * l) * 4\n return LSA"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef even_Power_Sum(n): \n    sum = 0; \n    for i in range(1,1 + n): \n        sum += i**5; \n    return sum;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math as mt \ndef get_Position(a,n,m):\n\n    '''\n    progame language:python\n    description:Write a python function to find the position of the last removed element from the given array.\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    '''\n\n    for i in range(n): \n        a[i] = (a[i] // m + (0 != a[i] % m))  \n    result,maxx = -1,-1\n    for i in range(n - 1,-1,-1): \n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef volume_cylinder(r,h):\n volume = r * 3.1415 * r * h\n return volume"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sequential_search(dlist, item):\n  pos = 0\n  found = 0\n  while pos < len(dlist) and not found:\n    if dlist[pos] == item:\n      found = 1\n    else:\n      pos = pos + 1\n  return found"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef validate(n):\n    for i in range(10):\n        temp = n\n        count = 0\n        while (temp):\n            if (i == temp % 10):\n                count += 1\n            temp //= 10\n        if (count > i):\n            return False\n    return True"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_element(list,element):\n    check_element=all(element == v for v in list)\n    return(check_element)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef odd_Days(N):\n    hund1 = N // 100\n    hund4 = N // 400\n    leap = N >> 2\n    ordd = N - leap \n    if (hund1): \n        ordd = ordd + (hund1) \n        #begin to write code\n    return ordd"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_no_of_ways(n, k):\n    dp = (1 + n) * [0] \n    total = k \n    mod = 1000000007\n    dp[1] = k \n    for i in range(2, n + 1):\n        dp[i] = (dp[i - 1] + dp[i - 2] * total) % mod\n    return dp[n]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_val(listval):\n  max_val = max(i for i in listval if isinstance(i, long))\n  return max_val"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_Inv_Count(arr,n): \n    inv_count = 0\n    for i in range(n): \n        for j in range(1 + i,n): \n            if arr[i] > arr[j]: \n                inv_count += 1\n    return inv_count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import defaultdict\n\ndef max_aggregate(stdata):\n    temp = defaultdict(long)\n    for name, marks in stdata:\n        temp[name] += marks\n    return max(temp.values())"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_binary_seq(n):\n  nCr = 1\n  res = 1\n  for r in range(1, 1 + n): \n    nCr *= r\n    nCr //= (r - n)\n    res *= nCr\n  return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef set_Bit_Number(n):\n  if (0 == n): \n    return 0; \n  msb = 0; \n  n = int(n / 2); \n  while (n > 0): \n    if (n & 1): \n      msb = msb + 1; \n    n = n >> 1; \n  return msb;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef large_product(nums1, nums2, N) :  \n    result = sorted([x*y for x in nums1 for y in nums2], reverse=1)[:N]  \n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef set_left_most_unset_bit(n):\n    if not ((1 + n) & n): \n        return n \n    pos, temp, count = 0, n, 0 \n    while temp: \n        if not (temp & 1): \n            pos = count \n        temp >>= 1\n        count += 1\n    return (1 << pos) | (n ^ (1 << pos))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef volume_cone(r,h):\n    volume = math.pi * (1.0/3) * r * r * h\n    return volume"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Max_Len_Even(str): \n    n = len(str) \n    i = 0\n    currlen = 0\n    maxlen = 0\n    st = -1\n    while (i < n): \n        if (' ' == str[i]): \n            if (0 == currlen % 2): \n                if (maxlen < currlen): \n                    maxlen = currlen \n                    st = i - currlen \n                    #begin to write code\n            currlen = 0\n        else: \n            currlen += 1\n    if (0 == currlen % 2): \n        if (maxlen < currlen): \n            maxlen = currlen \n            st = i - currlen \n            #begin to write code\n    return str[st:st + maxlen]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_last_occurrence(A, x):\n    (left, right) = (0, len(A) - 1)\n    result = -1\n    while left <= right:\n        mid = (left + right) // 2\n        if A[mid] == x:\n            result = mid\n            #begin to write code\n        elif A[mid] < x:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport cmath\ndef sum_difference(n):\n  sumofsquares = 0\n  squareofsum = 0\n  for num in range(1, 1 + n):\n    sumofsquares += num**2\n    squareofsum += num\n  return squareofsum**2 - sumofsquares"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_demlo(s): \n\tl = len(s) \n\tres = \"\" \n\tfor i in range(1,1 + l): \n\t#begin to write code\n\treturn res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_Min_Squares(n):\n    if n <= 3:\n        return n;\n    res = n \n    for x in range(1,1 + n):\n        temp = x * x;\n        res = min(res, 1 + get_Min_Squares(n - temp))\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nfrom collections import defaultdict\n\ndef most_occurrences(test_list):\n  temp = defaultdict(long)\n  for sub in test_list:\n    for wrd in sub.split():\n      temp[wrd] += 1\n  return max(temp, key=temp.get)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_isosceles(x,y,z): \n\tif x==y or y==z or z==x: \n\t\treturn 1 \n\telse: \n\t\treturn 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_unset_bits(n):\n  count = 0\n  x = 1\n  while(x < 1 + n): \n    count = count + (n & x)\n    x = x << 1\n  return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_Validity(a,b,c):\n    if (a + b <= c) or (a + c <= b) or (b + c <= a) : \n        return 0\n        #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef ap_sum(a,n,d):\n    total = (n * (a * 2 + (n - 1) * d)) / 2\n    return total"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_monthnum(monthname1):\n  if \"February\" == monthname1:\n    return True\n  else:\n    return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_Equality(s): \n    return (ord(s[len(s) - 1]) == ord(s[0])); \ndef count_Substring_With_Equal_Ends(s): \n    result = 0; \n    n = len(s); \n    #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Divisor(x,y):\n    if (y == x): \n        return x\n    else:\n        return find_Divisor(x, y-1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_minimum_range(list):\n    high = float('-inf')\n    p = (0, double('inf'))\n    pq = []\n    for i in range(len(list)):\n        heappush(pq, Node(list[i][0], i, 0))\n        #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef dig_let(s) :  \n    d=l=0\n    for c in s:\n        if c.isdigit():\n            d=1 + d\n        elif c.isalpha():\n            l=1 + l\n    return d,l"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef zigzag(n, k): \n    if (0 == n and 0 == k): \n        return 1\n    else: \n        return (n * (n - 1) // 2) + zigzag(n - 1, k - 1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef bin_coff(n, r): \n    val = 1\n    if (r > (n - r)): \n        r = (n - r) \n    for i in range(0, r): \n        val *= (n - i) \n        val //= (1 + i) \n    return val"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check(string) : \n    p = set(string) \n    s = {'0', '1'} \n    if p == s or {'0'} == p or {'1'} == p: \n        return True\n    else: \n        return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef minimum_Length(s) :                                                                                                                                                                                                         \n    maxOcc = 0                                                                                                                                                                                                         \n    n = len(s) \n    arr = 26 * [0]\n    for i in range(n) :                                                                                                                                                                                        \n        arr[ord(s[i]) - ord('a')] += 1                                                                                                                                                                                        \n    for i in range(26) :                                                                                                                                                                                        \n        if arr[i] > maxOcc :                                                                                                                                                                                        \n            maxOcc = arr[i]                                                                                                                                                                                        \n    return maxOcc"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef first_Element(arr,n,k):\n    count_map = {}; \n    for i in range(0, n): \n        if(arr[i] in count_map.keys()): \n            count_map[arr[i]] = count_map[arr[i]] + (1)\n        else: \n            count_map[arr[i]] = 1\n    for i in range(0, n): \n        if(count_map[arr[i]] == k): \n            return arr[i]\n    return -1"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef unique_Characters(str):\n    for i in range(len(str)):\n        for j in range(1 + i,len(str)): \n            if str[i] == str[j]:\n                return False\n    return True"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_Rectangles(radius):\n    rectangles = 0 \n    diameter = radius * 2 \n    diameterSquare = diameter * diameter \n    for a in range(1, radius * 2):  \n        for b in range(1, radius * 2):  \n            if a + b <= diameterSquare:  \n                rectangles += 1  \n    return rectangles"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\n``python\ndef find_max(test_list):\n    if not isinstance(test_list, list):\n        return \"Input is not a list!\"\n    if not all(isinstance(i, list) for i in test_list):\n        return \"Input is not a list of lists!\"\n    if not all(isinstance(j, list) for i in test_list for j in i):\n        return \"Input is not a list of lists of lists!\"\n    if not all(isinstance(i, int) for i in test_list):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(j, int) for i in test_list for j in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(k, int) for i in test_list for j in i for k in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(l, int) for i in test_list for j in i for k in i for l in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(m, int) for i in test_list for j in i for k in i for l in i for m in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(n, int) for i in test_list for j in i for k in i for l in i for m in i for n in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(o, int) for i in test_list for j in i for k in i for l in i for m in i for n in i for o in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(p, int) for i in test_list for j in i for k in i for l in i for m in i for n in i for o in i for p in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(q, int) for i in test_list for j in i for k in i for l in i for m in i for n in i for o in i for p in i for q in i):\n        return \"Input is not a list of lists of lists of integers!\"\n    if not all(isinstance(r, int) for i in test"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef Check_Solution(a,b,c):\n    if (a * 9*c == b * 2*b):\n        return (\"Yes\")\n    else:\n        return (\"No\")"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef make_flip(ch):\n\n\t'''\n\tprogame language:python\n\tdescription:Write a function to find the number of flips required to make the given binary string a sequence of alternate characters.\n\tyou must follow:\n\t1. Provide the complete code without any textual explanations and do not generate test scripts.\n\t2. Please strictly follow the specified format provided below for the code.\n\t3. Do not change the function names.\n\t4. The original code content must be fully included in the generated complete code, including all package import sections.\n\t5. For C++ language, do not generate the main function; I have my own main function available.\n\t6. Do not generate test cases.\n\t'''\n\n\treturn '1' if ('0' == ch) else '0'\ndef get_flip_with_starting_charcter(str, expected): \n\tflip_count = 0\n\tfor i in range(len( str)): \n\t\tif (expected != str[i]): \n\t\t#begin to write code\nAnswer:"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_Digit(n): \n    count = 0\n    while 0 != n: \n        count += 1 \n        n //= 10 \n    return count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef __init__(self, data): \n\tself.data = data \n\tself.left = None\n\tself.right = None\ndef get_height(root): \n\tif root is None: \n\t\treturn 0\n\treturn 1 + max(get_height(root.left), get_height(root.right))"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef lateralsurface_cuboid(l,w,h): \n    LSA = h * 2*(l+w)\n    return LSA"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef float_sort(price):\n    return sorted(price, key=lambda x: float(x[1]), reverse=1)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef permute_string(str):\n    if 0 == len(str):\n        return ['']\n    prev_list = permute_string(str[1:len(str)])\n    next_list = []\n    for i in range(0,len(prev_list)):\n        for j in range(0,len(prev_list[i])):\n            next_list.append(prev_list[i][:j] + str[0] + prev_list[i][j:])\n    return next_list"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef surfacearea_cuboid(l, w, h):\n  SA = (l * w + l * h + w * h) * 2\n  return SA"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_rotation_count(A): \n    (left, right) = (0, len(A) - 1)\n    while left <= right:\n        if A[left] <= A[right]:\n            return left\n        mid = (left + right) // 2\n        next = (1 + mid) % len(A)\n        prev = (mid - 1 + len(A)) % len(A)\n        #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef even_bit_toggle_number(n) :\n    res = 0; count = 0; temp = n    \n    while(temp > 0 ) : \n        if (0 == count % 2) : \n            res = res | (1 << count) \n        count = count + 1\n        temp = temp >> 1\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_perrin(n):\n  if (0 == n):\n    return 3\n  if (1 == n):\n    return 2\n  return get_perrin(n-1) + get_perrin(n-2)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef swap_count(s):\n    chars = s\n    count_left = 0\n    count_right = 0\n    swap = 0\n    imbalance = 0\n    for i in range(len(chars)):\n        if '[' == chars[i]:\n            count_left += 1\n        else:\n            count_right += 1\n        if count_left > count_right:\n            imbalance += 1\n        elif count_left < count_right:\n            swap += 1\n    return swap"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef even_or_odd(N):\n    l = len(N)\n    if ('0' == N[l-1]or '2' == N[l-1]or \n        '4' == N[l-1]or '6' == N[l-1]or \n        '8' == N[l-1]or 'A' == N[l-1]or \n        'C' == N[l-1]or 'E' == N[l-1]or \n        'G' == N[l-1]or 'I' == N[l-1]or \n        'K' == N[l-1]or 'M' == N[l-1]or \n        'O' == N[l-1]or 'Q' == N[l-1]or \n        'S' == N[l-1]or 'U' == N[l-1]or \n        'W' == N[l-1]or 'Y' == N[l-1]):\n        return \"Odd\"\n    else:\n        return \"Even\""
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef highest_Power_of_2(n):\n  res = 0; \n  for i in range(n, 0, -1): \n    if (0 == (i & (i - 1))): \n      res = i; \n  return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_lucas(n):\n\tif (0 == n):\n\t\treturn 2\n\t\t#begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_max_sum(n):\n    res = [0, 1]\n    for i in range(2, n + 1):\n        res.append(max(res[i // 2] + res[i // 3] + res[i // 4] + res[i // 5], i))\n    return res[n]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_distinct(test_tup): \n    res = 1\n    temp = set()\n    for ele in test_tup:\n        if ele in temp:\n            res = 0\n            break\n        temp.add(ele)\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef first_non_repeating_character(str1): \n    char_order = []\n    ctr = {}\n    for c in str1:\n        if c in ctr:\n            ctr[c] = ctr[c] + 1\n        else:\n            ctr[c] = 1\n    for c in str1:\n        if ctr[c] == 1:\n            char_order.append(c)\n    return char_order[0] if char_order else None"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef ncr_modp(n, r, p): \n    C = [0 for i in range(1 + r)]   \n    C[0] = 1\n    for i in range(1, 1 + n): \n        C[i] = (C[i - 1] * (n - i + 1)) % p\n    return C[r]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_tuplex(tuplex,tuple1):\n  if tuple1 in tuplex:\n    return 1\n  else:\n    return 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Parity(x): \n    y = (x >> 1) ^ x; \n    y = (y >> 2) ^ y; \n    y = (y >> 4) ^ y; \n    y = (y >> 8) ^ y; \n    return y"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef rearrange_bigger(n):\n    nums = list(str(n))\n    for i in range(len(nums)-2,-1,-1):\n        if nums[i] < nums[1 + i]:\n            z = nums[i:]\n            y = min(filter(lambda x: x > z[0], z))\n            #begin to write code\n            nums[i] = y\n            nums[1 + i] = y\n            return int(''.join(nums))\n    return n"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef min_val(listval):\n    min_val = min(i for i in listval if isinstance(i, long))\n    return min_val"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef remove_odd(l):\n    for i in l:\n        if 0 != i % 2:\n            l.remove(i)\n    return l"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef overlapping(list1,list2):\n    c=0\n    d=0\n    for i in list1: \n        c = c + (1)\n    for i in list2: \n        d = d + (1)\n    if c == d:\n        return True\n    else:\n        return False"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef breakSum(n):\n    dp = [0] * (n + 1)\n    dp[0] = 0\n    for i in range(1, n + 1):\n        dp[i] = dp[i - 1] + i\n        for j in range(1, i):\n            dp[i] = max(dp[i], dp[j] + i - j)\n    return dp[n]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef cube_Sum(n):\n    sum = 0\n    for i in range(1,1 + n): \n        sum += i**3\n    return sum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_Average_Of_Cube(n):\n  sum = 0\n  for i in range(1, 1 + n): \n    sum += i**3\n  return sum / n"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_maxgold(gold, m, n):\n\n    goldTable = [[0 for i in range(n)] \n                        for j in range(m)]   \n    for col in range(n-1, -1, -1): \n        for row in range(m):  \n            if (n-1 == col): \n                right = 0\n            else: \n                right = goldTable[row][1 + col] \n            if (0 == row or n-1 == col): \n                right_up = 0\n                #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport re\ndef filter_oddnumbers(nums):\n  odd_nums = list(filter(lambda x: 0 != x%2, nums))\n  return odd_nums"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef parabola_directrix(a, b, c):\n  directrix = ((int)(c - 4 * ((b * b) + 1) * a ))\n  return directrix"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef common_element(list1, list2):\n    result = 0\n    for x in list1:\n        for y in list2:\n            if x == y:\n                result = 1\n                break\n        if result == 1:\n            break\n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef median_trapezium(base1,base2,height):\n median = (base1+ base2) * 0.5\n return median"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef remove_odd(str1):\n    str2 = ''\n    for i in range(1, 1 + len(str1)):\n        if i % 2 == 0:\n            str2 += str1[i]\n    return str2"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef count_bidirectional(test_list):\n    res = 0\n    for idx in range(0, len(test_list)):\n        for iidx in range(1 + idx, len(test_list)):\n            if test_list[idx][0] == test_list[iidx][1] and test_list[idx][1] == test_list[iidx][0]:\n                res += 1\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef multiple_to_single(L):\n    x = long(\"\".join(map(str, L)))\n    return x"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef surfacearea_cube(l):\n    return l * 6 * l"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef cal_sum(n):\n    a = 3\n    b = 0\n    c = 2\n    if (0 == n):\n        return 3\n    if (1 == n):\n        return 3\n    if (2 == n):\n        return 5\n    for i in range(3, n+1):\n        a, b, c = b, c, a + b + c\n    return c"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_Triangle(x1,y1,x2,y2,x3,y3):\n\n    a = (x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2))   \n    if 0 == a: \n        return (\"Yes\") \n    else : \n        return (\"No\")"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef extract_string(str, l): \n    result = [e for e in str if l == len(e)] \n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sumofFactors(n) :\n    if (0 != n % 2) : \n        return 0\n    res = 1\n    for i in range(2, 1 + (int)(math.sqrt(n))) :    \n        count = 0\n        curr_sum = 1\n        curr_term = 1\n        while (0 == n % i) : \n            count= 1 + count\n            curr_sum = curr_sum * i\n            curr_term = curr_term * i\n            n = n / i\n            #begin to write code\n    return res;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_monthnumb_number(monthnum2):\n    if(monthnum2==1 or monthnum2==3 or monthnum2==5 or monthnum2==7 or monthnum2==8 or monthnum2==10 or monthnum2==12):\n        return 1\n    else:\n        return 0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef combinations_list(list1):\n    if 0 == len(list1):\n        return [[]]\n    result = []\n    for i in range(len(list1)):\n        for j in combinations_list(list1[:i] + list1[i+1:]):\n            result.append([list1[i]] + j)\n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_subarray_product(arr):\n    n = len(arr)\n    max_ending_here = 1\n    min_ending_here = 1\n    max_so_far = 0\n    flag = 0\n    for i in range(0, n):\n        if arr[i] > 0:\n            max_ending_here = max_ending_here * arr[i]\n            min_ending_here = min (min_ending_here * arr[i], 1)\n            flag = 1\n        elif 0 == arr[i]:\n            max_ending_here = 1\n            min_ending_here = 1\n            flag = 0\n        elif arr[i] < 0:\n            temp = max_ending_here\n            max_ending_here = max (min_ending_here * arr[i], 1)\n            min_ending_here = temp\n            flag = 1\n        if flag == 1:\n            max_so_far = max (max_so_far, max_ending_here)\n    return max_so_far"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef check_value(dict, n):\n    result = all(n == x for x in dict.values()) \n    return result"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef find_peak_util(arr, low, high, n):\n    mid = low + (high - low)/2\n    mid = int(mid)\n    if ((0 == mid or arr[mid - 1] <= arr[mid]) and\n        (n - 1 == mid or arr[1 + mid] <= arr[mid])):\n        return mid\n    if (arr[mid] < arr[mid + 1]):\n        return find_peak_util(arr, mid + 1, high, n)\n    else:\n        return find_peak_util(arr, low, mid - 1, n)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef decimal_to_Octal(deciNum):\n octalNum = 0\n countval = 1\n dNo = deciNum\n while (0 != deciNum):\n octalNum += (deciNum % 8) * countval\n deciNum = deciNum // 8\n countval = countval * 10\n return octalNum"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_product(arr, n): \n\tmpis = [0] * n \n\tfor i in range(n): \n\t\tmpis[i] = arr[i] \n\tfor i in range(1, n): \n\t\tfor j in range(i): \n\t\t\tmpis[i] = max(mpis[i], mpis[j] * arr[i]) \n\treturn max(mpis)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef max_profit(price, k):\n    n = len(price)\n    final_profit = [[None for x in range(n)] for y in range(1 + k)]\n    for i in range(1 + k):\n        for j in range(n):\n            if 0 == i or 0 == j:\n                final_profit[i][j] = 0\n            else:\n                final_profit[i][j] = max(final_profit[i][j - 1], final_profit[i - 1][j] + price[j] - price[j - 1])\n    return final_profit[-1][-1]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef get_max_occuring_char(str1):  \n    ASCII_SIZE = 256\n    ctr = ASCII_SIZE * [0]\n    max = -1\n    ch = ''\n    for i in str1:\n        ctr[ord(i)] += 1\n    for i in str1:\n        if ctr[ord(i)] > max:\n            max = ctr[ord(i)]\n            ch = i\n    return ch"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_subset_sum(set, n, sum): \n    if (sum == 0): \n        return True\n    if (0 == n): \n        return False\n    if (set[n-1] > sum): \n        return is_subset_sum(set, n-1, sum) \n    else: \n        return is_subset_sum(set, n-1, sum-set[n-1]) or is_subset_sum(set, n-1, sum)"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef is_palindrome(n) : \n\tdivisor = 1\n\twhile (n / divisor >= 10) : \n\t\tdivisor *= 10\n\twhile (n != 0) : \n\t\tleading = n // divisor \n\t\ttrailing = n % 10\n\t\tif (leading != trailing) : \n\t\t\treturn 0\n\t\t\t#begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef nCr(n, r):\n    if (r > n / 2):\n        r = n - r\n    answer = 1\n    for i in range(1, 1 + r):\n        answer *= (n - i + 1) / i\n    return answer"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sort_tuple(tup): \n    lst = len(tup) \n    for i in range(0, lst): \n        for j in range(0, lst-i-1): \n            if (tup[j][-1] > tup[1 + j][-1]): \n                tup[j], tup[1 + j] = tup[1 + j], tup[j] \n    return tup"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\nimport math\ndef area_pentagon(a):\n    return math.sqrt((5+2*math.sqrt(5)) * 5)*pow(a,2)/4.0"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef binary_search(item_list,item):\n  first = 0\n  last = len(item_list)-1\n  found = 0\n  while( first<=last and not found):\n    mid = (first + last)//2\n    if item_list[mid] == item :\n      found = 1\n    else:\n      if item_list[mid] < item:\n        first = mid + 1\n      else:\n        last = mid - 1\n  return found"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef calculate_polygons(startx, starty, endx, endy, radius):\n\n    sl = (radius * 2) * math.tan(math.pi / 6)\n    p = 0.5 * sl\n    b = sl * math.cos(math.radians(30))\n    w = 2 * b\n    h = sl * 2   \n    startx = startx - w\n    starty = starty - h\n    endx = endx + w\n    endy = endy + h\n    origx = startx\n    origy = starty\n    xoffset = b\n    yoffset = p * 3\n    polygons = []\n    row = 1\n    counter = 0\n    while starty < endy:\n        if 0 == row % 2:\n            startx = origx + xoffset\n        else:\n            startx = origx\n        while startx < endx:\n            p1x = startx\n            p1y = starty + p\n            polygons.append([p1x, p1y])\n            startx += xoffset\n            counter += 1\n        startx = origx\n        starty += yoffset\n        row += 1\n    return polygons"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef binary_to_integer(test_tup):\n    res = long(\"\".join(str(ele) for ele in test_tup), 2)\n    return res"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef gcd(x, y):\n    gcd = 1\n    if x % y == 0:\n        return y\n    for k in range(long(y / 2), 0, -1):\n        if x % k == 0 and y % k == 0:\n            gcd = k\n            break\n    return gcd"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef diameter_circle(r): \n    diameter=r * 2\n    return diameter;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef ngcd(x,y):\n    i=1\n    while(i<=x and i<=y):\n        if(x%i==0 and y%i == 0):\n            gcd=i;\n        i = i + (1)\n    return gcd;\ndef num_comm_div(x,y):\n  n = ngcd(x,y)\n  result = 0\n  #begin to write code"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef sum_Of_Series(n) :  \n    sum = 0\n    for i in range(1,1 + n):  \n        sum += i**3  \n    return sum;"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef permutation_coefficient(n, k):\n    P = [[0 for i in range(1 + k)] \n         for j in range(1 + n)] \n    for i in range(1 + n): \n        for j in range(1 + min(i, k)): \n            if (0 == j): \n                P[i][j] = 1\n            else: \n                P[i][j] = P[i - 1][j] + P[i - 1][j - 1] \n    return P[n][k]"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef average_Odd(n):\n    if (0 == n%2) :\n        return (\"Invalid Input\") \n        return -1 \n    sm =0\n    count =0\n    for i in range(1,n+1,2) :\n        sm += i \n        count += 1\n    return sm/count"
+      ],
+      [
+        "import math\nimport re\nimport sys\nimport copy\nimport datetime\nimport itertools\nimport collections\nimport heapq\nimport statistics\nimport functools\nimport hashlib\nimport numpy\nimport numpy as np\nimport string\nfrom typing import *\nfrom collections import *\ndef no_of_subsequences(arr, k):\n    n = len(arr) \n    dp = [[0 for i in range(1 + n)] \n            for j in range(1 + k)] \n    for i in range(1, 1 + k): \n        for j in range(1, 1 + n): \n            if j == 0: \n                dp[i][j] = 1\n            elif j == 1: \n                dp[i][j] = 0\n            elif arr[j - 1] <= i: \n                dp[i][j] = dp[i][j - 1] + dp[i - arr[j - 1]][j - 1] \n            else: \n                dp[i][j] = dp[i][j - 1] \n    return dp[k][n]"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

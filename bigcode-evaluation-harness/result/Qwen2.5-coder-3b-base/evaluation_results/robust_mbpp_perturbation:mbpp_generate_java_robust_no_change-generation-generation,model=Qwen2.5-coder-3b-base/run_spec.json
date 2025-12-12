@@ -1,0 +1,15 @@
+{
+  "name": "robust_mbpp_perturbation:mbpp_generate_java_robust_no_change-generation-generation,model=Qwen2.5-coder-3b-base",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_mbpp_perturbation",
+      "subset": "mbpp_generate_java_robust_no_change"
+    }
+  },
+  "adapter_spec": {
+    "model": "Qwen2.5-coder-3b-base"
+  },
+  "groups": [
+    "robust_mbpp_perturbation"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "1": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "2": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "3": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:37: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   45 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:46:30: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   46 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:47:33: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   47 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:25:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   25 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "4": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "5": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:55: int main(): Assertion `is_samepatterns({\"red\",\"green\",\"green\"}, {\"a\", \"b\", \"b\"}) == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "6": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "7": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "8": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "10": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:49: int main(): Assertion `check_last({5, 7, 10}, 3, 1) == \"ODD\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "11": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:46: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "13": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:60:64: error: no matching function for call to ‘encode_list(std::string&)’\n   60 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:27:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   27 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:27:29: note:   template argument deduction/substitution failed:\ntest.cpp:60:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   60 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:65:64: error: no matching function for call to ‘encode_list(std::string&)’\n   65 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp:27:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   27 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:27:29: note:   template argument deduction/substitution failed:\ntest.cpp:65:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   65 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp: In instantiation of ‘std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&) [with T = double]’:\ntest.cpp:54:66:   required from here\ntest.cpp:34:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   34 |             result.push_back({count, current_value});\n      |                               ^~~~~\ntest.cpp:34:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\ntest.cpp:42:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   42 |     result.push_back({count, current_value});\n      |                       ^~~~~\ntest.cpp:42:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "14": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "15": {
+    "task_id": 168,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "16": {
+    "task_id": 178,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "17": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:40: int main(): Assertion `min_operations_to_equal(2, 4) == 1' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "18": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function ‘int main()’:\ntest.cpp:63:62: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   63 |     assert(find_majority_element({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true);\n      |                                                              ^\ntest.cpp:41:5: note: declared here\n   41 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:64:64: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   64 |     assert(find_majority_element({1, 1, 2, 4, 4, 4, 6, 6}, 8, 4) == false);\n      |                                                                ^\ntest.cpp:41:5: note: declared here\n   41 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:65:55: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   65 |     assert(find_majority_element({1, 1, 1, 2, 2}, 5, 1) == true);\n      |                                                       ^\ntest.cpp:41:5: note: declared here\n   41 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "19": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:57: int main(): Assertion `max_sum({1, 15, 51, 45, 33, 100, 12, 18, 9}, 9) == 194' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 244,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:21:\ntest.cpp: In function ‘int main()’:\ntest.cpp:72:106: error: ‘compare_vectors’ was not declared in this scope\n   72 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "22": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:47: int main(): Assertion `get_Position(arr1, 3, 2) == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 295,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "24": {
+    "task_id": 312,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "25": {
+    "task_id": 315,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "26": {
+    "task_id": 339,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "27": {
+    "task_id": 340,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `first_Element({2,3,4,3,5,7,1,2,3,5}, 10, 2) == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "28": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "29": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:62: int main(): Assertion `(k_smallest_pairs(nums1_a, nums2_a, 2) == vector<vector<int>>{{1, 2}, {1, 4}})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "30": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "31": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function ‘int main()’:\ntest.cpp:56:36: error: too many arguments to function ‘int largest_palindrome(const std::vector<int>&)’\n   56 |     assert(largest_palindrome(v1, 4) == 54545);\n      |                                    ^\ntest.cpp:44:5: note: declared here\n   44 | int largest_palindrome(const vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:59:36: error: too many arguments to function ‘int largest_palindrome(const std::vector<int>&)’\n   59 |     assert(largest_palindrome(v2, 6) == 5);\n      |                                    ^\ntest.cpp:44:5: note: declared here\n   44 | int largest_palindrome(const vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp:62:36: error: too many arguments to function ‘int largest_palindrome(const std::vector<int>&)’\n   62 |     assert(largest_palindrome(v3, 5) == 9);\n      |                                    ^\ntest.cpp:44:5: note: declared here\n   44 | int largest_palindrome(const vector<int>& nums) {\n      |     ^~~~~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "32": {
+    "task_id": 482,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "33": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  }
+}

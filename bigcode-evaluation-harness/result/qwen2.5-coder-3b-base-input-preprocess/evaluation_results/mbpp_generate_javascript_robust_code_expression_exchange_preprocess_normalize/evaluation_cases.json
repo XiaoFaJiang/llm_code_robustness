@@ -1,0 +1,3488 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": false,
+    "result": "failed: /tmp/tmptia7zvi3/test.js:22\nconst textLowercaseUnderscore = () => {\n      ^\n\nSyntaxError: Identifier 'textLowercaseUnderscore' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": false,
+    "result": "failed: /tmp/tmpeg1ubtbv/test.js:98\nconst testRemoveDirtyChars = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": false,
+    "result": "failed: /tmp/tmp9krmo6xz/test.js:32\nconst testDuplicate = () => {\n      ^\n\nSyntaxError: Identifier 'testDuplicate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\nAssertion failed: Test case 4 failed\nAssertion failed: Test case 5 failed\nAssertion failed: Test case 6 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": false,
+    "result": "failed: /tmp/tmpypkfhm8l/test.js:71\n    console.assert(rearange_string(\"aab\") === \"aba\", \"Test 1 Failed\");\n            ^\n\nReferenceError: rearange_string is not defined\n    at testRearange_string (/tmp/tmpypkfhm8l/test.js:71:13)\n    at Object.<anonymous> (/tmp/tmpypkfhm8l/test.js:76:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\nAssertion failed: Test 4 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: /tmp/tmpbzmqcrl3/test.js:22\nconst textMatch = () => {\n      ^\n\nSyntaxError: Identifier 'textMatch' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": false,
+    "result": "failed: /tmp/tmp2lfjx70u/test.js:68\n    /*\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": false,
+    "result": "failed: /tmp/tmpqzqjt3di/test.js:25\nconst testDistinct = () => {\n      ^\n\nSyntaxError: Identifier 'testDistinct' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": false,
+    "result": "failed: /tmp/tmp9m0_a48f/test.js:20\nconst tnGp = () => {\n      ^\n\nSyntaxError: Identifier 'tnGp' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": false,
+    "result": "failed: /tmp/tmpva5omjnh/test.js:13\n    let bell = Array.from({ length: 1 + n }, () => Array(1 + n).fill(bigInt(0)));\n                                                               ^\n\nReferenceError: bigInt is not defined\n    at /tmp/tmpva5omjnh/test.js:13:64\n    at Function.from (<anonymous>)\n    at bellNumber (/tmp/tmpva5omjnh/test.js:13:22)\n    at testBell_number (/tmp/tmpva5omjnh/test.js:26:20)\n    at Object.<anonymous> (/tmp/tmpva5omjnh/test.js:30:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "59": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "60": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "61": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "62": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "63": {
+    "task_id": 64,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "64": {
+    "task_id": 65,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "65": {
+    "task_id": 66,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "66": {
+    "task_id": 67,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "67": {
+    "task_id": 68,
+    "passed": false,
+    "result": "failed: /tmp/tmpt5078ky4/test.js:25\nconst wordLen = () => {\n      ^\n\nSyntaxError: Identifier 'wordLen' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "68": {
+    "task_id": 69,
+    "passed": false,
+    "result": "failed: /tmp/tmpd3c8bmks/test.js:16\nconst tetrahedralNumber = () => {\n      ^\n\nSyntaxError: Identifier 'tetrahedralNumber' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "69": {
+    "task_id": 70,
+    "passed": false,
+    "result": "failed: /tmp/tmpu2aflhbd/test.js:21\nconst zipTuples = () => {\n      ^\n\nSyntaxError: Identifier 'zipTuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "70": {
+    "task_id": 71,
+    "passed": false,
+    "result": "failed: /tmp/tmpzomxt_32/test.js:18\nconst volumeSphere = () => {\n      ^\n\nSyntaxError: Identifier 'volumeSphere' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "71": {
+    "task_id": 72,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "72": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "73": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "74": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "75": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "76": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "77": {
+    "task_id": 78,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "78": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "79": {
+    "task_id": 80,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "80": {
+    "task_id": 81,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "81": {
+    "task_id": 82,
+    "passed": false,
+    "result": "failed: /tmp/tmpqmnj9q8a/test.js:58\nconst testPower = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "82": {
+    "task_id": 83,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "83": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "84": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "85": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "86": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "87": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "88": {
+    "task_id": 89,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "89": {
+    "task_id": 90,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "90": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "91": {
+    "task_id": 92,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "92": {
+    "task_id": 93,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "93": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "94": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "95": {
+    "task_id": 96,
+    "passed": false,
+    "result": "failed: /tmp/tmpk0lkch_w/test.js:72\nconst testCount_Hexadecimal = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "96": {
+    "task_id": 97,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "97": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "98": {
+    "task_id": 99,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "99": {
+    "task_id": 100,
+    "passed": false,
+    "result": "failed: /tmp/tmplwo6vgom/test.js:21\n    return Array.from(intersection);\n                 ^\n\nTypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))\n    at Function.from (<anonymous>)\n    at commonInNestedLists (/tmp/tmplwo6vgom/test.js:21:18)\n    at testCommonInNestedLists (/tmp/tmplwo6vgom/test.js:24:35)\n    at Object.<anonymous> (/tmp/tmplwo6vgom/test.js:29:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "100": {
+    "task_id": 101,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "101": {
+    "task_id": 102,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "102": {
+    "task_id": 103,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "103": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "104": {
+    "task_id": 105,
+    "passed": false,
+    "result": "failed: /tmp/tmpt1gz9ijs/test.js:18\nconst tupleToInt = () => {\n      ^\n\nSyntaxError: Identifier 'tupleToInt' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "105": {
+    "task_id": 106,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "106": {
+    "task_id": 107,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "107": {
+    "task_id": 108,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "108": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "109": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "110": {
+    "task_id": 111,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 50 Failed\nAssertion failed: Test 1000 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "111": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "112": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "113": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "114": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "115": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "116": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "117": {
+    "task_id": 118,
+    "passed": false,
+    "result": "failed: /tmp/tmpol4qj0kd/test.js:87\ntestMagic_square_test(); // invoke test\n                                       \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "118": {
+    "task_id": 119,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "119": {
+    "task_id": 120,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "120": {
+    "task_id": 121,
+    "passed": false,
+    "result": "failed: /tmp/tmpuevypgma/test.js:17\nconst tupString = () => {\n      ^\n\nSyntaxError: Identifier 'tupString' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "121": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "122": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "123": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "124": {
+    "task_id": 125,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 1442.75, got 1148\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "125": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: /tmp/tmp20ayr9w5/test.js:24\nconst zeroCount = () => {\n      ^\n\nSyntaxError: Identifier 'zeroCount' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "126": {
+    "task_id": 127,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "127": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "128": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "129": {
+    "task_id": 130,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "130": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "131": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: /tmp/tmpk9ivwowt/test.js:108\ntestfindLists();\n                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "132": {
+    "task_id": 133,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "133": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "134": {
+    "task_id": 135,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "135": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "136": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: /tmp/tmp0lp55d_j/test.js:19\ntestSum_digits_twoparts(); // invoke test\n                                         \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "137": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "138": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "139": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: /tmp/tmpkvuma58b/test.js:37\nconst testMerge_sort = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "140": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: /tmp/tmpot87g_i_/test.js:20\n    console.assert(arraysEqual(parabola_vertex(5, 3, 2), [(-0.3).toFixed(8), (1.55).toFixed(8)]), \"Test 1 Failed\");\n                   ^\n\nReferenceError: parabola_vertex is not defined\n    at testParabola_vertex (/tmp/tmpot87g_i_/test.js:20:20)\n    at Object.<anonymous> (/tmp/tmpot87g_i_/test.js:25:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "141": {
+    "task_id": 143,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "142": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "143": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: /tmp/tmph9_il2r_/test.js:24\nconst tupleIntStr = () => {\n      ^\n\nSyntaxError: Identifier 'tupleIntStr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "144": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "145": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "146": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "147": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "148": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "149": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "150": {
+    "task_id": 152,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "151": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "152": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "153": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "154": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "155": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "156": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "157": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "158": {
+    "task_id": 160,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "159": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "160": {
+    "task_id": 162,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "161": {
+    "task_id": 163,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "162": {
+    "task_id": 164,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "163": {
+    "task_id": 165,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "164": {
+    "task_id": 166,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "165": {
+    "task_id": 167,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "166": {
+    "task_id": 168,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "167": {
+    "task_id": 169,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "168": {
+    "task_id": 170,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "169": {
+    "task_id": 171,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "170": {
+    "task_id": 172,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "171": {
+    "task_id": 173,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "172": {
+    "task_id": 174,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "173": {
+    "task_id": 175,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "174": {
+    "task_id": 176,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "175": {
+    "task_id": 177,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "176": {
+    "task_id": 178,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "177": {
+    "task_id": 179,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "178": {
+    "task_id": 180,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "179": {
+    "task_id": 181,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "180": {
+    "task_id": 182,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "181": {
+    "task_id": 183,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "182": {
+    "task_id": 184,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "183": {
+    "task_id": 185,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "184": {
+    "task_id": 186,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "185": {
+    "task_id": 187,
+    "passed": false,
+    "result": "failed: /tmp/tmp4dz4wrs1/test.js:54\nconst testLargestTriangle = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "186": {
+    "task_id": 188,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "187": {
+    "task_id": 189,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "188": {
+    "task_id": 190,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "189": {
+    "task_id": 191,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "190": {
+    "task_id": 192,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "191": {
+    "task_id": 193,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "192": {
+    "task_id": 194,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "193": {
+    "task_id": 195,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "194": {
+    "task_id": 196,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "195": {
+    "task_id": 197,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "196": {
+    "task_id": 198,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "197": {
+    "task_id": 199,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "198": {
+    "task_id": 200,
+    "passed": false,
+    "result": "failed: /tmp/tmp_jkny4jm/test.js:85\ntestcount_Num() // invoke test\n                              \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "199": {
+    "task_id": 201,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "200": {
+    "task_id": 202,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "201": {
+    "task_id": 203,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 5156.620156177409, got NaN\nAssertion failed: Expected 3437.746770784939, got NaN\nAssertion failed: Expected 6875.493541569878, got NaN\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "202": {
+    "task_id": 204,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "203": {
+    "task_id": 205,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "204": {
+    "task_id": 206,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "205": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: /tmp/tmp94zt22eo/test.js:92\ntestmin_Operations()\n                    \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "206": {
+    "task_id": 208,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "207": {
+    "task_id": 209,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "208": {
+    "task_id": 210,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "209": {
+    "task_id": 211,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "210": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "211": {
+    "task_id": 213,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "212": {
+    "task_id": 214,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "213": {
+    "task_id": 215,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "214": {
+    "task_id": 216,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "215": {
+    "task_id": 217,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "216": {
+    "task_id": 218,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "217": {
+    "task_id": 219,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "218": {
+    "task_id": 220,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "219": {
+    "task_id": 221,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "220": {
+    "task_id": 222,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "221": {
+    "task_id": 223,
+    "passed": false,
+    "result": "failed: /tmp/tmp7k0arx8t/test.js:18\nconst volumeCube = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCube' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "222": {
+    "task_id": 224,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "223": {
+    "task_id": 225,
+    "passed": false,
+    "result": "failed: /tmp/tmp2z66aaw2/test.js:80\ntestNo_of_Triangle() // invoke test\n                                   \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "224": {
+    "task_id": 226,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "225": {
+    "task_id": 227,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "226": {
+    "task_id": 228,
+    "passed": false,
+    "result": "failed: /tmp/tmpajzt3usf/test.js:23\n                t[i][j] = t[i - 1][j] + t[i / 2][j - 1];\n                                                ^\n\nTypeError: Cannot read properties of undefined (reading '0')\n    at getTotalNumberOfSequences (/tmp/tmpajzt3usf/test.js:23:49)\n    at testGet_total_number_of_sequences (/tmp/tmpajzt3usf/test.js:30:20)\n    at Object.<anonymous> (/tmp/tmpajzt3usf/test.js:35:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "227": {
+    "task_id": 229,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "228": {
+    "task_id": 230,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "229": {
+    "task_id": 231,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "230": {
+    "task_id": 232,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "231": {
+    "task_id": 233,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "232": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "233": {
+    "task_id": 235,
+    "passed": false,
+    "result": "failed: /tmp/tmp25pxdo4d/test.js:20\nconst testbabylonian_squareroot = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "234": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "235": {
+    "task_id": 237,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "236": {
+    "task_id": 238,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "237": {
+    "task_id": 239,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "238": {
+    "task_id": 240,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "239": {
+    "task_id": 241,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "240": {
+    "task_id": 242,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "241": {
+    "task_id": 243,
+    "passed": false,
+    "result": "failed: /tmp/tmpg7_2gtb6/test.js:23\nconst wordsAe = () => {\n      ^\n\nSyntaxError: Identifier 'wordsAe' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "242": {
+    "task_id": 244,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "243": {
+    "task_id": 245,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "244": {
+    "task_id": 246,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "245": {
+    "task_id": 247,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "246": {
+    "task_id": 248,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "247": {
+    "task_id": 249,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "248": {
+    "task_id": 250,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "249": {
+    "task_id": 251,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "250": {
+    "task_id": 252,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "251": {
+    "task_id": 253,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "252": {
+    "task_id": 254,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "253": {
+    "task_id": 255,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "254": {
+    "task_id": 256,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "255": {
+    "task_id": 257,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "256": {
+    "task_id": 258,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "257": {
+    "task_id": 259,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "258": {
+    "task_id": 260,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "259": {
+    "task_id": 261,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "260": {
+    "task_id": 262,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "261": {
+    "task_id": 263,
+    "passed": false,
+    "result": "failed: /tmp/tmpj611johg/test.js:16\n        sum += binomialCoeff(n, i);\n        ^\n\nReferenceError: binomialCoeff is not defined\n    at evenBinomialCoeffSum (/tmp/tmpj611johg/test.js:16:9)\n    at testEven_binomial_Coeff_Sum (/tmp/tmpj611johg/test.js:21:20)\n    at Object.<anonymous> (/tmp/tmpj611johg/test.js:26:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "262": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "263": {
+    "task_id": 265,
+    "passed": false,
+    "result": "failed: /tmp/tmpho9ijpn3/test.js:18\nconst volumeCylinder = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCylinder' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "264": {
+    "task_id": 266,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "265": {
+    "task_id": 267,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "266": {
+    "task_id": 268,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "267": {
+    "task_id": 269,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "268": {
+    "task_id": 270,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "269": {
+    "task_id": 271,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "270": {
+    "task_id": 272,
+    "passed": false,
+    "result": "failed: /tmp/tmpgqyi3itp/test.js:29\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "271": {
+    "task_id": 273,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "272": {
+    "task_id": 274,
+    "passed": false,
+    "result": "failed: /tmp/tmp7u83priq/test.js:22\nconst textMatchTwoThree = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchTwoThree' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "273": {
+    "task_id": 275,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "274": {
+    "task_id": 276,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "275": {
+    "task_id": 277,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "276": {
+    "task_id": 278,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "277": {
+    "task_id": 279,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "278": {
+    "task_id": 280,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "279": {
+    "task_id": 281,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "280": {
+    "task_id": 282,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "281": {
+    "task_id": 283,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "282": {
+    "task_id": 284,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "283": {
+    "task_id": 285,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "284": {
+    "task_id": 286,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "285": {
+    "task_id": 287,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "286": {
+    "task_id": 288,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "287": {
+    "task_id": 289,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "288": {
+    "task_id": 290,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "289": {
+    "task_id": 291,
+    "passed": false,
+    "result": "failed: Assertion failed: Test Failed for input 6\nAssertion failed: Test Failed for input 10\nAssertion failed: Test Failed for input 18\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "290": {
+    "task_id": 292,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "291": {
+    "task_id": 293,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "292": {
+    "task_id": 294,
+    "passed": false,
+    "result": "failed: /tmp/tmpzdbxl0xa/test.js:27\nconst teststart_withp = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "293": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "294": {
+    "task_id": 296,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "295": {
+    "task_id": 297,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "296": {
+    "task_id": 298,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "297": {
+    "task_id": 299,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "298": {
+    "task_id": 300,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "299": {
+    "task_id": 301,
+    "passed": false,
+    "result": "failed: /tmp/tmpthd8kh5z/test.js:18\nconst volumeCone = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCone' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "300": {
+    "task_id": 302,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "301": {
+    "task_id": 303,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "302": {
+    "task_id": 304,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "303": {
+    "task_id": 305,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "304": {
+    "task_id": 306,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "305": {
+    "task_id": 307,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "306": {
+    "task_id": 308,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "307": {
+    "task_id": 309,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "308": {
+    "task_id": 310,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "309": {
+    "task_id": 311,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "310": {
+    "task_id": 312,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "311": {
+    "task_id": 313,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "312": {
+    "task_id": 314,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "313": {
+    "task_id": 315,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "314": {
+    "task_id": 316,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "315": {
+    "task_id": 317,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "316": {
+    "task_id": 318,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "317": {
+    "task_id": 319,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "318": {
+    "task_id": 320,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "319": {
+    "task_id": 321,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "320": {
+    "task_id": 322,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "321": {
+    "task_id": 323,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "322": {
+    "task_id": 324,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "323": {
+    "task_id": 325,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "324": {
+    "task_id": 326,
+    "passed": false,
+    "result": "failed: /tmp/tmpl8rsyr5n/test.js:22\nconst textMatchWord = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchWord' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "325": {
+    "task_id": 327,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "326": {
+    "task_id": 328,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "327": {
+    "task_id": 329,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "328": {
+    "task_id": 330,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "329": {
+    "task_id": 331,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "330": {
+    "task_id": 332,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "331": {
+    "task_id": 333,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "332": {
+    "task_id": 334,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "333": {
+    "task_id": 335,
+    "passed": false,
+    "result": "failed: /tmp/tmpyfns13qh/test.js:26\nconst zigzag = () => {\n      ^\n\nSyntaxError: Identifier 'zigzag' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "334": {
+    "task_id": 336,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "335": {
+    "task_id": 337,
+    "passed": false,
+    "result": "failed: /tmp/tmpuqq0sdqm/test.js:82\nconst testfind_ways = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "336": {
+    "task_id": 338,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "337": {
+    "task_id": 339,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "338": {
+    "task_id": 340,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "339": {
+    "task_id": 341,
+    "passed": false,
+    "result": "failed: /tmp/tmpwriueas6/test.js:24\nconst uniqueCharacters = () => {\n      ^\n\nSyntaxError: Identifier 'uniqueCharacters' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "340": {
+    "task_id": 342,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "341": {
+    "task_id": 343,
+    "passed": false,
+    "result": "failed: /tmp/tmpm39cb7ax/test.js:18\nconst tnAp = () => {\n      ^\n\nSyntaxError: Identifier 'tnAp' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "342": {
+    "task_id": 344,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "343": {
+    "task_id": 345,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "344": {
+    "task_id": 346,
+    "passed": false,
+    "result": "failed: /tmp/tmppu7gvyaf/test.js:59\nconst testFind_max = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "345": {
+    "task_id": 347,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "346": {
+    "task_id": 348,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "347": {
+    "task_id": 349,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "348": {
+    "task_id": 350,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "349": {
+    "task_id": 351,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "350": {
+    "task_id": 352,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "351": {
+    "task_id": 353,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "352": {
+    "task_id": 354,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "353": {
+    "task_id": 355,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "354": {
+    "task_id": 356,
+    "passed": false,
+    "result": "failed: /tmp/tmpeehboi_1/test.js:43\n    let root = new Node(1);\n               ^\n\nReferenceError: Node is not defined\n    at testis_tree_balanced (/tmp/tmpeehboi_1/test.js:43:16)\n    at Object.<anonymous> (/tmp/tmpeehboi_1/test.js:70:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "355": {
+    "task_id": 357,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "356": {
+    "task_id": 358,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "357": {
+    "task_id": 359,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "358": {
+    "task_id": 360,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "359": {
+    "task_id": 361,
+    "passed": false,
+    "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'heap'\nRequire stack:\n- /tmp/tmprhc8f_iu/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at heapAssending (/tmp/tmprhc8f_iu/test.js:16:18)\n    at Object.<anonymous> (/tmp/tmprhc8f_iu/test.js:34:16)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmprhc8f_iu/test.js' ]\n}\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "360": {
+    "task_id": 362,
+    "passed": false,
+    "result": "failed: /tmp/tmp27ctnuo_/test.js:20\nconst volumeCuboid = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCuboid' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "361": {
+    "task_id": 363,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "362": {
+    "task_id": 364,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "363": {
+    "task_id": 365,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "364": {
+    "task_id": 366,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "365": {
+    "task_id": 367,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "366": {
+    "task_id": 368,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "367": {
+    "task_id": 369,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "368": {
+    "task_id": 370,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "369": {
+    "task_id": 371,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "370": {
+    "task_id": 372,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "371": {
+    "task_id": 373,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "372": {
+    "task_id": 374,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "373": {
+    "task_id": 375,
+    "passed": false,
+    "result": "failed: /tmp/tmpomxngqm5/test.js:92\ntestswap_count() // invoke test\n                               \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "374": {
+    "task_id": 376,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "375": {
+    "task_id": 377,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "376": {
+    "task_id": 378,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "377": {
+    "task_id": 379,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "378": {
+    "task_id": 380,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "379": {
+    "task_id": 381,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "380": {
+    "task_id": 382,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "381": {
+    "task_id": 383,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "382": {
+    "task_id": 384,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "383": {
+    "task_id": 385,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "384": {
+    "task_id": 386,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "385": {
+    "task_id": 387,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "386": {
+    "task_id": 388,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "387": {
+    "task_id": 389,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "388": {
+    "task_id": 390,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "389": {
+    "task_id": 391,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "390": {
+    "task_id": 392,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "391": {
+    "task_id": 393,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "392": {
+    "task_id": 394,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "393": {
+    "task_id": 395,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "394": {
+    "task_id": 396,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "395": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: /tmp/tmp6tmqxyv3/test.js:60\n    console.assert(JSON.stringify(k_smallest_pairs([1,3,7],[2,4,6],2)) === JSON.stringify([[1, 2], [1, 4]]));\n                        ^\n\nReferenceError: k_smallest_pairs is not defined\n    at testK_smallest_pairs (/tmp/tmp6tmqxyv3/test.js:60:25)\n    at Object.<anonymous> (/tmp/tmp6tmqxyv3/test.js:65:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "396": {
+    "task_id": 398,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "397": {
+    "task_id": 399,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "398": {
+    "task_id": 400,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "399": {
+    "task_id": 401,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "400": {
+    "task_id": 402,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "401": {
+    "task_id": 403,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "402": {
+    "task_id": 404,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "403": {
+    "task_id": 405,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected breakSum(12) to be 13\nAssertion failed: Expected breakSum(24) to be 27\nAssertion failed: Expected breakSum(23) to be 23\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "404": {
+    "task_id": 406,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "405": {
+    "task_id": 407,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "406": {
+    "task_id": 408,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "407": {
+    "task_id": 409,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "408": {
+    "task_id": 410,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "409": {
+    "task_id": 411,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "410": {
+    "task_id": 412,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "411": {
+    "task_id": 413,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "412": {
+    "task_id": 414,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "413": {
+    "task_id": 415,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "414": {
+    "task_id": 416,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "415": {
+    "task_id": 417,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "416": {
+    "task_id": 418,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "417": {
+    "task_id": 419,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "418": {
+    "task_id": 420,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "419": {
+    "task_id": 421,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "420": {
+    "task_id": 422,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "421": {
+    "task_id": 423,
+    "passed": false,
+    "result": "failed: /tmp/tmpxlbs89jb/test.js:68\n    /*\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "422": {
+    "task_id": 424,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "423": {
+    "task_id": 425,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "424": {
+    "task_id": 426,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "425": {
+    "task_id": 427,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "426": {
+    "task_id": 428,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "427": {
+    "task_id": 429,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "428": {
+    "task_id": 430,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "429": {
+    "task_id": 431,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "430": {
+    "task_id": 432,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "431": {
+    "task_id": 433,
+    "passed": false,
+    "result": "failed: /tmp/tmpukc5wgsj/test.js:25\nconst trimTuple = () => {\n      ^\n\nSyntaxError: Identifier 'trimTuple' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "432": {
+    "task_id": 434,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "433": {
+    "task_id": 435,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "434": {
+    "task_id": 436,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "435": {
+    "task_id": 437,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "436": {
+    "task_id": 438,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "437": {
+    "task_id": 439,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "438": {
+    "task_id": 440,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "439": {
+    "task_id": 441,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "440": {
+    "task_id": 442,
+    "passed": false,
+    "result": "failed: Assertion failed: Test failed for n = 18\nAssertion failed: Test failed for n = 30\nAssertion failed: Test failed for n = 6\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "441": {
+    "task_id": 443,
+    "passed": false,
+    "result": "failed: /tmp/tmpsryo05uq/test.js:22\nconst textMatchWordz = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchWordz' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "442": {
+    "task_id": 444,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "443": {
+    "task_id": 445,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "444": {
+    "task_id": 446,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "445": {
+    "task_id": 447,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "446": {
+    "task_id": 448,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "447": {
+    "task_id": 449,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "448": {
+    "task_id": 450,
+    "passed": false,
+    "result": "failed: /tmp/tmp4sucm825/test.js:23\nconst upperCtr = () => {\n      ^\n\nSyntaxError: Identifier 'upperCtr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "449": {
+    "task_id": 451,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "450": {
+    "task_id": 452,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "451": {
+    "task_id": 453,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "452": {
+    "task_id": 454,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "453": {
+    "task_id": 455,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "454": {
+    "task_id": 456,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "455": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "456": {
+    "task_id": 458,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "457": {
+    "task_id": 459,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "458": {
+    "task_id": 460,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "459": {
+    "task_id": 461,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "460": {
+    "task_id": 462,
+    "passed": false,
+    "result": "failed: /tmp/tmptd8jyc3k/test.js:27\nconst tupleIntersection = () => {\n      ^\n\nSyntaxError: Identifier 'tupleIntersection' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "461": {
+    "task_id": 463,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "462": {
+    "task_id": 464,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "463": {
+    "task_id": 465,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "464": {
+    "task_id": 466,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "465": {
+    "task_id": 467,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "466": {
+    "task_id": 468,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "467": {
+    "task_id": 469,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "468": {
+    "task_id": 470,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "469": {
+    "task_id": 471,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "470": {
+    "task_id": 472,
+    "passed": false,
+    "result": "failed: Assertion failed: Test Case 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "471": {
+    "task_id": 473,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "472": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "473": {
+    "task_id": 475,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "474": {
+    "task_id": 476,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "475": {
+    "task_id": 477,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "476": {
+    "task_id": 478,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "477": {
+    "task_id": 479,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "478": {
+    "task_id": 480,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "479": {
+    "task_id": 481,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "480": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "481": {
+    "task_id": 483,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "482": {
+    "task_id": 484,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "483": {
+    "task_id": 485,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "484": {
+    "task_id": 486,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "485": {
+    "task_id": 487,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "486": {
+    "task_id": 488,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "487": {
+    "task_id": 489,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "488": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "489": {
+    "task_id": 491,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "490": {
+    "task_id": 492,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "491": {
+    "task_id": 493,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "492": {
+    "task_id": 494,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "493": {
+    "task_id": 495,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "494": {
+    "task_id": 496,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "495": {
+    "task_id": 497,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "496": {
+    "task_id": 498,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "497": {
+    "task_id": 499,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  }
+}

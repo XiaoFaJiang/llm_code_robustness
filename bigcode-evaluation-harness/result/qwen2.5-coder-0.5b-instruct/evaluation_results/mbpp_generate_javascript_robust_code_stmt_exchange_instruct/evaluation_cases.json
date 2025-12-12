@@ -1,0 +1,1248 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\nAssertion failed: Test 4 failed\n",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 10,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp9eghp71u/test.js:3\n    console.assert(JSON.stringify(multiples_of_num(4, 3)) === JSON.stringify([3, 6, 9, 12]), 'Test 1 failed');\n                        ^\n\nReferenceError: multiples_of_num is not defined\n    at testMultiples_of_num (/tmp/tmp9eghp71u/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp9eghp71u/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 11,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 13,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test failed for input 100\nAssertion failed: Test failed for input 1011\nAssertion failed: Test failed for input 1101101\n",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 14,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 18,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 19,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpsnrsxufd/test.js:3\n    console.assert(count_Substring_With_Equal_Ends(\"abc\") === 3);\n            ^\n\nReferenceError: count_Substring_With_Equal_Ends is not defined\n    at testCount_Substring_With_Equal_Ends (/tmp/tmpsnrsxufd/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpsnrsxufd/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 21,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 22,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 23,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 25,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 28,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'min-heap'\nRequire stack:\n- /tmp/tmphaetn253/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmphaetn253/test.js:2:27)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmphaetn253/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 34,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 36,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: /tmp/tmp3u7f9h0e/test.js:3\n    console.assert(compute_Last_Digit(2,4) === 2);\n            ^\n\nReferenceError: compute_Last_Digit is not defined\n    at testCompute_Last_Digit (/tmp/tmp3u7f9h0e/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp3u7f9h0e/test.js:11:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 37,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 43,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 45,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp8yb67nw4/test.js:3\n    console.assert(check(70) === false);\n            ^\n\nReferenceError: check is not defined\n    at testCheck (/tmp/tmp8yb67nw4/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp8yb67nw4/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 46,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 49,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 50,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 56,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'big-integer'\nRequire stack:\n- /tmp/tmpcnglevx8/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpcnglevx8/test.js:2:24)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpcnglevx8/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 58,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\n",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 60,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 63,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 70,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp5ks0uho7/test.js:19\nconst zip_tuples = () => {\n      ^\n\nSyntaxError: Identifier 'zip_tuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 72,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 81,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 82,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmp2k7w6wpe/test.js:3\n    console.assert(power(3, 4) === 81, \"Test 1 failed\");\n            ^\n\nReferenceError: power is not defined\n    at testPower (/tmp/tmp2k7w6wpe/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp2k7w6wpe/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 85,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 89,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp3nkfim18/test.js:19\n    const reversedStr = str.split('').reverse().join('');\n                            ^\n\nTypeError: str.split is not a function\n    at isPalindrome (/tmp/tmp3nkfim18/test.js:19:29)\n    at next_smallest_palindrome (/tmp/tmp3nkfim18/test.js:10:13)\n    at testNext_smallest_palindrome (/tmp/tmp3nkfim18/test.js:25:20)\n    at Object.<anonymous> (/tmp/tmp3nkfim18/test.js:30:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 90,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 98,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 102,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\n",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 108,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "34": {
+        "task_id": 111,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmppjwvpfbl/test.js:3\n    console.assert(smartNumber(1) === 30, 'Test 1 Failed');\n            ^\n\nReferenceError: smartNumber is not defined\n    at testSmartNumber (/tmp/tmppjwvpfbl/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmppjwvpfbl/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "35": {
+        "task_id": 112,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp58e8qw3a/test.js:3\n    console.assert(amicable_numbers_sum(999) === 504);\n            ^\n\nReferenceError: amicable_numbers_sum is not defined\n    at testAmicableNumbersSum (/tmp/tmp58e8qw3a/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp58e8qw3a/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "36": {
+        "task_id": 114,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "37": {
+        "task_id": 115,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "38": {
+        "task_id": 116,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: /tmp/tmp7lgv7pj8/test.js:3\n    console.assert(multiply_int(10, 20) === 200, \"Test 1 Failed\");\n            ^\n\nReferenceError: multiply_int is not defined\n    at testmultiply_int (/tmp/tmp7lgv7pj8/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp7lgv7pj8/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "39": {
+        "task_id": 118,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpfxjucbkm/test.js:3\n    console.assert(magic_square_test([[7, 12, 1, 14], [2, 13, 8, 11], [16, 3, 10, 5], [9, 6, 15, 4]]) === true);\n            ^\n\nReferenceError: magic_square_test is not defined\n    at testMagic_square_test (/tmp/tmpfxjucbkm/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpfxjucbkm/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "40": {
+        "task_id": 119,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "41": {
+        "task_id": 123,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "42": {
+        "task_id": 125,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmpux_u3jr8/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpux_u3jr8/test.js:2:17)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpux_u3jr8/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "43": {
+        "task_id": 130,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "44": {
+        "task_id": 131,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "45": {
+        "task_id": 132,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "46": {
+        "task_id": 133,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "47": {
+        "task_id": 134,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "48": {
+        "task_id": 135,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "49": {
+        "task_id": 136,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "50": {
+        "task_id": 137,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "51": {
+        "task_id": 138,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "52": {
+        "task_id": 140,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "53": {
+        "task_id": 141,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmpxtvfrcu9/test.js:10\nfunction mergeSort(arr) {\n^\n\nSyntaxError: Identifier 'mergeSort' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "54": {
+        "task_id": 142,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp_f1vbpfa/test.js:39\n    console.assert(findParabolaVertex(parabola_vertex(5, 3, 2), [(-0.3).toFixed(8), (1.55).toFixed(8)]), \"Test 1 Failed\");\n                   ^\n\nReferenceError: parabola_vertex is not defined\n    at testParabola_vertex (/tmp/tmp_f1vbpfa/test.js:39:20)\n    at Object.<anonymous> (/tmp/tmp_f1vbpfa/test.js:44:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "55": {
+        "task_id": 144,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "56": {
+        "task_id": 147,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "57": {
+        "task_id": 148,
+        "perturbation_type": "elseif2else_if",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "58": {
+        "task_id": 149,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "59": {
+        "task_id": 153,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "60": {
+        "task_id": 154,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "61": {
+        "task_id": 155,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "62": {
+        "task_id": 159,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "63": {
+        "task_id": 161,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp4ndnvupe/test.js:16\nconst inputString = \"std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std std\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "64": {
+        "task_id": 168,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "65": {
+        "task_id": 170,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "66": {
+        "task_id": 172,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "67": {
+        "task_id": 176,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "68": {
+        "task_id": 178,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "69": {
+        "task_id": 183,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "70": {
+        "task_id": 184,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "71": {
+        "task_id": 188,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "72": {
+        "task_id": 191,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "73": {
+        "task_id": 192,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmppzmsj2fv/test.js:3\n    console.assert(hamming_Distance(4, 8) === 2);\n            ^\n\nReferenceError: hamming_Distance is not defined\n    at testHamming_Distance (/tmp/tmppzmsj2fv/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmppzmsj2fv/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "74": {
+        "task_id": 193,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "75": {
+        "task_id": 196,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "76": {
+        "task_id": 201,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "77": {
+        "task_id": 204,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "78": {
+        "task_id": 207,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmpv2kks27x/test.js:3\n    console.assert(min_Operations(2, 4) === 1);\n            ^\n\nReferenceError: min_Operations is not defined\n    at testmin_Operations (/tmp/tmpv2kks27x/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpv2kks27x/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "79": {
+        "task_id": 208,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "80": {
+        "task_id": 212,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "81": {
+        "task_id": 213,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "82": {
+        "task_id": 214,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "83": {
+        "task_id": 215,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "84": {
+        "task_id": 216,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "85": {
+        "task_id": 218,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "86": {
+        "task_id": 220,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "87": {
+        "task_id": 224,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "88": {
+        "task_id": 225,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\n",
+        "completion_id": 0
+    },
+    "89": {
+        "task_id": 228,
+        "perturbation_type": "elseif2else_if",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "90": {
+        "task_id": 230,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: \n<--- Last few GCs --->\n\n[1220197:0x7c08000]    37268 ms: Scavenge (interleaved) 4085.8 (4091.3) -> 4085.8 (4102.3) MB, pooled: 0 MB, 12.60 / 0.00 ms  (average mu = 0.153, current mu = 0.120) allocation failure; \n[1220197:0x7c08000]    40826 ms: Mark-Compact (reduce) 4085.8 (4102.3) -> 4085.8 (4088.5) MB, pooled: 0 MB, 3241.73 / 0.00 ms  (+ 1.4 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 3248 ms) (average mu = 0.129, \n\n<--- JS stacktrace --->\n\nFATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory\n----- Native stack trace -----\n\n 1: 0xe7c015 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]\n 2: 0x12e2400 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]\n 3: 0x12e279c v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]\n 4: 0x1545675  [node]\n 5: 0x15456a2  [node]\n 6: 0x155845a  [node]\n 7: 0x155c450  [node]\n 8: 0x1fb8871  [node]\n",
+        "completion_id": 0
+    },
+    "91": {
+        "task_id": 234,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "92": {
+        "task_id": 236,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpy7bwbyze/test.js:38\ntestLps();\n          \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "93": {
+        "task_id": 245,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'some-prime-package'\nRequire stack:\n- /tmp/tmp2rdzowmp/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmp2rdzowmp/test.js:2:21)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmp2rdzowmp/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "94": {
+        "task_id": 253,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "95": {
+        "task_id": 259,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "96": {
+        "task_id": 260,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "97": {
+        "task_id": 264,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "98": {
+        "task_id": 267,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "99": {
+        "task_id": 269,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp3f4tfse6/test.js:3\n    console.assert(JSON.stringify(sequential_search([11,23,58,31,56,77,43,12,65,19], 31)) === JSON.stringify([true, 3]), \"Test 1 failed\");\n                        ^\n\nReferenceError: sequential_search is not defined\n    at testSequential_search (/tmp/tmp3f4tfse6/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmp3f4tfse6/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "100": {
+        "task_id": 272,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpgcg9t4ig/test.js:14\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "101": {
+        "task_id": 275,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "102": {
+        "task_id": 277,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "103": {
+        "task_id": 284,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "104": {
+        "task_id": 285,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "105": {
+        "task_id": 286,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "106": {
+        "task_id": 289,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "107": {
+        "task_id": 292,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "108": {
+        "task_id": 293,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "109": {
+        "task_id": 295,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "110": {
+        "task_id": 300,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\n",
+        "completion_id": 0
+    },
+    "111": {
+        "task_id": 303,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "112": {
+        "task_id": 304,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "113": {
+        "task_id": 305,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "114": {
+        "task_id": 306,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmp0i7cl6uy/test.js:27\nconst testModifiedEncode = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "115": {
+        "task_id": 307,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp38v6qkzo/test.js:3\n    console.assert(max_volume(8) === 18, 'Test 1 failed');\n            ^\n\nReferenceError: max_volume is not defined\n    at testMax_volume (/tmp/tmp38v6qkzo/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp38v6qkzo/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "116": {
+        "task_id": 309,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 5434, got 0\nAssertion failed: Expected 41230, got 0\nAssertion failed: Expected 2151270, got 0\n",
+        "completion_id": 0
+    },
+    "117": {
+        "task_id": 310,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "118": {
+        "task_id": 312,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmpjp8vpp8r/test.js:3\n    console.assert(JSON.stringify(re_arrange([-5, -2, 5, 2, 4, 7, 1, 8, 0, -8], 10)) === JSON.stringify([-5, 5, -2, 2, -8, 4, 7, 1, 8, 0]));\n                        ^\n\nReferenceError: re_arrange is not defined\n    at testRe_arrange (/tmp/tmpjp8vpp8r/test.js:3:25)\n    at Object.<anonymous> (/tmp/tmpjp8vpp8r/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "119": {
+        "task_id": 313,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "120": {
+        "task_id": 314,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "121": {
+        "task_id": 315,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "122": {
+        "task_id": 320,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "123": {
+        "task_id": 327,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmppv1uwtey/test.js:3\n    console.assert(count_Substring_With_Equal_Ends('aba') === 4);\n            ^\n\nReferenceError: count_Substring_With_Equal_Ends is not defined\n    at testCount_Substring_With_Equal_Ends (/tmp/tmppv1uwtey/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmppv1uwtey/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "124": {
+        "task_id": 337,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "125": {
+        "task_id": 338,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "126": {
+        "task_id": 339,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "127": {
+        "task_id": 340,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "128": {
+        "task_id": 341,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: /tmp/tmp87s_l4k4/test.js:12\nconst unique_Characters = () => {\n      ^\n\nSyntaxError: Identifier 'unique_Characters' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "129": {
+        "task_id": 344,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\n",
+        "completion_id": 0
+    },
+    "130": {
+        "task_id": 353,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "131": {
+        "task_id": 354,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "132": {
+        "task_id": 363,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "133": {
+        "task_id": 369,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmp3qe_76vy/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmp3qe_76vy/test.js:2:19)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmp3qe_76vy/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "134": {
+        "task_id": 370,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmpgfx6zsqf/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpgfx6zsqf/test.js:2:18)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpgfx6zsqf/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "135": {
+        "task_id": 371,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "136": {
+        "task_id": 372,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "137": {
+        "task_id": 373,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "138": {
+        "task_id": 375,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "139": {
+        "task_id": 377,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "140": {
+        "task_id": 384,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\n",
+        "completion_id": 0
+    },
+    "141": {
+        "task_id": 386,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: /tmp/tmpqrq178ac/test.js:3\n    console.assert(median_numbers(25, 55, 65) === 55);\n            ^\n\nReferenceError: median_numbers is not defined\n    at testMedian_numbers (/tmp/tmpqrq178ac/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpqrq178ac/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "142": {
+        "task_id": 391,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'mathjs'\nRequire stack:\n- /tmp/tmp4kvcjhza/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmp4kvcjhza/test.js:2:20)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmp4kvcjhza/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "143": {
+        "task_id": 396,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "144": {
+        "task_id": 397,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp1z778s02/test.js:82\n    console.assert(JSON.stringify(k_smallest_pairs([1,3,7],[2,4,6],2)) === JSON.stringify([[1, 2], [1, 4]]));\n                        ^\n\nReferenceError: k_smallest_pairs is not defined\n    at testK_smallest_pairs (/tmp/tmp1z778s02/test.js:82:25)\n    at Object.<anonymous> (/tmp/tmp1z778s02/test.js:87:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "145": {
+        "task_id": 401,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "146": {
+        "task_id": 404,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "147": {
+        "task_id": 409,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "148": {
+        "task_id": 411,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmppm3ctb57/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmppm3ctb57/test.js:2:17)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmppm3ctb57/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "149": {
+        "task_id": 412,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmphqnt6rc7/test.js:3\n    console.assert(get_maxgold([[1, 3, 1, 5],[2, 2, 4, 1],[5, 0, 2, 3],[0, 6, 1, 2]], 4, 4) === 16, \"Test 1 Failed\");\n            ^\n\nReferenceError: get_maxgold is not defined\n    at testGet_maxgold (/tmp/tmphqnt6rc7/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmphqnt6rc7/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "150": {
+        "task_id": 414,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "151": {
+        "task_id": 417,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmp65us17d0/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmp65us17d0/test.js:2:18)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmp65us17d0/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "152": {
+        "task_id": 426,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "153": {
+        "task_id": 427,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "154": {
+        "task_id": 442,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test failed for n = 18\nAssertion failed: Test failed for n = 30\nAssertion failed: Test failed for n = 6\n",
+        "completion_id": 0
+    },
+    "155": {
+        "task_id": 450,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmpqetv1axc/test.js:13\nconst upper_ctr = () => {\n      ^\n\nSyntaxError: Identifier 'upper_ctr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "156": {
+        "task_id": 452,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed: [Test Case 1 Failed]\nAssertion failed: [Test Case 2 Failed]\nAssertion failed: [Test Case 3 Failed]\n",
+        "completion_id": 0
+    },
+    "157": {
+        "task_id": 455,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "158": {
+        "task_id": 456,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmp6g_ycpfz/test.js:3\n    console.assert(decimal_to_Octal(10) === 12);\n            ^\n\nReferenceError: decimal_to_Octal is not defined\n    at testdecimal_to_Octal (/tmp/tmp6g_ycpfz/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmp6g_ycpfz/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "159": {
+        "task_id": 457,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: /tmp/tmp56lxwsid/test.js:28\ntestmax_product()\n                 \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "160": {
+        "task_id": 458,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "161": {
+        "task_id": 460,
+        "perturbation_type": "for2while",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "162": {
+        "task_id": 461,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "163": {
+        "task_id": 468,
+        "perturbation_type": "while2for",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "164": {
+        "task_id": 469,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "165": {
+        "task_id": 472,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: Assertion failed: Test Case 1 Failed\nAssertion failed: Test Case 2 Failed\nAssertion failed: Test Case 3 Failed\n",
+        "completion_id": 0
+    },
+    "166": {
+        "task_id": 474,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "167": {
+        "task_id": 475,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "168": {
+        "task_id": 476,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "169": {
+        "task_id": 478,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "170": {
+        "task_id": 481,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmpyewpfxqf/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpyewpfxqf/test.js:2:20)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpyewpfxqf/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "171": {
+        "task_id": 482,
+        "perturbation_type": "Not_Determinator_once",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'canvas'\nRequire stack:\n- /tmp/tmpjs_i_9qs/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpjs_i_9qs/test.js:2:26)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpjs_i_9qs/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "172": {
+        "task_id": 487,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "173": {
+        "task_id": 490,
+        "perturbation_type": "while2for",
+        "passed": false,
+        "result": "failed: /tmp/tmpezk6bzsw/test.js:3\n    console.assert(num_comm_div(2, 4) === 2, \"Test 1 failed\");\n            ^\n\nReferenceError: num_comm_div is not defined\n    at testNum_comm_div (/tmp/tmpezk6bzsw/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpezk6bzsw/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "174": {
+        "task_id": 493,
+        "perturbation_type": "for_var_outer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "175": {
+        "task_id": 495,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'mathjs'\nRequire stack:\n- /tmp/tmpn8xr93an/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpn8xr93an/test.js:2:23)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpn8xr93an/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "176": {
+        "task_id": 496,
+        "perturbation_type": "for2while",
+        "passed": false,
+        "result": "failed: node:internal/modules/cjs/loader:1246\n  throw err;\n  ^\n\nError: Cannot find module 'lodash'\nRequire stack:\n- /tmp/tmpucnjk418/test.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1243:15)\n    at Function._load (node:internal/modules/cjs/loader:1068:27)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Module.require (node:internal/modules/cjs/loader:1329:12)\n    at require (node:internal/modules/helpers:136:16)\n    at Object.<anonymous> (/tmp/tmpucnjk418/test.js:2:20)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [ '/tmp/tmpucnjk418/test.js' ]\n}\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "177": {
+        "task_id": 499,
+        "perturbation_type": "for_var_outer",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    }
+}

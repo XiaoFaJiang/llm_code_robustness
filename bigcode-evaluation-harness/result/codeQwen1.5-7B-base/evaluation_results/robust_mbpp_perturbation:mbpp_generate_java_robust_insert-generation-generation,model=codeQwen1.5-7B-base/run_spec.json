@@ -1,0 +1,15 @@
+{
+  "name": "robust_mbpp_perturbation:mbpp_generate_java_robust_insert-generation-generation,model=codeQwen1.5-7B-base",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_mbpp_perturbation",
+      "subset": "mbpp_generate_java_robust_insert"
+    }
+  },
+  "adapter_spec": {
+    "model": "codeQwen1.5-7B-base"
+  },
+  "groups": [
+    "robust_mbpp_perturbation"
+  ]
+}

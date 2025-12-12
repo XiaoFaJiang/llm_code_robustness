@@ -1,0 +1,240 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `remove_Occ(\"hello\", 'l') == \"heo\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "1": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "2": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:68:5: error: ‘assert’ was not declared in this scope\n   68 |     assert(sorted_list1 == expected_list1);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "3": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function ‘int main()’:\ntest.cpp:33:37: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   33 |     assert(find_gcd({2, 4, 6, 8, 16}) == 2);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:34:30: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   34 |     assert(find_gcd({1, 2, 3}) == 1);\n      |                              ^\n      |                              |\n      |                              <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:35:33: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   35 |     assert(find_gcd({2, 4, 6, 8}) == 2);\n      |                                 ^\n      |                                 |\n      |                                 <brace-enclosed initializer list>\ntest.cpp:24:18: note:   initializing argument 1 of ‘int find_gcd(int, int)’\n   24 | int find_gcd(int x, int y) {\n      |              ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "4": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "5": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `is_samepatterns({\"red\",\"green\",\"green\"}, {\"a\", \"b\", \"b\"}) == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "7": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "8": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:66: int main(): Assertion `amicable_numbers_sum(999) == 504' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 118,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:69:5: error: ‘assert’ was not declared in this scope\n   69 |     assert(magic_square_test({{7, 12, 1, 14}, {2, 13, 8, 11}, {16, 3, 10, 5}, {9, 6, 15, 4}}) == true);\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | #include <iostream>\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "10": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `check_last({5, 7, 10}, 3, 1) == \"ODD\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:51: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘void merge_sort(std::vector<int>&, int, int)’:\ntest.cpp:50:34: error: no matching function for call to ‘merge(std::vector<int>&, int&, int&, int&)’\n   50 |         merge(arr, low, mid, high);\n      |                                  ^\ntest.cpp:25:13: note: candidate: ‘std::vector<int> merge(std::vector<int>&, std::vector<int>&)’\n   25 | vector<int> merge(vector<int>& a, vector<int>& b) {\n      |             ^~~~~\ntest.cpp:25:13: note:   candidate expects 2 arguments, 4 provided\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter)’\n 4955 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:4955:5: note:   template argument deduction/substitution failed:\ntest.cpp:50:34: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   50 |         merge(arr, low, mid, high);\n      |                                  ^\nIn file included from /usr/include/c++/9/algorithm:62,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note: candidate: ‘template<class _IIter1, class _IIter2, class _OIter, class _Compare> _OIter std::merge(_IIter1, _IIter1, _IIter2, _IIter2, _OIter, _Compare)’\n 5005 |     merge(_InputIterator1 __first1, _InputIterator1 __last1,\n      |     ^~~~~\n/usr/include/c++/9/bits/stl_algo.h:5005:5: note:   template argument deduction/substitution failed:\ntest.cpp:50:34: note:   deduced conflicting types for parameter ‘_IIter1’ (‘std::vector<int>’ and ‘int’)\n   50 |         merge(arr, low, mid, high);\n      |                                  ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator, class _Compare> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator, _Compare)’\n  412 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:412:1: note:   template argument deduction/substitution failed:\ntest.cpp:50:34: note:   candidate expects 7 arguments, 4 provided\n   50 |         merge(arr, low, mid, high);\n      |                                  ^\nIn file included from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note: candidate: ‘template<class _ExecutionPolicy, class _ForwardIterator1, class _ForwardIterator2, class _ForwardIterator> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, _ForwardIterator2> std::merge(_ExecutionPolicy&&, _ForwardIterator1, _ForwardIterator1, _ForwardIterator2, _ForwardIterator2, _ForwardIterator)’\n  417 | merge(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,\n      | ^~~~~\n/usr/include/c++/9/pstl/glue_algorithm_defs.h:417:1: note:   template argument deduction/substitution failed:\ntest.cpp:50:34: note:   candidate expects 6 arguments, 4 provided\n   50 |         merge(arr, low, mid, high);\n      |                                  ^\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "13": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:25:10: fatal error: assert: No such file or directory\n   25 | #include <assert>\n      |          ^~~~~~~~\ncompilation terminated.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "14": {
+    "task_id": 148,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `month_season(\"January\", 4) == \"winter\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "15": {
+    "task_id": 168,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:51: int main(): Assertion `is_num_keith(14) == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "16": {
+    "task_id": 178,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:56: int main(): Assertion `first_Missing_Positive({1, 2, 3, -1, 5}, 5) == 4' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "17": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:41: int main(): Assertion `min_operations_to_equalize(4, 10) == 4' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "18": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp: In function ‘int main()’:\ntest.cpp:54:62: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   54 |     assert(find_majority_element({1, 2, 3, 3, 3, 3, 10}, 7, 3) == true);\n      |                                                              ^\ntest.cpp:40:5: note: declared here\n   40 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:55:64: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   55 |     assert(find_majority_element({1, 1, 2, 4, 4, 4, 6, 6}, 8, 4) == false);\n      |                                                                ^\ntest.cpp:40:5: note: declared here\n   40 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:23:\ntest.cpp:56:55: error: too many arguments to function ‘int find_majority_element(const std::vector<int>&)’\n   56 |     assert(find_majority_element({1, 1, 1, 2, 2}, 5, 1) == true);\n      |                                                       ^\ntest.cpp:40:5: note: declared here\n   40 | int find_majority_element(const vector<int>& arr) {\n      |     ^~~~~~~~~~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "19": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int max_sum(std::vector<int>, int)’:\ntest.cpp:52:5: warning: no return statement in function returning non-void [-Wreturn-type]\n   52 |     }\n      |     ^\ntest.cpp: At global scope:\ntest.cpp:54:5: error: expected unqualified-id before ‘for’\n   54 |     for (int i = 0; i < n; ++i) {\n      |     ^~~\ntest.cpp:54:21: error: ‘i’ does not name a type\n   54 |     for (int i = 0; i < n; ++i) {\n      |                     ^\ntest.cpp:54:28: error: expected unqualified-id before ‘++’ token\n   54 |     for (int i = 0; i < n; ++i) {\n      |                            ^~\ntest.cpp:58:5: error: expected unqualified-id before ‘return’\n   58 |     return maxSum;\n      |     ^~~~~~\ntest.cpp:59:1: error: expected declaration before ‘}’ token\n   59 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 244,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:72:106: error: ‘compare_vectors’ was not declared in this scope\n   72 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\ntest.cpp:72:5: error: ‘assert’ was not declared in this scope\n   72 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |     ^~~~~~\ntest.cpp:21:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   20 | #include<fstream>\n  +++ |+#include <cassert>\n   21 | \n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "22": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:46:5: error: ‘assert’ was not declared in this scope\n   46 |     assert(get_Position(arr1, 3, 2) == 2);\n      |     ^~~~~~\ntest.cpp:25:1: note: ‘assert’ is defined in header ‘<cassert>’; did you forget to ‘#include <cassert>’?\n   24 | #include <cmath> // for ceil\n  +++ |+#include <cassert>\n   25 | using namespace std;\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:49: int main(): Assertion `max_sum_increasing_subseq({1, 101, 2, 3, 100, 4, 5}, 7, 4, 6) == 11' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "24": {
+    "task_id": 312,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:65: int main(): Assertion `re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 315,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:53: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "26": {
+    "task_id": 339,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "27": {
+    "task_id": 340,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "28": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "29": {
+    "task_id": 397,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "30": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "31": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:58:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   58 |     assert(is_palindrome(v1, 4) == 54545);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:61:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   61 |     assert(is_palindrome(v2, 6) == 5);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp:64:26: error: cannot convert ‘std::vector<int>’ to ‘int’\n   64 |     assert(is_palindrome(v3, 5) == 9);\n      |                          ^~\n      |                          |\n      |                          std::vector<int>\ntest.cpp:27:24: note:   initializing argument 1 of ‘bool is_palindrome(int)’\n   27 | bool is_palindrome(int n) {\n      |                    ~~~~^\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "32": {
+    "task_id": 482,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "33": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  }
+}

@@ -1,0 +1,547 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 89,
+    "generations": [
+      [
+        "function remove_Occ(s, ch) {\n    {\n        let i = 0;\n        for (; i < s.length; i++) {\n            if (s[i] === ch) {\n                s = s.substring(0, i) + s.substring(i + 1);\n                break;\n            }\n        }\n    }\n\n    let firstIndex = s.indexOf(ch);\n    let lastIndex = s.lastIndexOf(ch);\n\n    if (firstIndex !== -1) {\n        s = s.substring(0, firstIndex) + s.substring(firstIndex + 1);\n    }\n\n    if (lastIndex !== -1) {\n        s = s.substring(0, lastIndex) + s.substring(lastIndex + 1);\n    }\n\n    return s;\n}\n\n// Example usage:"
+      ],
+      [
+        "function multiples_of_num(m, n) {\n    let multiples = [];\n    let i = n;\n    while(i <= m * n){\n        multiples.push(i);\n        i += n;\n    }\n    return multiples;\n}"
+      ],
+      [
+        "function find_first_duplicate(nums) {\n    let num_set = new Set();\n    let no_duplicate = -1;\n    {\n        let i = 0;\n        while(i < nums.length){\n            if (num_set.has(nums[i])) {\n                return nums[i];\n            } else {\n                num_set.add(nums[i]);\n            }\n            i++;\n        }\n    }\n}"
+      ],
+      [
+        "function binary_to_decimal(binary) {\n    let decimal = 0;\n    let i = 0;\n    for (;(binary != 0);){\n        let dec = binary % 10;\n        decimal += dec * Math.pow(2, i);\n        binary = Math.floor(binary / 10);\n        i++;\n    }\n    return decimal;\n}"
+      ],
+      [
+        "function find_Product(arr, n) {\n    arr.sort((a, b) => a - b);\n    let prod = 1;\n    for (let i = 0; i < n; i++) {\n        if (i === 0 || arr[i - 1] !== arr[i]) {\n            prod *= arr[i];\n        }\n    }\n    return prod;\n}"
+      ],
+      [
+        "function get_Odd_Occurrence(arr, arr_size) {   \n    {\n        let i = 0;\n        for (; i < arr_size; i++) { \n            let count = 0;\n            {\n                let j = 0;\n                for (; j < arr_size; j++) { \n                            if (arr[i] === arr[j]) { \n                                count += 1;     \n                            }\n                        //begin to write code\n                    }\n                }\n            }\n            if(count % 2 !== 0){\n                return arr[i];\n            }\n        }\n    }\n}"
+      ],
+      [
+        "function check_Equality(s) {\n    return s.charCodeAt(0) === s.charCodeAt(s.length - 1);\n}\n\nfunction count_Substring_With_Equal_Ends(s) {\n    let result = 0;\n    const n = s.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 1; j <= n - i; j++) {\n            if (check_Equality(s.substring(i, i + j))) {\n                result++;\n            }\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function max_Prime_Factors(n) {\n    let maxPrime = -1;\n    while (n % 2 === 0) {\n        maxPrime = 2;\n        n >>= 1;\n    }\n    let i = 3;\n    for (; i <= Math.sqrt(n); i += 2) {\n        while (n % i === 0) {\n            maxPrime = i;\n            n /= i;\n        }\n    }\n    if (n > 2) {\n        maxPrime = n;\n    }\n    return maxPrime;\n}"
+      ],
+      [
+        "function decimal_To_Binary(N) {\n    let B_Number = 0;\n    let cnt = 0;\n    for (; (N != 0); ) {\n        let rem = N % 2;\n        let c = Math.pow(10, cnt);\n        B_Number += rem * c;\n        N = Math.floor(N / 2);\n        cnt++;\n    }\n    return B_Number;\n}"
+      ],
+      [
+        "function find_missing(ar, N) {\n    let l = 0;\n    let r = N - 1;\n    while(l <= r){\n        let mid = Math.floor((l + r) / 2);\n        if (ar[mid] !== mid + 1 && ar[mid - 1] === mid) {\n            return mid + 1;\n        } else if (ar[mid] > mid + 1) {\n            r = mid - 1;\n        } else {\n            l = mid + 1;\n        }\n    }\n    return N;\n}"
+      ],
+      [
+        "function find_Nth_Digit(p, q, N) {\n    let res = 0;\n    for (; (N > 0); ) {\n        N -= 1;\n        p *= 10;\n        let temp = p % q;\n        res = temp % 10;\n        p = Math.floor(temp / 10);\n    }\n    return res;\n}"
+      ],
+      [
+        "class MinPriorityQueue {\n    constructor() {\n        this.heap = [];\n    }\n    enqueue(element) {\n        this.heap.push(element);\n        this.bubbleUp(this.heap.length - 1);\n    }\n    dequeue() {\n        if (this.heap.length === 0) {\n            throw new Error(\"Queue is empty\");\n        }\n        if (this.heap.length === 1) {\n            return this.heap.pop();\n        }\n        const root = this.heap[0];\n        this.heap[0] = this.heap.pop();\n        this.bubbleDown(0);\n        return root;\n    }\n    bubbleUp(index) {\n        for(;(index > 0);){\n            const parentIndex = Math.floor((index - 1) / 2);\n            if (this.heap[index][0] >= this.heap[parentIndex][0]) {\n                break;\n            }\n            [this.heap[index], this.heap[parentIndex]] = [this.heap[parentIndex], this.heap[index]];\n            index = parentIndex;\n        }\n    }\n    bubbleDown(index) {\n        const length = this.heap.length;\n        while (true) {\n            const leftChildIndex = 2 * index + 1;\n            const rightChildIndex = 2 * index + 2;\n            let smallest = index;\n            if (leftChildIndex < length && this.heap[leftChildIndex][0] < this.heap[smallest][0]) {\n                smallest = leftChildIndex;\n            }\n            if (rightChildIndex < length && this.heap[rightChildIndex][0] < this.heap[smallest][0]) {\n                smallest = rightChildIndex;\n            }\n            if (smallest === index) {\n                break;\n            }\n            [this.heap[index], this.heap[smallest]] = [this.heap[smallest], this.heap[index]];\n            index = smallest;\n        }\n    }\n  \n    isEmpty() {\n        return this.heap.length === 0;\n    }\n}\n\nfunction check_adjacent_chars(s) {\n    const charCount = {};\n    for (let char of s) {\n        charCount[char] = (charCount[char] || 0) + 1;\n    }\n    for (let count of Object.values(charCount)) {\n        if (count % 2 !== 0) {\n            return false;\n        }\n    }\n    return true;\n}"
+      ],
+      [
+        "function find_gcd(arr) {\n    let result = arr[0];\n    for(let i = 1; i < arr.length; i++) {\n        result = find_gcd(result, arr[i]);\n    }\n    return result;\n}"
+      ],
+      [
+        "function compute_Last_Digit(A, B) {\n    let variable = 1;\n    if (A === B) {\n        return 1;\n    } else{\n          if ((B - A) >= 5) {\n            return 0;\n          }\n          let mod_A = A % 4;\n          let mod_B = B % 4;\n          if (mod_A === 0 || mod_B === 0) {\n              return 0;\n          }\n          if (mod_A === 1 && mod_B === 1) {\n              return 1;\n          }\n          if (mod_A === 2 && mod_B === 2) {\n              return 6;\n          }\n          if (mod_A === 3 && mod_B === 3) {\n              return 8;\n          }\n      }\n}"
+      ],
+      [
+        "function odd_bit_set_number(n) {\n    let count = 0;\n    let res = 0;\n    let temp = n;\n    for (; (temp > 0); ) {\n        if (count % 2 === 0) {\n            res |= (1 << count);\n        }\n        count++;\n        temp >>= 1;\n    }\n    return res;\n}"
+      ],
+      [
+        "function counting_sort(my_list) {\n    let max_value = 0;\n    {\n        let i = 0;\n        for (; i < my_list.length; i++) {\n            if (my_list[i] > max_value) {\n                max_value = my_list[i];\n            }\n        }\n    }\n    let buckets = new Array(max_value + 1).fill(0);\n    {\n        let i = 0;\n        for (; i < my_list.length; i++) {\n            buckets[my_list[i]] += 1;\n        }\n        let sorted_index = 0;\n        for (let j = 0; j <= max_value; j++) {\n            while (buckets[j] > 0) {\n                my_list[sorted_index++] = j;\n                buckets[j]--;\n            }\n        }\n    }\n}"
+      ],
+      [
+        "function rev(num) {\n    let rev_num = 0;\n    for (; (num > 0); ) {\n        rev_num = (rev_num * 10 + num % 10);\n        num = Math.floor(num / 10);\n    }\n    return rev_num;\n}\n\nfunction is_one_less_than_twice_reverse(num) {\n    const reversed_num = rev(num);\n    return num === 2 * reversed_num - 1;\n}"
+      ],
+      [
+        "function find_Max_Num(arr, n) {\n    arr.sort((a, b) => b - a);\n    let num = arr[0];\n    for(let i = 1; i < n; i++){\n        num += arr[i] * Math.pow(10, i);\n    }\n    return num;\n}"
+      ],
+      [
+        "function max_len_sub(arr, n) {\n    let mls = [];\n    let max = 0;\n    {\n        let i = 0;\n        while(i < n){\n            mls.push(1);\n            i++;\n        }\n    }\n    {\n        let i = 0;\n        while(i < n){\n            {\n                let j = 0;\n                while(j < i){\n                    if (Math.abs(arr[i] - arr[j]) <= 1 && mls[i] < mls[j] + 1) {\n                        mls[i] = mls[j] + 1;\n                        i++;\n                    }\n                    j++;\n                }\n            }\n            max = Math.max(max, mls[i]);\n        }\n    }\n    return max;\n}"
+      ],
+      [
+        "function count_Substrings(s, n) {\n    let count = 0, sum = 0;\n    let mp = new Map();\n    mp.set(0, 1);\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            sum += parseInt(s.charAt(i));\n            if (mp.has(sum - i)) {\n                count += mp.get(sum - i);\n            }\n            mp.set(sum, (mp.get(sum) || 0) + 1);\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function bell_number(n) {\n    let bell = Array.from({ length: n + 1 }, () => Array(n + 1).fill(BigInt(0)));\n    bell[0][0] = BigInt(1);\n    {\n        let i = 1;\n        for (; i <= n; i++) {\n            bell[i][0] = bell[i - 1][i - 1];\n            bell[i][i] = BigInt(1);\n            for (let j = 1; j < i; j++) {\n                bell[i][j] = bell[i - 1][j - 1] + bell[i - 1][j];\n            }\n        }\n    }\n    return bell[n][n];\n}"
+      ],
+      [
+        "function is_sublist(l, s) {\n    let sub_set = false;\n    if (s.length === 0) {\n        sub_set = true;\n    } else if (s === l) {\n        sub_set = true;\n    } else if (s.length > l.length) {\n        sub_set = false;\n    } else {\n        let i = 0;\n        while(i < l.length){\n            if (l[i] === s[0]) {\n                i++;\n                let j = 0;\n                while(j < s.length && i < l.length){\n                    if (l[i] === s[j]) {\n                        j++;\n                    } else {\n                        break;\n                    }\n                }\n                if (j === s.length) {\n                    sub_set = true;\n                    break;\n                }\n            }\n            i++;\n        }\n    }\n    return sub_set;\n}"
+      ],
+      [
+        "function combSort(nums) {\n    const shrinkFact = 1.3;\n    let gaps = nums.length;\n    let swapped = true;\n    while((gaps > 1 || swapped)){\n        gaps = Math.floor(gaps / shrinkFact);\n        swapped = false;\n        let i = 0;\n        while((gaps + i < nums.length)){\n            if(nums[i] > nums[gaps + i]){\n                [nums[i], nums[gaps + i]] = [nums[gaps + i], nums[i]];\n                swapped = true;\n            }\n            i++;\n        }\n    }\n    return nums;\n}\n\n// Example usage:\nconst arr = [64, 34, 25, 12, 22, 11, 90];\ncombSort(arr);"
+      ],
+      [
+        "function is_samepatterns(colors, patterns) {\n    if (colors.length !== patterns.length) {\n        return false;\n    }\n    const sdict = {};\n    const pset = new Set();\n    const sset = new Set();\n    {\n        let i = 0;\n        while(i < patterns.length){\n        pset.add(patterns[i]);\n        sset.add(colors[i]);\n        if (!(patterns[i] in sdict)) {\n            sdict[patterns[i]] = [];\n        }\n        //begin to write code\n        sdict[patterns[i]].push(colors[i]);\n        i++;\n        }\n    }\n\n    for(let key in sdict){\n        if(sdict[key].length !== pset.size){\n            return false;\n        }\n    }\n\n    return true;\n}\n\n// Example usage:\nconst colors = ['red', 'blue', 'green'];\nconst patterns = [['r', 'b'], ['g', 'b'], ['r', 'g']];"
+      ],
+      [
+        "function zip_tuples(test_tup1, test_tup2) {\n    let res = [];\n    for (let i = 0; i < Math.min(test_tup1.length, test_tup2.length); i++) {\n        res.push([test_tup1[i], test_tup2[i]]);\n    }\n    return res;\n}"
+      ],
+      [
+        "function get_Char(strr) {\n    let summ = 0;\n    {\n        let i = 0;\n        for (; i < strr.length; i++) {\n            summ += (strr.charCodeAt(i) - 'a'.charCodeAt(0) + 1);\n        }\n    }\n    if (summ % 26 === 0) {\n        return String.fromCharCode('a'.charCodeAt(0) + summ / 26 - 1);\n    } else {\n        return String.fromCharCode('a'.charCodeAt(0) + Math.ceil(summ / 26));\n    }\n}"
+      ],
+      [
+        "function isUndulating(n) {\n    if (n.length <= 2) {\n        return false;\n    }\n\n    let increasing = true;\n    let decreasing = true;\n\n    for (let i = 1; i < n.length; i++) {\n        if (n[i] > n[i - 1]) {\n            decreasing = false;\n        } else if (n[i] < n[i - 1]) {\n            increasing = false;\n        }\n    }\n\n    return increasing || decreasing;\n}"
+      ],
+      [
+        "function power(a, b) {\n    if (!(b === 0)) if (a === 0) {\n        return 0;\n    } else {\n        return 1;\n    }\n}"
+      ],
+      [
+        "function divisor(n) {\n    let x = 0;\n    {\n        let i = 1;\n        while(i <= n){\n            if (n % i === 0) {\n                x++;\n                i++;\n            }\n        }\n    }\n    return x;\n}"
+      ],
+      [
+        "function next_smallest_palindrome(num) {\n    let i = num + 1;\n    for (; i < Number.MAX_SAFE_INTEGER; i++) {\n        if (i.toString() === i.toString().split('').reverse().join('')) {\n            return i;\n        }\n    }\n}"
+      ],
+      [
+        "function kth_element(arr, n, k) {\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            {\n                let j = 0;\n                for (; j < n - i - 1; j++) {\n                    if (arr[j] > arr[j + 1]) {\n                        let temp = arr[j];\n                        arr[j] = arr[j + 1];\n                        arr[j + 1] = temp;\n                    }\n                }\n            }\n        }\n        return arr[k - 1];\n    }\n}"
+      ],
+      [
+        "function odd_Equivalent(s, n) {\n    let count = 0;\n    let i = 0;\n    while(i < n){\n        if (s[i] === '1') {\n            i++;\n        } else {\n            count++;\n            break;\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function checkInteger(text) {\n    text = text.trim();\n    if (!(text.length < 1)) {\n        if (text.split('').every((char, i) => \"0123456789\".includes(text[i]))) {\n            return true;\n        } else {\n            return null;\n        }\n    }\n}"
+      ],
+      [
+        "function search(arr, n) {\n    let XOR = 0;\n    for (let i = 0; i < n; i++) {\n        XOR ^= arr[i];\n    }\n    return XOR;\n}"
+      ],
+      [
+        "const MAX = 3000;\n\nfunction smartNumber(n) {\n    const primes = new Array(MAX).fill(0);\n    const result = [];\n\n    {\n        let i = 2;\n        for (; i < MAX; i++) {\n            if (primes[i] === 0) {\n                primes[i] = 1;\n                let j = i * 2;\n                while (j < MAX) {\n                    primes[j] -= 1;\n                    j += i;\n                }\n            }\n        }\n    }\n\n    let count = 0;\n    for (let i = 2; i < MAX; i++) {\n        if (primes[i] === 1) {\n            count++;\n            if (count === n) {\n                return i;\n            }\n        }\n    }\n\n    return -1; // If no nth smart number is found within the range\n}\n\n// Example usage:"
+      ],
+      [
+        "function getSumOfDivisors(num) {\n    let sum = 1; // 1 is always a divisor\n    {\n        let i = 2;\n        while(i <= Math.sqrt(num)){\n        if (num % i === 0) {\n            sum += i;\n            if (i !== num / i) {\n                sum += num / i;\n            }\n        }\n            i++;\n        }\n    }\n    return sum;\n}\n\nfunction amicable_numbers_sum(limit) {\n    if (typeof limit !== 'number' || !Number.isInteger(limit)) {\n        return \"Input is not an integer!\";\n    }\n    if (limit < 1) {\n        return \"Input must be bigger than 0!\";\n    }\n\n    let sum = 0;\n    for (let i = 1; i <= limit; i++) {\n        let divSum = getSumOfDivisors(i);\n        if (divSum > i && getSumOfDivisors(divSum) === i) {\n            sum += i;\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function find_length(string, n) {\n    let current_sum = 0;\n    let max_sum = 0;\n    for (let i = 0; i < n; i++) {\n        current_sum += (string[i] === '0' ? 1 : -1);\n        if (current_sum < 0) {\n            current_sum = 0;\n            i++;\n        } else {\n            max_sum = Math.max(max_sum, current_sum);\n        }\n    }\n    return max_sum;\n}"
+      ],
+      [
+        "function sum(a, b) {\n    let sum = 0;\n    {\n        let i = 1;\n        for (; i < Math.min(a, b); i++) {\n            if (a % i === 0 && b % i === 0) {\n                sum += i;\n            }\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function multiply_int(x, y) {\n    if (y < 0) {\n        return -multiply_int(x, -y);\n    } else {\n        if (y === 0) {\n            return 0;\n        }\n        return x + multiply_int(x, y - 1);\n    }\n}"
+      ],
+      [
+        "function magic_square_test(my_matrix) {\n    const iSize = my_matrix[0].length;\n    let sum_list = [];\n    my_matrix.forEach(lines => {\n        sum_list.push(lines.reduce((a, b) => a + b, 0));\n    });\n    {\n        let col = 0;\n        for (; col < iSize; col++) {\n            let colSum = 0;\n            my_matrix.forEach(row => {\n                colSum += row[col];\n            });\n            sum_list.push(colSum);\n        }\n    }\n    let result1 = 0;\n    for (let i = 0; i < iSize; i++) {\n        result1 += my_matrix[i][i];\n    }\n    let result2 = 0;\n    for (let i = 0; i < iSize; i++) {\n        result2 += my_matrix[i][iSize - 1 - i];\n    }\n    let expected_sum = iSize * ((iSize * iSize + 1) / 2);\n    if (result1 !== expected_sum || result2 !== expected_sum) {\n        throw new Error(\"The matrix is not a magic square.\");\n    } else {\n        \n    }\n}"
+      ],
+      [
+        "function max_occurrences(nums) {\n    const dict = {};\n    for (let i of nums) {\n        if (!(dict[i])) {\n            dict[i] = 1;\n        }\n        else {\n            dict[i] += 1;\n        }\n    }\n    let maxCount = 0;\n    let maxValue = null;\n    for (const key in dict) {\n        if (dict[key] > maxCount) {\n            maxCount = dict[key];\n            maxValue = key;\n        }\n    }\n    return maxValue;\n}"
+      ],
+      [
+        "function check_last(arr, n, p) {\n    let _sum = 0;\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            _sum += arr[i];\n        }\n    }\n    if (p === 1) {\n        if (_sum % 2 === 0) {\n            return true;\n        } else {\n            return false;\n        }\n    } else {\n        let last_element = arr[n - 1];\n        if (last_element % 2 === 0) {\n            return true;\n        } else {\n            return false;\n        }\n    }\n}"
+      ],
+      [
+        "function cal_electbill(units) {\n    let amount;\n    let surcharge;\n    if (units < 50) {\n        amount = units * 2.60;\n        surcharge = 25;\n    } else if (units <= 100) {\n        amount = 130 + ((units - 50) * 3.25);\n        surcharge = 35;\n    } else {\n        amount = 270 + ((units - 100) * 4.00);\n        surcharge = 50;\n    }\n}"
+      ],
+      [
+        "function pancakeSort(nums) {\n    let arrLen = nums.length;\n    for (; (arrLen > 1); ) {\n        let mi = nums.indexOf(Math.max(...nums.slice(0, arrLen)));\n        nums = nums.slice(0, mi + 1).reverse().concat(nums.slice(mi + 1));\n        //begin to write code\n        let maxIndex = nums.indexOf(Math.max(...nums));\n        if (maxIndex !== arrLen - 1) {\n            nums = nums.slice(0, maxIndex + 1).reverse().concat(nums.slice(maxIndex + 1));\n        }\n        arrLen--;\n    }\n}\n\n// Example usage:\nlet nums = [3, 6, 8, 10, 1, 2, 1];\npancakeSort(nums);"
+      ],
+      [
+        "function count_samepair(list1, list2, list3) {\n    let result = 0;\n    for (let i = 0; i < list1.length; i++) {\n        if (list1[i] === list2[i] && list2[i] === list3[i]) {\n            result += 1;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function isNestedArray(arr) {\n    if (!Array.isArray(arr)) {\n        return false;\n    }\n    {\n        let i = 0;\n        while(i < arr.length){\n      if (Array.isArray(arr[i])) {\n        return true;\n      }\n            i++;\n        }\n    }\n    return false;\n}\n\n// Additional code can be added here if needed"
+      ],
+      [
+        "function sum_Pairs(arr, n) {\n    let sum = 0;\n    for (let i = 0; i < n; i++) {\n        for (let j = i + 1; j < n; j++) {\n            sum += Math.abs(arr[i] - arr[j]);\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function max_Abs_Diff(arr, n) { \n    let minEle = arr[0];\n    let maxEle = arr[0];\n    for(let i = 1; i < n; i++){\n        if(arr[i] > maxEle){\n            maxEle = arr[i];\n        }else if(arr[i] < minEle){\n            minEle = arr[i];\n        }\n    }\n    return maxEle - minEle;\n}"
+      ],
+      [
+        "function ascii_value_string(str1) {\n    let i = 0;\n    for (; i < str1.length; i++) {\n        let char_code = str1.charCodeAt(i);\n        total += char_code;\n    }\n    return total;\n}"
+      ],
+      [
+        "function max_path_sum(tri, m, n) {\n    for (let i = m - 1; i >= 0; i--) {\n        for (let j = 0; j <= i; j++) {\n            if (!(tri[i + 1][j] > tri[i + 1][j + 1])) {\n                tri[i][j] += Math.max(tri[i + 1][j], tri[i + 1][j + 1]);\n            }\n        }\n    }\n    return tri[0][0];\n}"
+      ],
+      [
+        "function sum_digits_single(x) {\n    let ans = 0;\n    for(;(x);){\n        ans += x % 10;\n        x = Math.floor(x / 10);\n    }\n    return ans;\n}\n\nfunction closest(x) {\n    let max_sum = -Infinity;\n    let result = 0;\n\n    for(let i = 0; i <= x; i++) {\n        let left_sum = sum_digits_single(i);\n        let right_sum = sum_digits_single(x - i);\n\n        if(left_sum + right_sum > max_sum) {\n            max_sum = left_sum + right_sum;\n            result = i;\n        }\n    }\n\n    return result;\n}"
+      ],
+      [
+        "function longest_subseq_with_diff_one(arr, n) {\n    let dp = new Array(n).fill(1);\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < i; j++) {\n            if (arr[i] === arr[j] + 1 || arr[i] === arr[j] - 1) {\n                dp[i] = Math.max(dp[i], dp[j] + 1);\n            }\n        }\n    }\n    return Math.max(...dp);\n}"
+      ],
+      [
+        "function gcd(p, q) {\n    for (; (q !== 0); ) {\n        let temp = q;\n        q = p % q;\n        p = temp;\n    }\n    return p;\n}\n\nfunction is_coprime(num1, num2) {\n    return gcd(num1, num2) === 1;\n}"
+      ],
+      [
+        "function merge(a, b) {\n    let c = [];\n    for(;(a.length !== 0 && b.length !== 0);){\n        if (a[0] < b[0]) {\n            c.push(a[0]);\n            a.shift();\n        } else {\n            c.push(b[0]);\n            b.shift();\n        }\n    }\n    if (a.length === 0) {\n        c = c.concat(b);\n    } else {\n        while (a.length > 0) {\n            c.push(a.shift());\n        }\n    }\n    if (b.length > 0) {\n        while (b.length > 0) {\n            c.push(b.shift());\n        }\n    }\n    return c;\n}\n\nfunction mergeSort(arr) {\n    if (arr.length <= 1) {\n        return arr;\n    }\n    let mid = Math.floor(arr.length / 2);\n    let left = mergeSort(arr.slice(0, mid));\n    let right = mergeSort(arr.slice(mid));\n    return merge(left, right);\n}"
+      ],
+      [
+        "function arraysEqual(arr1, arr2) {\n    if (arr1.length !== arr2.length) {\n      return false;\n    }\n    {\n        let i = 0;\n        while(i < arr1.length){\n      if (Array.isArray(arr1[i]) && Array.isArray(arr2[i])) {\n        if (!arraysEqual(arr1[i], arr2[i])) {\n          return false;\n        }\n      } else {\n        if (arr1[i] !== arr2[i]) {\n          return false;\n        }\n      }\n      i++;\n    }\n    return true;\n}\n\nfunction find_vertex_of_parabola(a, b, c) {\n    let discriminant = b*b - 4*a*c;\n    if (discriminant > 0) {\n        let x1 = (-b + Math.sqrt(discriminant)) / (2*a);\n        let x2 = (-b - Math.sqrt(discriminant)) / (2*a);\n        return [x1, x2];\n    } else if (discriminant === 0) {\n        let x = -b / (2*a);\n        return [x, x];\n    } else {\n        return [];\n    }\n}"
+      ],
+      [
+        "function evenBitToggleNumber(n) {\n    let res = 0;\n    let count = 0;\n    let temp = n;\n    for (; (temp > 0); ) {\n        if (count % 2 === 1) {\n            res |= (1 << count);\n        }\n        count++;\n        temp >>= 1;\n    }\n    return n ^ res;\n}"
+      ],
+      [
+        "function min_Ops(arr, n, k) {\n    let max1 = Math.max(...arr);\n    let res = 0;\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            if ((max1 - arr[i]) % k !== 0) {\n                return -1;\n            }\n            res += Math.abs(max1 - arr[i]);\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function month_season(month, days) {\n    let season;\n    if (['January', 'February', 'March'].includes(month)) {\n        season = 'winter';\n    } else{\n          if (['April', 'May', 'June'].includes(month)) {\n            season = 'spring';\n        } else{\n              if (['July', 'August', 'September'].includes(month)) {\n                season = 'summer';\n            } else {\n                season = 'autumn';\n            }\n          }\n      }\n    if ((month === 'March') && (days > 19)) {\n        season = 'spring';\n    }\n    \n}"
+      ],
+      [
+        "function solution(a, b, n) {\n    let i = 0;\n    for(;(i * a <= n);){\n        if ((n - (i * a)) % b == 0) {\n            return [\"x = \", i, \", y = \", Math.floor((n - (i * a)) / b)];\n        }\n        i++;\n    }\n}"
+      ],
+      [
+        "function divSum(n) { \n    let sum = 1; \n    let i = 2; \n    for(;(i * i <= n);){ \n        if (n % i === 0) { \n            sum += i + Math.floor(n / i); \n        } \n        i++;\n    }\n    return sum;\n}\n\nfunction checkDivSumEquality(num1, num2) {\n    const sum1 = divSum(num1);\n    const sum2 = divSum(num2);\n    return sum1 === sum2;\n}"
+      ],
+      [
+        "function count_char_position(str1) {\n    let count_chars = 0;\n    for (let i = 0; i < str1.length; i++) {\n        if (i === str1.charCodeAt(i) - 'A'.charCodeAt(0) ||\n            i === str1.charCodeAt(i) - 'a'.charCodeAt(0)) {\n            count_chars++;\n        }\n    }\n    return count_chars;\n}\n\n// Example usage:"
+      ],
+      [
+        "function find_even_Pair(A, N) { \n    let evenPair = 0;\n    for(let i = 0; i < N; i++){\n        for(let j = i+1; j < N; j++){\n            if(((A[i]^A[j])%2)===0){\n                evenPair++;\n            }\n        }\n    }\n    return evenPair;\n}"
+      ],
+      [
+        "function sum_range_list(list1, m, n) {\n    let sum_range = 0;\n    for(let i = m; i <= n; i++){\n        sum_range += list1[i];\n    }\n    return sum_range;\n}"
+      ],
+      [
+        "function count_occurance(s) {\n    let count = 0;\n    {\n        let i = 0;\n        for (; i < s.length - 2; i++) { // Adjusted loop to avoid index out of bounds error\n            if (s[i] === 's' && s[i + 1] === 't' && s[i + 2] === 'd') {\n                count++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function is_num_keith(x) {\n    let terms = [];\n    let temp = x;\n    let n = 0;\n    for (; (temp > 0); ) {\n        terms.push(temp % 10);\n        temp = Math.floor(temp / 10);\n        n++;\n    }\n    terms.reverse();\n    let next_term = 0;\n    for (let i = 0; i < n; i++) {\n        next_term += terms[i] ** (i + 1);\n    }\n    return next_term === x;\n}"
+      ],
+      [
+        "//function definition\nfunction commonPrefixUtil(str1, str2) {\n    let result = \"\";\n    let n1 = str1.length;\n    let n2 = str2.length;\n    let i = 0;\n    let j = 0;\n    for(;(i <= n1 - 1 && j <= n2 - 1);){\n        if (str1[i] !== str2[j]) {\n            break;\n        }\n        result += str1[i];\n        i++;\n        j++;\n    }\n    return result;\n}\n\n//function definition\nfunction longestCommonPrefix(strs) {\n    if (strs.length === 0) {\n        return \"\";\n    }\n\n    let prefix = strs[0];\n    for(let i = 1; i < strs.length; i++){\n        while(prefix.length > 0 && strs[i].indexOf(prefix) !== 0){\n            prefix = prefix.substring(0, prefix.length - 1);\n        }\n    }\n    return prefix;\n}"
+      ],
+      [
+        "function count_pairs(arr, n, k) {\n    let count = 0;\n    for(let i = 0; i < n; i++){\n        for(let j = i + 1; j < n; j++){\n            if(Math.abs(arr[i] - arr[j]) === k){\n                count++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function longest_common_subsequence(X, Y, m, n) {\n    if (!(m == 0 || n == 0)) if (X[m - 1] === Y[n - 1]) {\n        return 1 + longest_common_subsequence(X, Y, m - 1, n - 1);\n    } else {\n        return Math.max(longest_common_subsequence(X, Y, m, n - 1), longest_common_subsequence(X, Y, m - 1, n));\n    }\n}"
+      ],
+      [
+        "function first_Missing_Positive(arr, n) { \n    let ptr = 0;\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            if (arr[i] === 1) {\n                ptr = 1;\n                break;\n            }\n        }\n    }\n    if (ptr === 0) {\n        return 1;\n    }\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            if (arr[i] <= 0 || arr[i] > n) {\n                continue;\n            }\n            let index = Math.abs(arr[i]) - 1;\n            if (arr[index] > 0) {\n                arr[index] = -arr[index];\n            }\n        }\n    }\n    for (i = 0; i < n; i++) {\n        if (arr[i] > 0) {\n            return i + 1;\n        }\n    }\n    return n + 1;\n}"
+      ],
+      [
+        "function octal_To_Decimal(n) {  \n    let num = n; \n    let dec_value = 0; \n    let base = 1; \n    let temp = num; \n    while(temp > 0){\n        let last_digit = temp % 10;\n        dec_value += last_digit * base;\n        base *= 8;\n        temp = Math.floor(temp / 10);\n    }\n    return dec_value;\n}"
+      ],
+      [
+        "function first(arr, x, n) {\n    let low = 0;\n    let high = n - 1;\n    let res = -1;\n    while ((low <= high)) {\n        let mid = Math.floor((low + high) / 2);\n        if (arr[mid] > x) {\n            high = mid - 1;\n        } else if (arr[mid] == x) {\n            res = mid;\n            high = mid - 1; // Move high pointer to the left to find the first occurrence\n        } else {\n            low = mid + 1;\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function highest_Power_of_2(n) {\n    let res = 0;\n    {\n        let i = n;\n        for (; i > 0; i--) {\n            if ((i & (i - 1)) === 0) {\n                res = i;\n                break;\n            }\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function remove_even(str1) {\n    let str2 = '';\n    for (let i = 1; i <= str1.length; i++) {\n        if (i % 2 !== 0) {\n            str2 += str1[i - 1];\n        }\n    }\n    return str2;\n}"
+      ],
+      [
+        "function hamming_Distance(n1, n2) {\n    let x = n1 ^ n2;\n    let setBits = 0;\n    while(x > 0){\n        setBits += x & 1;\n        x >>= 1;\n    }\n    return setBits;\n}"
+      ],
+      [
+        "function count(s, c) {\n    let res = 0;\n    {\n        let i = 0;\n        for (; i < s.length; i++) {\n            if (s[i] === c) {\n                res++;\n            }\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function find_longest_repeating_subseq(str) {\n    let n = str.length;\n    let dp = Array.from({length: n+1}, () => Array(n+1).fill(0));\n\n    for(let i=1;i<=n;i++){\n        for(let j=1;j<=n;j++){\n            if(str[i-1]==str[j-1]&&i!=j){\n                dp[i][j]=1+dp[i-1][j-1];\n            }\n        }\n    }\n\n    let maxLength=0;\n    for(let i=1;i<=n;i++){\n        for(let j=1;j<=n;j++){\n            maxLength=Math.max(maxLength,dp[i][j]);\n        }\n    }\n\n    return maxLength;\n}"
+      ],
+      [
+        "function fourth_Power_Sum(n) { \n    let sum = 0;\n    for (let i = 1; i <= n; i++) { \n        sum += Math.pow(i, 4);\n    }\n    return sum;\n}"
+      ],
+      [
+        "function decodeList(alist) {\n    function aux(g) {\n        if (!(Array.isArray(g))) {\n            return g;\n        } else {\n            return [[g[1], Array(g[0]).fill().map((_, i) => i)]].concat(aux(g.slice(2)));\n        }\n    }\n    return aux(alist);\n}"
+      ],
+      [
+        "const gcd = (a, b) => {\n    for(;(b != 0);){\n        let t = b;\n        b = a % b;\n        a = t;\n    }\n    return a;\n}\n\nfunction min_operations(a, b) {\n    const common_divisor = gcd(a, b);\n    return (a + b) / common_divisor;\n}"
+      ],
+      [
+        "function extract_min_max(test_tup, K) {\n    let res = [];\n    test_tup = Array.from(test_tup);\n    let temp = [...test_tup].sort((a, b) => a - b);\n    for(let i = 0; i < K; i++){\n        res.push(temp[i]);\n    }\n    return res;\n}"
+      ],
+      [
+        "function is_majority(arr, n, x) {\n    let i = binary_search(arr, 0, n - 1, x);\n    if (i === -1) {\n        return false;\n    }\n    if (!((i + Math.floor(n / 2)) <= (n - 1) && arr[i + Math.floor(n / 2)] === x)) {\n        return false;\n    }\n    else {\n        return true;\n    }\n}\n\nfunction binary_search(arr, low, high, x) {\n    while (low <= high) {\n        let mid = Math.floor((low + high) / 2);\n        if (arr[mid] === x) {\n            return mid;\n        } else if (arr[mid] < x) {\n            low = mid + 1;\n        } else {\n            high = mid - 1;\n        }\n    }\n    return -1;\n}"
+      ],
+      [
+        "function count_Set_Bits(n) { \n    let count = 0;\n    for(;(n);){ \n        count += n & 1;\n        n = n >> 1; // Use bitwise right shift operator to divide n by 2\n    }\n    return count;\n}"
+      ],
+      [
+        "function find_Min(arr, low, high) {\n    while (low < high) {\n        let mid = low + Math.floor((high - low) / 2);\n        if (!(arr[mid] === arr[high])) {\n            if (arr[mid] > arr[high]) {\n                low = mid + 1;\n            } else {\n                high = mid;\n            }\n        } else {\n            high -= 1;\n        }\n    }\n    return arr[low];\n}"
+      ],
+      [
+        "function odd_values_string(str) {\n  let result = \"\";\n  for (let i = 0; i < str.length; i++) {\n    if (i % 2 === 0) {\n      result += str[i];\n    }\n  }\n  return result;\n}"
+      ],
+      [
+        "function min_of_three(a, b, c) {\n    let smallest;\n    if (!(a <= b && a <= c)) if (b <= a && b <= c) {\n        smallest = b;\n    } else {\n        smallest = c;\n    }\n    return smallest;\n}"
+      ],
+      [
+        "function re_arrange_array(arr, n) {\n    let j = 0;\n    for (let i = 0; i < n; i++) {\n        if (arr[i] < 0) {\n            let temp = arr[i];\n            arr[i] = arr[j];\n            arr[j++] = temp;\n        }\n    }\n}"
+      ],
+      [
+        "function max_sum(tri, n) {\n    if (n > 1) {\n        tri[1][1] = tri[1][1] + tri[0][0];\n        tri[1][0] = tri[1][0] + tri[0][0];\n    }\n    {\n        let i = 2;\n        for (; i < n; i++) {\n            tri[i][0] = tri[i][0] + tri[i - 1][0];\n            tri[i][i] = tri[i][i] + tri[i - 1][i - 1];\n            {\n                let j = 1;\n                for (; j < i; j++) {\n                    tri[i][j] = Math.max(tri[i][j], tri[i - 1][j - 1], tri[i - 1][j]);\n                }\n            }\n        }\n    }\n    return tri[n - 1][n - 1];\n}"
+      ],
+      [
+        "function even_bit_set_number(n) {\n    let count = 0;\n    let res = 0;\n    let temp = n;\n    for (;(temp > 0);){\n        if (count % 2 == 1) {\n            res |= (1 << count);\n        }\n        count++;\n        temp >>= 1;\n    }\n    return n | res;\n}"
+      ],
+      [
+        "function No_of_Triangle(N, K) {\n    if (!(N < K)) {\n        let Tri_up = 0;\n        for(let i=1; i<=N-K+1; i++){\n            for(let j=i; j<=N-i+1; j++){\n                if(i==j){\n                    Tri_up += 1;\n                }else{\n                    Tri_up += 3;\n                }\n            }\n        }\n        return Tri_up;\n    } else {\n        return -1;\n    }\n}"
+      ],
+      [
+        "function get_total_number_of_sequences(m, n) {\n    let T = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));\n    for (let i = 0; i <= m; i++) {\n        for (let j = 0; j <= n; j++) {\n            if (i === 0 || j === 0) {\n                T[i][j] = 0;\n            } else{\n                  if (i < j) {\n                    T[i][j] = 0;\n                  } else {\n                    T[i][j] = T[i - 1][j - 1] + T[i - 1][j];\n                  }\n            }\n        }\n    }\n    return T[m][n];\n}"
+      ],
+      [
+        "function array_3d(m, n, o) {\n    let array_3d = [];\n    for(let row = 0; row < o; row++){\n        let nArray = [];\n        for(let col = 0; col < n; col++){\n            let mArray = new Array(m).fill('*');\n            array_3d.push(mArray);\n        }\n    }\n    return array_3d;\n}"
+      ],
+      [
+        "function max_sum(arr, n) {\n    let MSIBS = [...arr];\n    {\n        let i = 0;\n        for (; i < n; i++) {\n            {\n                let j = 0;\n                for (; j < i; j++) {\n                        if (arr[i] > arr[j] && MSIBS[i] < MSIBS[j] + arr[i]) {\n                            MSIBS[i] = MSIBS[j] + arr[i];\n                        }\n                    }\n            }\n        }\n    }\n    let MSDBS = [...arr];\n    {\n        let i = 1;\n        for (; i <= n; i++) {\n            {\n                let j = i - 1;\n                for (; j >= 0; j--) {\n                        if (arr[i] > arr[j] && MSDBS[i] < MSDBS[j] + arr[i]) {\n                            MSDBS[i] = MSDBS[j] + arr[i];\n                        }\n                    }\n            }\n        }\n    }\n    let maxSum = 0;\n    for (let i = 0; i < n; i++) {\n        maxSum = Math.max(maxSum, MSIBS[i], MSDBS[i]);\n    }\n    return maxSum;\n}"
+      ],
+      [
+        "function lps(str) {\n    const n = str.length;\n    const L = Array.from({ length: n }, () => new Array(n).fill(0));\n    {\n        let i = 0;\n        while(i < n){\n        L[i][i] = 1;\n            i++;\n        }\n    }\n    {\n        let cl = 2;\n        while(cl <= n){\n        {\n            let i = 0;\n            while(i < n - cl + 1){\n            let j = i + cl - 1;\n            if (str[i] === str[j] && cl === 2) {\n                cl++;\n            }\n                i++;\n            }\n        }\n        cl++;\n    }\n    let maxLength = 1;\n    let start = 0;\n    for(let i = 0; i < n; i++){\n        for(let j = 0; j < n; j++){\n            if(L[i][j] > maxLength){\n                maxLength = L[i][j];\n                start = i;\n            }\n        }\n    }\n    return str.substring(start, start + maxLength);\n}"
+      ],
+      [
+        "function count_Primes_nums(n) {\n    let ctr = 0;\n    {\n        let num = 0;\n        for (; num < n; num++) {\n            if (num <= 1) {\n                continue;\n            }\n            let isPrime = true;\n            {\n                let i = 2;\n                while (i * i <= num) {\n                    if (num % i === 0) {\n                        isPrime = false;\n                        break;\n                    }\n                    i++;\n                }\n            }\n            if (isPrime) {\n                ctr++;\n            }\n        }\n    }\n    return ctr;\n}"
+      ],
+      [
+        "function dog_age(h_age) {\n    if (!(h_age < 0)) if (h_age <= 2) {\n        return h_age * 10.5;\n    } else {\n        return (h_age - 2) * 4 + 21;\n    }\n}"
+      ],
+      [
+        "function sum_even_and_even_index(arr, n) {\n    let sum = 0;\n    for (let i = 0; i < n; i += 2) {\n        if (arr[i] % 2 === 0) {\n            sum += arr[i];\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function even_Power_Sum(n) { \n    let sum = 0; \n    {\n        let i = 1;\n        for (; i <= n; i++) { \n            let j = 2 * i; \n            sum += Math.pow(j, 5);\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function get_Position(a, n, m) {\n    {\n        let i = 0;\n        while(i < n){\n        a[i] = Math.floor(a[i] / m) + (a[i] % m !== 0 ? 1 : 0);\n            i++;\n        }\n    }\n    let result = -1;\n    let maxx = -1;\n    {\n        let i = n - 1;\n        while(i >= 0){\n            if(a[i] > maxx){\n                maxx = a[i];\n                result = i;\n            }\n            i--;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function countFirstElements(testTup) {\n    {\n        let count = 0;\n        for (; count < testTup.length; count++) {\n            let ele = testTup[count];\n            if (Array.isArray(ele)) {\n                count++;\n            }\n        }\n        return count;\n    }\n}"
+      ],
+      [
+        "function sequential_search(dlist, item) {\n    let pos = 0;\n    let found = false;\n    for (; (pos < dlist.length && !found); ) {\n        if (dlist[pos] === item) {\n            found = true;\n            break; // Exit the loop once the item is found\n        }\n        pos++;\n    }\n    return found;\n}\n\n// Example usage\nlet list = [1, 2, 3, 4, 5];\nlet target = 3;"
+      ],
+      [
+        "function validate(n) {\n    {\n        let i = 0;\n        while(i < 10){\n        let temp = n;\n        let count = 0;\n        while (temp) {\n            if (temp % 10 === i) {\n                count++;\n            }\n            temp = temp >> 1;\n        }\n        if(count > i){\n            return false;\n        }\n        i++;\n    }\n    return true;\n}"
+      ],
+      [
+        "function maxSubArraySumRepeated(a, n, k) {\n    let maxSoFar = -2147483648;\n    let maxEndingHere = 0;\n\n    for (let i = 0; i < n * k; i++) {\n        maxEndingHere += a[i % n];\n\n        if (maxSoFar < maxEndingHere) {\n            maxSoFar = maxEndingHere;\n        }\n\n        if (maxEndingHere < 0) {\n            maxEndingHere = 0;\n        }\n    }\n\n    return maxSoFar;\n}"
+      ],
+      [
+        "function modular_inverse(arr, N, P) {\n    let current_element = 0;\n    for (let i = 0; i < N; i++) {\n        if ((arr[i] * arr[i]) % P === 1) {\n            current_element = arr[i];\n            break;\n        }\n    }\n    return current_element;\n}"
+      ],
+      [
+        "function sum_div(number) {\n    let divisors = [1];\n    for (let i = 2; i <= Math.sqrt(number); i++) {\n        if (number % i === 0) {\n            divisors.push(i);\n            if (i !== number / i) {\n                divisors.push(number / i);\n            }\n        }\n    }\n    return divisors.reduce((acc, curr) => acc + curr, 0);\n}"
+      ],
+      [
+        "function get_Inv_Count(arr, n) {\n    let inv_count = 0;\n    for(let i = 0; i < n-1; i++){\n        for(let j = i+1; j < n; j++){\n            if(arr[i] > arr[j]){\n                inv_count++;\n            }\n        }\n    }\n    return inv_count;\n}"
+      ],
+      [
+        "function flattenList(list1) {\n    let result_list = [];\n    if (!list1.length) return result_list;\n    let stack = [Array.from(list1)];\n    while(stack.length){\n        let c_num = stack.pop();\n        let next = c_num.pop();\n        if (c_num.length) stack.push(c_num);\n        result_list.push(next);\n    }\n    return result_list;\n}"
+      ],
+      [
+        "function count_binary_seq(n) {\n    let nCr = 1;\n    let res = 1;\n    for(let r = 1; r <= n + 1; r++){\n        nCr *= r;\n        nCr /= (r - n);\n        res += nCr;\n    }\n    return Math.floor(res / 2);\n}"
+      ],
+      [
+        "function solve(a, n) {\n    let mx = -Number.MAX_SAFE_INTEGER - 1;\n    {\n        let j = 1;\n        while(j < n){\n            if (mx > a[j]) {\n                return false;\n            }\n            mx = Math.max(mx, a[j]);\n            j++;\n        }\n    }\n\n    let invCount = 0;\n    for(let i=0; i<n-1; i++){\n        for(let j=i+1; j<n; j++){\n            if(a[i]>a[j]){\n                invCount++;\n            }\n        }\n    }\n\n    let invCount2 = 0;\n    for(let i=0; i<n-1; i++){\n        for(let j=i+1; j<n; j++){\n            if(a[i]>a[j]){\n                invCount2++;\n            }\n        }\n    }\n\n    return invCount === invCount2;\n}"
+      ],
+      [
+        "function find_Element(arr, ranges, rotations, index) {\n    {\n        let i = rotations - 1;\n        for (; i >= 0; i--) {\n            let left = ranges[i][0];\n            let right = ranges[i][1];\n            if (left <= index && right >= index) {\n                if (index === left) {\n                    index = right;\n                    //begin to write code\n                }\n            }\n        }\n        return arr[index];\n    }\n}"
+      ],
+      [
+        "function max_sum_increasing_subseq(a, n, index, k) {\n    const dp = Array.from({ length: n }, () => Array(n).fill(0));\n    {\n        let i = 0;\n        while(i < n){\n            dp[0][i] = a[i] > a[0] ? a[i] + a[0] : a[i];\n            i++;\n        }\n    }\n    {\n        let i = 1;\n        while(i < n){\n            {\n                let j = 0;\n                while(j < n){\n                    if (a[j] > a[i] && j > i) {\n                        dp[i][j] = Math.max(dp[i][j], dp[i - 1][j] + a[i]);\n                    }\n                    j++;\n                }\n            }\n            i++;\n        }\n    }\n    return dp[index][k];\n}"
+      ],
+      [
+        "function set_left_most_unset_bit(n) {\n    if (!(n & (n + 1))) {\n        return n;\n    }\n    let pos = 0, temp = n, count = 0;\n    for (;(temp);){\n        temp >>= 1;\n        count++;\n    }\n    return n | (1 << (count - 1));\n}"
+      ],
+      [
+        "function max_sum_rectangular_grid(grid, n) { \n    let incl = Math.max(grid[0][0], grid[1][0]); \n    let excl = 0;\n    {\n        let i = 1;\n        for (; i < n; i++) { \n            let excl_new = Math.max(excl, incl); \n            incl = excl + grid[i][0]; \n            excl = excl_new; \n        }\n    }\n    return Math.max(incl, excl);\n}"
+      ],
+      [
+        "function find_Max_Len_Even(str) { \n    let n = str.length; \n    let i = 0;\n    let currlen = 0;\n    let maxlen = 0;\n    let st = -1;\n    for(;(i < n);){ \n        if (str[i] === ' ') { \n            if (currlen % 2 === 0) { \n                if (maxlen < currlen) { \n                    maxlen = currlen; \n                    st = i - currlen; \n                }\n            }\n            currlen = 0; \n        } else { \n            currlen++; \n        }\n        i++; \n    }\n    if (currlen % 2 === 0 && currlen > maxlen) { \n        maxlen = currlen; \n        st = i - currlen; \n    }\n    return str.substring(st, st + maxlen);\n}"
+      ],
+      [
+        "function find_last_occurrence(A, x) {\n    let left = 0;\n    let right = A.length - 1;\n    let result = -1;\n    while ((left <= right)) {\n        let mid = Math.floor((left + right) / 2);\n        if (x === A[mid]) {\n            result = mid;\n            left = mid + 1; // Move left pointer to search for the last occurrence\n        } else if (x < A[mid]) {\n            right = mid - 1;\n        } else {\n            left = mid + 1;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function modifiedEncode(alist) {\n    function ctrEle(el) {\n        if (!(el.length > 1)) return el[0];\n        else return [el.length, el[0]];\n    }\n    let result = [];\n    let current = null;\n    let count = 0;\n    for (let i = 0; i < alist.length; i++) {\n        if (alist[i] !== current) {\n            if (current !== null) {\n                result.push(ctrEle(Array(count).fill(current)));\n            }\n            current = alist[i];\n            count = 1;\n        } else {\n            count++;\n        }\n    }\n    result.push(ctrEle(Array(count).fill(current)));\n    return result;\n}"
+      ],
+      [
+        "function max_volume(s) {\n    let maxvalue = 0;\n    for (let i = 1; i < s; i++) {\n        for (let j = 1; j < s; j++) {\n            let k = s - i - j;\n            if (i * j * k > maxvalue) {\n                maxvalue = i * j * k;\n            }\n        }\n    }\n    return maxvalue;\n}"
+      ],
+      [
+        "function sum_difference(n) {\n    let sumofsquares = 0;\n    let squareofsum = 0;\n    {\n        let num = 1;\n        for (; num <= n; num++) {\n            sumofsquares += num * num;\n            squareofsum += num;\n        }\n    }\n    return squareofsum * squareofsum - sumofsquares;\n}"
+      ],
+      [
+        "function find_demlo(s) {\n    let l = s.length;\n    let res = \"\";\n    {\n        let i = 1;\n        while(i <= l){\n        res = res + String(i);\n        i++;\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function right_rotate(arr, n, out_of_place, cur) {\n    let temp = arr[cur];\n    {\n        let i = cur;\n        for (; i > out_of_place; i--) {\n            arr[i] = arr[i - 1];\n        }\n    }\n    arr[out_of_place] = temp;\n    return arr;\n}\n\nfunction re_arrange(arr, n) {\n    let out_of_place = -1;\n    {\n        let index = 0;\n        for (; index < n; index++) {\n            if (out_of_place >= 0) {\n                if ((arr[index] >= 0 && arr[out_of_place] < 0) || (arr[index] < 0 && arr[out_of_place] >= 0)) {\n                    arr = right_rotate(arr, n, out_of_place, index);\n                    break;\n                }\n            }\n            if (arr[index] >= 0) {\n                out_of_place = index;\n            }\n        }\n    }\n\n    let left = 0;\n    let right = n - 1;\n\n    while (left < right) {\n        if (arr[left] < 0 && arr[right] >= 0) {\n            [arr[left], arr[right]] = [arr[right], arr[left]];\n            left++;\n            right--;\n        } else if (arr[left] >= 0) {\n            left++;\n        } else {\n            right--;\n        }\n    }\n\n    return arr;\n}"
+      ],
+      [
+        "function sumOfAlternates(testTuple) {\n    let sum1 = 0;\n    let sum2 = 0;\n    {\n        let idx = 0;\n        for (; idx < testTuple.length; idx++) {\n            if (idx % 2) {\n                sum1 += testTuple[idx];\n            } else {\n                sum2 += testTuple[idx];\n            }\n        }\n    }\n    return [sum1, sum2];\n}"
+      ],
+      [
+        "function get_Min_Squares(n) {\n    if (n <= 3) {\n        return n;\n    }\n    let res = n;\n    for (let i = 1; i * i <= n; i++) {\n        let temp = i * i;\n        res = Math.min(res, 1 + get_Min_Squares(n - temp));\n    }\n    return res;\n}"
+      ],
+      [
+        "function mostOccurrences(testList) {\n    const temp = {};\n    testList.forEach(sub => {\n      sub.split(\" \").forEach(wrd => {\n        if (!(temp[wrd])) {\n          temp[wrd] = 1;\n        } else {\n          temp[wrd] += 1;\n        }\n      });\n    });\n\n    let maxCount = 0;\n    let mostFrequentWord = \"\";\n\n    for (const [word, count] of Object.entries(temp)) {\n        if (count > maxCount) {\n            maxCount = count;\n            mostFrequentWord = word;\n        }\n    }\n\n    return mostFrequentWord;\n}"
+      ],
+      [
+        "function count_unset_bits(n) {\n    let count = 0;\n    let x = 1;\n    for (;(x < n + 1);){\n        if ((x & n) === 0) {\n            count++;\n        }\n        x <<= 1;\n    }\n    return count;\n}"
+      ],
+      [
+        "function check_Equality(s) {\n    return s.charCodeAt(0) === s.charCodeAt(s.length - 1);\n}\n\nfunction count_Substring_With_Equal_Ends(s) {\n    let result = 0;\n    const n = s.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = i; j < n; j++) {\n            if (check_Equality(s.substring(i, j + 1))) {\n                result++;\n            }\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function bin_coff(n, r) {\n    let val = 1;\n    if (r > (n - r)) {\n        r = (n - r);\n    }\n    {\n        let i = 0;\n        while(i < r){\n        val *= (n - i);\n        val = Math.floor(val / (i + 1));\n        i++;\n        }\n    }\n    return val;\n}"
+      ],
+      [
+        "function check(string) {\n    const p = new Set(string);\n    const s = new Set(['0', '1']);\n    if (!(areSetsEqual(s, p) || areSetsEqual(p, new Set(['0'])) || areSetsEqual(p, new Set(['1'])))) {\n        return \"No\";\n    }\n    else {\n        return \"Yes\";\n    }\n}\n\nfunction areSetsEqual(set1, set2) {\n    return Array.from(set1).every(item => set2.has(item));\n}"
+      ],
+      [
+        "function minimum_Length(s) {\n    let maxOcc = 0;\n    const n = s.length;\n    let arr = new Array(26).fill(0);\n    {\n        let i = 0;\n        while(i < n){\n        arr[s.charCodeAt(i) - 'a'.charCodeAt(0)] += 1;\n            i++;\n        }\n    }\n\n    let minLen = n;\n    for(let i = 0; i < 26; i++){\n        if(maxOcc < arr[i]){\n            maxOcc = arr[i];\n            minLen = n - maxOcc;\n        }\n    }\n\n    return minLen;\n}"
+      ],
+      [
+        "function first_Element(arr, n, k) {\n    let count_map = {};\n    for (let i = 0; i < n; i++) {\n        if (!(arr[i] in count_map)) {\n            count_map[arr[i]] = 1;\n        }\n        else {\n            count_map[arr[i]] += 1;\n        }\n        if (count_map[arr[i]] === k) {\n            return arr[i];\n        }\n    }\n    return -1;  // Return -1 if no element occurs k times\n}\n\n// Example usage:\nconst arr = [1, 2, 3, 2, 4, 2, 5];\nconst n = arr.length;\nconst k = 2;"
+      ],
+      [
+        "function unique_Characters(str) {\n    {\n        let i = 0;\n        for (; i < str.length; i++) {\n            {\n                let j = i + 1;\n                for (; j < str.length; j++) {\n                    if (str[i] === str[j]) {\n                        return false;\n                        //begin to write code\n                }\n            }\n        }\n        return true;\n    }\n}"
+      ],
+      [
+        "function count_Rectangles(radius) {  \n    let rectangles = 0; \n    let diameter = 2 * radius; \n    let diameterSquare = diameter * diameter; \n\n    for(let a = 1; a < diameter; a++){\n        for(let b = 1; b < diameter; b++){\n            if(a * a + b * b <= diameterSquare){\n                rectangles++;\n            }\n        }\n    }\n\n    return rectangles;\n}"
+      ],
+      [
+        "function makeFlip(ch) { \n    return ch === '0' ? '1' : '0'; \n}\n\nfunction getFlipWithStartingCharacter(str, expected) {\n    let flipCount = 0;\n    {\n        let i = 0;\n        for (; i < str.length; i++) {\n            if (str[i] !== expected) {\n                flipCount++;\n                //begin to write code\n                let newChar = makeFlip(str[i]);\n                str = str.substring(0, i) + newChar + str.substring(i + 1);\n            }\n        }\n    }\n    return flipCount;\n}"
+      ],
+      [
+        "function count_Digit(n) {\n    let count = 0;\n    for (; (n !== 0); ) {\n        n = Math.floor(n / 10);\n        count++;\n    }\n    return count;\n}"
+      ],
+      [
+        "function permuteString(str) {\n    if (str.length === 0) {\n        return [''];\n    }\n    let prevList = permuteString(str.substring(1));\n    let nextList = [];\n    for (let i = 0; i < prevList.length; i++) {\n        for (let j = 0; j <= str.length; j++) {\n            nextList.push(prevList[i].slice(0, j) + str.charAt(i) + prevList[i].slice(j));\n        }\n    }\n    return nextList;\n}"
+      ],
+      [
+        "function multi_list(rownum, colnum) {\n  const multi_list = Array.from({ length: rownum }, () => new Array(colnum).fill(0));\n  {\n      let row = 0;\n      for (; row < rownum; row++) {\n      {\n          let col = 0;\n          for (; col < colnum; col++) {\n              multi_list[row][col] = row * col;\n          }\n      }\n  }\n  return multi_list;\n}"
+      ],
+      [
+        "function indexOnInnerList(listData, indexNo) {\n    const ret = listData.sort((a, b) => {\n        if (!(typeof a[indexNo] === 'string' && typeof b[indexNo] === 'string')) {\n            throw new Error('All elements at the specified index must be strings.');\n        } else {\n            return a[indexNo].localeCompare(b[indexNo]);\n        }\n    });\n    return ret;\n}"
+      ],
+      [
+        "function find_rotation_count(A) {\n    let left = 0;\n    let right = A.length - 1;\n    for (; (left <= right); ) {\n        if (A[left] <= A[right]) {\n            return left;\n        }\n        let mid = Math.floor((left + right) / 2);\n        let next = (mid + 1) % A.length;\n        let prev = (mid - 1 + A.length) % A.length;\n        if (A[mid] <= A[next] && A[mid] <= A[prev]) {\n            return mid;\n        } else if (A[mid] > A[left]) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1; // If no rotation found\n}"
+      ],
+      [
+        "function even_bit_toggle_number(n) {\n    let res = 0;\n    let count = 0;\n    let temp = n;\n    for (;(temp > 0);){\n        if (count % 2 === 0) {\n            res |= (1 << count);\n        }\n        count++;\n        temp >>= 1;\n    }\n    return res;\n}"
+      ],
+      [
+        "function frequency_Of_Smallest(n, arr) {\n    let mn = arr[0];\n    let freq = 1;\n    for (let i = 1; i < n; i++) {\n        if (arr[i] < mn) {\n            mn = arr[i];\n            freq = 1;\n        } else if (arr[i] === mn) {\n            freq += 1;\n        }\n    }\n    return freq;\n}"
+      ],
+      [
+        "function swap_count(s) {\n    let chars = s;\n    let count_left = 0;\n    let count_right = 0;\n    let swap = 0;\n    let imbalance = 0;\n\n    for (let i = 0; i < chars.length; i++) {\n        if (chars[i] === '[') {\n            count_left += 1;\n            if (imbalance > 0) {\n                swap += imbalance;\n                imbalance = 0;\n            }\n        } else if (chars[i] === ']') {\n            count_right += 1;\n            imbalance += count_left - count_right;\n        }\n    }\n\n    swap += imbalance;\n\n    return swap;\n}"
+      ],
+      [
+        "``javascript\nfunction highest_Power_of_2(n) {\n    let res = 0;\n    {\n        let i = n;\n        while(i > 0){\n        if ((i & (i - 1)) === 0) {\n            res = i;\n            break;\n        }\n        i--;\n    }\n}\nreturn res;\n}"
+      ],
+      [
+        "function first_non_repeating_character(str1) {\n  const char_order = [];\n  const ctr = {};\n  for (const c of str1) {\n    if (!(ctr[c])) {\n      ctr[c] = 1;\n      char_order.push(c);\n    } else {\n      ctr[c] += 1;\n    }\n  }\n\n  for (const c of char_order) {\n    if (ctr[c] === 1) {\n      return c;\n    }\n  }\n\n  return null; // Return null if no non-repeating character is found\n}\n\n// Example usage:"
+      ],
+      [
+        "function median_numbers(a, b, c) {\n    let median;\n    if (a > b) {\n        if (!(a < c)) {\n            if (b > c) {\n                median = b;\n            } else {\n                median = c;\n            }\n        } else {\n            median = a;\n        }\n    } else {\n        if (!(b < c)) {\n            median = b;\n        } else {\n            median = c;\n        }\n    }\n    return median;\n}"
+      ],
+      [
+        "function ncr_modp(n, r, p) {\n    let C = Array(r + 1).fill(0);\n    C[0] = 1;\n    for(let i = 1; i <= n; i++){\n        for(let j = Math.min(i, r); j > 0; j--){\n            C[j] = (C[j] + C[j - 1]) % p;\n        }\n    }\n    return C[r];\n}"
+      ],
+      [
+        "function rearrange_bigger(n) {\n    let nums = Array.from(String(n), Number);\n    let i = nums.length - 2;\n    while(i >= 0){\n        if (nums[i] < nums[i + 1]) {\n            let z = nums.slice(i);\n            let y = z.filter(x => x > z[0]).sort()[0];\n            z.splice(z.indexOf(y), 1);\n            let j = i;\n            while(j < nums.length && nums[j] <= y) {\n                j++;\n            }\n            [nums[i], nums[j-1]] = [nums[j-1], nums[i]];\n            nums.splice(i+1, z.length, ...z);\n            return parseInt(nums.join(''));\n        }\n        i--;\n    }\n    return -1;\n}"
+      ],
+      [
+        "``javascript\nclass MinPriorityQueue {\n    constructor() {\n      this.heap = [];\n    }\n    enqueue(element) {\n      this.heap.push(element);\n      this.bubbleUp(this.heap.length - 1);\n    }\n    dequeue() {\n      if (this.heap.length === 0) {\n        throw new Error(\"Queue is empty\");\n      }\n      if (this.heap.length === 1) {\n        return this.heap.pop();\n      }\n      const root = this.heap[0];\n      this.heap[0] = this.heap.pop();\n      this.bubbleDown(0);\n      return root;\n    }\n    bubbleUp(index) {\n      for(;(index > 0);){\n        const parentIndex = Math.floor((index - 1) / 2);\n        if (this.heap[index] >= this.heap[parentIndex]) {\n          break;\n        }\n        [this.heap[index], this.heap[parentIndex]] = [this.heap[parentIndex], this.heap[index]];\n        index = parentIndex;\n      }\n    }\n    bubbleDown(index) {\n      const length = this.heap.length;\n      while (true) {\n        const leftChildIndex = 2 * index + 1;\n        const rightChildIndex = 2 * index + 2;\n        let smallest = index;\n        if (leftChildIndex < length && this.heap[leftChildIndex] < this.heap[smallest]) {\n          smallest = leftChildIndex;\n        }\n        if (rightChildIndex < length && this.heap[rightChildIndex] < this.heap[smallest]) {\n          smallest = rightChildIndex;\n        }\n        if (smallest !== index) {\n          [this.heap[index], this.heap[smallest]] = [this.heap[smallest], this.heap[index]];\n          index = smallest;\n        } else {\n          break;\n        }\n      }\n    }\n    size() {\n      return this.heap.length;\n    }\n}\n\nfunction findKPairsWithSmallestSums(nums1, nums2, k) {\n    const minHeap = new MinPriorityQueue();\n    for(let i = 0; i < Math.min(k, nums1.length); i++) {\n        minHeap.enqueue([nums1[i], nums2[0], 0]);\n    }\n    let count = 0;\n    let result = [];\n    while(count < k && !minHeap.isEmpty()) {\n        const [num1, num2, index2] = minHeap.dequeue();\n        result.push([num1, num2]);\n        if(index2 + 1 < nums2.length)"
+      ],
+      [
+        "function remove_odd(l) {\n    {\n        let i = l.length - 1;\n        while(i >= 0){\n        if (l[i] % 2 !== 0) {\n            l.splice(i, 1);\n            i--;\n        }\n    }\n}"
+      ],
+      [
+        "function max_Product(arr) {\n    let arr_len = arr.length;\n    if (arr_len < 2) {\n        return \"No pairs exists\";\n    }\n\n    let x = arr[0];\n    let y = arr[1];\n\n    for(let i = 0; i < arr_len - 1; i++){\n        for(let j = i + 1; j < arr_len; j++){\n            if(arr[i] * arr[j] > x * y){\n                x = arr[i];\n                y = arr[j];\n            }\n        }\n    }\n\n    return x * y;\n}"
+      ],
+      [
+        "function cube_Sum(n) { \n    let sum = 0;\n    for (let i = 1; i <= n; i++) { \n        sum += Math.pow(i * 2, 3);\n    }\n}"
+      ],
+      [
+        "function find_Average_Of_Cube(n) {\n    let sum = 0;\n    for (let i = 1; i <= n; i++) {\n        sum += i * i * i;\n    }\n    return sum / n;\n}"
+      ],
+      [
+        "function get_maxgold(gold, m, n) {\n    let goldTable = new Array(m).fill(0).map(() => new Array(n).fill(0));\n    {\n        let col = n-1;\n        while(col >= 0){\n        {\n            let row = 0;\n            while(row < m){\n            let right = (col == n-1) ? 0 : goldTable[row][col+1];\n            let right_up = (row == 0 || col == n-1) ? 0 : goldTable[row-1][col+1];\n            let right_down = (row == m-1 || col == n-1) ? 0 : goldTable[row+1][col+1];\n            goldTable[row][col] = gold[row][col] + Math.max(right, right_up, right_down);\n            col--;\n                    row++;\n            }\n        }\n    }\n    let maxGold = 0;\n    for(let i=0; i<m; i++){\n        for(let j=0; j<n; j++){\n            maxGold = Math.max(maxGold, goldTable[i][j]);\n        }\n    }\n    return maxGold;\n}"
+      ],
+      [
+        "function countElementInList(list1, x) {\n    let ctr = 0;\n    for (let i = 0; i < list1.length; i++) {\n        if (list1[i].includes(x)) {\n            ctr++;\n        }\n    }\n    return ctr;\n}"
+      ],
+      [
+        "function shell_sort(my_list) {\n    let gap = Math.floor(my_list.length / 2);\n    while (gap > 0) {\n        {\n            let i = gap;\n            while(i < my_list.length){\n            let current_item = my_list[i];\n            let j = i;\n            while (j >= gap && my_list[j - gap] > current_item) {\n                my_list[j] = my_list[j - gap];\n                j -= gap;\n            }\n        }\n        gap = Math.floor(gap / 2);\n    }\n    return my_list;\n}"
+      ],
+      [
+        "function remove_odd(str1) {\n    let str2 = '';\n    for (let i = 1; i <= str1.length; i++) {\n        if (i % 2 === 0) {\n            str2 += str1.charAt(i - 1);\n        }\n    }\n    return str2;\n}"
+      ],
+      [
+        "function count_bidirectional(test_list) {\n    let res = 0;\n    for (let idx = 0; idx < test_list.length; idx++) {\n        for (let iidx = idx + 1; iidx < test_list.length; iidx++) {\n            if (test_list[iidx][0] === test_list[idx][1] && test_list[idx][1] === test_list[iidx][0]) {\n                res++;\n            }\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function sumofFactors(n) {\n    if (n % 2 !== 0) {\n        return 0;\n    }\n    let res = 1;\n    {\n        let i = 2;\n        for (; i <= Math.sqrt(n) + 1; i++) {\n            let count = 0;\n            let curr_sum = 1;\n            let curr_term = 1;\n            while (n % i === 0) {\n                count++;\n                n = Math.floor(n / i);\n                curr_sum *= i;\n                curr_term *= i;\n            }\n            if (count > 1) {\n                res *= curr_sum;\n            } else {\n                res *= curr_term;\n            }\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function upper_ctr(str) {\n    let upper_ctr = 0;\n    for(let i = 0; i < str.length; i++){\n        if (str[i] >= 'A' && str[i] <= 'Z') {\n            upper_ctr++;\n        }\n    }\n    return upper_ctr;\n}"
+      ],
+      [
+        "function max_subarray_product(arr) {\n    let n = arr.length;\n    let max_ending_here = 1;\n    let min_ending_here = 1;\n    let max_so_far = 0;\n    let flag = 0;\n    for (let i = 0; i < n; i++) {\n        if (!(arr[i] > 0)) if (arr[i] === 0) {\n            max_ending_here = 1;\n            min_ending_here = 1;\n            flag = 1;\n        } else {\n            max_ending_here = max_ending_here * arr[i];\n            min_ending_here = Math.min(min_ending_here * arr[i], 1);\n            flag = 1;\n        }\n        if (max_ending_here < 0) {\n            let temp = max_ending_here;\n            max_ending_here = min_ending_here;\n            min_ending_here = temp;\n        }\n        max_so_far = Math.max(max_so_far, max_ending_here);\n    }\n    return max_so_far;\n}"
+      ],
+      [
+        "function findPeakUtil(arr, low, high, n) {\n    let mid = low + Math.floor((high - low) / 2);\n    if (!((mid == 0 || arr[mid - 1] <= arr[mid]) &&\n        (mid == n - 1 || arr[mid + 1] <= arr[mid]))) if (mid > 0 && arr[mid - 1] > arr[mid]) {\n        return findPeakUtil(arr, low, mid - 1, n);\n    } else {\n        return mid;\n    }\n}"
+      ],
+      [
+        "function decimal_to_Octal(deciNum) {\n    let octalNum = 0;\n    let countval = 1;\n    let dNo = deciNum;\n    for(;(deciNum != 0);){\n        let remainder = deciNum % 8;\n        octalNum = octalNum + remainder * countval;\n        countval *= 10;\n        deciNum = Math.floor(deciNum / 8);\n    }\n    return octalNum;\n}"
+      ],
+      [
+        "function max_product(arr, n) {\n  let mpis = new Array(n).fill(0);\n  {\n      let i = 0;\n      while(i < n){\n          mpis[i] = arr[i];\n          i++;\n      }\n  }\n  {\n      let i = 1;\n      while(i < n){\n          {\n              let j = 0;\n              while(j < i){\n                  if(mpis[j] < mpis[i]){\n                      mpis[j] = mpis[i];\n                  }\n                  j++;\n              }\n          }\n          i++;\n      }\n  }\n  let maxProduct = 1;\n  for(let i = 0; i < n; i++){\n      maxProduct *= mpis[i];\n  }\n  return maxProduct;\n}"
+      ],
+      [
+        "function max_profit(price, k) {\n    const n = price.length;\n    let final_profit = new Array(k + 1).fill().map(() => new Array(n).fill(null));\n    for (let i = 0; i <= k; i++) {\n        for (let j = 0; j < n; j++) {\n            if (i === 0 || j === 0) {\n                final_profit[i][j] = 0;\n            } else {\n                let max_so_far = 0;\n                for (let x = 0; x < j; x++) {\n                    max_so_far = Math.max(max_so_far, final_profit[i - 1][x] + price[j] - price[x]);\n                }\n                final_profit[i][j] = max_so_far;\n            }\n        }\n    }\n    return final_profit[k][n - 1];\n}"
+      ],
+      [
+        "function find_remainder(arr, lens, n) { \n    let mul = 1;\n    for(let i = 0; i < lens; i++){  \n        mul *= arr[i];\n    }\n    return mul % n;\n}"
+      ],
+      [
+        "function check_Consecutive(l) {\n    l.sort((a, b) => a - b);\n    for(let i = 0; i < l.length - 1; i++){\n        if(l[i] + 1 !== l[i+1]){\n            return false;\n        }\n    }\n    return true;\n}"
+      ],
+      [
+        "function first_Digit(n) {\n    while (n >= 10) {\n        n = Math.floor(n / 10);\n    }\n    return n;\n}"
+      ],
+      [
+        "function get_max_occuring_char(str1) {\n    const ASCII_SIZE = 256;\n    let ctr = new Array(ASCII_SIZE).fill(0);\n    let max = -1;\n    let ch = '';\n\n    {\n        let i = 0;\n        while(i < str1.length){\n            ctr[str1.charCodeAt(i)]++;\n            i++;\n        }\n    }\n\n    for(let i=0;i<ASCII_SIZE;i++){\n        if(max < ctr[i]){\n            max = ctr[i];\n            ch = String.fromCharCode(i);\n        }\n    }\n\n    return ch;\n}\n\n// Example usage:"
+      ],
+      [
+        "function first_Factorial_Divisible_Number(x) {\n    let i = 1;\n    let fact = 1;\n    while(fact < x){\n        fact = fact * i;\n        i++;\n    }\n    return i;\n}"
+      ],
+      [
+        "function isPalindrome(n) {\n  let divisor = 1;\n  for (; (n / divisor >= 10); ) {\n    divisor *= 10;\n  }\n  for (; (n !== 0); ) {\n    let leading = Math.floor(n / divisor);\n    let trailing = n % 10;\n    if (leading !== trailing) {\n      return false;\n    }\n    n = Math.floor((n % divisor) / 10);\n  }\n  return true;\n}\n\nfunction largest_palindrome(arr) {\n  let maxPalindrome = -Infinity;\n  for (let num of arr) {\n    if (isPalindrome(num)) {\n      if (num > maxPalindrome) {\n        maxPalindrome = num;\n      }\n    }\n  }\n  return maxPalindrome;\n}"
+      ],
+      [
+        "function nCr(n, r) {\n    if (r > n / 2) {\n        r = n - r;\n    }\n    let answer = 1;\n    for (let i = 1; i <= r; i++) {\n        answer *= (n - r + i);\n        answer /= i;  // correct division to avoid overflow\n    }\n}"
+      ],
+      [
+        "function sort_tuple(tup) {\n    let lst = tup.length;\n    for (let i = 0; i < lst; i++) {\n        for (let j = 0; j < lst - i - 1; j++) {\n            if (tup[j][1] > tup[j + 1][1]) {\n                let temp = tup[j];\n                tup[j] = tup[j + 1];\n                tup[j + 1] = temp;\n            }\n        }\n    }\n    return tup;\n}"
+      ],
+      [
+        "function frequency_Of_Largest(n, arr) {\n    let mn = arr[0];\n    let freq = 1;\n\n    for (let i = 1; i < n; i++) {\n        if (arr[i] > mn) {\n            mn = arr[i];\n            freq = 1;  // Reset frequency when finding a new maximum\n        } else if (arr[i] === mn) {\n            freq++;  // Increment frequency if the current element is equal to the maximum\n        }\n    }\n\n    return freq;\n}"
+      ],
+      [
+        "function binary_search(item_list, item) {\n    let first = 0;\n    let last = item_list.length - 1;\n    let found = false;\n    while ((first <= last && !found)) {\n        let mid = Math.floor((first + last) / 2);\n        if (item_list[mid] === item) {\n            found = true;\n        } else if (item_list[mid] < item) {\n            first = mid + 1;\n        } else {\n            last = mid - 1;\n        }\n    }\n    return found;\n}"
+      ],
+      [
+        "function calculatePolygons(startx, starty, endx, endy, radius) {\n    let sl = (2 * radius) * Math.tan(Math.PI / 6);\n    let p = sl * 0.5;\n    let b = sl * Math.cos(30 * Math.PI / 180);\n    let w = b * 2;\n    let h = 2 * sl;\n    startx = startx - w;\n    starty = starty - h;\n    endx = endx + w;\n    endy = endy + h;\n    let origx = startx;\n    let origy = starty;\n    let xoffset = b;\n    let yoffset = 3 * p;\n    let polygons = [];\n    let row = 1;\n    let counter = 0;\n    while (starty < endy) {\n        if (!(row % 2 === 0)) {\n            startx = origx;\n        }\n        else {\n            startx = origx + xoffset;\n        }\n        while (startx < endx) {\n            let p1x = startx;\n            let p1y = starty + p;\n            let p2x = startx + w;\n            let p2y = starty + p;\n            let p3x = startx + w;\n            let p3y = starty + 2 * p;\n            let p4x = startx;\n            let p4y = starty + 2 * p;\n            let p5x = startx;\n            let p5y = starty + 3 * p;\n            let p6x = startx + b;\n            let p6y = starty + 3 * p;\n            polygons.push([[p1x, p1y], [p2x, p2y], [p3x, p3y], [p4x, p4y], [p5x, p5y], [p6x, p6y]]);\n            startx += w;\n        }\n        starty += h;\n        row++;\n    }\n    return polygons;\n}"
+      ],
+      [
+        "function gcd(x, y) {\n    let gcd = 1;\n    if (x % y === 0) {\n        return y;\n    }\n    {\n        let k = Math.floor(y / 2);\n        while (k > 0 && x % k !== 0) {\n            k--;\n        }\n        return k;\n    }\n}"
+      ],
+      [
+        "function ngcd(x, y) {\n    let i = 1;\n    let gcd;\n    for(;(i <= x && i <= y);){\n        if (x % i === 0 && y % i === 0) {\n            gcd = i;\n        }\n        i += 1;\n    }\n    return gcd;\n}\n\nfunction num_comm_div(x, y) {\n    const n = ngcd(x, y);\n    let commDivisors = [];\n    for(let i = 1; i <= n; i++){\n        if(n % i === 0){\n            commDivisors.push(i);\n        }\n    }\n    return commDivisors;\n}"
+      ],
+      [
+        "function sum_Of_Series(n) {\n    let sum = 0;\n    {\n        let i = 1;\n        for (; i <= n; i++) {\n            sum += i * i * i;\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function permutationCoefficient(n, k) {\n    let P = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));\n    {\n        let i = 0;\n        for (; i <= n; i++) {\n            {\n                let j = 0;\n                for (; j <= Math.min(i, k); j++) {\n                            if (j === 0) {\n                                P[i][j] = 1;\n                            } else {\n                                P[i][j] = P[i - 1][j] + (j * P[i - 1][j - 1]);\n                            }\n                        }\n                    }\n                }\n            }\n        }\n        return P[n][k];\n    }\n}"
+      ],
+      [
+        "function remove_words(list1, removewords) {\n    let i = 0;\n    while(i < list1.length){\n        if (removewords.includes(list1[i])) {\n            list1.splice(i, 1);\n            i++;\n        }\n    }\n}"
+      ],
+      [
+        "function no_of_subsequences(arr, k) {\n    const n = arr.length;\n    const dp = Array.from({ length: k + 1 }, () => Array(n + 1).fill(0));\n\n    for (let i = 1; i <= k; i++) {\n        for (let j = 1; j <= n; j++) {\n            if (arr[j - 1] <= i) {\n                dp[i][j] = dp[i][j - 1] + dp[i / arr[j - 1]][j - 1];\n            } else {\n                dp[i][j] = dp[i][j - 1];\n            }\n        }\n    }\n\n    return dp[k][n];\n}"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

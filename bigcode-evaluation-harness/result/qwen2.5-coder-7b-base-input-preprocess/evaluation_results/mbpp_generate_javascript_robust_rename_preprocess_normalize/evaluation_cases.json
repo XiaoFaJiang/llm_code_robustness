@@ -1,0 +1,3502 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: /tmp/tmpsuex5j39/test.js:32\nconst splitLowerstring = () => {\n      ^\n\nSyntaxError: Identifier 'splitLowerstring' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": false,
+    "result": "failed: /tmp/tmp3h9h0gt4/test.js:22\nconst textLowercaseUnderscore = () => {\n      ^\n\nSyntaxError: Identifier 'textLowercaseUnderscore' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": false,
+    "result": "failed: /tmp/tmp25c7ziuy/test.js:25\nconst testDuplicate = () => {\n      ^\n\nSyntaxError: Identifier 'testDuplicate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 4 failed\nAssertion failed: Test case 6 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": false,
+    "result": "failed: /tmp/tmpc9soesq6/test.js:14\n    return string.replace(/\\d/g, '');\n                  ^\n\nTypeError: string.replace is not a function\n    at remove (/tmp/tmpc9soesq6/test.js:14:19)\n    at testRemove (/tmp/tmpc9soesq6/test.js:18:35)\n    at Object.<anonymous> (/tmp/tmpc9soesq6/test.js:23:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": false,
+    "result": "failed: /tmp/tmpcisxlb9k/test.js:121\n            throw\n            ^^^^^\n\nSyntaxError: Illegal newline after throw\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\nAssertion failed: Test 4 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: /tmp/tmp6kj_4wzt/test.js:22\nconst textMatch = () => {\n      ^\n\nSyntaxError: Identifier 'textMatch' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": false,
+    "result": "failed: /tmp/tmpcv6sjzw8/test.js:22\nconst textMatchString = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchString' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": false,
+    "result": "failed: /tmp/tmp1inhjkrg/test.js:26\nconst testDistinct = () => {\n      ^\n\nSyntaxError: Identifier 'testDistinct' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: /tmp/tmpd0dvkni5/test.js:18\nconst minLengthList = () => {\n      ^\n\nSyntaxError: Identifier 'minLengthList' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": false,
+    "result": "failed: /tmp/tmp9c7wfbzr/test.js:17\nconst tnGp = () => {\n      ^\n\nSyntaxError: Identifier 'tnGp' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": false,
+    "result": "failed: /tmp/tmp6u2_z920/test.js:23\nconst maxDifference = () => {\n      ^\n\nSyntaxError: Identifier 'maxDifference' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": false,
+    "result": "failed: /tmp/tmpbawubwvb/test.js:24\nconst recursiveListSum = () => {\n      ^\n\nSyntaxError: Identifier 'recursiveListSum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": false,
+    "result": "failed: /tmp/tmpolfvwj5x/test.js:13\n    let bell = Array.from({ length: number + 1 }, () => Array(number + 1).fill(bigInt(0)));\n                                                                         ^\n\nReferenceError: bigInt is not defined\n    at /tmp/tmpolfvwj5x/test.js:13:74\n    at Function.from (<anonymous>)\n    at bellNumber (/tmp/tmpolfvwj5x/test.js:13:22)\n    at testBell_number (/tmp/tmpolfvwj5x/test.js:26:20)\n    at Object.<anonymous> (/tmp/tmpolfvwj5x/test.js:30:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": false,
+    "result": "failed: /tmp/tmpamjfyjye/test.js:94\ntestis_sublist(); // invoke test\n                                \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": false,
+    "result": "failed: /tmp/tmpuxnah9_t/test.js:23\nconst wordLen = () => {\n      ^\n\nSyntaxError: Identifier 'wordLen' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": false,
+    "result": "failed: /tmp/tmp133blc38/test.js:21\nconst tetrahedralNumber = () => {\n      ^\n\nSyntaxError: Identifier 'tetrahedralNumber' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": false,
+    "result": "failed: /tmp/tmptagsz7by/test.js:21\nconst zipTuples = () => {\n      ^\n\nSyntaxError: Identifier 'zipTuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": false,
+    "result": "failed: /tmp/tmp6xv2zy95/test.js:18\nconst volumeSphere = () => {\n      ^\n\nSyntaxError: Identifier 'volumeSphere' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": false,
+    "result": "failed: /tmp/tmpjk7haoz0/test.js:25\nconst getChar = () => {\n      ^\n\nSyntaxError: Identifier 'getChar' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": false,
+    "result": "failed: /tmp/tmp2hjenk6i/test.js:37\n    callback(result);\n    ^\n\nTypeError: callback is not a function\n    at mergeSortedList (/tmp/tmp2hjenk6i/test.js:37:5)\n    at testMerge_sorted_list (/tmp/tmp2hjenk6i/test.js:41:35)\n    at Object.<anonymous> (/tmp/tmp2hjenk6i/test.js:45:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": false,
+    "result": "failed: /tmp/tmpvdgvbrud/test.js:17\nconst tupleToInt = () => {\n      ^\n\nSyntaxError: Identifier 'tupleToInt' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": false,
+    "result": "failed: /tmp/tmp2lrxq2hy/test.js:29\nconst listToFloat = () => {\n      ^\n\nSyntaxError: Identifier 'listToFloat' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: /tmp/tmp7_fvtu52/test.js:21\nconst search = () => {\n      ^\n\nSyntaxError: Identifier 'search' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": false,
+    "result": "failed: /tmp/tmpcpy6o9e9/test.js:18\nconst maxProductTuple = () => {\n      ^\n\nSyntaxError: Identifier 'maxProductTuple' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 50 Failed\nAssertion failed: Test 1000 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": false,
+    "result": "failed: /tmp/tmp6yk6r9q5/test.js:23\nconst sum = () => {\n      ^\n\nSyntaxError: Identifier 'sum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 1442.75, got 1639.25\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: /tmp/tmpf59lw1hm/test.js:24\nconst zeroCount = () => {\n      ^\n\nSyntaxError: Identifier 'zeroCount' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: /tmp/tmpalr424wh/test.js:19\ntestSum_digits_twoparts(); // invoke test\n                                         \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": false,
+    "result": "failed: /tmp/tmpduefat91/test.js:84\nconst func_0 = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: /tmp/tmp8yzxnuel/test.js:20\n    console.assert(arraysEqual(parabola_vertex(5, 3, 2), [(-0.3).toFixed(8), (1.55).toFixed(8)]), \"Test 1 Failed\");\n                   ^\n\nReferenceError: parabola_vertex is not defined\n    at testParabola_vertex (/tmp/tmp8yzxnuel/test.js:20:20)\n    at Object.<anonymous> (/tmp/tmp8yzxnuel/test.js:25:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: /tmp/tmpzl967dul/test.js:22\nconst tupleIntStr = () => {\n      ^\n\nSyntaxError: Identifier 'tupleIntStr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": false,
+    "result": "failed: /tmp/tmp_p9gqvhh/test.js:18\nconst removeElements = () => {\n      ^\n\nSyntaxError: Identifier 'removeElements' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "158": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "159": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "160": {
+    "task_id": 160,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "161": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "162": {
+    "task_id": 162,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "163": {
+    "task_id": 163,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "164": {
+    "task_id": 164,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "165": {
+    "task_id": 165,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "166": {
+    "task_id": 166,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "167": {
+    "task_id": 167,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "168": {
+    "task_id": 168,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "169": {
+    "task_id": 169,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "170": {
+    "task_id": 170,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "171": {
+    "task_id": 171,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "172": {
+    "task_id": 172,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "173": {
+    "task_id": 173,
+    "passed": false,
+    "result": "failed: /tmp/tmpfhek2txq/test.js:22\nconst greaterSpecificnum = () => {\n      ^\n\nSyntaxError: Identifier 'greaterSpecificnum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "174": {
+    "task_id": 174,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "175": {
+    "task_id": 175,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "176": {
+    "task_id": 176,
+    "passed": false,
+    "result": "failed: /tmp/tmp_qi4g3j2/test.js:29\nconst longestCommonSubsequence = () => {\n      ^\n\nSyntaxError: Identifier 'longestCommonSubsequence' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "177": {
+    "task_id": 177,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "178": {
+    "task_id": 178,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "179": {
+    "task_id": 179,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "180": {
+    "task_id": 180,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "181": {
+    "task_id": 181,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "182": {
+    "task_id": 182,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "183": {
+    "task_id": 183,
+    "passed": false,
+    "result": "failed: /tmp/tmpquhgdrxr/test.js:27\nconst octalToDecimal = () => {\n      ^\n\nSyntaxError: Identifier 'octalToDecimal' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "184": {
+    "task_id": 184,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "185": {
+    "task_id": 185,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "186": {
+    "task_id": 186,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "187": {
+    "task_id": 187,
+    "passed": false,
+    "result": "failed: /tmp/tmplm7crqr1/test.js:21\nconst largestTriangle = () => {\n      ^\n\nSyntaxError: Identifier 'largestTriangle' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "188": {
+    "task_id": 188,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "189": {
+    "task_id": 189,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "190": {
+    "task_id": 190,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "191": {
+    "task_id": 191,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "192": {
+    "task_id": 192,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "193": {
+    "task_id": 193,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "194": {
+    "task_id": 194,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "195": {
+    "task_id": 195,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "196": {
+    "task_id": 196,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "197": {
+    "task_id": 197,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "198": {
+    "task_id": 198,
+    "passed": false,
+    "result": "failed: /tmp/tmp7jc0cybo/test.js:33\nconst heapReplace = () => {\n      ^\n\nSyntaxError: Identifier 'heapReplace' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "199": {
+    "task_id": 199,
+    "passed": false,
+    "result": "failed: /tmp/tmpc9csmeyt/test.js:18\nconst isAllowedSpecificChar = () => {\n      ^\n\nSyntaxError: Identifier 'isAllowedSpecificChar' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "200": {
+    "task_id": 200,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "201": {
+    "task_id": 201,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "202": {
+    "task_id": 202,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "203": {
+    "task_id": 203,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected 5156.620156177409, got NaN\nAssertion failed: Expected 3437.746770784939, got NaN\nAssertion failed: Expected 6875.493541569878, got NaN\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "204": {
+    "task_id": 204,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "205": {
+    "task_id": 205,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "206": {
+    "task_id": 206,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "207": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: /tmp/tmpe7fxkuuz/test.js:91\ntestmin_Operations()\n                    \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "208": {
+    "task_id": 208,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "209": {
+    "task_id": 209,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "210": {
+    "task_id": 210,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "211": {
+    "task_id": 211,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "212": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "213": {
+    "task_id": 213,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "214": {
+    "task_id": 214,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "215": {
+    "task_id": 215,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "216": {
+    "task_id": 216,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "217": {
+    "task_id": 217,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "218": {
+    "task_id": 218,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "219": {
+    "task_id": 219,
+    "passed": false,
+    "result": "failed: /tmp/tmp_t1nr6dv/test.js:19\nconst replaceBlank = () => {\n      ^\n\nSyntaxError: Identifier 'replaceBlank' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "220": {
+    "task_id": 220,
+    "passed": false,
+    "result": "failed: /tmp/tmpwml84k4s/test.js:32\nconst maxSum = () => {\n      ^\n\nSyntaxError: Identifier 'maxSum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "221": {
+    "task_id": 221,
+    "passed": false,
+    "result": "failed: /tmp/tmpxsws66m3/test.js:18\nconst largNnum = () => {\n      ^\n\nSyntaxError: Identifier 'largNnum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "222": {
+    "task_id": 222,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "223": {
+    "task_id": 223,
+    "passed": false,
+    "result": "failed: /tmp/tmp64os4ibq/test.js:18\nconst volumeCube = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCube' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "224": {
+    "task_id": 224,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "225": {
+    "task_id": 225,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "226": {
+    "task_id": 226,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "227": {
+    "task_id": 227,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "228": {
+    "task_id": 228,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "229": {
+    "task_id": 229,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "230": {
+    "task_id": 230,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "231": {
+    "task_id": 231,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "232": {
+    "task_id": 232,
+    "passed": false,
+    "result": "failed: /tmp/tmp5qh1l96z/test.js:22\nconst sortOnOccurence = () => {\n      ^\n\nSyntaxError: Identifier 'sortOnOccurence' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "233": {
+    "task_id": 233,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "234": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "235": {
+    "task_id": 235,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "236": {
+    "task_id": 236,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "237": {
+    "task_id": 237,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "238": {
+    "task_id": 238,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "239": {
+    "task_id": 239,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "240": {
+    "task_id": 240,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "241": {
+    "task_id": 241,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "242": {
+    "task_id": 242,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "243": {
+    "task_id": 243,
+    "passed": false,
+    "result": "failed: /tmp/tmpugehqp1t/test.js:24\nconst wordsAe = () => {\n      ^\n\nSyntaxError: Identifier 'wordsAe' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "244": {
+    "task_id": 244,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "245": {
+    "task_id": 245,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "246": {
+    "task_id": 246,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "247": {
+    "task_id": 247,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "248": {
+    "task_id": 248,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "249": {
+    "task_id": 249,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "250": {
+    "task_id": 250,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "251": {
+    "task_id": 251,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "252": {
+    "task_id": 252,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "253": {
+    "task_id": 253,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "254": {
+    "task_id": 254,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "255": {
+    "task_id": 255,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "256": {
+    "task_id": 256,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "257": {
+    "task_id": 257,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "258": {
+    "task_id": 258,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "259": {
+    "task_id": 259,
+    "passed": false,
+    "result": "failed: /tmp/tmpdp2qhgx4/test.js:23\nconst sumEvenAndEvenIndex = () => {\n      ^\n\nSyntaxError: Identifier 'sumEvenAndEvenIndex' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "260": {
+    "task_id": 260,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "261": {
+    "task_id": 261,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "262": {
+    "task_id": 262,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "263": {
+    "task_id": 263,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "264": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "265": {
+    "task_id": 265,
+    "passed": false,
+    "result": "failed: /tmp/tmpw46gi6du/test.js:18\nconst volumeCylinder = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCylinder' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "266": {
+    "task_id": 266,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "267": {
+    "task_id": 267,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "268": {
+    "task_id": 268,
+    "passed": false,
+    "result": "failed: /tmp/tmp1w252enc/test.js:17\nconst isNumDecagonal = () => {\n      ^\n\nSyntaxError: Identifier 'isNumDecagonal' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "269": {
+    "task_id": 269,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "270": {
+    "task_id": 270,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "271": {
+    "task_id": 271,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "272": {
+    "task_id": 272,
+    "passed": false,
+    "result": "failed: /tmp/tmpod0oizyo/test.js:29\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "273": {
+    "task_id": 273,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "274": {
+    "task_id": 274,
+    "passed": false,
+    "result": "failed: /tmp/tmpnlhfyqwn/test.js:22\nconst textMatchTwoThree = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchTwoThree' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "275": {
+    "task_id": 275,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "276": {
+    "task_id": 276,
+    "passed": false,
+    "result": "failed: /tmp/tmpgsa3hwl9/test.js:20\nconst squareSum = () => {\n      ^\n\nSyntaxError: Identifier 'squareSum' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "277": {
+    "task_id": 277,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "278": {
+    "task_id": 278,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "279": {
+    "task_id": 279,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "280": {
+    "task_id": 280,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "281": {
+    "task_id": 281,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "282": {
+    "task_id": 282,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "283": {
+    "task_id": 283,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "284": {
+    "task_id": 284,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "285": {
+    "task_id": 285,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "286": {
+    "task_id": 286,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "287": {
+    "task_id": 287,
+    "passed": false,
+    "result": "failed: /tmp/tmpk8mlhl85/test.js:18\nconst intersectionNestedLists = () => {\n      ^\n\nSyntaxError: Identifier 'intersectionNestedLists' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "288": {
+    "task_id": 288,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "289": {
+    "task_id": 289,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "290": {
+    "task_id": 290,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "291": {
+    "task_id": 291,
+    "passed": false,
+    "result": "failed: Assertion failed: Test Failed for input 6\nAssertion failed: Test Failed for input 10\nAssertion failed: Test Failed for input 18\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "292": {
+    "task_id": 292,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "293": {
+    "task_id": 293,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "294": {
+    "task_id": 294,
+    "passed": false,
+    "result": "failed: /tmp/tmpt5voharx/test.js:27\nconst word = [\"Python\", \"Java\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C++\", \"C#\", \"C\", \"Java\", \"Python\", \"JavaScript\", \"PHP\", \"Perl\", \"Ruby\", \"C\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "295": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: /tmp/tmp8de9dia_/test.js:30\nconst maxSumIncreasingSubseq = () => {\n      ^\n\nSyntaxError: Identifier 'maxSumIncreasingSubseq' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "296": {
+    "task_id": 296,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "297": {
+    "task_id": 297,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "298": {
+    "task_id": 298,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "299": {
+    "task_id": 299,
+    "passed": false,
+    "result": "failed: /tmp/tmpq1_9_jfi/test.js:65\n    /*\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "300": {
+    "task_id": 300,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "301": {
+    "task_id": 301,
+    "passed": false,
+    "result": "failed: /tmp/tmpe_fb1i1x/test.js:18\nconst volumeCone = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCone' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "302": {
+    "task_id": 302,
+    "passed": false,
+    "result": "failed: /tmp/tmp5v61_ua3/test.js:23\nconst posNos = () => {\n      ^\n\nSyntaxError: Identifier 'posNos' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "303": {
+    "task_id": 303,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "304": {
+    "task_id": 304,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "305": {
+    "task_id": 305,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "306": {
+    "task_id": 306,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "307": {
+    "task_id": 307,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "308": {
+    "task_id": 308,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "309": {
+    "task_id": 309,
+    "passed": false,
+    "result": "failed: /tmp/tmpr39j_kck/test.js:23\nconst sumDifference = () => {\n      ^\n\nSyntaxError: Identifier 'sumDifference' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "310": {
+    "task_id": 310,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "311": {
+    "task_id": 311,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "312": {
+    "task_id": 312,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "313": {
+    "task_id": 313,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "314": {
+    "task_id": 314,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "315": {
+    "task_id": 315,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "316": {
+    "task_id": 316,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "317": {
+    "task_id": 317,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "318": {
+    "task_id": 318,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "319": {
+    "task_id": 319,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "320": {
+    "task_id": 320,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "321": {
+    "task_id": 321,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "322": {
+    "task_id": 322,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "323": {
+    "task_id": 323,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "324": {
+    "task_id": 324,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "325": {
+    "task_id": 325,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "326": {
+    "task_id": 326,
+    "passed": false,
+    "result": "failed: /tmp/tmp403vt_cn/test.js:22\nconst textMatchWord = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchWord' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "327": {
+    "task_id": 327,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "328": {
+    "task_id": 328,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "329": {
+    "task_id": 329,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "330": {
+    "task_id": 330,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "331": {
+    "task_id": 331,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "332": {
+    "task_id": 332,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "333": {
+    "task_id": 333,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "334": {
+    "task_id": 334,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "335": {
+    "task_id": 335,
+    "passed": false,
+    "result": "failed: /tmp/tmpe_nulvr2/test.js:23\nconst zigzag = () => {\n      ^\n\nSyntaxError: Identifier 'zigzag' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "336": {
+    "task_id": 336,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "337": {
+    "task_id": 337,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "338": {
+    "task_id": 338,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "339": {
+    "task_id": 339,
+    "passed": false,
+    "result": "failed: /tmp/tmpd9xqnq9f/test.js:27\nconst minimumLength = () => {\n      ^\n\nSyntaxError: Identifier 'minimumLength' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "340": {
+    "task_id": 340,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "341": {
+    "task_id": 341,
+    "passed": false,
+    "result": "failed: /tmp/tmpmlxjbwgv/test.js:24\nconst uniqueCharacters = () => {\n      ^\n\nSyntaxError: Identifier 'uniqueCharacters' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "342": {
+    "task_id": 342,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "343": {
+    "task_id": 343,
+    "passed": false,
+    "result": "failed: /tmp/tmp43vw5146/test.js:18\nconst tnAp = () => {\n      ^\n\nSyntaxError: Identifier 'tnAp' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "344": {
+    "task_id": 344,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "345": {
+    "task_id": 345,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "346": {
+    "task_id": 346,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "347": {
+    "task_id": 347,
+    "passed": false,
+    "result": "failed: /tmp/tmpqx72_jnh/test.js:14\n    return nums1.map((num, index) => num % nums2[index]);\n                                           ^\n\nReferenceError: nums2 is not defined\n    at /tmp/tmpqx72_jnh/test.js:14:44\n    at Array.map (<anonymous>)\n    at moddivList (/tmp/tmpqx72_jnh/test.js:14:18)\n    at testModdiv_list (/tmp/tmpqx72_jnh/test.js:18:35)\n    at Object.<anonymous> (/tmp/tmpqx72_jnh/test.js:22:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "348": {
+    "task_id": 348,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "349": {
+    "task_id": 349,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "350": {
+    "task_id": 350,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "351": {
+    "task_id": 351,
+    "passed": false,
+    "result": "failed: /tmp/tmp41xyc6kv/test.js:26\nconst maxOccurrences = () => {\n      ^\n\nSyntaxError: Identifier 'maxOccurrences' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "352": {
+    "task_id": 352,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "353": {
+    "task_id": 353,
+    "passed": false,
+    "result": "failed: /tmp/tmprtct9uyu/test.js:18\nconst func0 = () => {\n      ^\n\nSyntaxError: Identifier 'func0' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "354": {
+    "task_id": 354,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "355": {
+    "task_id": 355,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "356": {
+    "task_id": 356,
+    "passed": false,
+    "result": "failed: /tmp/tmpev6_gizf/test.js:31\nconst getHeight = () => {\n      ^\n\nSyntaxError: Identifier 'getHeight' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "357": {
+    "task_id": 357,
+    "passed": false,
+    "result": "failed: /tmp/tmp3ccdppcy/test.js:18\nconst repeatTuples = () => {\n      ^\n\nSyntaxError: Identifier 'repeatTuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "358": {
+    "task_id": 358,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "359": {
+    "task_id": 359,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "360": {
+    "task_id": 360,
+    "passed": false,
+    "result": "failed: /tmp/tmp_s92vhmm/test.js:25\nconst smallestMissing = () => {\n      ^\n\nSyntaxError: Identifier 'smallestMissing' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "361": {
+    "task_id": 361,
+    "passed": false,
+    "result": "failed: /tmp/tmpkd2jgm_e/test.js:105\ntestheap_assending() // invoke test\n                                   \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "362": {
+    "task_id": 362,
+    "passed": false,
+    "result": "failed: /tmp/tmpwxnjvba6/test.js:18\nconst volumeCuboid = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCuboid' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "363": {
+    "task_id": 363,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "364": {
+    "task_id": 364,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "365": {
+    "task_id": 365,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "366": {
+    "task_id": 366,
+    "passed": false,
+    "result": "failed: /tmp/tmpj_bsz68j/test.js:19\nconst removeChar = () => {\n      ^\n\nSyntaxError: Identifier 'removeChar' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "367": {
+    "task_id": 367,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "368": {
+    "task_id": 368,
+    "passed": false,
+    "result": "failed: /tmp/tmpaxrb1api/test.js:18\nconst surfaceareaCuboid = () => {\n      ^\n\nSyntaxError: Identifier 'surfaceareaCuboid' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "369": {
+    "task_id": 369,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "370": {
+    "task_id": 370,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "371": {
+    "task_id": 371,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "372": {
+    "task_id": 372,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "373": {
+    "task_id": 373,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "374": {
+    "task_id": 374,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "375": {
+    "task_id": 375,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "376": {
+    "task_id": 376,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "377": {
+    "task_id": 377,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "378": {
+    "task_id": 378,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "379": {
+    "task_id": 379,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "380": {
+    "task_id": 380,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "381": {
+    "task_id": 381,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "382": {
+    "task_id": 382,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "383": {
+    "task_id": 383,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "384": {
+    "task_id": 384,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "385": {
+    "task_id": 385,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "386": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "387": {
+    "task_id": 387,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "388": {
+    "task_id": 388,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "389": {
+    "task_id": 389,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "390": {
+    "task_id": 390,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "391": {
+    "task_id": 391,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "392": {
+    "task_id": 392,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "393": {
+    "task_id": 393,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "394": {
+    "task_id": 394,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "395": {
+    "task_id": 395,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "396": {
+    "task_id": 396,
+    "passed": false,
+    "result": "failed: /tmp/tmpv6kfq1mp/test.js:27\nconst rearrangeBigger = () => {\n      ^\n\nSyntaxError: Identifier 'rearrangeBigger' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "397": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: /tmp/tmps5a6l4tf/test.js:58\n    console.assert(JSON.stringify(k_smallest_pairs([1,3,7],[2,4,6],2)) === JSON.stringify([[1, 2], [1, 4]]));\n                        ^\n\nReferenceError: k_smallest_pairs is not defined\n    at tvhtK_smzllest_pairh (/tmp/tmps5a6l4tf/test.js:58:25)\n    at Object.<anonymous> (/tmp/tmps5a6l4tf/test.js:63:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "398": {
+    "task_id": 398,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "399": {
+    "task_id": 399,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "400": {
+    "task_id": 400,
+    "passed": false,
+    "result": "failed: /tmp/tmpz4avi595/test.js:19\nconst snakeToCamel = () => {\n      ^\n\nSyntaxError: Identifier 'snakeToCamel' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "401": {
+    "task_id": 401,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "402": {
+    "task_id": 402,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "403": {
+    "task_id": 403,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "404": {
+    "task_id": 404,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "405": {
+    "task_id": 405,
+    "passed": false,
+    "result": "failed: Assertion failed: Expected breakSum(12) to be 13\nAssertion failed: Expected breakSum(24) to be 27\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "406": {
+    "task_id": 406,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "407": {
+    "task_id": 407,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "408": {
+    "task_id": 408,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "409": {
+    "task_id": 409,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "410": {
+    "task_id": 410,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "411": {
+    "task_id": 411,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "412": {
+    "task_id": 412,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "413": {
+    "task_id": 413,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "414": {
+    "task_id": 414,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "415": {
+    "task_id": 415,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "416": {
+    "task_id": 416,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "417": {
+    "task_id": 417,
+    "passed": false,
+    "result": "failed: /tmp/tmppqvgfl4x/test.js:30\nconst shellSort = () => {\n      ^\n\nSyntaxError: Identifier 'shellSort' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "418": {
+    "task_id": 418,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "419": {
+    "task_id": 419,
+    "passed": false,
+    "result": "failed: /tmp/tmprc4x87tv/test.js:18\nconst parabolaDirectrix = () => {\n      ^\n\nSyntaxError: Identifier 'parabolaDirectrix' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "420": {
+    "task_id": 420,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "421": {
+    "task_id": 421,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "422": {
+    "task_id": 422,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "423": {
+    "task_id": 423,
+    "passed": false,
+    "result": "failed: /tmp/tmpwspoiu3f/test.js:22\nconst textMatchOne = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchOne' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "424": {
+    "task_id": 424,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "425": {
+    "task_id": 425,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "426": {
+    "task_id": 426,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "427": {
+    "task_id": 427,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "428": {
+    "task_id": 428,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "429": {
+    "task_id": 429,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "430": {
+    "task_id": 430,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "431": {
+    "task_id": 431,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "432": {
+    "task_id": 432,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "433": {
+    "task_id": 433,
+    "passed": false,
+    "result": "failed: /tmp/tmpg11kqym6/test.js:28\nconst trimTuple = () => {\n      ^\n\nSyntaxError: Identifier 'trimTuple' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "434": {
+    "task_id": 434,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "435": {
+    "task_id": 435,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "436": {
+    "task_id": 436,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "437": {
+    "task_id": 437,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "438": {
+    "task_id": 438,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "439": {
+    "task_id": 439,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "440": {
+    "task_id": 440,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "441": {
+    "task_id": 441,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "442": {
+    "task_id": 442,
+    "passed": false,
+    "result": "failed: /tmp/tmplglpxcpl/test.js:36\nconst sumofFactors = () => {\n      ^\n\nSyntaxError: Identifier 'sumofFactors' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "443": {
+    "task_id": 443,
+    "passed": false,
+    "result": "failed: /tmp/tmpv1s2eqof/test.js:22\nconst textMatchWordz = () => {\n      ^\n\nSyntaxError: Identifier 'textMatchWordz' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "444": {
+    "task_id": 444,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "445": {
+    "task_id": 445,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "446": {
+    "task_id": 446,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "447": {
+    "task_id": 447,
+    "passed": false,
+    "result": "failed: /tmp/tmp8vca0lc0/test.js:17\nconst rectangleArea = () => {\n      ^\n\nSyntaxError: Identifier 'rectangleArea' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "448": {
+    "task_id": 448,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "449": {
+    "task_id": 449,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "450": {
+    "task_id": 450,
+    "passed": false,
+    "result": "failed: /tmp/tmpihils4on/test.js:23\nconst upperCtr = () => {\n      ^\n\nSyntaxError: Identifier 'upperCtr' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "451": {
+    "task_id": 451,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "452": {
+    "task_id": 452,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "453": {
+    "task_id": 453,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "454": {
+    "task_id": 454,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "455": {
+    "task_id": 455,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "456": {
+    "task_id": 456,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "457": {
+    "task_id": 457,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "458": {
+    "task_id": 458,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "459": {
+    "task_id": 459,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "460": {
+    "task_id": 460,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "461": {
+    "task_id": 461,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "462": {
+    "task_id": 462,
+    "passed": false,
+    "result": "failed: /tmp/tmpzzcww1u8/test.js:24\nconst tupleIntersection = () => {\n      ^\n\nSyntaxError: Identifier 'tupleIntersection' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "463": {
+    "task_id": 463,
+    "passed": false,
+    "result": "failed: /tmp/tmpygxhmzff/test.js:18\nconst replaceChar = () => {\n      ^\n\nSyntaxError: Identifier 'replaceChar' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "464": {
+    "task_id": 464,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "465": {
+    "task_id": 465,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "466": {
+    "task_id": 466,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "467": {
+    "task_id": 467,
+    "passed": false,
+    "result": "failed: /tmp/tmpkdzbsei3/test.js:20\n  console.assert(remove_lowercase(\"PYTHon\") === 'PYTH', \"Test 1 failed\");\n          ^\n\nReferenceError: remove_lowercase is not defined\n    at func0 (/tmp/tmpkdzbsei3/test.js:20:11)\n    at Object.<anonymous> (/tmp/tmpkdzbsei3/test.js:24:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "468": {
+    "task_id": 468,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "469": {
+    "task_id": 469,
+    "passed": false,
+    "result": "failed: /tmp/tmpk6hg60cb/test.js:29\nconst getMaxOccuringChar = () => {\n      ^\n\nSyntaxError: Identifier 'getMaxOccuringChar' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "470": {
+    "task_id": 470,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "471": {
+    "task_id": 471,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "472": {
+    "task_id": 472,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "473": {
+    "task_id": 473,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "474": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "475": {
+    "task_id": 475,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "476": {
+    "task_id": 476,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "477": {
+    "task_id": 477,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "478": {
+    "task_id": 478,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "479": {
+    "task_id": 479,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "480": {
+    "task_id": 480,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "481": {
+    "task_id": 481,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "482": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "483": {
+    "task_id": 483,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "484": {
+    "task_id": 484,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "485": {
+    "task_id": 485,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "486": {
+    "task_id": 486,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "487": {
+    "task_id": 487,
+    "passed": false,
+    "result": "failed: /tmp/tmp1n4i9z6j/test.js:27\nconst gcd = () => {\n      ^\n\nSyntaxError: Identifier 'gcd' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "488": {
+    "task_id": 488,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_identifier"
+  },
+  "489": {
+    "task_id": 489,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "490": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "491": {
+    "task_id": 491,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "492": {
+    "task_id": 492,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "493": {
+    "task_id": 493,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "random_filp_function_name"
+  },
+  "494": {
+    "task_id": 494,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "codebert_rename_func_name"
+  },
+  "495": {
+    "task_id": 495,
+    "passed": false,
+    "result": "failed: /tmp/tmpcehbg6i9/test.js:26\nconst permutationCoefficient = () => {\n      ^\n\nSyntaxError: Identifier 'permutationCoefficient' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "496": {
+    "task_id": 496,
+    "passed": false,
+    "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+    "completion_id": 0,
+    "perturbation_type": "random_flip_identifier"
+  },
+  "497": {
+    "task_id": 497,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  },
+  "498": {
+    "task_id": 498,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "normalize_function_names"
+  },
+  "499": {
+    "task_id": 499,
+    "passed": false,
+    "result": "failed: /tmp/tmpv7a0xzm4/test.js:20\n                var1[var2][var3] += var1[var2 / var0[var3 - 1]][var3 - 1] + 1;\n                                                               ^\n\nTypeError: Cannot read properties of undefined (reading '1')\n    at noOfSubsequences (/tmp/tmpv7a0xzm4/test.js:20:64)\n    at testno_of_subsequences (/tmp/tmpv7a0xzm4/test.js:28:20)\n    at Object.<anonymous> (/tmp/tmpv7a0xzm4/test.js:32:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+    "completion_id": 0,
+    "perturbation_type": "normalize_identifer"
+  }
+}

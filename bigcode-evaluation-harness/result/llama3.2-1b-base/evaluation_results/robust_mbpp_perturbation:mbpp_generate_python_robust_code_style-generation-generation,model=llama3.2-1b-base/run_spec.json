@@ -1,0 +1,15 @@
+{
+  "name": "robust_mbpp_perturbation:mbpp_generate_python_robust_code_style-generation-generation,model=llama3.2-1b-base",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_mbpp_perturbation",
+      "subset": "mbpp_generate_python_robust_code_style"
+    }
+  },
+  "adapter_spec": {
+    "model": "llama3.2-1b-base"
+  },
+  "groups": [
+    "robust_mbpp_perturbation"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:38: int main(): Assertion `remove_Occ(\"hellolloll\", 'l') == \"helollol\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "1": {
+    "task_id": 21,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:27:\ntest.cpp: In function ‘void test_max_Prime_Factors()’:\ntest.cpp:53:5: error: ‘__assert_fail’ was not declared in this scope\n   53 |     assert(max_Prime_Factors(13195) == 29);\n      |     ^~~~~~\ntest.cpp:54:30: warning: overflow in conversion from ‘long int’ to ‘int’ changes value from ‘600851475143’ to ‘-443946297’ [-Woverflow]\n   54 |     assert(max_Prime_Factors(600851475143) == 6857);\n      |                              ^~~~~~~~~~~~\ntest.cpp: In function ‘int main()’:\ntest.cpp:59:5: error: ‘__assert_fail’ was not declared in this scope\n   59 |     assert(max_Prime_Factors(15) == 5);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "2": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:22:\ntest.cpp: In function ‘int main()’:\ntest.cpp:55:5: error: ‘__assert_fail’ was not declared in this scope\n   55 |     assert(sorted_list1 == expected_list1);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "3": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "4": {
+    "task_id": 43,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:26:\ntest.cpp: In function ‘int main()’:\ntest.cpp:58:5: error: ‘__assert_fail’ was not declared in this scope\n   58 |     assert(counting_sort(test1) == std::vector<int>({1, 4, 5, 6, 7, 8, 23}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "5": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "7": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "8": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘int amicable_numbers_sum(int)’:\ntest.cpp:63:12: error: ‘sum’ was not declared in this scope\n   63 |     return sum(amicables.begin(), amicables.end());\n      |            ^~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:26:\ntest.cpp: In function ‘int main()’:\ntest.cpp:66:5: error: ‘__assert_fail’ was not declared in this scope\n   66 |     assert(amicable_numbers_sum(999) == 504);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 118,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘bool magic_square_test(const std::vector<std::vector<int> >&)’:\ntest.cpp:51:37: error: ‘col’ was not declared in this scope; did you mean ‘cosl’?\n   51 |         if (sum_list[i] != sum_list[col]) {\n      |                                     ^~~\n      |                                     cosl\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:22:\ntest.cpp: In function ‘int main()’:\ntest.cpp:58:5: error: ‘__assert_fail’ was not declared in this scope\n   58 |     assert(magic_square_test({{7, 12, 1, 14}, {2, 13, 8, 11}, {16, 3, 10, 5}, {9, 6, 15, 4}}) == true);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "10": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `sum_digits_single(35) == 17' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "13": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘int main()’:\ntest.cpp:64:64: error: no matching function for call to ‘encode_list(std::string&)’\n   64 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:29:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   29 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:29:29: note:   template argument deduction/substitution failed:\ntest.cpp:64:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   64 |     std::vector<std::vector<char>> encoded3 = encode_list(test3);\n      |                                                                ^\ntest.cpp:69:64: error: no matching function for call to ‘encode_list(std::string&)’\n   69 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp:29:29: note: candidate: ‘template<class T> std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&)’\n   29 | std::vector<std::vector<T>> encode_list(const std::vector<T>& list1) {\n      |                             ^~~~~~~~~~~\ntest.cpp:29:29: note:   template argument deduction/substitution failed:\ntest.cpp:69:64: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::vector<_Tp>’\n   69 |     std::vector<std::vector<char>> encoded4 = encode_list(test4);\n      |                                                                ^\ntest.cpp: In instantiation of ‘std::vector<std::vector<_Tp> > encode_list(const std::vector<_Tp>&) [with T = double]’:\ntest.cpp:58:66:   required from here\ntest.cpp:37:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   37 |             result.push_back({count, current_value});\n      |                               ^~~~~\ntest.cpp:37:31: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\ntest.cpp:45:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n   45 |     result.push_back({count, current_value});\n      |                       ^~~~~\ntest.cpp:45:23: warning: narrowing conversion of ‘count’ from ‘int’ to ‘double’ [-Wnarrowing]\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "14": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "15": {
+    "task_id": 168,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "16": {
+    "task_id": 178,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "17": {
+    "task_id": 207,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "18": {
+    "task_id": 212,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "19": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:26:\ntest.cpp: In function ‘int main()’:\ntest.cpp:56:5: error: ‘__assert_fail’ was not declared in this scope\n   56 |     assert(max_sum({1, 15, 51, 45, 33, 100, 12, 18, 9}, 9) == 194);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 236,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 244,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘std::vector<std::vector<std::__cxx11::basic_string<char> > > combinations_colors(const std::vector<std::__cxx11::basic_string<char> >&, int)’:\ntest.cpp:51:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   51 | }\n      | ^\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:24:\ntest.cpp: In function ‘int main()’:\ntest.cpp:69:106: error: ‘compare_vectors’ was not declared in this scope\n   69 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |                                                                                                          ^~~~~~~~~~~~~~~\ntest.cpp:69:5: error: ‘__assert_fail’ was not declared in this scope\n   69 |     assert(test1.size() == expected1.size() && std::equal(test1.begin(), test1.end(), expected1.begin(), compare_vectors));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "22": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:51: int main(): Assertion `max_sum_increasing_subseq({1, 101, 2, 3, 100, 4, 5}, 7, 4, 6) == 11' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "24": {
+    "task_id": 312,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:25:\ntest.cpp: In function ‘int main()’:\ntest.cpp:61:5: error: ‘__assert_fail’ was not declared in this scope\n   61 |     assert(re_arrange(arr1, 10) == std::vector<int>({-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 315,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `most_occurrences({\"Families can be reunited\", \"people can be reunited\", \"Tasks can be achieved \"}) == \"can\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "26": {
+    "task_id": 339,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "27": {
+    "task_id": 340,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "28": {
+    "task_id": 386,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "29": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "elseif2else_if"
+  },
+  "30": {
+    "task_id": 457,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "31": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "32": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/c++/9/cassert:44,\n                 from test.cpp:27:\ntest.cpp: In function ‘int main()’:\ntest.cpp:75:5: error: ‘__assert_fail’ was not declared in this scope\n   75 |     assert(polygons1.size() == 10);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "Not_Determinator_once"
+  },
+  "33": {
+    "task_id": 490,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  }
+}

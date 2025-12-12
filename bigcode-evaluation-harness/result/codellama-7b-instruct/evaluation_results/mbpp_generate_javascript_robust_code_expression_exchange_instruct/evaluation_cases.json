@@ -1,0 +1,1955 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\nAssertion failed: Test 4 failed\n",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 2,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 6,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 7,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 9,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 4 failed\nAssertion failed: Test case 6 failed\n",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 10,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 11,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpnwxdccg9/test.js:3\n    console.assert(find_first_duplicate([1, 2, 3, 4, 4, 5]) === 4, \"Test 1 Failed\");\n            ^\n\nReferenceError: find_first_duplicate is not defined\n    at testfind_first_duplicate (/tmp/tmpnwxdccg9/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpnwxdccg9/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 13,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpyoxg92_6/test.js:1\nThis code will convert a binary number to its decimal equivalent. The function takes a binary number as an argument and returns the decimal equivalent. The function uses a while loop to iterate through the binary number, and for each digit, it calculates the decimal equivalent by multiplying the digit by 2 raised to the power of the current index, and then adds the result to the decimal equivalent. Finally, the function returns the decimal equivalent.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 14,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpwnkdgnvt/test.js:1\nThis code will find the product of non-repeated elements in a given array. It first sorts the array in ascending order using the `sort()` method, and then iterates through the array using a `for` loop. For each element, it checks if it is the first element or if the previous element is not the same as the current element. If it is, it multiplies the product by the current element using the `*` operator. The final product is returned at the end of the function.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 15,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmptnorhxmv/test.js:1\nThis code checks if all elements in the tuple list are equal to K. It uses a nested loop to iterate over the tuple list and checks if all elements are equal to K. If any element is not equal to K, the function returns 0, otherwise it returns 1.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 18,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp_shipmr0/test.js:1\nnction get_Odd_Occurrence(arr, arr_size) {\n       ^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_Odd_Occurrence'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 19,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp0i5nmtv9/test.js:1\nnction count_Substring_With_Equal_Ends(s) {\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Substring_With_Equal_Ends'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 20,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpg58azpvn/test.js:1\nNote: The code generated is based on the information provided in the prompt and the format specified. However, it is important to note that the code may not be optimal or complete, and it may require further modifications or adjustments to meet the specific requirements of the task.\n          ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 21,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmph7hf2el7/test.js:1\nnction max_Prime_Factors(n) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'max_Prime_Factors'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 22,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 23,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpdod_sy7l/test.js:1\nThis code finds the missing number in a sorted array by using a binary search algorithm. The function takes two parameters: an array of integers `ar` and the length of the array `N`. The function first checks if the middle element of the array is equal to the expected value (1 + the index of the element). If the middle element is not equal to the expected value, the function checks if the middle element is less than the expected value or greater than the expected value. If the middle element is less than the expected value, the function updates the left index to the middle index plus 1. If the middle element is greater than the expected value, the function updates the right index to the middle index minus 1. The function repeats this process until the left index is greater than the right index, at which point the missing number is found.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 25,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 26,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpe_fv65e8/test.js:1\nComplete code (including all the content of the code I provided and the code you generated)\n         ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 27,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 28,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpn_dpm82z/test.js:50\nconst testRearange_string = () => {\n      ^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'testRearange_string'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 29,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp2ni5_56w/test.js:1\nnction freq_element(nums) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'freq_element'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 31,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\nAssertion failed: Test 4 Failed\n",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 35,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpip0gadnt/test.js:9\nconst test_distinct = () => {\n      ^\n\nSyntaxError: Identifier 'test_distinct' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 36,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp2h9vwzwn/test.js:1\nnction compute_Last_Digit(A, B) {\n       ^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'compute_Last_Digit'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 37,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpb0mkqgly/test.js:1\nnction odd_bit_set_number(n) {\n       ^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'odd_bit_set_number'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 40,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 42,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmph91vgi7i/test.js:1\nnction check_Equality(str) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_Equality'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 43,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpurpyr2sy/test.js:1\nnction counting_sort(my_list) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'counting_sort'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 45,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 46,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpphfg1o0e/test.js:1\nnction find_Max_Num(arr, n) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_Max_Num'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 49,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpczyt0axx/test.js:1\nThis code finds the maximum length of the subsequence with difference between adjacent elements for the given array. It uses a dynamic programming approach, where the maximum length of the subsequence is calculated for each element in the array, and the maximum value is returned at the end. The code uses a nested loop to iterate over the elements in the array and calculate the maximum length of the subsequence for each element. The code also uses an array to store the maximum length of the subsequence for each element, and the maximum value is returned at the end.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 50,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 54,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 56,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "34": {
+        "task_id": 57,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\n",
+        "completion_id": 0
+    },
+    "35": {
+        "task_id": 58,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpcpfy5bnf/test.js:1\nnction is_sublist(l, s) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'is_sublist'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "36": {
+        "task_id": 60,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpae_5p2aa/test.js:1\nnction combSort(nums) {\n       ^^^^^^^^\n\nSyntaxError: Unexpected identifier 'combSort'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "37": {
+        "task_id": 61,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpmkcigndl/test.js:1\nnction dif_Square(n) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'dif_Square'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "38": {
+        "task_id": 63,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmp1uazzt2u/test.js:1\nThis code checks whether the sequence of colors follows the sequence of patterns. It does this by creating a dictionary of patterns and their corresponding colors, and then checking whether each color is present in the dictionary and whether the length of the corresponding array is equal to 1. If any of these conditions are not met, the function returns 0, otherwise it returns 1.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "39": {
+        "task_id": 64,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "40": {
+        "task_id": 67,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 failed\n",
+        "completion_id": 0
+    },
+    "41": {
+        "task_id": 68,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpf3u7gi4j/test.js:1\nnction word_len(s) {\n       ^^^^^^^^\n\nSyntaxError: Unexpected identifier 'word_len'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "42": {
+        "task_id": 70,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp_jt9kef_/test.js:8\nconst zip_tuples = () => {\n      ^\n\nSyntaxError: Identifier 'zip_tuples' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "43": {
+        "task_id": 71,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp3c670yo6/test.js:5\nconst volume_sphere = () => {\n      ^\n\nSyntaxError: Identifier 'volume_sphere' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "44": {
+        "task_id": 72,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpcez6hi72/test.js:1\nnction get_Char(strr) {\n       ^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_Char'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "45": {
+        "task_id": 73,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\n",
+        "completion_id": 0
+    },
+    "46": {
+        "task_id": 74,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "47": {
+        "task_id": 77,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "48": {
+        "task_id": 81,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "49": {
+        "task_id": 82,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpxib9gt8m/test.js:1\nnction power(a, b) {\n       ^^^^^\n\nSyntaxError: Unexpected identifier 'power'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "50": {
+        "task_id": 85,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "51": {
+        "task_id": 86,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "52": {
+        "task_id": 89,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmppoqsb216/test.js:1\nnction next_smallest_palindrome(num) {\n       ^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'next_smallest_palindrome'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "53": {
+        "task_id": 90,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp2up1l_4b/test.js:1\nThis code finds the kth element in the given array. It uses a bubble sort algorithm to sort the array and then returns the kth element. The function takes three parameters:\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "54": {
+        "task_id": 92,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpc650om9x/test.js:8\n        result += i * (i - 1) * (i - 2) * ... * (i - m + 1);\n                                          ^^^\n\nSyntaxError: Unexpected token '...'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "55": {
+        "task_id": 96,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpyverirgj/test.js:1\nnction count_Hexadecimal(L, R) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Hexadecimal'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "56": {
+        "task_id": 98,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "57": {
+        "task_id": 102,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpv5gxzb4j/test.js:1\nnction checkInteger(text) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'checkInteger'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "58": {
+        "task_id": 103,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "59": {
+        "task_id": 106,
+        "perturbation_type": "more_universe_var_type",
+        "passed": false,
+        "result": "failed: /tmp/tmpj7fqcnyp/test.js:1\nnction list_to_float(test_list) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'list_to_float'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "60": {
+        "task_id": 108,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "61": {
+        "task_id": 109,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "62": {
+        "task_id": 110,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp4op0yqae/test.js:1\nnction check_triplet(A, n, sum, count) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_triplet'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "63": {
+        "task_id": 111,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 50 Failed\nAssertion failed: Test 1000 Failed\n",
+        "completion_id": 0
+    },
+    "64": {
+        "task_id": 112,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpgsk2d032/test.js:1\nNote: The code is written in JavaScript and follows the specified format. The function name and the package import are not changed. The original code content is fully included in the complete code. The code does not generate any test cases or use \"require\" to import packages.\n          ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "65": {
+        "task_id": 114,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp62cxican/test.js:1\nnction find_length(string, n) {\n       ^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_length'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "66": {
+        "task_id": 115,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "67": {
+        "task_id": 116,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpva13n96_/test.js:1\nnction multiply_int(x, y) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'multiply_int'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "68": {
+        "task_id": 118,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "69": {
+        "task_id": 119,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpyf6zu65f/test.js:1\nnction max_occurrences(nums) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'max_occurrences'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "70": {
+        "task_id": 120,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpjy475eu3/test.js:1\nnction reverse_vowels(str1) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'reverse_vowels'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "71": {
+        "task_id": 123,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpxvuaiy_7/test.js:21\nconst testcheck_last = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "72": {
+        "task_id": 125,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 1442.75, got NaN\n",
+        "completion_id": 0
+    },
+    "73": {
+        "task_id": 126,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp92kd5_8f/test.js:11\nconst zero_count = () => {\n      ^\n\nSyntaxError: Identifier 'zero_count' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "74": {
+        "task_id": 127,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpu0fpfrmm/test.js:1\nnction is_Sum_Of_Powers_Of_Two(n) {\n       ^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'is_Sum_Of_Powers_Of_Two'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "75": {
+        "task_id": 128,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "76": {
+        "task_id": 130,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpwuuuqrkm/test.js:1\nnction pancakeSort(nums) {\n       ^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'pancakeSort'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "77": {
+        "task_id": 131,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp0_v764ks/test.js:1\nnction count_samepair(list1, list2, list3) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_samepair'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "78": {
+        "task_id": 132,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "79": {
+        "task_id": 133,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "80": {
+        "task_id": 134,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "81": {
+        "task_id": 135,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpdto8fl5c/test.js:1\nnction ascii_value_string(str1) {\n       ^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'ascii_value_string'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "82": {
+        "task_id": 136,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpjb0kw_3c/test.js:1\nThe code you provided is a valid JavaScript function that calculates the maximum total path sum in a triangle. The function takes three parameters: `tri` is the triangle array, `m` is the number of rows in the triangle, and `n` is the number of columns in the triangle. The function calculates the maximum total path sum by iterating through the rows of the triangle and calculating the sum of the elements in each row. The function returns the maximum total path sum.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "83": {
+        "task_id": 137,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmplp7uctis/test.js:3\n    console.assert(sum_digits_twoparts(35) === 17, \"Test case 1 failed\");\n            ^\n\nReferenceError: sum_digits_twoparts is not defined\n    at testSum_digits_twoparts (/tmp/tmplp7uctis/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmplp7uctis/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "84": {
+        "task_id": 138,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpzr_gnf2a/test.js:1\nnction longest_subseq_with_diff_one(arr, n) {\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'longest_subseq_with_diff_one'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "85": {
+        "task_id": 139,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\n",
+        "completion_id": 0
+    },
+    "86": {
+        "task_id": 141,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "87": {
+        "task_id": 142,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpt4qmqqbm/test.js:43\ntestParabola_vertex(); // invoke test\n                                     \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "88": {
+        "task_id": 144,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp8bl5ees0/test.js:1\nnction evenBitToggleNumber(n) {\n       ^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'evenBitToggleNumber'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "89": {
+        "task_id": 147,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmptfeu94ex/test.js:1\nThe code you provided is a function that takes an array of integers, an integer `n`, and an integer `k` as input, and returns the minimum number of operations required to make all elements equal. The function first finds the maximum element in the array using the `Math.max()` method, and then iterates over the array and calculates the number of operations required to make each element equal to the maximum element. The function returns `-1` if the number of operations is not divisible by `k`, and the total number of operations otherwise.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "90": {
+        "task_id": 148,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpmii0dvq9/test.js:1\nnction month_season(month, days) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'month_season'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "91": {
+        "task_id": 149,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "92": {
+        "task_id": 153,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "93": {
+        "task_id": 154,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpa2audhah/test.js:1\nnction count_char_position(str1) {\n       ^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_char_position'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "94": {
+        "task_id": 155,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp6b0i27y7/test.js:1\nnction find_even_Pair(A, N) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_even_Pair'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "95": {
+        "task_id": 156,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpfaqgibk5/test.js:1\nnction next_Power_Of_2(n) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'next_Power_Of_2'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "96": {
+        "task_id": 159,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "97": {
+        "task_id": 161,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp1mi7p9ox/test.js:1\nnction count_occurance(s) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_occurance'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "98": {
+        "task_id": 166,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpwbxy7ys_/test.js:1\n``javascript\n  ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'javascript'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "99": {
+        "task_id": 168,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpk6a99x0g/test.js:1\nnction is_num_keith(x) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'is_num_keith'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "100": {
+        "task_id": 170,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "101": {
+        "task_id": 172,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpeixk0ig7/test.js:18\n            if (Math.abs(arr[i]\n                              ^\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "102": {
+        "task_id": 174,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "103": {
+        "task_id": 176,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpqul2o09e/test.js:1\nThe code you provided is a recursive function that finds the longest common subsequence (LCS) between two sequences X and Y. The function takes four parameters: X, Y, m, and n. X and Y are the two sequences, and m and n are the lengths of the sequences. The function returns the length of the LCS.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "104": {
+        "task_id": 177,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpkrevhj7u/test.js:1\nThe code you provided is a function that checks whether a given number can be represented as the product of two squares. The function takes a single argument `n`, and it uses two nested loops to iterate over all possible pairs of squares that can be multiplied together to equal `n`. The function returns `true` if `n` can be represented as the product of two squares, and `false` otherwise.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "105": {
+        "task_id": 178,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpsjosa8ro/test.js:1\nThis code finds the first missing positive number in an array of integers. It works by iterating through the array and checking if each element is equal to 1. If it is, the function sets a flag to indicate that a positive number has been found. If no positive number is found, the function returns 1. If a positive number is found, the function continues to iterate through the array, checking if each element is greater than 0 and less than or equal to n. If an element is not greater than 0 or less than or equal to n, the function returns the index of the element plus 1. If the function reaches the end of the array without finding a missing positive number, it returns n + 1.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "106": {
+        "task_id": 180,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpndyh60xx/test.js:1\nnction check_monthnumber(monthname3) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_monthnumber'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "107": {
+        "task_id": 181,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpsk7nm34x/test.js:1\nnction check_String(str) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_String'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "108": {
+        "task_id": 188,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "109": {
+        "task_id": 191,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpw2g_6rr2/test.js:1\nnction remove_even(str1) {\n       ^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'remove_even'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "110": {
+        "task_id": 192,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "111": {
+        "task_id": 193,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmporlueonx/test.js:1\n``javascript\n  ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'javascript'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "112": {
+        "task_id": 195,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "113": {
+        "task_id": 196,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpqb2tjyck/test.js:1\nThis code will return the length of the longest repeating subsequence in the input string, such that the two subsequences don't have the same string characters at the same positions.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "114": {
+        "task_id": 200,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpai6h2c35/test.js:1\nnction count_Num(n) {\n       ^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Num'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "115": {
+        "task_id": 201,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "116": {
+        "task_id": 203,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "117": {
+        "task_id": 205,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmphlqker87/test.js:1\nThis code checks if the nested list `list1` is a subset of the nested list `list2`. It does this by iterating over the elements of `list2` and checking if each element is present in `list1`. If any element is not present, the function returns `0`, indicating that `list1` is not a subset of `list2`. Otherwise, the function returns `1`, indicating that `list1` is a subset of `list2`.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "118": {
+        "task_id": 207,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "119": {
+        "task_id": 208,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp5bvuqtgy/test.js:1\nnction extract_min_max(test_tup, K) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'extract_min_max'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "120": {
+        "task_id": 209,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpnkqecqvw/test.js:1\nnction replace_max_specialchar(text, n) {\n       ^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'replace_max_specialchar'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "121": {
+        "task_id": 210,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "122": {
+        "task_id": 211,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "123": {
+        "task_id": 212,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmp7pt_sf_0/test.js:1\nThe code you provided is a function that checks if a given element is a majority element in a sorted array. The function takes three parameters:\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "124": {
+        "task_id": 213,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpgaue7bu4/test.js:1\nnction countSetBits(n) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'countSetBits'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "125": {
+        "task_id": 214,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpaxet5tp3/test.js:1\nThis code finds the minimum element in a sorted and rotated array by using a binary search algorithm. The function takes three parameters: an array of integers `arr`, a low index `low`, and a high index `high`. The function first checks if the element at the midpoint of the range is equal to the element at the high index. If it is, then the minimum element must be in the lower half of the range, so the function sets the high index to one less than the midpoint and repeats the search. If the element at the midpoint is not equal to the element at the high index, then the minimum element must be in the upper half of the range, so the function sets the low index to the midpoint plus one and repeats the search. The function returns the minimum element when the low and high indices meet.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "126": {
+        "task_id": 215,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "127": {
+        "task_id": 217,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpawmwtyjn/test.js:1\nThe function takes three parameters: n, l, and r. It returns true if all the bits in the range [l, r] are unset in the number n, and false otherwise.\n    ^^^^^^^^\n\nSyntaxError: Unexpected token 'function'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "128": {
+        "task_id": 218,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpn1x3bjab/test.js:1\nnction re_arrange_array(arr, n) {\n       ^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 're_arrange_array'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "129": {
+        "task_id": 220,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpi7umxcii/test.js:1\nThe code you provided is a partial implementation of the function to find the maximum sum in a right triangle of numbers. The function takes two arguments: `tri` which is the triangle of numbers,\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "130": {
+        "task_id": 222,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "131": {
+        "task_id": 224,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp_4h1_u9o/test.js:1\nnction even_bit_set_number(n) {\n       ^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'even_bit_set_number'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "132": {
+        "task_id": 228,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "133": {
+        "task_id": 230,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmprop62v38/test.js:1\nThis code will generate a 3d array with each element as '*'. The function takes three parameters: m, n, and o, which represent the number of rows, columns, and depth of the array, respectively. The function creates a new array with the specified dimensions and fills it with '*' characters. The function then returns the generated array.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "134": {
+        "task_id": 233,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "135": {
+        "task_id": 234,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp6xvg1681/test.js:1\nnction max_sum(arr, n) {\n       ^^^^^^^\n\nSyntaxError: Unexpected identifier 'max_sum'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "136": {
+        "task_id": 235,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 3.162277660168379 but got 3.1622777055095996\nAssertion failed: Expected 1.414213562373095 but got 1.4142135623746899\nAssertion failed: Expected 3.0 but got 3.0000000188143225\n",
+        "completion_id": 0
+    },
+    "137": {
+        "task_id": 236,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp_d74skzh/test.js:1\nnction lps(str) {\n       ^^^\n\nSyntaxError: Unexpected identifier 'lps'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "138": {
+        "task_id": 239,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "139": {
+        "task_id": 244,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "140": {
+        "task_id": 245,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmp3anah0ps/test.js:1\nnction count_Primes_nums(n) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Primes_nums'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "141": {
+        "task_id": 249,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "142": {
+        "task_id": 255,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "143": {
+        "task_id": 259,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "144": {
+        "task_id": 260,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "145": {
+        "task_id": 264,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmph7nxdscy/test.js:1\nnction get_Position(a, n, m) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_Position'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "146": {
+        "task_id": 265,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpze1s0x6p/test.js:5\nconst volume_cylinder = () => {\n      ^\n\nSyntaxError: Identifier 'volume_cylinder' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "147": {
+        "task_id": 267,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmprvfsd7lj/test.js:1\nThis code will find the element count that occurs before the record in the given tuple. It will return the count of elements before the record.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "148": {
+        "task_id": 269,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmp8bpzk27p/test.js:1\nThis code uses a sequential search algorithm to search for an element in an array. It starts at the beginning of the array and compares each element to the target element until it finds a match or reaches the end of the array. If a match is found, the function returns the index of the element in the array. If no match is found, the function returns -1.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "149": {
+        "task_id": 272,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp34rnedxc/test.js:16\nconst validate = () => {\n      ^\n\nSyntaxError: Identifier 'validate' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "150": {
+        "task_id": 273,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "151": {
+        "task_id": 275,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp350nlwik/test.js:1\nThis code will find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "152": {
+        "task_id": 277,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpxv62xan7/test.js:1\nThis code counts the number of array elements having modular inverse under the given prime number p. The function takes three arguments:\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "153": {
+        "task_id": 278,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "154": {
+        "task_id": 280,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "155": {
+        "task_id": 283,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "156": {
+        "task_id": 284,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "157": {
+        "task_id": 285,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpd_vtf5yl/test.js:1\nnction get_Inv_Count(arr, n) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_Inv_Count'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "158": {
+        "task_id": 289,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "159": {
+        "task_id": 290,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpvxv2wdqe/test.js:1\nComplete code (including all the content of the code I provided and the code you generated)\n         ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "160": {
+        "task_id": 291,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test Failed for input 6\nAssertion failed: Test Failed for input 10\nAssertion failed: Test Failed for input 18\n",
+        "completion_id": 0
+    },
+    "161": {
+        "task_id": 292,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "162": {
+        "task_id": 293,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpmrn5jcpt/test.js:1\nThis code will find the element at the given index after the specified number of rotations. The function takes four parameters:\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "163": {
+        "task_id": 295,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp1x8o5luv/test.js:1\nNote: The code is written in JavaScript and uses the Array.from() method to create a two-dimensional array with the same length as the input array. The for loop iterates over the elements of the array and initializes the first row of the dp array with the maximum value of the current element and the previous element. The second for loop iterates over the rows of the dp array and the columns of the dp array, and updates the values in the dp array based on the previous values and the current element. The function returns the maximum value in the last row of the dp array.\n          ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "164": {
+        "task_id": 300,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpstam_3wn/test.js:1\nThe code above is a complete implementation of the function you requested. It uses a combination of bitwise operations to find the leftmost unset bit and set it to 1. The function takes a single argument, `n`, which is the number whose leftmost unset bit needs to be set. The function first checks if the number is a power of 2, and if it is, it returns the number without modifying it. If the number is not a power of 2, the function finds the leftmost unset bit by shifting the number to the right and checking if the least significant bit is set. If the least significant bit is not set, the function increments the position variable and repeats the process until the least significant bit is set. Once the leftmost unset bit is found, the function sets it to 1 by using the bitwise OR operator.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "165": {
+        "task_id": 301,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpulrxidnw/test.js:5\nconst volumeCone = () => {\n      ^\n\nSyntaxError: Identifier 'volumeCone' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "166": {
+        "task_id": 303,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpvuapfm2k/test.js:6\n    incl = Math.max(grid[i][0], grid[i][1]);\n                           ^\n\nTypeError: Cannot read properties of undefined (reading '0')\n    at max_sum_rectangular_grid (/tmp/tmpvuapfm2k/test.js:6:28)\n    at testMax_sum_rectangular_grid (/tmp/tmpvuapfm2k/test.js:12:20)\n    at Object.<anonymous> (/tmp/tmpvuapfm2k/test.js:16:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "167": {
+        "task_id": 304,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp_dr7n5bi/test.js:1\nnction find_Max_Len_Even(str) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_Max_Len_Even'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "168": {
+        "task_id": 305,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp99oyr4hn/test.js:1\nnction find_last_occurrence(A, x) {\n       ^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_last_occurrence'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "169": {
+        "task_id": 306,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp89yyqoap/test.js:1\nnction modifiedEncode(alist) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'modifiedEncode'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "170": {
+        "task_id": 307,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "171": {
+        "task_id": 309,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected 5434, got -5434\nAssertion failed: Expected 41230, got -41230\nAssertion failed: Expected 2151270, got -2151270\n",
+        "completion_id": 0
+    },
+    "172": {
+        "task_id": 310,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "173": {
+        "task_id": 311,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "174": {
+        "task_id": 312,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpnh_x306j/test.js:1\nnction re_arrange(arr, n) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 're_arrange'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "175": {
+        "task_id": 313,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "176": {
+        "task_id": 314,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpap2enbet/test.js:1\nThe code above is a complete implementation of the function `get_Min_Squares` that finds the minimum number of squares whose sum is equal to a given number. The function takes a single argument `n`, which is the given number. The function first checks if `n` is less than or equal to 3, and if so, it returns `n`. If `n` is greater than 3, the function starts a loop that iterates from 1 to `n`. For each iteration, the function calculates the square of the current value of `x` and checks if it is equal to `n`. If the square is equal to `n`, the function returns 1. If the square is greater than `n`, the function breaks out of the loop. If the square is less than `n`, the function calls itself recursively with the argument `n - temp` and adds 1 to the result. The\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "177": {
+        "task_id": 315,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp_y_qv94l/test.js:1\nnction mostOccurrences(testList) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'mostOccurrences'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "178": {
+        "task_id": 316,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "179": {
+        "task_id": 320,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpe899gwhk/test.js:3\n    console.assert(count_unset_bits(2) === 1, 'Test 1 failed');\n            ^\n\nReferenceError: count_unset_bits is not defined\n    at testcount_unset_bits (/tmp/tmpe899gwhk/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpe899gwhk/test.js:7:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "180": {
+        "task_id": 321,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmplc8exrtm/test.js:1\nnction char_frequency(str1) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'char_frequency'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "181": {
+        "task_id": 323,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmpp__4lf8f/test.js:1\nnction check_Validity(a, b, c) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_Validity'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "182": {
+        "task_id": 324,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "183": {
+        "task_id": 325,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpeklp4qcb/test.js:1\nnction check_monthnum(monthname1) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_monthnum'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "184": {
+        "task_id": 327,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp8opc36q0/test.js:1\nnction count_Substring_With_Equal_Ends(s) {\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Substring_With_Equal_Ends'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "185": {
+        "task_id": 328,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpl8ll81gc/test.js:1\nnction find_Divisor(x, y) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_Divisor'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "186": {
+        "task_id": 332,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "187": {
+        "task_id": 335,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpdp9j6w42/test.js:13\nconst zigzag = () => {\n      ^\n\nSyntaxError: Identifier 'zigzag' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "188": {
+        "task_id": 337,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+        "completion_id": 0
+    },
+    "189": {
+        "task_id": 339,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmppdntpdab/test.js:1\nnction minimum_Length(s) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'minimum_Length'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "190": {
+        "task_id": 340,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmptsmi5lh6/test.js:1\nnction first_Element(arr, n, k) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'first_Element'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "191": {
+        "task_id": 341,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmptfd1aomb/test.js:1\nnction unique_Characters(str) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'unique_Characters'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "192": {
+        "task_id": 343,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp1ukkppj4/test.js:4\nconst tn_ap = () => {\n      ^\n\nSyntaxError: Identifier 'tn_ap' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "193": {
+        "task_id": 344,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpi14e0g0a/test.js:1\nnction count_Rectangles(radius) {\n       ^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_Rectangles'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "194": {
+        "task_id": 348,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpgd6vny4b/test.js:1\nnction Check_Solution(a, b, c) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'Check_Solution'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "195": {
+        "task_id": 351,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp9no3zef1/test.js:1\nnction max_occurrences(nums) {\n       ^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'max_occurrences'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "196": {
+        "task_id": 353,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "197": {
+        "task_id": 356,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpybb0wk58/test.js:3\n    let root = new Node(1);\n               ^\n\nReferenceError: Node is not defined\n    at testis_tree_balanced (/tmp/tmpybb0wk58/test.js:3:16)\n    at Object.<anonymous> (/tmp/tmpybb0wk58/test.js:30:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "198": {
+        "task_id": 358,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "199": {
+        "task_id": 359,
+        "perturbation_type": "more_universe_var_type",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "200": {
+        "task_id": 362,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpxacbqe05/test.js:4\nconst volume_cuboid = () => {\n      ^\n\nSyntaxError: Identifier 'volume_cuboid' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "201": {
+        "task_id": 363,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpun8kkg9m/test.js:1\nnction permuteString(str) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'permuteString'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "202": {
+        "task_id": 364,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "203": {
+        "task_id": 368,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "204": {
+        "task_id": 369,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "205": {
+        "task_id": 370,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpf8670068/test.js:1\nThis code sorts a list of lists by a given index of the inner list. The function takes two parameters:\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "206": {
+        "task_id": 371,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp78q_a6u1/test.js:1\nThe code I provided is a function to find the number of rotations in a circularly sorted array. The function takes an array as input and returns the number of rotations. The function uses a binary search algorithm to find the number of rotations.\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "207": {
+        "task_id": 372,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpews14a9y/test.js:1\nnction even_bit_toggle_number(n) {\n       ^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'even_bit_toggle_number'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "208": {
+        "task_id": 373,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp01b2sfgm/test.js:1\nnction frequency_Of_Smallest(n, arr) {\n       ^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'frequency_Of_Smallest'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "209": {
+        "task_id": 374,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpz1itkdra/test.js:1\nnction get_perrin(n) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_perrin'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "210": {
+        "task_id": 375,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpzznkg3zv/test.js:1\nnction swap_count(s) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'swap_count'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "211": {
+        "task_id": 376,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmplwx_9q3z/test.js:1\nnction even_or_odd(N) {\n       ^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'even_or_odd'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "212": {
+        "task_id": 377,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "213": {
+        "task_id": 378,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp3cmixx1e/test.js:1\nnction find_lucas(n) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'find_lucas'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "214": {
+        "task_id": 381,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpm0tqbd6s/test.js:1\nnction get_max_sum(n) {\n       ^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_max_sum'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "215": {
+        "task_id": 383,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: /tmp/tmp6b6lf8v3/test.js:1\nnction checkDistinct(testArr) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'checkDistinct'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "216": {
+        "task_id": 384,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmplf2d57uq/test.js:1\nnction first_non_repeating_character(str1) {\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'first_non_repeating_character'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "217": {
+        "task_id": 387,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "218": {
+        "task_id": 388,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "219": {
+        "task_id": 391,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "220": {
+        "task_id": 392,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp7wys1794/test.js:1\nnction is_valid_URL(str) {\n       ^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'is_valid_URL'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "221": {
+        "task_id": 395,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "222": {
+        "task_id": 396,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpg1dvyi4d/test.js:1\nThis code will rearrange the digits of the given number to create the next bigger number. It works by first converting the number to an array of digits, then iterating through the array from the end to the beginning, checking if the current digit is less than the next digit. If it is, it will find the next largest digit in the array (using the `filter` and `sort` methods) and remove it from the array. Finally, it will concatenate the remaining digits and return the result as a string. If no rearrangement is possible, it will return the original number.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "223": {
+        "task_id": 397,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp3gczwty0/test.js:60\ntestK_smallest_pairs(); // invoke test\n                                      \n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "224": {
+        "task_id": 398,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "225": {
+        "task_id": 399,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "226": {
+        "task_id": 401,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "227": {
+        "task_id": 403,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "228": {
+        "task_id": 404,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "229": {
+        "task_id": 405,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Expected breakSum(12) to be 13\nAssertion failed: Expected breakSum(24) to be 27\nAssertion failed: Expected breakSum(23) to be 23\n",
+        "completion_id": 0
+    },
+    "230": {
+        "task_id": 409,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "231": {
+        "task_id": 411,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "232": {
+        "task_id": 412,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "233": {
+        "task_id": 414,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "234": {
+        "task_id": 417,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp3kd8hujg/test.js:1\nThis code uses the Shell sort algorithm to sort the given array. It first calculates the gap between the elements, then it iterates through the array and swaps the elements if they are not in the correct order. The gap is then reduced and the process is repeated until the gap is 0, which means the array is sorted.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "235": {
+        "task_id": 418,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "236": {
+        "task_id": 419,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "237": {
+        "task_id": 420,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\n",
+        "completion_id": 0
+    },
+    "238": {
+        "task_id": 421,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "239": {
+        "task_id": 426,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp1monbopm/test.js:1\nnction remove_odd(str1) {\n       ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'remove_odd'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "240": {
+        "task_id": 427,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpvkroy91h/test.js:1\nnction count_bidirectional(test_list) {\n       ^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'count_bidirectional'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "241": {
+        "task_id": 430,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "242": {
+        "task_id": 437,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test case 1 failed\nAssertion failed: Test case 2 failed\nAssertion failed: Test case 3 failed\n",
+        "completion_id": 0
+    },
+    "243": {
+        "task_id": 438,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpssyvy5ro/test.js:1\nnction check_Triangle(x1, y1, x2, y2, x3, y3) {\n       ^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_Triangle'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "244": {
+        "task_id": 439,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "245": {
+        "task_id": 442,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmptae2r1r4/test.js:1\nThis code will find the sum of even factors of a number. It will return 0 if the number is not even.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "246": {
+        "task_id": 444,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpuajq3axm/test.js:1\nnction check_monthnumb_number(monthnum2) {\n       ^^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_monthnumb_number'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "247": {
+        "task_id": 450,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp72pz0ion/test.js:1\nThis code will count the number of uppercase characters in a given string. The function takes a string as an argument and returns the number of uppercase characters in the string. The function uses a for loop to iterate through the characters in the string and checks if each character is uppercase using the >= and <= operators. If the character is uppercase, the function increments the upper_ctr variable. The function then returns the value of upper_ctr.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "248": {
+        "task_id": 451,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "249": {
+        "task_id": 452,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpfh2t6kc6/test.js:3\n    console.assert(max_subarray_product([1, -2, -3, 0, 7, -8, -2]) === 112, \"[Test Case 1 Failed]\");\n            ^\n\nReferenceError: max_subarray_product is not defined\n    at testMax_subarray_product (/tmp/tmpfh2t6kc6/test.js:3:13)\n    at Object.<anonymous> (/tmp/tmpfh2t6kc6/test.js:8:1)\n    at Module._compile (node:internal/modules/cjs/loader:1550:14)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "250": {
+        "task_id": 455,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp4e094pmz/test.js:1\nThe code you provided is a recursive function that finds the peak element in an array. The function takes four parameters:\n    ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "251": {
+        "task_id": 456,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "252": {
+        "task_id": 457,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpjk44dhde/test.js:1\nThis code finds the maximum product of an increasing subsequence of the input array. It uses a dynamic programming approach, where it maintains an array `mpis` of maximum products for each index `i` in the input array. The maximum product for index `i` is the maximum of the maximum product for index `j` (where `j < i`) multiplied by the number at index `i`, if the number at index `i` is greater than the number at index `j`. The final maximum product is the maximum product for the last index in the input array.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "253": {
+        "task_id": 458,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmps789npil/test.js:1\nThis code finds the maximum profit earned from a maximum of k stock transactions. It uses a dynamic programming approach to solve the problem. The function takes two parameters: `price` and `k`. `price` is an array of stock prices, and `k` is the maximum number of transactions that can be made. The function returns the maximum profit that can be earned from a maximum of `k` transactions.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "254": {
+        "task_id": 459,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 failed\nAssertion failed: Test 2 failed\nAssertion failed: Test 3 failed\n",
+        "completion_id": 0
+    },
+    "255": {
+        "task_id": 460,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "256": {
+        "task_id": 461,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmp6rrcua4m/test.js:1\nnction check_Consecutive(l) {\n       ^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'check_Consecutive'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "257": {
+        "task_id": 469,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpkpkuaifo/test.js:1\nnction get_max_occuring_char(str1) {\n       ^^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'get_max_occuring_char'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "258": {
+        "task_id": 470,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpb8hw4jbd/test.js:1\nnction is_subset_sum(set, n, sum) {\n       ^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'is_subset_sum'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "259": {
+        "task_id": 472,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: Assertion failed: Test Case 3 Failed\n",
+        "completion_id": 0
+    },
+    "260": {
+        "task_id": 474,
+        "perturbation_type": "bool2int",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\n",
+        "completion_id": 0
+    },
+    "261": {
+        "task_id": 475,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 1 Failed\nAssertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "262": {
+        "task_id": 476,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "263": {
+        "task_id": 477,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "264": {
+        "task_id": 478,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpp6ms8r6k/test.js:1\nnction frequency_Of_Largest(n, arr) {\n       ^^^^^^^^^^^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'frequency_Of_Largest'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "265": {
+        "task_id": 479,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "266": {
+        "task_id": 480,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "267": {
+        "task_id": 481,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmp8ppo90w_/test.js:1\nThis code uses the binary search algorithm to search for an element in a sorted array. It takes two parameters: the first is the array of items to search, and the second is the item to search for. The function returns the index of the item in the array if it is found, or -1 if it is not found.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "268": {
+        "task_id": 482,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpy6kgxvsv/test.js:1\n``javascript\n  ^^^^^^^^^^\n\nSyntaxError: Unexpected identifier 'javascript'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "269": {
+        "task_id": 487,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "270": {
+        "task_id": 488,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "271": {
+        "task_id": 490,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmplmzxtzet/test.js:1\nnction ngcd(x, y) {\n       ^^^^\n\nSyntaxError: Unexpected identifier 'ngcd'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "272": {
+        "task_id": 492,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "273": {
+        "task_id": 493,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "274": {
+        "task_id": 494,
+        "perturbation_type": "exchange_operators",
+        "passed": false,
+        "result": "failed: /tmp/tmpbhvvpced/test.js:1\nnction re_order(A) {\n       ^^^^^^^^\n\nSyntaxError: Unexpected identifier 're_order'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    },
+    "275": {
+        "task_id": 495,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "276": {
+        "task_id": 496,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: Assertion failed: Test 2 Failed\nAssertion failed: Test 3 Failed\n",
+        "completion_id": 0
+    },
+    "277": {
+        "task_id": 498,
+        "perturbation_type": "exchange_operators",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "278": {
+        "task_id": 499,
+        "perturbation_type": "equal_expression_transformation",
+        "passed": false,
+        "result": "failed: /tmp/tmpa3x7cjli/test.js:1\nThis code uses dynamic programming to find the number of subsequences having product smaller than k for the given non negative array. The function takes two parameters: arr, which is the input array, and k, which is the maximum product. The function first initializes a two-dimensional array dp, where dp[i][j] represents the number of subsequences having product smaller than i for the first j elements of the array.\n     ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1481:18)\n    at Module._compile (node:internal/modules/cjs/loader:1524:20)\n    at Object..js (node:internal/modules/cjs/loader:1702:10)\n    at Module.load (node:internal/modules/cjs/loader:1307:32)\n    at Function._load (node:internal/modules/cjs/loader:1121:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\n    at node:internal/main/run_main_module:36:49\n\nNode.js v23.2.0\n",
+        "completion_id": 0
+    }
+}

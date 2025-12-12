@@ -1,0 +1,90 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "instructhumaneval",
+  "dataset_size": 335913,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/codeparrot/instructhumaneval@c189929d585910d8ca42de3f90845534ccae41ba/data/test-00000-of-00001-9014622c0aa47960.parquet": {
+      "num_bytes": 161076,
+      "checksum": null
+    }
+  },
+  "download_size": 161076,
+  "features": {
+    "task_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "canonical_solution": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "test": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "entry_point": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "signature": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "docstring": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "context": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_paratype": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_noparatype": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt_noexample": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction_noparatype": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction_paratype": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 496989,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 335913,
+      "num_examples": 164,
+      "dataset_name": "instructhumaneval"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

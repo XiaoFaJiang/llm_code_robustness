@@ -1,0 +1,3502 @@
+{
+    "0": {
+        "task_id": 0,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.remove_Occ(\"hello\", 'l').remove_Occ(\"heo\");\n                                                ^\n  symbol:   method remove_Occ(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.remove_Occ(\"abcda\", 'a').remove_Occ(\"bcd\");\n                                                ^\n  symbol:   method remove_Occ(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.remove_Occ(\"PHP\", 'P').remove_Occ(\"H\");\n                                              ^\n  symbol:   method remove_Occ(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "1": {
+        "task_id": 1,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "2": {
+        "task_id": 2,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "3": {
+        "task_id": 3,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "4": {
+        "task_id": 4,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "5": {
+        "task_id": 5,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.tvxg_lowvrczhe_unweiscoie(\"aab_cbbbc\").tvxg_lowvrczhe_unweiscoie(\"Found a match!\");\n                                                              ^\n  symbol:   method tvxg_lowvrczhe_unweiscoie(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.tvxg_lowvrczhe_unweiscoie(\"aab_Abbbc\").tvxg_lowvrczhe_unweiscoie(\"Not matched!\");\n                                                              ^\n  symbol:   method tvxg_lowvrczhe_unweiscoie(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.tvxg_lowvrczhe_unweiscoie(\"Aaab_abbbc\").tvxg_lowvrczhe_unweiscoie(\"Not matched!\");\n                                                               ^\n  symbol:   method tvxg_lowvrczhe_unweiscoie(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "6": {
+        "task_id": 6,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "7": {
+        "task_id": 7,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:97: error: ',', ')', or '[' expected\n    static int[] geg_cszi_cofmt_ariab(int[] list, int[] count, int[] count2, int[] count\n                                                                                        ^\nMain.java:104: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "8": {
+        "task_id": 8,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "9": {
+        "task_id": 9,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "10": {
+        "task_id": 10,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "11": {
+        "task_id": 11,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "12": {
+        "task_id": 12,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "13": {
+        "task_id": 13,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "14": {
+        "task_id": 14,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "15": {
+        "task_id": 15,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "16": {
+        "task_id": 16,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "17": {
+        "task_id": 17,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.StackOverflowError\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n\tat Solution.func_0(Main.java:33)\n",
+        "completion_id": 0
+    },
+    "18": {
+        "task_id": 18,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "19": {
+        "task_id": 19,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "20": {
+        "task_id": 20,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:75: error: cannot find symbol\n        res1.topKFrequentNumbers(5);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res1 of type List<Integer>\nMain.java:76: error: cannot find symbol\n        res1.topKFrequentNumbers(7);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res1 of type List<Integer>\nMain.java:77: error: cannot find symbol\n        res1.topKFrequentNumbers(1);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res1 of type List<Integer>\nMain.java:79: error: cannot find symbol\n        res2.topKFrequentNumbers(1);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res2 of type List<Integer>\nMain.java:82: error: cannot find symbol\n        res3.topKFrequentNumbers(7);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res3 of type List<Integer>\nMain.java:83: error: cannot find symbol\n        res3.topKFrequentNumbers(8);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res3 of type List<Integer>\nMain.java:84: error: cannot find symbol\n        res3.topKFrequentNumbers(5);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res3 of type List<Integer>\nMain.java:85: error: cannot find symbol\n        res3.topKFrequentNumbers(1);\n            ^\n  symbol:   method topKFrequentNumbers(int)\n  location: variable res3 of type List<Integer>\n8 errors\n",
+        "completion_id": 0
+    },
+    "21": {
+        "task_id": 21,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "22": {
+        "task_id": 22,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "23": {
+        "task_id": 23,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "24": {
+        "task_id": 24,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "25": {
+        "task_id": 25,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "26": {
+        "task_id": 26,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "27": {
+        "task_id": 27,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "28": {
+        "task_id": 28,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:63: error: cannot find symbol\n        assert solution.func_0(\"aab\").func_0(\"aba\");\n                                     ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:64: error: cannot find symbol\n        assert solution.func_0(\"aabb\").func_0(\"abab\");\n                                      ^\n  symbol:   method func_0(String)\n  location: class String\n2 errors\n",
+        "completion_id": 0
+    },
+    "29": {
+        "task_id": 29,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "30": {
+        "task_id": 30,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "31": {
+        "task_id": 31,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "32": {
+        "task_id": 32,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n        assert solution.textMatch(\"aab_cbbbc\").textMatch(\"Found a match!\");\n                                              ^\n  symbol:   method textMatch(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.textMatch(\"aab_Abbbc\").textMatch(\"Not matched!\");\n                                              ^\n  symbol:   method textMatch(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.textMatch(\"Aaab_abbbc\").textMatch(\"Not matched!\");\n                                               ^\n  symbol:   method textMatch(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "33": {
+        "task_id": 33,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n        assert solution.textMatchString(\" python\").textMatchString(\"Not matched!\");\n                                                  ^\n  symbol:   method textMatchString(String)\n  location: class String\nMain.java:40: error: cannot find symbol\n        assert solution.textMatchString(\"python\").textMatchString(\"Found a match!\");\n                                                 ^\n  symbol:   method textMatchString(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.textMatchString(\"  lang\").textMatchString(\"Not matched!\");\n                                                 ^\n  symbol:   method textMatchString(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "34": {
+        "task_id": 34,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "35": {
+        "task_id": 35,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "36": {
+        "task_id": 36,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "37": {
+        "task_id": 37,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "38": {
+        "task_id": 38,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "39": {
+        "task_id": 39,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ClassCastException: class java.util.Arrays$ArrayList cannot be cast to class java.lang.Integer (java.util.Arrays$ArrayList and java.lang.Integer are in module java.base of loader 'bootstrap')\n\tat Main.main(Main.java:42)\n",
+        "completion_id": 0
+    },
+    "40": {
+        "task_id": 40,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "41": {
+        "task_id": 41,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "42": {
+        "task_id": 42,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "43": {
+        "task_id": 43,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "44": {
+        "task_id": 44,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "45": {
+        "task_id": 45,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:37: error: cannot find symbol\n        assert !Solution.check(70);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:38: error: cannot find symbol\n        assert !Solution.check(23);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:39: error: cannot find symbol\n        assert Solution.check(73);\n                       ^\n  symbol:   method check(int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "46": {
+        "task_id": 46,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "47": {
+        "task_id": 47,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "48": {
+        "task_id": 48,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "49": {
+        "task_id": 49,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "50": {
+        "task_id": 50,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "51": {
+        "task_id": 51,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "52": {
+        "task_id": 52,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "53": {
+        "task_id": 53,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: invalid method declaration; return type required\n    public Pair(K key, V value) {\n           ^\n1 error\n",
+        "completion_id": 0
+    },
+    "54": {
+        "task_id": 54,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "55": {
+        "task_id": 55,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "56": {
+        "task_id": 56,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "57": {
+        "task_id": 57,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "58": {
+        "task_id": 58,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "59": {
+        "task_id": 59,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:25: error: cannot find symbol\n        assert Solution.getEqual(new int[][]{{11, 22, 33}, {44, 55, 66}}, 3).equals(\"All tuples have same length\");\n                       ^\n  symbol:   method getEqual(int[][],int)\n  location: class Solution\nMain.java:26: error: cannot find symbol\n        assert Solution.getEqual(new int[][]{{1, 2, 3}, {4, 5, 6, 7}}, 3).equals(\"All tuples do not have same length\");\n                       ^\n  symbol:   method getEqual(int[][],int)\n  location: class Solution\nMain.java:27: error: cannot find symbol\n        assert Solution.getEqual(new int[][]{{1, 2}, {3, 4}}, 2).equals(\"All tuples have same length\");\n                       ^\n  symbol:   method getEqual(int[][],int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "60": {
+        "task_id": 60,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "61": {
+        "task_id": 61,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "62": {
+        "task_id": 62,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:56: error: cannot find symbol\n        test1.nfotiplvHklit(\"Forces of the \"); \n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test1 of type List<String>\nMain.java:57: error: cannot find symbol\n        test1.nfotiplvHklit(\"darkness\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test1 of type List<String>\nMain.java:58: error: cannot find symbol\n        test1.nfotiplvHklit(\"are coming into the play.\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test1 of type List<String>\nMain.java:60: error: cannot find symbol\n        test2.nfotiplvHklit(\"Mi Box runs on the \");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test2 of type List<String>\nMain.java:61: error: cannot find symbol\n        test2.nfotiplvHklit(\" Latest android\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test2 of type List<String>\nMain.java:62: error: cannot find symbol\n        test2.nfotiplvHklit(\"which has google assistance and chromecast.\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test2 of type List<String>\nMain.java:64: error: cannot find symbol\n        test3.nfotiplvHklit(\"Certain services\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test3 of type List<String>\nMain.java:65: error: cannot find symbol\n        test3.nfotiplvHklit(\"are subjected to change\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test3 of type List<String>\nMain.java:66: error: cannot find symbol\n        test3.nfotiplvHklit(\"over the seperate subscriptions.\");\n             ^\n  symbol:   method nfotiplvHklit(String)\n  location: variable test3 of type List<String>\n9 errors\n",
+        "completion_id": 0
+    },
+    "63": {
+        "task_id": 63,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "64": {
+        "task_id": 64,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "65": {
+        "task_id": 65,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "66": {
+        "task_id": 66,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "67": {
+        "task_id": 67,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "68": {
+        "task_id": 68,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "69": {
+        "task_id": 69,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "70": {
+        "task_id": 70,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:21: error: invalid method declaration; return type required\n    public Pair(T first, U second) {\n           ^\n1 error\n",
+        "completion_id": 0
+    },
+    "71": {
+        "task_id": 71,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "72": {
+        "task_id": 72,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "73": {
+        "task_id": 73,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:32: error: missing return statement\n    }\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "74": {
+        "task_id": 74,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "75": {
+        "task_id": 75,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "76": {
+        "task_id": 76,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "77": {
+        "task_id": 77,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "78": {
+        "task_id": 78,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "79": {
+        "task_id": 79,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "80": {
+        "task_id": 80,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "81": {
+        "task_id": 81,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "82": {
+        "task_id": 82,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:36: error: missing return statement\n    }\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "83": {
+        "task_id": 83,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "84": {
+        "task_id": 84,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "85": {
+        "task_id": 85,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "86": {
+        "task_id": 86,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "87": {
+        "task_id": 87,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "88": {
+        "task_id": 88,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "89": {
+        "task_id": 89,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "90": {
+        "task_id": 90,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "91": {
+        "task_id": 91,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "92": {
+        "task_id": 92,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "93": {
+        "task_id": 93,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "94": {
+        "task_id": 94,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "95": {
+        "task_id": 95,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "96": {
+        "task_id": 96,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "97": {
+        "task_id": 97,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "98": {
+        "task_id": 98,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "99": {
+        "task_id": 99,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "100": {
+        "task_id": 100,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "101": {
+        "task_id": 101,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "102": {
+        "task_id": 102,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "103": {
+        "task_id": 103,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "104": {
+        "task_id": 104,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "105": {
+        "task_id": 105,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "106": {
+        "task_id": 106,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "107": {
+        "task_id": 107,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "108": {
+        "task_id": 108,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "109": {
+        "task_id": 109,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "110": {
+        "task_id": 110,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8\n\tat Solution.checkTriplet(Main.java:31)\n\tat Main.main(Main.java:44)\n",
+        "completion_id": 0
+    },
+    "111": {
+        "task_id": 111,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "112": {
+        "task_id": 112,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "113": {
+        "task_id": 113,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "114": {
+        "task_id": 114,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "115": {
+        "task_id": 115,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "116": {
+        "task_id": 116,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:36: error: missing return statement\n    }\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "117": {
+        "task_id": 117,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "118": {
+        "task_id": 118,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "119": {
+        "task_id": 119,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:28: error: no suitable method found for max(no arguments)\n        Map.Entry<Integer, Integer> maxEntry = Collections.max(\n                                                          ^\n    method Collections.<T#1>max(Collection<? extends T#1>) is not applicable\n      (cannot infer type-variable(s) T#1\n        (actual and formal argument lists differ in length))\n    method Collections.<T#2>max(Collection<? extends T#2>,Comparator<? super T#2>) is not applicable\n      (cannot infer type-variable(s) T#2\n        (actual and formal argument lists differ in length))\n  where T#1,T#2 are type-variables:\n    T#1 extends Object,Comparable<? super T#1> declared in method <T#1>max(Collection<? extends T#1>)\n    T#2 extends Object declared in method <T#2>max(Collection<? extends T#2>,Comparator<? super T#2>)\n1 error\n",
+        "completion_id": 0
+    },
+    "120": {
+        "task_id": 120,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:48: error: cannot find symbol\n        assert solution.reverseVowels(\"Python\").reverseVowels(\"Python\");\n                                               ^\n  symbol:   method reverseVowels(String)\n  location: class String\nMain.java:49: error: cannot find symbol\n        assert solution.reverseVowels(\"USA\").reverseVowels(\"ASU\");\n                                            ^\n  symbol:   method reverseVowels(String)\n  location: class String\nMain.java:50: error: cannot find symbol\n        assert solution.reverseVowels(\"ab\").reverseVowels(\"ab\");\n                                           ^\n  symbol:   method reverseVowels(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "121": {
+        "task_id": 121,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "122": {
+        "task_id": 122,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "123": {
+        "task_id": 123,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "124": {
+        "task_id": 124,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "125": {
+        "task_id": 125,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "126": {
+        "task_id": 126,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "127": {
+        "task_id": 127,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:32: error: missing return statement\n    }\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "128": {
+        "task_id": 128,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "129": {
+        "task_id": 129,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "130": {
+        "task_id": 130,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "131": {
+        "task_id": 131,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "132": {
+        "task_id": 132,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "133": {
+        "task_id": 133,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "134": {
+        "task_id": 134,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "135": {
+        "task_id": 135,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "136": {
+        "task_id": 136,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "137": {
+        "task_id": 137,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:131: error: not a statement\n        int\n        ^\nMain.java:131: error: ';' expected\n        int\n           ^\nMain.java:132: error: illegal start of expression\npublic class Main{\n^\nMain.java:139: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "138": {
+        "task_id": 138,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "139": {
+        "task_id": 139,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "140": {
+        "task_id": 140,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:24: error: cannot find symbol\n        assert Solution.isCoprime(17,13) == true;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:25: error: cannot find symbol\n        assert Solution.isCoprime(15,21) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:26: error: cannot find symbol\n        assert Solution.isCoprime(25,45) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "141": {
+        "task_id": 141,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:37: error: cannot find symbol\n        assert solution.mergeSort(list1).equals(sortedList1);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\nMain.java:41: error: cannot find symbol\n        assert solution.mergeSort(list2).equals(sortedList2);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\nMain.java:45: error: cannot find symbol\n        assert solution.mergeSort(list3).equals(sortedList3);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "142": {
+        "task_id": 142,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "143": {
+        "task_id": 143,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "144": {
+        "task_id": 144,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "145": {
+        "task_id": 145,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "146": {
+        "task_id": 146,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "147": {
+        "task_id": 147,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "148": {
+        "task_id": 148,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "149": {
+        "task_id": 149,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "150": {
+        "task_id": 150,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "151": {
+        "task_id": 151,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "152": {
+        "task_id": 152,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "153": {
+        "task_id": 153,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:29: error: cannot find symbol\n        assert !Solution.areEquivalent(36,57);\n                        ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\nMain.java:30: error: cannot find symbol\n        assert !Solution.areEquivalent(2,4);\n                        ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\nMain.java:31: error: cannot find symbol\n        assert Solution.areEquivalent(23,47);\n                       ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "154": {
+        "task_id": 154,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "155": {
+        "task_id": 155,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "156": {
+        "task_id": 156,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "157": {
+        "task_id": 157,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "158": {
+        "task_id": 158,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "159": {
+        "task_id": 159,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "160": {
+        "task_id": 160,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "161": {
+        "task_id": 161,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "162": {
+        "task_id": 162,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "163": {
+        "task_id": 163,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:12: error: invalid method declaration; return type required\n    public Pair(K key, V eaofv) {\n           ^\n1 error\n",
+        "completion_id": 0
+    },
+    "164": {
+        "task_id": 164,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "165": {
+        "task_id": 165,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "166": {
+        "task_id": 166,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:94: error: not a statement\n        int[]\n           ^\nMain.java:94: error: ';' expected\n        int[]\n             ^\nMain.java:95: error: illegal start of expression\npublic class Main{\n^\nMain.java:101: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+        "completion_id": 0
+    },
+    "167": {
+        "task_id": 167,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "168": {
+        "task_id": 168,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "169": {
+        "task_id": 169,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "170": {
+        "task_id": 170,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:43: error: cannot find symbol\n        assert Solution.commonPrefix(new String[]{\"tablets\", \"tables\", \"taxi\", \"tamarind\"}, 4).equals(\"ta\");\n                       ^\n  symbol:   method commonPrefix(String[],int)\n  location: class Solution\nMain.java:44: error: cannot find symbol\n        assert Solution.commonPrefix(new String[]{\"apples\", \"ape\", \"april\"}, 3).equals(\"ap\");\n                       ^\n  symbol:   method commonPrefix(String[],int)\n  location: class Solution\nMain.java:45: error: cannot find symbol\n        assert Solution.commonPrefix(new String[]{\"teens\", \"teenager\", \"teenmar\"}, 3).equals(\"teen\");\n                       ^\n  symbol:   method commonPrefix(String[],int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "171": {
+        "task_id": 171,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "172": {
+        "task_id": 172,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "173": {
+        "task_id": 173,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "174": {
+        "task_id": 174,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "175": {
+        "task_id": 175,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "176": {
+        "task_id": 176,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "177": {
+        "task_id": 177,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "178": {
+        "task_id": 178,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 6\n\tat Solution.firstMissingPlsitive(Main.java:48)\n\tat Main.main(Main.java:66)\n",
+        "completion_id": 0
+    },
+    "179": {
+        "task_id": 179,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "180": {
+        "task_id": 180,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "181": {
+        "task_id": 181,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "182": {
+        "task_id": 182,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "183": {
+        "task_id": 183,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "184": {
+        "task_id": 184,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "185": {
+        "task_id": 185,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "186": {
+        "task_id": 186,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "187": {
+        "task_id": 187,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:63: error: ')' or ',' expected\n        double l1 = Math.sqrt(z * z\n                                   ^\nMain.java:65: error: illegal start of expression\npublic class Main{\n^\nMain.java:72: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "188": {
+        "task_id": 188,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "189": {
+        "task_id": 189,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "190": {
+        "task_id": 190,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "191": {
+        "task_id": 191,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "192": {
+        "task_id": 192,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "193": {
+        "task_id": 193,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "194": {
+        "task_id": 194,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "195": {
+        "task_id": 195,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "196": {
+        "task_id": 196,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "197": {
+        "task_id": 197,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "198": {
+        "task_id": 198,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:50: error: cannot find symbol\n            heap1.heapReplace(element);\n                 ^\n  symbol:   method heapReplace(int)\n  location: variable heap1 of type PriorityQueue<Integer>\nMain.java:51: error: cannot find symbol\n            heap2.heapReplace(element);\n                 ^\n  symbol:   method heapReplace(int)\n  location: variable heap2 of type PriorityQueue<Integer>\nMain.java:52: error: cannot find symbol\n            heap3.heapReplace(element);\n                 ^\n  symbol:   method heapReplace(int)\n  location: variable heap3 of type PriorityQueue<Integer>\n3 errors\n",
+        "completion_id": 0
+    },
+    "199": {
+        "task_id": 199,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "200": {
+        "task_id": 200,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "201": {
+        "task_id": 201,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "202": {
+        "task_id": 202,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "203": {
+        "task_id": 203,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "204": {
+        "task_id": 204,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:45: error: cannot find symbol\ndecodeList(2); decodeList(1);}});\n^\n  symbol: method decodeList(int)\nMain.java:45: error: cannot find symbol\ndecodeList(2); decodeList(1);}});\n               ^\n  symbol: method decodeList(int)\nMain.java:44: error: cannot find symbol\n        test1.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test1 of type List<Object>\nMain.java:46: error: cannot find symbol\n        test1.decodeList(2);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:47: error: cannot find symbol\n        test1.decodeList(3);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:49: error: cannot find symbol\ndecodeList(2); decodeList(4);}});\n^\n  symbol: method decodeList(int)\nMain.java:49: error: cannot find symbol\ndecodeList(2); decodeList(4);}});\n               ^\n  symbol: method decodeList(int)\nMain.java:48: error: cannot find symbol\n        test1.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test1 of type List<Object>\nMain.java:50: error: cannot find symbol\n        test1.decodeList(5);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:51: error: cannot find symbol\n        test1.decodeList(1);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n               ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                              ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                             ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                            ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                           ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                                          ^\n  symbol: method decodeList(int)\nMain.java:53: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                                                         ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:57: error: cannot find symbol\n        test2.decodeList('u');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:58: error: cannot find symbol\n        test2.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:59: error: cannot find symbol\n        test2.decodeList('o');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:60: error: cannot find symbol\n        test2.decodeList('m');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:61: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:62: error: cannot find symbol\n        test2.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:63: error: cannot find symbol\n        test2.decodeList('i');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:64: error: cannot find symbol\n        test2.decodeList('c');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:65: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:67: error: cannot find symbol\n decodeList(2); decodeList('l');}});\n ^\n  symbol: method decodeList(int)\nMain.java:67: error: cannot find symbol\n decodeList(2); decodeList('l');}});\n                ^\n  symbol: method decodeList(char)\nMain.java:66: error: cannot find symbol\n        test2.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test2 of type List<Object>\nMain.java:68: error: cannot find symbol\n        test2.decodeList('y');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                 ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                  ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                   ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                    ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                     ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                      ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                       ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                        ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                         ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                          ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                                           ^\n  symbol: method decodeList(char)\nMain.java:70: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                                                            ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\n        test3.decodeList('p');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:74: error: cannot find symbol\n        test3.decodeList('y');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:75: error: cannot find symbol\n        test3.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:76: error: cannot find symbol\n        test3.decodeList('h');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:77: error: cannot find symbol\n        test3.decodeList('o');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:78: error: cannot find symbol\n        test3.decodeList('n');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n^\n  symbol: method decodeList(char)\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                 ^\n  symbol: method decodeList(char)\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                  ^\n  symbol: method decodeList(char)\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                   ^\n  symbol: method decodeList(char)\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                                    ^\n  symbol: method decodeList(char)\nMain.java:80: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                                                     ^\n  symbol: method decodeList(char)\nNote: Main.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n57 errors\n",
+        "completion_id": 0
+    },
+    "205": {
+        "task_id": 205,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "206": {
+        "task_id": 206,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "207": {
+        "task_id": 207,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "208": {
+        "task_id": 208,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "209": {
+        "task_id": 209,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "210": {
+        "task_id": 210,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "211": {
+        "task_id": 211,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "212": {
+        "task_id": 212,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "213": {
+        "task_id": 213,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "214": {
+        "task_id": 214,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "215": {
+        "task_id": 215,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "216": {
+        "task_id": 216,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "217": {
+        "task_id": 217,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "218": {
+        "task_id": 218,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "219": {
+        "task_id": 219,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "220": {
+        "task_id": 220,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "221": {
+        "task_id": 221,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "222": {
+        "task_id": 222,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "223": {
+        "task_id": 223,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "224": {
+        "task_id": 224,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "225": {
+        "task_id": 225,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "226": {
+        "task_id": 226,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "227": {
+        "task_id": 227,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "228": {
+        "task_id": 228,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "229": {
+        "task_id": 229,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "230": {
+        "task_id": 230,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "231": {
+        "task_id": 231,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "232": {
+        "task_id": 232,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:78: error: > or ',' expected\npublic class Main {\n^\nMain.java:76: error: not a statement\n        for (Map.Entry<Object, String\n                      ^\nMain.java:159: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+        "completion_id": 0
+    },
+    "233": {
+        "task_id": 233,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "234": {
+        "task_id": 234,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "235": {
+        "task_id": 235,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "236": {
+        "task_id": 236,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "237": {
+        "task_id": 237,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "238": {
+        "task_id": 238,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "239": {
+        "task_id": 239,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "240": {
+        "task_id": 240,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "241": {
+        "task_id": 241,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:29: error: ';' expected\n    public staticclass Solution {\n                               ^\nMain.java:31: error: illegal start of expression\n    public double real;\n    ^\nMain.java:33: error: invalid method declaration; return type required\n    public Complex(double real, double imaginary) {\n           ^\nMain.java:39: error: class, interface, enum, or record expected\n}\n^\n4 errors\n",
+        "completion_id": 0
+    },
+    "242": {
+        "task_id": 242,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "243": {
+        "task_id": 243,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "244": {
+        "task_id": 244,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "245": {
+        "task_id": 245,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "246": {
+        "task_id": 246,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "247": {
+        "task_id": 247,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "248": {
+        "task_id": 248,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "249": {
+        "task_id": 249,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "250": {
+        "task_id": 250,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "251": {
+        "task_id": 251,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "252": {
+        "task_id": 252,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "253": {
+        "task_id": 253,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "254": {
+        "task_id": 254,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:42: error: cannot find symbol\n        list1.listSplit('a');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:43: error: cannot find symbol\n        list1.listSplit('b');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:44: error: cannot find symbol\n        list1.listSplit('c');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:45: error: cannot find symbol\n        list1.listSplit('d');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:46: error: cannot find symbol\n        list1.listSplit('e');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:47: error: cannot find symbol\n        list1.listSplit('f');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:48: error: cannot find symbol\n        list1.listSplit('g');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:49: error: cannot find symbol\n        list1.listSplit('h');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:50: error: cannot find symbol\n        list1.listSplit('i');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:51: error: cannot find symbol\n        list1.listSplit('j');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:52: error: cannot find symbol\n        list1.listSplit('k');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:53: error: cannot find symbol\n        list1.listSplit('l');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:54: error: cannot find symbol\n        list1.listSplit('m');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:55: error: cannot find symbol\n        list1.listSplit('n');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:60: error: cannot find symbol\n            list2.listSplit(i);\n                 ^\n  symbol:   method listSplit(int)\n  location: variable list2 of type List<Object>\nMain.java:65: error: cannot find symbol\n        list3.listSplit(\"python\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:66: error: cannot find symbol\n        list3.listSplit(\"java\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:67: error: cannot find symbol\n        list3.listSplit(\"C\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:68: error: cannot find symbol\n        list3.listSplit(\"C++\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:69: error: cannot find symbol\n        list3.listSplit(\"DBMS\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:70: error: cannot find symbol\n        list3.listSplit(\"SQL\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\n21 errors\n",
+        "completion_id": 0
+    },
+    "255": {
+        "task_id": 255,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "256": {
+        "task_id": 256,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "257": {
+        "task_id": 257,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "258": {
+        "task_id": 258,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "259": {
+        "task_id": 259,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "260": {
+        "task_id": 260,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "261": {
+        "task_id": 261,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "262": {
+        "task_id": 262,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "263": {
+        "task_id": 263,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "264": {
+        "task_id": 264,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "265": {
+        "task_id": 265,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "266": {
+        "task_id": 266,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "267": {
+        "task_id": 267,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "268": {
+        "task_id": 268,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "269": {
+        "task_id": 269,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "270": {
+        "task_id": 270,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "271": {
+        "task_id": 271,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "272": {
+        "task_id": 272,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "273": {
+        "task_id": 273,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "274": {
+        "task_id": 274,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n        assert solution.text_match_two_three(\"ac\").text_match_two_three(\"Not matched!\");\n                                                  ^\n  symbol:   method text_match_two_three(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.text_match_two_three(\"dc\").text_match_two_three(\"Not matched!\");\n                                                  ^\n  symbol:   method text_match_two_three(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.text_match_two_three(\"abbbba\").text_match_two_three(\"Found a match!\");\n                                                      ^\n  symbol:   method text_match_two_three(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "275": {
+        "task_id": 275,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "276": {
+        "task_id": 276,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "277": {
+        "task_id": 277,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "278": {
+        "task_id": 278,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "279": {
+        "task_id": 279,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ClassCastException: class java.util.Arrays$ArrayList cannot be cast to class java.lang.Integer (java.util.Arrays$ArrayList and java.lang.Integer are in module java.base of loader 'bootstrap')\n\tat Main.main(Main.java:43)\n",
+        "completion_id": 0
+    },
+    "280": {
+        "task_id": 280,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "281": {
+        "task_id": 281,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "282": {
+        "task_id": 282,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "283": {
+        "task_id": 283,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "284": {
+        "task_id": 284,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "285": {
+        "task_id": 285,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "286": {
+        "task_id": 286,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "287": {
+        "task_id": 287,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "288": {
+        "task_id": 288,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "289": {
+        "task_id": 289,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "290": {
+        "task_id": 290,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "291": {
+        "task_id": 291,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "292": {
+        "task_id": 292,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "293": {
+        "task_id": 293,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "294": {
+        "task_id": 294,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "295": {
+        "task_id": 295,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "296": {
+        "task_id": 296,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "297": {
+        "task_id": 297,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "298": {
+        "task_id": 298,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "299": {
+        "task_id": 299,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "300": {
+        "task_id": 300,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "301": {
+        "task_id": 301,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "302": {
+        "task_id": 302,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "303": {
+        "task_id": 303,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "304": {
+        "task_id": 304,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "305": {
+        "task_id": 305,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "306": {
+        "task_id": 306,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:49: error: cannot find symbol\n        test1.func_0(1);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:50: error: cannot find symbol\n        test1.func_0(1);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:51: error: cannot find symbol\n        test1.func_0(2);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:52: error: cannot find symbol\n        test1.func_0(3);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:53: error: cannot find symbol\n        test1.func_0(4);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:54: error: cannot find symbol\n        test1.func_0(4);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:55: error: cannot find symbol\n        test1.func_0(5);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:56: error: cannot find symbol\n        test1.func_0(1);\n             ^\n  symbol:   method func_0(int)\n  location: variable test1 of type List<Object>\nMain.java:59: error: cannot find symbol\n        temp1.func_0(2);\n             ^\n  symbol:   method func_0(int)\n  location: variable temp1 of type List<Object>\nMain.java:60: error: cannot find symbol\n        temp1.func_0(1);\n             ^\n  symbol:   method func_0(int)\n  location: variable temp1 of type List<Object>\nMain.java:61: error: cannot find symbol\n        result1.func_0(temp1);\n               ^\n  symbol:   method func_0(List<Object>)\n  location: variable result1 of type List<Object>\nMain.java:62: error: cannot find symbol\n        result1.func_0(2);\n               ^\n  symbol:   method func_0(int)\n  location: variable result1 of type List<Object>\nMain.java:63: error: cannot find symbol\n        result1.func_0(3);\n               ^\n  symbol:   method func_0(int)\n  location: variable result1 of type List<Object>\nMain.java:65: error: cannot find symbol\n        temp2.func_0(2);\n             ^\n  symbol:   method func_0(int)\n  location: variable temp2 of type List<Object>\nMain.java:66: error: cannot find symbol\n        temp2.func_0(4);\n             ^\n  symbol:   method func_0(int)\n  location: variable temp2 of type List<Object>\nMain.java:67: error: cannot find symbol\n        result1.func_0(temp2);\n               ^\n  symbol:   method func_0(List<Object>)\n  location: variable result1 of type List<Object>\nMain.java:68: error: cannot find symbol\n        result1.func_0(5);\n               ^\n  symbol:   method func_0(int)\n  location: variable result1 of type List<Object>\nMain.java:69: error: cannot find symbol\n        result1.func_0(1);\n               ^\n  symbol:   method func_0(int)\n  location: variable result1 of type List<Object>\nMain.java:75: error: cannot find symbol\n            test2.func_0(c);\n                 ^\n  symbol:   method func_0(char)\n  location: variable test2 of type List<Object>\nMain.java:79: error: cannot find symbol\n            result2.func_0(c);\n                   ^\n  symbol:   method func_0(char)\n  location: variable result2 of type List<Object>\nMain.java:82: error: cannot find symbol\n        temp3.func_0(2);\n             ^\n  symbol:   method func_0(int)\n  location: variable temp3 of type List<Object>\nMain.java:83: error: cannot find symbol\n        temp3.func_0('l');\n             ^\n  symbol:   method func_0(char)\n  location: variable temp3 of type List<Object>\nMain.java:84: error: cannot find symbol\n        result2.func_0(temp3);\n               ^\n  symbol:   method func_0(List<Object>)\n  location: variable result2 of type List<Object>\nMain.java:85: error: cannot find symbol\n        result2.func_0('y');\n               ^\n  symbol:   method func_0(char)\n  location: variable result2 of type List<Object>\nMain.java:90: error: cannot find symbol\n            test3.func_0(c);\n                 ^\n  symbol:   method func_0(char)\n  location: variable test3 of type List<Object>\nMain.java:94: error: cannot find symbol\n            result3.func_0(c);\n                   ^\n  symbol:   method func_0(char)\n  location: variable result3 of type List<Object>\n26 errors\n",
+        "completion_id": 0
+    },
+    "307": {
+        "task_id": 307,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "308": {
+        "task_id": 308,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\nfindLongWord(\"strem\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:42: error: cannot find symbol\nfindLongWord(\"Ultra\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:44: error: cannot find symbol\nfindLongWord(\"Media\");}});\n^\n  symbol: method findLongWord(String)\n3 errors\n",
+        "completion_id": 0
+    },
+    "309": {
+        "task_id": 309,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "310": {
+        "task_id": 310,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n        assert solution.func_0(\"111111\").func_0(\"12345654321\");\n                                        ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:40: error: cannot find symbol\n        assert solution.func_0(\"1111\").func_0(\"1234321\");\n                                      ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.func_0(\"13333122222\").func_0(\"123456789101110987654321\");\n                                             ^\n  symbol:   method func_0(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "311": {
+        "task_id": 311,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "312": {
+        "task_id": 312,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "313": {
+        "task_id": 313,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "314": {
+        "task_id": 314,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "315": {
+        "task_id": 315,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "316": {
+        "task_id": 316,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "317": {
+        "task_id": 317,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "318": {
+        "task_id": 318,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "319": {
+        "task_id": 319,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "320": {
+        "task_id": 320,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "321": {
+        "task_id": 321,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "322": {
+        "task_id": 322,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "323": {
+        "task_id": 323,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "324": {
+        "task_id": 324,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "325": {
+        "task_id": 325,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:32: error: missing return statement\n    }\n    ^\n1 error\n",
+        "completion_id": 0
+    },
+    "326": {
+        "task_id": 326,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.func_0(\"python.\").func_0(\"Found a match!\");\n                                         ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.func_0(\"python.\").func_0(\"Found a match!\");\n                                         ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.func_0(\"  lang  .\").func_0(\"Not matched!\");\n                                           ^\n  symbol:   method func_0(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "327": {
+        "task_id": 327,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "328": {
+        "task_id": 328,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "329": {
+        "task_id": 329,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "330": {
+        "task_id": 330,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "331": {
+        "task_id": 331,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:13: error: invalid method declaration; return type required\n    public Node(int value, int orhgNun, int index) {\n           ^\nMain.java:23: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static int[] findMinimumRange(int[][] list) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:58: error: class, interface, enum, or record expected\n}\n^\n3 errors\n",
+        "completion_id": 0
+    },
+    "332": {
+        "task_id": 332,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "333": {
+        "task_id": 333,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "334": {
+        "task_id": 334,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "335": {
+        "task_id": 335,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "336": {
+        "task_id": 336,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "337": {
+        "task_id": 337,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:27: error: cannot find symbol\n        assert Solution.findWays(4) == 2;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:28: error: cannot find symbol\n        assert Solution.findWays(6) == 5;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:29: error: cannot find symbol\n        assert Solution.findWays(8) == 14;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "338": {
+        "task_id": 338,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "339": {
+        "task_id": 339,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "340": {
+        "task_id": 340,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "341": {
+        "task_id": 341,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "342": {
+        "task_id": 342,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "343": {
+        "task_id": 343,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "344": {
+        "task_id": 344,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "345": {
+        "task_id": 345,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "346": {
+        "task_id": 346,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:43: error: cannot find symbol\nfindMax(2); findMax(4);}});\n^\n  symbol: method findMax(int)\nMain.java:43: error: cannot find symbol\nfindMax(2); findMax(4);}});\n            ^\n  symbol: method findMax(int)\nMain.java:42: error: cannot find symbol\n        testList1.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList1 of type List<List<Integer>>\nMain.java:45: error: cannot find symbol\nfindMax(6); findMax(7);}});\n^\n  symbol: method findMax(int)\nMain.java:45: error: cannot find symbol\nfindMax(6); findMax(7);}});\n            ^\n  symbol: method findMax(int)\nMain.java:44: error: cannot find symbol\n        testList1.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList1 of type List<List<Integer>>\nMain.java:47: error: cannot find symbol\nfindMax(5); findMax(1);}});\n^\n  symbol: method findMax(int)\nMain.java:47: error: cannot find symbol\nfindMax(5); findMax(1);}});\n            ^\n  symbol: method findMax(int)\nMain.java:46: error: cannot find symbol\n        testList1.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList1 of type List<List<Integer>>\nMain.java:49: error: cannot find symbol\nfindMax(6); findMax(10);}});\n^\n  symbol: method findMax(int)\nMain.java:49: error: cannot find symbol\nfindMax(6); findMax(10);}});\n            ^\n  symbol: method findMax(int)\nMain.java:48: error: cannot find symbol\n        testList1.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList1 of type List<List<Integer>>\nMain.java:51: error: cannot find symbol\nfindMax(8); findMax(7);}});\n^\n  symbol: method findMax(int)\nMain.java:51: error: cannot find symbol\nfindMax(8); findMax(7);}});\n            ^\n  symbol: method findMax(int)\nMain.java:50: error: cannot find symbol\n        testList1.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList1 of type List<List<Integer>>\nMain.java:56: error: cannot find symbol\nfindMax(3); findMax(5);}});\n^\n  symbol: method findMax(int)\nMain.java:56: error: cannot find symbol\nfindMax(3); findMax(5);}});\n            ^\n  symbol: method findMax(int)\nMain.java:55: error: cannot find symbol\n        testList2.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList2 of type List<List<Integer>>\nMain.java:58: error: cannot find symbol\nfindMax(7); findMax(8);}});\n^\n  symbol: method findMax(int)\nMain.java:58: error: cannot find symbol\nfindMax(7); findMax(8);}});\n            ^\n  symbol: method findMax(int)\nMain.java:57: error: cannot find symbol\n        testList2.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList2 of type List<List<Integer>>\nMain.java:60: error: cannot find symbol\nfindMax(6); findMax(2);}});\n^\n  symbol: method findMax(int)\nMain.java:60: error: cannot find symbol\nfindMax(6); findMax(2);}});\n            ^\n  symbol: method findMax(int)\nMain.java:59: error: cannot find symbol\n        testList2.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList2 of type List<List<Integer>>\nMain.java:62: error: cannot find symbol\nfindMax(7); findMax(11);}});\n^\n  symbol: method findMax(int)\nMain.java:62: error: cannot find symbol\nfindMax(7); findMax(11);}});\n            ^\n  symbol: method findMax(int)\nMain.java:61: error: cannot find symbol\n        testList2.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList2 of type List<List<Integer>>\nMain.java:64: error: cannot find symbol\nfindMax(9); findMax(8);}});\n^\n  symbol: method findMax(int)\nMain.java:64: error: cannot find symbol\nfindMax(9); findMax(8);}});\n            ^\n  symbol: method findMax(int)\nMain.java:63: error: cannot find symbol\n        testList2.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList2 of type List<List<Integer>>\nMain.java:69: error: cannot find symbol\nfindMax(4); findMax(6);}});\n^\n  symbol: method findMax(int)\nMain.java:69: error: cannot find symbol\nfindMax(4); findMax(6);}});\n            ^\n  symbol: method findMax(int)\nMain.java:68: error: cannot find symbol\n        testList3.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList3 of type List<List<Integer>>\nMain.java:71: error: cannot find symbol\nfindMax(8); findMax(9);}});\n^\n  symbol: method findMax(int)\nMain.java:71: error: cannot find symbol\nfindMax(8); findMax(9);}});\n            ^\n  symbol: method findMax(int)\nMain.java:70: error: cannot find symbol\n        testList3.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList3 of type List<List<Integer>>\nMain.java:73: error: cannot find symbol\nfindMax(7); findMax(3);}});\n^\n  symbol: method findMax(int)\nMain.java:73: error: cannot find symbol\nfindMax(7); findMax(3);}});\n            ^\n  symbol: method findMax(int)\nMain.java:72: error: cannot find symbol\n        testList3.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList3 of type List<List<Integer>>\nMain.java:75: error: cannot find symbol\nfindMax(8); findMax(12);}});\n^\n  symbol: method findMax(int)\nMain.java:75: error: cannot find symbol\nfindMax(8); findMax(12);}});\n            ^\n  symbol: method findMax(int)\nMain.java:74: error: cannot find symbol\n        testList3.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList3 of type List<List<Integer>>\nMain.java:77: error: cannot find symbol\nfindMax(10); findMax(9);}});\n^\n  symbol: method findMax(int)\nMain.java:77: error: cannot find symbol\nfindMax(10); findMax(9);}});\n             ^\n  symbol: method findMax(int)\nMain.java:76: error: cannot find symbol\n        testList3.findMax(new ArrayList<Integer>(){{\n                 ^\n  symbol:   method findMax(<anonymous ArrayList<Integer>>)\n  location: variable testList3 of type List<List<Integer>>\n45 errors\n",
+        "completion_id": 0
+    },
+    "347": {
+        "task_id": 347,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "348": {
+        "task_id": 348,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "349": {
+        "task_id": 349,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "350": {
+        "task_id": 350,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "351": {
+        "task_id": 351,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "352": {
+        "task_id": 352,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "353": {
+        "task_id": 353,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:35: error: cannot find symbol\n        assert Solution.minFlipToMakeStringAlternate(\"0001010111\") == 2;\n                       ^\n  symbol:   method minFlipToMakeStringAlternate(String)\n  location: class Solution\nMain.java:36: error: cannot find symbol\n        assert Solution.minFlipToMakeStringAlternate(\"001\") == 1;\n                       ^\n  symbol:   method minFlipToMakeStringAlternate(String)\n  location: class Solution\nMain.java:37: error: cannot find symbol\n        assert Solution.minFlipToMakeStringAlternate(\"010111011\") == 2;\n                       ^\n  symbol:   method minFlipToMakeStringAlternate(String)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "354": {
+        "task_id": 354,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "355": {
+        "task_id": 355,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "356": {
+        "task_id": 356,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:12: error: invalid method declaration; return type required\n    Node(int item) {\n    ^\nMain.java:17: error: implicitly declared classes are a preview feature and are disabled by default.\n    Node root;\n    ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:37: error: class, interface, enum, or record expected\n}\n^\n3 errors\n",
+        "completion_id": 0
+    },
+    "357": {
+        "task_id": 357,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "358": {
+        "task_id": 358,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "359": {
+        "task_id": 359,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "360": {
+        "task_id": 360,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "361": {
+        "task_id": 361,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "362": {
+        "task_id": 362,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "363": {
+        "task_id": 363,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "364": {
+        "task_id": 364,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "365": {
+        "task_id": 365,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "366": {
+        "task_id": 366,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:38: error: cannot find symbol\n        assert solution.remove_Char(\"aba\",'a').remove_Char(\"b\");\n                                              ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:39: error: cannot find symbol\n        assert solution.remove_Char(\"toggle\",'g').remove_Char(\"tole\");\n                                                 ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:40: error: cannot find symbol\n        assert solution.remove_Char(\"aabbc\",'b').remove_Char(\"aac\");\n                                                ^\n  symbol:   method remove_Char(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "367": {
+        "task_id": 367,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "368": {
+        "task_id": 368,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "369": {
+        "task_id": 369,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "370": {
+        "task_id": 370,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "371": {
+        "task_id": 371,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "372": {
+        "task_id": 372,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "373": {
+        "task_id": 373,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "374": {
+        "task_id": 374,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "375": {
+        "task_id": 375,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "376": {
+        "task_id": 376,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "377": {
+        "task_id": 377,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "378": {
+        "task_id": 378,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "379": {
+        "task_id": 379,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "380": {
+        "task_id": 380,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "381": {
+        "task_id": 381,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "timed out",
+        "completion_id": 0
+    },
+    "382": {
+        "task_id": 382,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ClassCastException: class java.util.Arrays$ArrayList cannot be cast to class java.lang.Integer (java.util.Arrays$ArrayList and java.lang.Integer are in module java.base of loader 'bootstrap')\n\tat Main.main(Main.java:43)\n",
+        "completion_id": 0
+    },
+    "383": {
+        "task_id": 383,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "384": {
+        "task_id": 384,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.NullPointerException: Cannot invoke \"java.lang.Character.charValue()\" because the return value of \"Solution.frrhgNlnRvpvagimtCszrzcgvr(String)\" is null\n\tat Main.main(Main.java:40)\n",
+        "completion_id": 0
+    },
+    "385": {
+        "task_id": 385,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "386": {
+        "task_id": 386,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:39: error: variable median might not have been initialized\n        return median;\n               ^\n1 error\n",
+        "completion_id": 0
+    },
+    "387": {
+        "task_id": 387,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "388": {
+        "task_id": 388,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "389": {
+        "task_id": 389,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "390": {
+        "task_id": 390,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "391": {
+        "task_id": 391,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "392": {
+        "task_id": 392,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "393": {
+        "task_id": 393,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "394": {
+        "task_id": 394,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "395": {
+        "task_id": 395,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "396": {
+        "task_id": 396,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: arraycopy: last destination index 3 out of bounds for char[2]\n\tat java.base/java.lang.System.arraycopy(Native Method)\n\tat Solution.next(Main.java:31)\n\tat Main.main(Main.java:69)\n",
+        "completion_id": 0
+    },
+    "397": {
+        "task_id": 397,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "398": {
+        "task_id": 398,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "399": {
+        "task_id": 399,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "400": {
+        "task_id": 400,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "401": {
+        "task_id": 401,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:42: error: cannot find symbol\n        list1.remove_odd(1);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:43: error: cannot find symbol\n        list1.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:44: error: cannot find symbol\n        list1.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:47: error: cannot find symbol\nremove_odd(2);}});\n^\n  symbol: method remove_odd(int)\nMain.java:50: error: cannot find symbol\n        list2.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:51: error: cannot find symbol\n        list2.remove_odd(4);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:52: error: cannot find symbol\n        list2.remove_odd(6);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n^\n  symbol: method remove_odd(int)\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n               ^\n  symbol: method remove_odd(int)\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n                              ^\n  symbol: method remove_odd(int)\nMain.java:58: error: cannot find symbol\n        list3.remove_odd(10);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:59: error: cannot find symbol\n        list3.remove_odd(20);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:60: error: cannot find symbol\n        list3.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:63: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n^\n  symbol: method remove_odd(int)\nMain.java:63: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n                ^\n  symbol: method remove_odd(int)\n15 errors\n",
+        "completion_id": 0
+    },
+    "402": {
+        "task_id": 402,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "403": {
+        "task_id": 403,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "404": {
+        "task_id": 404,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "405": {
+        "task_id": 405,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "406": {
+        "task_id": 406,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "407": {
+        "task_id": 407,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "408": {
+        "task_id": 408,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "409": {
+        "task_id": 409,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "410": {
+        "task_id": 410,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "411": {
+        "task_id": 411,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "412": {
+        "task_id": 412,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "413": {
+        "task_id": 413,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n            func_0('s');\n            ^\n  symbol: method func_0(char)\nMain.java:40: error: cannot find symbol\n            func_0('r');\n            ^\n  symbol: method func_0(char)\nMain.java:41: error: cannot find symbol\n            func_0('s');\n            ^\n  symbol: method func_0(char)\nMain.java:44: error: cannot find symbol\n            func_0('e');\n            ^\n  symbol: method func_0(char)\nMain.java:45: error: cannot find symbol\n            func_0('r');\n            ^\n  symbol: method func_0(char)\nMain.java:46: error: cannot find symbol\n            func_0('e');\n            ^\n  symbol: method func_0(char)\nMain.java:49: error: cannot find symbol\n            func_0('a');\n            ^\n  symbol: method func_0(char)\nMain.java:50: error: cannot find symbol\n            func_0('t');\n            ^\n  symbol: method func_0(char)\nMain.java:51: error: cannot find symbol\n            func_0('o');\n            ^\n  symbol: method func_0(char)\n9 errors\n",
+        "completion_id": 0
+    },
+    "414": {
+        "task_id": 414,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "415": {
+        "task_id": 415,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "416": {
+        "task_id": 416,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "417": {
+        "task_id": 417,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "418": {
+        "task_id": 418,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "419": {
+        "task_id": 419,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "420": {
+        "task_id": 420,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "421": {
+        "task_id": 421,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "422": {
+        "task_id": 422,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "423": {
+        "task_id": 423,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n        assert \"Not matched!\".text_match_one(solution.text_match_one(\"ac\"));\n                             ^\n  symbol:   method text_match_one(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert \"Not matched!\".text_match_one(solution.text_match_one(\"dc\"));\n                             ^\n  symbol:   method text_match_one(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert \"Found a match!\".text_match_one(solution.text_match_one(\"abba\"));\n                               ^\n  symbol:   method text_match_one(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "424": {
+        "task_id": 424,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "425": {
+        "task_id": 425,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "426": {
+        "task_id": 426,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "427": {
+        "task_id": 427,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "428": {
+        "task_id": 428,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "429": {
+        "task_id": 429,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "430": {
+        "task_id": 430,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "431": {
+        "task_id": 431,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "432": {
+        "task_id": 432,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "433": {
+        "task_id": 433,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "434": {
+        "task_id": 434,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "435": {
+        "task_id": 435,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "436": {
+        "task_id": 436,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "437": {
+        "task_id": 437,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "438": {
+        "task_id": 438,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "439": {
+        "task_id": 439,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "440": {
+        "task_id": 440,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "441": {
+        "task_id": 441,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "442": {
+        "task_id": 442,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "443": {
+        "task_id": 443,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n        assert solution.textMatchWordz(\"pythonz.\").textMatchWordz(\"Found a match!\");\n                                                  ^\n  symbol:   method textMatchWordz(String)\n  location: class String\nMain.java:41: error: cannot find symbol\n        assert solution.textMatchWordz(\"xyz.\").textMatchWordz(\"Found a match!\");\n                                              ^\n  symbol:   method textMatchWordz(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.textMatchWordz(\"  lang  .\").textMatchWordz(\"Not matched!\");\n                                                   ^\n  symbol:   method textMatchWordz(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "444": {
+        "task_id": 444,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "445": {
+        "task_id": 445,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "446": {
+        "task_id": 446,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "447": {
+        "task_id": 447,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "448": {
+        "task_id": 448,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:36: error: cannot find symbol\n        assert solution.remove_uppercase(\"cAstyoUrFavoRitETVshoWs\").remove_uppercase(\"cstyoravoitshos\");\n                                                                   ^\n  symbol:   method remove_uppercase(String)\n  location: class String\nMain.java:37: error: cannot find symbol\n        assert solution.remove_uppercase(\"wAtchTheinTernEtrAdIo\").remove_uppercase(\"wtchheinerntrdo\");\n                                                                 ^\n  symbol:   method remove_uppercase(String)\n  location: class String\nMain.java:38: error: cannot find symbol\n        assert solution.remove_uppercase(\"VoicESeaRchAndreComMendaTionS\").remove_uppercase(\"oiceachndreomendaion\");\n                                                                         ^\n  symbol:   method remove_uppercase(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "449": {
+        "task_id": 449,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "450": {
+        "task_id": 450,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "451": {
+        "task_id": 451,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "452": {
+        "task_id": 452,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "453": {
+        "task_id": 453,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "454": {
+        "task_id": 454,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "455": {
+        "task_id": 455,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "456": {
+        "task_id": 456,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "457": {
+        "task_id": 457,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "458": {
+        "task_id": 458,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "459": {
+        "task_id": 459,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "460": {
+        "task_id": 460,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "461": {
+        "task_id": 461,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "462": {
+        "task_id": 462,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:37: error: invalid method declaration; return type required\n        public Tuple(int x, int y) {\n               ^\n1 error\n",
+        "completion_id": 0
+    },
+    "463": {
+        "task_id": 463,
+        "perturbation_type": "normalize_identifer",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:33: error: cannot find symbol\n        assert solution.replaceChar(\"polygon\", 'y', 'l').replaceChar(\"pollgon\");\n                                                        ^\n  symbol:   method replaceChar(String)\n  location: class String\nMain.java:34: error: cannot find symbol\n        assert solution.replaceChar(\"character\", 'c', 'a').replaceChar(\"aharaater\");\n                                                          ^\n  symbol:   method replaceChar(String)\n  location: class String\nMain.java:35: error: cannot find symbol\n        assert solution.replaceChar(\"python\", 'l', 'a').replaceChar(\"python\");\n                                                       ^\n  symbol:   method replaceChar(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "464": {
+        "task_id": 464,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "465": {
+        "task_id": 465,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "466": {
+        "task_id": 466,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "467": {
+        "task_id": 467,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:36: error: cannot find symbol\n        assert solution.rvmlev_oowvixzhe(\"PYTHon\").rvmlev_oowvixzhe(\"PYTH\");\n                                                  ^\n  symbol:   method rvmlev_oowvixzhe(String)\n  location: class String\nMain.java:37: error: cannot find symbol\n        assert solution.rvmlev_oowvixzhe(\"FInD\").rvmlev_oowvixzhe(\"FID\");\n                                                ^\n  symbol:   method rvmlev_oowvixzhe(String)\n  location: class String\nMain.java:38: error: cannot find symbol\n        assert solution.rvmlev_oowvixzhe(\"STRinG\").rvmlev_oowvixzhe(\"STRG\");\n                                                  ^\n  symbol:   method rvmlev_oowvixzhe(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "468": {
+        "task_id": 468,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "469": {
+        "task_id": 469,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "470": {
+        "task_id": 470,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "471": {
+        "task_id": 471,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n        assert solution.func_0(\"Geeks\").func_0(\"Yes\");\n                                       ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:42: error: cannot find symbol\n        assert solution.func_0(\"geeksforGeeks\").func_0(\"Yes\");\n                                               ^\n  symbol:   method func_0(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.func_0(\"geeks\").func_0(\"No\");\n                                       ^\n  symbol:   method func_0(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "472": {
+        "task_id": 472,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "473": {
+        "task_id": 473,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "474": {
+        "task_id": 474,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:34: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 232, 54545, 999991}, 4) == 54545;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\nMain.java:35: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 2, 3, 4, 5, 50}, 6) == 5;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\nMain.java:36: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 3, 7, 9, 45}, 5)  == 9;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\n3 errors\n",
+        "completion_id": 0
+    },
+    "475": {
+        "task_id": 475,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:106: error: illegal start of expression\npublic class Main{\n^\nMain.java:112: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+        "completion_id": 0
+    },
+    "476": {
+        "task_id": 476,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:9: error: class Solution is already defined in package unnamed package\nclass Solution {class Solution {\n                ^\nMain.java:10: error: cannot find symbol\n    public static Tuple[] func_0(Tuple[] tup) {\n                                 ^\n  symbol:   class Tuple\n  location: class Solution.Solution\nMain.java:10: error: cannot find symbol\n    public static Tuple[] func_0(Tuple[] tup) {\n                  ^\n  symbol:   class Tuple\n  location: class Solution.Solution\nMain.java:24: error: cannot find symbol\n        Arrays.sort(tup, new Comparator<Tuple>() {\n                                        ^\n  symbol:   class Tuple\n  location: class Solution.Solution\nMain.java:26: error: cannot find symbol\n            public int compare(Tuple o1, Tuple o2) {\n                               ^\n  symbol: class Tuple\nMain.java:26: error: cannot find symbol\n            public int compare(Tuple o1, Tuple o2) {\n                                         ^\n  symbol: class Tuple\nMain.java:41: error: cannot find symbol\n        Tuple[] tuples1 = {new Tuple(1, 3), new Tuple(3, 2), new Tuple(2, 1)};\n        ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:41: error: cannot find symbol\n        Tuple[] tuples1 = {new Tuple(1, 3), new Tuple(3, 2), new Tuple(2, 1)};\n                               ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:41: error: cannot find symbol\n        Tuple[] tuples1 = {new Tuple(1, 3), new Tuple(3, 2), new Tuple(2, 1)};\n                                                ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:41: error: cannot find symbol\n        Tuple[] tuples1 = {new Tuple(1, 3), new Tuple(3, 2), new Tuple(2, 1)};\n                                                                 ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:42: error: cannot find symbol\n        Tuple[] sortedTuples1 = solution.func_0(tuples1);\n        ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:47: error: cannot find symbol\n        Tuple[] tuples2 = {new Tuple(2, 4), new Tuple(3, 3), new Tuple(1, 1)};\n        ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:47: error: cannot find symbol\n        Tuple[] tuples2 = {new Tuple(2, 4), new Tuple(3, 3), new Tuple(1, 1)};\n                               ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:47: error: cannot find symbol\n        Tuple[] tuples2 = {new Tuple(2, 4), new Tuple(3, 3), new Tuple(1, 1)};\n                                                ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:47: error: cannot find symbol\n        Tuple[] tuples2 = {new Tuple(2, 4), new Tuple(3, 3), new Tuple(1, 1)};\n                                                                 ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:48: error: cannot find symbol\n        Tuple[] sortedTuples2 = solution.func_0(tuples2);\n        ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:53: error: cannot find symbol\n        Tuple[] tuples3 = {new Tuple(3, 9), new Tuple(6, 7), new Tuple(4, 3)};\n        ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:53: error: cannot find symbol\n        Tuple[] tuples3 = {new Tuple(3, 9), new Tuple(6, 7), new Tuple(4, 3)};\n                               ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:53: error: cannot find symbol\n        Tuple[] tuples3 = {new Tuple(3, 9), new Tuple(6, 7), new Tuple(4, 3)};\n                                                ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:53: error: cannot find symbol\n        Tuple[] tuples3 = {new Tuple(3, 9), new Tuple(6, 7), new Tuple(4, 3)};\n                                                                 ^\n  symbol:   class Tuple\n  location: class Main\nMain.java:54: error: cannot find symbol\n        Tuple[] sortedTuples3 = solution.func_0(tuples3);\n        ^\n  symbol:   class Tuple\n  location: class Main\n21 errors\n",
+        "completion_id": 0
+    },
+    "477": {
+        "task_id": 477,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "478": {
+        "task_id": 478,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "479": {
+        "task_id": 479,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:12: error: invalid method declaration; return type required\n    public Pair(int start, int end) {\n           ^\nMain.java:29: error: implicitly declared classes are a preview feature and are disabled by default.\n    public int minMeetingRooms(int[][] intervals) {\n           ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:45: error: class, interface, enum, or record expected\n}\n^\n3 errors\n",
+        "completion_id": 0
+    },
+    "480": {
+        "task_id": 480,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "481": {
+        "task_id": 481,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "482": {
+        "task_id": 482,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:58: error: cannot find symbol\n                polygon.add(new double[]{p2x, p2y});\n                                              ^\n  symbol:   variable p2y\n  location: class Solution\nMain.java:59: error: cannot find symbol\n                polygon.add(new double[]{p3x, p3y});\n                                         ^\n  symbol:   variable p3x\n  location: class Solution\nMain.java:59: error: cannot find symbol\n                polygon.add(new double[]{p3x, p3y});\n                                              ^\n  symbol:   variable p3y\n  location: class Solution\nMain.java:60: error: cannot find symbol\n                polygon.add(new double[]{p4x, p4y});\n                                         ^\n  symbol:   variable p4x\n  location: class Solution\nMain.java:60: error: cannot find symbol\n                polygon.add(new double[]{p4x, p4y});\n                                              ^\n  symbol:   variable p4y\n  location: class Solution\nMain.java:61: error: cannot find symbol\n                polygon.add(new double[]{p5x, p5y});\n                                         ^\n  symbol:   variable p5x\n  location: class Solution\nMain.java:61: error: cannot find symbol\n                polygon.add(new double[]{p5x, p5y});\n                                              ^\n  symbol:   variable p5y\n  location: class Solution\n7 errors\n",
+        "completion_id": 0
+    },
+    "483": {
+        "task_id": 483,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:29: error: incompatible types: int cannot be converted to String\n        return Integer.parseInt(yrmzry.toString(), 2);\n                               ^\n1 error\n",
+        "completion_id": 0
+    },
+    "484": {
+        "task_id": 484,
+        "perturbation_type": "random_flip_identifier",
+        "passed": false,
+        "result": "failed: compilation error: Main.java:34: error: cannot find symbol\n        assert solution.remove_lowercase(\"KDeoALOklOOHserfLoAJSIskdsf\").remove_lowercase(\"KDALOOOHLAJSI\");\n                                                                       ^\n  symbol:   method remove_lowercase(String)\n  location: class String\nMain.java:35: error: cannot find symbol\n        assert solution.remove_lowercase(\"ProducTnamEstreAmIngMediAplAYer\").remove_lowercase(\"PTEAIMAAY\");\n                                                                           ^\n  symbol:   method remove_lowercase(String)\n  location: class String\nMain.java:36: error: cannot find symbol\n        assert solution.remove_lowercase(\"maNufacTuredbYSheZenTechNolOGIes\").remove_lowercase(\"NTYSZTNOGI\");\n                                                                            ^\n  symbol:   method remove_lowercase(String)\n  location: class String\n3 errors\n",
+        "completion_id": 0
+    },
+    "485": {
+        "task_id": 485,
+        "perturbation_type": "codebert_rename_func_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "486": {
+        "task_id": 486,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "487": {
+        "task_id": 487,
+        "perturbation_type": "random_filp_function_name",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "488": {
+        "task_id": 488,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "489": {
+        "task_id": 489,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "490": {
+        "task_id": 490,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "491": {
+        "task_id": 491,
+        "perturbation_type": "normalize_function_names",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "492": {
+        "task_id": 492,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "493": {
+        "task_id": 493,
+        "perturbation_type": "codebert_rename_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "494": {
+        "task_id": 494,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "495": {
+        "task_id": 495,
+        "perturbation_type": "normalize_identifer",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "496": {
+        "task_id": 496,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "497": {
+        "task_id": 497,
+        "perturbation_type": "normalize_function_names",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    },
+    "498": {
+        "task_id": 498,
+        "perturbation_type": "random_flip_identifier",
+        "passed": true,
+        "result": "passed",
+        "completion_id": 0
+    },
+    "499": {
+        "task_id": 499,
+        "perturbation_type": "random_filp_function_name",
+        "passed": false,
+        "result": "failed: wrong answer",
+        "completion_id": 0
+    }
+}
