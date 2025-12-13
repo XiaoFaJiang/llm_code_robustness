@@ -2035,8 +2035,81 @@ class PerturbationPipeline:
     def no_change_perturbation(self):
         return [(self.no_change,"no_change")]
 
-    
+    def combined_perturbation(self, code, k=2, max_attempts=1000):
+        """
+        随机结合k种扰动方法对代码进行扰动
+        
+        Args:
+            code: 原始代码
+            k: 要结合的扰动方法数量（1-5之间）
+            max_attempts: 最大尝试次数，防止无限循环
+            
+        Returns:
+            perturbed_code: 扰动后的代码
+            applied_perturbations: 应用的扰动方法名称列表
+        """
+        # 确保k在有效范围内
+        k = max(1, min(k, 5))
+        
+        five_groups = ["rename","expression","stmt","insert","style"]
+        funcs = [self.rename_perturbation(),self.code_expression_perturbtion(),self.code_stmt_perturbtion(),\
+                 self.insert_perturbation(),self.code_style_perturbtion()]
+        
+        name_func_dict = {}
+        for name,func in zip(five_groups,funcs):
+            name_func_dict[name] = func
+        
+        while name_func_dict:
+            if len(five_groups) < k:
+                break
+            selected_names = random.sample(five_groups,k)
+            methods = [name_func_dict[name] for name in selected_names]
+            selected_perturbation_methods = [random.choice(method) for method in methods]
+            perturbed_code = code
+            perturbed_code_before = perturbed_code
+            f = True
+            for i,(perturbation_func, perturbation_name) in enumerate(selected_perturbation_methods):
+                try:
+                    perturbed_code = perturbation_func(perturbed_code_before)
+                except Exception as e:
+                    # 如果某个扰动失败，跳过并继续
+                    print(f"警告: 扰动方法 '{perturbation_name}' 失败: {e}")
+                    f = False
+                    break
+                
+                if perturbed_code.strip() == perturbed_code_before.strip():
+                    #print("enter----------")
+                    index = name_func_dict[selected_names[i]].index((perturbation_func,perturbation_name))
+                    del name_func_dict[selected_names[i]][index]
+                    f = False
+                    break
 
+                perturbed_code_before = perturbed_code
+            
+            for i,k_name in enumerate(selected_names):
+                index = 0
+                for methods in name_func_dict[k_name]:
+                    if methods[1] == selected_perturbation_methods[i][1]:
+                        break
+                    index += 1
+                if index < len(name_func_dict[k_name]):
+                    del name_func_dict[k_name][index]
+
+            for k_name in selected_names:
+                if not name_func_dict[k_name]:
+                    del name_func_dict[k_name]
+                    five_groups.remove(k_name)    
+
+            if not f:
+                continue
+
+            return perturbed_code
+        
+        return code
+
+
+    def real_combined_perturbation(self):
+        return [(self.combined_perturbation,"combined_perturbation")]
         
 
     

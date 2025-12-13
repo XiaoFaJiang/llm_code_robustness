@@ -91,7 +91,7 @@ LANGUAGE_TO_NUM_WORKERS = {
 }
 
 LANGUAGES = ["python", "cpp", "javascript", "java"]
-PERTUBATION = ["no_change","rename","code_stmt_exchange","code_expression_exchange","insert","code_style"]
+PERTUBATION = ["no_change","rename","code_stmt_exchange","code_expression_exchange","insert","code_style","combined_perturbation"]
 
 #// mbpp_generate_cpp_robust_rename,mbpp_generate_cpp_robust_code_stmt_exchange,mbpp_generate_cpp_robust_code_expression_exchange,mbpp_generate_cpp_robust_code_style
 ALL_INSTRUCT_TASKS = "mbpp_generate_python_robust_no_change_instruct,mbpp_generate_python_robust_rename_instruct,\
@@ -106,6 +106,12 @@ mbpp_generate_javascript_robust_code_style_instruct,\
 mbpp_generate_java_robust_no_change_instruct,mbpp_generate_java_robust_rename_instruct,mbpp_generate_java_robust_code_stmt_exchange_instruct,\
 mbpp_generate_java_robust_code_expression_exchange_instruct,mbpp_generate_java_robust_insert_instruct,mbpp_generate_java_robust_code_style_instruct"
 
+INSTRUCT_COMBINED_PERTURBATION_TASKS = "mbpp_generate_python_robust_combined_perturbation_instruct,\
+mbpp_generate_cpp_robust_combined_perturbation_instruct,\
+mbpp_generate_java_robust_combined_perturbation_instruct,\
+mbpp_generate_javascript_robust_combined_perturbation_instruct"
+
+
 ALL_COMPLETION_TASKS = "mbpp_generate_python_robust_no_change,mbpp_generate_python_robust_rename,mbpp_generate_python_robust_code_stmt_exchange,\
 mbpp_generate_python_robust_code_expression_exchange,mbpp_generate_python_robust_insert,\
 mbpp_generate_python_robust_code_style,\
@@ -117,6 +123,11 @@ mbpp_generate_javascript_robust_code_style,\
 mbpp_generate_java_robust_no_change,mbpp_generate_java_robust_rename,\
 mbpp_generate_java_robust_code_stmt_exchange,mbpp_generate_java_robust_code_expression_exchange,\
 mbpp_generate_java_robust_insert,mbpp_generate_java_robust_code_style"
+
+COMPLETION_COMBINED_PERTURBATION_TASKS = "mbpp_generate_python_robust_combined_perturbation,\
+mbpp_generate_cpp_robust_combined_perturbation,\
+mbpp_generate_java_robust_combined_perturbation,\
+mbpp_generate_javascript_robust_combined_perturbation"
 
 def create_all_tasks():
     ret = {}
@@ -166,7 +177,8 @@ class GeneralMbppGenerate(Task):
         self.p.preprocess_code('',self.language)
         self.perturbate = {'rename':self.p.rename_perturbation,'code_stmt_exchange':self.p.code_stmt_perturbtion,\
                            'code_expression_exchange':self.p.code_expression_perturbtion,'insert':self.p.insert_perturbation,\
-                            'code_style':self.p.code_style_perturbtion,'no_change':self.p.no_change_perturbation}
+                            'code_style':self.p.code_style_perturbtion,'no_change':self.p.no_change_perturbation,\
+                            'combined_perturbation':self.p.real_combined_perturbation}
         
         self.patterns = {'python':re.compile(r'assert.+',re.DOTALL),\
                 'java':re.compile(r'public\s+class\s+Main\s*\{.*\}',re.DOTALL),\
@@ -284,11 +296,11 @@ Complete code (including all the content of the code I provided and the code you
         #print(generation)
         if self.model_type == "causal_chat":
             generation = generation[len(prompt):]
-        print("original_generation:---------------")
-        print(generation)
+        #print("original_generation:---------------")
+        #print(generation)
         generation = extract_code(generation, self.language)
-        print("extract code:-------------")
-        print(generation)
+        #print("extract code:-------------")
+        #print(generation)
         return generation
 
     def process_results(self, generations, references):

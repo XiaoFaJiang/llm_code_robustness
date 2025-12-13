@@ -271,7 +271,7 @@ def main():
     if args.n_samples == 1:
         args.temperature = 0.0
         args.top_k = 1
-        args.top_p = 0.0
+        args.top_p = 1
         args.do_sample = False
     if args.model_series == "deepseek-r1":
         pass

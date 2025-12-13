@@ -50,14 +50,12 @@ class APIEvaluator:
         
 
     
-
-
     def generate_text(self, task_name, global_args):
         task = tasks.get_task(task_name, self.args)
         dataset = task.get_dataset()
         n_tasks = min(self.args.limit, len(dataset)) if self.args.limit else len(dataset)
         references = [task.get_reference(dataset[i]) for i in range(self.args.limit_start, self.args.limit_start+n_tasks)]
-
+        self.task = task
         if self.args.check_references:
             if "get_solution" in inspect.signature(task.get_reference).parameters:
                 solutions = [[task.get_reference(dataset[i], get_solution=True)] for i in range(self.args.limit_start, self.args.limit_start+n_tasks)]
@@ -170,8 +168,8 @@ class APIEvaluator:
         task = tasks.get_task(task_name, self.args)
         if task.requires_execution and not self.allow_code_execution:
             raise ValueError(_WARNING)
-        task = self.task
         prompts, generations, references = self.generate_text(task_name, global_args)
+        task = self.task
 
         if not self.args.load_generations_path:
             if self.args.save_generations:

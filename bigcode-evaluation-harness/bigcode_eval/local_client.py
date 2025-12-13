@@ -12,7 +12,15 @@ class LocalClient():
         url = os.environ.get("OPENAI_BASE_URL",f"http://{ip}:8800/v1")
         model_id = os.environ.get("MODEL_ID","Qwen2.5-Coder-7B-Instruct")
         if "chat" in url:
-            messages = [{"role":"user","content":prompt}]
+            if "qwen2.5" in model_id.lower():
+                messages = [{"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",\
+                                  "role": "user", "content": prompt}]
+            elif "codeqwen" in model_id.lower():
+                messages = [{"role": "system", "content": "You are a helpful assistant.",\
+                                  "role": "user", "content": prompt}]
+            else:
+                messages = [{"role":"user","content":prompt}]
+
             data = {
                 "model": model_id,
                 "messages":messages,
