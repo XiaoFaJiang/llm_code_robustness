@@ -1767,7 +1767,7 @@ class PerturbationPipeline:
                     record[left.text.decode("utf-8")][1] = "NAC"
 
         
-        print(record)
+        #print(record)
         
 
     def __elseif2else_if_once(self, code):
@@ -1786,7 +1786,7 @@ class PerturbationPipeline:
                 if replaced.replace(' ','')[4:6] != 'if':
                     continue
                 indent = node.start_point[1]
-                print("indent:", indent)
+                #print("indent:", indent)
                 replaced = replaced[4:].lstrip()
                 replaced = 'else{\n' + ' '*indent + replaced + '\n' + ' '*(indent-4) + '}' 
                 lines = replaced.split('\n')  # 以换行符分割字符串
@@ -1849,12 +1849,12 @@ class PerturbationPipeline:
                 if replaced.replace(' ','').replace('\n','')[4:7] != '{if' or len(node.children[1].children)!=2:
                     continue
                 indent = node.start_point[1]
-                print("indent:", indent)
+                #print("indent:", indent)
                 replaced = replaced[replaced.find('(') : replaced.rfind('}')].rstrip()
                 replaced = add_indent(replaced, indent)
                 replaced = replaced.lstrip()
                 replaced = 'else if' + replaced
-                print(replaced)
+                #print(replaced)
                 ret_code,diff = self.__replace_node_of_code(ret_code,node,replaced,diff)
                 flag = True
                 break
@@ -1904,7 +1904,7 @@ class PerturbationPipeline:
                         flag = False
                     if flag == True:
                         replaced = right + ' ' + new_operator + ' ' + left
-                        print(replaced)
+                        #print(replaced)
                         ret_code,diff = self.__replace_node_of_code(ret_code,node,replaced,diff)
         else:
             operators = {
@@ -1926,7 +1926,7 @@ class PerturbationPipeline:
                     if operator not in operators.keys():
                         continue
                     replaced = right + ' ' + operators[operator] + ' ' + left
-                    print(replaced)
+                    #print(replaced)
                     ret_code,diff = self.__replace_node_of_code(ret_code,node,replaced,diff)
         return ret_code
     

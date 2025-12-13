@@ -1,25 +1,25 @@
 conda activate adv
 export CUDA_VISIBLE_DEVICES=3
-export OPENAI_BASE_URL='http://210.28.134.32:8000/v1/completions'
-export MODEL_ID=Qwen2.5-Coder-0.5B
+export OPENAI_BASE_URL='http://210.28.134.32:8000/v1/chat/completions'
+export MODEL_ID=Qwen2.5-Coder-1.5B-Instruct
 export concurrency=15
-MODEL_NAME=qwen2.5-coder-0.5b-base
-MODEL_TYPE=causal_base
+MODEL_NAME=qwen2.5-coder-1.5b-instruct
+MODEL_TYPE=causal_chat
 MODEL_SERIES=qwen2.5
-MODEL_PATH=/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B
+MODEL_PATH=/data1/model/qwen/Qwen/Qwen2.5-Coder-1.5B-Instruct
 
 
-python main.py  --api 'http://127.0.0.1:8800/v1/completions' --allow_code_execution \
+python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
   --save_generations \
   --precision=bf16 \
-  --model_series=${MODEL_SERIES} \
+  --model_series=qwen2.5 \
   --model_type=${MODEL_TYPE} \
   --model_name=${MODEL_NAME} \
-  --model_path=${MODEL_PATH} \
-  --tasks=mbpp_generate_python_robust_combined_perturbation,\
-mbpp_generate_cpp_robust_combined_perturbation,\
-mbpp_generate_java_robust_combined_perturbation,\
-mbpp_generate_javascript_robust_combined_perturbation
+  --model_path=/data1/model/qwen/Qwen/Qwen2.5-Coder-1.5B-Instruct \
+  --tasks=mbpp_generate_python_robust_combined_perturbation_instruct,\
+mbpp_generate_cpp_robust_combined_perturbation_instruct,\
+mbpp_generate_java_robust_combined_perturbation_instruct,\
+mbpp_generate_javascript_robust_combined_perturbation_instruct
 
 # 定义要处理的语言列表
 languages=("cpp" "python" "java" "javascript")

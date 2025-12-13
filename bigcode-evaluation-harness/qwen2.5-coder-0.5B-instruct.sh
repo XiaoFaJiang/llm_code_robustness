@@ -1,13 +1,14 @@
 conda activate adv
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=3
 export OPENAI_BASE_URL='http://210.28.134.32:8000/v1/chat/completions'
 export MODEL_ID=Qwen2.5-Coder-0.5B-Instruct
 export concurrency=15
 MODEL_NAME=qwen2.5-coder-0.5b-instruct
 MODEL_TYPE=causal_chat
+MODEL_SERIES=qwen2.5
+MODEL_PATH=/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B-Instruct
 
-
-#python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
+python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
   --save_generations \
   --precision=bf16 \
   --model_series=qwen2.5 \

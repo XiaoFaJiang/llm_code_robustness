@@ -291,6 +291,13 @@ def main():
         task_names = ALL_TASKS
     else:
         task_names = pattern_match(args.tasks.split(","), ALL_TASKS)
+    real_task_names = []
+    for t_n in task_names:
+        if os.path.exists(f"./result/{args.model_name}/evaluation_results/{t_n}"):
+            print(f"Model {args.model_name} Task {t_n} has done. Skip..." )
+        else:
+            real_task_names.append(t_n)
+    task_names = real_task_names[:]
 
     use_api = HttpAPIServer.use_api_client(model_name=args.model_name, global_args=global_args)
 
@@ -466,7 +473,7 @@ def main():
             print(dumped)
 
     # Avoid compressing files while still writing files
-    time.sleep(60)
+    time.sleep(10)
 
 
 if __name__ == "__main__":
