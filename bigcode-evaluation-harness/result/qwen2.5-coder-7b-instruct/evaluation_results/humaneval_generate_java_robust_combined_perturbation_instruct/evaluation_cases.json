@@ -1,0 +1,1143 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.9, 4.0, 5.0, 2.2)), 0.05),\n                  ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0, 2.0, 5.9, 4.0, 5.0)), 0.8),\n                  ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.1, 2.2, 3.1, 4.1, 5.1)), 0.5)\n                  ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(11.0, 2.0, 3.9, 4.0, 5.0, 2.2)), 0.3),\n                 ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0, 2.0, 5.9, 4.0, 5.0)), 0.95),\n                 ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0, 2.0)), 0.1),\n                 ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.1, 2.2, 3.1, 4.1, 5.1)), 1.0),\n                 ^\n  symbol:   method hasCloseElements(ArrayList<Double>,double)\n  location: variable s of type Solution\n7 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:28: error: cannot find symbol\n            s.truncateNumber(3.5) == 0.5,\n             ^\n  symbol:   method truncateNumber(double)\n  location: variable s of type Solution\nMain.java:29: error: cannot find symbol\n            Math.abs(s.truncateNumber(1.33) - 0.33) < 1e-6,\n                      ^\n  symbol:   method truncateNumber(double)\n  location: variable s of type Solution\nMain.java:30: error: cannot find symbol\n            Math.abs(s.truncateNumber(123.456) - 0.456) < 1e-6\n                      ^\n  symbol:   method truncateNumber(double)\n  location: variable s of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n                Math.abs(s.meanAbsoluteDeviation(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0))) - 2.0/3.0) < 1e-6,\n                          ^\n  symbol:   method meanAbsoluteDeviation(ArrayList<Double>)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                Math.abs(s.meanAbsoluteDeviation(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0))) - 1.0) < 1e-6,\n                          ^\n  symbol:   method meanAbsoluteDeviation(ArrayList<Double>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                Math.abs(s.meanAbsoluteDeviation(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0))) - 6.0/5.0) < 1e-6\n                          ^\n  symbol:   method meanAbsoluteDeviation(ArrayList<Double>)\n  location: variable s of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n                s.rollingMax(new ArrayList<>(List.of())).equals(List.of()),\n                 ^\n  symbol:   method rollingMax(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.rollingMax(new ArrayList<>(Arrays.asList(1, 2, 3, 4))).equals(Arrays.asList(1, 2, 3, 4)),\n                 ^\n  symbol:   method rollingMax(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.rollingMax(new ArrayList<>(Arrays.asList(4, 3, 2, 1))).equals(Arrays.asList(4, 4, 4, 4)),\n                 ^\n  symbol:   method rollingMax(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.rollingMax(new ArrayList<>(Arrays.asList(3, 2, 3, 100, 3))).equals(Arrays.asList(3, 3, 3, 100, 100))\n                 ^\n  symbol:   method rollingMax(ArrayList<Integer>)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:59: error: cannot find symbol\n                Objects.equals(s.makePalindrome(\"\"), \"\"),\n                                ^\n  symbol:   method makePalindrome(String)\n  location: variable s of type Solution\nMain.java:60: error: cannot find symbol\n                Objects.equals(s.makePalindrome(\"x\"), \"x\"),\n                                ^\n  symbol:   method makePalindrome(String)\n  location: variable s of type Solution\nMain.java:61: error: cannot find symbol\n                Objects.equals(s.makePalindrome(\"xyz\"), \"xyzyx\"),\n                                ^\n  symbol:   method makePalindrome(String)\n  location: variable s of type Solution\nMain.java:62: error: cannot find symbol\n                Objects.equals(s.makePalindrome(\"xyx\"), \"xyx\"),\n                                ^\n  symbol:   method makePalindrome(String)\n  location: variable s of type Solution\nMain.java:63: error: cannot find symbol\n                Objects.equals(s.makePalindrome(\"jerry\"), \"jerryrrej\")\n                                ^\n  symbol:   method makePalindrome(String)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n                s.greatestCommonDivisor(3, 7) == 1,\n                 ^\n  symbol:   method greatestCommonDivisor(int,int)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.greatestCommonDivisor(10, 15) == 5,\n                 ^\n  symbol:   method greatestCommonDivisor(int,int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.greatestCommonDivisor(49, 14) == 7,\n                 ^\n  symbol:   method greatestCommonDivisor(int,int)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.greatestCommonDivisor(144, 60) == 12\n                 ^\n  symbol:   method greatestCommonDivisor(int,int)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:29: error: cannot find symbol\n                s.allPrefixes(\"\").equals(List.of()),\n                 ^\n  symbol:   method allPrefixes(String)\n  location: variable s of type Solution\nMain.java:30: error: cannot find symbol\n                s.allPrefixes(\"asdfgh\").equals(Arrays.asList(\"a\", \"as\", \"asd\", \"asdf\", \"asdfg\", \"asdfgh\")),\n                 ^\n  symbol:   method allPrefixes(String)\n  location: variable s of type Solution\nMain.java:31: error: cannot find symbol\n                s.allPrefixes(\"WWW\").equals(Arrays.asList(\"W\", \"WW\", \"WWW\"))\n                 ^\n  symbol:   method allPrefixes(String)\n  location: variable s of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:33: error: cannot find symbol\n                s.stringSequence(0).equals(\"0\"),\n                 ^\n  symbol:   method stringSequence(int)\n  location: variable s of type Solution\nMain.java:34: error: cannot find symbol\n                s.stringSequence(3).equals(\"0 1 2 3\"),\n                 ^\n  symbol:   method stringSequence(int)\n  location: variable s of type Solution\nMain.java:35: error: cannot find symbol\n                s.stringSequence(10).equals(\"0 1 2 3 4 5 6 7 8 9 10\")\n                 ^\n  symbol:   method stringSequence(int)\n  location: variable s of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:55: error: ')' or ',' expected\n        Collections.sort(list\n                             ^\nMain.java:56: error: illegal start of expression\npublic class Main {\n^\nMain.java:69: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:31: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(List.of())).equals(List.of()),\n                 ^\n  symbol:   method filterIntergers(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:32: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(Arrays.asList(4, Map.of(), List.of(), 23.2, 9, \"adasd\"))).equals(Arrays.asList(4, 9)),\n                 ^\n  symbol:   method filterIntergers(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:33: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(Arrays.asList(3, 'c', 3, 3, 'a', 'b'))).equals(Arrays.asList(3, 3, 3))\n                 ^\n  symbol:   method filterIntergers(ArrayList<INT#1>)\n  location: variable s of type Solution\n  where INT#1,INT#2 are intersection types:\n    INT#1 extends Object,Serializable,Comparable<? extends INT#2>,Constable\n    INT#2 extends Object,Serializable,Comparable<?>,Constable\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: cannot find symbol\n                s.filterByPrefix(new ArrayList<>(List.of()), \"john\").equals(List.of()),\n                 ^\n  symbol:   method filterByPrefix(ArrayList<Object>,String)\n  location: variable s of type Solution\nMain.java:26: error: cannot find symbol\n                s.filterByPrefix(new ArrayList<>(Arrays.asList(\"xxx\", \"asd\", \"xxy\", \"john doe\", \"xxxAAA\", \"xxx\")), \"xxx\").equals(Arrays.asList(\"xxx\", \"xxxAAA\", \"xxx\"))\n                 ^\n  symbol:   method filterByPrefix(ArrayList<String>,String)\n  location: variable s of type Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:65: error: cannot find symbol\n            double solution = s.findZero(coeffs);\n                               ^\n  symbol:   method findZero(List<Double>)\n  location: variable s of type Solution\nMain.java:66: error: cannot find symbol\n            if (Math.abs(s.poly(coeffs, solution)) > 1e-4) {\n                          ^\n  symbol:   method poly(List<Double>,double)\n  location: variable s of type Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:26: error: cannot find symbol\n                s.unique(new ArrayList<>(Arrays.asList(5, 3, 5, 2, 3, 3, 9, 0, 123))).equals(Arrays.asList(0, 2, 3, 5, 9, 123))\n                 ^\n  symbol:   method unique(ArrayList<Integer>)\n  location: variable s of type Solution\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:26: error: cannot find symbol\n                s.maxElement(new ArrayList<>(Arrays.asList(1, 2, 3))) == 3,\n                 ^\n  symbol:   method maxElement(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:27: error: cannot find symbol\n                s.maxElement(new ArrayList<>(Arrays.asList(5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10))) == 124\n                 ^\n  symbol:   method maxElement(ArrayList<Integer>)\n  location: variable s of type Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: cannot find symbol\n            sb.decodeCyclic(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeCyclic(char)\n  location: variable sb of type StringBuilder\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n            sb.decodeShift(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeShift(char)\n  location: variable sb of type StringBuilder\nMain.java:56: error: cannot find symbol\n            String encode_str = s.encodeShift(str);\n                                 ^\n  symbol:   method encodeShift(String)\n  location: variable s of type Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:31: error: cannot find symbol\n                !s.belowThreshold(new ArrayList<>(Arrays.asList(1, 20, 4, 10)), 5),\n                  ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:35: error: cannot find symbol\n                !s.belowThreshold(new ArrayList<>(Arrays.asList(1, 8, 4, 10)), 10)\n                  ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:30: error: cannot find symbol\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 2, 4, 10)), 100),\n                 ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:32: error: cannot find symbol\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 20, 4, 10)), 21),\n                 ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:33: error: cannot find symbol\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 20, 4, 10)), 22),\n                 ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:34: error: cannot find symbol\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 8, 4, 10)), 11),\n                 ^\n  symbol:   method belowThreshold(ArrayList<Integer>,int)\n  location: variable s of type Solution\n6 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n                s.fib(10) == 55,\n                 ^\n  symbol:   method fib(int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.fib(1) == 1,\n                 ^\n  symbol:   method fib(int)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.fib(8) == 21,\n                 ^\n  symbol:   method fib(int)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.fib(11) == 89,\n                 ^\n  symbol:   method fib(int)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.fib(12) == 144\n                 ^\n  symbol:   method fib(int)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: cannot find symbol\n                !s.correctBracketing(\"<<<><>>>>\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                !s.correctBracketing(\"><<>\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                !s.correctBracketing(\"<\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                !s.correctBracketing(\"<<<<\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:57: error: cannot find symbol\n                !s.correctBracketing(\">\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:58: error: cannot find symbol\n                !s.correctBracketing(\"<<>\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:59: error: cannot find symbol\n                !s.correctBracketing(\"<><><<><>><>><<>\"),\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:60: error: cannot find symbol\n                !s.correctBracketing(\"<><><<><>><>>><>\")\n                  ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.correctBracketing(\"<>\"),\n                 ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.correctBracketing(\"<<><>>\"),\n                 ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.correctBracketing(\"<><><<><>><>\"),\n                 ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.correctBracketing(\"<><><<<><><>><>><<><><<>>>\"),\n                 ^\n  symbol:   method correctBracketing(String)\n  location: variable s of type Solution\n12 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n                s.sumToN(1) == 1,\n                 ^\n  symbol:   method sumToN(int)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.sumToN(6) == 21,\n                 ^\n  symbol:   method sumToN(int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.sumToN(11) == 66,\n                 ^\n  symbol:   method sumToN(int)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.sumToN(30) == 465,\n                 ^\n  symbol:   method sumToN(int)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.sumToN(100) == 5050\n                 ^\n  symbol:   method sumToN(int)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:48: error: cannot find symbol\n                s.fibfib(2) == 1,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.fibfib(1) == 0,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.fibfib(5) == 4,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.fibfib(8) == 24,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.fibfib(10) == 81,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:53: error: cannot find symbol\n                s.fibfib(12) == 274,\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.fibfib(14) == 927\n                 ^\n  symbol:   method fibfib(int)\n  location: variable s of type Solution\n7 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:34: error: cannot find symbol\n                s.circularShift(100, 2).equals(\"001\"),\n                 ^\n  symbol:   method circularShift(int,int)\n  location: variable s of type Solution\nMain.java:35: error: cannot find symbol\n                s.circularShift(12, 2).equals(\"12\"),\n                 ^\n  symbol:   method circularShift(int,int)\n  location: variable s of type Solution\nMain.java:36: error: cannot find symbol\n                s.circularShift(97, 8).equals(\"79\"),\n                 ^\n  symbol:   method circularShift(int,int)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.circularShift(12, 1).equals(\"21\"),\n                 ^\n  symbol:   method circularShift(int,int)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.circularShift(11, 101).equals(\"11\")\n                 ^\n  symbol:   method circularShift(int,int)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n                !s.willItFly(new ArrayList<>(Arrays.asList(1, 2)), 5),\n                  ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                !s.willItFly(new ArrayList<>(Arrays.asList(3, 2, 3)), 1),\n                  ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                !s.willItFly(new ArrayList<>(Arrays.asList(1, 2, 3)), 6),\n                  ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.willItFly(new ArrayList<>(Arrays.asList(3, 2, 3)), 9),\n                 ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.willItFly(new ArrayList<>(List.of(3)), 5),\n                 ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.willItFly(new ArrayList<>(List.of(5)), 5)\n                 ^\n  symbol:   method willItFly(ArrayList<Integer>,int)\n  location: variable s of type Solution\n6 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:20: error: class Solution is already defined in package unnamed package\n        final int b = 101;class Solution {\n                          ^\nMain.java:35: error: cannot find symbol\n            if (IsPrime.is_prime(i)) {\n                ^\n  symbol:   variable IsPrime\n  location: class Solution\nMain.java:37: error: cannot find symbol\n                    if (IsPrime.is_prime(j) && var % (i * j) == 0) {\n                        ^\n  symbol:   variable IsPrime\n  location: class Solution\nMain.java:39: error: cannot find symbol\n                        if (k > j && IsPrime.is_prime(k)) {\n                                     ^\n  symbol:   variable IsPrime\n  location: class Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n                !s.isSimplePower(3, 2),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                !s.isSimplePower(3, 1),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                !s.isSimplePower(5, 3),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                !s.isSimplePower(143214, 16),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                !s.isSimplePower(24, 2),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                !s.isSimplePower(128, 4),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                !s.isSimplePower(12, 6),\n                  ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.isSimplePower(1, 4),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.isSimplePower(2, 2),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.isSimplePower(8, 2),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.isSimplePower(16, 2),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.isSimplePower(4, 2),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.isSimplePower(9, 3),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.isSimplePower(16, 4),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.isSimplePower(1, 1),\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.isSimplePower(1, 12)\n                 ^\n  symbol:   method isSimplePower(int,int)\n  location: variable s of type Solution\n16 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:58: error: not a statement\n                letter_grade\n                ^\nMain.java:58: error: ';' expected\n                letter_grade\n                            ^\nMain.java:59: error: illegal start of expression\npublic class Main {\n^\nMain.java:74: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:36: error: cannot find symbol\n                s.primeLength(\"Hello\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.primeLength(\"abcdcba\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.primeLength(\"kittens\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.primeLength(\"orange\") == false,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.primeLength(\"wow\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.primeLength(\"world\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.primeLength(\"MadaM\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.primeLength(\"Wow\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.primeLength(\"\") == false,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.primeLength(\"HI\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.primeLength(\"go\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.primeLength(\"gogo\") == false,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.primeLength(\"aaaaaaaaaaaaaaa\") == false,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.primeLength(\"Madam\") == true,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.primeLength(\"M\") == false,\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.primeLength(\"0\") == false\n                 ^\n  symbol:   method primeLength(String)\n  location: variable s of type Solution\n16 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:31: error: cannot find symbol\n                s.startsOneEnds(1) == 1,\n                 ^\n  symbol:   method startsOneEnds(int)\n  location: variable s of type Solution\nMain.java:32: error: cannot find symbol\n                s.startsOneEnds(2) == 18,\n                 ^\n  symbol:   method startsOneEnds(int)\n  location: variable s of type Solution\nMain.java:33: error: cannot find symbol\n                s.startsOneEnds(3) == 180,\n                 ^\n  symbol:   method startsOneEnds(int)\n  location: variable s of type Solution\nMain.java:34: error: cannot find symbol\n                s.startsOneEnds(4) == 1800,\n                 ^\n  symbol:   method startsOneEnds(int)\n  location: variable s of type Solution\nMain.java:35: error: cannot find symbol\n                s.startsOneEnds(5) == 18000\n                 ^\n  symbol:   method startsOneEnds(int)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:35: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5))).get() == 2,\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:36: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(5, 1, 4, 3, 2))).get() == 2,\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 1, 1, 1, 0))).get() == 1,\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(-35, 34, 12, -45))).get() == -35\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(List.of())).isEmpty(),\n                 ^\n  symbol:   method nextSmallest(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 1))).isEmpty(),\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.nextSmallest(new ArrayList<>(Arrays.asList(1, (int) Math.pow(0.0, 0.0)))).isEmpty(),\n                 ^\n  symbol:   method nextSmallest(ArrayList<Integer>)\n  location: variable s of type Solution\n7 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:30: error: incompatible types: possible lossy conversion from long to int\n            if (sentence.substring(var_2, var_3).equalsIgnoreCase(var_4)) {\n                                          ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:23: error: cannot find symbol\n        int maxx = var_0 ;\n                   ^\n  symbol:   variable var_0\n  location: class Solution\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n                s.countUpTo(5).equals(Arrays.asList(2, 3)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.countUpTo(6).equals(Arrays.asList(2, 3, 5)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.countUpTo(7).equals(Arrays.asList(2, 3, 5)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.countUpTo(10).equals(Arrays.asList(2, 3, 5, 7)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.countUpTo(0).equals(List.of()),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.countUpTo(22).equals(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:53: error: cannot find symbol\n                s.countUpTo(1).equals(List.of()),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.countUpTo(18).equals(Arrays.asList(2, 3, 5, 7, 11, 13, 17)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                s.countUpTo(47).equals(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43)),\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                s.countUpTo(101).equals(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97))\n                 ^\n  symbol:   method countUpTo(int)\n  location: variable s of type Solution\n10 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: cannot find symbol\n                s.countUpper(\"10\") == 10,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.countUpper(\"14.5\") == 15,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                s.countUpper(\"-15.5\") == -16,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                s.countUpper(\"15.3\") == 15,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:57: error: cannot find symbol\n                s.countUpper(\"0\") == 0\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: cannot find symbol\n                s.uniqueDigits(Arrays.asList(15, 33, 1422, 1)).equals(Arrays.asList(1, 15, 33)),\n                 ^\n  symbol:   method uniqueDigits(List<Integer>)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.uniqueDigits(Arrays.asList(152, 323, 1422, 10)).equals(List.of()),\n                 ^\n  symbol:   method uniqueDigits(List<Integer>)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.uniqueDigits(Arrays.asList(12345, 2033, 111, 151)).equals(Arrays.asList(111, 151)),\n                 ^\n  symbol:   method uniqueDigits(List<Integer>)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.uniqueDigits(Arrays.asList(135, 103, 31)).equals(Arrays.asList(31, 135))\n                 ^\n  symbol:   method uniqueDigits(List<Integer>)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:36: error: cannot find symbol\n            if (var >= var_0  && var <= var_1 ) {\n                       ^\n  symbol:   variable var_0\n  location: class Solution\nMain.java:36: error: cannot find symbol\n            if (var >= var_0  && var <= var_1 ) {\n                                        ^\n  symbol:   variable var_1\n  location: class Solution\nMain.java:38: error: cannot find symbol\n                    case var_2  -> new_arr.add(var_3 );\n                         ^\n  symbol:   variable var_2\n  location: class Solution\nMain.java:38: error: cannot find symbol\n                    case var_2  -> new_arr.add(var_3 );\n                                               ^\n  symbol:   variable var_3\n  location: class Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: cannot find symbol\n                s.countNums(List.of()) == 0,\n                 ^\n  symbol:   method countNums(List<Object>)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.countNums(Arrays.asList(-1, -2, 0)) == 0,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.countNums(Arrays.asList(1, 1, 2, -2, 3, 4, 5)) == 6,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.countNums(Arrays.asList(1, 6, 9, -6, 0, 1, 5)) == 5,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.countNums(Arrays.asList(1, 100, 98, -7, 1, -1)) == 4,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.countNums(Arrays.asList(12, 23, 34, -45, -56, 0)) == 5,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.countNums(Arrays.asList(-0, (int) Math.pow(1, 0))) == 1,\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.countNums(List.of(1)) == 1\n                 ^\n  symbol:   method countNums(List<Integer>)\n  location: variable s of type Solution\n8 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:37: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(2, 3, 4, 1, 2, 4)) == 1,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(-1, -2, -3)) == -6,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(-1, -2, -3, 2, -10)) == -14,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.minSubArraySum(List.of(-999999999)) == -999999999,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(0, 10, 20, 1000000)) == 0,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(-1, -2, -3, 10, -5)) == -6,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(100, -1, -2, -3, 10, -5)) == -6,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(10, 11, 13, 8, 3, 4)) == 3,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(100, -33, 32, -1, 0, -2)) == -33,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.minSubArraySum(List.of(-10)) == -10,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.minSubArraySum(List.of(7)) == 7,\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.minSubArraySum(Arrays.asList(1, -1)) == -1\n                 ^\n  symbol:   method minSubArraySum(List<Integer>)\n  location: variable s of type Solution\n12 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: cannot find symbol\n                s.selectWords(\"Mary had a little lamb\", 4).equals(List.of(\"little\" )),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.selectWords(\"Mary had a little lamb\", 3).equals(Arrays.asList(\"Mary\", \"lamb\")),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.selectWords(\"simple white space\", 2).equals(List.of()),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.selectWords(\"Hello world\", 4).equals(List.of(\"world\" )),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:53: error: cannot find symbol\n                s.selectWords(\"Uncle sam\", 3).equals(List.of(\"Uncle\" )),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.selectWords(\"\", 4).equals(List.of()),\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                s.selectWords(\"a b c d e f\", 1).equals(Arrays.asList(\"b\", \"c\", \"d\", \"f\"))\n                 ^\n  symbol:   method selectWords(String,int)\n  location: variable s of type Solution\n7 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: cannot find symbol\n                s.prodSigns(Arrays.asList(1, 2, 2, -4)).get() == -9,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.prodSigns(Arrays.asList(0, 1)).get() == 0,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.prodSigns(Arrays.asList(1, 1, 1, 2, 3, -1, 1)).get() == -10,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:53: error: cannot find symbol\n                s.prodSigns(Arrays.asList(2, 4,1, 2, -1, -1, 9)).get() == 20,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.prodSigns(Arrays.asList(-1, 1, -1, 1)).get() == 4,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                s.prodSigns(Arrays.asList(-1, 1, 1, 1)).get() == -4,\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                s.prodSigns(Arrays.asList(-1, 1, 1, 0)).get() == 0\n                 ^\n  symbol:   method prodSigns(List<Integer>)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                s.prodSigns(List.of()).isEmpty(),\n                 ^\n  symbol:   method prodSigns(List<Object>)\n  location: variable s of type Solution\n8 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: illegal start of expression\npublic class Main {\n^\nMain.java:70: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:365)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:428)\n\tat Solution.tri(Main.java:40)\n\tat Main.main(Main.java:52)\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: incompatible types: possible lossy conversion from long to int\n                   .sum();\n                       ^\nMain.java:32: error: cannot find symbol\n                s.sumSquares(Arrays.asList(1., 2., 3.)) == 14,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:33: error: cannot find symbol\n                s.sumSquares(Arrays.asList(1.0, 2., 3.)) == 14,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:34: error: cannot find symbol\n                s.sumSquares(Arrays.asList(1., 3., 5., 7.)) == 84,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:35: error: cannot find symbol\n                s.sumSquares(Arrays.asList(1.4, 4.2, 0.)) == 29,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:36: error: cannot find symbol\n                s.sumSquares(Arrays.asList(-2.4, 1., 1.)) == 6,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.sumSquares(Arrays.asList(100., 1., 15., 2.)) == 10230,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.sumSquares(Arrays.asList(10000., 10000.)) == 200000000,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.sumSquares(Arrays.asList(-1.4, 4.6, 6.3)) == 75,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.sumSquares(Arrays.asList(-1.4, 17.9, 18.9, 19.9)) == 1086,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.sumSquares(List.of(0.)) == 0,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.sumSquares(List.of(-1.)) == 1,\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.sumSquares(Arrays.asList(-1., 1., 0.)) == 2\n                 ^\n  symbol:   method sumSquares(List<Double>)\n  location: variable s of type Solution\n13 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: cannot find symbol\n                (int) s.compareOne(1, 2).get() == 2,\n                       ^\n  symbol:   method compareOne(int,int)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                (double) s.compareOne(1, 2.5).get() == 2.5,\n                          ^\n  symbol:   method compareOne(int,double)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                (int) s.compareOne(2, 3).get() == 3,\n                       ^\n  symbol:   method compareOne(int,int)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                (int) s.compareOne(5, 6).get() == 6,\n                       ^\n  symbol:   method compareOne(int,int)\n  location: variable s of type Solution\nMain.java:57: error: cannot find symbol\n                (String) s.compareOne(1, \"2,3\").get() == \"2,3\",\n                          ^\n  symbol:   method compareOne(int,String)\n  location: variable s of type Solution\nMain.java:58: error: cannot find symbol\n                (String) s.compareOne(\"5,1\", \"6\").get() == \"6\",\n                          ^\n  symbol:   method compareOne(String,String)\n  location: variable s of type Solution\nMain.java:59: error: cannot find symbol\n                (String) s.compareOne(\"1\", \"2\").get() == \"2\",\n                          ^\n  symbol:   method compareOne(String,String)\n  location: variable s of type Solution\nMain.java:60: error: cannot find symbol\n                s.compareOne(\"1\", 1).isEmpty()\n                 ^\n  symbol:   method compareOne(String,int)\n  location: variable s of type Solution\n8 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:36: error: cannot find symbol\n                s.specialFactorial(4) == 288,\n                 ^\n  symbol:   method specialFactorial(int)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.specialFactorial(5) == 34560,\n                 ^\n  symbol:   method specialFactorial(int)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.specialFactorial(7) == 125411328000L,\n                 ^\n  symbol:   method specialFactorial(int)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.specialFactorial(1) == 1\n                 ^\n  symbol:   method specialFactorial(int)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:35: error: cannot find symbol\n                s.simplify(\"1/5\", \"5/1\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:36: error: cannot find symbol\n                s.simplify(\"1/6\", \"2/1\") == false,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:37: error: cannot find symbol\n                s.simplify(\"5/1\", \"3/1\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:38: error: cannot find symbol\n                s.simplify(\"7/10\", \"10/2\") == false,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.simplify(\"2/10\", \"50/10\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.simplify(\"7/2\", \"4/2\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.simplify(\"11/6\", \"6/1\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.simplify(\"2/3\", \"5/2\") == false,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.simplify(\"5/2\", \"3/5\") == false,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.simplify(\"2/4\", \"8/4\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.simplify(\"2/4\", \"4/2\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                s.simplify(\"1/5\", \"5/1\") == true,\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                s.simplify(\"1/5\", \"1/5\") == false\n                 ^\n  symbol:   method simplify(String,String)\n  location: variable s of type Solution\n13 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: Index 1 out of bounds for length 1\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.lang.String.checkIndex(String.java:4930)\n\tat java.base/java.lang.StringLatin1.charAt(StringLatin1.java:46)\n\tat java.base/java.lang.String.charAt(String.java:1629)\n\tat Solution.lambda$orderByPoints$0(Main.java:35)\n\tat java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)\n\tat java.base/java.util.TimSort.sort(TimSort.java:220)\n\tat java.base/java.util.Arrays.sort(Arrays.java:1307)\n\tat java.base/java.util.ArrayList.sort(ArrayList.java:1805)\n\tat Solution.orderByPoints(Main.java:22)\n\tat Main.main(Main.java:51)\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n                s.specialFilter(Arrays.asList(5, -2, 1, -5)) == 0,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.specialFilter(Arrays.asList(15, -73, 14, -15)) == 1,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.specialFilter(Arrays.asList(33, -2, -3, 45, 21, 109)) == 2,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                s.specialFilter(Arrays.asList(43, -12, 93, 125, 121, 109)) == 4,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                s.specialFilter(Arrays.asList(71, -2, -33, 75, 21, 19)) == 3,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                s.specialFilter(List.of(1)) == 0,\n                 ^\n  symbol:   method specialFilter(List<Integer>)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                s.specialFilter(List.of()) == 0\n                 ^\n  symbol:   method specialFilter(List<Object>)\n  location: variable s of type Solution\n7 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: cannot find symbol\n                s.getMaxTriples(5) == 1,\n                 ^\n  symbol:   method getMaxTriples(int)\n  location: variable s of type Solution\nMain.java:54: error: cannot find symbol\n                s.getMaxTriples(6) == 4,\n                 ^\n  symbol:   method getMaxTriples(int)\n  location: variable s of type Solution\nMain.java:55: error: cannot find symbol\n                s.getMaxTriples(10) == 36,\n                 ^\n  symbol:   method getMaxTriples(int)\n  location: variable s of type Solution\nMain.java:56: error: cannot find symbol\n                s.getMaxTriples(100) == 53361\n                 ^\n  symbol:   method getMaxTriples(int)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: incompatible types: possible lossy conversion from long to int\n                return y;\n                       ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: Range [2, 5) out of bounds for length 4\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)\n\tat java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4963)\n\tat java.base/java.lang.String.substring(String.java:2925)\n\tat Solution.cycpatternCheck(Main.java:23)\n\tat Main.main(Main.java:35)\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(19), \"xix\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(152), \"clii\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:42: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(251), \"ccli\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:43: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(426), \"cdxxvi\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:44: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(500), \"d\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:45: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(1), \"i\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:46: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(4), \"iv\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:47: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(43), \"xliii\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(90), \"xc\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(94), \"xciv\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(532), \"dxxxii\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(900), \"cm\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:52: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(994), \"cmxciv\"),\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\nMain.java:53: error: cannot find symbol\n                Objects.equals(s.intToMiniRoman(1000), \"m\")\n                                ^\n  symbol:   method intToMiniRoman(int)\n  location: variable s of type Solution\n14 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "158": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "159": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:69: error: illegal start of expression\npublic class Main {\n^\nMain.java:82: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "160": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "161": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:16: error: cannot find symbol\n    public Optional<String> apply(String text) throws NoSuchAlgorithmException {\n                                                      ^\n  symbol:   class NoSuchAlgorithmException\n  location: class Solution\nMain.java:35: error: cannot find symbol\n    public static void main(String[] args) throws NoSuchAlgorithmException {\n                                                  ^\n  symbol:   class NoSuchAlgorithmException\n  location: class Main\nMain.java:21: error: cannot find symbol\n        MessageDigest md = MessageDigest.getInstance(\"MD5\");\n        ^\n  symbol:   class MessageDigest\n  location: class Solution\nMain.java:21: error: cannot find symbol\n        MessageDigest md = MessageDigest.getInstance(\"MD5\");\n                           ^\n  symbol:   variable MessageDigest\n  location: class Solution\nMain.java:23: error: cannot find symbol\n        BigInteger no = new BigInteger(1, messageDigest);\n        ^\n  symbol:   class BigInteger\n  location: class Solution\nMain.java:23: error: cannot find symbol\n        BigInteger no = new BigInteger(1, messageDigest);\n                            ^\n  symbol:   class BigInteger\n  location: class Solution\nMain.java:38: error: cannot find symbol\n                s.stringToMd5(\"Hello world\").get().equals(\"3e25960a79dbc69b674cd4ec67a72c62\"),\n                 ^\n  symbol:   method stringToMd5(String)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.stringToMd5(\"\").isEmpty(),\n                 ^\n  symbol:   method stringToMd5(String)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.stringToMd5(\"A B C\").get().equals(\"0ef78513b0cb8cef12743f5aeb35f888\"),\n                 ^\n  symbol:   method stringToMd5(String)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.stringToMd5(\"password\").get().equals(\"5f4dcc3b5aa765d61d8327deb882cf99\")\n                 ^\n  symbol:   method stringToMd5(String)\n  location: variable s of type Solution\n10 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  },
+  "162": {
+    "task_id": 163,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:38: error: cannot find symbol\n                s.generateIntegers(2, 10).equals(Arrays.asList(2, 4, 6, 8)),\n                 ^\n  symbol:   method generateIntegers(int,int)\n  location: variable s of type Solution\nMain.java:39: error: cannot find symbol\n                s.generateIntegers(10, 2).equals(Arrays.asList(2, 4, 6, 8)),\n                 ^\n  symbol:   method generateIntegers(int,int)\n  location: variable s of type Solution\nMain.java:40: error: cannot find symbol\n                s.generateIntegers(132, 2).equals(Arrays.asList(2, 4, 6, 8)),\n                 ^\n  symbol:   method generateIntegers(int,int)\n  location: variable s of type Solution\nMain.java:41: error: cannot find symbol\n                s.generateIntegers(17, 89).equals(List.of())\n                 ^\n  symbol:   method generateIntegers(int,int)\n  location: variable s of type Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "combined_perturbation"
+  }
+}

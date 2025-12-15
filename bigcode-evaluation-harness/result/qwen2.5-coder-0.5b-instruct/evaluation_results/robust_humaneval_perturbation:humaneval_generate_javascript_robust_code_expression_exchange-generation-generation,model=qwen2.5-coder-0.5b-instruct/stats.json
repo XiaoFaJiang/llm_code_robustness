@@ -1,0 +1,406 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 65,
+    "generations": [
+      [
+        "// Check if in given list of numbers, are any two numbers closer to each other than\n// given threshold.\n// >>> hasCloseElements([1.0, 2.0, 3.0], 0.5)\n// false\n// >>> hasCloseElements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n// true\nconst hasCloseElements = (numbers, threshold) => {\n  for (let i = 0; i < numbers.length; i++) {\n    for (let j = 0; j < numbers.length; j++) {\n      if (j != i) {\n        let distance = Math.abs(numbers[i] - numbers[j]);\n        if (distance < threshold) {\n          return true;\n        }\n      }\n    }\n  }\n  return false;\n};\n\n// Test cases"
+      ],
+      [
+        "// Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n// separate those group into separate strings and return the list of those.\n// Separate groups are balanced (each open brace is properly closed) and not nested within each other\n// Ignore any spaces in the input string.\n// >>> separateParenGroups('( ) (( )) (( )( ))')\n// ['()', '(())', '(()())']\nconst separateParenGroups = (paren_string) => {\n  const result = [];\n  let current_string = [];\n  let current_depth = 0;\n\n  for (const c of paren_string) {\n    if ('(' == c) {\n      current_depth += 1;\n      current_string.push(c);\n    } else if (')' == c) {\n      current_depth -= 1;\n      current_string.push(c);\n\n      // If depth is zero, we have a complete group\n      if (current_depth === 0) {\n        result.push(current_string.join(''));\n        current_string = [];\n      }\n    }\n  }\n\n  return result;\n};\n\n// Example usage"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Importing necessary packages\nconst { maxBy } = require('lodash');\n\n/**\n * Parses a string representing multiple groups of nested parentheses separated by spaces.\n * For each group, outputs the deepest level of nesting of parentheses.\n * E.g. (()()) has maximum two levels of nesting while ((())) has three.\n *\n * @param {string} parenString - A string represented multiple groups for nested parentheses separated by spaces.\n * @returns {number[]} An array of numbers representing the deepest level of nesting of parentheses for each group.\n */\nconst parseNestedParens = (parenString) => {\n  const groups = parenString.split(' ');\n  const result = groups.map(group => {\n    let maxDepth = 0;\n    let currentDepth = 0;\n\n    for (const char of group) {\n      if (char === '(') {\n        currentDepth++;\n        maxDepth = Math.max(maxDepth, currentDepth);\n      } else if (char === ')') {\n        currentDepth--;\n      }\n    }\n\n    return maxDepth;\n  });\n\n  return result;\n};\n\n// Example usage:\nconst input = '(()()) ((())) () ((())()())';\nconst output = parseNestedParens(input);"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function rollingMax(numbers) {\n  var running_max, result = [];\n  for (const n of numbers) {\n    if (undefined == running_max) {\n      running_max = n;\n    } else if (n > running_max) {\n      running_max = n;\n    }\n    result.push(running_max);\n  }\n  return result;\n}\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function greatestCommonDivisor(a, b) {\n  while (0 != b) {\n    let temp = a;\n    a = b;\n  }\n  return a;\n}"
+      ],
+      [
+        "function allPrefixes(string) {\n  var result = [];\n  for (let i = 0; i < string.length; i++) {\n    result.push(string.slice(0, 1 + i));\n  }\n  return result;\n}\n\n// Test cases"
+      ],
+      [
+        "/**\n * Input to this function is a string representing musical notes in a special ASCII format.\n * Your task is to parse this string and return list of integers corresponding to how many beats does each\n * not last.\n\n * Here is a legend:\n * 'o' - whole note, lasts four beats\n * 'o|' - half note, lasts two beats\n * '.|' - quater note, lasts one beat\n\n * >>> parseMusic('o o| .| o| o| .| .| .| .| o o')\n * [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n */\n\nconst parseMusic = (music_string) => {\n  const note_map = {'o': 4, 'o|': 2, '.|': 1};\n  return music_string.split(' ').filter(x => '' != x).map(x => note_map[x]);\n};\n\n// Example usage:"
+      ],
+      [
+        "// Find how many times a given substring can be found in the original string. Count overlapping cases.\n// >>> howManyTimes('', 'a')\n// 0\n// >>> howManyTimes('aaa', 'a')\n// 3\n// >>> howManyTimes('aaaa', 'aa')\n// 3\nconst howManyTimes = (string, substring) => {\n  let times = 0;\n  for (let i = 0; i <= string.length - substring.length; i++) {\n    if (substring === string.slice(i, i+substring.length)) {\n      times++;\n    }\n  }\n  return times;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// For a given number n, find the largest number that divides n evenly, smaller than n\n// >>> largestDivisor(15)\n// 5\nconst largestDivisor = (n) => {\n  for (let i = n - 1; i >= 0; i--) {\n    if (0 == n % i)\n      return i;\n  }\n  return 1; // This line should never be reached since we looped from n-1 to 0\n};\n\n// Example usage:"
+      ],
+      [
+        "function factorize(n) {\n  var fact = [];\n  i = 2;\n  while (i <= 1 + Math.sqrt(n)) {\n    if (0 == n % i) {\n      fact.push(i);\n      n = n / i;\n    } else {\n      i++;\n    }\n  }\n  return fact;\n}\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function flipCase(string) {\n  return string.split('')\n          .map(x => (x == x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()))\n}"
+      ],
+      [
+        "// Return true if a given number is prime, and false otherwise.\n// >>> isPrime(6)\n// false\n// >>> isPrime(101)\n// true\n// >>> isPrime(11)\n// true\n// >>> isPrime(13441)\n// true\n// >>> isPrime(61)\n// true\n// >>> isPrime(4)\n// false\n// >>> isPrime(1)\n// false\nfunction isPrime(n) {\n  if (n < 2)\n    return 0;\n  for (let k = 2; k < n - 1; k++) {\n    if (n % k === 0)\n      return 0;\n  }\n  return 1;\n}\n\n// Example usage:"
+      ],
+      [
+        "// Importing necessary package\nconst { sqrt } = Math;\n\n/**\n * Evaluates polynomial with coefficients xs at point x.\n * @param {Array} xs - Coefficients of the polynomial.\n * @param {number} x - Point at which to evaluate the polynomial.\n * @returns {number} The value of the polynomial at point x.\n */\nfunction poly(xs, x) {\n  return xs.reduce((prev, item, index) => {\n    return prev + item * Math.pow(x, index);\n  }, 0);\n}\n\n/**\n * Finds zero of a polynomial given its roots.\n * @param {Array} roots - Roots of the polynomial.\n * @returns {number} The zero point of the polynomial.\n */\nfunction findZero(roots) {\n  var begin = -1.0, end = 1.0;\n  while (poly(roots, begin) * poly(roots, end) > 0) {\n    begin = begin * (2.0);\n    end = end * (2.0);\n  }\n  while (end - begin > 1e-10) {\n    begin = begin * (2.0);\n    end = end * (2.0);\n  }\n  while (Math.abs(begin - end) > 1e-10) {\n    begin -= sqrt(begin * begin - 4 * poly(roots, begin));\n    end += sqrt(end * end - 4 * poly(roots, end));\n  }\n  return begin;\n}\n\n// Example usage"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function fizzBuzz(n) {\n  let ns = [], ans = 0;\n  for (let i = 0; i < n; i++) {\n    if (i % 11 === 0 || i % 13 === 0) {\n      ns.push(i);\n    }\n  }\n  return ns.filter(num => num.toString().includes('7')).length;\n}\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Importing necessary packages\nconst { decode } = require('some-package'); // Replace 'some-package' with the actual package name\n\n/**\n * Encodes a given string by cycling groups of three characters.\n * \n * @param {string} s - The input string to be encoded.\n * @returns {string} The encoded string.\n */\nfunction encodeCyclic(s) {\n  var groups = [], groups2 = [];\n  for (let i = 0; i < Math.floor((2 + s.length) / 3); i++) {\n    groups.push(s.slice(i * 3, Math.min((3 + i * 3), s.length)));\n  }\n  for (const group of groups) {\n    if (3 == group.length)\n      groups2.push(group.slice(1) + group[0]);\n    else\n      groups2.push(group);\n  }\n  return groups2.join('');\n}\n\n/**\n * Decodes a given encoded string by cycling groups of three characters.\n * \n * @param {string} s - The input string to be decoded.\n * @returns {string} The decoded string.\n */\nfunction decodeCyclic(s) {\n  return encodeCyclic(encodeCyclic(s));\n}\n\n// Example usage:"
+      ],
+      [
+        "function primeFib(n) {\n  let a = 0, b = 1, c;\n  while (c < n) {\n    c = a + b;\n    a = b;\n    b = c;\n  }\n  return c;\n}\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Return list with elements incremented by 1.\n  >>> incrList([1, 2, 3])\n  [2, 3, 4]\n  >>> incrList([5, 3, 5, 2, 3, 3, 9, 0, 123])\n  [6, 4, 6, 3, 4, 4, 10, 1, 124]"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function triangleArea(a, h) {\n  return h * a / 2.0;\n}\n\n// Test cases"
+      ],
+      [
+        "function fib4(n) {\n  var results = [0, 0, 2, 0];\n  if (n < 4)\n    return results[n];\n  for (let i = 4; i < 1 + n; i++) {\n    results[i] = results[i - 1] + results[i - 2] + results[i - 3] + results[i - 4];\n  }\n  return results[n];\n}\n\n// Test cases"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function modp(n, p) {\n  var ret = 1;\n  for (let i = 0; i < n; i++)\n    ret = (ret * 2) % p;\n  return ret;\n}\n\n// Test cases"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Function to check if two words have the same characters\nfunction sameChars(s0, s1) {\n  // Convert strings to sets to remove duplicates and sort characters\n  const set1 = new Set(s1);\n  const set2 = new Set(s0);\n\n  // Convert sorted sets back to arrays\n  const array1 = Array.from(set1);\n  const array2 = Array.from(set2);\n\n  // Sort both arrays\n  array1.sort();\n  array2.sort();\n\n  // Compare the sorted arrays\n  return array1.toString() === array2.toString();\n}\n\n// Test cases"
+      ],
+      [
+        "function fib(n) {\n  if (n === 0) return 0;\n  if (n === 1) return 1;\n  let a = 0, b = 1, c;\n  for (let i = 2; i <= n; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n  }\n  return b;\n}\n\n// Test cases"
+      ],
+      [
+        "/**\n * Determine if every opening bracket has a corresponding closing bracket.\n *\n * @param {string} brackets - A string of \"<\" and \">\".\n * @return {boolean} - True if every opening bracket has a corresponding closing bracket, false otherwise.\n */\nconst correctBracketing = (brackets) => {\n  let depth = 0;\n  for (const b of brackets) {\n    if (b === \"<\") {\n      depth++;\n    } else if (b === \">\") {\n      depth--;\n      if (depth < 0) {\n        // More closing brackets than opening ones\n        return false;\n      }\n    }\n  }\n  // If depth is zero, all opening brackets have matching closing brackets\n  return depth === 0;\n};\n\n// Test cases"
+      ],
+      [
+        "/**\n * Return true is list elements are monotonically increasing or decreasing.\n * >>> monotonic([1, 2, 4, 20])\n * true\n * >>> monotonic([1, 20, 4, 10])\n * false\n * >>> monotonic([4, 1, 0, -10])\n * true\n */\n\nconst monotonic = (l) => {\n  var sort1 = [...l].sort((a, b) => a - b);\n  var sort2 = [...l].sort((a, b) => b - a);\n  return JSON.stringify(sort1) === JSON.stringify(l) || JSON.stringify(sort2) === JSON.stringify(l);\n};"
+      ],
+      [
+        "function largestPrimeFactor(n) {\n  var isPrime = function (k) {\n    if (k < 2)\n      return 0;\n    for (let i = 2; i < k - 1; i++)\n      if (k % i == 0)\n        return 0;\n    return 1; // k is prime\n  };\n\n  for (var i = 2; i <= Math.sqrt(n); i++) {\n    while (n % i === 0) {\n      n /= i;\n    }\n  }\n\n  return n !== 1 ? n : 1; // If n is a prime number greater than 2, return it\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function correctBracketing(brackets) {\n  let depth = 0;\n  for (const b of brackets) {\n    if (b == '(') {\n      depth++;\n    } else if (b == ')') {\n      depth--;\n      if (depth < 0) {\n        return false; // A closing bracket appeared without a matching opening bracket\n      }\n    }\n  }\n  return depth === 0; // True if every opening bracket has a corresponding closing bracket\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// The FibFib number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n//   fibfib(0) == 0\n//   fibfib(1) == 0\n//   fibfib(2) == 1\n//   fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).\n// Please write a function to efficiently compute the n-th element of the fibfib number sequence.\n// >>> fibfib(1)\n// 0\n// >>> fibfib(5)\n// 4\n// >>> fibfib(8)\n// 24\nconst fibfib = (n) => {\n  if (0 == n || 1 == n)\n    return 0;\n  if (2 == n)\n    return 1;\n\n  let a = 0, b = 0, c = 1, d = 0;\n  for (let i = 3; i <= n; i++) {\n    d = a + b + c;\n    a = b;\n    b = c;\n    c = d;\n  }\n  return d;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Task\n// Write a function that takes a string as input and returns the sum of the upper characters only'\n// ASCII codes.\n\n// Examples:\n// digitSum(\"\") => 0\n// digitSum(\"abAB\") => 131\n// digitSum(\"abcCd\") => 67\n// digitSum(\"helloE\") => 69\n// digitSum(\"woArBld\") => 131\n// digitSum(\"aAaaaXa\") => 153\n\nconst digitSum = (s) => {\n  if ('' == s) return 0;\n\n  let sum = 0;\n  for (let char of s) {\n    if (char >= 'A' && char <= 'Z') {\n      sum += char.charCodeAt(0);\n    }\n  }\n  return sum;\n};\n\n// Test cases"
+      ],
+      [
+        "// Given an array representing a branch of a tree that has non-negative integer nodes\n// Your task is to pluck one of the nodes and return it.\n// The plucked node should be the node with the smallest even value.\n// If multiple nodes with the same smallest even value are found return the node that has smallest index.\n\n// The plucked node should be returned in a list, [ smallest_value, its_index ],\n// If there are no even values or the given array is empty, return [].\n\n// Example 1:\n// Input: [4,2,3]\n// Output: [2, 1]\n// Explanation: 2 has the smallest even value, and 2 has the smallest index.\n\n// Example 2:\n// Input: [1,2,3]\n// Output: [2, 1]\n// Explanation: 2 has the smallest even value, and 2 has the smallest index.\n\n// Example 3:\n// Input: []\n// Output: []\n\n// Example 4:\n// Input: [5, 0, 3, 0, 4, 2]\n// Output: [0, 1]\n// Explanation: 0 is the smallest value, but there are two zeros,\n//                   so we will choose the first zero, which has the smallest index.\n\nconst pluck = (arr) => {\n  if (0 == arr.length) return [];\n  var evens = arr.filter(x => 0 == x % 2);\n  if (0 == evens.length) return [];\n\n  var smallestEven = null;\n  var smallestIndex = -1;\n\n  evens.forEach((value, index) => {\n    if (value % 2 === 0 && (smallestEven === null || value < smallestEven)) {\n      smallestEven = value;\n      smallestIndex = index;\n    }\n  });\n\n  return smallestEven !== null ? [smallestEven, smallestIndex] : [];\n};\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "/**\n * Given an array arr of integers, find the minimum number of elements that\n * need to be changed to make the array palindromic. A palindromic array is an array that\n * is read the same backwards and forwards. In one change, you can change one element to any other element.\n\n * For example:\n * smallestChange([1,2,3,5,4,7,9,6]) == 4\n * smallestChange([1, 2, 3, 4, 3, 2, 2]) == 1\n * smallestChange([1, 2, 3, 2, 1]) == 0\n */\n\nconst smallestChange = (arr) => {\n  let left = 0;\n  let right = arr.length - 1;\n\n  while (left < right) {\n    if (arr[left] !== arr[right]) {\n      // If the elements at the two pointers are different, increment the answer\n      ans++;\n    }\n    left++;\n    right--;\n  }\n\n  return ans;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Write a function that returns true if the given number is the multiplication of 3 prime numbers\n// and false otherwise.\n// Knowing that (a) is less than 100.\n// Example:\n// isMultiplyPrime(30) == true\n// 30 = 2 * 3 * 5\nconst isMultiplyPrime = (a) => {\n  const isPrime = function (n) {\n    for (let j = 2; j < n; j++)\n      if (n % j == 0)\n        return 0;\n    return 1;\n  };\n\n  for (let i = 2; i < 101; i++) {\n    if (isPrime(i) && isPrime(a / i)) {\n      return true;\n    }\n  }\n\n  return false;\n};\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Checks if a number x is a simple power of n.\n * @param {number} x - The number to check.\n * @param {number} n - The base number.\n * @returns {boolean} - True if x is a simple power of n, false otherwise.\n */\nfunction isSimplePower(x, n) {\n  if (n === 1) {\n    return (x === 1);\n  }\n  var power = 1;\n  while (power < x) {\n    power *= n;\n  }\n  return power === x;\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Check if a given integer is a perfect cube.\n * \n * @param {number} a - The integer to check.\n * @returns {boolean} - True if a is a perfect cube, false otherwise.\n */\nconst iscube = (a) => {\n  a = Math.abs(a);\n  const root = Math.round(Math.pow(a, 1.0 / 3.0));\n  return (root * root * root === a);\n};\n\n// Example usage:"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Write a function that takes a string and returns true if the string\n//  length is a prime number or false otherwise\n//  Examples\n//  primeLength('Hello') == true\n//  primeLength('abcdcba') == true\n//  primeLength('kittens') == true\n//  primeLength('orange') == false\nfunction primeLength(string) {\n  let len = string.length;\n  if (len == 1 || len == 0) { return 0 }\n  for (let i = 2; i * i <= len; i++) {\n    if (len % i === 0) { return false; }\n  }\n  return true;\n}\n\n// Test cases"
+      ],
+      [
+        "function startsOneEnds(n) {\n  if (1 == n) { return 1 }\n  let t = 18\n  for (let i = 2; i < n; i++) {\n    t *= 10\n  }\n  let count = 18 * Math.pow(9, n - 2)\n  if (n % 2 === 0) {\n    count -= 18 * Math.pow(9, n - 4)\n  }\n  return count;\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Given a positive integer N, return the total sum of its digits in binary.\n *\n * Example\n * For N = 1000, the sum of digits will be 1 the output should be \"1\".\n * For N = 150, the sum of digits will be 6 the output should be \"110\".\n * For N = 147, the sum of digits will be 12 the output should be \"1100\".\n *\n * Variables:\n * @N integer\n * Constraints: 0 ≤ N ≤ 10000.\n * Output:\n *       a string of binary number\n */\nconst solve = (N) => {\n  let t = 0;\n  while (N > 0) {\n    t = t + (N % 10);\n  }\n  return `1${t.toString(2)}`;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Given a non-empty list of integers lst. add the even elements that are at odd indices.\n// Examples:\n// add([4, 2, 6, 7]) ==> 2\nconst add = (lst) => {\n  let t = 0;\n  for (let i = 1; i < lst.length; i += 2) {\n    if (lst[i] % 2 == 0) {\n      t = t + (lst[i]);\n    }\n  }\n  return t;\n};"
+      ],
+      [
+        "/**\n * Write a function that takes a string and returns an ordered version of it.\n * Ordered version of string, is a string where all words (separated by space)\n * are replaced by a new word where all the characters arranged in\n * ascending order based on ascii value.\n * Note: You should keep the order of words and blank spaces in the sentence.\n\n * For example:\n * antiShuffle('Hi') returns 'Hi'\n * antiShuffle('hello') returns 'ehllo'\n * antiShuffle('Hello World!!!') returns 'Hello !!!Wdlor'\n */\nconst antiShuffle = (s) => {\n  return s\n    .split(/\\s+/)\n    .map(word => word.split('').sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0)).join(''))\n    .join(' ');\n};\n\n// Example usage:"
+      ],
+      [
+        "``javascript\n// Import necessary packages\n// (No additional packages are required for this task)\n\n/**\n * Given a 2D data, as a nested list, which is similar to matrix, however, unlike matrices,\n * each row may contain a different number of columns.\n * Given lst, and integer x, find integers x in the list,\n * and return list of tuples, [(x1, y1), (x2, y2) ...] such that\n * each tuple is a coordinate - (row, columns), starting with 0.\n * Sort coordinates initially by rows in ascending order.\n * Also, sort coordinates of the row by columns in descending order.\n * \n * Examples:\n * getRow([\n *   [1,2,3,4,5,6],\n *   [1,2,3,4,1,6],\n *   [1,2,3,4,5,1]\n * ], 1) == [(0, 0), (1, 4), (1, 0), (2, 5), (2, 0)]\n * getRow([], 1) == []\n * getRow([[], [1], [1, 2, 3]], 3) == [(2, 2)]\n */\nconst getRow = (lst, x) => {\n  // Create a new array to store the result\n  let result = [];\n  \n  // Iterate over each row in the list\n  for (let i = 0; i < lst.length; i++) {\n    // Iterate over each element in the row\n    for (let j = lst[i].length - 1; j >= 0; j--) {\n      // Check if the current element matches the target value x\n      if (x === lst[i][j]) {\n        // Add the tuple (i, j) to the result array\n        result.push([i, j]);\n      }\n    }\n  }\n  \n  // Sort the result array by rows in ascending order and then by columns in descending order\n  result.sort((a, b) => {\n    if (a[0] === b[0]) {\n      return b[1] - a[1]; // Descending order of columns\n    }\n    return a[0] - b[0]; // Ascending order of rows\n  });\n  \n  return result;\n};\n\n// Example usage"
+      ],
+      [
+        "function sortArray(array) {\n  let arr = array\n  let tot = arr[0] + arr[arr.length-1]\n  for (let j = 0; j < arr.length; j++) {\n    let ind = j\n    for (let k = 1 + j; k < arr.length; k++) {\n      if ((1 == tot % 2 && arr[k] < arr[ind]) || (0 == tot % 2 && arr[k] > arr[ind])) {\n        let temp = arr[j]\n        arr[j] = arr[k]\n        arr[k] = temp\n      }\n    }\n  }\n  return arr\n}\n\n// Example usage:"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "/**\n * Create a function that takes 3 numbers.\n * Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n * Returns false in any other cases.\n * Examples\n * anyInt(5, 2, 7) ➞ true\n * anyInt(3, 2, 2) ➞ false\n * anyInt(3, -2, 1) ➞ true\n * anyInt(3.6, -2.2, 2) ➞ false\n */\nfunction anyInt(x, y, z) {\n  // Check if all numbers are integers\n  if (!Number.isInteger(x) || !Number.isInteger(y) || !Number.isInteger(z)) {\n    return false;\n  }\n\n  // Check if one number is the sum of the other two\n  if (x + y === z || y + z === x || y + z === x) {\n    return true;\n  }\n\n  // If none of the above conditions are met, return false\n  return false;\n}\n\n// Test cases"
+      ],
+      [
+        "// Import necessary package\nconst vowels = 'aeiouAEIOU';\n\n/**\n * Encodes a message by swapping case and replacing vowels with the next letter in the alphabet.\n * @param {string} message - The message to encode.\n * @return {string} The encoded message.\n */\nfunction encode(message) {\n  let encodedMessage = '';\n  for (let i = 0; i < message.length; i++) {\n    let char = message[i];\n    if (vowels.includes(char)) {\n      // Find the next vowel in the alphabet\n      let nextVowelIndex = vowels.indexOf(char) + 2;\n      if (nextVowelIndex >= vowels.length) {\n        nextVowelIndex = 0;\n      }\n      encodedMessage += String.fromCharCode(nextVowelIndex);\n    } else {\n      // Swap case\n      encodedMessage += char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();\n    }\n  }\n  return encodedMessage;\n}\n\n// Example usage"
+      ],
+      [
+        "``javascript\n// Importing necessary packages\n// (No external packages are required for this task)\n\n/**\n * Finds the largest prime value in the list and returns the sum of its digits.\n * \n * @param {number[]} lst - A list of integers.\n * @return {number} The sum of the digits of the largest prime number in the list.\n */\nfunction largestPrimeSum(lst) {\n  let largestPrime = -1;\n  for (let num of lst) {\n    if (num > largestPrime && isPrime(num)) {\n      largestPrime = num;\n    }\n  }\n  if (largestPrime === -1) {\n    return 0;\n  }\n  return sumOfDigits(largestPrime);\n}\n\n/**\n * Checks if a number is prime.\n * \n * @param {number} num - The number to check.\n * @return {boolean} True if the number is prime, false otherwise.\n */\nfunction isPrime(num) {\n  if (num <= 1) return false;\n  if (num <= 3) return true;\n  if (num % 2 === 0 || num % 3 === 0) return false;\n  for (let i = 5; i * i <= num; i += 6) {\n    if (num % i === 0 || num % (i + 2) === 0) return false;\n  }\n  return true;\n}\n\n/**\n * Sums the digits of a number.\n * \n * @param {number} num - The number to sum the digits of.\n * @return {number} The sum of the digits.\n */\nfunction sumOfDigits(num) {\n  let sum = 0;\n  while (num > 0) {\n    sum += num % 10;\n    num = Math.floor(num / 10);\n  }\n  return sum;\n}\n\n// Example usage"
+      ],
+      [
+        "/**\n * Given a dictionary, return true if all keys are strings in lower \n *  case or all keys are strings in upper case, else return false.\n * The function should return false is the given dictionary is empty.\n * Examples:\n * checkDictCase({\"a\":\"apple\", \"b\":\"banana\"}) should return true.\n * checkDictCase({\"a\":\"apple\", \"A\":\"banana\", \"B\":\"banana\"}) should return false.\n * checkDictCase({\"a\":\"apple\", 8:\"banana\", \"a\":\"apple\"}) should return false.\n * checkDictCase({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}) should return false.\n * checkDictCase({\"STATE\":\"NC\", \"ZIP\":\"12345\" }) should return true.\n */\nconst checkDictCase = (dict) => {\n  if (Object.keys(dict).length === 0) {\n    return false;\n  }\n\n  const lowerCase = new Set();\n  const upperCase = new Set();\n\n  for (let key in dict) {\n    if (typeof dict[key] === 'string') {\n      lowerCase.add(key.toLowerCase());\n      upperCase.add(key.toUpperCase());\n    }\n  }\n\n  return lowerCase.size === upperCase.size;\n};\n\n// Example usage:"
+      ],
+      [
+        "function countUpTo(n) {\n  let t = [];\n  for (let i = 2; i < n; i++) {\n    if (isPrime(i)) {\n      t.push(i);\n    }\n  }\n  return t;\n}\n\nfunction isPrime(num) {\n  if (num <= 1) return false;\n  if (num <= 3) return true;\n  if (num % 2 === 0 || num % 3 === 0) return false;\n  for (let i = 5; i * i <= num; i += 6) {\n    if (num % i === 0 || num % (i + 2) === 0) return false;\n  }\n  return true;\n}\n\n// Example usage:"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "/**\n * Create a function that takes a value (string) representing a number\n * and returns the closest integer to it. If the number is equidistant\n * from two integers, round it away from zero.\n * Examples\n * >>> closestInteger(\"10\")\n * 10\n * >>> closestInteger(\"15.3\")\n * 15\n * Note:\n * Rounding away from zero means that if the given number is equidistant\n * from two integers, the one you should return is the one that is the\n * farthest from zero. For example closestInteger(\"14.5\") should\n * return 15 and closestInteger(\"-14.5\") should return -15.\n */\nconst closestInteger = (value) => {\n  value = Number(value)\n  let t = value % 1\n  if (t < 0.5 && t > -0.5) { value = value - (t) }\n  if (value > 0) {\n    if (t >= 0.5) { return Math.ceil(value); } else { return Math.floor(value); }\n  } else {\n    if (t <= -0.5) { return Math.ceil(value); } else { return Math.floor(value); }\n  }\n};\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// This function takes two positive numbers x and y and returns the\n// biggest even integer number that is in the range [x, y] inclusive. If \n// there's no such number, then the function should return -1.\n\nconst chooseNum = (x, y) => {\n  for (let i = y; i >= x; i--) {\n    if (0 == i % 2) {return i }\n  }\n  return -1;\n};\n\n// Example usage:"
+      ],
+      [
+        "function roundedAvg(n, m) {\n  if (n > m) return -1;\n  let k = (n + m) / 2;\n  if (0 != k % 1) { k = (1 + n + m) / 2 }\n  return Math.round(k);\n}\n\n// Example usage:"
+      ],
+      [
+        "// Given a list of positive integers x. return a sorted list of all \n//  elements that hasn't any even digit.\n\n// Note: Returned list should be sorted in increasing order.\n// For example:\n// >>> uniqueDigits([15, 33, 1422, 1])\n// [1, 15, 33]\n// >>> uniqueDigits([152, 323, 1422, 10])\n// []\n\nfunction uniqueDigits(x) {\n  // Helper function to check if a number has any even digits\n  const hasEvenDigit = (num) => {\n    while (num > 0) {\n      const digit = num % 10;\n      if (digit % 2 === 0) {\n        return true;\n      }\n      num = Math.floor(num / 10);\n    }\n    return false;\n  };\n\n  // Filter out numbers with even digits and sort the result\n  return x.filter(num => !hasEvenDigit(num)).sort((a, b) => a - b);\n}\n\n// Example usage:"
+      ],
+      [
+        "// Import necessary packages here\n// (In this case, no additional packages are required)\n\n/**\n * Sorts integers between 1 and 9 inclusive, reverses the resulting array,\n * and replaces each digit by its corresponding name from \"One\", \"Two\", \"Three\",\n * \"Four\", \"Five\", \"Six\", \"Seven\", \"Eight\", \"Nine\".\n * @param {number[]} arr - The array of integers to process.\n * @returns {string[]} A list of strings representing the sorted and modified array.\n */\nfunction processArray(arr) {\n  // Sort the array\n  const sortedArr = arr.sort((a, b) => a - b);\n\n  // Reverse the sorted array\n  const reversedArr = sortedArr.reverse();\n\n  // Replace each digit with its corresponding name\n  const result = reversedArr.map(num => {\n    switch (num) {\n      case 1:\n        return \"One\";\n      case 2:\n        return \"Two\";\n      case 3:\n        return \"Three\";\n      case 4:\n        return \"Four\";\n      case 5:\n        return \"Five\";\n      case 6:\n        return \"Six\";\n      case 7:\n        return \"Seven\";\n      case 8:\n        return \"Eight\";\n      case 9:\n        return \"Nine\";\n      default:\n        throw new Error(\"Invalid input: Number out of range\");\n    }\n  });\n\n  return result;\n}\n\n// Example usage\nconst arr = [2, 1, 1, 4, 5, 8, 2, 3];\n\n\nconst emptyArr = [];\n\n\nconst strangeNumberArr = [1, -1, 55];"
+      ],
+      [
+        "function f(n) {\n  let f = 1;\n  let p = 0;\n  let k = [];\n  for (let i = 1; i <= n; i = i + 1) {\n    p = p + (i);\n    if (i % 2 === 0) {\n      f = f * p;\n    } else {\n      k.push(p);\n    }\n  }\n  return k;\n}"
+      ],
+      [
+        "function evenOddPalindrome(n) {\n  let e = 0;\n  let o = 0;\n  for (let i = 1; i <= n; i++) {\n    let k = i.toString();\n    let p = 1;\n    for (let j = 0; j < k.length; j++) {\n      if (k[k.length - j - 1] != k[j]) {\n        p *= 2;\n      }\n    }\n    if (p % 2 === 0) {\n      e++;\n    } else {\n      o++;\n    }\n  }\n  return [e, o];\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Write a function countNums which takes an array of integers and returns\n * the number of elements which has a sum of digits > 0.\n * If a number is negative, then its first signed digit will be negative:\n * e.g. -123 has signed digits -1, 2, and 3.\n * >>> countNums([]) == 0\n * >>> countNums([-1, 11, -11]) == 1\n * >>> countNums([1, 1, 2]) == 3\n */\nconst countNums = (arr) => {\n  let p = 0\n  for (let i = 0; i < arr.length; i = i + 1) {\n    let h = arr[i];\n    if (h > 0) {\n      p = p + 1;\n      continue;\n    }\n    // Convert the number to a string to iterate over each digit\n    const numStr = Math.abs(h).toString();\n    // Calculate the sum of the digits\n    const sum = numStr.split('').reduce((acc, digit) => acc + parseInt(digit, 10), 0);\n    // Check if the sum is greater than 0\n    if (sum > 0) {\n      p++;\n    }\n  }\n  return p;\n};"
+      ],
+      [
+        "// We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n// numbers in the array will be randomly ordered. Your task is to determine if\n// it is possible to get an array sorted in non-decreasing order by performing \n// the following operation on the given array:\n// You are allowed to perform right shift operation any number of times.\n// One right shift operation means shifting all elements of the array by one\n// position in the right direction. The last element of the array will be moved to\n// the starting position in the array i.e. 0th index. \n\n// If it is possible to obtain the sorted array by performing the above operation\n// then return true else return false.\n// If the given array is empty then return true.\n\n// Note: The given list is guaranteed to have unique elements.\n\n// For Example:\n// moveOneBall([3, 4, 5, 1, 2]) ==> true\n// Explanation: By performin 2 right shift operations, non-decreasing order can\n//               be achieved for the given array.\n// moveOneBall([3, 5, 4, 1, 2]) ==> false\n// Explanation:It is not possible to get non-decreasing order for the given\n//              array by performing any number of right shift operations.\nfunction moveOneBall(arr) {\n  if (arr.length === 0) return true;\n\n  let k = 0;\n  let len = arr.length;\n  for (let i = 0; i < len; i++) {\n    let t = 1;\n    for (let j = 1; j < len; j++) {\n      if (arr[j] < arr[j - 1]) {\n        t = 0;\n      } else {\n        if (t === 1) {\n          k++;\n        }\n      }\n    }\n  }\n\n  return k >= len / 2;\n}\n\n// Test cases"
+      ],
+      [
+        "/**\n * Determines if it is possible to exchange elements between two lists to make one list of only even numbers.\n * @param {number[]} lst1 - The first list of numbers.\n * @param {number[]} lst2 - The second list of numbers.\n * @return {string} - \"YES\" if it's possible to make all elements of lst1 even, otherwise \"NO\".\n */\nfunction exchange(lst1, lst2) {\n  let k = lst1.length;\n  let t = 0;\n  for (let i = 0; i < lst1.length; i = i + 1) {\n    if (lst1[i] % 2 == 0) { t = t + 1 }\n  }\n  // If there are more even numbers in lst1 than in lst2, it's impossible to make all elements of lst1 even\n  if (t > lst2.length) {\n    return \"NO\";\n  }\n  // Count the number of odd numbers in lst2\n  let oddCountInLst2 = 0;\n  for (let num of lst2) {\n    if (num % 2 !== 0) { oddCountInLst2++; }\n  }\n  // If there are enough odd numbers in lst2 to replace all even numbers in lst1, it's possible\n  return oddCountInLst2 >= k / 2 ? \"YES\" : \"NO\";\n}"
+      ],
+      [
+        "function histogram(test) {\n  let d = {};\n  let t = test.split(/\\s/);\n\n  if ('' == test) { t = []; }\n\n  for (m in t) {\n    if (t[m] in d) {\n      d[t[m]]++;\n    }\n    else {\n      d[t[m]] = 1;\n    }\n  }\n\n  let maxCount = 0;\n  let result = {};\n\n  for (let m in d) {\n    if (d[m] > maxCount) {\n      maxCount = d[m];\n      result[m] = d[m];\n    }\n  }\n\n  return result;\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Task\n * We are given two strings s and c, you have to delete all the characters in s that are equal to any character in c\n * then check if the result string is palindrome.\n * A string is called palindrome if it reads the same backward as forward.\n * You should return a tuple containing the result string and true/false for the check.\n * Example\n * For s = \"abcde\", c = \"ae\", the result should be ('bcd',false)\n * For s = \"abcdef\", c = \"b\"  the result should be ('acdef',false)\n * For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',true)\n */\n\nconst reverseDelete = (s, c) => {\n  let t = '';\n  for (let i = 0; i < s.length; i++) {\n    let y = 1;\n    for (let j = 0; j < c.length; j = j + 1) {\n      if (s[i] == c[j]) {\n        y = 0;\n      }\n    }\n    if (y == 1) {\n      t += s[i];\n    }\n  }\n  let reversedT = t.split('').reverse().join('');\n  return [reversedT, t === reversedT];\n};\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function maxFill(grid, capacity) {\n  let p = 0;\n  for (let i = 0; i < grid.length; i++) {\n    let m = 0;\n    for (let j = 0; j < grid[i].length; j++) {\n      if (1 == grid[i][j]) { m++; }\n      // Calculate how many more buckets are needed to fill the current well\n      let additionalBuckets = Math.ceil((m + capacity - 1) / capacity);\n      // Update the total number of buckets used\n      p += additionalBuckets;\n    }\n  }\n  return p;\n}"
+      ],
+      [
+        "function sortArray(arr) {\n  let p = arr;\n  for (let j = 0; j < p.length; j = j + 1) {\n    let ind = j;\n    for (let k = j + 1; k < p.length; k = k + 1) {\n      let w1 = p[ind].toString(2);\n      let f1 = 0;\n      for (let u = 0; u < w1.length; u = u + 1) {\n        if (w1[u] == '1') { f1 = f1 + 1 }\n      }\n      let w2 = p[k].toString(2);\n      if (f1 > w2) {\n        [p[ind], p[k]] = [p[k], p[ind]];\n      } else if (f1 === w2) {\n        if (p[ind] < p[k]) {\n          [p[ind], p[k]] = [p[k], p[ind]];\n        }\n      }\n    }\n  }\n  return p;\n}\n\n// Test cases"
+      ],
+      [
+        "function selectWords(s, n) {\n  // Split the string into words\n  let t = s.split(/\\s+/);\n  \n  // Check if the string is empty\n  if (t.length === 0) {\n    return [];\n  }\n  \n  // Initialize an array to store words with exactly n consonants\n  let result = [];\n  \n  // Iterate over each word in the string\n  for (let i = 0; i < t.length; i++) {\n    let word = t[i];\n    \n    // Count the number of consonants in the word\n    let consonantCount = 0;\n    for (let char of word) {\n      if (char >= 'a' && char <= 'z') {\n        consonantCount++;\n      }\n    }\n    \n    // If the word has exactly n consonants, add it to the result array\n    if (consonantCount === n) {\n      result.push(word);\n    }\n  }\n  \n  return result;\n}\n\n// Example usage:"
+      ],
+      [
+        "function getClosestVowel(word) {\n  for (let i = word.length - 2; i > 0; i--) {\n    if (\n      !('a' != word[i] && 'e' != word[i] && 'i' != word[i] && 'o' != word[i] && 'u' != word[i] && 'A' != word[i] &&\n        'U' != word[i] && 'O' != word[i] && 'I' != word[i] && 'E' != word[i])\n      &&\n      ('a' != word[1 + i] && 'e' != word[1 + i] && 'i' != word[1 + i] && 'o' != word[1 + i] && 'u' != word[1 + i] && 'A' != word[1 + i] &&\n        'U' != word[1 + i] && 'O' != word[1 + i] && 'I' != word[1 + i] && 'E' != word[1 + i])\n    ) {\n      return word[i];\n    }\n  }\n  return '';\n}\n\n// Test cases"
+      ],
+      [
+        "// Import necessary packages here if any (not applicable for this task)\n\n/**\n * Checks if it's possible to concatenate two strings in some order to form a good string.\n * A string is considered good if all parentheses are balanced.\n * \n * @param {string[]} pairs - An array containing two strings consisting of '(' and ')'.\n * @returns {string} - 'Yes' if a good string can be formed, 'No' otherwise.\n */\nfunction matchParens(pairs) {\n    const [str1, str2] = pairs;\n    const len1 = str1.length;\n    const len2 = str2.length;\n\n    // Check if concatenating in one order results in a balanced string\n    if (len1 + len2 === 2 * len1) {\n        // If the total length is even, we can concatenate in either order\n        return 'Yes';\n    } else {\n        // Otherwise, it's impossible to form a good string\n        return 'No';\n    }\n}\n\n// Example usage"
+      ],
+      [
+        "/**\n * Given an array arr of integers and a positive integer k, return a sorted list \n * of length k with the maximum k numbers in arr.\n * \n * Example 1:\n * Input: arr = [-3, -4, 5], k = 3\n * Output: [-4, -3, 5]\n * \n * Example 2:\n * Input: arr = [4, -4, 4], k = 2\n * Output: [4, 4]\n * \n * Example 3:\n * Input: arr = [-3, 2, 1, 2, -1, -2, 1], k = 1\n * Output: [2]\n * \n * Note:\n * 1. The length of the array will be in the range of [1, 1000].\n * 2. The elements in the array will be in the range of [-1000, 1000].\n * 3. 0 <= k <= len(arr)\n */\nconst maximum = (arr, k) => {\n  // Sort the array in descending order\n  arr.sort((a, b) => b - a);\n  \n  // Take the first k elements from the sorted array\n  const result = arr.slice(0, k);\n  \n  // Return the result\n  return result;\n};"
+      ],
+      [
+        "function solution(lst) {\n  let p = 0;\n  for (let i = 0; i < lst.length; i += 2) {\n    if (1 == lst[i]) {\n      p += lst[i];\n    }\n  }\n  return p;\n}\n\n// Example usage:"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Importing necessary packages\n// (In this case, no external packages are required)\n\n/**\n * Given a positive integer n, return a sorted list that has the odd numbers in collatz sequence.\n *\n * @param {number} n - The positive integer to process.\n * @returns {Array} A sorted list of odd numbers in the Collatz sequence of n.\n */\nconst getOddCollatz = (n) => {\n  let p = [];\n  let t = n;\n  while (1) {\n    let u = 0;\n    for (let i = 0; i < p.length; i++) {\n      if (p[i] == t) {\n        u = 1;\n        break;\n      }\n    }\n    if (1 == u) { break }\n    p.push(t);\n    if (t % 2 !== 0) {\n      t = 3 * t + 1;\n    } else {\n      t = Math.floor(t / 2);\n    }\n  }\n  // Sorting the array of odd numbers\n  p.sort((a, b) => a - b);\n  return p;\n};\n\n// Example usage"
+      ],
+      [
+        "``javascript\n// You have to write a function which validates a given date string and\n// returns true if the date is valid otherwise false.\n// The date is valid if all of the following rules are satisfied:\n// 1. The date string is not empty.\n// 2. The number of days is not less than 1 or higher than 31 days for months 1,3,5,7,8,10,12. And the number of days is not less than 1 or higher than 30 days for months 4,6,9,11. And, the number of days is not less than 1 or higher than 29 for the month 2.\n// 3. The months should not be less than 1 or higher than 12.\n// 4. The date should be in the format: mm-dd-yyyy\n\nconst validDate = (date) => {\n  // Check if the date string is empty\n  if (date.trim() === \"\") {\n    return false;\n  }\n\n  // Split the date string into month, day, and year\n  const [month, day, year] = date.split('-');\n\n  // Check if the date string has the correct format\n  if (month.length !== 2 || day.length !== 2 || year.length !== 4) {\n    return false;\n  }\n\n  // Convert month and day to numbers\n  const monthNum = parseInt(month, 10);\n  const dayNum = parseInt(day, 10);\n\n  // Check if the month is valid\n  if (monthNum < 1 || monthNum > 12) {\n    return false;\n  }\n\n  // Check if the day is valid\n  if (dayNum < 1 || dayNum > 31) {\n    return false;\n  }\n\n  // Check if the month is February\n  if (monthNum === 2) {\n    // Check if the year is divisible by 4\n    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {\n      return true;\n    } else {\n      return false;\n    }\n  }\n\n  // Check if the month is not February\n  return true;\n};\n\n// Example usage:"
+      ],
+      [
+        "``javascript\n// Given a list of numbers, return whether or not they are sorted\n// in ascending order. If list has more than 1 duplicate of the same\n// number, return false. Assume no negative numbers and only integers.\n// Examples\n// isSorted([5]) ➞ true\n// isSorted([1, 2, 3, 4, 5]) ➞ true\n// isSorted([1, 3, 2, 4, 5]) ➞ false\n// isSorted([1, 2, 3, 4, 5, 6]) ➞ true\n// isSorted([1, 2, 3, 4, 5, 6, 7]) ➞ true\n// isSorted([1, 3, 2, 4, 5, 6, 7]) ➞ false\n// isSorted([1, 2, 2, 3, 3, 4]) ➞ true\n// isSorted([1, 2, 2, 2, 3, 4]) ➞ false\nconst isSorted = (lst) => {\n  if (lst.length == 0) return 1;\n  let dup = 1;\n  let pre = lst[0];\n  for (let i = 1; i < lst.length; i++) {\n    if (lst[i] < pre) { return 0 }\n    if (lst[i] == pre) {\n      if (dup > 1) return 0;\n      dup++;\n    }\n  }\n  return 1;\n};\n\n// Test cases"
+      ],
+      [
+        "function prodSigns(arr) {\n  if (0 === arr.length) return null;\n\n  let n = 1;\n  let s = 0;\n  for (let i = 0; i < arr.length; i++) {\n    const num = Math.abs(arr[i]);\n    n *= num;\n    s += num;\n  }\n\n  return n === 0 ? 0 : s;\n}"
+      ],
+      [
+        "``javascript\n/**\n * Given a grid with N rows and N columns (N >= 2) and a positive integer k, \n * each cell of the grid contains a value. Every integer in the range [1, N * N]\n * inclusive appears exactly once on the cells of the grid.\n\n * You have to find the minimum path of length k in the grid. You can start\n * from any cell, and in each step you can move to any of the neighbor cells,\n * in other words, you can go to cells which share an edge with you current\n * cell.\n * Please note that a path of length k means visiting exactly k cells (not\n * necessarily distinct).\n * You CANNOT go off the grid.\n * A path A (of length k) is considered less than a path B (of length k) if\n * after making the ordered lists of the values on the cells that A and B go\n * through (let's call them lst_A and lst_B), lst_A is lexicographically less\n * than lst_B, in other words, there exist an integer index i (1 <= i <= k)\n * such that lst_A[i] < lst_B[i] and for any j (1 <= j < i) we have\n * lst_A[j] = lst_B[j].\n * It is guaranteed that the answer is unique.\n * Return an ordered list of the values on the cells that the minimum path go through.\n\n * Examples:\n\n      Input: grid = [ [1,2,3], [4,5,6], [7,8,9]], k = 3\n      Output: [1, 2, 1]\n\n      Input: grid = [ [5,9,3], [4,1,6], [7,8,2]], k = 1\n      Output: [1]\n */\nconst minPath = (grid, k) => {\n  const m = grid.length;\n  const n = grid[0].length;\n\n  // Create a matrix to store the distance to reach each cell\n  const dist = Array.from({ length: m }, () => Array(n).fill(Number.MAX_VALUE));\n\n  // Set the distance to the starting cell to 0\n  dist[m - 1][n - 1] = 0;\n\n  // Directions for moving up, down, left, right\n  const directions = [[-1, 0], [1, 0], [0, -1],"
+      ],
+      [
+        "/**\n * Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n *  the last couple centuries. However, what people don't know is Tribonacci sequence.\n *  Tribonacci sequence is defined by the recurrence:\n *  tri(1) = 3\n *  tri(n) = 1 + n / 2, if n is even.\n *  tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n *  For example:\n *  tri(2) = 1 + (2 / 2) = 2\n *  tri(4) = 3\n *  tri(3) = tri(2) + tri(1) + tri(4)\n         = 2 + 3 + 3 = 8 \n *  You are given a non-negative integer number n, you have to a return a list of the \n *  first n + 1 numbers of the Tribonacci sequence.\n *  Examples:\n *  tri(3) = [1, 3, 2, 8]\n */\nconst tri = (n) => {\n  if (n === 0) { return [1] }\n  if (n === 1) { return [1, 3] }\n  let p = [1, 3];\n  for (let i = 2; i <= n; i++) {\n    if (i % 2 === 0) {\n      p.push(p[i - 1] + p[i - 2]);\n    } else {\n      p.push(p[i - 1] + p[i - 2] + p[i + 1]);\n    }\n  }\n  return p;\n};"
+      ],
+      [
+        "function digits(n) {\n  let p = 1;\n  let k = 1;\n  while (n > 0) {\n    let y = n % 10;\n    if (1 != y % 2) {\n      p *= y;\n    }\n    n = Math.floor(n / 10);\n  }\n  return p === 0 ? 0 : p;\n}"
+      ],
+      [
+        "/**\n * Create a function that takes a string as input which contains only square brackets.\n * The function should return true if and only if there is a valid subsequence of brackets\n * where at least one bracket in the subsequence is nested.\n * isNested('[[]]') ➞ true\n * isNested('[]]]]]]][[[[[]') ➞ false\n * isNested('[][]') ➞ false\n * isNested('[]') ➞ false\n * isNested('[[][]]') ➞ true\n * isNested('[[]][[') ➞ true\n */\nconst isNested = (string) => {\n  let opening_bracket_index = []\n  let closing_bracket_index1 = []\n  for (let i = 0; i < string.length; i = i + 1) {\n    if (string[i] == '[') {\n      opening_bracket_index.push(i)\n    }\n    else {\n      closing_bracket_index1.push(i)\n    }\n  }\n\n  let stack = []\n  for (let i = 0; i < opening_bracket_index.length; i++) {\n    if (closing_bracket_index1.includes(opening_bracket_index[i])) {\n      stack.push(opening_bracket_index[i])\n    }\n  }\n\n  while (stack.length > 0) {\n    const last_opening_index = stack.pop()\n    if (string[last_opening_index] === ']') {\n      return true\n    }\n  }\n\n  return false\n}\n\n// Test cases"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function checkIfLastCharIsALetter(txt) {\n    let len = txt.length;\n    if (len == 0) { return 0 }\n    let y = txt[len - 1].charCodeAt();\n    if (len == 1) {\n        return y >= 65 && y <= 90; // Check if the character is an alphabetical letter\n    } else {\n        return y >= 65 && y <= 90 && txt[len - 2] !== ' '; // Check if the character is an alphabetical letter and not part of a word\n    }\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Create a function which returns the largest index of an element which\n *  is not greater than or equal to the element immediately preceding it. If\n *  no such element exists then return -1. The given array will not contain\n *  duplicate values.\n\n * Examples:\n * canArrange([1,2,4,3,5]) = 3\n * canArrange([1,2,3]) = -1\n */\n\nfunction canArrange(arr) {\n  if (arr.length === 0) {\n    return -1;\n  }\n\n  for (let i = arr.length - 1; i > 0; i--) {\n    if (arr[i] < arr[i - 1]) {\n      return i;\n    }\n  }\n\n  return -1;\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * Create a function that returns a tuple (a, b), where 'a' is\n * the largest of negative integers, and 'b' is the smallest\n * of positive integers in a list.\n * If there is no negative or positive integers, return them as null.\n * Examples:\n * largestSmallestIntegers([2, 4, 1, 3, 5, 7]) == (null, 1)\n * largestSmallestIntegers([]) == (null, null)\n * largestSmallestIntegers([0]) == (null, null)\n */\nconst largestSmallestIntegers = (lst) => {\n  if (lst.length === 0) {\n    return [null, null];\n  }\n\n  let a = Infinity;\n  let b = -Infinity;\n\n  for (let i = 0; i < lst.length; i++) {\n    if (lst[i] > 0 && lst[i] < a) {\n      a = lst[i];\n    }\n    if (lst[i] < 0 && lst[i] < b) {\n      b = lst[i];\n    }\n  }\n\n  return [a, b];\n};\n\n// Test cases"
+      ],
+      [
+        "/**\n * Create a function that takes integers, floats, or strings representing\n * real numbers, and returns the larger variable in its given variable type.\n * Return null if the values are equal.\n * Note: If a real number is represented as a string, the floating point might be . or ,\n\ncompareOne = (a, b) => {\n  let aa = Number(a);\n  if ('string' == typeof a) { aa = Number(a.replace(',', '.')); }\n  let bb = Number(b);\n  if ('string' == typeof b) { bb = Number(b.replace(',', '.')); }\n  if (aa > bb) return a;\n  if (bb > aa) return b;\n  return null;\n};\n\n// Test cases"
+      ],
+      [
+        "function isEqualToSumEven(n) {\n  return (n >= 8 && 0 == n % 2);\n}\n\n// Test cases"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function fileNameCheck(file_name) {\n  let t = file_name.split(/\\./);\n  if (2 != t.length) { return 'No' }\n  if ('txt' != t[1] && 'dll' != t[1] && 'exe' != t[1]) { return 'No' }\n  if ('' == t[0]) { return 'No' }\n  let a = t[0][0].charCodeAt();\n  if (a < 48 || a > 57) { return 'No' }\n  if (a === 47 || a === 48 || a === 49 || a === 50 || a === 51 || a === 52 || a === 53 || a === 54 || a === 55 || a === 56 || a === 57) { return 'No' }\n  return 'Yes';\n}\n\n// Example usage:"
+      ],
+      [
+        "// This function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a \n// multiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not \n// change the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries. \n  \n// Examples:\n// For lst = [1,2,3] the output should be 6\n// For lst = []  the output should be 0\n// For lst = [-1,-5,2,-1,-5]  the output should be -126\n\nconst sumSquares = (lst) => {\n  let y = 0\n  for (let i = 0; i < lst.length; i++) {\n    if (0 == i % 3) { y += lst[i] * lst[i] }\n    else if (0 == i % 4) { y += lst[i] * lst[i] * lst[i] }\n  }\n  return y;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Import necessary package\nconst { isPrime } = require('some-package-name'); // Replace with actual package name\n\n/**\n * Generates a new string containing words from the original sentence whose lengths are prime numbers,\n * preserving the original order of words.\n * \n * @param {string} sentence - The input sentence to process.\n * @return {string} A string containing words with prime length.\n */\nfunction getWordsWithPrimeLength(sentence) {\n  let t = sentence.split(/\\s+/);\n  let p = '';\n  for (let j = 0; j < t.length; j++) {\n    let len = t[j].length;\n    if (isPrime(len)) {\n      p += t[j] + ' ';\n    }\n  }\n  // Trim trailing space\n  return p.trim();\n}\n\n// Check function to verify the correctness of the solution\nfunction check() {\n  console.assert(getWordsWithPrimeLength(\"This is a test\") === \"is\", 'Test case 1 failed');\n  console.assert(getWordsWithPrimeLength(\"lets go for swimming\") === \"go for\", 'Test case 2 failed');\n  console.assert(getWordsWithPrimeLength(\"Hello world!\") === \"Hello world!\", 'Test case 3 failed');\n  console.assert(getWordsWithPrimeLength(\"\") === \"\", 'Test case 4 failed');\n  console.assert(getWordsWithPrimeLength(\"a b c d e f g h i j k l m n o p q r s t u v w x y z\") === \"a b c d e f g h i j k l m n o p q r s t u v w x y z\", 'Test case 5 failed');\n}\n\n// Run the check function to verify the solution\ncheck();"
+      ],
+      [
+        "const simplify = (x, n) => {\n  // Split the input strings into numerators and denominators\n  const [numeratorX, denominatorX] = x.split('/');\n  const [numeratorN, denominatorN] = n.split('/');\n\n  // Convert the numerators and denominators to integers\n  const numX = parseInt(numeratorX);\n  const denX = parseInt(denominatorX);\n  const numN = parseInt(numeratorN);\n  const denN = parseInt(denominatorN);\n\n  // Calculate the product of the numerators and denominators\n  const productNumerator = numX * numN;\n  const productDenominator = denX * denN;\n\n  // Check if the product is a whole number\n  return productNumerator % productDenominator === 0;\n};\n\n// Example usage:"
+      ],
+      [
+        "function orderByPoints(nums) {\n  let p = nums;\n  for (let j = p.length - 2; j >= 0; j = j - 1) {\n    for (let k = 0; k <= j; k = k + 1) {\n      let m = 0;\n      let n = 0;\n      let h = p[k];\n      let d = p[k + 1];\n      let y = 1;\n      let u = 1;\n      if (h < 0) { y = -1; h = -h; }\n      if (d < 0) { u = -1; d = -d; }\n      if (y === 1 && u === 1) {\n        // If both y and u are 1, find the digit sum and sort by that sum\n        let digitSum = 0;\n        while (h > 0) {\n          digitSum += h % 10;\n          h = Math.floor(h / 10);\n        }\n        if (digitSum === 0) {\n          // If digit sum is 0, sort by index in original list\n          p.splice(k, 1);\n          k--;\n        } else {\n          // Otherwise, sort by digit sum\n          p.splice(k, 1);\n          k--;\n          p.sort((a, b) => {\n            if (a.digitSum !== b.digitSum) {\n              return a.digitSum - b.digitSum;\n            } else {\n              return a.index - b.index;\n            }\n          });\n        }\n      }\n    }\n  }\n  return p;\n}\n\n// Test cases"
+      ],
+      [
+        "/**\n * Write a function that takes an array of numbers as input and returns \n * the number of elements in the array that are greater than 10 and both \n * first and last digits of a number are odd (1, 3, 5, 7, 9).\n * For example:\n * specialFilter([15, -73, 14, -15]) => 1 \n * specialFilter([33, -2, -3, 45, 21, 109]) => 2\n */\nconst specialFilter = (nums) => {\n  let count = 0;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] < 10) { continue }\n    let y = nums[i].toString();\n    if (isOdd(y[0]) && isOdd(y[y.length - 1])) {\n      count++;\n    }\n  }\n  return count;\n};\n\n/**\n * Helper function to check if a digit is odd\n * @param {number} digit - The digit to check\n * @returns {boolean} - True if the digit is odd, false otherwise\n */\nfunction isOdd(digit) {\n  return digit % 2 !== 0;\n}\n\n// Example usage:"
+      ],
+      [
+        "/**\n * @param {number} n\n * @return {number}\n */\nconst getMaxTriples = (n) => {\n  let y = [];\n  for (let i = 1; i <= n; i = i + 1) {\n    y.push(i * i - i + 1);\n  }\n  let u = 0;\n  for (let i = 0; i < n - 2; i++) {\n    let j = i + 1;\n    let k = n - 1;\n    while (j < k) {\n      if ((y[i] + y[j] + y[k]) % 3 === 0) {\n        u++;\n      }\n      j++;\n      k--;\n    }\n  }\n  return u;\n};\n\n// Example usage:"
+      ],
+      [
+        "// Importing necessary packages\n// (In this case, no external packages are required)\n\n/**\n * Finds planets located between two given planets in the solar system.\n * @param {string} planet1 - The first planet name.\n * @param {string} planet2 - The second planet name.\n * @returns {Array<string>} An array of planet names between the two given planets.\n */\nfunction bf(planet1, planet2) {\n  const y = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];\n  let u = [];\n  let lo = -1;\n  let hi = -1;\n\n  for (let i = 0; i < 8; i++) {\n    if (planet1 === y[i]) { lo = i }\n  }\n\n  for (let i = 0; i < 8; i++) {\n    if (planet2 === y[i]) { hi = i }\n  }\n\n  if (lo === -1 || hi === -1) {\n    return [];\n  }\n\n  // Ensure lo is less than hi for correct slicing\n  if (lo > hi) {\n    [lo, hi] = [hi, lo];\n  }\n\n  // Return the planets between the two given planets\n  return y.slice(lo + 1, hi);\n}\n\n// Example usage:"
+      ],
+      [
+        "// Import necessary package(s)\nconst _ = require('lodash');\n\n/**\n * Filters out strings with odd lengths from the input list and returns a sorted list.\n * Strings with even lengths are included in the result.\n * \n * @param {string[]} inputList - The list of strings to process.\n * @returns {string[]} A new list containing only strings with even lengths.\n */\nfunction list_sort(inputList) {\n  // Filter out strings with odd lengths\n  let filteredList = inputList.filter(str => str.length % 2 === 0);\n\n  // Sort the filtered list by length and alphabetically\n  filteredList.sort((a, b) => {\n    if (a.length !== b.length) {\n      return a.length - b.length;\n    } else {\n      return a.localeCompare(b);\n    }\n  });\n\n  return filteredList;\n}\n\n// Example usage and test cases"
+      ],
+      [
+        "function xOrY(n, x, y) {\n  let len = n\n  if (1 == len || 0 == len) { return y }\n  for (let i = 2; i * i <= len; i++) {\n    if (n % i === 0) {\n      return x;\n    }\n  }\n  return y;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function compare(game, guess) {\n  const differences = [];\n  for (let i = 0; i < guess.length; i++) {\n    differences.push(Math.abs(game[i] - guess[i]));\n  }\n  return differences;\n}\n\n// Example usage:"
+      ],
+      [
+        "const strongestExtension = (class_name, extensions) => {\n  let u = 0\n  let s = -Infinity\n  for (let i = extensions.length - 1; i >= 0; i = i - 1) {\n    let y = 0\n    for (let j = 0; j < extensions[i].length; j = j + 1) {\n      let k = extensions[i][j].charCodeAt()\n      if (k >= 'A' && k <= 'Z') {\n        u++;\n      } else if (k >= 'a' && k <= 'z') {\n        s++;\n      }\n    }\n  }\n  return `${class_name}.${Math.abs(s - u)}`;\n};\n\n// Example usage:"
+      ],
+      [
+        "function cycpatternCheck(a, b) {\n  let l = b.length;\n  let pat = b + b;\n  for (let i = 0; i < a.length - l + 1; i++) {\n    for (let j = 0; j < l + 1; j++) {\n      let y = 1;\n      for (let k = 0; k < l; k++) {\n        if (pat[i + k] === b[j + k]) {\n          y++;\n        }\n      }\n      if (y === l) {\n        return true;\n      }\n    }\n  }\n  return false;\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function findMax(words) {\n  let maxUniqueChars = -1;\n  let result = '';\n\n  for (let word of words) {\n    const uniqueChars = new Set(word);\n    const uniqueCharCount = uniqueChars.size;\n\n    if (uniqueCharCount > maxUniqueChars || \n        (uniqueCharCount === maxUniqueChars && word < result)) {\n      maxUniqueChars = uniqueCharCount;\n      result = word;\n    }\n  }\n\n  return result;\n}\n\n// Test cases"
+      ],
+      [
+        "// Given two lists operator and operand. The first list has basic algebra operations, and \n// the second list is a list of integers. Use the two given lists to build the algebric \n// expression and return the evaluation of this expression.\n\n// The basic algebra operations:\n// Addition ( + )\n// Subtraction ( - )\n// Multiplication ( * )\n// Floor division ( // )\n// Exponentiation ( ** )\n\n// Example:\n// operator['+', '*', '-']\n// array = [2, 3, 4, 5]\n// result = 2 + 3 * 4 - 5\n// => result = 9\n\n// Note:\n// The length of operator list is equal to the length of operand list minus one.\n// Operand is a list of of non-negative integers.\n// Operator list has at least one operator, and operand list has at least two operands.\n\nconst doAlgebra = (operator, operand) => {\n  while (operator.length > 0) {\n    let y = 0;\n    for (let i = operator.length - 1; i >= 0; i = i - 1) {\n      if (operator[i] == '**') {\n        let u = operand[i];\n        while (operand[i + 1] > 1) {\n          operand[i + 1] = operand[i + 1] - 1;\n          operand[i] = operand[i] * (u);\n        }\n        operand.splice(i + 1, 1)\n        operator.splice(i, 1)\n        y = 1;\n        break;\n      }\n    }\n    if (y == 1) { continue }\n    for (let i = 0; i < operator.length; i++) {\n      if (operator[i] == '*') {\n        operand[i] = operand[i] * (operand[i + 1])\n      }\n    }\n  }\n  return operand[0];\n};\n\n// Example usage:"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "// Importing the js-md5 package\nconst md5 = require('js-md5');\n\n/**\n * Converts a given string to its MD5 hash equivalent string.\n * \n * @param {string} text - The string to be hashed.\n * @return {string|null} The MD5 hash equivalent string or null if the input is an empty string.\n */\nconst stringToMd5 = (text) => {\n  if ('' === text) { return null }\n  return md5(text).toString('hex');\n};\n\n// Example usage"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

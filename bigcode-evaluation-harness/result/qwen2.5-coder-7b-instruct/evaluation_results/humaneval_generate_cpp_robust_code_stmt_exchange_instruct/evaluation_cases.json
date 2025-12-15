@@ -1,0 +1,191 @@
+{
+  "0": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "1": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "2": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:67:\ntest.cpp: In function ‘int main()’:\ntest.cpp:84:31: error: could not convert ‘poly(std::vector<double>(coeffs), solution)’ from ‘double’ to ‘std::vector<double>’\n   84 |         assert (find_zero(poly(coeffs, solution))< 1e-3);\n      |                           ~~~~^~~~~~~~~~~~~~~~~~\n      |                               |\n      |                               double\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "3": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "4": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "5": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:53:27: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   53 |         if (sort_even(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 38,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "7": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "8": {
+    "task_id": 50,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "9": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "10": {
+    "task_id": 54,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:34: int main(): Assertion `same_chars(\"eabcdzzzz\", \"dddzzzzzzzddeddabc\") == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "12": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:42:6: error: ambiguating new declaration of ‘bool total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   42 | bool total_match(vector<string> a,vector<string>b){\n      |      ^~~~~~~~~~~\ntest.cpp:26:16: note: old declaration ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   26 | vector<string> total_match(vector<string> lst1, vector<string> lst2) {\n      |                ^~~~~~~~~~~\nIn file included from test.cpp:41:\ntest.cpp: In function ‘int main()’:\ntest.cpp:51:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   51 |     assert (total_match(total_match({}, {}) , {}));\n      |     ^~~~~~\ntest.cpp:52:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   52 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   53 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:54:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   54 |     assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n      |     ^~~~~~\ntest.cpp:55:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   55 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n      |     ^~~~~~\ntest.cpp:56:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   56 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:57:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   57 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:58:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   58 |     assert (total_match(total_match({}, {\"this\"}) , {}));\n      |     ^~~~~~\ntest.cpp:59:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   59 |     assert (total_match(total_match({\"this\"}, {}) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "13": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "14": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "15": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "16": {
+    "task_id": 110,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "17": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "18": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "19": {
+    "task_id": 125,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > split_words(std::string)’:\ntest.cpp:44:44: error: no matching function for call to ‘std::__cxx11::basic_string<char>::end(char)’\n   44 |     } else if (find(txt.begin(),txt.end(','))!=txt.end()){\n      |                                            ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:842:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::end() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::iterator = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::pointer = char*]’\n  842 |       end() _GLIBCXX_NOEXCEPT\n      |       ^~~\n/usr/include/c++/9/bits/basic_string.h:842:7: note:   candidate expects 0 arguments, 1 provided\n/usr/include/c++/9/bits/basic_string.h:850:7: note: candidate: ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::end() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const char*, std::__cxx11::basic_string<char> >; typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]’\n  850 |       end() const _GLIBCXX_NOEXCEPT\n      |       ^~~\n/usr/include/c++/9/bits/basic_string.h:850:7: note:   candidate expects 0 arguments, 1 provided\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "20": {
+    "task_id": 129,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "21": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'boost::wrapexcept<boost::bad_any_cast>'\n  what():  boost::bad_any_cast: failed conversion using boost::any_cast\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "22": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:38: int main(): Assertion `sum_squares({1,2,3}) == 6' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "23": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:62: int main(): Assertion `sum_of_digits(order_by_points({1, 11, -1, -11, -12}) , {-1, -11, 1, -12, 11})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "24": {
+    "task_id": 147,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:55: int main(): Assertion `get_matrix_triples(5) == 1' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "26": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/features.h:461,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:39,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:524,\n                 from /usr/include/c++/9/cstdlib:41,\n                 from /usr/include/c++/9/stdlib.h:36,\n                 from test.cpp:2:\n/usr/include/assert.h: In function ‘int do_algebra(std::vector<std::__cxx11::basic_string<char> >, std::vector<int>)’:\n/usr/include/assert.h:66:1: error: expected primary-expression before ‘extern’\n   66 | __BEGIN_DECLS\n      | ^~~~~~~~~~~~~\ntest.cpp:63:11: error: a function-definition is not allowed here before ‘{’ token\n   63 | int main(){\n      |           ^\ntest.cpp:67:1: error: expected ‘}’ at end of input\n   67 | }\n      | ^\ntest.cpp:57:39: note: to match this ‘{’\n   57 |         } else if (operato[i] == \"*\") {\n      |                                       ^\ntest.cpp:67:1: error: expected ‘}’ at end of input\n   67 | }\n      | ^\ntest.cpp:46:46: note: to match this ‘{’\n   46 |     for (int i = 0; i < operato.size(); i++) {\n      |                                              ^\ntest.cpp:67:1: error: expected ‘}’ at end of input\n   67 | }\n      | ^\ntest.cpp:28:61: note: to match this ‘{’\n   28 | int do_algebra(vector<string> operato, vector<int> operand) {\n      |                                                             ^\ntest.cpp:67:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   67 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  }
+}

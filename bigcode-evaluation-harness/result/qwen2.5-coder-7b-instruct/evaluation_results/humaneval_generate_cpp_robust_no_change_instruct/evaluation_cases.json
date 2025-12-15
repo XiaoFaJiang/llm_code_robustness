@@ -1,0 +1,1150 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:39:\ntest.cpp: In function ‘int main()’:\ntest.cpp:41:78: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [3]{1.0e+0f, 2.0e+0f, 3.0e+0f})), 3}, std::allocator<float>()))) - (2.0e+0 / 3.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   41 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0}) - 2.0/3.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                              |\n      |                                                                              double\ntest.cpp:42:83: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [4]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f})), 4}, std::allocator<float>()))) - 1.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   42 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0}) - 1.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n      |                                                                                   |\n      |                                                                                   double\ntest.cpp:43:88: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>()))) - (6.0e+0 / 5.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   43 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0, 5.0}) - 6.0/5.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                                        |\n      |                                                                                        double\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:59: int main(): Assertion `parse_music(parse_music(\"o o o o\") ,{4, 4, 4, 4})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:45:39: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   45 |         if (find_closest_elements(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:44:33: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   44 |         if (rescale_to_unit(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:56: int main(): Assertion `remove_duplicates(remove_duplicates({1, 2, 3, 2, 4, 3, 5}) , {1, 4, 5})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:40:30: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<int>’\n   40 |         if (get_positive(a[i]-b[i])>1e-4) return false;\nIn file included from test.cpp:35:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:32: error: could not convert ‘get_positive(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   45 |     assert (issame(get_positive({-1, -2, 4, 5, 6}) , {4, 5, 6} ));\n      |                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\n      |                                |\n      |                                vector<int>\ntest.cpp:46:32: error: could not convert ‘get_positive(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   46 |     assert (issame(get_positive({5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10}) , {5, 3, 2, 3, 3, 9, 123, 1}));\n      |                    ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n      |                                |\n      |                                vector<int>\ntest.cpp:47:33: error: could not convert ‘get_positive(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   47 |      assert (issame(get_positive({-1, -2}) , {} ));\n      |                     ~~~~~~~~~~~~^~~~~~~~~~\n      |                                 |\n      |                                 vector<int>\ntest.cpp:48:33: error: could not convert ‘get_positive(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   48 |      assert (issame(get_positive({}) , {}));\n      |                     ~~~~~~~~~~~~^~~~\n      |                                 |\n      |                                 vector<int>\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:63:\ntest.cpp: In function ‘int main()’:\ntest.cpp:80:31: error: could not convert ‘poly(std::vector<double>(coeffs), solution)’ from ‘double’ to ‘std::vector<double>’\n   80 |         assert (find_zero(poly(coeffs, solution))< 1e-3);\n      |                           ~~~~^~~~~~~~~~~~~~~~~~\n      |                               |\n      |                               double\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:50:27: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   50 |         if (sort_even(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `prime_fib(3) == 5' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:29:\ntest.cpp: In function ‘int main()’:\ntest.cpp:31:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   31 |     assert (triangle_area(triangle_area(5, 3) - 7.5)<1e-4);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:29:\ntest.cpp:32:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   32 |     assert (triangle_area(triangle_area(2, 2) - 2.0)<1e-4);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:29:\ntest.cpp:33:54: error: too few arguments to function ‘float triangle_area(float, float)’\n   33 |     assert (triangle_area(triangle_area(10, 8) - 40.0)<1e-4);\n      |                                                      ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:33:\ntest.cpp: In function ‘int main()’:\ntest.cpp:35:44: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{3.0e+0f, 1.0e+0f, 2.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>())) - (float)3)’ from ‘float’ to ‘std::vector<float>’\n   35 |     assert (median(median({3, 1, 2, 4, 5}) - 3)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                            |\n      |                                            float\ntest.cpp:36:54: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [6]{-1.0e+1f, 4.0e+0f, 6.0e+0f, 1.0e+3f, 1.0e+1f, 2.0e+1f})), 6}, std::allocator<float>()))) - 8.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   36 |     assert (median(median({-10, 4, 6, 1000, 10, 20}) -8.0)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n      |                                                      |\n      |                                                      double\ntest.cpp:37:32: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [1]{5.0e+0f})), 1}, std::allocator<float>())) - (float)5)’ from ‘float’ to ‘std::vector<float>’\n   37 |     assert (median(median({5}) - 5)<1e-4);\n      |                    ~~~~~~~~~~~~^~~\n      |                                |\n      |                                float\ntest.cpp:38:35: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [2]{6.0e+0f, 5.0e+0f})), 2}, std::allocator<float>()))) - 5.5e+0)’ from ‘double’ to ‘std::vector<float>’\n   38 |     assert (median(median({6, 5}) - 5.5)<1e-4);\n      |                    ~~~~~~~~~~~~~~~^~~~~\n      |                                   |\n      |                                   double\ntest.cpp:39:50: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [7]{8.0e+0f, 1.0e+0f, 3.0e+0f, 9.0e+0f, 9.0e+0f, 2.0e+0f, 7.0e+0f})), 7}, std::allocator<float>())) - (float)7)’ from ‘float’ to ‘std::vector<float>’\n   39 |     assert (median(median({8, 1, 3, 9, 9, 2, 7}) - 7)<1e-4 );\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                                  |\n      |                                                  float\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:38:28: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   38 |         if (derivative(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:31:\ntest.cpp: In function ‘int main()’:\ntest.cpp:33:54: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   33 |     assert (triangle_area(triangle_area(3, 4, 5)-6.00)<0.01);\n      |                                                      ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:34:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   34 |     assert (triangle_area(triangle_area(1, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:35:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   35 |     assert (triangle_area(triangle_area(4, 8, 5) -8.18)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:36:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   36 |     assert (triangle_area(triangle_area(2, 2, 2) -1.73)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:37:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   37 |     assert (triangle_area(triangle_area(1, 2, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:38:58: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   38 |     assert (triangle_area(triangle_area(10, 5, 7) - 16.25)<0.01);\n      |                                                          ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:39:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   39 |     assert (triangle_area(triangle_area(2, 6, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:40:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   40 |     assert (triangle_area(triangle_area(1, 1, 1) -0.43)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:41:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   41 |     assert (triangle_area(triangle_area(2, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:39:6: error: ambiguating new declaration of ‘bool total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   39 | bool total_match(vector<string> a,vector<string>b){\n      |      ^~~~~~~~~~~\ntest.cpp:26:16: note: old declaration ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   26 | vector<string> total_match(vector<string> lst1, vector<string> lst2) {\n      |                ^~~~~~~~~~~\nIn file included from test.cpp:38:\ntest.cpp: In function ‘int main()’:\ntest.cpp:48:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   48 |     assert (total_match(total_match({}, {}) , {}));\n      |     ^~~~~~\ntest.cpp:49:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   49 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   50 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:51:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   51 |     assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n      |     ^~~~~~\ntest.cpp:52:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   52 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   53 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:54:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   54 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:55:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   55 |     assert (total_match(total_match({}, {\"this\"}) , {}));\n      |     ^~~~~~\ntest.cpp:56:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   56 |     assert (total_match(total_match({\"this\"}, {}) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:40: int main(): Assertion `decimal_to_binary(32) == \"db100000db\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:47: int main(): Assertion `anti_shuffle(\"Hi\") == \"Hi\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `issame(get_row({ {1,2,3,4,5,6}, {1,2,3,4,1,6}, {1,2,3,4,5,1}}, 1) , {{0, 0}, {1, 4}, {1, 0}, {2, 5}, {2, 0}})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:48: int main(): Assertion `is_bored(\"Is the sky blue?\") == 0' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `encode(\"TEST\") == \"tgst\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool check_dict_case(std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >)’:\ntest.cpp:34:26: error: ‘islower’ cannot be used as a function\n   34 |             if (islower(c)) hasLower = true;\n      |                          ^\ntest.cpp:35:26: error: ‘isupper’ cannot be used as a function\n   35 |             if (isupper(c)) hasUpper = true;\n      |                          ^\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `count_nums({12, 23, 34, -45, -56, 0}) == 5' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:33:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   45 |     assert (maximum(maximum({-3, 2, 1, 2, -1, -2, 1}, 1) , {2}));\n      |     ^~~~~~\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   50 |     assert (maximum(maximum({1, 0, 5, -7}, 1) , {5}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   53 |     assert (maximum(maximum({1, 2, 3, -23, 243, -400, 0}, 0) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `is_sorted({1, 2, 2, 3, 3, 4}) == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `minPath(minPath({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 3) , {1, 2, 1})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:48: int main(): Assertion `tri(tri(3) , {1, 3, 2, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:46: int main(): Assertion `is_nested(\"[[]\") == false' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'boost::wrapexcept<boost::bad_any_cast>'\n  what():  boost::bad_any_cast: failed conversion using boost::any_cast\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:47: int main(): Assertion `fix_spaces(\"Mudasir Hanif \") == \"Mudasir_Hanif_\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `file_name_check(\"MY16FILE3.exe\") == \"Yes\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:35: int main(): Assertion `sum_squares({1,2,3}) == 6' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `simplify(\"1/5\", \"5/1\") == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `order_by_points(order_by_points({1, 11, -1, -11, -12}) , {-1, -11, 1, -12, 11})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:52: int main(): Assertion `Strongest_Extension(\"__HAHA\", {\"Tab\", \"123\", \"781345\", \"-_-\"}) == \"__HAHA.123\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "158": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "159": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "160": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int do_algebra(std::vector<std::__cxx11::basic_string<char> >, std::vector<int>)’:\ntest.cpp:56:25: error: expected ‘;’ before ‘extern’\n   56 |             posto[i + 1]\n      |                         ^\n      |                         ;\ntest.cpp:59:11: error: a function-definition is not allowed here before ‘{’ token\n   59 | int main(){\n      |           ^\ntest.cpp:63:1: error: expected ‘}’ at end of input\n   63 | }\n      | ^\ntest.cpp:52:39: note: to match this ‘{’\n   52 |         } else if (operato[i] == \"*\") {\n      |                                       ^\ntest.cpp:63:1: error: expected ‘}’ at end of input\n   63 | }\n      | ^\ntest.cpp:41:46: note: to match this ‘{’\n   41 |     for (int i = 0; i < operato.size(); i++) {\n      |                                              ^\ntest.cpp:63:1: error: expected ‘}’ at end of input\n   63 | }\n      | ^\ntest.cpp:29:61: note: to match this ‘{’\n   29 | int do_algebra(vector<string> operato, vector<int> operand) {\n      |                                                             ^\ntest.cpp:63:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   63 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "161": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "162": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:23:9: fatal error: openssl/md5.h: No such file or directory\n   23 | #include<openssl/md5.h>\n      |         ^~~~~~~~~~~~~~~\ncompilation terminated.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  },
+  "163": {
+    "task_id": 163,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:59: int main(): Assertion `issame(generate_integers(2, 10) , {2, 4, 6, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "no_change"
+  }
+}

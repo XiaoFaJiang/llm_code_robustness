@@ -1,0 +1,1150 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:42:\ntest.cpp: In function ‘int main()’:\ntest.cpp:44:78: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [3]{1.0e+0f, 2.0e+0f, 3.0e+0f})), 3}, std::allocator<float>()))) - (2.0e+0 / 3.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   44 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0}) - 2.0/3.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                              |\n      |                                                                              double\ntest.cpp:45:83: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [4]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f})), 4}, std::allocator<float>()))) - 1.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   45 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0}) - 1.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n      |                                                                                   |\n      |                                                                                   double\ntest.cpp:46:88: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>()))) - (6.0e+0 / 5.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   46 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0, 5.0}) - 6.0/5.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                                        |\n      |                                                                                        double\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:67: int main(): Assertion `parse_nested_parens(parse_nested_parens(\"(()()) ((())) () ((())()())\"),{2, 3, 1, 3})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": false,
+    "result": "failed: compilation error: In file included from /usr/include/features.h:461,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:39,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:524,\n                 from /usr/include/c++/9/cstdlib:41,\n                 from /usr/include/c++/9/stdlib.h:36,\n                 from test.cpp:2:\n/usr/include/assert.h: In function ‘std::string sort_numbers(std::string)’:\n/usr/include/assert.h:66:1: error: expected unqualified-id before string constant\n   66 | __BEGIN_DECLS\n      | ^~~~~~~~~~~~~\ntest.cpp:73:11: error: a function-definition is not allowed here before ‘{’ token\n   73 | int main(){\n      |           ^\ntest.cpp:79:1: error: expected ‘}’ at end of input\n   79 | }\n      | ^\ntest.cpp:29:36: note: to match this ‘{’\n   29 | string sort_numbers(string numbers){\n      |                                    ^\ntest.cpp:79:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   79 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:41:39: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   41 |         if (find_closest_elements(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:41:33: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   41 |         if (rescale_to_unit(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:41:30: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   41 |         if (get_positive(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:64:\ntest.cpp: In function ‘int main()’:\ntest.cpp:81:31: error: could not convert ‘poly(std::vector<double>(coeffs), solution)’ from ‘double’ to ‘std::vector<double>’\n   81 |         assert (find_zero(poly(coeffs, solution))< 1e-3);\n      |                           ~~~~^~~~~~~~~~~~~~~~~~\n      |                               |\n      |                               double\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:61:27: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   61 |         if (sort_even(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::string decode_cyclic(std::string)’:\ntest.cpp:56:16: error: ‘var_9’ was not declared in this scope\n   56 |     int num=(l+var_9 )/var_10 ;\n      |                ^~~~~\ntest.cpp:56:24: error: ‘var_10’ was not declared in this scope\n   56 |     int num=(l+var_9 )/var_10 ;\n      |                        ^~~~~~\ntest.cpp:59:12: error: ‘var_11’ was not declared in this scope\n   59 |     for (i=var_11 ;i*var_12 <l;i++)\n      |            ^~~~~~\ntest.cpp:59:22: error: ‘var_12’ was not declared in this scope\n   59 |     for (i=var_11 ;i*var_12 <l;i++)\n      |                      ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `prime_fib(1) == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:29:\ntest.cpp: In function ‘int main()’:\ntest.cpp:31:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   31 |     assert (triangle_area(triangle_area(5, 3) - 7.5)<1e-4);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:29:\ntest.cpp:32:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   32 |     assert (triangle_area(triangle_area(2, 2) - 2.0)<1e-4);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:29:\ntest.cpp:33:54: error: too few arguments to function ‘float triangle_area(float, float)’\n   33 |     assert (triangle_area(triangle_area(10, 8) - 40.0)<1e-4);\n      |                                                      ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:34:\ntest.cpp: In function ‘int main()’:\ntest.cpp:36:44: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{3.0e+0f, 1.0e+0f, 2.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>())) - (float)3)’ from ‘float’ to ‘std::vector<float>’\n   36 |     assert (median(median({3, 1, 2, 4, 5}) - 3)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                            |\n      |                                            float\ntest.cpp:37:54: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [6]{-1.0e+1f, 4.0e+0f, 6.0e+0f, 1.0e+3f, 1.0e+1f, 2.0e+1f})), 6}, std::allocator<float>()))) - 8.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   37 |     assert (median(median({-10, 4, 6, 1000, 10, 20}) -8.0)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n      |                                                      |\n      |                                                      double\ntest.cpp:38:32: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [1]{5.0e+0f})), 1}, std::allocator<float>())) - (float)5)’ from ‘float’ to ‘std::vector<float>’\n   38 |     assert (median(median({5}) - 5)<1e-4);\n      |                    ~~~~~~~~~~~~^~~\n      |                                |\n      |                                float\ntest.cpp:39:35: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [2]{6.0e+0f, 5.0e+0f})), 2}, std::allocator<float>()))) - 5.5e+0)’ from ‘double’ to ‘std::vector<float>’\n   39 |     assert (median(median({6, 5}) - 5.5)<1e-4);\n      |                    ~~~~~~~~~~~~~~~^~~~~\n      |                                   |\n      |                                   double\ntest.cpp:40:50: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [7]{8.0e+0f, 1.0e+0f, 3.0e+0f, 9.0e+0f, 9.0e+0f, 2.0e+0f, 7.0e+0f})), 7}, std::allocator<float>())) - (float)7)’ from ‘float’ to ‘std::vector<float>’\n   40 |     assert (median(median({8, 1, 3, 9, 9, 2, 7}) - 7)<1e-4 );\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                                  |\n      |                                                  float\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:39:28: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   39 |         if (derivative(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `vowels_count(\"keY\") == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:33:\ntest.cpp: In function ‘int main()’:\ntest.cpp:35:54: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   35 |     assert (triangle_area(triangle_area(3, 4, 5)-6.00)<0.01);\n      |                                                      ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:36:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   36 |     assert (triangle_area(triangle_area(1, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:37:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   37 |     assert (triangle_area(triangle_area(4, 8, 5) -8.18)<0.01);\n      |                                                       ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:38:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   38 |     assert (triangle_area(triangle_area(2, 2, 2) -1.73)<0.01);\n      |                                                       ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:39:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   39 |     assert (triangle_area(triangle_area(1, 2, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:40:58: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   40 |     assert (triangle_area(triangle_area(10, 5, 7) - 16.25)<0.01);\n      |                                                          ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:41:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   41 |     assert (triangle_area(triangle_area(2, 6, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:42:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   42 |     assert (triangle_area(triangle_area(1, 1, 1) -0.43)<0.01);\n      |                                                       ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:33:\ntest.cpp:43:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   43 |     assert (triangle_area(triangle_area(2, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:25:7: note: declared here\n   25 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:39:6: error: ambiguating new declaration of ‘bool total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   39 | bool total_match(vector<string> a,vector<string>b){\n      |      ^~~~~~~~~~~\ntest.cpp:25:16: note: old declaration ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   25 | vector<string> total_match(vector<string> lst1, vector<string> lst2) {\n      |                ^~~~~~~~~~~\nIn file included from test.cpp:38:\ntest.cpp: In function ‘int main()’:\ntest.cpp:48:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   48 |     assert (total_match(total_match({}, {}) , {}));\n      |     ^~~~~~\ntest.cpp:49:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   49 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   50 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:51:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   51 |     assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n      |     ^~~~~~\ntest.cpp:52:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   52 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   53 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:54:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   54 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:55:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   55 |     assert (total_match(total_match({}, {\"this\"}) , {}));\n      |     ^~~~~~\ntest.cpp:56:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   56 |     assert (total_match(total_match({\"this\"}, {}) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:42: int main(): Assertion `starts_one_ends(2) == 18' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::string solve(int)’:\ntest.cpp:36:10: error: ‘bitset’ was not declared in this scope\n   36 |     bi = bitset<14>(sum).to_string();\n      |          ^~~~~~\ntest.cpp:21:1: note: ‘std::bitset’ is defined in header ‘<bitset>’; did you forget to ‘#include <bitset>’?\n   20 | #include<fstream>\n  +++ |+#include <bitset>\n   21 | #include<iostream>\ntest.cpp:36:26: error: request for member ‘to_string’ in ‘sum’, which is of non-class type ‘int’\n   36 |     bi = bitset<14>(sum).to_string();\n      |                          ^~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `issame(get_row({ {1,2,3,4,5,6}, {1,2,3,4,1,6}, {1,2,3,4,5,1}}, 1) , {{0, 0}, {1, 4}, {1, 0}, {2, 5}, {2, 0}})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:43: int main(): Assertion `next_smallest({}) == -1' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `is_bored(\"Is the sky blue?\") == 0' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `encode(\"TEST\") == \"tgst\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool check_dict_case(std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >)’:\ntest.cpp:35:26: error: ‘islower’ cannot be used as a function\n   35 |             if (islower(c)) hasLower = true;\n      |                          ^\ntest.cpp:36:26: error: ‘isupper’ cannot be used as a function\n   36 |             if (isupper(c)) hasUpper = true;\n      |                          ^\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:45: int main(): Assertion `count_nums({-1, -2, 0}) == 0' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:47:\ntest.cpp: In function ‘int main()’:\ntest.cpp:62:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   62 |     assert (issame(histogram(\"a b b a\") , {{'a',2},{'b', 2}}));\n      |                    ~~~~~~~~~^~~~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:63:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   63 |     assert (issame(histogram(\"a b c a b\") , {{'a', 2},{'b', 2}}));\n      |                    ~~~~~~~~~^~~~~~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:64:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   64 |     assert (issame(histogram(\"a b c d g\") , {{'a', 1}, {'b', 1}, {'c', 1}, {'d', 1}, {'g', 1}}));\n      |                    ~~~~~~~~~^~~~~~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:65:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   65 |     assert (issame(histogram(\"r t g\") , {{'r', 1},{'t', 1},{'g', 1}}));\n      |                    ~~~~~~~~~^~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:66:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   66 |     assert (issame(histogram(\"b b b b a\") , {{'b', 4}}));\n      |                    ~~~~~~~~~^~~~~~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:67:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   67 |     assert (issame(histogram(\"r t g\") , {{'r', 1},{'t', 1},{'g', 1}}));\n      |                    ~~~~~~~~~^~~~~~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:68:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   68 |     assert (issame(histogram(\"\") , {}));\n      |                    ~~~~~~~~~^~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\ntest.cpp:69:29: error: could not convert ‘histogram(std::string)()’ from ‘map<std::__cxx11::basic_string<char>,[...]>’ to ‘map<char,[...]>’\n   69 |     assert (issame(histogram(\"a\") , {{'a', 1}}));\n      |                    ~~~~~~~~~^~~~~\n      |                             |\n      |                             map<std::__cxx11::basic_string<char>,[...]>\n",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘long long int minSubArraySum(std::vector<long long int>)’:\ntest.cpp:30:44: error: ‘min’ cannot be used as a function\n   30 |         current=min(current+nums[i],nums[i]);\n      |                                            ^\ntest.cpp:31:28: error: ‘min’ cannot be used as a function\n   31 |         min=min(min,current);\n      |                            ^\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:33:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   45 |     assert (maximum(maximum({-3, 2, 1, 2, -1, -2, 1}, 1) , {2}));\n      |     ^~~~~~\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   50 |     assert (maximum(maximum({1, 0, 5, -7}, 1) , {5}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   53 |     assert (maximum(maximum({1, 2, 3, -23, 243, -400, 0}, 0) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:79: int main(): Assertion `split_words(split_words(\"Hello world!\") , {\"Hello\",\"world!\"})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: ",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:69: int main(): Assertion `minPath(minPath({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 3) , {1, 2, 1})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `tri(tri(3) , {1, 3, 2, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:46: int main(): Assertion `is_nested(\"[[]\") == false' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'boost::wrapexcept<boost::bad_any_cast>'\n  what():  boost::bad_any_cast: failed conversion using boost::any_cast\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::string fix_spaces(std::string)’:\ntest.cpp:26:18: error: ‘var_0’ was not declared in this scope\n   26 |     string out = var_0;\n      |                  ^~~~~\ntest.cpp:27:20: error: ‘var_1’ was not declared in this scope\n   27 |     int spacelen = var_1;\n      |                    ^~~~~\ntest.cpp:28:18: error: ‘var_2’ was not declared in this scope\n   28 |     for (int i = var_2; i < text.length(); i++) {\n      |                  ^~~~~\ntest.cpp:29:24: error: ‘var_3’ was not declared in this scope\n   29 |         if (text[i] == var_3) spacelen += var_4;\n      |                        ^~~~~\ntest.cpp:29:43: error: ‘var_4’ was not declared in this scope\n   29 |         if (text[i] == var_3) spacelen += var_4;\n      |                                           ^~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `sum_squares({1,2,3}) == 6' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool simplify(std::string, std::string)’:\ntest.cpp:29:14: error: ‘var_0’ was not declared in this scope\n   29 |     for (i = var_0; i < x.size(); i++) {\n      |              ^~~~~\ntest.cpp:30:21: error: ‘var_1’ was not declared in this scope\n   30 |         if (x[i] == var_1) {\n      |                     ^~~~~\ntest.cpp:31:31: error: ‘var_2’ was not declared in this scope\n   31 |             a = atoi(x.substr(var_2, i).c_str());\n      |                               ^~~~~\ntest.cpp:32:35: error: ‘var_3’ was not declared in this scope\n   32 |             b = atoi(x.substr(i + var_3).c_str());\n      |                                   ^~~~~\ntest.cpp:35:14: error: ‘var_0’ was not declared in this scope\n   35 |     for (i = var_0; i < n.size(); i++) {\n      |              ^~~~~\ntest.cpp:36:21: error: ‘var_1’ was not declared in this scope\n   36 |         if (n[i] == var_1) {\n      |                     ^~~~~\ntest.cpp:37:31: error: ‘var_2’ was not declared in this scope\n   37 |             c = atoi(n.substr(var_2, i).c_str());\n      |                               ^~~~~\ntest.cpp:38:35: error: ‘var_3’ was not declared in this scope\n   38 |             d = atoi(n.substr(i + var_3).c_str());\n      |                                   ^~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:59: int main(): Assertion `digitSum(order_by_points({1, 11, -1, -11, -12}) , {-1, -11, 1, -12, 11})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `issame(bf(\"Earth\", \"Mercury\") , {\"Venus\",})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "un_relate_package_import_insert"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "158": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "159": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  },
+  "160": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int do_algebra(std::vector<std::__cxx11::basic_string<char> >, std::vector<int>)’:\ntest.cpp:75:24: error: expected ‘;’ before ‘extern’\n   75 |                 operand\n      |                        ^\n      |                        ;\ntest.cpp:78:11: error: a function-definition is not allowed here before ‘{’ token\n   78 | int main(){\n      |           ^\ntest.cpp:82:1: error: expected ‘}’ at end of input\n   82 | }\n      | ^\ntest.cpp:74:43: note: to match this ‘{’\n   74 |             } else if (operato[k] == \"+\") {\n      |                                           ^\ntest.cpp:82:1: error: expected ‘}’ at end of input\n   82 | }\n      | ^\ntest.cpp:69:23: note: to match this ‘{’\n   69 |         while (k < j) {\n      |                       ^\ntest.cpp:82:1: error: expected ‘}’ at end of input\n   82 | }\n      | ^\ntest.cpp:46:46: note: to match this ‘{’\n   46 |     for (int i = 0; i < operato.size(); i++) {\n      |                                              ^\ntest.cpp:82:1: error: expected ‘}’ at end of input\n   82 | }\n      | ^\ntest.cpp:28:61: note: to match this ‘{’\n   28 | int do_algebra(vector<string> operato, vector<int> operand) {\n      |                                                             ^\ntest.cpp:82:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   82 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "fold_constant"
+  },
+  "161": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "remove_comments"
+  },
+  "162": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:29:9: fatal error: openssl/md5.h: No such file or directory\n   29 | #include<openssl/md5.h>\n      |         ^~~~~~~~~~~~~~~\ncompilation terminated.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_comment"
+  },
+  "163": {
+    "task_id": 163,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:49: int main(): Assertion `issame(generate_integers(2, 10) , {2, 4, 6, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "insert_dead_code"
+  }
+}

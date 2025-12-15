@@ -1,0 +1,15 @@
+{
+  "name": "robust_humaneval_perturbation:humaneval_generate_python_robust_code_style-generation-generation,model=qwen2.5-coder-0.5b-instruct",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_humaneval_perturbation",
+      "subset": "humaneval_generate_python_robust_code_style"
+    }
+  },
+  "adapter_spec": {
+    "model": "qwen2.5-coder-0.5b-instruct"
+  },
+  "groups": [
+    "robust_humaneval_perturbation"
+  ]
+}

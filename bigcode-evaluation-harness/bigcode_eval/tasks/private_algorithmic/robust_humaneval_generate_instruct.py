@@ -64,13 +64,7 @@ IMPORT_HELPER = {
     ],
     "java": [
         "import java.util.*;",
-        "import java.util.OptionalInt;",
-        "import java.util.stream.IntStream;",
-        "import java.util.stream.Collectors;",
-        "import java.util.regex.Matcher;",
-        "import java.util.regex.Pattern;",
-        "import java.util.Arrays;",
-        "import java.util.ArrayList;"
+        "import java.lang.*;"
     ],
     "javascript":[]
 }
@@ -340,22 +334,22 @@ Complete code (including all the content of the code I provided and the code you
            [(import_helper + "\n" + g).strip() for g in gen] for gen in generations
            ]
 
-        for i,v in enumerate(generations):
-            gen_func_name = self.p.get_function_names(v[0])[1]
-            ori_func_name = self.p.get_invoke_func_names(references[i])[1]
-            #print(references[i])
-            #print(gen_func_name,ori_func_name)
-            if gen_func_name and ori_func_name:
-                if len(gen_func_name) > 1:
-                    n_min = gen_func_name[0]
-                    d_min = minDistance(n_min,ori_func_name[0]) #只能通过编辑距离去判断到底是哪个函数名
-                    for n in gen_func_name[1:]:
-                        d = minDistance(n,ori_func_name[0])
-                        if d < d_min:
-                            n_min = n
-                else:
-                    n_min = gen_func_name[0]
-                references[i] = self.p.rename_function_name(references[i],ori_func_name[0],n_min)
+        if self.language != "python":
+            for i,v in enumerate(generations):
+                gen_func_name = self.p.get_function_names(v[0])[1]
+                ori_func_name = self.p.get_invoke_func_names(references[i])[1]
+                if gen_func_name and ori_func_name:
+                    if len(gen_func_name) > 1:
+                        n_min = gen_func_name[0]
+                        d_min = minDistance(n_min,ori_func_name[0]) #只能通过编辑距离去判断到底是哪个函数名
+                        for n in gen_func_name[1:]:
+                            d = minDistance(n,ori_func_name[0])
+                            if d < d_min:
+                                n_min = n
+                    else:
+                        n_min = gen_func_name[0]
+                    references[i] = self.p.rename_function_name(references[i],ori_func_name[0],n_min)
+            
 
         metrics, cases = code_metric.compute(
             references=references,
@@ -374,6 +368,7 @@ Complete code (including all the content of the code I provided and the code you
                 inner[k] = v
             inner['task_id'] = self.task_ids[i]
             inner['perturbation_type'] = self.perturbation_types[i]
+            inner['evaluation_codes'] = [[generation + '\n\n' + references[i]] for generation in generations[i]]
             cases_return[i] = copy.deepcopy(inner)
             #print(cases_return)
         stat = {}

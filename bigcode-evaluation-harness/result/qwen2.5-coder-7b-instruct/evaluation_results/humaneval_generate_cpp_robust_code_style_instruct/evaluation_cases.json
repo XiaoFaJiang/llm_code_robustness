@@ -1,0 +1,1150 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:43:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:78: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [3]{1.0e+0f, 2.0e+0f, 3.0e+0f})), 3}, std::allocator<float>()))) - (2.0e+0 / 3.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   45 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0}) - 2.0/3.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                              |\n      |                                                                              double\ntest.cpp:46:83: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [4]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f})), 4}, std::allocator<float>()))) - 1.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   46 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0}) - 1.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n      |                                                                                   |\n      |                                                                                   double\ntest.cpp:47:88: error: could not convert ‘(((double)mean_absolute_deviation(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{1.0e+0f, 2.0e+0f, 3.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>()))) - (6.0e+0 / 5.0e+0))’ from ‘double’ to ‘std::vector<float>’\n   47 |     assert (mean_absolute_deviation(mean_absolute_deviation({1.0, 2.0, 3.0, 4.0, 5.0}) - 6.0/5.0) < 1e-4);\n      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n      |                                                                                        |\n      |                                                                                        double\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:67: int main(): Assertion `parse_nested_parens(parse_nested_parens(\"(()()) ((())) () ((())()())\"),{2, 3, 1, 3})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:59: int main(): Assertion `parse_music(parse_music(\"o o o o\") ,{4, 4, 4, 4})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:46:39: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   46 |         if (find_closest_elements(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:44:33: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   44 |         if (rescale_to_unit(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `remove_duplicates(remove_duplicates({1, 2, 3, 2, 4, 3, 5}) , {1, 4, 5})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:39:30: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   39 |         if (get_positive(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:61:\ntest.cpp: In function ‘int main()’:\ntest.cpp:78:31: error: could not convert ‘poly(std::vector<double>(coeffs), solution)’ from ‘double’ to ‘std::vector<double>’\n   78 |         assert (find_zero(poly(coeffs, solution))< 1e-3);\n      |                           ~~~~^~~~~~~~~~~~~~~~~~\n      |                               |\n      |                               double\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:48:27: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<int>’\n   48 |         if (sort_even(a[i]-b[i])>1e-4) return false;\nIn file included from test.cpp:43:\ntest.cpp: In function ‘int main()’:\ntest.cpp:53:29: error: could not convert ‘sort_even(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   53 |     assert (issame(sort_even({1, 2, 3}), {1, 2, 3}));\n      |                    ~~~~~~~~~^~~~~~~~~~~\n      |                             |\n      |                             vector<int>\ntest.cpp:54:29: error: could not convert ‘sort_even(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   54 |     assert (issame(sort_even({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10}) , {-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123}));\n      |                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n      |                             |\n      |                             vector<int>\ntest.cpp:55:29: error: could not convert ‘sort_even(std::vector<int>)()’ from ‘vector<int>’ to ‘vector<float>’\n   55 |     assert (issame(sort_even({5, 8, -12, 4, 23, 2, 3, 11, 12, -10}) , {-12, 8, 3, 4, 5, 2, 12, 11, 23, -10}));\n      |                    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n      |                             |\n      |                             vector<int>\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:51: int main(): Assertion `prime_fib(1) == 2' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:28:\ntest.cpp: In function ‘int main()’:\ntest.cpp:30:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   30 |     assert (triangle_area(triangle_area(5, 3) - 7.5)<1e-4);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:28:\ntest.cpp:31:52: error: too few arguments to function ‘float triangle_area(float, float)’\n   31 |     assert (triangle_area(triangle_area(2, 2) - 2.0)<1e-4);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:28:\ntest.cpp:32:54: error: too few arguments to function ‘float triangle_area(float, float)’\n   32 |     assert (triangle_area(triangle_area(10, 8) - 40.0)<1e-4);\n      |                                                      ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float h) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:42:\ntest.cpp: In function ‘int main()’:\ntest.cpp:44:44: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [5]{3.0e+0f, 1.0e+0f, 2.0e+0f, 4.0e+0f, 5.0e+0f})), 5}, std::allocator<float>())) - (float)3)’ from ‘float’ to ‘std::vector<float>’\n   44 |     assert (median(median({3, 1, 2, 4, 5}) - 3)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                            |\n      |                                            float\ntest.cpp:45:54: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [6]{-1.0e+1f, 4.0e+0f, 6.0e+0f, 1.0e+3f, 1.0e+1f, 2.0e+1f})), 6}, std::allocator<float>()))) - 8.0e+0)’ from ‘double’ to ‘std::vector<float>’\n   45 |     assert (median(median({-10, 4, 6, 1000, 10, 20}) -8.0)<1e-4);\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n      |                                                      |\n      |                                                      double\ntest.cpp:46:32: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [1]{5.0e+0f})), 1}, std::allocator<float>())) - (float)5)’ from ‘float’ to ‘std::vector<float>’\n   46 |     assert (median(median({5}) - 5)<1e-4);\n      |                    ~~~~~~~~~~~~^~~\n      |                                |\n      |                                float\ntest.cpp:47:35: error: could not convert ‘(((double)median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [2]{6.0e+0f, 5.0e+0f})), 2}, std::allocator<float>()))) - 5.5e+0)’ from ‘double’ to ‘std::vector<float>’\n   47 |     assert (median(median({6, 5}) - 5.5)<1e-4);\n      |                    ~~~~~~~~~~~~~~~^~~~~\n      |                                   |\n      |                                   double\ntest.cpp:48:50: error: could not convert ‘(median(std::vector<float>(std::initializer_list<float>{((const float*)(& const float [7]{8.0e+0f, 1.0e+0f, 3.0e+0f, 9.0e+0f, 9.0e+0f, 2.0e+0f, 7.0e+0f})), 7}, std::allocator<float>())) - (float)7)’ from ‘float’ to ‘std::vector<float>’\n   48 |     assert (median(median({8, 1, 3, 9, 9, 2, 7}) - 7)<1e-4 );\n      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n      |                                                  |\n      |                                                  float\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:39: int main(): Assertion `same_chars(\"abcd\", \"dddddddabcf\") == false' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::vector<int> common(std::vector<int>, std::vector<int>)’:\ntest.cpp:31:29: error: no matching function for call to ‘std::vector<int>::erase(std::back_insert_iterator<std::vector<int> >&, std::vector<int>::iterator)’\n   31 |     out.erase(end, out.end());\n      |                             ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1427:7: note: candidate: ‘std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]’\n 1427 |       erase(const_iterator __position)\n      |       ^~~~~\n/usr/include/c++/9/bits/stl_vector.h:1427:7: note:   candidate expects 1 argument, 2 provided\n/usr/include/c++/9/bits/stl_vector.h:1454:7: note: candidate: ‘std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]’\n 1454 |       erase(const_iterator __first, const_iterator __last)\n      |       ^~~~~\n/usr/include/c++/9/bits/stl_vector.h:1454:28: note:   no known conversion for argument 1 from ‘std::back_insert_iterator<std::vector<int> >’ to ‘std::vector<int>::const_iterator’ {aka ‘__gnu_cxx::__normal_iterator<const int*, std::vector<int> >’}\n 1454 |       erase(const_iterator __first, const_iterator __last)\n      |             ~~~~~~~~~~~~~~~^~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:39:28: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   39 |         if (derivative(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:31:\ntest.cpp: In function ‘int main()’:\ntest.cpp:33:54: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   33 |     assert (triangle_area(triangle_area(3, 4, 5)-6.00)<0.01);\n      |                                                      ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:34:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   34 |     assert (triangle_area(triangle_area(1, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:35:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   35 |     assert (triangle_area(triangle_area(4, 8, 5) -8.18)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:36:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   36 |     assert (triangle_area(triangle_area(2, 2, 2) -1.73)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:37:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   37 |     assert (triangle_area(triangle_area(1, 2, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:38:58: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   38 |     assert (triangle_area(triangle_area(10, 5, 7) - 16.25)<0.01);\n      |                                                          ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:39:52: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   39 |     assert (triangle_area(triangle_area(2, 6, 3) +1)<0.01);\n      |                                                    ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:40:55: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   40 |     assert (triangle_area(triangle_area(1, 1, 1) -0.43)<0.01);\n      |                                                       ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\nIn file included from test.cpp:31:\ntest.cpp:41:53: error: too few arguments to function ‘float triangle_area(float, float, float)’\n   41 |     assert (triangle_area(triangle_area(2, 2, 10) +1)<0.01);\n      |                                                     ^\ntest.cpp:24:7: note: declared here\n   24 | float triangle_area(float a, float b, float c) {\n      |       ^~~~~~~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:41:6: error: ambiguating new declaration of ‘bool total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   41 | bool total_match(vector<string> a,vector<string>b){\n      |      ^~~~~~~~~~~\ntest.cpp:26:16: note: old declaration ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   26 | vector<string> total_match(vector<string> lst1, vector<string> lst2) {\n      |                ^~~~~~~~~~~\nIn file included from test.cpp:40:\ntest.cpp: In function ‘int main()’:\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   50 |     assert (total_match(total_match({}, {}) , {}));\n      |     ^~~~~~\ntest.cpp:51:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   51 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:52:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   52 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   53 |     assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n      |     ^~~~~~\ntest.cpp:54:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   54 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n      |     ^~~~~~\ntest.cpp:55:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   55 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:56:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   56 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:57:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   57 |     assert (total_match(total_match({}, {\"this\"}) , {}));\n      |     ^~~~~~\ntest.cpp:58:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   58 |     assert (total_match(total_match({\"this\"}, {}) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:39: int main(): Assertion `is_simple_power(1, 4)== true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:50: int main(): Assertion `is_bored(\"Is the sky blue?\") == 0' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:51: int main(): Assertion `encode(\"TEST\") == \"tgst\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:53:\ntest.cpp: In function ‘int main()’:\ntest.cpp:55:74: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   55 |     assert (digitSum({0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3}) == 10);\n      |                                                                          ^\n      |                                                                          |\n      |                                                                          <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:56:63: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   56 |     assert (digitSum({1,0,1,8,2,4597,2,1,3,40,1,2,1,2,4,2,5,1}) == 25);\n      |                                                               ^\n      |                                                               |\n      |                                                               <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:57:74: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   57 |     assert (digitSum({1,3,1,32,5107,34,83278,109,163,23,2323,32,30,1,9,3}) == 13);\n      |                                                                          ^\n      |                                                                          |\n      |                                                                          <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:58:59: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   58 |     assert (digitSum({0,724,32,71,99,32,6,0,5,91,83,0,5,6}) == 11);\n      |                                                           ^\n      |                                                           |\n      |                                                           <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:59:38: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   59 |     assert (digitSum({0,81,12,3,1,21}) == 3);\n      |                                      ^\n      |                                      |\n      |                                      <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:60:35: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   60 |     assert (digitSum({0,8,1,2,1,7}) == 7);\n      |                                   ^\n      |                                   |\n      |                                   <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:62:44: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   62 |     assert (digitSum({8191, 123456, 127, 7}) == 19);\n      |                                            ^\n      |                                            |\n      |                                            <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\nIn file included from test.cpp:53:\ntest.cpp:63:37: error: cannot convert ‘<brace-enclosed initializer list>’ to ‘int’\n   63 |     assert (digitSum({127, 97, 8192}) == 10);\n      |                                     ^\n      |                                     |\n      |                                     <brace-enclosed initializer list>\ntest.cpp:34:18: note:   initializing argument 1 of ‘int digitSum(int)’\n   34 | int digitSum(int num) {\n      |              ~~~~^~~\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘bool check_dict_case(std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >)’:\ntest.cpp:34:26: error: ‘islower’ cannot be used as a function\n   34 |             if (islower(c)) hasLower = true;\n      |                          ^\ntest.cpp:35:26: error: ‘isupper’ cannot be used as a function\n   35 |             if (isupper(c)) hasUpper = true;\n      |                          ^\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:49: int main(): Assertion `count_nums({-1, -2, 0}) == 0' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:60: int main(): Assertion `sort_array(sort_array({1,5,2,3,4}) , {1, 2, 4, 3, 5})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:33:\ntest.cpp: In function ‘int main()’:\ntest.cpp:45:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   45 |     assert (maximum(maximum({-3, 2, 1, 2, -1, -2, 1}, 1) , {2}));\n      |     ^~~~~~\ntest.cpp:50:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   50 |     assert (maximum(maximum({1, 0, 5, -7}, 1) , {5}));\n      |     ^~~~~~\ntest.cpp:53:5: error: invalid static_cast from type ‘std::vector<int>’ to type ‘bool’\n   53 |     assert (maximum(maximum({1, 2, 3, -23, 243, -400, 0}, 0) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::vector<int> minPath(std::vector<std::vector<int> >, int)’:\ntest.cpp:45:102: error: could not convert ‘{{(cx + 1), cy}, {(cx - 1), cy}, {cx, (cy + 1)}, {cx, (cy - 1)}}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<std::pair<int, std::pair<int, int> > >’\n   45 |         vector<pair<int, pair<int, int>>> neighbors = {{cx+1, cy}, {cx-1, cy}, {cx, cy+1}, {cx, cy-1}};\n      |                                                                                                      ^\n      |                                                                                                      |\n      |                                                                                                      <brace-enclosed initializer list>\ntest.cpp:47:51: error: no match for ‘operator>=’ (operand types are ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} and ‘int’)\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                ~~ ^~ ~\n      |                                                |     |\n      |                                                |     int\n      |                                                std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type {aka std::pair<int, int>}\nIn file included from /usr/include/c++/9/utility:70,\n                 from /usr/include/c++/9/algorithm:60,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_pair.h:479:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator>=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’\n  479 |     operator>=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_pair.h:479:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘int’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:355:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’\n  355 |     operator>=(const reverse_iterator<_Iterator>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:355:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::reverse_iterator<_Iterator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:393:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’\n  393 |     operator>=(const reverse_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:393:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::reverse_iterator<_Iterator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:1199:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’\n 1199 |     operator>=(const move_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1199:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::move_iterator<_IteratorL>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:1205:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’\n 1205 |     operator>=(const move_iterator<_Iterator>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1205:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::move_iterator<_IteratorL>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:564:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’\n  564 |     operator>=(basic_string_view<_CharT, _Traits> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:564:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::pair<int, int>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:570:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>=(std::basic_string_view<_CharT, _Traits>, std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >)’\n  570 |     operator>=(basic_string_view<_CharT, _Traits> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:570:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::pair<int, int>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:576:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>=(std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’\n  576 |     operator>=(__detail::__idt<basic_string_view<_CharT, _Traits>> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:576:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘int’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6340:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 6340 |     operator>=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6340:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6353:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’\n 6353 |     operator>=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6353:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6365:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 6365 |     operator>=(const _CharT* __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6365:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   mismatched types ‘const _CharT*’ and ‘std::pair<int, int>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/array:280:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator>=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’\n  280 |     operator>=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)\n      |     ^~~~~~~~\n/usr/include/c++/9/array:280:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::array<_Tp, _Nm>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/tuple:1463:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator>=(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)’\n 1463 |     operator>=(const tuple<_TElements...>& __t,\n      |     ^~~~~~~~\n/usr/include/c++/9/tuple:1463:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::tuple<_Tps ...>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1025:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() >= declval<_Up>()))> std::operator>=(const std::optional<_Tp>&, const std::optional<_Up>&)’\n 1025 |     operator>=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1025:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1084:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>=(const std::optional<_Tp>&, std::nullopt_t)’\n 1084 |     operator>=(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1084:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1089:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>=(std::nullopt_t, const std::optional<_Tp>&)’\n 1089 |     operator>=(nullopt_t, const optional<_Tp>& __rhs) noexcept\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1089:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1155:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() >= declval<_Up>()))> std::operator>=(const std::optional<_Tp>&, const _Up&)’\n 1155 |     operator>=(const optional<_Tp>& __lhs, const _Up& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1155:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1161:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Up>() >= declval<_Tp>()))> std::operator>=(const _Up&, const std::optional<_Tp>&)’\n 1161 |     operator>=(const _Up& __lhs, const optional<_Tp>& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1161:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   mismatched types ‘const std::optional<_Tp>’ and ‘int’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1930:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’\n 1930 |     operator>=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1930:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::vector<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/set:61,\n                 from test.cpp:9:\n/usr/include/c++/9/bits/stl_set.h:1024:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’\n 1024 |     operator>=(const set<_Key, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_set.h:1024:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::set<_Key, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/set:62,\n                 from test.cpp:9:\n/usr/include/c++/9/bits/stl_multiset.h:1009:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’\n 1009 |     operator>=(const multiset<_Key, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_multiset.h:1009:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/map:61,\n                 from test.cpp:10:\n/usr/include/c++/9/bits/stl_map.h:1500:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’\n 1500 |     operator>=(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_map.h:1500:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/map:62,\n                 from test.cpp:10:\n/usr/include/c++/9/bits/stl_multimap.h:1164:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’\n 1164 |     operator>=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_multimap.h:1164:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:353:5: note: candidate: ‘template<class _Tp, class _Ref, class _Ptr> bool std::operator>=(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)’\n  353 |     operator>=(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:353:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:360:5: note: candidate: ‘template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator>=(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)’\n  360 |     operator>=(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:360:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:2359:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>=(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’\n 2359 |     operator>=(const deque<_Tp, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:2359:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::deque<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/queue:64,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_queue.h:380:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator>=(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’\n  380 |     operator>=(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_queue.h:380:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::queue<_Tp, _Seq>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/stack:61,\n                 from test.cpp:12:\n/usr/include/c++/9/bits/stl_stack.h:355:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator>=(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)’\n  355 |     operator>=(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_stack.h:355:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::stack<_Tp, _Seq>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\nIn file included from /usr/include/c++/9/list:63,\n                 from test.cpp:13:\n/usr/include/c++/9/bits/stl_list.h:2050:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’\n 2050 |     operator>=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_list.h:2050:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:54: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                      ^\ntest.cpp:47:62: error: no match for ‘operator<’ (operand types are ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’})\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                           ~~ ^ ~~~~~~~~~~~~~~\n      |                                                           |                |\n      |                                                           |                std::vector<int>::size_type {aka long unsigned int}\n      |                                                           std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type {aka std::pair<int, int>}\nIn file included from /usr/include/c++/9/utility:70,\n                 from /usr/include/c++/9/algorithm:60,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_pair.h:454:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’\n  454 |     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_pair.h:454:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’}\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:331:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’\n  331 |     operator<(const reverse_iterator<_Iterator>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:331:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::reverse_iterator<_Iterator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:369:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’\n  369 |     operator<(const reverse_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:369:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::reverse_iterator<_Iterator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:1163:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’\n 1163 |     operator<(const move_iterator<_IteratorL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1163:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::move_iterator<_IteratorL>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/stl_algobase.h:67,\n                 from /usr/include/c++/9/algorithm:61,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_iterator.h:1169:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’\n 1169 |     operator<(const move_iterator<_Iterator>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_iterator.h:1169:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::move_iterator<_IteratorL>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:510:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’\n  510 |     operator< (basic_string_view<_CharT, _Traits> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:510:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::pair<int, int>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:516:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >)’\n  516 |     operator< (basic_string_view<_CharT, _Traits> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:516:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::pair<int, int>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/basic_string.h:48,\n                 from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/string_view:522:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator<(std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’\n  522 |     operator< (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/string_view:522:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘long unsigned int’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6226:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 6226 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6226:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6239:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’\n 6239 |     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6239:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/string:55,\n                 from /usr/include/c++/9/stdexcept:39,\n                 from /usr/include/c++/9/array:39,\n                 from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/basic_string.h:6251:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 6251 |     operator<(const _CharT* __lhs,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/basic_string.h:6251:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   mismatched types ‘const _CharT*’ and ‘std::pair<int, int>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/tuple:39,\n                 from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/array:262:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’\n  262 |     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)\n      |     ^~~~~~~~\n/usr/include/c++/9/array:262:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::array<_Tp, _Nm>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/functional:54,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/tuple:1432:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)’\n 1432 |     operator<(const tuple<_TElements...>& __t,\n      |     ^~~~~~~~\n/usr/include/c++/9/tuple:1432:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::tuple<_Tps ...>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1001:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)’\n 1001 |     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1001:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1054:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)’\n 1054 |     operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1054:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1059:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)’\n 1059 |     operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1059:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   mismatched types ‘const std::optional<_Tp>’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’}\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1119:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const _Up&)’\n 1119 |     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1119:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::optional<_Tp>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/node_handle.h:39,\n                 from /usr/include/c++/9/bits/hashtable.h:37,\n                 from /usr/include/c++/9/unordered_map:46,\n                 from /usr/include/c++/9/functional:61,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/optional:1125:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Up>() < declval<_Tp>()))> std::operator<(const _Up&, const std::optional<_Tp>&)’\n 1125 |     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)\n      |     ^~~~~~~~\n/usr/include/c++/9/optional:1125:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   mismatched types ‘const std::optional<_Tp>’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’}\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1905:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’\n 1905 |     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1905:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::vector<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/set:61,\n                 from test.cpp:9:\n/usr/include/c++/9/bits/stl_set.h:996:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’\n  996 |     operator<(const set<_Key, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_set.h:996:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::set<_Key, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/set:62,\n                 from test.cpp:9:\n/usr/include/c++/9/bits/stl_multiset.h:981:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’\n  981 |     operator<(const multiset<_Key, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_multiset.h:981:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/map:61,\n                 from test.cpp:10:\n/usr/include/c++/9/bits/stl_map.h:1472:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’\n 1472 |     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_map.h:1472:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/map:62,\n                 from test.cpp:10:\n/usr/include/c++/9/bits/stl_multimap.h:1136:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’\n 1136 |     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_multimap.h:1136:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:312:5: note: candidate: ‘template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)’\n  312 |     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:312:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:320:5: note: candidate: ‘template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)’\n  320 |     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:320:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/deque:67,\n                 from /usr/include/c++/9/queue:60,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_deque.h:2330:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)’\n 2330 |     operator<(const deque<_Tp, _Alloc>& __x,\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_deque.h:2330:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::deque<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/queue:64,\n                 from test.cpp:11:\n/usr/include/c++/9/bits/stl_queue.h:356:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)’\n  356 |     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_queue.h:356:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::queue<_Tp, _Seq>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/stack:61,\n                 from test.cpp:12:\n/usr/include/c++/9/bits/stl_stack.h:331:5: note: candidate: ‘template<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)’\n  331 |     operator<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_stack.h:331:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::stack<_Tp, _Seq>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/list:63,\n                 from test.cpp:13:\n/usr/include/c++/9/bits/stl_list.h:2025:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’\n 2025 |     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n      |     ^~~~~~~~\n/usr/include/c++/9/bits/stl_list.h:2025:5: note:   template argument deduction/substitution failed:\ntest.cpp:47:77: note:   ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’\n   47 |             if (nx >= 0 && nx < grid.size() && ny >= 0 && ny < grid[0].size()) {\n      |                                                                             ^\nIn file included from /usr/include/c++/9/bits/ios_base.h:46,\n                 from /usr/include/c++/9/ios:42,\n                 from /usr/include/c++/9/ostream:38,\n                 from /usr/include/c++/9/iostream:39,\n                 from test.cpp:18:\n/usr/include/c++/9/system_error:208:3: note: candidate: ‘bool std::operator<(const std::error_code&, const std::error_code&)’\n  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept\n      |   ^~~~~~~~\n/usr/include/c++/9/system_error:208:31: note:   no known conversion for argument 1 from ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} to ‘const std::error_code&’\n  208 |   operator<(const error_code& __lhs, const error_code& __rhs) noexcept\n      |             ~~~~~~~~~~~~~~~~~~^~~~~\n/usr/include/c++/9/system_error:282:3: note: candidate: ‘bool std::operator<(const std::error_condition&, const std::error_condition&)’\n  282 |   operator<(const error_condition& __lhs,\n      |   ^~~~~~~~\n/usr/include/c++/9/system_error:282:36: note:   no known conversion for argument 1 from ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} to ‘const std::error_condition&’\n  282 |   operator<(const error_condition& __lhs,\n      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~\ntest.cpp:48:39: error: no match for ‘operator[]’ (operand types are ‘__gnu_cxx::__alloc_traits<std::allocator<std::vector<int> >, std::vector<int> >::value_type’ {aka ‘std::vector<int>’} and ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’})\n   48 |                 pq.push_back({grid[nx][ny], {nx, ny}});\n      |                                       ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1040:7: note: candidate: ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::reference = int&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’\n 1040 |       operator[](size_type __n) _GLIBCXX_NOEXCEPT\n      |       ^~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1040:28: note:   no known conversion for argument 1 from ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} to ‘std::vector<int>::size_type’ {aka ‘long unsigned int’}\n 1040 |       operator[](size_type __n) _GLIBCXX_NOEXCEPT\n      |                  ~~~~~~~~~~^~~\n/usr/include/c++/9/bits/stl_vector.h:1058:7: note: candidate: ‘std::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) const [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::const_reference = const int&; std::vector<_Tp, _Alloc>::size_type = long unsigned int]’\n 1058 |       operator[](size_type __n) const _GLIBCXX_NOEXCEPT\n      |       ^~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1058:28: note:   no known conversion for argument 1 from ‘std::tuple_element<1, std::pair<int, std::pair<int, int> > >::type’ {aka ‘std::pair<int, int>’} to ‘std::vector<int>::size_type’ {aka ‘long unsigned int’}\n 1058 |       operator[](size_type __n) const _GLIBCXX_NOEXCEPT\n      |                  ~~~~~~~~~~^~~\ntest.cpp:48:54: error: no matching function for call to ‘std::vector<std::pair<int, std::pair<int, int> > >::push_back(<brace-enclosed initializer list>)’\n   48 |                 pq.push_back({grid[nx][ny], {nx, ny}});\n      |                                                      ^\nIn file included from /usr/include/c++/9/vector:67,\n                 from /usr/include/c++/9/functional:62,\n                 from /usr/include/c++/9/pstl/glue_algorithm_defs.h:13,\n                 from /usr/include/c++/9/algorithm:71,\n                 from test.cpp:3:\n/usr/include/c++/9/bits/stl_vector.h:1184:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::pair<int, std::pair<int, int> >; _Alloc = std::allocator<std::pair<int, std::pair<int, int> > >; std::vector<_Tp, _Alloc>::value_type = std::pair<int, std::pair<int, int> >]’\n 1184 |       push_back(const value_type& __x)\n      |       ^~~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1184:35: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘const value_type&’ {aka ‘const std::pair<int, std::pair<int, int> >&’}\n 1184 |       push_back(const value_type& __x)\n      |                 ~~~~~~~~~~~~~~~~~~^~~\n/usr/include/c++/9/bits/stl_vector.h:1200:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::pair<int, std::pair<int, int> >; _Alloc = std::allocator<std::pair<int, std::pair<int, int> > >; std::vector<_Tp, _Alloc>::value_type = std::pair<int, std::pair<int, int> >]’\n 1200 |       push_back(value_type&& __x)\n      |       ^~~~~~~~~\n/usr/include/c++/9/bits/stl_vector.h:1200:30: note:   no known conversion for argument 1 from ‘<brace-enclosed initializer list>’ to ‘std::vector<std::pair<int, std::pair<int, int> > >::value_type&&’ {aka ‘std::pair<int, std::pair<int, int> >&&’}\n 1200 |       push_back(value_type&& __x)\n      |                 ~~~~~~~~~~~~~^~~\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:48: int main(): Assertion `tri(tri(3) , {1, 3, 2, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:45: int main(): Assertion `is_nested(\"[[]\") == false' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'boost::wrapexcept<boost::bad_any_cast>'\n  what():  boost::bad_any_cast: failed conversion using boost::any_cast\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:45: int main(): Assertion `file_name_check(\"example.txt\") == \"Yes\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:36: int main(): Assertion `sum_squares({1,2,3}) == 6' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `simplify(\"1/5\", \"5/1\") == true' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:56: int main(): Assertion `order_by_points(order_by_points({1, 11, -1, -11, -12}) , {-1, -11, 1, -12, 11})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": false,
+    "result": "failed: compilation error: In file included from test.cpp:36:\ntest.cpp: In function ‘int main()’:\ntest.cpp:40:50: error: narrowing conversion of ‘1.0000000000000001e-1’ from ‘double’ to ‘int’ [-Wnarrowing]\n   40 |     assert (double_the_difference({0.1, 0.2, 0.3}) == 0 );\n      |                                                  ^\ntest.cpp:43:46: error: narrowing conversion of ‘2.0000000000000001e-1’ from ‘double’ to ‘int’ [-Wnarrowing]\n   43 |     assert (double_the_difference({0.2, 3, 5}) == 34);\n      |                                              ^\ntest.cpp:55:35: error: could not convert ‘lst’ from ‘vector<float>’ to ‘vector<int>’\n   55 |     assert (double_the_difference(lst) == odd_sum );\n      |                                   ^~~\n      |                                   |\n      |                                   vector<float>\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "158": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "159": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "160": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int do_algebra(std::vector<std::__cxx11::basic_string<char> >, std::vector<int>)’:\ntest.cpp:58:42: error: no match for ‘operator/’ (operand types are ‘__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type’ {aka ‘int’} and ‘std::vector<int>’)\n   58 |             int temp = operand[posto[i]] / operand\ntest.cpp:65:1: error: expected ‘}’ at end of input\n   65 | }\n      | ^\ntest.cpp:57:40: note: to match this ‘{’\n   57 |         } else if (operato[i] == \"//\") {\n      |                                        ^\ntest.cpp:65:1: error: expected ‘}’ at end of input\n   65 | }\n      | ^\ntest.cpp:41:46: note: to match this ‘{’\n   41 |     for (int i = 0; i < operato.size(); i++) {\n      |                                              ^\ntest.cpp:65:1: error: expected ‘}’ at end of input\n   65 | }\n      | ^\ntest.cpp:29:61: note: to match this ‘{’\n   29 | int do_algebra(vector<string> operato, vector<int> operand) {\n      |                                                             ^\ntest.cpp:65:1: warning: no return statement in function returning non-void [-Wreturn-type]\n   65 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "161": {
+    "task_id": 161,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `solve(\"1234\") == \"4321\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "162": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:23:9: fatal error: openssl/md5.h: No such file or directory\n   23 | #include<openssl/md5.h>\n      |         ^~~~~~~~~~~~~~~\ncompilation terminated.\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "163": {
+    "task_id": 163,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:61: int main(): Assertion `issame(generate_integers(2, 10) , {2, 4, 6, 8})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  }
+}

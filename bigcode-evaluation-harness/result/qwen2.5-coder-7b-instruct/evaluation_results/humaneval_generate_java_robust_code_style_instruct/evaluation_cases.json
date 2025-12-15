@@ -1,0 +1,1150 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "2": {
+    "task_id": 2,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "3": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "4": {
+    "task_id": 4,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "5": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "6": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "7": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "8": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "9": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "10": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "11": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "12": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "13": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "14": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "15": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "16": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "17": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "18": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "19": {
+    "task_id": 19,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "20": {
+    "task_id": 20,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "21": {
+    "task_id": 21,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "22": {
+    "task_id": 22,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(List.of())).equals(List.of()),\n                 ^\n  symbol:   method filterIntergers(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:26: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(Arrays.asList(4, Map.of(), List.of(), 23.2, 9, \"adasd\"))).equals(Arrays.asList(4, 9)),\n                 ^\n  symbol:   method filterIntergers(ArrayList<Object>)\n  location: variable s of type Solution\nMain.java:27: error: cannot find symbol\n                s.filterIntergers(new ArrayList<>(Arrays.asList(3, 'c', 3, 3, 'a', 'b'))).equals(Arrays.asList(3, 3, 3))\n                 ^\n  symbol:   method filterIntergers(ArrayList<INT#1>)\n  location: variable s of type Solution\n  where INT#1,INT#2 are intersection types:\n    INT#1 extends Object,Serializable,Comparable<? extends INT#2>,Constable\n    INT#2 extends Object,Serializable,Comparable<?>,Constable\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "23": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "24": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "25": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "26": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "27": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "28": {
+    "task_id": 28,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "29": {
+    "task_id": 29,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "30": {
+    "task_id": 30,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "31": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "32": {
+    "task_id": 32,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "33": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "34": {
+    "task_id": 34,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "35": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "36": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "37": {
+    "task_id": 37,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "38": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: cannot find symbol\n            sb.decodeCyclic(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeCyclic(char)\n  location: variable sb of type StringBuilder\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "39": {
+    "task_id": 39,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "40": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "41": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "42": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "43": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "44": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "45": {
+    "task_id": 45,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "46": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "47": {
+    "task_id": 47,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "48": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "49": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "50": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:41: error: cannot find symbol\n            sb.decodeShift(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeShift(char)\n  location: variable sb of type StringBuilder\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "51": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "52": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "53": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "54": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "55": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "56": {
+    "task_id": 56,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "57": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "58": {
+    "task_id": 58,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "59": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "60": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "61": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "62": {
+    "task_id": 62,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "63": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "64": {
+    "task_id": 64,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "65": {
+    "task_id": 65,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "66": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "67": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "68": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "69": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "70": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "71": {
+    "task_id": 71,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "72": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "73": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "74": {
+    "task_id": 74,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "75": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:18: error: class Solution is already defined in package unnamed package\n    public boolean isMultiplyPrime(int a) {class Solution {\n                                           ^\nMain.java:30: error: cannot find symbol\n            if (!IsPrime.is_prime(i)) continue;\n                 ^\n  symbol:   variable IsPrime\n  location: class Solution\nMain.java:32: error: cannot find symbol\n                if (!IsPrime.is_prime(j)) continue;\n                     ^\n  symbol:   variable IsPrime\n  location: class Solution\nMain.java:34: error: cannot find symbol\n                    if (!IsPrime.is_prime(k)) continue;\n                         ^\n  symbol:   variable IsPrime\n  location: class Solution\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "76": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "77": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "78": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "79": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "80": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "81": {
+    "task_id": 81,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:58: error: not a statement\n                letter\n                ^\nMain.java:58: error: ';' expected\n                letter\n                      ^\nMain.java:59: error: illegal start of expression\npublic class Main {\n^\nMain.java:74: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "82": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "83": {
+    "task_id": 83,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "84": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "85": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "86": {
+    "task_id": 86,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "87": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "88": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "89": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "90": {
+    "task_id": 90,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "91": {
+    "task_id": 91,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "92": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "93": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "94": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "95": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "96": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "97": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "98": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "99": {
+    "task_id": 99,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "100": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "101": {
+    "task_id": 101,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "102": {
+    "task_id": 102,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "103": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "104": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "105": {
+    "task_id": 105,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "106": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "107": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "108": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "109": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "110": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "111": {
+    "task_id": 111,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "112": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "113": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "114": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "115": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "116": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "117": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "118": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "119": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "120": {
+    "task_id": 120,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "121": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "122": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "123": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "124": {
+    "task_id": 124,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:51: error: '(' expected\n        } catch\n               ^\nMain.java:52: error: modifier public not allowed here\npublic class Main {\n       ^\nMain.java:77: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "125": {
+    "task_id": 125,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "126": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "127": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "128": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "129": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: illegal start of expression\npublic class Main {\n^\nMain.java:70: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "130": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:365)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:428)\n\tat Solution.tri(Main.java:38)\n\tat Main.main(Main.java:49)\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "131": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "132": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "133": {
+    "task_id": 133,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "134": {
+    "task_id": 134,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "135": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "136": {
+    "task_id": 136,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "137": {
+    "task_id": 137,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "138": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "139": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "140": {
+    "task_id": 140,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "141": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "142": {
+    "task_id": 142,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "143": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "144": {
+    "task_id": 144,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "145": {
+    "task_id": 145,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "146": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "147": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "148": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "149": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "150": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "151": {
+    "task_id": 151,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: bad operand types for binary operator '*'\n                   .mapToInt(p -> p * p)\n                                    ^\n  first type:  Object\n  second type: Object\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "152": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "153": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "154": {
+    "task_id": 154,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: Range [2, 5) out of bounds for length 4\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)\n\tat java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:4963)\n\tat java.base/java.lang.String.substring(String.java:2925)\n\tat Solution.cycpatternCheck(Main.java:25)\n\tat Main.main(Main.java:37)\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "155": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "156": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  },
+  "157": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "158": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "159": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_random"
+  },
+  "160": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:65: error: illegal start of expression\npublic class Main {\n^\nMain.java:78: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "161": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "newline_afterdoc"
+  },
+  "162": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:17: error: cannot find symbol\n    public Optional<String> stringToMd5(String text) throws NoSuchAlgorithmException {\n                                                            ^\n  symbol:   class NoSuchAlgorithmException\n  location: class Solution\nMain.java:36: error: cannot find symbol\n    public static void main(String[] args) throws NoSuchAlgorithmException {\n                                                  ^\n  symbol:   class NoSuchAlgorithmException\n  location: class Main\nMain.java:22: error: cannot find symbol\n        MessageDigest digest = MessageDigest.getInstance(\"MD5\");\n        ^\n  symbol:   class MessageDigest\n  location: class Solution\nMain.java:22: error: cannot find symbol\n        MessageDigest digest = MessageDigest.getInstance(\"MD5\");\n                               ^\n  symbol:   variable MessageDigest\n  location: class Solution\nMain.java:24: error: cannot find symbol\n        BigInteger number = new BigInteger(1, hash);\n        ^\n  symbol:   class BigInteger\n  location: class Solution\nMain.java:24: error: cannot find symbol\n        BigInteger number = new BigInteger(1, hash);\n                                ^\n  symbol:   class BigInteger\n  location: class Solution\n6 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "line_split"
+  },
+  "163": {
+    "task_id": 163,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "doc2comments"
+  }
+}

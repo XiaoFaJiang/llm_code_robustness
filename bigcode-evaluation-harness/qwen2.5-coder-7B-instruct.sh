@@ -20,6 +20,10 @@ python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_e
 mbpp_generate_cpp_robust_combined_perturbation_instruct,\
 mbpp_generate_java_robust_combined_perturbation_instruct,\
 mbpp_generate_javascript_robust_combined_perturbation_instruct,\
+humaneval_generate_python_robust_combined_perturbation_instruct,\
+humaneval_generate_cpp_robust_combined_perturbation_instruct,\
+humaneval_generate_java_robust_combined_perturbation_instruct,\
+humaneval_generate_javascript_robust_combined_perturbation_instruct,\
 humaneval_generate_python_robust_no_change_instruct,humaneval_generate_python_robust_rename_instruct,\
 humaneval_generate_python_robust_code_stmt_exchange_instruct,humaneval_generate_python_robust_code_expression_exchange_instruct,\
 humaneval_generate_python_robust_insert_instruct,humaneval_generate_python_robust_code_style_instruct,\
@@ -53,7 +57,7 @@ done
 
 # 定义要处理的语言列表
 languages=("cpp" "python" "java" "javascript")
-perturbations=("combined_perturbation","no_change","code_style","insert","rename","code_stmt","code_expression")
+perturbations=("combined_perturbation" "code_style" "insert" "rename" "code_stmt_exchange" "code_expression_exchange")
 
 # 使用for循环遍历所有语言
 for language in "${languages[@]}"; do

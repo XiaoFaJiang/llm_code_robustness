@@ -1,0 +1,373 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "1": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "2": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "3": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "4": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "5": {
+    "task_id": 15,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.StringIndexOutOfBoundsException: Index -1 out of bounds for length 0\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)\n\tat java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)\n\tat java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.lang.String.checkIndex(String.java:4930)\n\tat java.base/java.lang.AbstractStringBuilder.deleteCharAt(AbstractStringBuilder.java:991)\n\tat java.base/java.lang.StringBuilder.deleteCharAt(StringBuilder.java:298)\n\tat Solution.stringSequence(Main.java:25)\n\tat Main.main(Main.java:35)\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "7": {
+    "task_id": 20,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "8": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "9": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "10": {
+    "task_id": 27,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "11": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "12": {
+    "task_id": 32,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "13": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "14": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "15": {
+    "task_id": 37,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "16": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n            sb.decodeCyclic(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeCyclic(char)\n  location: variable sb of type StringBuilder\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "17": {
+    "task_id": 39,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "18": {
+    "task_id": 40,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:48: error: class, interface, enum, or record expected\n                }\n                ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "19": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "20": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "21": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "22": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "24": {
+    "task_id": 62,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "25": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "26": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "27": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "28": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "29": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:18: error: class Solution is already defined in package unnamed package\n    public boolean isMultiplyPrime(int a) {class Solution {\n                                           ^\nMain.java:34: error: cannot find symbol\n            if (IsPrime.is_prime(i) && a % i == 0) {\n                ^\n  symbol:   variable IsPrime\n  location: class Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "30": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "31": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "32": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "33": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "34": {
+    "task_id": 99,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "35": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "36": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "37": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "38": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "39": {
+    "task_id": 124,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: illegal start of expression\npublic class Main {\n^\nMain.java:27: error: 'try' without 'catch', 'finally' or resource declarations\n        try {\n        ^\nMain.java:64: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "40": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:365)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:428)\n\tat Solution.tri(Main.java:38)\n\tat Main.main(Main.java:50)\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "41": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "42": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "43": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "44": {
+    "task_id": 140,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "45": {
+    "task_id": 142,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "46": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "47": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "48": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "49": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "50": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "51": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "52": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:76: error: ')' expected\n            while(i < ops.size\n                              ^\nMain.java:77: error: illegal start of expression\npublic class Main {\n^\nMain.java:90: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  }
+}

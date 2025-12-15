@@ -14,6 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import inspect
 import warnings
 from tqdm import tqdm
+import os
 
 _WARNING = """
 ################################################################################
@@ -132,7 +133,8 @@ class APIEvaluator:
             return sample_idx, prompts_, generations_
 
         # 使用线程池并发处理所有samples
-        max_workers = min(n_tasks, 32)  # 可根据需要调整
+        concurrency = int(os.environ.get('concurrency',32))
+        max_workers = min(n_tasks, concurrency)  # 可根据需要调整
         prompts = [None] * n_tasks
         generations = [None] * n_tasks
         

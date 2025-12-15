@@ -1,0 +1,989 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:19: error: incompatible types: possible lossy conversion from long to int\n            for (int j = i + 1; j < numbers.size(); j++) {\n                           ^\nMain.java:20: error: incompatible types: possible lossy conversion from long to int\n                double distance = Math.abs(numbers.get(i) - numbers.get(j));\n                                                       ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "2": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "3": {
+    "task_id": 4,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "4": {
+    "task_id": 5,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "5": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "6": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "7": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "8": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "9": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "10": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "11": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "12": {
+    "task_id": 15,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "13": {
+    "task_id": 16,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "14": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "15": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:24: error: incompatible types: possible lossy conversion from long to int\n            for (int j = i + 1; j < numbers.size(); j++) {\n                           ^\nMain.java:25: error: incompatible types: possible lossy conversion from long to int\n                double current_distance = Math.abs(numbers.get(j) - numbers.get(i));\n                                                                                ^\nMain.java:28: error: incompatible types: possible lossy conversion from long to int\n                    closest_pair.set(0, Math.min(numbers.get(i), numbers.get(j)));\n                                                             ^\nMain.java:29: error: incompatible types: possible lossy conversion from long to int\n                    closest_pair.set(1, Math.max(numbers.get(i), numbers.get(j)));\n                                                             ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "16": {
+    "task_id": 23,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "17": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "18": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "19": {
+    "task_id": 26,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "20": {
+    "task_id": 27,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "21": {
+    "task_id": 31,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "22": {
+    "task_id": 32,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "23": {
+    "task_id": 33,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "24": {
+    "task_id": 35,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "25": {
+    "task_id": 36,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "26": {
+    "task_id": 37,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "27": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:17: error: incompatible types: possible lossy conversion from long to int\n            groups.add(s.substring(i, Math.min(i + 3, s.length())));\n                                   ^\nMain.java:41: error: cannot find symbol\n            sb.decodeCyclic(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeCyclic(char)\n  location: variable sb of type StringBuilder\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "28": {
+    "task_id": 39,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "29": {
+    "task_id": 40,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "30": {
+    "task_id": 41,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "31": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "32": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "33": {
+    "task_id": 44,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "34": {
+    "task_id": 45,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "35": {
+    "task_id": 46,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "36": {
+    "task_id": 47,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "37": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "38": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "39": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n            sb.decodeShift(letters[rand.nextInt(26)]);\n              ^\n  symbol:   method decodeShift(char)\n  location: variable sb of type StringBuilder\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "40": {
+    "task_id": 51,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "41": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "42": {
+    "task_id": 53,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "43": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "44": {
+    "task_id": 56,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "45": {
+    "task_id": 59,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "46": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "47": {
+    "task_id": 61,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "48": {
+    "task_id": 62,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "49": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "50": {
+    "task_id": 64,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "51": {
+    "task_id": 65,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "52": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "53": {
+    "task_id": 67,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "54": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "55": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "56": {
+    "task_id": 70,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "57": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "58": {
+    "task_id": 73,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "59": {
+    "task_id": 74,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "60": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:18: error: class Solution is already defined in package unnamed package\n    public boolean isMultiplyPrime(int a) {class Solution {\n                                           ^\nMain.java:31: error: cannot find symbol\n            if (IsPrime.is_prime(i) && a % i == 0) {\n                ^\n  symbol:   variable IsPrime\n  location: class Solution\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "61": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "62": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "63": {
+    "task_id": 78,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "64": {
+    "task_id": 79,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "65": {
+    "task_id": 80,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "66": {
+    "task_id": 81,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:57: error: not a statement\n                letter_grade\n                ^\nMain.java:57: error: ';' expected\n                letter_grade\n                            ^\nMain.java:58: error: illegal start of expression\npublic class Main {\n^\nMain.java:73: error: reached end of file while parsing\n}\n ^\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "67": {
+    "task_id": 82,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "68": {
+    "task_id": 83,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "69": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "70": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "71": {
+    "task_id": 87,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "72": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "73": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "74": {
+    "task_id": 91,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "75": {
+    "task_id": 92,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "76": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "77": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "78": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "79": {
+    "task_id": 96,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "80": {
+    "task_id": 97,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "81": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "82": {
+    "task_id": 99,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n                s.countUpper(\"10\") == 10,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:48: error: cannot find symbol\n                s.countUpper(\"14.5\") == 15,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:49: error: cannot find symbol\n                s.countUpper(\"-15.5\") == -16,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:50: error: cannot find symbol\n                s.countUpper(\"15.3\") == 15,\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\nMain.java:51: error: cannot find symbol\n                s.countUpper(\"0\") == 0\n                 ^\n  symbol:   method countUpper(String)\n  location: variable s of type Solution\n5 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "83": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "84": {
+    "task_id": 101,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "85": {
+    "task_id": 102,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "86": {
+    "task_id": 103,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "87": {
+    "task_id": 104,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "88": {
+    "task_id": 105,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "89": {
+    "task_id": 106,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "90": {
+    "task_id": 107,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "91": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "92": {
+    "task_id": 109,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "93": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "94": {
+    "task_id": 111,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "95": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "96": {
+    "task_id": 113,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "97": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "98": {
+    "task_id": 115,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "99": {
+    "task_id": 116,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "100": {
+    "task_id": 117,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "101": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "102": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "103": {
+    "task_id": 121,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "104": {
+    "task_id": 122,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "105": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "106": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "107": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "108": {
+    "task_id": 127,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "109": {
+    "task_id": 128,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "110": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: ')' expected\n                    if (0\n                         ^\nMain.java:50: error: illegal start of expression\npublic class Main {\n^\nMain.java:70: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "111": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 3\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:365)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:428)\n\tat Solution.tri(Main.java:36)\n\tat Main.main(Main.java:47)\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "112": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "113": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "114": {
+    "task_id": 133,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: incompatible types: possible lossy conversion from double to long\n                    .sum();\n                        ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "115": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "116": {
+    "task_id": 137,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "117": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "118": {
+    "task_id": 139,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "119": {
+    "task_id": 140,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "120": {
+    "task_id": 141,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "121": {
+    "task_id": 142,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "122": {
+    "task_id": 143,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "123": {
+    "task_id": 144,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "124": {
+    "task_id": 145,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "125": {
+    "task_id": 146,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "126": {
+    "task_id": 147,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "127": {
+    "task_id": 148,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "128": {
+    "task_id": 150,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "129": {
+    "task_id": 151,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "130": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "131": {
+    "task_id": 153,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "132": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "133": {
+    "task_id": 155,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators"
+  },
+  "134": {
+    "task_id": 156,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:26: error: incompatible types: possible lossy conversion from long to int\n            int div = number / num.get(i);\n                             ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "135": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "136": {
+    "task_id": 158,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "137": {
+    "task_id": 159,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: incompatible types: inference variable T has incompatible bounds\n            return Arrays.asList(number + need, remaining - need);\n                                ^\n    equality constraints: Integer\n    lower bounds: Long,Integer\n  where T is a type-variable:\n    T extends Object declared in method <T>asList(T...)\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  },
+  "138": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:66: error: '(' expected\n            } else if\n                     ^\nMain.java:67: error: illegal start of expression\npublic class Main {\n^\nMain.java:80: error: reached end of file while parsing\n}\n ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation"
+  },
+  "139": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "bool2int"
+  },
+  "140": {
+    "task_id": 163,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type"
+  }
+}
