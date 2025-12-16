@@ -1,0 +1,1574 @@
+{
+  "0": {
+    "task_id": 0,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const hasCloseElements = (numbers, threshold) => {\n  for (let i = 0; i < numbers.length; i++) {\n    for (let j = 0; j < numbers.length; j++) {\n      if (j != i) {\n        let distance = Math.abs(numbers[i] - numbers[j]);\n        if (distance < threshold) {\n          return true;\n        }\n      }\n    }\n  }\n  return false;\n};\n\nconst testHasCloseElements = () => {\n  console.assert(hasCloseElements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) === true)\n  console.assert(\n    hasCloseElements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) === false\n  )\n  console.assert(hasCloseElements([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) === true)\n  console.assert(hasCloseElements([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) === false)\n  console.assert(hasCloseElements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) === true)\n  console.assert(hasCloseElements([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) === true)\n  console.assert(hasCloseElements([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) === false)\n}\n\ntestHasCloseElements()\n"
+      ]
+    ]
+  },
+  "1": {
+    "task_id": 1,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "function separateParenGroups(paren_string) {\n  const result = [];\n  let current_string = '';\n  let current_depth = 0;\n\n  for (const c of paren_string) {\n    if (c === '(') {\n      current_depth++;\n      current_string += c;\n    } else if (c === ')') {\n      current_depth--;\n      current_string += c;\n      if (current_depth === 0) {\n        result.push(current_string);\n        current_string = '';\n      }\n    }\n  }\n\n  return result;\n}\n\nconst testSeparateParenGroups = () => {\n  console.assert(\n    JSON.stringify(separateParenGroups('(()()) ((())) () ((())()())')) ===\n      JSON.stringify(['(()())', '((()))', '()', '((())()())'])\n  )\n  console.assert(\n    JSON.stringify(separateParenGroups('() (()) ((())) (((())))')) ===\n      JSON.stringify(['()', '(())', '((()))', '(((())))'])\n  )\n  console.assert(\n    JSON.stringify(separateParenGroups('(()(())((())))')) ===\n      JSON.stringify(['(()(())((())))'])\n  )\n  console.assert(\n    JSON.stringify(separateParenGroups('( ) (( )) (( )( ))')) ===\n      JSON.stringify(['()', '(())', '(()())'])\n  )\n}\n\ntestSeparateParenGroups()\n"
+      ]
+    ]
+  },
+  "2": {
+    "task_id": 3,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const belowZero = (operations) => {\n  var balance = 0;\n  for (const op of operations) {\n    balance = balance + (op);\n    if (balance < 0) {\n      return true;\n    }\n  }\n  return false;\n};\n\nconst testBelowZero = () => {\n  console.assert(belowZero([]) === false)\n  console.assert(belowZero([1, 2, -3, 1, 2, -3]) === false)\n  console.assert(belowZero([1, 2, -4, 5, 6]) === true)\n  console.assert(belowZero([1, -1, 2, -2, 5, -5, 4, -4]) === false)\n  console.assert(belowZero([1, -1, 2, -2, 5, -5, 4, -5]) === true)\n  console.assert(belowZero([1, -2, 2, -2, 5, -5, 4, -4]) === true)\n}\n\ntestBelowZero()\n"
+      ]
+    ]
+  },
+  "3": {
+    "task_id": 5,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const intersperse = (numbers, delimeter) => {\n  if (!Array.isArray(numbers) || 0 == numbers.length)\n    return [];\n  var result = [];\n  for (const n of numbers) {\n    result.push(n);\n    if (n != numbers[numbers.length - 1]) {\n      result.push(delimeter);\n    }\n  }\n  return result;\n};\n\nconst testIntersperse = () => {\n  console.assert(JSON.stringify(intersperse([], 7)) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(\n      intersperse([5, 6, 3, 2], 8)) === JSON.stringify([5, 8, 6, 8, 3, 8, 2])\n  )\n  console.assert(\n    JSON.stringify(\n      intersperse([2, 2, 2], 2)) === JSON.stringify([2, 2, 2, 2, 2])\n  )\n}\n\ntestIntersperse()\n"
+      ]
+    ]
+  },
+  "4": {
+    "task_id": 6,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const parseNestedParens = (paren_string) => {\n  var parseParenGroup = function (s) {\n    let depth = 0, max_depth = 0;\n    for (const c of s) {\n      if ('(' == c) {\n        depth += 1;\n        max_depth = Math.max(max_depth, depth);\n      } else if (')' == c) {\n        depth -= 1;\n      }\n    }\n    return max_depth;\n  }\n\n  var list = paren_string.split(' ');\n  var result = [];\n\n  for (const s of list) {\n    result.push(parseParenGroup(s));\n  }\n\n  return result;\n}\n\n// Test the function\nlet string = '(()()) ((())) () ((())()())';\n\n// Output: [2, 3, 1, 3]\n\nconst testParseNestedParens = () => {\n  console.assert(\n    JSON.stringify(parseNestedParens('(()()) ((())) () ((())()())')) ===\n      JSON.stringify([2, 3, 1, 3])\n  )\n  console.assert(\n    JSON.stringify(parseNestedParens('() (()) ((())) (((())))')) ===\n      JSON.stringify([1, 2, 3, 4])\n  )\n  console.assert(\n    JSON.stringify(parseNestedParens('(()(())((())))')) === JSON.stringify([4])\n  )\n}\n\ntestParseNestedParens()\n"
+      ]
+    ]
+  },
+  "5": {
+    "task_id": 7,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const filterBySubstring = (strings, substring) => {\n  return strings.filter(x => -1 != x.indexOf(substring));\n}\n\nconst testFilterBySubstring = () => {\n  console.assert(\n    JSON.stringify(filterBySubstring([], 'john')) === JSON.stringify([])\n  )\n  console.assert(\n    JSON.stringify(\n      filterBySubstring(\n        ['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'],\n        'xxx'\n      )\n    ) === JSON.stringify(['xxx', 'xxxAAA', 'xxx'])\n  )\n  console.assert(\n    JSON.stringify(\n      filterBySubstring(\n        ['xxx', 'asd', 'aaaxxy', 'john doe', 'xxxAAA', 'xxx'],\n        'xx'\n      )\n    ) === JSON.stringify(['xxx', 'aaaxxy', 'xxxAAA', 'xxx'])\n  )\n  console.assert(\n    JSON.stringify(\n      filterBySubstring(['grunt', 'trumpet', 'prune', 'gruesome'], 'run')\n    ) === JSON.stringify(['grunt', 'prune'])\n  )\n}\n\ntestFilterBySubstring()\n"
+      ]
+    ]
+  },
+  "6": {
+    "task_id": 8,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type",
+    "evaluation_codes": [
+      [
+        "const sumProduct = (numbers, full) => {\n  var sum_value = 0, prod_value = 1;\n  for (const n of numbers) {\n    sum_value += n;\n    prod_value *= n;\n  }\n  return [sum_value, prod_value];\n}\n\nconst testSumProduct = () => {\n  console.assert(JSON.stringify(sumProduct([])) === JSON.stringify([0, 1]))\n  console.assert(\n    JSON.stringify(sumProduct([1, 1, 1])) === JSON.stringify([3, 1])\n  )\n  console.assert(\n    JSON.stringify(sumProduct([100, 0])) === JSON.stringify([100, 0])\n  )\n  console.assert(\n    JSON.stringify(\n      sumProduct([3, 5, 7])) === JSON.stringify([3 + 5 + 7, 3 * 5 * 7])\n  )\n  console.assert(JSON.stringify(sumProduct([10])) === JSON.stringify([10, 10]))\n}\n\ntestSumProduct()\n"
+      ]
+    ]
+  },
+  "7": {
+    "task_id": 9,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const rollingMax = (numbers) => {\n  var running_max, result = [];\n  for (const n of numbers) {\n    if (undefined == running_max)\n      running_max = n;\n    else if (n > running_max)\n      running_max = n;\n    result.push(running_max);\n  }\n  return result;\n};\n\nconst testRollingMax = () => {\n  console.assert(JSON.stringify(rollingMax([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(rollingMax([1, 2, 3, 4])) === JSON.stringify([1, 2, 3, 4])\n  )\n  console.assert(\n    JSON.stringify(rollingMax([4, 3, 2, 1])) === JSON.stringify([4, 4, 4, 4])\n  )\n  console.assert(\n    JSON.stringify(\n      rollingMax([3, 2, 3, 100, 3])) === JSON.stringify([3, 3, 3, 100, 100])\n  )\n}\n\ntestRollingMax()\n"
+      ]
+    ]
+  },
+  "8": {
+    "task_id": 10,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const isPalindrome = (string) => {\n  return string.split('').reverse().join('') == string;\n}\n\nconst makePalindrome = (string) => {\n  if ('' == string)\n    return '';\n  var beginning_of_suffix = 0;\n  while (beginning_of_suffix < string.length && !isPalindrome(string.slice(beginning_of_suffix))) {\n    beginning_of_suffix++;\n  }\n  if (beginning_of_suffix == string.length) {\n    return string;\n  }\n  return string.slice(0, beginning_of_suffix) + string.slice(beginning_of_suffix).split('').reverse().join('') + string.slice(beginning_of_suffix);\n}\n\nconst testmakePalindrome = () => {\n  console.assert(makePalindrome('') === '')\n  console.assert(makePalindrome('x') === 'x')\n  console.assert(makePalindrome('xyz') === 'xyzyx')\n  console.assert(makePalindrome('xyx') === 'xyx')\n  console.assert(makePalindrome('jerry') === 'jerryrrej')\n}\n\ntestmakePalindrome()\n"
+      ]
+    ]
+  },
+  "9": {
+    "task_id": 11,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const stringXor = (a, b) => {\n  var xor = function (i, j) {\n    if (j == i)\n      return '0';\n    else\n      return '1';\n  }\n  return a.split('').map((el, idx) => xor(el, b[idx])).join('');\n}\n\nstringXor('010', '110');\n\nconst testStringXor = () => {\n  console.assert(stringXor('111000', '101010') === '010010')\n  console.assert(stringXor('1', '1') === '0')\n  console.assert(stringXor('0101', '0000') === '0101')\n}\n\ntestStringXor()\n"
+      ]
+    ]
+  },
+  "10": {
+    "task_id": 12,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const longest = (strings) => {\n  if (!Array.isArray(strings) || 0 == strings.length) {\n    return null;\n  }\n  var maxlen = Math.max(...strings.map(x => x.length));\n  for (const s of strings) {\n    if (s.length === maxlen) {\n      return s;\n    }\n  }\n  return null;\n}\n\nconst testLongest = () => {\n  console.assert(longest([]) === null)\n  console.assert(longest(['x', 'y', 'z']) === 'x')\n  console.assert(longest(['x', 'yyy', 'zzzz', 'www', 'kkkk', 'abc']) === 'zzzz')\n}\n\ntestLongest()\n"
+      ]
+    ]
+  },
+  "11": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const greatestCommonDivisor = (a, b) => {\n  while (0 != b) {\n    let temp = a;\n    a = b;\n    b = temp % b;\n  }\n  return a;\n}\n\nconst testGreatestCommonDivisor = () => {\n  console.assert(greatestCommonDivisor(3, 7) === 1)\n  console.assert(greatestCommonDivisor(10, 15) === 5)\n  console.assert(greatestCommonDivisor(49, 14) === 7)\n  console.assert(greatestCommonDivisor(144, 60) === 12)\n}\n\ntestGreatestCommonDivisor()\n"
+      ]
+    ]
+  },
+  "12": {
+    "task_id": 14,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const allPrefixes = (string) => {\n  var result = [];\n  for (let i = 0; i < string.length; i++) {\n    result.push(string.slice(0, 1 + i));\n  }\n  return result;\n}\n\nconst testAllPrefixes = () => {\n  console.assert(JSON.stringify(allPrefixes('')) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(\n      allPrefixes('asdfgh')) ===\n        JSON.stringify(['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh'])\n  )\n  console.assert(\n    JSON.stringify(allPrefixes('WWW')) === JSON.stringify(['W', 'WW', 'WWW'])\n  )\n}\n\ntestAllPrefixes()\n"
+      ]
+    ]
+  },
+  "13": {
+    "task_id": 17,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "// Complete code\n\nconst parseMusic = (music_string) => {\n  const note_map = {'o': 4, 'o|': 2, '.|': 1};\n  return music_string.split(' ').filter(x => '' != x).map(x => note_map[x]);\n}\n\nconst testParseMusic = () => {\n  console.assert(JSON.stringify(parseMusic('')) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(parseMusic('o o o o')) === JSON.stringify([4, 4, 4, 4])\n  )\n  console.assert(\n    JSON.stringify(parseMusic('.| .| .| .|')) === JSON.stringify([1, 1, 1, 1])\n  )\n  console.assert(\n    JSON.stringify(parseMusic('o| o| .| .| o o o o')) ===\n      JSON.stringify([2, 2, 1, 1, 4, 4, 4, 4])\n  )\n  console.assert(\n    JSON.stringify(parseMusic('o| .| o| .| o o| o o|')) ===\n      JSON.stringify([2, 1, 2, 1, 4, 2, 4, 2])\n  )\n}\n\ntestParseMusic()\n"
+      ]
+    ]
+  },
+  "14": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "// Find how many times a given substring can be found in the original string. Count overlaping cases.\nconst howManyTimes = (string, substring) => {\n  var times = 0;\n  for (let i = 0; i < 1 + string.length - substring.length; i++) {\n    if (substring == string.slice(i, i+substring.length)) {\n      times += 1;\n    }\n  }\n  return times;\n}\n\nconst testHowManyTimes = () => {\n  console.assert(howManyTimes('', 'x') === 0)\n  console.assert(howManyTimes('xyxyxyx', 'x') === 4)\n  console.assert(howManyTimes('cacacacac', 'cac') === 4)\n  console.assert(howManyTimes('john doe', 'john') === 1)\n}\n\ntestHowManyTimes()\n"
+      ]
+    ]
+  },
+  "15": {
+    "task_id": 20,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const findClosestElements = (numbers) => {\n  const pairs = [];\n  for (let i = 0; i < numbers.length; i++) {\n    for (let j = 0; j < numbers.length; j++) {\n      if (j !== i) {\n        const a = numbers[i];\n        const b = numbers[j];\n        const distance = Math.abs(a - b);\n        if (pairs.length === 0 || distance < closestPair.distance) {\n          closestPair = {\n            number1: a,\n            number2: b,\n            distance: distance,\n          };\n        }\n      }\n    }\n  }\n  return [closestPair.number1, closestPair.number2];\n}\n\nconst testFindClosestElements = () => {\n  console.assert(\n    JSON.stringify(findClosestElements([1.0, 2.0, 3.9, 4.0, 5.0, 2.2])) ===\n      JSON.stringify([3.9, 4.0])\n  )\n  console.assert(\n    JSON.stringify(findClosestElements([1.0, 2.0, 5.9, 4.0, 5.0])) ===\n      JSON.stringify([5.0, 5.9])\n  )\n  console.assert(\n    JSON.stringify(findClosestElements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2])) ===\n      JSON.stringify([2.0, 2.2])\n  )\n  console.assert(\n    JSON.stringify(findClosestElements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0])) ===\n      JSON.stringify([2.0, 2.0])\n  )\n  console.assert(\n    JSON.stringify(findClosestElements([1.1, 2.2, 3.1, 4.1, 5.1])) ===\n      JSON.stringify([2.2, 3.1])\n  )\n}\n\ntestFindClosestElements()\n"
+      ]
+    ]
+  },
+  "16": {
+    "task_id": 24,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const largestDivisor = (n) => {\n  for (let i = n - 1; i >= 0; i--)\n    if (0 == n % i) return i;\n  return -1;\n};\n\nconst testLargestDivisor = () => {\n  console.assert(largestDivisor(3) === 1)\n  console.assert(largestDivisor(7) === 1)\n  console.assert(largestDivisor(10) === 5)\n  console.assert(largestDivisor(100) === 50)\n  console.assert(largestDivisor(49) === 7)\n}\n\ntestLargestDivisor()\n"
+      ]
+    ]
+  },
+  "17": {
+    "task_id": 25,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "/* Return list of prime factors of given integer in the order from smallest to largest.\n  Each of the factors should be listed number of times corresponding to how many times it appeares in factorization.\n  Input number should be equal to the product of all factors\n  >>> factorize(8)\n  [2, 2, 2]\n  >>> factorize(25)\n  [5, 5]\n  >>> factorize(70)\n  [2, 5, 7]\n  */\nconst factorize = (n) => {\n  var fact = [], i = 2;\n  while (i <= 1 + Math.sqrt(n)) {\n    if (0 == n % i) {\n      fact.push(i);\n      n = n / i;\n    } else {\n      i++;\n    }\n  }\n  return fact;\n}\n\nconst testFactorize = () => {\n  console.assert(JSON.stringify(factorize(2)) === JSON.stringify([2]))\n  console.assert(JSON.stringify(factorize(4)) === JSON.stringify([2, 2]))\n  console.assert(JSON.stringify(factorize(8)) === JSON.stringify([2, 2, 2]))\n  console.assert(JSON.stringify(factorize(3 * 19)) === JSON.stringify([3, 19]))\n  console.assert(\n    JSON.stringify(factorize(3 * 19 * 3 * 19)) ===\n      JSON.stringify([3, 3, 19, 19])\n  )\n  console.assert(\n    JSON.stringify(factorize(3 * 19 * 3 * 19 * 3 * 19)) ===\n      JSON.stringify([3, 3, 3, 19, 19, 19])\n  )\n  console.assert(\n    JSON.stringify(factorize(3 * 19 * 19 * 19)) ===\n      JSON.stringify([3, 19, 19, 19])\n  )\n  console.assert(\n    JSON.stringify(factorize(3 * 2 * 3)) === JSON.stringify([2, 3, 3])\n  )\n}\n\ntestFactorize()\n"
+      ]
+    ]
+  },
+  "18": {
+    "task_id": 26,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const removeDuplicates = (numbers) => {\n  var dict = new Object();\n  for (const num of numbers) {\n    if (num in dict) {\n      dict[num] = dict[num] + (1);\n    } else {\n      dict[num] = 1;\n    }\n  }\n  var result = [];\n  for (var key in dict) {\n    if (dict[key] === 1) {\n      result.push(key);\n    }\n  }\n  return result;\n};\n\nconst testRemoveDuplicates = () => {\n  console.assert(JSON.stringify(removeDuplicates([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(removeDuplicates([1, 2, 3, 4])) ===\n      JSON.stringify([1, 2, 3, 4])\n  )\n  console.assert(\n    JSON.stringify(removeDuplicates([1, 2, 3, 2, 4, 3, 5])) ===\n      JSON.stringify([1, 4, 5])\n  )\n}\n\ntestRemoveDuplicates()\n"
+      ]
+    ]
+  },
+  "19": {
+    "task_id": 27,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp84s2cp3_/test.js:1\nIn the `map()` function, we check if a character is uppercase or not using the `==` operator. However, this operator will return `true` only if the character is exactly the same as the uppercase version, which is not what we want. Instead, we can use the `toUpperCase()` method to get the uppercase version of the character and then compare it to the original character. If they are different, then the character should be flipped to uppercase. Here is the corrected logic:\n   ^^^\n\nSyntaxError: Unexpected identifier 'the'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "In the `map()` function, we check if a character is uppercase or not using the `==` operator. However, this operator will return `true` only if the character is exactly the same as the uppercase version, which is not what we want. Instead, we can use the `toUpperCase()` method to get the uppercase version of the character and then compare it to the original character. If they are different, then the character should be flipped to uppercase. Here is the corrected logic:\n\nconst testFlipCase = () => {\n  console.assert(flipCase('') === '')\n  console.assert(flipCase('Hello!') === 'hELLO!')\n  console.assert(\n    flipCase(\n      'These violent delights have violent ends') ===\n        'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n  )\n}\n\ntestFlipCase()\n"
+      ]
+    ]
+  },
+  "20": {
+    "task_id": 31,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const isPrime = (n) => {\n  if (n < 2) return 0;\n  for (let k=2; k<n-1; k++) {\n    if (n % k === 0) return 0;\n  }\n  return 1;\n};\n\nconst testIsPrime = () => {\n  console.assert(isPrime(6) === false)\n  console.assert(isPrime(101) === true)\n  console.assert(isPrime(11) === true)\n  console.assert(isPrime(13441) === true)\n  console.assert(isPrime(61) === true)\n  console.assert(isPrime(4) === false)\n  console.assert(isPrime(1) === false)\n  console.assert(isPrime(5) === true)\n  console.assert(isPrime(11) === true)\n  console.assert(isPrime(17) === true)\n  console.assert(isPrime(5 * 17) === false)\n  console.assert(isPrime(11 * 7) === false)\n  console.assert(isPrime(13441 * 19) === false)\n}\n\ntestIsPrime()\n"
+      ]
+    ]
+  },
+  "21": {
+    "task_id": 32,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "function poly(xs, x) {\n  return xs.reduce((prev, item, index) => {\n    return prev + item * Math.pow(x, index);\n  }, 0);\n}\n\nconst findZero = (xs) => {\n  var begin = -1.0, end = 1.0;\n  while (poly(xs, begin) * poly(xs, end) > 0) {\n    begin = begin * (2.0);\n    end = end * (2.0);\n  }\n  while (end - begin > 1e-10) {\n    var current = (begin + end) / 2.0;\n    var a = poly(xs, begin);\n    var b = poly(xs, end);\n    var f = Math.pow(current, xs.length - 1);\n    if (a * b > 0) {\n      if (Math.abs(a) > Math.abs(b)) {\n        end = current;\n      } else {\n        begin = current;\n      }\n    } else {\n      if (Math.abs(b) < Math.abs(a)) {\n        end = current;\n      } else {\n        begin = current;\n      }\n    }\n  }\n  return poly(xs, current);\n}\n\nconst testfindZero = () => {\n  const getRandomIntInclusive = (min = 0, max = 9) => {\n    min = Math.ceil(min)\n    max = Math.floor(max)\n    return Math.floor(Math.random() * (max - min + 1)) + min\n  }\n\n  for (let i = 0; i < 100; i++) {\n    let ncoeff = 2 * getRandomIntInclusive(1, 4);\n    let coeffs = [];\n    for (let j = 0; j < ncoeff; j++) {\n      let coeff = getRandomIntInclusive(-10, 10);\n      if (coeff === 0)\n        coeff = 1;\n      coeffs.push(coeff);\n    }\n    let solution = findZero(coeffs);\n    console.assert(Math.abs(poly(coeffs, solution)) < 1e-4);\n  }\n}\n"
+      ]
+    ]
+  },
+  "22": {
+    "task_id": 33,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sortThird = (l) => {\n  var three = l.filter((item, index) => 0 == index % 3);\n  three.sort((a, b) => (a - b));\n  return {\n    \"0\": l[0],\n    \"1\": l[1],\n    \"2\": three[0],\n    \"3\": l[3],\n    \"4\": l[4],\n    \"5\": l[5],\n    \"6\": l[6]\n  };\n};\n\nconst testSortThird = () => {\n  console.assert(\n    JSON.stringify(sortThird([1, 2, 3])) == JSON.stringify([1, 2, 3])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])) ==\n      JSON.stringify([1, 3, -5, 2, -3, 3, 5, 0, 123, 9, -10])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 8, -12, 4, 23, 2, 3, 11, 12, -10])) ==\n      JSON.stringify([-10, 8, -12, 3, 23, 2, 4, 11, 12, 5])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 6, 3, 4, 8, 9, 2])) ==\n      JSON.stringify([2, 6, 3, 4, 8, 9, 5])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 8, 3, 4, 6, 9, 2])) ==\n      JSON.stringify([2, 8, 3, 4, 6, 9, 5])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 6, 9, 4, 8, 3, 2])) ==\n      JSON.stringify([2, 6, 9, 4, 8, 3, 5])\n  )\n  console.assert(\n    JSON.stringify(sortThird([5, 6, 3, 4, 8, 9, 2, 1])) ==\n      JSON.stringify([2, 6, 3, 4, 8, 9, 5, 1])\n  )\n}\n\ntestSortThird()\n"
+      ]
+    ]
+  },
+  "23": {
+    "task_id": 36,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const fizzBuzz = (n) => {\n  var ns = [], ans = 0;\n  for (let i = 0; i < n; i++)\n    if (i % 11 === 0 || i % 13 === 0)\n      ans++;\n  return ans;\n}\n\nconst testFizzBuzz = () => {\n  console.assert(fizzBuzz(50) === 0)\n  console.assert(fizzBuzz(78) === 2)\n  console.assert(fizzBuzz(79) === 3)\n  console.assert(fizzBuzz(100) === 3)\n  console.assert(fizzBuzz(200) === 6)\n  console.assert(fizzBuzz(4000) === 192)\n  console.assert(fizzBuzz(10000) === 639)\n  console.assert(fizzBuzz(100000) === 8026)\n}\n\ntestFizzBuzz()\n"
+      ]
+    ]
+  },
+  "24": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sortEven = (l) => {\n  var even = l.filter((item, index) => 0 == index % 2);\n  even.sort((a, b) => (a - b));\n  return l;\n}\n\nconst testSortEven = () => {\n  console.assert(JSON.stringify(sortEven([1, 2, 3])) ===\n    JSON.stringify([1, 2, 3]))\n  console.assert(JSON.stringify(\n    sortEven([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])) ===\n    JSON.stringify([-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123]))\n  console.assert(JSON.stringify(\n    sortEven([5, 8, -12, 4, 23, 2, 3, 11, 12, -10])) ===\n    JSON.stringify([-12, 8, 3, 4, 5, 2, 12, 11, 23, -10]))\n}\n\ntestSortEven()\n"
+      ]
+    ]
+  },
+  "25": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: Assertion failed\n/data1/ljc/code/tmp/tmpwhj6vetv/test.js:22\n   .map((g) => {\n    ^\n\nTypeError: Cannot read properties of null (reading 'map')\n    at decodeCyclic (/data1/ljc/code/tmp/tmpwhj6vetv/test.js:22:5)\n    at testDecodeCyclic (/data1/ljc/code/tmp/tmpwhj6vetv/test.js:38:20)\n    at Object.<anonymous> (/data1/ljc/code/tmp/tmpwhj6vetv/test.js:42:1)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const getCyclicIndex = (i, len) => {\n  return (i + len) % len;\n};\n\nconst encodeCyclic = (s) => {\n  var groups = [], groups2 = [];\n  for (let i = 0; i < Math.floor((2 + s.length) / 3); i++) {\n    groups.push(s.slice(getCyclicIndex(i * 3, s.length)));\n  }\n  for (const group of groups) {\n    if (3 == group.length)\n      groups2.push(group.slice(1) + group[0]);\n    else\n      groups2.push(group);\n  }\n  return groups2.join('');\n}\n\nconst decodeCyclic = (s) => {\n  var groups = s.match(/(.{3})/g);\n  return groups\n   .map((g) => {\n     var res = g.split('');\n     res.push(res.shift());\n     return res.join('');\n   })\n   .join('');\n}\n\nconst testDecodeCyclic = () => {\n  const letters = new Array(26)\n    .fill(null)\n    .map((v, i) => String.fromCharCode(97 + i));\n\n  for (let i = 0; i < 100; i++) {\n    let str = new Array(Math.floor(Math.random() * 20)).fill(null);\n    str = str.map(item => letters[Math.floor(Math.random() * letters.length)]).join('');\n    let encoded_str = encodeCyclic(str);\n    console.assert(decodeCyclic(encoded_str) === str);\n  }\n}\n\ntestDecodeCyclic()\n"
+      ]
+    ]
+  },
+  "26": {
+    "task_id": 39,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const primeFib = (n) => {\n  var isPrime = function (p) {\n    if (p < 2) return 0;\n    for (let k = 2; k <= Math.min(p - 1, Math.floor(Math.sqrt(p)) - 1); k++) {\n      if (p % k == 0) return 0;\n    }\n    return 1;\n  }\n  var seq = [0, 1];\n  for (let i = 2; i < n; i++) {\n    let nxt = seq[i - 1] + seq[i];\n    if (isPrime(nxt)) seq.push(nxt);\n  }\n  return seq[n - 1];\n};\n\nconst testPrimeFib = () => {\n  console.assert(primeFib(1) === 2)\n  console.assert(primeFib(2) === 3)\n  console.assert(primeFib(3) === 5)\n  console.assert(primeFib(4) === 13)\n  console.assert(primeFib(5) === 89)\n  console.assert(primeFib(6) === 233)\n  console.assert(primeFib(7) === 1597)\n  console.assert(primeFib(8) === 28657)\n  console.assert(primeFib(9) === 514229)\n  console.assert(primeFib(10) === 433494437)\n}\n\ntestPrimeFib()\n"
+      ]
+    ]
+  },
+  "27": {
+    "task_id": 40,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp2seczl3o/test.js:9\nconst triplesSumToZero = () => {\n      ^\n\nSyntaxError: Identifier 'triplesSumToZero' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const triplesSumToZero = l => {\n  for (let i = 0; i < l.length; i++)\n    for (let j = 1 + i; j < l.length; j++)\n      for (let k = 1 + j; k < l.length; k++)\n        if (l[i] + l[j] + l[k] === 0)\n          return true;\n  return false;\n}\n\nconst triplesSumToZero = () => {\n  console.assert(triplesSumToZero([1, 3, 5, 0]) === false)\n  console.assert(triplesSumToZero([1, 3, 5, -1]) === false)\n  console.assert(triplesSumToZero([1, 3, -2, 1]) === true)\n  console.assert(triplesSumToZero([1, 2, 3, 7]) === false)\n  console.assert(triplesSumToZero([1, 2, 5, 7]) === false)\n  console.assert(triplesSumToZero([2, 4, -5, 3, 9, 7]) === true)\n  console.assert(triplesSumToZero([1]) === false)\n  console.assert(triplesSumToZero([1, 3, 5, -100]) === false)\n  console.assert(triplesSumToZero([100, 3, 5, -100]) === false)\n}\n\ntriplesSumToZero()\n"
+      ]
+    ]
+  },
+  "28": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const incrList = (l) => {\n  return l.map(e => 1 + e);\n}\n\nconst testIncrList = () => {\n  console.assert(JSON.stringify(incrList([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(incrList([3, 2, 1])) === JSON.stringify([4, 3, 2])\n  )\n  console.assert(\n    JSON.stringify(incrList([5, 2, 5, 2, 3, 3, 9, 0, 123])) ===\n      JSON.stringify([6, 3, 6, 3, 4, 4, 10, 1, 124])\n  )\n}\n\ntestIncrList()\n"
+      ]
+    ]
+  },
+  "29": {
+    "task_id": 43,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpj7k59qy8/test.js:4\n      if (l[i] + l[j] = 0)\n          ^^^^^^^^^^^\n\nSyntaxError: Invalid left-hand side in assignment\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const pairsSumToZero = (l) => {\n  for (let i = 0; i < l.length; i = i + 1)\n    for (let j = i + 1; j < l.length; j = j + 1)\n      if (l[i] + l[j] = 0)\n        return true;\n  return false;\n}\n\nconst testPairsSumToZero = () => {\n  console.assert(pairsSumToZero([1, 3, 5, 0]) === false)\n  console.assert(pairsSumToZero([1, 3, -2, 1]) === false)\n  console.assert(pairsSumToZero([1, 2, 3, 7]) === false)\n  console.assert(pairsSumToZero([2, 4, -5, 3, 5, 7]) === true)\n  console.assert(pairsSumToZero([1]) === false)\n  console.assert(pairsSumToZero([-3, 9, -1, 3, 2, 30]) === true)\n  console.assert(pairsSumToZero([-3, 9, -1, 3, 2, 31]) === true)\n  console.assert(pairsSumToZero([-3, 9, -1, 4, 2, 30]) === false)\n  console.assert(pairsSumToZero([-3, 9, -1, 4, 2, 31]) === false)\n}\n\ntestPairsSumToZero()\n"
+      ]
+    ]
+  },
+  "30": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpkc8dgd_c/test.js:8\nconst triangleArea = () => {\n      ^\n\nSyntaxError: Identifier 'triangleArea' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "/*Given length of a side and high return area for a triangle.\n  >>> triangleArea(5, 3)\n  7.5\n  */\nconst triangleArea = (a, h) => {\n  return h * a / 2.0;\n}\n\nconst triangleArea = () => {\n  console.assert(triangleArea(5, 3) === 7.5)\n  console.assert(triangleArea(2, 2) === 2.0)\n  console.assert(triangleArea(10, 8) === 40.0)\n}\n\ntriangleArea()\n"
+      ]
+    ]
+  },
+  "31": {
+    "task_id": 46,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "function fib4(n){\nconst results = [0,0,2,0];\nif(n<4)\nreturn results[n];\nfor(let i=4;i<1+n;i++){\n}\n}\n\nconst testFib4 = () => {\n  console.assert(fib4(5) === 4)\n  console.assert(fib4(8) === 28)\n  console.assert(fib4(10) === 104)\n  console.assert(fib4(12) === 386)\n}\n\ntestFib4()\n"
+      ]
+    ]
+  },
+  "32": {
+    "task_id": 47,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp4pgg9fid/test.js:1\nComplete code (including all the content of the code I provided and the code you generated):\n         ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "Complete code (including all the content of the code I provided and the code you generated):\n\nconst median = (l) => {\n  l.sort((a, b) => a - b);\n  var len = l.length;\n  if (1 == l.length % 2)\n    return l[len/2];\n  else\n    return (l[len/2-1] + l[len/2]) / 2;\n}\n\nconst testMedian = () => {\n  console.assert(median([3, 1, 2, 4, 5]) === 3)\n  console.assert(median([-10, 4, 6, 1000, 10, 20]) === 8.0)\n  console.assert(median([5]) === 5)\n  console.assert(median([6, 5]) === 5.5)\n  console.assert(median([8, 1, 3, 9, 9, 2, 7]) === 7)\n}\n\ntestMedian()\n"
+      ]
+    ]
+  },
+  "33": {
+    "task_id": 48,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "/*\n  Checks if given string is a palindrome\n  >>> isPalindrome('')\n  true\n  >>> isPalindrome('aba')\n  true\n  >>> isPalindrome('aaaaa')\n  true\n  >>> isPalindrome('zbcd')\n  false\n  */\nconst isPalindrome = (text) => {\n  for (let i = 0; i < text.length; i++)\n  if (text.at(-i-1) != text[i])\n    return false;\n  return true;\n};\n\nconst testIsPalindrome = () => {\n  console.assert(isPalindrome('') === true)\n  console.assert(isPalindrome('aba') === true)\n  console.assert(isPalindrome('aaaaa') === true)\n  console.assert(isPalindrome('zbcd') === false)\n  console.assert(isPalindrome('xywyx') === true)\n  console.assert(isPalindrome('xywyz') === false)\n  console.assert(isPalindrome('xywzx') === false)\n}\n\ntestIsPalindrome()\n"
+      ]
+    ]
+  },
+  "34": {
+    "task_id": 49,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpid1x9q62/test.js:23\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "js\n// complete code\nconst modp = (n, p) => {\n  var ret = 1;\n  for (let i = 0; i < n; i++)\n    ret = (ret * 2) % p;\n\n  return ret;\n}\n\n```\n\nconst testModp = () => {\n  console.assert(modp(3, 5) === 3)\n  console.assert(modp(1101, 101) === 2)\n  console.assert(modp(0, 101) === 1)\n  console.assert(modp(3, 11) === 8)\n  console.assert(modp(100, 101) === 1)\n  console.assert(modp(30, 5) === 4)\n  console.assert(modp(31, 5) === 3)\n}\n\ntestModp()\n"
+      ]
+    ]
+  },
+  "35": {
+    "task_id": 50,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const encodeShift = (s) => {\n  return s.split(\"\").map(ch => String.fromCharCode(\n    ((5 + ch.charCodeAt(0) - \"a\".charCodeAt(0)) % 26) + \"a\".charCodeAt(0)\n  )).join(\"\");\n}\n\nconst decodeShift = (s) => {\n  return s.split(\"\").map(ch => String.fromCharCode(\n    ((26 + ch.charCodeAt(0) - 5 - \"a\".charCodeAt(0)) % 26) + \"a\".charCodeAt(0)\n  )).join(\"\");\n}\n\n// Test cases\n\nconst testDecodeShift = () => {\n    const letters = new Array(26)\n    .fill(null)\n    .map((v, i) => String.fromCharCode(97 + i))\n\n    for (let i = 0; i < 100; i++) {\n      let str = new Array(Math.floor(Math.random() * 20)).fill(null);\n      str = str.map(item => letters[Math.floor(Math.random() * letters.length)]).join('');\n      let encoded_str = encodeShift(str)\n      console.assert(decodeShift(encoded_str) === str)\n    }\n\n}\n\ntestDecodeShift()\n"
+      ]
+    ]
+  },
+  "36": {
+    "task_id": 52,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const belowThreshold = (l, t) => {\n  //begin to write code\n  for (const e of l) {\n    if (e >= t) {\n      return 0;\n    }\n  }\n  return 1;\n}\n\n// Test cases\n\nconst testBelowThreshold = () => {\n  console.assert(belowThreshold([1, 2, 4, 10], 100) === true)\n  console.assert(belowThreshold([1, 20, 4, 10], 5) === false)\n  console.assert(belowThreshold([1, 20, 4, 10], 21) === true)\n  console.assert(belowThreshold([1, 20, 4, 10], 22) === true)\n  console.assert(belowThreshold([1, 8, 4, 10], 11) === true)\n  console.assert(belowThreshold([1, 8, 4, 10], 10) === false)\n}\n\ntestBelowThreshold()\n"
+      ]
+    ]
+  },
+  "37": {
+    "task_id": 54,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sameChars = (s0, s1) => {\n  return JSON.stringify([...new Set(s1)].sort()) === JSON.stringify([...new Set(s0)].sort());\n}\n\nconst testSameChars = () => {\n  console.assert(sameChars('eabcdzzzz', 'dddzzzzzzzddeddabc') === true)\n  console.assert(sameChars('abcd', 'dddddddabc') === true)\n  console.assert(sameChars('dddddddabc', 'abcd') === true)\n  console.assert(sameChars('eabcd', 'dddddddabc') === false)\n  console.assert(sameChars('abcd', 'dddddddabcf') === false)\n  console.assert(sameChars('eabcdzzzz', 'dddzzzzzzzddddabc') === false)\n  console.assert(sameChars('aabb', 'aaccc') === false)\n}\n\ntestSameChars()\n"
+      ]
+    ]
+  },
+  "38": {
+    "task_id": 55,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "// Complete code (including all the content of the code you provided and the code I generated)\n\n// The fib function calculates the n-th Fibonacci number\nconst fib = (n) => {\n  if (0 == n)\n    return 0;\n  if (1 == n)\n    return 1;\n  return fib(n-1) + fib(n-2);\n}\n\n// Test the fib function with n = 10\n\n\n// Test the fib function with n = 1\n\n\n// Test the fib function with n = 8\n\nconst testFib = () => {\n  console.assert(fib(10) === 55)\n  console.assert(fib(1) === 1)\n  console.assert(fib(8) === 21)\n  console.assert(fib(11) === 89)\n  console.assert(fib(12) === 144)\n}\n\ntestFib()\n"
+      ]
+    ]
+  },
+  "39": {
+    "task_id": 56,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const correctBracketing = (brackets) => {\n  var depth = 0;\n  for (const b of brackets) {\n    if (b == \"<\")\n      depth = depth + (1);\n    else if (b == \")\")\n      depth = depth - (1);\n    if (depth < 0)\n      return false;\n  }\n  return true;\n}\n\nconst testCorrectBracketing = () => {\n  console.assert(correctBracketing('<>') === true)\n  console.assert(correctBracketing('<<><>>') === true)\n  console.assert(correctBracketing('<><><<><>><>') === true)\n  console.assert(correctBracketing('<><><<<><><>><>><<><><<>>>') === true)\n  console.assert(correctBracketing('<<<><>>>>') === false)\n  console.assert(correctBracketing('><<>') === false)\n  console.assert(correctBracketing('<') === false)\n  console.assert(correctBracketing('<<<<') === false)\n  console.assert(correctBracketing('>') === false)\n  console.assert(correctBracketing('<<>') === false)\n  console.assert(correctBracketing('<><><<><>><>><<>') === false)\n  console.assert(correctBracketing('<><><<><>><>>><>') === false)\n}\n\ntestCorrectBracketing()\n"
+      ]
+    ]
+  },
+  "40": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const monotonic = (l) => {\n  var sort1 = [...l].sort((a, b) => a - b);\n  var sort2 = [...l].sort((a, b) => b - a);\n  if (JSON.stringify(sort1) === JSON.stringify(l) ||\n      JSON.stringify(sort2) === JSON.stringify(l)) {\n    return true;\n  } else {\n    return false;\n  }\n};\n\nconst testMonotonic = () => {\n  console.assert(monotonic([1, 2, 4, 10]) === true)\n  console.assert(monotonic([1, 2, 4, 20]) === true)\n  console.assert(monotonic([1, 20, 4, 10]) === false)\n  console.assert(monotonic([4, 1, 0, -10]) === true)\n  console.assert(monotonic([4, 1, 1, 0]) === true)\n  console.assert(monotonic([1, 2, 3, 2, 5, 60]) === false)\n  console.assert(monotonic([1, 2, 3, 4, 5, 60]) === true)\n  console.assert(monotonic([9, 9, 9, 9]) === true)\n}\n\ntestMonotonic()\n"
+      ]
+    ]
+  },
+  "41": {
+    "task_id": 59,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const largestPrimeFactor = (n) => {\n  var isPrime = (k) => {\n    if (k < 2) return 0;\n    for (let i = 2; i < k - 1; i++) {\n      if (k % i == 0) return 0;\n    }\n  };\n\n  if (isPrime(n)) return n;\n\n  let primeFactor = 2;\n  while (n % primeFactor != 0) {\n    primeFactor++;\n  }\n  return primeFactor;\n};\n\nconst testLargestPrimeFactor = () => {\n  console.assert(largestPrimeFactor(15) === 5)\n  console.assert(largestPrimeFactor(27) === 3)\n  console.assert(largestPrimeFactor(63) === 7)\n  console.assert(largestPrimeFactor(330) === 11)\n  console.assert(largestPrimeFactor(13195) === 29)\n}\n\ntestLargestPrimeFactor()\n"
+      ]
+    ]
+  },
+  "42": {
+    "task_id": 60,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sumToN = (n) => {\n  return (1 + n) * n / 2;\n}\n\nconst testSumToN = () => {\n  console.assert(sumToN(1) === 1)\n  console.assert(sumToN(6) === 21)\n  console.assert(sumToN(11) === 66)\n  console.assert(sumToN(30) === 465)\n  console.assert(sumToN(100) === 5050)\n}\n\ntestSumToN()\n"
+      ]
+    ]
+  },
+  "43": {
+    "task_id": 61,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const correctBracketing = (brackets) => {\n  var depth = 0;\n  for (const b of brackets) {\n    if (b == \"(\")\n      depth = depth + (1);\n    else if (b == \")\")\n      depth = depth - (1);\n    else\n      return false;\n  }\n  return depth == 0;\n};\n\nconst testCorrectBracketing = () => {\n  console.assert(correctBracketing('()') === true)\n  console.assert(correctBracketing('(()())') === true)\n  console.assert(correctBracketing('()()(()())()') === true)\n  console.assert(correctBracketing('()()((()()())())(()()(()))') === true)\n  console.assert(correctBracketing('((()())))') === false)\n  console.assert(correctBracketing(')(()') === false)\n  console.assert(correctBracketing('(') === false)\n  console.assert(correctBracketing('((((') === false)\n  console.assert(correctBracketing(')') === false)\n  console.assert(correctBracketing('(()') === false)\n  console.assert(correctBracketing('()()(()())())(()') === false)\n  console.assert(correctBracketing('()()(()())()))()') === false)\n}\n\ntestCorrectBracketing()\n"
+      ]
+    ]
+  },
+  "44": {
+    "task_id": 62,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpoixd3e6s/test.js:25\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "js\nconst derivative = (xs) => {\n  return xs.map((x, i) => i * x);\n}\n```\n\nconst testDerivative = () => {\n  console.assert(\n    JSON.stringify(derivative([3, 1, 2, 4, 5])) ===\n      JSON.stringify([1, 4, 12, 20])\n  )\n  console.assert(\n    JSON.stringify(derivative([1, 2, 3])) === JSON.stringify([2, 6])\n  )\n  console.assert(\n    JSON.stringify(derivative([3, 2, 1])) === JSON.stringify([2, 2])\n  )\n  console.assert(\n    JSON.stringify(derivative([3, 2, 1, 0, 4])) ===\n      JSON.stringify([2, 2, 0, 16])\n  )\n  console.assert(JSON.stringify(derivative([1])) === JSON.stringify([]))\n}\n\ntestDerivative()\n"
+      ]
+    ]
+  },
+  "45": {
+    "task_id": 63,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const fibfib = (n) => {\n  if (0 == n || 1 == n)\n    return 0;\n  if (2 == n)\n    return 1;\n  return fibfib(n-1) + fibfib(n-2) + fibfib(n-3);\n}\n\nconst testFibfib = () => {\n  console.assert(fibfib(2) === 1)\n  console.assert(fibfib(1) === 0)\n  console.assert(fibfib(5) === 4)\n  console.assert(fibfib(8) === 24)\n  console.assert(fibfib(10) === 81)\n  console.assert(fibfib(12) === 274)\n  console.assert(fibfib(14) === 927)\n}\n\ntestFibfib()\n"
+      ]
+    ]
+  },
+  "46": {
+    "task_id": 66,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const digitSum = (s) => {\n  if ('' == s) return 0;\n  let sum = 0;\n  for (let i = 0; i < s.length; i++) {\n    let ord_char = s[i].charCodeAt(0);\n    if (ord_char >= 65 && ord_char <= 90) sum += ord_char;\n  }\n  return sum;\n}\n\nconst testDigitSum = () => {\n  console.assert(digitSum('') === 0)\n  console.assert(digitSum('abAB') === 131)\n  console.assert(digitSum('abcCd') === 67)\n  console.assert(digitSum('helloE') === 69)\n  console.assert(digitSum('woArBld') === 131)\n  console.assert(digitSum('aAaaaXa') === 153)\n  console.assert(digitSum(' How are yOu?') === 151)\n  console.assert(digitSum('You arE Very Smart') === 327)\n}\n\ntestDigitSum()\n"
+      ]
+    ]
+  },
+  "47": {
+    "task_id": 68,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const pluck = (arr) => {\n  if (0 == arr.length) return [];\n  var evens = arr.filter(x => 0 == x % 2);\n  if (0 == evens.length) return [];\n  const smallestEven = evens.sort((a, b) => a - b)[0];\n  return [smallestEven, arr.indexOf(smallestEven)];\n};\n\nconst testPluck = () => {\n  console.assert(JSON.stringify(pluck([4, 2, 3])) === JSON.stringify([2, 1]))\n  console.assert(JSON.stringify(pluck([1, 2, 3])) === JSON.stringify([2, 1]))\n  console.assert(JSON.stringify(pluck([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(pluck([5, 0, 3, 0, 4, 2])) === JSON.stringify([0, 1])\n  )\n  console.assert(\n    JSON.stringify(pluck([1, 2, 3, 0, 5, 3])) === JSON.stringify([0, 3])\n  )\n  console.assert(\n    JSON.stringify(pluck([5, 4, 8, 4, 8])) === JSON.stringify([4, 1])\n  )\n  console.assert(JSON.stringify(pluck([7, 6, 7, 1])) === JSON.stringify([6, 1]))\n  console.assert(JSON.stringify(pluck([7, 9, 7, 1])) === JSON.stringify([]))\n}\n\ntestPluck()\n"
+      ]
+    ]
+  },
+  "48": {
+    "task_id": 69,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const search = (lst) => {\n  var frq = new Array(1 + Math.max(...lst)).fill(0);\n  for (const i of lst)\n    frq[i] += 1;\n  var ans = -1;\n  for (let i = 1; i <= Math.max(...lst); i++)\n    if (frq[i] >= i)\n      ans = i;\n  return ans;\n}\n\nconst testSearch = () => {\n  console.assert(search([5, 5, 5, 5, 1]) === 1)\n  console.assert(search([4, 1, 4, 1, 4, 4]) === 4)\n  console.assert(search([3, 3]) === -1)\n  console.assert(search([8, 8, 8, 8, 8, 8, 8, 8]) === 8)\n  console.assert(search([2, 3, 3, 2, 2]) === 2)\n  console.assert(\n    search([\n      2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1,\n    ]) === 1\n  )\n  console.assert(search([3, 2, 8, 2]) === 2)\n  console.assert(search([6, 7, 1, 8, 8, 10, 5, 8, 5, 3, 10]) === 1)\n  console.assert(search([8, 8, 3, 6, 5, 6, 4]) === -1)\n  console.assert(\n    search([\n      6, 9, 6, 7, 1, 4, 7, 1, 8, 8, 9, 8, 10, 10, 8, 4, 10, 4, 10, 1, 2, 9, 5,\n      7, 9,\n    ]) === 1\n  )\n  console.assert(search([1, 9, 10, 1, 3]) === 1)\n  console.assert(\n    search([\n      6, 9, 7, 5, 8, 7, 5, 3, 7, 5, 10, 10, 3, 6, 10, 2, 8, 6, 5, 4, 9, 5, 3,\n      10,\n    ]) === 5\n  )\n  console.assert(search([1]) === 1)\n  console.assert(\n    search([\n      8, 8, 10, 6, 4, 3, 5, 8, 2, 4, 2, 8, 4, 6, 10, 4, 2, 1, 10, 2, 1, 1, 5,\n    ]) === 4\n  )\n  console.assert(\n    search([2, 10, 4, 8, 2, 10, 5, 1, 2, 9, 5, 5, 6, 3, 8, 6, 4, 10]) === 2\n  )\n  console.assert(search([1, 6, 10, 1, 6, 9, 10, 8, 6, 8, 7, 3]) === 1)\n  console.assert(\n    search([\n      9, 2, 4, 1, 5, 1, 5, 2, 5, 7, 7, 7, 3, 10, 1, 5, 4, 2, 8, 4, 1, 9, 10, 7,\n      10, 2, 8, 10, 9, 4,\n    ]) === 4\n  )\n  console.assert(\n    search([\n      2, 6, 4, 2, 8, 7, 5, 6, 4, 10, 4, 6, 3, 7, 8, 8, 3, 1, 4, 2, 2, 10, 7,\n    ]) === 4\n  )\n  console.assert(\n    search([9, 8, 6, 10, 2, 6, 10, 2, 7, 8, 10, 3, 8, 2, 6, 2, 3, 1]) === 2\n  )\n  console.assert(\n    search([\n      5, 5, 3, 9, 5, 6, 3, 2, 8, 5, 6, 10, 10, 6, 8, 4, 10, 7, 7, 10, 8,\n    ]) === -1\n  )\n  console.assert(search([10]) === -1)\n  console.assert(search([9, 7, 7, 2, 4, 7, 2, 10, 9, 7, 5, 7, 2]) === 2)\n  console.assert(search([5, 4, 10, 2, 1, 1, 10, 3, 6, 1, 8]) === 1)\n  console.assert(\n    search([\n      7, 9, 9, 9, 3, 4, 1, 5, 9, 1, 2, 1, 1, 10, 7, 5, 6, 7, 6, 7, 7, 6,\n    ]) === 1\n  )\n  console.assert(search([3, 10, 10, 9, 2]) === -1)\n}\n\ntestSearch()\n"
+      ]
+    ]
+  },
+  "49": {
+    "task_id": 70,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const strangeSortList = (lst) => {\n  const res = [], sw = 1;\n  while (lst.length) {\n    res.push(sw ? Math.min(...lst) : Math.max(...lst));\n    lst.splice(lst.indexOf(res.at(-1)), 1);\n  }\n  return res;\n};\n\n// Additional code to test the function\n\nconst testStrangeSortList = () => {\n  console.assert(\n    JSON.stringify(strangeSortList([1, 2, 3, 4])) ===\n      JSON.stringify([1, 4, 2, 3])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([5, 6, 7, 8, 9])) ===\n      JSON.stringify([5, 9, 6, 8, 7])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([1, 2, 3, 4, 5])) ===\n      JSON.stringify([1, 5, 2, 4, 3])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([5, 6, 7, 8, 9, 1])) ===\n      JSON.stringify([1, 9, 5, 8, 6, 7])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([5, 5, 5, 5])) ===\n      JSON.stringify([5, 5, 5, 5])\n  )\n  console.assert(JSON.stringify(strangeSortList([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(strangeSortList([1, 2, 3, 4, 5, 6, 7, 8])) ===\n      JSON.stringify([1, 8, 2, 7, 3, 6, 4, 5])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([0, 2, 2, 2, 5, 5, -5, -5])) ===\n      JSON.stringify([-5, 5, -5, 5, 0, 2, 2, 2])\n  )\n  console.assert(\n    JSON.stringify(strangeSortList([111111])) === JSON.stringify([111111])\n  )\n}\n\ntestStrangeSortList()\n"
+      ]
+    ]
+  },
+  "50": {
+    "task_id": 72,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpnej3mdo5/test.js:13\nconst willItFly = () => {\n      ^\n\nSyntaxError: Identifier 'willItFly' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const willItFly = (q, w) => {\n  if (q.reduce(((prev, item) => prev + item), 0) > w)\n    return false;\n  var i = 0, j = q.length - 1;\n  while (i < j) {\n    if (q[j] != q[i])\n      return false;\n    i++;\n    j--;\n  }\n  return true;\n}\n\nconst willItFly = () => {\n  console.assert(willItFly([3, 2, 3], 9) === true)\n  console.assert(willItFly([1, 2], 5) === false)\n  console.assert(willItFly([3], 5) === true)\n  console.assert(willItFly([3, 2, 3], 1) === false)\n  console.assert(willItFly([1, 2, 3], 6) === false)\n  console.assert(willItFly([5], 5) === true)\n}\n\nwillItFly()\n"
+      ]
+    ]
+  },
+  "51": {
+    "task_id": 73,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpi7rhpepb/test.js:26\n\n\n\nSyntaxError: Unexpected end of input\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "bash \nconst smallestChange = (arr) => {\n    var ans = 0;\n    for (let i = 0; i < Math.floor(arr.length / 2); i++)\n    {\n       // reassign \"at\" method here \n        if (arr[\"at\"](-i - 1) != arr[i]) {\n            ans++;\n        }\n    }\n    return ans;\n}\n```\n\nconst testSmallestChange = () => {\n  console.assert(smallestChange([1, 2, 3, 5, 4, 7, 9, 6]) === 4)\n  console.assert(smallestChange([1, 2, 3, 4, 3, 2, 2]) === 1)\n  console.assert(smallestChange([1, 4, 2]) === 1)\n  console.assert(smallestChange([1, 4, 4, 2]) === 1)\n  console.assert(smallestChange([1, 2, 3, 2, 1]) === 0)\n  console.assert(smallestChange([3, 1, 1, 3]) === 0)\n  console.assert(smallestChange([1]) === 0)\n  console.assert(smallestChange([0, 1]) === 1)\n}\n\ntestSmallestChange()\n"
+      ]
+    ]
+  },
+  "52": {
+    "task_id": 75,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const isMultiplyPrime = (a) => {\n  var isPrime = function (n) {\n    for (let j = 2; j < n; j++)\n      if (n % j == 0)\n        return 0;\n    return 1;\n  }\n\n  for (let i = 2; i < 101; i++) {\n    if (isPrime(i)) {\n      if (a % i == 0) {\n        for (let j = i + 1; j < 101; j++) {\n          if (isPrime(j)) {\n            if (a % j == 0) {\n              for (let k = j + 1; k < 101; k++) {\n                if (isPrime(k)) {\n                  if (a % k == 0) {\n                    return true;\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n  return false;\n};\n\nconst testIsMultiplyPrime = () => {\n  console.assert(isMultiplyPrime(5) === false)\n  console.assert(isMultiplyPrime(30) === true)\n  console.assert(isMultiplyPrime(8) === true)\n  console.assert(isMultiplyPrime(10) === false)\n  console.assert(isMultiplyPrime(125) === true)\n  console.assert(isMultiplyPrime(3 * 5 * 7) === true)\n  console.assert(isMultiplyPrime(3 * 6 * 7) === false)\n  console.assert(isMultiplyPrime(9 * 9 * 9) === false)\n  console.assert(isMultiplyPrime(11 * 9 * 9) === false)\n  console.assert(isMultiplyPrime(11 * 13 * 7) === true)\n}\n\ntestIsMultiplyPrime()\n"
+      ]
+    ]
+  },
+  "53": {
+    "task_id": 76,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "more_universe_var_type",
+    "evaluation_codes": [
+      [
+        "/*\n * Your task is to write a function that returns true if a number x is a simple power of n and false in other cases.\n * x is a simple power of n if n**long=x\n * For example:\n * isSimplePower(1, 4) => true\n * isSimplePower(2, 2) => true\n * isSimplePower(8, 2) => true\n * isSimplePower(3, 2) => false\n * isSimplePower(3, 1) => false\n * isSimplePower(5, 3) => false\n */\nconst isSimplePower = (x, n) => {\n  if (n == 1)\n    return (x == 1);\n  var power = 1;\n  while (power * n <= x)\n    power *= n;\n  return (x == power);\n}\n\nconst testIsSimplePower = () => {\n  console.assert(isSimplePower(1, 4) === true)\n  console.assert(isSimplePower(2, 2) === true)\n  console.assert(isSimplePower(8, 2) === true)\n  console.assert(isSimplePower(3, 2) === false)\n  console.assert(isSimplePower(3, 1) === false)\n  console.assert(isSimplePower(5, 3) === false)\n  console.assert(isSimplePower(16, 2) === true)\n  console.assert(isSimplePower(143214, 16) === false)\n  console.assert(isSimplePower(4, 2) === true)\n  console.assert(isSimplePower(9, 3) === true)\n  console.assert(isSimplePower(16, 4) === true)\n  console.assert(isSimplePower(24, 2) === false)\n  console.assert(isSimplePower(128, 4) === false)\n  console.assert(isSimplePower(12, 6) === false)\n  console.assert(isSimplePower(1, 1) === true)\n  console.assert(isSimplePower(1, 12) === true)\n}\n\ntestIsSimplePower()\n"
+      ]
+    ]
+  },
+  "54": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const iscube = (a) => {\n  a = Math.abs(a);\n  return (a == Math.pow(Math.round(Math.pow(a, 1.0 / 3.0)), 3));\n}\n\nconst testIscube = () => {\n  console.assert(true === iscube(1))\n  console.assert(false === iscube(2))\n  console.assert(true === iscube(-1))\n  console.assert(true === iscube(64))\n  console.assert(false === iscube(180))\n  console.assert(true === iscube(1000))\n  console.assert(true === iscube(0))\n  console.assert(false === iscube(1729))\n}\n\ntestIscube()\n"
+      ]
+    ]
+  },
+  "55": {
+    "task_id": 80,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n/data1/ljc/code/tmp/tmpbtancdpa/test.js:5\n    if (s.slice(i, i + 3) in s)\n                          ^\n\nTypeError: Cannot use 'in' operator to search for 'abc' in abcd\n    at isHappy (/data1/ljc/code/tmp/tmpbtancdpa/test.js:5:27)\n    at testIsHappy (/data1/ljc/code/tmp/tmpbtancdpa/test.js:12:18)\n    at Object.<anonymous> (/data1/ljc/code/tmp/tmpbtancdpa/test.js:20:1)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const isHappy = (s) => {\n  if (s.length < 3)\n    return 0;\n  for (let i = 0; i < s.length - 2; i++)\n    if (s.slice(i, i + 3) in s)\n      return false;\n  return true;\n};\n\nconst testIsHappy = () => {\n  console.assert(isHappy('a') === false)\n  console.assert(isHappy('aa') === false)\n  console.assert(isHappy('abcd') === true)\n  console.assert(isHappy('aabb') === false)\n  console.assert(isHappy('adb') === true)\n  console.assert(isHappy('xyy') === false)\n  console.assert(isHappy('iopaxpoi') === true)\n  console.assert(isHappy('iopaxioi') === false)\n}\n\ntestIsHappy()\n"
+      ]
+    ]
+  },
+  "56": {
+    "task_id": 81,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const numericalLetterGrade = (grades) => {\n  let letter_grade = [];\n  for (let i = 0, len = grades.length; i < len; i = i + 1) {\n    let gpa = grades[i];\n    if (gpa == 4.0) {\n      letter_grade.push('A+');\n    } else if (gpa > 3.7) {\n      letter_grade.push('A');\n    } else if (gpa > 3.3) {\n      letter_grade.push('A-');\n    } else if (gpa > 3.0) {\n      letter_grade.push('B+');\n    } else if (gpa > 2.7) {\n      letter_grade.push('B');\n    } else if (gpa > 2.3) {\n      letter_grade.push('B-');\n    } else if (gpa > 2.0) {\n      letter_grade.push('C+');\n    } else if (gpa > 1.7) {\n      letter_grade.push('C');\n    } else if (gpa > 1.3) {\n      letter_grade.push('C-');\n    } else if (gpa > 1.0) {\n      letter_grade.push('D+');\n    } else if (gpa > 0.7) {\n      letter_grade.push('D');\n    } else if (gpa > 0.0) {\n      letter_grade.push('D-');\n    } else {\n      letter_grade.push('E');\n    }\n  }\n  return letter_grade;\n};\n\nconst testNumericalLetterGrade = () => {\n  console.assert(\n    JSON.stringify(numericalLetterGrade([4.0, 3, 1.7, 2, 3.5])) ===\n    JSON.stringify(['A+', 'B', 'C-', 'C', 'A-'])\n  )\n  console.assert(\n    JSON.stringify(numericalLetterGrade([1.2])) === JSON.stringify(['D+'])\n  )\n  console.assert(\n    JSON.stringify(numericalLetterGrade([0.5])) === JSON.stringify(['D-'])\n  )\n  console.assert(\n    JSON.stringify(numericalLetterGrade([0.0])) === JSON.stringify(['E'])\n  )\n  console.assert(\n    JSON.stringify(numericalLetterGrade([1, 0.3, 1.5, 2.8, 3.3])) ===\n    JSON.stringify(['D', 'D-', 'C-', 'B', 'B+'])\n  )\n  console.assert(\n    JSON.stringify(numericalLetterGrade([0, 0.7])) ===\n    JSON.stringify(['E', 'D-'])\n  )\n}\n\ntestNumericalLetterGrade()\n"
+      ]
+    ]
+  },
+  "57": {
+    "task_id": 82,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const primeLength = (string) => {\n  let len = string.length\n  if (len == 1 || len == 0) { return 0 }\n  for (let i = 2; i * i <= len; i++) {\n    if (len % i == 0) {\n      return false\n    }\n  }\n  return true\n}\n\nconst testPrimeLength = () => {\n  console.assert(primeLength('Hello') === true)\n  console.assert(primeLength('abcdcba') === true)\n  console.assert(primeLength('kittens') === true)\n  console.assert(primeLength('orange') === false)\n  console.assert(primeLength('wow') === true)\n  console.assert(primeLength('world') === true)\n  console.assert(primeLength('MadaM') === true)\n  console.assert(primeLength('Wow') === true)\n  console.assert(primeLength('') === false)\n  console.assert(primeLength('HI') === true)\n  console.assert(primeLength('go') === true)\n  console.assert(primeLength('gogo') === false)\n  console.assert(primeLength('aaaaaaaaaaaaaaa') === false)\n  console.assert(primeLength('Madam') === true)\n  console.assert(primeLength('M') === false)\n  console.assert(primeLength('0') === false)\n}\n\ntestPrimeLength()\n"
+      ]
+    ]
+  },
+  "58": {
+    "task_id": 83,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "/*\n  Given a positive integer n, return the count of the numbers of n-digit\n  positive integers that start or end with 1.\n  */\nconst startsOneEnds = (n) => {\n  if (1 == n) { return 1 }\n  let t = 18\n  for (let i = 2; i < n; i++) {\n    t = t * 10 + 9\n    if (t.toString().endsWith(\"1\")) {n = t}\n  }\n  return n\n}\n\nconst testStartsOneEnds = () => {\n  console.assert(startsOneEnds(1) === 1)\n  console.assert(startsOneEnds(2) === 18)\n  console.assert(startsOneEnds(3) === 180)\n  console.assert(startsOneEnds(4) === 1800)\n  console.assert(startsOneEnds(5) === 18000)\n}\n\ntestStartsOneEnds()\n"
+      ]
+    ]
+  },
+  "59": {
+    "task_id": 84,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "// Complete the solve function below.\nconst solve = (N) => {\n  let t = 0\n  while (N > 0) {\n    t = t + (N % 10)\n    N = Math.floor(N / 10)\n  }\n  return t.toString(2)\n}\n\nconst testSolve = () => {\n  console.assert(solve(1000) === '1')\n  console.assert(solve(150) === '110')\n  console.assert(solve(147) === '1100')\n  console.assert(solve(333) === '1001')\n  console.assert(solve(963) === '10010')\n}\n\ntestSolve()\n"
+      ]
+    ]
+  },
+  "60": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const add = (lst) => {\n  let t = 0\n  for (let i = 1; i < lst.length; i = i + (2)) {\n    if (lst[i] % 2 == 0) {\n      t = t + (lst[i])\n    }\n  }\n  return t\n}\n\n//Test cases\nconst testValues = [\n  {input: [4, 2, 6, 7], output: 2},\n  {input: [1, 3, 5, 7, 9], output: 25},\n  {input: [2, 4, 6, 8, 10], output: 30},\n];\n\ntestValues.forEach((test) => {\n  let output = add(test.input);\n  \n});\n\nconst testAdd = () => {\n  console.assert(add([4, 88]) === 88)\n  console.assert(add([4, 5, 6, 7, 2, 122]) === 122)\n  console.assert(add([4, 0, 6, 7]) === 0)\n  console.assert(add([4, 4, 6, 8]) === 12)\n}\n\ntestAdd()\n"
+      ]
+    ]
+  },
+  "61": {
+    "task_id": 86,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "function antiShuffle(s) {\n  let arr = s.split(/\\s/);\n  for (let i = 0; i < arr.length; i++) {\n    for (let j = 0; j < arr[i].length; j++) {\n      let ind = j;\n      for (let k = 1 + j; k < arr[i].length; k++) {\n        if (arr[i][k].charCodeAt() < arr[i][ind].charCodeAt()) {\n          ind = k;\n        }\n      }\n      arr[i] = arr[i].substring(0, ind) + arr[i].substring(ind + 1);\n    }\n    arr[i] = arr[i].split('').sort((a, b) => a.charCodeAt() - b.charCodeAt()).join('');\n  }\n  return arr.join('');\n}\n\nconst testAntiShuffle = () => {\n  console.assert(antiShuffle('Hi') === 'Hi')\n  console.assert(antiShuffle('hello') === 'ehllo')\n  console.assert(antiShuffle('number') === 'bemnru')\n  console.assert(antiShuffle('abcd') === 'abcd')\n  console.assert(antiShuffle('Hello World!!!') === 'Hello !!!Wdlor')\n  console.assert(antiShuffle('') === '')\n  console.assert(\n    antiShuffle('Hi. My name is Mister Robot. How are you?') ===\n    '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n  )\n}\n\ntestAntiShuffle()\n"
+      ]
+    ]
+  },
+  "62": {
+    "task_id": 87,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const getRow = (lst, x) => {\n  let t = []\n  for (let i = 0; i < lst.length; i++) {\n    for (let j = lst[i].length - 1; j >= 0; j--) {\n      if (x == lst[i][j]) {\n        t.push([i, j])\n      }\n    }\n  }\n  return t.sort((a, b) => a[0] - b[0])\n    .sort((a, b) => b[1] - a[1])\n}\n\nconst testGetRow = () => {\n  console.assert(\n    JSON.stringify(\n      getRow(\n        [\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 1, 6],\n          [1, 2, 3, 4, 5, 1],\n        ],\n        1\n      )\n    ) === JSON.stringify([(0, 0), (1, 4), (1, 0), (2, 5), (2, 0)])\n  )\n  console.assert(\n    JSON.stringify(\n      getRow(\n        [\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n        ],\n        2\n      )\n    ) === JSON.stringify([(0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (5, 1)])\n  )\n  console.assert(\n    JSON.stringify(\n      getRow(\n        [\n          [1, 2, 3, 4, 5, 6],\n          [1, 2, 3, 4, 5, 6],\n          [1, 1, 3, 4, 5, 6],\n          [1, 2, 1, 4, 5, 6],\n          [1, 2, 3, 1, 5, 6],\n          [1, 2, 3, 4, 1, 6],\n          [1, 2, 3, 4, 5, 1],\n        ],\n        1\n      )\n    ) ===\n    JSON.stringify([\n      (0, 0),\n      (1, 0),\n      (2, 1),\n      (2, 0),\n      (3, 2),\n      (3, 0),\n      (4, 3),\n      (4, 0),\n      (5, 4),\n      (5, 0),\n      (6, 5),\n      (6, 0),\n    ])\n  )\n  console.assert(JSON.stringify(getRow([], 1)) === JSON.stringify([]))\n  console.assert(JSON.stringify(getRow([[1]], 2)) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(getRow([[], [1], [1, 2, 3]], 3)) === JSON.stringify([(2, 2)])\n  )\n}\n\ntestGetRow()\n"
+      ]
+    ]
+  },
+  "63": {
+    "task_id": 88,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sortArray = (array) => {\n  let arr = array\n  let tot = arr[0] + arr[arr.length-1]\n  for (let j = 0; j < arr.length; j++) {\n    let ind = j\n    for (let k = 1 + j; k < arr.length; k++) {\n      if ((1 == tot % 2 && arr[k] < arr[ind]) || (0 == tot % 2 && arr[k] > arr[ind])) {\n        let temp = arr[k]\n        arr[k] = arr[j]\n        arr[j] = temp\n      }\n    }\n  }\n  return arr\n}\n\nconst testSortArray = () => {\n  console.assert(JSON.stringify(sortArray([])) === JSON.stringify([]))\n  console.assert(JSON.stringify(sortArray([5])) === JSON.stringify([5]))\n  console.assert(JSON.stringify(sortArray([2, 4, 3, 0, 1, 5])) === JSON.stringify([0, 1, 2, 3, 4, 5]))\n  console.assert(JSON.stringify(sortArray([2, 4, 3, 0, 1, 5, 6])) === JSON.stringify([6, 5, 4, 3, 2, 1, 0]))\n  console.assert(JSON.stringify(sortArray([2, 1])) === JSON.stringify([1, 2]))\n  console.assert(JSON.stringify(sortArray([15, 42, 87, 32, 11, 0])) === JSON.stringify([0, 11, 15, 32, 42, 87]))\n  console.assert(JSON.stringify(sortArray([21, 14, 23, 11])) === JSON.stringify([23, 21, 14, 11]))\n}\n\ntestSortArray()\n"
+      ]
+    ]
+  },
+  "64": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const encrypt = (s) => {\n  let t = '';\n  for (let i = 0; i < s.length; i++) {\n    let p = s[i].charCodeAt() + 4;\n    if (p > 122) { p = p - (26) }\n    t += String.fromCharCode(p);\n  }\n  return t;\n}\n\nconst testEncrypt = () => {\n  console.assert(encrypt('hi') === 'lm')\n  console.assert(encrypt('asdfghjkl') === 'ewhjklnop')\n  console.assert(encrypt('gf') === 'kj')\n  console.assert(encrypt('et') === 'ix')\n  console.assert(encrypt('faewfawefaewg') === 'jeiajeaijeiak')\n  console.assert(encrypt('hellomyfriend') === 'lippsqcjvmirh')\n  console.assert(\n    encrypt('dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh') ===\n    'hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl'\n  )\n  console.assert(encrypt('a') === 'e')\n}\n\ntestEncrypt()\n"
+      ]
+    ]
+  },
+  "65": {
+    "task_id": 90,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpci1cx5qq/test.js:11\n  return ind\n  ^\n\nReferenceError: ind is not defined\n    at nextSmallest (/data1/ljc/code/tmp/tmpci1cx5qq/test.js:11:3)\n    at testNextSmallest (/data1/ljc/code/tmp/tmpci1cx5qq/test.js:14:18)\n    at Object.<anonymous> (/data1/ljc/code/tmp/tmpci1cx5qq/test.js:23:1)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const nextSmallest = (lst) => {\n  let arr = lst\n  for (let j = 0; j < arr.length; j = j + 1) {\n    let ind = j\n    for (let k = j + 1; k < arr.length; k = k + 1) {\n      if (arr[k] < arr[ind]) {\n        ind = k\n      }\n    }\n  }\n  return ind\n};\n\nconst testNextSmallest = () => {\n  console.assert(nextSmallest([1, 2, 3, 4, 5]) === 2)\n  console.assert(nextSmallest([5, 1, 4, 3, 2]) === 2)\n  console.assert(nextSmallest([]) === null)\n  console.assert(nextSmallest([1, 1]) === null)\n  console.assert(nextSmallest([1, 1, 1, 1, 0]) === 1)\n  console.assert(nextSmallest([1, 0 ** 0]) === null)\n  console.assert(nextSmallest([-35, 34, 12, -45]) === -35)\n}\n\ntestNextSmallest()\n"
+      ]
+    ]
+  },
+  "66": {
+    "task_id": 91,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const isBored = (S) => {\n  let t = 0\n  if ('I' == S[0] && ' ' == S[1]) { t = 1 }\n  for (let i = 0; i < S.length; i++) {\n    if ('.' == S[i] || '!' == S[i] || '?' == S[i]) {\n      if (' ' == S[1 + i] && 'I' == S[2 + i] && ' ' == S[3 + i]) {\n        t = t + 1\n      }\n    }\n  }\n  return t\n}\n\nconst testIsBored = () => {\n  console.assert(isBored('Hello world') === 0)\n  console.assert(isBored('Is the sky blue?') === 0)\n  console.assert(isBored('I love It !') === 1)\n  console.assert(isBored('bIt') === 0)\n  console.assert(\n    isBored('I feel good today. I will be productive. will kill It') === 2\n  )\n  console.assert(isBored('You and I are going for a walk') === 0)\n}\n\ntestIsBored()\n"
+      ]
+    ]
+  },
+  "67": {
+    "task_id": 92,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp96ls0_4r/test.js:11\nThe function `anyInt` takes three numbers as arguments, and returns `true` if one of the numbers is equal to the sum of the other two, and all numbers are integers. Otherwise, it returns `false`.\n              ^^^^^^\n\nSyntaxError: Unexpected identifier 'anyInt'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "javascript\nconst anyInt = (x, y, z) => {\n  if (0 === x % 1 && 0 === y % 1 && 0 === z % 1 && (z === x + y || y === x + z || y + z === x)) {\n    return true\n  }\n  else {\n    return false\n  }\n}\n```\nThe function `anyInt` takes three numbers as arguments, and returns `true` if one of the numbers is equal to the sum of the other two, and all numbers are integers. Otherwise, it returns `false`.\n\nconst testAnyInt = () => {\n  console.assert(anyInt(2, 3, 1) === true)\n  console.assert(anyInt(2.5, 2, 3) === false)\n  console.assert(anyInt(1.5, 5, 3.5) === false)\n  console.assert(anyInt(2, 6, 2) === false)\n  console.assert(anyInt(4, 2, 2) === true)\n  console.assert(anyInt(2.2, 2.2, 2.2) === false)\n  console.assert(anyInt(-4, 6, 2) === true)\n  console.assert(anyInt(2, 1, 1) === true)\n  console.assert(anyInt(3, 4, 7) === true)\n  console.assert(anyInt(3.0, 4, 7) === true)\n}\n\ntestAnyInt()\n"
+      ]
+    ]
+  },
+  "68": {
+    "task_id": 93,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const encode = (message) => {\n  const vowels = ['a', 'e', 'i', 'o', 'u'];\n  let t = '';\n\n  for (let i = 0; i < message.length; i++) {\n    let p = message[i].charCodeAt() - 97;\n    if (p >= 0 && p < 26) {\n      if (vowels.includes(message[i])) {\n        p = (p + 2) % 26;\n      }\n      // Swap case\n      p = p ^ (p >> 7);\n      t += String.fromCharCode(p + 97);\n    }\n  }\n\n  return t;\n};\n\nconst testEncode = () => {\n  console.assert(encode('TEST') === 'tgst')\n  console.assert(encode('Mudasir') === 'mWDCSKR')\n  console.assert(encode('YES') === 'ygs')\n  console.assert(encode('This is a message') === 'tHKS KS C MGSSCGG')\n  console.assert(\n    encode('I DoNt KnOw WhAt tO WrItE') === 'k dQnT kNqW wHcT Tq wRkTg'\n  )\n}\n\ntestEncode()\n"
+      ]
+    ]
+  },
+  "69": {
+    "task_id": 94,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp954wtp6z/test.js:24\nFor example, if the input is: [0, 3, 2, 1, 3, 5, 7, 4, 5, 5, 5, 2, 181, 32, 4, 32, 3, 2, 32, 324, 4, 3]\n    ^^^^^^^\n\nSyntaxError: Unexpected identifier 'example'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const largestPrime = (list) => {\n  let largest = 0\n  let result = 0\n\n  for (let i = 0; i < list.length; i++) {\n    let p = 1\n\n    for (let j = 2; j * j <= list[i]; j++) {\n      if (0 == list[i] % j) {\n        p = 0\n        break\n      }\n    }\n\n    if (p && list[i] > largest) {\n      largest = list[i]\n      result = largest.toString().split('').reduce((a, b) => a + +b)\n    }\n\n  }\n  return result\n}\n\nFor example, if the input is: [0, 3, 2, 1, 3, 5, 7, 4, 5, 5, 5, 2, 181, 32, 4, 32, 3, 2, 32, 324, 4, 3]\nThe output should be: 10\n\nExplanation:\nThe largest prime number in the list is 181, and the sum of its digits is 10.\n\nconst testSkjkasdkd = () => {\n  console.assert(\n    largestPrime([\n      0, 3, 2, 1, 3, 5, 7, 4, 5, 5, 5, 2, 181, 32, 4, 32, 3, 2, 32, 324, 4, 3,\n    ]) === 10\n  )\n\n  console.assert(\n    largestPrime([1, 0, 1, 8, 2, 4597, 2, 1, 3, 40, 1, 2, 1, 2, 4, 2, 5, 1]) === 25\n  )\n\n  console.assert(\n    largestPrime([\n      1, 3, 1, 32, 5107, 34, 83278, 109, 163, 23, 2323, 32, 30, 1, 9, 3,\n    ]) === 13\n  )\n\n  console.assert(\n    largestPrime([0, 724, 32, 71, 99, 32, 6, 0, 5, 91, 83, 0, 5, 6]) === 11\n  )\n\n  console.assert(largestPrime([0, 81, 12, 3, 1, 21]) === 3)\n\n  console.assert(largestPrime([0, 8, 1, 2, 1, 7]) === 7)\n\n  console.assert(largestPrime([8191]) === 19)\n  console.assert(largestPrime([8191, 123456, 127, 7]) === 19)\n  console.assert(largestPrime([127, 97, 8192]) === 10)\n}\n\ntestSkjkasdkd()\n"
+      ]
+    ]
+  },
+  "70": {
+    "task_id": 95,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const checkDictCase = (dict) => {\n  if (Object.keys(dict).length === 0) {\n    return false;\n  }\n  let c = 0;\n  let lo = 1;\n  let hi = 1;\n  for (let key in dict) {\n    if (typeof key !== 'string') {\n      return false;\n    }\n    c = c + 1;\n    if (key.toLowerCase() === key) {\n      lo = lo && 1;\n    } else if (key.toUpperCase() === key) {\n      hi = hi && 1;\n    } else {\n      return false;\n    }\n  }\n  return c === 0 ? false : lo === hi ? lo : false;\n}\n\nconst testCheckDictCase = () => {\n  console.assert(checkDictCase({ p: 'pineapple', b: 'banana' }) === true)\n  console.assert(\n    checkDictCase({ p: 'pineapple', A: 'banana', B: 'banana' }) === false\n  )\n  console.assert(\n    checkDictCase({ p: 'pineapple', 5: 'banana', a: 'apple' }) === false\n  )\n  console.assert(\n    checkDictCase({ Name: 'John', Age: '36', City: 'Houston' }) === false\n  )\n  console.assert(checkDictCase({ STATE: 'NC', ZIP: '12345' }) === true)\n  console.assert(checkDictCase({ fruit: 'Orange', taste: 'Sweet' }) === true)\n  console.assert(checkDictCase({}) === false)\n}\n\ntestCheckDictCase()\n"
+      ]
+    ]
+  },
+  "71": {
+    "task_id": 96,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp8gn5fhp9/test.js:1\n/end-of-file\n^\n\nSyntaxError: Invalid regular expression: missing /\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "/end-of-file\n\nconst testCountUpTo = () => {\n  console.assert(JSON.stringify(countUpTo(5)) === JSON.stringify([2, 3]))\n  console.assert(JSON.stringify(countUpTo(6)) === JSON.stringify([2, 3, 5]))\n  console.assert(JSON.stringify(countUpTo(7)) === JSON.stringify([2, 3, 5]))\n  console.assert(JSON.stringify(countUpTo(10)) === JSON.stringify([2, 3, 5, 7]))\n  console.assert(JSON.stringify(countUpTo(0)) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(countUpTo(22)) ===\n    JSON.stringify([2, 3, 5, 7, 11, 13, 17, 19])\n  )\n  console.assert(JSON.stringify(countUpTo(1)) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(countUpTo(18)) === JSON.stringify([2, 3, 5, 7, 11, 13, 17])\n  )\n  console.assert(\n    JSON.stringify(countUpTo(47)) ===\n    JSON.stringify([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43])\n  )\n  console.assert(\n    JSON.stringify(countUpTo(101)) ===\n    JSON.stringify([\n      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,\n      71, 73, 79, 83, 89, 97,\n    ])\n  )\n}\n\ntestCountUpTo()\n"
+      ]
+    ]
+  },
+  "72": {
+    "task_id": 98,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const countUpper = (s) => {\n  let p = 0\n  for (let i = 0; i < s.length; i += 2) {\n    if ('A' == s[i] || 'E' == s[i] || 'I' == s[i] || 'O' == s[i] || 'U' == s[i]) { p++ }\n  }\n\n  return p;\n}\n\nconst testCountUpper = () => {\n  console.assert(countUpper('aBCdEf') === 1)\n  console.assert(countUpper('abcdefg') === 0)\n  console.assert(countUpper('dBBE') === 0)\n  console.assert(countUpper('B') === 0)\n  console.assert(countUpper('U') === 1)\n  console.assert(countUpper('') === 0)\n  console.assert(countUpper('EEEE') === 2)\n}\n\ntestCountUpper()\n"
+      ]
+    ]
+  },
+  "73": {
+    "task_id": 99,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const closestInteger = (value) => {\n  value = Number(value)\n  let t = value % 1\n  if (t < 0.5 && t > -0.5) { value = value - (t) }\n  return value\n}\n\nconst testClosestInteger = () => {\n  console.assert(closestInteger('10') === 10)\n  console.assert(closestInteger('14.5') === 15)\n  console.assert(closestInteger('-15.5') === -16)\n  console.assert(closestInteger('15.3') === 15)\n  console.assert(closestInteger('0') === 0)\n}\n\ntestClosestInteger()\n"
+      ]
+    ]
+  },
+  "74": {
+    "task_id": 100,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const makeAPile = (n) => {\n  let t = []\n  for (let i = n; i < 3 * n; i += 2) {\n    t.push(i)\n  }\n  return t\n}\n\nconst testMakeAPile = () => {\n  console.assert(JSON.stringify(makeAPile(3)) === JSON.stringify([3, 5, 7]))\n  console.assert(JSON.stringify(makeAPile(4)) === JSON.stringify([4, 6, 8, 10]))\n  console.assert(\n    JSON.stringify(makeAPile(5)) === JSON.stringify([5, 7, 9, 11, 13])\n  )\n  console.assert(\n    JSON.stringify(makeAPile(6)) === JSON.stringify([6, 8, 10, 12, 14, 16])\n  )\n  console.assert(\n    JSON.stringify(makeAPile(8)) ===\n    JSON.stringify([8, 10, 12, 14, 16, 18, 20, 22])\n  )\n}\n\ntestMakeAPile()\n"
+      ]
+    ]
+  },
+  "75": {
+    "task_id": 101,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp9_6n7pmk/test.js:29\nconst wordsString = () => {\n      ^\n\nSyntaxError: Identifier 'wordsString' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "/*\n  You will be given a string of words separated by commas or spaces. Your task is\n  to split the string into words and return an array of the words.\n  \n  For example:\n  wordsString(\"Hi, my name is John\") == [\"Hi\", \"my\", \"name\", \"is\", \"John\"]\n  wordsString(\"One, two, three, four, five, six\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\n*/\nconst wordsString = (s) => {\n  let t = ''\n  let p = []\n  let k = 0\n  for (let i = 0; i < s.length; i++) {\n    if (' ' == s[i] || ',' == s[i]) {\n      if (0 == k) {\n        k = 1;\n        p.push(t);\n      }\n      t = '';\n    } else {\n      t += s[i];\n    }\n    if (i == s.length - 1 && 0 != k) {\n      p.push(t);\n    }\n  }\n  return p;\n}\n\nconst wordsString = () => {\n  console.assert(\n    JSON.stringify(wordsString('Hi, my name is John')) ===\n    JSON.stringify(['Hi', 'my', 'name', 'is', 'John'])\n  )\n  console.assert(\n    JSON.stringify(wordsString('One, two, three, four, five, six')) ===\n    JSON.stringify(['One', 'two', 'three', 'four', 'five', 'six'])\n  )\n  console.assert(\n    JSON.stringify(wordsString('Hi, my name')) ===\n    JSON.stringify(['Hi', 'my', 'name'])\n  )\n  console.assert(\n    JSON.stringify(wordsString('One,, two, three, four, five, six,')) ===\n    JSON.stringify(['One', 'two', 'three', 'four', 'five', 'six'])\n  )\n  console.assert(JSON.stringify(wordsString('')) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(wordsString('ahmed     , gamal')) ===\n    JSON.stringify(['ahmed', 'gamal'])\n  )\n}\n\nwordsString()\n"
+      ]
+    ]
+  },
+  "76": {
+    "task_id": 102,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpdyueh996/test.js:18\nconst testChooseNum = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const chooseNum = (x, y) => {\n  for (let i = y; i >= x; i--) {\n    if (0 == i % 2) {return i }\n  }\n  return -1;\n};\n\n/*This function takes two positive numbers x and y and returns the\n  biggest even integer number that is in the range [x, y] inclusive. If \n  there's no such number, then the function should return -1.\n\n  For example:\n  chooseNum(12, 15) = 14\n  chooseNum(13, 12) = -1\n  */\n\n-----------------------------\n\nconst testChooseNum = () => {\n  console.assert(chooseNum(12, 15) === 14)\n  console.assert(chooseNum(13, 12) === -1)\n  console.assert(chooseNum(33, 12354) === 12354)\n  console.assert(chooseNum(5234, 5233) === -1)\n  console.assert(chooseNum(6, 29) === 28)\n  console.assert(chooseNum(27, 10) === -1)\n  console.assert(chooseNum(7, 7) === -1)\n  console.assert(chooseNum(546, 546) === 546)\n}\n\ntestChooseNum()\n"
+      ]
+    ]
+  },
+  "77": {
+    "task_id": 103,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const roundedAvg = (n, m) => {\n  if (n > m) { return -1 }\n  let k = (n + m) / 2\n  if (0 != k % 1) { k = (1 + n + m) / 2 }\n  return k.toString(2)\n}\n\nconst testRoundedAvg = () => {\n  console.assert(roundedAvg(1, 5) === '0b11')\n  console.assert(roundedAvg(7, 13) === '0b1010')\n  console.assert(roundedAvg(964, 977) === '0b1111001011')\n  console.assert(roundedAvg(996, 997) === '0b1111100101')\n  console.assert(roundedAvg(560, 851) === '0b1011000010')\n  console.assert(roundedAvg(185, 546) === '0b101101110')\n  console.assert(roundedAvg(362, 496) === '0b110101101')\n  console.assert(roundedAvg(350, 902) === '0b1001110010')\n  console.assert(roundedAvg(197, 233) === '0b11010111')\n  console.assert(roundedAvg(7, 5) === -1)\n  console.assert(roundedAvg(5, 1) === -1)\n  console.assert(roundedAvg(5, 5) === '0b101')\n}\n\ntestRoundedAvg()\n"
+      ]
+    ]
+  },
+  "78": {
+    "task_id": 104,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp0a0_ggce/test.js:20\nconst uniqueDigits = () => {\n      ^\n\nSyntaxError: Identifier 'uniqueDigits' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const uniqueDigits = (x) => {\n  let p = [];\n  for (let i = 0; i < x.length; i++) {\n    let h = x[i];\n    let boo = 1;\n    while (h > 0) {\n      let r = h % 10;\n      if (r % 2 == 0) {\n        boo = 0;\n        break;\n      }\n      h = (h - r) / 10;\n    }\n    if (boo == 1) {\n      p.push(x[i]);\n    }\n  }\n  return p.sort((a, b) => a - b);\n};\n\nconst uniqueDigits = () => {\n  console.assert(\n    JSON.stringify(uniqueDigits([15, 33, 1422, 1])) ===\n    JSON.stringify([1, 15, 33])\n  )\n  console.assert(\n    JSON.stringify(uniqueDigits([152, 323, 1422, 10])) === JSON.stringify([])\n  )\n  console.assert(\n    JSON.stringify(uniqueDigits([12345, 2033, 111, 151])) ===\n    JSON.stringify([111, 151])\n  )\n  console.assert(\n    JSON.stringify(uniqueDigits([135, 103, 31])) === JSON.stringify([31, 135])\n  )\n}\n\nuniqueDigits()\n"
+      ]
+    ]
+  },
+  "79": {
+    "task_id": 105,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const byLength = (arr) => {\n  p = []\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] > 0 && arr[i] < 10) { p.push(arr[i]) }\n  }\n  for (let j = 0; j < p.length; j++) {\n    let ind = j\n    for (let k = 1 + j; k < p.length; k++) {\n      if (p[k] > p[ind]) {\n        ind = k\n      }\n    }\n    p[j] = p[ind]\n  }\n  p = p.reverse()\n  for (let i = 0; i < p.length; i++) {\n    let num = p[i]\n    let name = \"\";\n    switch (num) {\n      case 1:\n        name = \"One\";\n        break;\n      case 2:\n        name = \"Two\";\n        break;\n      case 3:\n        name = \"Three\";\n        break;\n      case 4:\n        name = \"Four\";\n        break;\n      case 5:\n        name = \"Five\";\n        break;\n      case 6:\n        name = \"Six\";\n        break;\n      case 7:\n        name = \"Seven\";\n        break;\n      case 8:\n        name = \"Eight\";\n        break;\n      case 9:\n        name = \"Nine\";\n        break;\n      default:\n        name = \"\"\n    }\n    p[i] = name;\n  }\n  return p;\n}\n\nconst testByLength = () => {\n  console.assert(\n    JSON.stringify(byLength([2, 1, 1, 4, 5, 8, 2, 3])) ===\n    JSON.stringify([\n      'Eight',\n      'Five',\n      'Four',\n      'Three',\n      'Two',\n      'Two',\n      'One',\n      'One',\n    ])\n  )\n  console.assert(JSON.stringify(byLength([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(byLength([1, -1, 55])) === JSON.stringify(['One'])\n  )\n  console.assert(\n    JSON.stringify(byLength([1, -1, 3, 2])) ===\n    JSON.stringify(['Three', 'Two', 'One'])\n  )\n  console.assert(\n    JSON.stringify(byLength([9, 4, 8])) ===\n    JSON.stringify(['Nine', 'Eight', 'Four'])\n  )\n}\n\ntestByLength()\n"
+      ]
+    ]
+  },
+  "80": {
+    "task_id": 106,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const f = (n) => {\n  let f = 1\n  let p = 0\n  let k = []\n  for (let i = 1; i <= n; i = i + 1) {\n    p = p + (i);\n    if (i % 2 === 0) {\n      f = f * i\n    } else {\n      f = f + p\n    }\n    k.push(f)\n  }\n  return k\n}\n\nconst testF = () => {\n  console.assert(JSON.stringify(f(5)) === JSON.stringify([1, 2, 6, 24, 15]))\n  console.assert(\n    JSON.stringify(f(7)) === JSON.stringify([1, 2, 6, 24, 15, 720, 28])\n  )\n  console.assert(JSON.stringify(f(1)) === JSON.stringify([1]))\n  console.assert(JSON.stringify(f(3)) === JSON.stringify([1, 2, 6]))\n}\n\ntestF()\n"
+      ]
+    ]
+  },
+  "81": {
+    "task_id": 107,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const evenOddPalindrome = (n) => {\n  let e = 0\n  let o = 0\n  for (let i = 1; i <= n; i++) {\n    let k = i.toString()\n    let p = 1\n    for (let j = 0; j < k.length; j++) {\n      if (k[k.length - j - 1] != k[j]) {\n        p = 0\n        break\n      }\n    }\n    if (p) {\n      if (i % 2 === 0) {\n        e++\n      } else {\n        o++\n      }\n    }\n  }\n  return [e, o]\n}\n\nconst testEvenOddPalindrome = () => {\n  console.assert(\n    JSON.stringify(evenOddPalindrome(123)) === JSON.stringify((8, 13))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(12)) === JSON.stringify((4, 6))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(3)) === JSON.stringify((1, 2))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(63)) === JSON.stringify((6, 8))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(25)) === JSON.stringify((5, 6))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(19)) === JSON.stringify((4, 6))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(9)) === JSON.stringify((4, 5))\n  )\n  console.assert(\n    JSON.stringify(evenOddPalindrome(1)) === JSON.stringify((0, 1))\n  )\n}\n\ntestEvenOddPalindrome()\n"
+      ]
+    ]
+  },
+  "82": {
+    "task_id": 108,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const countNums = (arr) => {\n  let p = 0\n  for (let i = 0; i < arr.length; i = i + 1) {\n    let h = arr[i]\n    if (h > 0) {\n      p = p + 1;\n      continue;\n    }\n  }\n  return p;\n}\n\nconst testCountNums = () => {\n  console.assert(countNums([]) === 0)\n  console.assert(countNums([-1, -2, 0]) === 0)\n  console.assert(countNums([1, 1, 2, -2, 3, 4, 5]) === 6)\n  console.assert(countNums([1, 6, 9, -6, 0, 1, 5]) === 5)\n  console.assert(countNums([1, 100, 98, -7, 1, -1]) === 4)\n  console.assert(countNums([12, 23, 34, -45, -56, 0]) === 5)\n  console.assert(countNums([-0, 1 ** 0]) === 1)\n  console.assert(countNums([1]) === 1)\n}\n\ntestCountNums()\n"
+      ]
+    ]
+  },
+  "83": {
+    "task_id": 109,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpc8rh_8g6/test.js:3\n  console.assert(moveOneBall([3, 4, 5, 1, 2]) === true)\n          ^\n\nReferenceError: moveOneBall is not defined\n    at testMoveOneBall (/data1/ljc/code/tmp/tmpc8rh_8g6/test.js:3:11)\n    at Object.<anonymous> (/data1/ljc/code/tmp/tmpc8rh_8g6/test.js:10:1)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "\n\nconst testMoveOneBall = () => {\n  console.assert(moveOneBall([3, 4, 5, 1, 2]) === true)\n  console.assert(moveOneBall([3, 5, 10, 1, 2]) === true)\n  console.assert(moveOneBall([4, 3, 1, 2]) === false)\n  console.assert(moveOneBall([3, 5, 4, 1, 2]) === false)\n  console.assert(moveOneBall([]) === true)\n}\n\ntestMoveOneBall()\n"
+      ]
+    ]
+  },
+  "84": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const exchange = (lst1, lst2) => {\n  let k = lst1.length\n  let t = 0\n  for (let i = 0; i < lst1.length; i = i + 1) {\n    if (lst1[i] % 2 == 0) {\n      t = t + 1\n    }\n  }\n  for (let i = 0; i < lst2.length; i = i + 1) {\n    if (lst2[i] % 2 != 0) {\n      return \"NO\"\n    }\n  }\n  if (t === lst1.length) {\n    return \"YES\"\n  }\n  return \"NO\"\n}\n\nconst testExchange = () => {\n  console.assert(exchange([1, 2, 3, 4], [1, 2, 3, 4]) === 'YES')\n  console.assert(exchange([1, 2, 3, 4], [1, 5, 3, 4]) === 'NO')\n  console.assert(exchange([1, 2, 3, 4], [2, 1, 4, 3]) === 'YES')\n  console.assert(exchange([5, 7, 3], [2, 6, 4]) === 'YES')\n  console.assert(exchange([5, 7, 3], [2, 6, 3]) === 'NO')\n  console.assert(exchange([3, 2, 6, 1, 8, 9], [3, 5, 5, 1, 1, 1]) === 'NO')\n  console.assert(exchange([100, 200], [200, 200]) === 'YES')\n}\n\ntestExchange()\n"
+      ]
+    ]
+  },
+  "85": {
+    "task_id": 111,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpwo8h5pui/test.js:2\n  \"name\": \"histogram\",\n        ^\n\nSyntaxError: Unexpected token ':'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "{\n  \"name\": \"histogram\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A JS module for generating histograms from text.\",\n  \"main\": \"histogram.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"author\": \"Your Name\",\n  \"license\": \"MIT\"\n}\n\nconst testHistogram = () => {\n  console.assert(\n    JSON.stringify(histogram('a b b a')) === JSON.stringify({ a: 2, b: 2 })\n  )\n  console.assert(\n    JSON.stringify(histogram('a b c a b')) === JSON.stringify({ a: 2, b: 2 })\n  )\n  console.assert(\n    JSON.stringify(histogram('a b c d g')) ===\n    JSON.stringify({ a: 1, b: 1, c: 1, d: 1, g: 1 })\n  )\n  console.assert(\n    JSON.stringify(histogram('r t g')) === JSON.stringify({ r: 1, t: 1, g: 1 })\n  )\n  console.assert(\n    JSON.stringify(histogram('b b b b a')) === JSON.stringify({ b: 4 })\n  )\n  console.assert(\n    JSON.stringify(histogram('r t g')) === JSON.stringify({ r: 1, t: 1, g: 1 })\n  )\n  console.assert(JSON.stringify(histogram('')) === JSON.stringify({}))\n  console.assert(JSON.stringify(histogram('a')) === JSON.stringify({ a: 1 }))\n}\n\ntestHistogram()\n"
+      ]
+    ]
+  },
+  "86": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const reverseDelete = (s, c) => {\n  // Initialize an empty string for the result\n  let result = '';\n  \n  // Iterate over the characters in the input string s\n  for (let i = 0; i < s.length; i++) {\n    // Check if the current character is not in the check string c\n    if (c.indexOf(s[i]) === -1) {\n      // If not, add it to the result string\n      result += s[i];\n    }\n  }\n  \n  // Check if the result string is a palindrome\n  return [result, isPalindrome(result)];\n}\n\n// Function to check if a string is a palindrome\nfunction isPalindrome(str) {\n  return str === str.split('').reverse().join('');\n}\n\nconst testReverseDelete = () => {\n  console.assert(JSON.stringify(reverseDelete('abcde', 'ae'))) ===\n    JSON.stringify(['bcd', false])\n  console.assert(JSON.stringify(reverseDelete('abcdef', 'b'))) ===\n    JSON.stringify(['acdef', false])\n  console.assert(JSON.stringify(reverseDelete('abcdedcba', 'ab'))) ===\n    JSON.stringify(['cdedc', true])\n  console.assert(JSON.stringify(reverseDelete('dwik', 'w'))) ===\n    JSON.stringify(['dik', false])\n  console.assert(JSON.stringify(reverseDelete('a', 'a'))) ===\n    JSON.stringify(['', true])\n  console.assert(JSON.stringify(reverseDelete('abcdedcba', ''))) ===\n    JSON.stringify(['abcdedcba', true])\n  console.assert(JSON.stringify(reverseDelete('abcdedcba', 'v'))) ===\n    JSON.stringify(['abcdedcba', true])\n  console.assert(JSON.stringify(reverseDelete('vabba', 'v'))) ===\n    JSON.stringify(['abba', true])\n  console.assert(JSON.stringify(reverseDelete('mamma', 'mia'))) ===\n    JSON.stringify(['', true])\n}\n\ntestReverseDelete()\n"
+      ]
+    ]
+  },
+  "87": {
+    "task_id": 113,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const oddCount = (lst) => {\n  let d = [];\n  for (let i = 0; i < lst.length; i++) {\n    let p = 0;\n    let h = lst[i].length;\n    for (let j = 0; j < h; j++) {\n      if (lst[i][j] % 2 === 1) {\n        p++;\n      }\n    }\n    d.push(`the number of odd elements ${p} in the string ${i} of the input.`);\n  }\n  return d;\n};\n\nconst testOddCount = () => {\n  console.assert(\n    JSON.stringify(oddCount(['1234567'])) ===\n    JSON.stringify([\n      'the number of odd elements 4n the str4ng 4 of the 4nput.',\n    ])\n  )\n  console.assert(JSON.stringify(\n    oddCount(['3', '11111111'])) ===\n    JSON.stringify([\n      'the number of odd elements 1n the str1ng 1 of the 1nput.',\n      'the number of odd elements 8n the str8ng 8 of the 8nput.',\n    ])\n  )\n  console.assert(\n    JSON.stringify(oddCount(['271', '137', '314'])) ===\n    JSON.stringify([\n      'the number of odd elements 2n the str2ng 2 of the 2nput.',\n      'the number of odd elements 3n the str3ng 3 of the 3nput.',\n      'the number of odd elements 2n the str2ng 2 of the 2nput.',\n    ])\n  )\n}\n\ntestOddCount()\n"
+      ]
+    ]
+  },
+  "88": {
+    "task_id": 114,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const minSubArraySum = (nums) => {\n  let min = nums[0];\n  for (let i = 0; i < nums.length; i++) {\n    for (let j = i + 1; j <= nums.length; j++) {\n      let s = 0;\n      for (let k = i; k < j; k++) {\n        s += nums[k];\n      }\n      min = Math.min(s, min);\n    }\n  }\n  return min;\n};\n\nconst testMinSubArraySum = () => {\n  console.assert(minSubArraySum([2, 3, 4, 1, 2, 4]) === 1)\n  console.assert(minSubArraySum([-1, -2, -3]) === -6)\n  console.assert(minSubArraySum([-1, -2, -3, 2, -10]) === -14)\n  console.assert(minSubArraySum([-9999999999999999]) === -9999999999999999)\n  console.assert(minSubArraySum([0, 10, 20, 1000000]) === 0)\n  console.assert(minSubArraySum([-1, -2, -3, 10, -5]) === -6)\n  console.assert(minSubArraySum([100, -1, -2, -3, 10, -5]) === -6)\n  console.assert(minSubArraySum([10, 11, 13, 8, 3, 4]) === 3)\n  console.assert(minSubArraySum([100, -33, 32, -1, 0, -2]) === -33)\n  console.assert(minSubArraySum([-10]) === -10)\n  console.assert(minSubArraySum([7]) === 7)\n  console.assert(minSubArraySum([1, -1]) === -1)\n}\n\ntestMinSubArraySum()\n"
+      ]
+    ]
+  },
+  "89": {
+    "task_id": 115,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const maxFill = (grid, capacity) => {\n  const rows = grid.length;\n  const cols = grid[0].length;\n  let p = 0;\n  for (let i = 0; i < rows; i++) {\n    let m = 0;\n    for (let j = 0; j < cols; j++) {\n      m += grid[i][j];\n    }\n    p += m > 0 ? Math.floor(m / capacity) : 0;\n  }\n  return p;\n}\n\nconst testMaxFill = () => {\n  console.assert(\n    maxFill(\n      [\n        [0, 0, 1, 0],\n        [0, 1, 0, 0],\n        [1, 1, 1, 1],\n      ],\n      1\n    ) === 6\n  )\n  console.assert(\n    maxFill(\n      [\n        [0, 0, 1, 1],\n        [0, 0, 0, 0],\n        [1, 1, 1, 1],\n        [0, 1, 1, 1],\n      ],\n      2\n    ) === 5\n  )\n  console.assert(\n    maxFill(\n      [\n        [0, 0, 0],\n        [0, 0, 0],\n      ],\n      5\n    ) === 0\n  )\n  console.assert(\n    maxFill(\n      [\n        [1, 1, 1, 1],\n        [1, 1, 1, 1],\n      ],\n      2\n    ) === 4\n  )\n  console.assert(\n    maxFill(\n      [\n        [1, 1, 1, 1],\n        [1, 1, 1, 1],\n      ],\n      9\n    ) === 2\n  )\n}\n\ntestMaxFill()\n"
+      ]
+    ]
+  },
+  "90": {
+    "task_id": 116,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const sortArray = (arr) => {\n  let p = arr\n  for (let j = 0; j < p.length; j = j + 1) {\n    let ind = j\n    for (let k = j + 1; k < p.length; k = k + 1) {\n      let w1 = p[ind].toString(2)\n      let f1 = 0\n      for (let u = 0; u < w1.length; u = u + 1) {\n        if (w1[u] == '1') { f1 = f1 + 1 }\n      }\n      let w2 = p[k].toString(2)\n      let f2 = 0\n      for (let u = 0; u < w2.length; u = u + 1) {\n        if (w2[u] == '1') { f2 = f2 + 1 }\n      }\n      if (f1 < f2 || (f1 == f2 && p[ind] < p[k])) {\n        [p[ind], p[k]] = [p[k], p[ind]]\n      }\n    }\n  }\n  return p\n}\n\nconst testSortArray = () => {\n  console.assert(\n    JSON.stringify(sortArray([1, 5, 2, 3, 4])) ===\n    JSON.stringify([1, 2, 4, 3, 5])\n  )\n\n  console.assert(\n    JSON.stringify(sortArray([-2, -3, -4, -5, -6])) ===\n    JSON.stringify([-4, -2, -6, -5, -3])\n  )\n  console.assert(\n    JSON.stringify(sortArray([1, 0, 2, 3, 4])) ===\n    JSON.stringify([0, 1, 2, 4, 3])\n  )\n  console.assert(JSON.stringify(sortArray([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(sortArray([2, 5, 77, 4, 5, 3, 5, 7, 2, 3, 4])) ===\n    JSON.stringify([2, 2, 4, 4, 3, 3, 5, 5, 5, 7, 77])\n  )\n  console.assert(\n    JSON.stringify(sortArray([3, 6, 44, 12, 32, 5])) ===\n    JSON.stringify([32, 3, 5, 6, 12, 44])\n  )\n  console.assert(\n    JSON.stringify(sortArray([2, 4, 8, 16, 32])) ===\n    JSON.stringify([2, 4, 8, 16, 32])\n  )\n  console.assert(\n    JSON.stringify(sortArray([2, 4, 8, 16, 32])) ===\n    JSON.stringify([2, 4, 8, 16, 32])\n  )\n}\n\ntestSortArray()\n"
+      ]
+    ]
+  },
+  "91": {
+    "task_id": 117,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const selectWords = (s, n) => {\n  let t = s.split(/\\s/)\n  if (s == '') { return [] }\n  let k = []\n  for (let i = 0; i < t.length; i = i + 1) {\n    let l = 0\n    for (let j = 0; j < t[i].length; j = j + 1) {\n      if (t[i][j] != 'a' && t[i][j] != 'e' && t[i][j] != 'i' && t[i][j] != 'o' && t[i][j] != 'u') {\n        l = l + 1\n      }\n      if (l == n) {\n        k.push(t[i])\n      }\n    }\n  }\n  return k\n}\n\nconst testSelectWords = () => {\n  console.assert(\n    JSON.stringify(selectWords('Mary had a little lamb', 4)) ===\n    JSON.stringify(['little'])\n  )\n  console.assert(\n    JSON.stringify(selectWords('simple white space', 2)) === JSON.stringify([])\n  )\n  console.assert(\n    JSON.stringify(selectWords('Hello world', 4)) === JSON.stringify(['world'])\n  )\n  console.assert(\n    JSON.stringify(selectWords('Uncle sam', 3)) === JSON.stringify(['Uncle'])\n  )\n\n  console.assert(\n    JSON.stringify(selectWords('a b c d e f', 1)) ===\n    JSON.stringify(['b', 'c', 'd', 'f'])\n  )\n\n  console.assert(\n    JSON.stringify(selectWords('Mary had a little lamb', 3)) ===\n    JSON.stringify(['Mary', 'lamb'])\n  )\n  console.assert(JSON.stringify(selectWords('', 4)) === JSON.stringify([]))\n}\n\ntestSelectWords()\n"
+      ]
+    ]
+  },
+  "92": {
+    "task_id": 118,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const getClosestVowel = (word) => {\n  for (let i = word.length - 2; i > 0; i--) {\n    if (\n      !('a' != word[i] && 'e' != word[i] && 'i' != word[i] && 'o' != word[i] && 'u' != word[i] && 'A' != word[i] &&\n        'U' != word[i] && 'O' != word[i] && 'I' != word[i] && 'E' != word[i])\n      &&\n      ('a' != word[1 + i] && 'e' != word[1 + i] && 'i' != word[1 + i] && 'o' != word[1 + i] && 'u' != word[1 + i] && 'A' != word[1 + i] &&\n        'U' != word[1 + i] && 'O' != word[1 + i] && 'I' != word[1 + i] && 'E' != word[1 + i])\n    ) {\n      return word[i];\n    }\n  }\n  return \"\";\n};\n\nconst testGetClosestVowel = () => {\n  console.assert(getClosestVowel('yogurt') === 'u')\n  console.assert(getClosestVowel('full') === 'u')\n  console.assert(getClosestVowel('easy') === '')\n  console.assert(getClosestVowel('eAsy') === '')\n  console.assert(getClosestVowel('ali') === '')\n  console.assert(getClosestVowel('bad') === 'a')\n  console.assert(getClosestVowel('most') === 'o')\n  console.assert(getClosestVowel('ab') === '')\n  console.assert(getClosestVowel('ba') === '')\n  console.assert(getClosestVowel('quick') === '')\n  console.assert(getClosestVowel('anime') === 'i')\n  console.assert(getClosestVowel('Asia') === '')\n  console.assert(getClosestVowel('Above') === 'o')\n}\n\ntestGetClosestVowel()\n"
+      ]
+    ]
+  },
+  "93": {
+    "task_id": 119,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const matchParens = lst => {\n  let w1 = lst[0] + lst[1]\n  let y = 0\n  for (let i = 0; i < w1.length; i++) {\n    if ('(' == w1[i]) { y++ }\n    else { y-- }\n    if (y < 0) {\n      return 'No'\n    }\n  }\n  return 'Yes'\n}\n\nconst testMatchParens = () => {\n  console.assert(matchParens(['()(', ')']) === 'Yes')\n  console.assert(matchParens([')', ')']) === 'No')\n  console.assert(matchParens(['(()(())', '())())']) === 'No')\n  console.assert(matchParens([')())', '(()()(']) === 'Yes')\n  console.assert(matchParens(['(())))', '(()())((']) === 'Yes')\n  console.assert(matchParens(['()', '())']) === 'No')\n  console.assert(matchParens(['(()(', '()))()']) === 'Yes')\n  console.assert(matchParens(['((((', '((())']) === 'No')\n  console.assert(matchParens([')(()', '(()(']) === 'No')\n  console.assert(matchParens([')(', ')(']) === 'No')\n  console.assert(matchParens(['(', ')']) === 'Yes')\n  console.assert(matchParens([')', '(']) === 'Yes')\n}\n"
+      ]
+    ]
+  },
+  "94": {
+    "task_id": 120,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "// Complete code (including all the content of the code you provided and the code you generated)\nfunction maximum(arr, k) {\n  let p = arr\n  for (let j = 0; j < p.length; j = j + 1) {\n    let ind = j\n    for (let k = j + 1; k < p.length; k = k + 1) {\n      if (p[k] < p[ind]) {\n        ind = k\n      }\n    }\n    p.splice(ind, 1)\n  }\n  return p\n}\n\nconst testMaximum = () => {\n  console.assert(\n    JSON.stringify(maximum([-3, -4, 5], 3)) === JSON.stringify([-4, -3, 5])\n  )\n  console.assert(\n    JSON.stringify(maximum([4, -4, 4], 2)) === JSON.stringify([4, 4])\n  )\n  console.assert(\n    JSON.stringify(maximum([-3, 2, 1, 2, -1, -2, 1], 1)) === JSON.stringify([2])\n  )\n  console.assert(\n    JSON.stringify(maximum([123, -123, 20, 0, 1, 2, -3], 3)) ===\n    JSON.stringify([2, 20, 123])\n  )\n  console.assert(\n    JSON.stringify(maximum([-123, 20, 0, 1, 2, -3], 4)) ===\n    JSON.stringify([0, 1, 2, 20])\n  )\n  console.assert(\n    JSON.stringify(maximum([5, 15, 0, 3, -13, -8, 0], 7)) ===\n    JSON.stringify([-13, -8, 0, 0, 3, 5, 15])\n  )\n  console.assert(\n    JSON.stringify(maximum([-1, 0, 2, 5, 3, -10], 2)) === JSON.stringify([3, 5])\n  )\n  console.assert(\n    JSON.stringify(maximum([1, 0, 5, -7], 1)) === JSON.stringify([5])\n  )\n  console.assert(JSON.stringify(maximum([4, -4], 2)) === JSON.stringify([-4, 4]))\n  console.assert(\n    JSON.stringify(maximum([-10, 10], 2)) === JSON.stringify([-10, 10])\n  )\n  console.assert(\n    JSON.stringify(maximum([1, 2, 3, -23, 243, -400, 0], 0)) ===\n    JSON.stringify([])\n  )\n}\n\ntestMaximum()\n"
+      ]
+    ]
+  },
+  "95": {
+    "task_id": 121,
+    "passed": false,
+    "result": "failed: file:///data1/ljc/code/tmp/tmpuzgodv08/test.js:5\nconst solution = (lst) => {\n      ^\n\nSyntaxError: Identifier 'solution' has already been declared\n    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)\n    at #translate (node:internal/modules/esm/loader:490:12)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:537:27)\n    at async ModuleJob._link (node:internal/modules/esm/module_job:116:19)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "// Import the package for working with arrays\nimport { solution } from 'array-lib';\n\n// Define the function\nconst solution = (lst) => {\n  let p = 0;\n  for (let i = 0; i < lst.length; i += 2) {\n    if (1 === lst[i] % 2) {\n      p += lst[i];\n    }\n  }\n  return p;\n};\n\n// Test the function\nconst testArray = [30, 13, 24, 321];\n\nconst testSolution = () => {\n  console.assert(solution([5, 8, 7, 1]) === 12)\n  console.assert(solution([3, 3, 3, 3, 3]) === 9)\n  console.assert(solution([30, 13, 24, 321]) === 0)\n  console.assert(solution([5, 9]) === 5)\n  console.assert(solution([2, 4, 8]) === 0)\n  console.assert(solution([30, 13, 23, 32]) === 23)\n  console.assert(solution([3, 13, 2, 9]) === 3)\n}\n\ntestSolution()\n"
+      ]
+    ]
+  },
+  "96": {
+    "task_id": 122,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpg0zxbtr5/test.js:2\n-------------------------------\n\nSyntaxError: Invalid left-hand side expression in prefix operation\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "Mightiness\n-------------------------------\nfunctionAddElements (arr, k) {\n    let p = 0\n    for (let i = 0; i < k; i = i + 1) {\n    if (arr[i] < 100 && arr[i] > -100) { p = p + (arr[i]) }\n      return p\n    }\n}\n-------------------------------\n\nconst testAddElements = () => {\n  console.assert(addElements([1, -2, -3, 41, 57, 76, 87, 88, 99], 3) === -4)\n  console.assert(addElements([111, 121, 3, 4000, 5, 6], 2) === 0)\n  console.assert(addElements([11, 21, 3, 90, 5, 6, 7, 8, 9], 4) === 125)\n  console.assert(addElements([111, 21, 3, 4000, 5, 6, 7, 8, 9], 4) === 24)\n  console.assert(addElements([1], 1) === 1)\n}\n\ntestAddElements()\n"
+      ]
+    ]
+  },
+  "97": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpivgdh9dh/test.js:1\n## const getOddCollatz = (n) => {\n^\n\nSyntaxError: Invalid or unexpected token\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "## const getOddCollatz = (n) => {\n  const p = []\n  let t = n\n  while (t !== 1) {\n    let u = 0\n    for (let i = 0; i < p.length; i++) {\n      if (p[i] === t) {\n        u = 1\n        break;\n      }\n    }\n    if (u === 1) {\n      break\n    }\n    if (t % 2 === 0) {\n      t = parseInt(t / 2)\n      p.push(t)\n    } else {\n      t = parseInt((3 * t + 1) / 2)\n      p.push(t)\n    }\n  }\n  return Array.from(new Set(p));\n};\n\nI understand this was a code writing task. I have written code that given a positive integer n, returns a sorted list that has the odd numbers in collatz sequence. Please let me know if I can further assist you.\n\nconst testGetOddCollatz = () => {\n  console.assert(\n    JSON.stringify(getOddCollatz(14)) === JSON.stringify([1, 5, 7, 11, 13, 17])\n  )\n  console.assert(JSON.stringify(getOddCollatz(5)) === JSON.stringify([1, 5]))\n  console.assert(JSON.stringify(getOddCollatz(12)) === JSON.stringify([1, 3, 5]))\n  console.assert(JSON.stringify(getOddCollatz(1)) === JSON.stringify([1]))\n}\n\ntestGetOddCollatz()\n"
+      ]
+    ]
+  },
+  "98": {
+    "task_id": 124,
+    "passed": false,
+    "result": "failed: file:///data1/ljc/code/tmp/tmp9e063f6y/test.js:8\nconst validDate = () => {\n      ^\n\nSyntaxError: Identifier 'validDate' has already been declared\n    at compileSourceTextModule (node:internal/modules/esm/utils:344:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:106:18)\n    at #translate (node:internal/modules/esm/loader:490:12)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:537:27)\n    at async ModuleJob._link (node:internal/modules/esm/module_job:116:19)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "import { isValid } from 'date-fns';\n\nconst validDate = (date) => {\n  const [day, month, year] = date.split('-');\n  const dateObject = new Date(year, month - 1, day);\n  return isValid(dateObject);\n};\n\nconst validDate = () => {\n  console.assert(validDate('03-11-2000') === true)\n  console.assert(validDate('15-01-2012') === false)\n  console.assert(validDate('04-0-2040') === false)\n  console.assert(validDate('06-04-2020') === true)\n  console.assert(validDate('01-01-2007') === true)\n  console.assert(validDate('03-32-2011') === false)\n  console.assert(validDate('') === false)\n  console.assert(validDate('04-31-3000') === false)\n  console.assert(validDate('06-06-2005') === true)\n  console.assert(validDate('21-31-2000') === false)\n  console.assert(validDate('04-12-2003') === true)\n  console.assert(validDate('04122003') === false)\n  console.assert(validDate('20030412') === false)\n  console.assert(validDate('2003-04') === false)\n  console.assert(validDate('2003-04-12') === false)\n  console.assert(validDate('04-2003') === false)\n}\n\nvalidDate()\n"
+      ]
+    ]
+  },
+  "99": {
+    "task_id": 126,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpv_6tr30a/test.js:2\nfunction isSorted(lst: Array<number>): boolean {\n                     ^\n\nSyntaxError: Unexpected token ':'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "typescript\nfunction isSorted(lst: Array<number>): boolean {\n    let dup = 1\n    let pre = lst[0]\n    for (let i = 1; i < lst.length; i++) {\n        if (lst[i] < pre) {\n            return false\n        } else {\n            dup *= (lst[i] === pre)\n            pre = lst[i]\n        }\n\n    }\n    return dup\n}\n```\n\nconst testIsSorted = () => {\n  console.assert(isSorted([5]) === true)\n  console.assert(isSorted([1, 2, 3, 4, 5]) === true)\n  console.assert(isSorted([1, 3, 2, 4, 5]) === false)\n  console.assert(isSorted([1, 2, 3, 4, 5, 6]) === true)\n  console.assert(isSorted([1, 2, 3, 4, 5, 6, 7]) === true)\n  console.assert(isSorted([1, 3, 2, 4, 5, 6, 7]) === false)\n  console.assert(isSorted([]) === true)\n  console.assert(isSorted([1]) === true)\n  console.assert(isSorted([3, 2, 1]) === false)\n  console.assert(isSorted([1, 2, 2, 2, 3, 4]) === false)\n  console.assert(isSorted([1, 2, 3, 3, 3, 4]) === false)\n  console.assert(isSorted([1, 2, 2, 3, 3, 4]) === true)\n  console.assert(isSorted([1, 2, 3, 4]) === true)\n}\n\ntestIsSorted()\n"
+      ]
+    ]
+  },
+  "100": {
+    "task_id": 128,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const prodSigns = (arr) => {\n  if (arr.length == 0) { return null }\n  let n = 1\n  let s = 0\n  for (let i = 0; i < arr.length; i++) {\n    s *= i < 0 ? -1 : 1\n    n *= Math.abs(arr[i])\n  }\n  return n * s\n}\n\nconst testProdSigns = () => {\n  console.assert(prodSigns([1, 2, 2, -4]) === -9)\n  console.assert(prodSigns([0, 1]) === 0)\n  console.assert(prodSigns([1, 1, 1, 2, 3, -1, 1]) === -10)\n  console.assert(prodSigns([]) === null)\n  console.assert(prodSigns([2, 4, 1, 2, -1, -1, 9]) === 20)\n  console.assert(prodSigns([-1, 1, -1, 1]) === 4)\n  console.assert(prodSigns([-1, 1, 1, 1]) === -4)\n  console.assert(prodSigns([-1, 1, 1, 0]) === 0)\n}\n\ntestProdSigns()\n"
+      ]
+    ]
+  },
+  "101": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const minPath = (grid, k) => {\n  let m = 0\n  let n = 0\n  for (let i = 0; i < grid.length; i = i + 1) {\n    for (let j = 0; j < grid.length; j = j + 1) {\n      if (grid[i][j] == 1) {\n        m = i;\n        n = j;\n        break;\n      }\n    }\n  }\n  // Begin to write code\n  const neighbors = [];\n  for (let i = 0; i < m; i++) {\n    for (let j = 0; j < n; j++) {\n      if (grid[i][j] > 1 && grid[i][j] < grid[m][n]) {\n        neighbors.push(grid[i][j]);\n      }\n    }\n  }\n  return neighbors.sort();\n};\n\nconst testMinPath = () => {\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [1, 2, 3],\n          [4, 5, 6],\n          [7, 8, 9],\n        ],\n        3\n      )\n    ) === JSON.stringify([1, 2, 1])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [5, 9, 3],\n          [4, 1, 6],\n          [7, 8, 2],\n        ],\n        1\n      )\n    ) === JSON.stringify([1])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [1, 2, 3, 4],\n          [5, 6, 7, 8],\n          [9, 10, 11, 12],\n          [13, 14, 15, 16],\n        ],\n        4\n      )\n    ) === JSON.stringify([1, 2, 1, 2])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [6, 4, 13, 10],\n          [5, 7, 12, 1],\n          [3, 16, 11, 15],\n          [8, 14, 9, 2],\n        ],\n        7\n      )\n    ) === JSON.stringify([1, 10, 1, 10, 1, 10, 1])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [8, 14, 9, 2],\n          [6, 4, 13, 15],\n          [5, 7, 1, 12],\n          [3, 10, 11, 16],\n        ],\n        5\n      )\n    ) === JSON.stringify([1, 7, 1, 7, 1])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [11, 8, 7, 2],\n          [5, 16, 14, 4],\n          [9, 3, 15, 6],\n          [12, 13, 10, 1],\n        ],\n        9\n      )\n    ) === JSON.stringify([1, 6, 1, 6, 1, 6, 1, 6, 1])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [12, 13, 10, 1],\n          [9, 3, 15, 6],\n          [5, 16, 14, 4],\n          [11, 8, 7, 2],\n        ],\n        12\n      )\n    ) === JSON.stringify([1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [2, 7, 4],\n          [3, 1, 5],\n          [6, 8, 9],\n        ],\n        8\n      )\n    ) === JSON.stringify([1, 3, 1, 3, 1, 3, 1, 3])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [6, 1, 5],\n          [3, 8, 9],\n          [2, 7, 4],\n        ],\n        8\n      )\n    ) === JSON.stringify([1, 5, 1, 5, 1, 5, 1, 5])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [1, 2],\n          [3, 4],\n        ],\n        10\n      )\n    ) === JSON.stringify([1, 2, 1, 2, 1, 2, 1, 2, 1, 2])\n  )\n  console.assert(\n    JSON.stringify(\n      minPath(\n        [\n          [1, 3],\n          [4, 2],\n        ],\n        10\n      )\n    ) === JSON.stringify([1, 3, 1, 3, 1, 3, 1, 3, 1, 3])\n  )\n}\n\ntestMinPath()\n"
+      ]
+    ]
+  },
+  "102": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpbk7ecp5r/test.js:16\nconst tri = () => {\n      ^\n\nSyntaxError: Identifier 'tri' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const tri = (n) => {\n  if (0 == n) { return [1] }\n  if (1 == n) { return [1, 3] }\n  let p = [1, 3]\n  for (let i = 2; i <= n; i++) {\n    if (0 == i % 2) {\n      const m = Math.floor(i / 2);\n      p.push(p[m] + p[m + 1]);\n    } else {\n      const m = i - 1;\n      p.push(p[m] + p[m + 1] + p[m + 3]);\n    }\n  }\n  return p\n}\n\nconst tri = () => {\n  console.assert(JSON.stringify(tri(3)) === JSON.stringify([1, 3, 2.0, 8.0]))\n\n  console.assert(\n    JSON.stringify(tri(4)) === JSON.stringify([1, 3, 2.0, 8.0, 3.0])\n  )\n  console.assert(\n    JSON.stringify(tri(5)) === JSON.stringify([1, 3, 2.0, 8.0, 3.0, 15.0])\n  )\n  console.assert(\n    JSON.stringify(tri(6)) === JSON.stringify([1, 3, 2.0, 8.0, 3.0, 15.0, 4.0])\n  )\n  console.assert(\n    JSON.stringify(tri(7)) ===\n    JSON.stringify([1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0])\n  )\n  console.assert(\n    JSON.stringify(tri(8)) ===\n    JSON.stringify([1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0])\n  )\n  console.assert(\n    JSON.stringify(tri(9)) ===\n    JSON.stringify([1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0])\n  )\n  console.assert(\n    JSON.stringify(tri(20)) ===\n    JSON.stringify([\n      1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0,\n      8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0,\n    ])\n  )\n  console.assert(JSON.stringify(tri(0)) === JSON.stringify([1]))\n  console.assert(JSON.stringify(tri(1)) === JSON.stringify([1, 3]))\n}\n\ntri()\n"
+      ]
+    ]
+  },
+  "103": {
+    "task_id": 131,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const digits = (n) => {\n  let p = 1\n  let k = 1\n  while (n > 0) {\n    let y = n % 10\n    if (1 == y % 2) {\n      p *= y\n    } \n    else {\n      k *= y\n    }\n    n /= 10\n  }\n  return p - k\n}\n\nconst testDigits = () => {\n  console.assert(digits(5) === 5)\n  console.assert(digits(54) === 5)\n  console.assert(digits(120) === 1)\n  console.assert(digits(5014) === 5)\n  console.assert(digits(98765) === 315)\n  console.assert(digits(5576543) === 2625)\n  console.assert(digits(2468) === 0)\n}\n\ntestDigits()\n"
+      ]
+    ]
+  },
+  "104": {
+    "task_id": 132,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmph38slaec/test.js:1\nComplete code (including all the content of the code I provided and the code you generated)\n         ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\n/*\n  Create a function that takes a string as input which contains only square brackets.\n  The function should return true if and only if there is a valid subsequence of brackets\n  where at least one bracket in the subsequence is nested.\n  isNested('[[]]') ➞ true\n  isNested('[]]]]]]][[[[[]') ➞ false\n  isNested('[][]') ➞ false\n  isNested('[]') ➞ false\n  isNested('[[][]]') ➞ true\n  isNested('[[]][[') ➞ true\n  */\nconst isNested = (string) => {\n  let opening_bracket_index = []\n  let closing_bracket_index1 = []\n  for (let i = 0; i < string.length; i = i + 1) {\n    if (string[i] == '[') {\n      opening_bracket_index.push(i)\n    }\n    else {\n      closing_bracket_index1.push(i)\n    }\n    if(opening_bracket_index.length >= 2) {\n      for(let j = 0; j < opening_bracket_index.length-2; j++) {\n        if (closing_bracket_index1[j] > opening_bracket_index[j+1]) {\n          return true\n        }\n      }\n    }  \n  }\n  return false\n}\n\nconst testIsNested = () => {\n  console.assert(isNested('[[]]') === true)\n  console.assert(isNested('[]]]]]]][[[[[]') === false)\n  console.assert(isNested('[][]') === false)\n  console.assert(isNested('[]') === false)\n  console.assert(isNested('[[[[]]]]') === true)\n  console.assert(isNested('[]]]]]]]]]]') === false)\n  console.assert(isNested('[][][[]]') === true)\n  console.assert(isNested('[[]') === false)\n  console.assert(isNested('[]]') === false)\n  console.assert(isNested('[[]][[') === true)\n  console.assert(isNested('[[][]]') === true)\n  console.assert(isNested('') === false)\n  console.assert(isNested('[[[[[[[[') === false)\n  console.assert(isNested(']]]]]]]]') === false)\n}\n\ntestIsNested()\n"
+      ]
+    ]
+  },
+  "105": {
+    "task_id": 133,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sumSquares = (lst) => {\n  let p = 0\n  for (let i = 0; i < lst.length; i++) {\n    let y = lst[i]\n    if (0 != y % 1) {\n      if (y > 0) { y = 1 + y - y % 1 }\n      p += y ** 2\n    } else {\n      p += y ** 2\n    }\n  }\n  return p\n}\n\nconst testSumSquares = () => {\n  console.assert(sumSquares([1, 2, 3]) === 14)\n  console.assert(sumSquares([1.0, 2, 3]) === 14)\n  console.assert(sumSquares([1, 3, 5, 7]) === 84)\n  console.assert(sumSquares([1.4, 4.2, 0]) === 29)\n  console.assert(sumSquares([-2.4, 1, 1]) === 6)\n\n  console.assert(sumSquares([100, 1, 15, 2]) === 10230)\n  console.assert(sumSquares([10000, 10000]) === 200000000)\n  console.assert(sumSquares([-1.4, 4.6, 6.3]) === 75)\n  console.assert(sumSquares([-1.4, 17.9, 18.9, 19.9]) === 1086)\n\n  console.assert(sumSquares([0]) === 0)\n  console.assert(sumSquares([-1]) === 1)\n  console.assert(sumSquares([-1, 1, 0]) === 2)\n}\n\ntestSumSquares()\n"
+      ]
+    ]
+  },
+  "106": {
+    "task_id": 134,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "bool2int",
+    "evaluation_codes": [
+      [
+        "const checkIfLastCharIsALetter = (txt) => {\n  let len = txt.length\n  if (len == 0) { return 0 }\n  let y = txt[len - 1].charCodeAt()\n  if (len == 1) {\n    // Returns true if the last character is a letter and not a part of a word.\n    return (y >= 65 && y <= 90) || (y >= 97 && y <= 122);\n  } else {\n    // Strips the last character and checks if it is part of a word.\n    let tmp = txt.substr(0, len - 1);\n    return (y >= 65 && y <= 90) || (y >= 97 && y <= 122) && tmp.includes(\" \");\n  }\n};\n\nconst testCheckIfLastCharIsALetter = () => {\n  console.assert(checkIfLastCharIsALetter('apple') === false)\n  console.assert(checkIfLastCharIsALetter('apple pi e') === true)\n  console.assert(checkIfLastCharIsALetter('eeeee') === false)\n  console.assert(checkIfLastCharIsALetter('A') === true)\n  console.assert(checkIfLastCharIsALetter('Pumpkin pie ') === false)\n  console.assert(checkIfLastCharIsALetter('Pumpkin pie 1') === false)\n  console.assert(checkIfLastCharIsALetter('') === false)\n  console.assert(checkIfLastCharIsALetter('eeeee e ') === false)\n  console.assert(checkIfLastCharIsALetter('apple pie') === false)\n  console.assert(checkIfLastCharIsALetter('apple pi e ') === false)\n}\n\ntestCheckIfLastCharIsALetter()\n"
+      ]
+    ]
+  },
+  "107": {
+    "task_id": 135,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const canArrange = (arr) => {\n  if (arr.length == 0) { return -1 }\n  for (let i = arr.length - 1; i > 0; i = i - 1) {\n    if (arr[i] < arr[i - 1]) { return i }\n  }\n  return -1;\n};\n\nconst testCanArrange = () => {\n  console.assert(canArrange([1, 2, 4, 3, 5]) === 3)\n  console.assert(canArrange([1, 2, 4, 5]) === -1)\n  console.assert(canArrange([1, 4, 2, 5, 6, 7, 8, 9, 10]) === 2)\n  console.assert(canArrange([4, 8, 5, 7, 3]) === 4)\n  console.assert(canArrange([]) === -1)\n}\n\ntestCanArrange()\n"
+      ]
+    ]
+  },
+  "108": {
+    "task_id": 136,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const largestSmallestIntegers = (lst) => {\n  let a = Infinity\n  let b = -Infinity\n  for (let i = 0; i < lst.length; i++) {\n    if (lst[i] < 0) {\n      a = lst[i]\n    } else if (lst[i] > 0) {\n      b = lst[i]\n    }\n  }\n  return [a, b]\n}\n\n// Examples\n\nconst testLargestSmallestIntegers = () => {\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([2, 4, 1, 3, 5, 7])) ===\n    JSON.stringify((null, 1))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([2, 4, 1, 3, 5, 7, 0])) ===\n    JSON.stringify((null, 1))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([1, 3, 2, 4, 5, 6, -2])) ===\n    JSON.stringify((-2, 1))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([4, 5, 3, 6, 2, 7, -7])) ===\n    JSON.stringify((-7, 2))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([7, 3, 8, 4, 9, 2, 5, -9])) ===\n    JSON.stringify((-9, 2))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([])) === JSON.stringify((null, null))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([0])) ===\n    JSON.stringify((null, null))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([-1, -3, -5, -6])) ===\n    JSON.stringify((-1, null))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([-1, -3, -5, -6, 0])) ===\n    JSON.stringify((-1, null))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([-6, -4, -4, -3, 1])) ===\n    JSON.stringify((-3, 1))\n  )\n  console.assert(\n    JSON.stringify(largestSmallestIntegers([-6, -4, -4, -3, -100, 1])) ===\n    JSON.stringify((-3, 1))\n  )\n}\n\ntestLargestSmallestIntegers()\n"
+      ]
+    ]
+  },
+  "109": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp25q1lw54/test.js:1\nHere is the complete code that you have requested:\n     ^^\n\nSyntaxError: Unexpected identifier 'is'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "Here is the complete code that you have requested:\n\n// Complete code (including all the content of the code I provided and the code you generated)\nconst compareOne = (a, b) => {\n  let aa = Number(a)\n  if ('string' == typeof a) { aa = Number(a.replace(',', '.')) }\n  let bb = Number(b)\n  if ('string' == typeof b) { bb = Number(b.replace(',', '.')) }\n  if (aa > bb) {\n      return a;\n  } else if (bb > aa) {\n      return b;\n  } else {\n      return null;\n  }\n}\n\n// Use the function to compare two numbers\nconst result = compareOne(5.6, 2.9);\n\n\n// Function to compare strings that may contain \",\" or \".\" as a decimal separator\nconst result2 = compareOne(\"2.3\", \"6,2\");\n\n\n// Function to compare integers\nconst result3 = compareOne(5, 3);\n\nconst testCompareOne = () => {\n  console.assert(compareOne(1, 2) === 2)\n  console.assert(compareOne(1, 2.5) === 2.5)\n  console.assert(compareOne(2, 3) === 3)\n  console.assert(compareOne(5, 6) === 6)\n  console.assert(compareOne(1, '2,3') === '2,3')\n  console.assert(compareOne('5,1', '6') === '6')\n  console.assert(compareOne('1', '2') === '2')\n  console.assert(compareOne('1', 1) === null)\n}\n\ntestCompareOne()\n"
+      ]
+    ]
+  },
+  "110": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const isEqualToSumEven = (n) => {\n  return (n >= 8 && 0 == n % 2)\n}\n\nconst testIsEqualToSumEven = () => {\n  console.assert(isEqualToSumEven(4) === false)\n  console.assert(isEqualToSumEven(6) === false)\n  console.assert(isEqualToSumEven(8) === true)\n  console.assert(isEqualToSumEven(10) === true)\n  console.assert(isEqualToSumEven(11) === false)\n  console.assert(isEqualToSumEven(12) === true)\n  console.assert(isEqualToSumEven(13) === false)\n  console.assert(isEqualToSumEven(16) === true)\n}\n\ntestIsEqualToSumEven()\n"
+      ]
+    ]
+  },
+  "111": {
+    "task_id": 140,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const fixSpaces = (text) => {\n  let t = '';\n  let c = 0;\n  for (let i = 0; i < text.length; i++) {\n    if (text[i] == ' ') { c = c + 1 }\n    else if (c > 0) {\n      if (c == 1) { t = t + ('_') }\n      if (c == 2) { t = t + ('-') }\n      if (c > 2) { c = 0 }\n    }\n    else { t = t + text[i] }\n    c = 0;\n  }\n  return t;\n}\n\nconst testFixSpaces = () => {\n  console.assert(fixSpaces('Example') === 'Example')\n  console.assert(fixSpaces('Mudasir Hanif ') === 'Mudasir_Hanif_')\n  console.assert(\n    fixSpaces('Yellow Yellow  Dirty  Fellow') === 'Yellow_Yellow__Dirty__Fellow'\n  )\n  console.assert(fixSpaces('Exa   mple') === 'Exa-mple')\n  console.assert(fixSpaces('   Exa 1 2 2 mple') === '-Exa_1_2_2_mple')\n}\n\ntestFixSpaces()\n"
+      ]
+    ]
+  },
+  "112": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const fileNameCheck = (file_name) => {\n  let t = file_name.split(/\\./)\n  if (2 != t.length) { return 'No' }\n  if ('txt' != t[1] && 'dll' != t[1] && 'exe' != t[1]) { return 'No' }\n  if ('' == t[0]) { return 'No' }\n  let a = t[0][0].charCodeAt()\n  if (a < 'a'.charCodeAt() || a > 'z'.charCodeAt()) {\n    if (a < 'A'.charCodeAt() || a > 'Z'.charCodeAt()) {\n      return 'No'\n    }\n  }\n  return 'Yes'\n}\n\nconst testFileNameCheck = () => {\n  console.assert(fileNameCheck('example.txt') === 'Yes')\n  console.assert(fileNameCheck('1example.dll') === 'No')\n  console.assert(fileNameCheck('s1sdf3.asd') === 'No')\n  console.assert(fileNameCheck('K.dll') === 'Yes')\n  console.assert(fileNameCheck('MY16FILE3.exe') === 'Yes')\n  console.assert(fileNameCheck('His12FILE94.exe') === 'No')\n  console.assert(fileNameCheck('_Y.txt') === 'No')\n  console.assert(fileNameCheck('?aREYA.exe') === 'No')\n  console.assert(fileNameCheck('/this_is_valid.dll') === 'No')\n  console.assert(fileNameCheck('this_is_valid.wow') === 'No')\n  console.assert(fileNameCheck('this_is_valid.txt') === 'Yes')\n  console.assert(fileNameCheck('this_is_valid.txtexe') === 'No')\n  console.assert(fileNameCheck('#this2_i4s_5valid.ten') === 'No')\n  console.assert(fileNameCheck('@this1_is6_valid.exe') === 'No')\n  console.assert(fileNameCheck('this_is_12valid.6exe4.txt') === 'No')\n  console.assert(fileNameCheck('all.exe.txt') === 'No')\n  console.assert(fileNameCheck('I563_No.exe') === 'Yes')\n  console.assert(fileNameCheck('Is3youfault.txt') === 'Yes')\n  console.assert(fileNameCheck('no_one#knows.dll') === 'Yes')\n  console.assert(fileNameCheck('1I563_Yes3.exe') === 'No')\n  console.assert(fileNameCheck('I563_Yes3.txtt') === 'No')\n  console.assert(fileNameCheck('final..txt') === 'No')\n  console.assert(fileNameCheck('final132') === 'No')\n  console.assert(fileNameCheck('_f4indsartal132.') === 'No')\n  console.assert(fileNameCheck('.txt') === 'No')\n  console.assert(fileNameCheck('s.') === 'No')\n}\n\ntestFileNameCheck()\n"
+      ]
+    ]
+  },
+  "113": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const sumSquares = (lst) => {\n  for (let i = 0; i < lst.length; i++) {\n    if (i % 3 == 0) {\n      lst[i] *= lst[i];\n    } else if (i % 4 == 0 && i % 3 != 0) {\n      lst[i] *= lst[i] * lst[i];\n    }\n  }\n};\n\nconst lst = [1, 2, 3, 4, 5, 6, 7, 8, 9];\n\nconst testSumSquares = () => {\n  console.assert(sumSquares([1, 2, 3]) === 6)\n  console.assert(sumSquares([1, 4, 9]) === 14)\n  console.assert(sumSquares([]) === 0)\n  console.assert(sumSquares([1, 1, 1, 1, 1, 1, 1, 1, 1]) === 9)\n  console.assert(sumSquares([-1, -1, -1, -1, -1, -1, -1, -1, -1]) === -3)\n  console.assert(sumSquares([0]) === 0)\n  console.assert(sumSquares([-1, -5, 2, -1, -5]) === -126)\n  console.assert(sumSquares([-56, -99, 1, 0, -2]) === 3030)\n  console.assert(sumSquares([-1, 0, 0, 0, 0, 0, 0, 0, -1]) === 0)\n  console.assert(\n    sumSquares([\n      -16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37,\n    ]) === -14196\n  )\n  console.assert(\n    sumSquares([\n      -1, -3, 17, -1, -15, 13, -1, 14, -14, -12, -5, 14, -14, 6, 13, 11, 16, 16,\n      4, 10,\n    ]) === -1448\n  )\n}\n\ntestSumSquares()\n"
+      ]
+    ]
+  },
+  "114": {
+    "task_id": 143,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpbxvp2j31/test.js:32\nconst wordsInSentence = () => {\n      ^\n\nSyntaxError: Identifier 'wordsInSentence' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const wordsInSentence = (sentence) => {\n  let t = sentence.split(/\\s/)\n  let p = ''\n  for (let j = 0; j < t.length; j++) {\n    let len = t[j].length;\n    let u = 1\n    if (1 == len || 0 == len) { continue }\n    if (isPrime(len)) {\n      p += t[j] + ' '\n    }\n  }\n  return p.trim()\n}\n\nfunction isPrime(num) {\n  if (num <= 1) {\n    return false\n  } else if (num <= 3) {\n    return true\n  } else {\n    let prime = false\n    for (let i = 2; i < num; i++) {\n      if (num % i == 0) {\n        prime = false\n      }\n    }\n    return prime\n  }\n}\n\n// tests\n\nconst wordsInSentence = () => {\n  console.assert(wordsInSentence('This is a test') === 'is')\n  console.assert(wordsInSentence('lets go for swimming') === 'go for')\n  console.assert(\n    wordsInSentence('there is no place available here') === 'there is no place'\n  )\n  console.assert(wordsInSentence('Hi I am Hussein') === 'Hi am Hussein')\n  console.assert(wordsInSentence('go for it') === 'go for it')\n  console.assert(wordsInSentence('here') === '')\n  console.assert(wordsInSentence('here is') === 'is')\n}\n\nwordsInSentence()\n"
+      ]
+    ]
+  },
+  "115": {
+    "task_id": 144,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const simplify = (x, n) => {\n  let a = x.split(/\\//);\n  let b = n.split(/\\//);\n  let m = Number(b[0]) * Number(a[0]);\n  if (m % 1 === 0) {\n    return true;\n  } else {\n    return false;\n  }\n}\n\nconst testSimplify = () => {\n  console.assert(simplify('1/5', '5/1') === true)\n  console.assert(simplify('1/6', '2/1') === false)\n  console.assert(simplify('5/1', '3/1') === true)\n  console.assert(simplify('7/10', '10/2') === false)\n  console.assert(simplify('2/10', '50/10') === true)\n  console.assert(simplify('7/2', '4/2') === true)\n  console.assert(simplify('11/6', '6/1') === true)\n  console.assert(simplify('2/3', '5/2') === false)\n  console.assert(simplify('5/2', '3/5') === false)\n  console.assert(simplify('2/4', '8/4') === true)\n  console.assert(simplify('2/4', '4/2') === true)\n  console.assert(simplify('1/5', '5/1') === true)\n  console.assert(simplify('1/5', '1/5') === false)\n}\n\ntestSimplify()\n"
+      ]
+    ]
+  },
+  "116": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const orderByPoints = (numbers) => {\n  let orderedNumbers = [];\n  for (let i = 0; i < numbers.length; i++) {\n    orderedNumbers.push(numbers[i]);\n  }\n  for (let i = 0; i < orderedNumbers.length; i++) {\n    for (let j = i + 1; j < orderedNumbers.length; j++) {\n      let h = orderedNumbers[i];\n      let d = orderedNumbers[j];\n      let m = 0;\n      let n = 0;\n      if (h < 0) {\n        m += -h * 1000;\n      } else {\n        m += h * 1000;\n      }\n      if (d < 0) {\n        n += -d * 1000;\n      } else {\n        n += d * 1000;\n      }\n      if (m < n) {\n        let tmp = orderedNumbers[i];\n        orderedNumbers[i] = orderedNumbers[j];\n        orderedNumbers[j] = tmp;\n      }\n    }\n  }\n  return orderedNumbers;\n};\n\nconst testOrderByPoints = () => {\n  console.assert(\n    JSON.stringify(orderByPoints([1, 11, -1, -11, -12])) ===\n    JSON.stringify([-1, -11, 1, -12, 11])\n  )\n  console.assert(\n    JSON.stringify(\n      orderByPoints([\n        1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46,\n      ])\n    ) ===\n    JSON.stringify([\n      0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457,\n    ])\n  )\n  console.assert(JSON.stringify(orderByPoints([])) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(orderByPoints([1, -11, -32, 43, 54, -98, 2, -3])) ===\n    JSON.stringify([-3, -32, -98, -11, 1, 2, 43, 54])\n  )\n  console.assert(\n    JSON.stringify(orderByPoints([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])) ===\n    JSON.stringify([1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9])\n  )\n  console.assert(\n    JSON.stringify(orderByPoints([0, 6, 6, -76, -21, 23, 4])) ===\n    JSON.stringify([-76, -21, 0, 4, 23, 6, 6])\n  )\n}\n\ntestOrderByPoints()\n"
+      ]
+    ]
+  },
+  "117": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const specialFilter = (nums) => {\n  let p = 0\n  for (let i = 0; i < nums.length; i = i + 1) {\n    if (nums[i] < 10 || (y = nums[i].toString()).length < 2 || y[0] !== y[y.length - 1] || (y[0] % 2 + y[y.length - 1] % 2)) { continue }\n    p++\n  }\n  return p\n}\n\nconst testSpecialFilter = () => {\n  console.assert(specialFilter([5, -2, 1, -5]) === 0)\n  console.assert(specialFilter([15, -73, 14, -15]) === 1)\n  console.assert(specialFilter([33, -2, -3, 45, 21, 109]) === 2)\n  console.assert(specialFilter([43, -12, 93, 125, 121, 109]) === 4)\n  console.assert(specialFilter([71, -2, -33, 75, 21, 19]) === 3)\n  console.assert(specialFilter([1]) === 0)\n  console.assert(specialFilter([]) === 0)\n}\n\ntestSpecialFilter()\n"
+      ]
+    ]
+  },
+  "118": {
+    "task_id": 147,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const getMaxTriples = (n) => {\n  let y = []\n  for (let i = 1; i <= n; i = i + 1) {\n    y.push(i * i - i + 1)\n  }\n  let u = 0\n  for (let i = 0; i < n - 2; i++) {\n    for (let j = i + 1; j < n - 1; j++) {\n      for (let k = j + 1; k < n; k++) {\n        if (y[i] + y[j] + y[k] % 3 === 0) {\n          u++\n        }\n      }\n    }\n  }\n  return u\n}\n\n// Test case:\n\nconst testGetMaxTriples = () => {\n  console.assert(getMaxTriples(5) === 1)\n  console.assert(getMaxTriples(6) === 4)\n  console.assert(getMaxTriples(10) === 36)\n  console.assert(getMaxTriples(100) === 53361)\n}\n\ntestGetMaxTriples()\n"
+      ]
+    ]
+  },
+  "119": {
+    "task_id": 148,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpw8tc72no/test.js:34\n  return tuple(u);\n  ^\n\nReferenceError: tuple is not defined\n    at bf (/data1/ljc/code/tmp/tmpw8tc72no/test.js:34:3)\n    at testBf (/data1/ljc/code/tmp/tmpw8tc72no/test.js:38:20)\n    at Object.<anonymous> (/data1/ljc/code/tmp/tmpw8tc72no/test.js:59:1)\n    at Module._compile (node:internal/modules/cjs/loader:1734:14)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const bf = (planet1, planet2) => {\n  let y = [\n    'Mercury',\n    'Venus',\n    'Earth',\n    'Mars',\n    'Jupiter',\n    'Saturn',\n    'Uranus',\n    'Neptune'\n  ];\n  let u = [];\n  let lo = -1;\n  let hi = -1;\n  for (let i = 0; i < 8; i++) {\n    if (planet1 == y[i]) {\n      lo = i;\n    }\n  }\n  for (let i = 0; i < 8; i++) {\n    if (planet2 == y[i]) {\n      hi = i;\n    }\n  }\n  if (lo == -1 || hi == -1) return empty_tuple;\n  for (let i = lo + 1; i < hi; i++) {\n    if (\n      (lo < i || i == lo + 1) &&\n      (hi > i || i == hi - 1)\n    ) {\n      u[u.length] = y[i];\n    }\n  }\n  return tuple(u);\n};\n\nconst testBf = () => {\n  console.assert(\n    JSON.stringify(bf('Jupiter', 'Neptune')) ===\n    JSON.stringify(['Saturn', 'Uranus'])\n  )\n  console.assert(\n    JSON.stringify(bf('Earth', 'Mercury')) === JSON.stringify(['Venus'])\n  )\n  console.assert(\n    JSON.stringify(bf('Mercury', 'Uranus')) ===\n    JSON.stringify(['Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn'])\n  )\n  console.assert(\n    JSON.stringify(bf('Neptune', 'Venus')) ===\n    JSON.stringify(['Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus'])\n  )\n  console.assert(JSON.stringify(bf('Earth', 'Earth')) === JSON.stringify([]))\n  console.assert(JSON.stringify(bf('Mars', 'Earth')) === JSON.stringify([]))\n  console.assert(\n    JSON.stringify(bf('Jupiter', 'Makemake')) === JSON.stringify([])\n  )\n}\n\ntestBf()\n"
+      ]
+    ]
+  },
+  "120": {
+    "task_id": 149,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "function list_sort(lst) {\n  const filteredList = [];\n  for (const word of lst) {\n    if (word.length % 2 === 0) {\n      filteredList.push(word);\n    }\n  }\n  return filteredList.sort((a, b) => a.length - b.length || a.localeCompare(b));\n}\n\nconst result = list_sort([\"aa\", \"a\", \"aaa\", \"cd\"]);\n\nconst testSortedListSum = () => {\n  console.assert(\n    JSON.stringify(list_sort(['aa', 'a', 'aaa'])) === JSON.stringify(['aa'])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['school', 'AI', 'asdf', 'b'])) ===\n    JSON.stringify(['AI', 'asdf', 'school'])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['d', 'b', 'c', 'a'])) === JSON.stringify([])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['d', 'dcba', 'abcd', 'a'])) ===\n    JSON.stringify(['abcd', 'dcba'])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['AI', 'ai', 'au'])) ===\n    JSON.stringify(['AI', 'ai', 'au'])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['a', 'b', 'b', 'c', 'c', 'a'])) ===\n    JSON.stringify([])\n  )\n  console.assert(\n    JSON.stringify(list_sort(['aaaa', 'bbbb', 'dd', 'cc'])) ===\n    JSON.stringify(['cc', 'dd', 'aaaa', 'bbbb'])\n  )\n}\n\ntestSortedListSum()\n"
+      ]
+    ]
+  },
+  "121": {
+    "task_id": 150,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmp9djwarb3/test.js:9\nconst xOrY = () => {\n      ^\n\nSyntaxError: Identifier 'xOrY' has already been declared\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const xOrY = (n, x, y) => {\n  let len = n\n  if (1 == len || 0 == len) { return y }\n  for (let i = 2; i * i <= len; i++) {\n    if (len % i == 0) { return y }\n  }\n  return x\n}\n\nconst xOrY = () => {\n  console.assert(xOrY(7, 34, 12) === 34)\n  console.assert(xOrY(15, 8, 5) === 5)\n  console.assert(xOrY(3, 33, 5212) === 33)\n  console.assert(xOrY(1259, 3, 52) === 3)\n  console.assert(xOrY(7919, -1, 12) === -1)\n  console.assert(xOrY(3609, 1245, 583) === 583)\n  console.assert(xOrY(91, 56, 129) === 129)\n  console.assert(xOrY(6, 34, 1234) === 1234)\n  console.assert(xOrY(1, 2, 0) === 0)\n  console.assert(xOrY(2, 2, 0) === 2)\n}\n\nxOrY()\n"
+      ]
+    ]
+  },
+  "122": {
+    "task_id": 151,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmppgi2u3_7/test.js:12\nconst testDoubleTheDifference = () => {\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const doubleTheDifference = (lst) => {\n  let p = 0\n  for (let i = 0; i < lst.length; i++) {\n    if (1 == lst[i] % 2 && lst[i] > 0) {\n      p += lst[i] * lst[i]\n    }\n  }\n  return p;\n};\n\n-----------------------------\n\nconst testDoubleTheDifference = () => {\n  console.assert(doubleTheDifference([]) === 0)\n  console.assert(doubleTheDifference([5, 4]) === 25)\n  console.assert(doubleTheDifference([0.1, 0.2, 0.3]) === 0)\n  console.assert(doubleTheDifference([-10, -20, -30]) === 0)\n  console.assert(doubleTheDifference([-1, -2, 8]) === 0)\n  console.assert(doubleTheDifference([0.2, 3, 5]) === 34)\n  let lst = []\n  let odd_sum = 0\n  for (let i = -99; i < 100; i += 2) {\n    if (i % 2 != 0 && i > 0) { odd_sum += i * i }\n    lst.push(i)\n  }\n  console.assert(doubleTheDifference(lst) === odd_sum)\n}\n"
+      ]
+    ]
+  },
+  "123": {
+    "task_id": 152,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const compare = (game, guess) => {\n    for (let i = 0; i < guess.length; i++) {\n        game[i] = game[i] - (guess[i]);\n        if (game[i] < 0) {\n            game[i] = Math.abs(game[i]);\n        }\n    }\n    return game;\n};\n\nconst testCompare = () => {\n  console.assert(\n    JSON.stringify(compare([1, 2, 3, 4, 5, 1], [1, 2, 3, 4, 2, -2])) ===\n    JSON.stringify([0, 0, 0, 0, 3, 3])\n  )\n  console.assert(\n    JSON.stringify(compare([0,5,0,0,0,4],[4,1,1,0,0,-2])) ===\n    JSON.stringify([4,4,1,0,0,6])\n  )\n  console.assert(\n    JSON.stringify(compare([1, 2, 3, 4, 5, 1], [1, 2, 3, 4, 2, -2])) ===\n    JSON.stringify([0, 0, 0, 0, 3, 3])\n  )\n  console.assert(\n    JSON.stringify(compare([0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0])) ===\n    JSON.stringify([0, 0, 0, 0, 0, 0])\n  )\n  console.assert(\n    JSON.stringify(compare([1, 2, 3], [-1, -2, -3])) ===\n    JSON.stringify([2, 4, 6])\n  )\n  console.assert(\n    JSON.stringify(compare([1, 2, 3, 5], [-1, 2, 3, 4])) ===\n    JSON.stringify([2, 0, 0, 1])\n  )\n}\n\ntestCompare()\n"
+      ]
+    ]
+  },
+  "124": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "/* You will be given the name of a class (a string) and a list of extensions.\n  The extensions are to be used to load additional classes to the class. The\n  strength of the extension is as follows: Let CAP be the number of the uppercase\n  letters in the extension's name, and let SM be the number of lowercase letters\n  in the extension's name, the strength is given by the fraction CAP - SM.\n  You should find the strongest extension and return a string in this\n  format: ClassName.StrongestExtensionName.\n  If there are two or more extensions with the same strength, you should\n  choose the one that comes first in the list.\n  For example, if you are given \"Slices\" as the class and a list of the\n  extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n  return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension\n  (its strength is -1).\n  Example:\n  for strongestExtension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n*/\nconst strongestExtension = (class_name, extensions) => {\n  let u = 0\n  let s = -Infinity\n  for (let i = extensions.length - 1; i >= 0; i = i - 1) {\n    let y = 0\n    for (let j = 0; j < extensions[i].length; j = j + 1) {\n      let k = extensions[i][j].charCodeAt()\n      if (k >= 65 && k <= 90) {\n        u += (k - 64) * (k - 64)\n      }\n      if (k >= 97 && k <= 122) {\n        s += (k - 96) * (k - 96)\n      }\n    }\n    if (u > s) {\n      return `${class_name}.${extensions[i]}`\n    }\n  }\n}\n\nconst testStrongestExtension = () => {\n  console.assert(\n    strongestExtension('Watashi', ['tEN', 'niNE', 'eIGHt8OKe']) ===\n    'Watashi.eIGHt8OKe'\n  )\n  console.assert(\n    strongestExtension('Boku123', [\n      'nani',\n      'NazeDa',\n      'YEs.WeCaNe',\n      '32145tggg',\n    ]) === 'Boku123.YEs.WeCaNe'\n  )\n  console.assert(\n    strongestExtension('__YESIMHERE', [\n      't',\n      'eMptY',\n      'nothing',\n      'zeR00',\n      'NuLl__',\n      '123NoooneB321',\n    ]) === '__YESIMHERE.NuLl__'\n  )\n  console.assert(\n    strongestExtension('K', ['Ta', 'TAR', 't234An', 'cosSo']) === 'K.TAR'\n  )\n  console.assert(\n    strongestExtension('__HAHA', ['Tab', '123', '781345', '-_-']) ===\n    '__HAHA.123'\n  )\n  console.assert(\n    strongestExtension('YameRore', [\n      'HhAas',\n      'okIWILL123',\n      'WorkOut',\n      'Fails',\n      '-_-',\n    ]) === 'YameRore.okIWILL123'\n  )\n  console.assert(\n    strongestExtension('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) ===\n    'finNNalLLly.WoW'\n  )\n  console.assert(strongestExtension('_', ['Bb', '91245']) === '_.Bb')\n  console.assert(strongestExtension('Sp', ['671235', 'Bb']) === 'Sp.671235')\n}\n\ntestStrongestExtension()\n"
+      ]
+    ]
+  },
+  "125": {
+    "task_id": 154,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "function cycpatternCheck (a, b) {\n  let l = b.length\n  let pat = b + b\n  for (let i = 0; i < a.length - l + 1; i = i + 1) {\n    for (let j = 0; j < l + 1; j = j + 1) {\n      let y = 1\n      for (let k = 0; k < l; k = k + 1) {\n        y = (y && a.charAt(i + k) == pat.charAt(j + k))\n      }\n      if (y) return true\n    }\n  }\n  return false\n}\n/*You are given 2 words. You need to return true if the second word or any of its rotations is a substring in the first word\n  cycpatternCheck(\"abcd\",\"abd\") => false\n  cycpatternCheck(\"hello\",\"ell\") => true\n  cycpatternCheck(\"whassup\",\"psus\") => false\n  cycpatternCheck(\"abab\",\"baa\") => true\n  cycpatternCheck(\"efef\",\"eeff\") => false\n  cycpatternCheck(\"himenss\",\"simen\") => true\n  */\n\nconst testCycpatternCheck = () => {\n  console.assert(cycpatternCheck('xyzw', 'xyw') === false)\n  console.assert(cycpatternCheck('yello', 'ell') === true)\n  console.assert(cycpatternCheck('whattup', 'ptut') === false)\n  console.assert(cycpatternCheck('efef', 'fee') === true)\n  console.assert(cycpatternCheck('abab', 'aabb') === false)\n  console.assert(cycpatternCheck('winemtt', 'tinem') === true)\n}\n\ntestCycpatternCheck()\n"
+      ]
+    ]
+  },
+  "126": {
+    "task_id": 157,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const rightAngleTriangle = (a, b, c) => {\n  return (c * c == a * a + b * b || b * b + c * c == a * a || a * a + c * c == b * b);\n};\n\nconst testRightAngleTriangle = () => {\n  console.assert(rightAngleTriangle(3, 4, 5) === true)\n  console.assert(rightAngleTriangle(1, 2, 3) === false)\n  console.assert(rightAngleTriangle(10, 6, 8) === true)\n  console.assert(rightAngleTriangle(2, 2, 2) === false)\n  console.assert(rightAngleTriangle(7, 24, 25) === true)\n  console.assert(rightAngleTriangle(10, 5, 7) === false)\n  console.assert(rightAngleTriangle(5, 12, 13) === true)\n  console.assert(rightAngleTriangle(15, 8, 17) === true)\n  console.assert(rightAngleTriangle(48, 55, 73) === true)\n  console.assert(rightAngleTriangle(1, 1, 1) === false)\n  console.assert(rightAngleTriangle(2, 2, 10) === false)\n}\n\ntestRightAngleTriangle()\n"
+      ]
+    ]
+  },
+  "127": {
+    "task_id": 158,
+    "passed": false,
+    "result": "failed: Assertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "const findMax = (words) => {\n  let max = -1;\n  let res = '';\n  for (let i = 0; i < words.length; i++) {\n    let u = -1;\n    for (let j = 0; j < words[i].length; j++) {\n      let p = 0;\n      for (let k = 0; k < words[i].length; k++) {\n        if (words[i][j] != words[i][k]) {\n          p++;\n        }\n      }\n      if (max == -1 || max < p) {\n        max = p;\n        res = words[i];\n      } else if (max == p && res > words[i]) {\n        res = words[i];\n      }\n    }\n  }\n  return res;\n}\n\nconst testFindMax = () => {\n  console.assert(findMax(['name', 'of', 'string']) === 'string')\n  console.assert(findMax(['name', 'enam', 'game']) === 'enam')\n  console.assert(findMax(['aaaaaaa', 'bb', 'cc']) === 'aaaaaaa')\n  console.assert(findMax(['abc', 'cba']) === 'abc')\n  console.assert(\n    findMax(['play', 'this', 'game', 'of', 'footbott']) === 'footbott'\n  )\n  console.assert(findMax(['we', 'are', 'gonna', 'rock']) === 'gonna')\n  console.assert(findMax(['we', 'are', 'a', 'mad', 'nation']) === 'nation')\n  console.assert(findMax(['this', 'is', 'a', 'prrk']) === 'this')\n  console.assert(findMax(['b']) === 'b')\n  console.assert(findMax(['play', 'play', 'play']) === 'play')\n}\n\ntestFindMax()\n"
+      ]
+    ]
+  },
+  "128": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: Assertion failed\nAssertion failed\nAssertion failed\n",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const doAlgebra = (operator, operand) => {\n  let result = 0;\n  for (let i = 0; i < operator.length; i++) {\n    if (operator[i] === \"+\") {\n      result += operand[i];\n    } else if (operator[i] === \"-\") {\n      result -= operand[i];\n    } else if (operator[i] === \"*\") {\n      result *= operand[i];\n    } else if (operator[1] === \"//\") {\n      result = Math.floor(result / operand[i]);\n    } else if (operator[1] === \"**\") {\n      result = Math.pow(result, operand[i]);\n    }\n  }\n  return result;\n};\n\nconst testDoAlgebra = () => {\n  console.assert(doAlgebra(['**', '*', '+'], [2, 3, 4, 5]) === 37)\n  console.assert(doAlgebra(['+', '*', '-'], [2, 3, 4, 5]) === 9)\n  console.assert(doAlgebra(['//', '*'], [7, 3, 4]) === 8)\n}\n\ntestDoAlgebra()\n"
+      ]
+    ]
+  },
+  "129": {
+    "task_id": 161,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "equal_expression_transformation",
+    "evaluation_codes": [
+      [
+        "const solve = (s) => {\n  let t = 0\n  let p = ''\n  for (let i = 0; i < s.length; i = i + 1) {\n    let y = s[i].charCodeAt()\n    if (y >= 65 && y <= 90) {\n      y = y + (32);\n      t = 1;\n    } else if (y >= 97 && y <= 122) {\n      y = y - (32);\n      t = 1;\n    }\n    p = p + String.fromCharCode(y);\n  }\n  if (!t) {\n    p = p.split('').reverse().join('');\n  }\n  return p;\n}\n\nconst testSolve = () => {\n  console.assert(solve('AsDf') === 'aSdF')\n  console.assert(solve('1234') === '4321')\n  console.assert(solve('ab') === 'AB')\n  console.assert(solve('#a@C') === '#A@c')\n  console.assert(solve('#AsdfW^45') === '#aSDFw^45')\n  console.assert(solve('#6@2') === '2@6#')\n  console.assert(solve('#$a^D') === '#$A^d')\n  console.assert(solve('#ccc') === '#CCC')\n}\n\ntestSolve()\n"
+      ]
+    ]
+  },
+  "130": {
+    "task_id": 162,
+    "passed": false,
+    "result": "failed: /data1/ljc/code/tmp/tmpd0jz76ej/test.js:1\nComplete code (including all the content of the code I provided and the code you generated)\n         ^^^^\n\nSyntaxError: Unexpected identifier 'code'\n    at wrapSafe (node:internal/modules/cjs/loader:1666:18)\n    at Module._compile (node:internal/modules/cjs/loader:1708:20)\n    at Object..js (node:internal/modules/cjs/loader:1899:10)\n    at Module.load (node:internal/modules/cjs/loader:1469:32)\n    at Function._load (node:internal/modules/cjs/loader:1286:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)\n    at node:internal/main/run_main_module:33:47\n\nNode.js v23.9.0\n",
+    "completion_id": 0,
+    "perturbation_type": "exchange_operators",
+    "evaluation_codes": [
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nfunction toMD5(text) {\n  if (!text) return null;\n\n  const md5 = require('js-md5');\n\n  return md5.md5(text);\n}\n\nmodule.exports = toMD5;\n\nconst testStringToMd5 = () => {\n  console.assert(\n    toMD5('Hello world') === '3e25960a79dbc69b674cd4ec67a72c62'\n  )\n  console.assert(toMD5('') === null)\n  console.assert(toMD5('A B C') === '0ef78513b0cb8cef12743f5aeb35f888')\n  console.assert(toMD5('password') === '5f4dcc3b5aa765d61d8327deb882cf99')\n}\n\ntestStringToMd5()\n"
+      ]
+    ]
+  }
+}

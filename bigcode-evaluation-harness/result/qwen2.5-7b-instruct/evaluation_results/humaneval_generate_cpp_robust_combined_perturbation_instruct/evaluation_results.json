@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_cpp_robust_combined_perturbation_instruct": {
-    "pass@1": 0.5864197530864198
-  }
+    "humaneval_generate_cpp_robust_combined_perturbation_instruct": {
+        "origin_pass@1": 0.6790123456790124,
+        "perturbated_pass@1": 0.5864197530864198,
+        "pass-drop@1": 0.136,
+        "neg2pos": 8,
+        "pos2neg": 23,
+        "count": 162
+    }
 }

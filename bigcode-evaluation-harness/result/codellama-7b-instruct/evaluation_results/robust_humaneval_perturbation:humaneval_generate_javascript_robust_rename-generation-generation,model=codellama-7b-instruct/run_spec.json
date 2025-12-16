@@ -1,0 +1,15 @@
+{
+  "name": "robust_humaneval_perturbation:humaneval_generate_javascript_robust_rename-generation-generation,model=codellama-7b-instruct",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_humaneval_perturbation",
+      "subset": "humaneval_generate_javascript_robust_rename"
+    }
+  },
+  "adapter_spec": {
+    "model": "codellama-7b-instruct"
+  },
+  "groups": [
+    "robust_humaneval_perturbation"
+  ]
+}

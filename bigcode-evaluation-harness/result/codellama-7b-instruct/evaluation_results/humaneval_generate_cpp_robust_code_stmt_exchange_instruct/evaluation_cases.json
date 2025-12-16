@@ -1,0 +1,326 @@
+{
+  "0": {
+    "task_id": 19,
+    "passed": false,
+    "result": "failed: terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n\n#include <iostream>\n#include <string>\n#include <vector> //Vector for containing the sorted numbers\n\n//Function for sorting the given string and returning the sorted string\nstring sort_numbers(const string& numbers) {\n    //Create a vector to store the numbers\n    std::vector<int> sorted_numbers;\n    //Split the given string into an array of numbers\n    std::stringstream ss(numbers);\n    std::string number;\n    while (std::getline(ss, number, ' ')) {\n        //Convert the number string to an integer\n        int num = std::stoi(number);\n        //Push the number to the back of the vector\n        sorted_numbers.push_back(num);\n    }\n    //Sort the vector in ascending order using the built-in sort function\n    std::sort(sorted_numbers.begin(), sorted_numbers.end());\n    //Convert the sorted vector to a string and return it\n    return std::string(sorted_numbers.begin(), sorted_numbers.end());\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sort_numbers(\"\") == \"\");\n    assert (sort_numbers(\"three\") == \"three\");\n    assert (sort_numbers(\"three five nine\") == \"three five nine\");\n     assert (sort_numbers(\"five zero four seven nine eight\") == \"zero four five seven eight nine\");\n      assert (sort_numbers(\"six five four three two one zero\") == \"zero one two three four five six\");\n}\n"
+      ]
+    ]
+  },
+  "1": {
+    "task_id": 24,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:36: int main(): Assertion `largest_divisor(3) == 1' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n\nint largest_divisor(int n) {\n    int i = 2;\n    while (i * i <= n) {\n        if (n % i == 0) {\n            return n / i;\n        }\n        i++;\n    }\n    return -1;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (largest_divisor(3) == 1);\n    assert (largest_divisor(7) == 1);\n    assert (largest_divisor(10) == 5);\n    assert (largest_divisor(100) == 50);\n    assert (largest_divisor(49) == 7);\n}\n"
+      ]
+    ]
+  },
+  "2": {
+    "task_id": 32,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘int main()’:\ntest.cpp:43:20: error: ‘find_zero’ was not declared in this scope\n   43 |         solution = find_zero(coeffs);\n      |                    ^~~~~~~~~\nIn file included from test.cpp:27:\ntest.cpp:44:21: error: ‘poly’ was not declared in this scope\n   44 |         assert (abs(poly(coeffs, solution))< 1e-3);\n      |                     ^~~~\ntest.cpp:44:9: error: ‘__assert_fail’ was not declared in this scope\n   44 |         assert (abs(poly(coeffs, solution))< 1e-3);\n      |         ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n\nComplete code (including all the content of the code I provided and the code you generated)\n#include<stdio.h>\n#include<math.h>\n#include<vector>\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n   \n    double solution;\n    int ncoeff;\n    for (int i=0;i<100;i++)\n    {\n        ncoeff = 2 * (1+rand()%4);\n        vector<double> coeffs = {};\n        for (int j=0;j<ncoeff;j++)\n        {\n            double coeff = -10+rand()%21;\n            if (coeff == 0) coeff = 1;\n            coeffs.push_back(coeff);\n        }\n        \n        solution = find_zero(coeffs);\n        assert (abs(poly(coeffs, solution))< 1e-3);\n    }\n}\n"
+      ]
+    ]
+  },
+  "3": {
+    "task_id": 33,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:53: int main(): Assertion `sort_third(sort_third({5, 6, 3, 4, 8, 9, 2}) , {2, 6, 3, 4, 8, 9, 5})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\nvector < int > sort_third(vector < int > l) {\nvector < int > third{};\nint i;\ni = 0;\nwhile (i * 3 < l.size()) {\n    third.push_back(l[i * 3]);\n    i++;\n}\n\nsort(third.begin(), third.end());\nreturn third;\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool sort_third(vector<int> a,vector<int>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (sort_third(sort_third({1, 2, 3}) , sort_third({1, 2, 3})));\n    assert (sort_third(sort_third({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10}) , sort_third({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10})));\n    assert (sort_third(sort_third({5, 8, -12, 4, 23, 2, 3, 11, 12, -10}) , sort_third({5, 8, -12, 4, 23, 2, 3, 11, 12, -10})));\n    assert (sort_third(sort_third({5, 6, 3, 4, 8, 9, 2}) , {2, 6, 3, 4, 8, 9, 5}));\n    assert (sort_third(sort_third({5, 8, 3, 4, 6, 9, 2}) , {2, 8, 3, 4, 6, 9, 5}));\n    assert (sort_third(sort_third({5, 6, 9, 4, 8, 3, 2}) , {2, 6, 9, 4, 8, 3, 5}));\n    assert (sort_third(sort_third({5, 6, 3, 4, 8, 9, 2, 1}) , {2, 6, 3, 4, 8, 9, 5, 1}));\n}\n"
+      ]
+    ]
+  },
+  "4": {
+    "task_id": 35,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:18: warning: missing terminating ' character\n   21 |   Certainly! Here's the complete code with the required function, imports, and namespace resolution:\n      |                  ^\ntest.cpp:21:18: error: missing terminating ' character\n   21 |   Certainly! Here's the complete code with the required function, imports, and namespace resolution:\n      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ntest.cpp:45:15: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |               ^\ntest.cpp:45:36: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                    ^\ntest.cpp:45:103: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                                                                                       ^\ntest.cpp:45:110: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                                                                                              ^\ntest.cpp:45:127: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                                                                                                               ^\ntest.cpp:45:131: error: stray ‘`’ in program\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                                                                                                                   ^\ntest.cpp:21:3: error: ‘Certainly’ does not name a type\n   21 |   Certainly! Here's the complete code with the required function, imports, and namespace resolution:\n      |   ^~~~~~~~~\ntest.cpp:44:1: error: expected unqualified-id before ‘--’ token\n   44 | -----------------------------\n      | ^~\ntest.cpp:45:38: error: ‘statement’ does not name a type\n   45 | Note that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n      |                                      ^~~~~~~~~\nIn file included from test.cpp:47:\ntest.cpp: In function ‘int main()’:\ntest.cpp:49:5: error: ‘__assert_fail’ was not declared in this scope\n   49 |     assert (abs(max_element({1, 2, 3})- 3)<1e-4);\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n  Certainly! Here's the complete code with the required function, imports, and namespace resolution:\n-----------------------------\n/*\nReturn maximum element in the vector.\n>>> max_element({1, 2, 3})\n3\n>>> max_element({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10})\n123\n*/\n#include<iostream>\n#include<vector>\nusing namespace std;\n\nfloat max_element(vector<float> l)\n{\n  float max=-10000;\n  {\n      int i=0;\n      for (;i<l.size();i++)\n    if (max<l[i]) max=l[i];\n  }\n  return max;\n}\n-----------------------------\nNote that the `using namespace std;` statement is required to import all the necessary libraries. The `vector` class from the `std` namespace is used in the code to create a vector of floats.\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (abs(max_element({1, 2, 3})- 3)<1e-4);\n    assert (abs(max_element({5, 3, -5, 2, -3, 3, 9, 0, 124, 1, -10})- 124)<1e-4);\n}\n"
+      ]
+    ]
+  },
+  "5": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\ntest.cpp: In function ‘bool issame(std::vector<float>, std::vector<float>)’:\ntest.cpp:44:27: error: could not convert ‘(a.std::vector<float>::operator[](((std::vector<float>::size_type)i)) - b.std::vector<float>::operator[](((std::vector<float>::size_type)i)))’ from ‘__gnu_cxx::__alloc_traits<std::allocator<float>, float>::value_type’ {aka ‘float’} to ‘std::vector<float>’\n   44 |         if (sort_even(a[i]-b[i])>1e-4) return false;\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\nComplete code (including all the content of the code I provided and the code you generated)\n\n#include<iostream>\n#include<vector>\nusing namespace std;\n\nvector<float> sort_even(vector<float> l) {\n  vector<float> out{};\n  vector<float> even{};\n  {\n      int i=0;\n      for (;i*2<l.size();i++)\n          even.push_back(l[i*2]);\n  }\n  sort(even.begin(),even.end());\n  return out;\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool issame(vector<float> a,vector<float>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n        if (sort_even(a[i]-b[i])>1e-4) return false;\n    }\n    return true;\n}\nint main(){\n    assert (issame(sort_even({1, 2, 3}), {1, 2, 3}));\n    assert (issame(sort_even({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10}) , {-10, 3, -5, 2, -3, 3, 5, 0, 9, 1, 123}));\n    assert (issame(sort_even({5, 8, -12, 4, 23, 2, 3, 11, 12, -10}) , {-12, 8, 3, 4, 5, 2, 12, 11, 23, -10}));\n}\n"
+      ]
+    ]
+  },
+  "6": {
+    "task_id": 38,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘int main()’:\ntest.cpp:54:30: error: ‘encode_cyclic’ was not declared in this scope; did you mean ‘decode_cyclic’?\n   54 |         string encoded_str = encode_cyclic(str);\n      |                              ^~~~~~~~~~~~~\n      |                              decode_cyclic\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <string>\n\nstring decode_cyclic(string s) {\n    // returns decoded string by cycling groups of three characters.\n    // split string to groups. Each of length 3.\n    int l = s.length();\n    int num = (l + 2) / 3;\n    string x, output;\n    int i;\n\n    for (i = 0; i * 3 < l; i++) {\n        // cycle elements in each group. Unless group has fewer elements than 3.\n        x = s.substr(i * 3, 3);\n        if (x.length() == 3) x = x.substr(1) + x[0];\n        output = output + x;\n    }\n\n    return output;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    \n    for (int i=0;i<100;i++)\n    {\n        int l=10+rand()%11;\n        string str=\"\";\n        for (int j=0;j<l;j++)\n        {\n            char chr=97+rand()%26;\n            str+=chr;\n        }\n\n        string encoded_str = encode_cyclic(str);\n        assert (decode_cyclic(encoded_str) == str);\n    }\n}\n"
+      ]
+    ]
+  },
+  "7": {
+    "task_id": 42,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<vector>\nusing namespace std;\n\nvector<int> incr_list(vector<int> l) {\n    int i=0;\n    while(i<l.size()) {\n        l[i]++;\n        i++;\n    }\n    return l;\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (issame(incr_list({}) , {}));\n    assert (issame(incr_list({3, 2, 1}) , {4, 3, 2}));\n    assert (issame(incr_list({5, 2, 5, 2, 3, 3, 9, 0, 123}) , {6, 3, 6, 3, 4, 4, 10, 1, 124}));\n}\n"
+      ]
+    ]
+  },
+  "8": {
+    "task_id": 50,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:53: int main(): Assertion `encode_shift(encoded_str) == str' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n\n#include <iostream>\n#include <string>\n\nusing namespace std;\n\nstring encode_shift(string s) {\n    string out;\n    int i;\n\n    for (i = 0; i < s.length(); i++) {\n        int w = ((int)s[i] + 5 - (int)'a') % 26 + (int)'a';\n        out = out + (char)w;\n    }\n\n    return out;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    \n    for (int i=0;i<100;i++)\n    {\n        int l=10+rand()%11;\n        string str=\"\";\n        for (int j=0;j<l;j++)\n        {\n            char chr=97+rand()%26;\n            str+=chr;\n        }\n\n        string encoded_str = encode_shift(str);\n        assert (encode_shift(encoded_str) == str);\n    }\n}\n"
+      ]
+    ]
+  },
+  "9": {
+    "task_id": 52,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\nbool below_threshold(vector<int> l, int t){\n    for (int i = 0; i < l.size(); i++) {\n        if (l[i] >= t) return false;\n    }\n    return true;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (below_threshold({1, 2, 4, 10}, 100));\n    assert (not(below_threshold({1, 20, 4, 10}, 5)));\n    assert (below_threshold({1, 20, 4, 10}, 21));\n    assert (below_threshold({1, 20, 4, 10}, 22));\n    assert (below_threshold({1, 8, 4, 10}, 11));\n    assert (not(below_threshold({1, 8, 4, 10}, 10)));\n}\n"
+      ]
+    ]
+  },
+  "10": {
+    "task_id": 54,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:44: int main(): Assertion `same_chars(\"abcd\", \"dddddddabcf\") == false' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n#include <string>\n#include <algorithm>\n\nusing namespace std;\n\nbool same_chars(string s0, string s1) {\n    bool result = true;\n    for (int i = 0; i < s0.length(); i++) {\n        if (find(s1.begin(), s1.end(), s0[i]) == s1.end()) {\n            result = false;\n            break;\n        }\n    }\n    return result;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (same_chars(\"eabcdzzzz\", \"dddzzzzzzzddeddabc\") == true);\n    assert (same_chars(\"abcd\", \"dddddddabc\") == true);\n    assert (same_chars(\"dddddddabc\", \"abcd\") == true);\n    assert (same_chars(\"eabcd\", \"dddddddabc\") == false);\n    assert (same_chars(\"abcd\", \"dddddddabcf\") == false);\n    assert (same_chars(\"eabcdzzzz\", \"dddzzzzzzzddddabc\") == false);\n    assert (same_chars(\"aabb\", \"aaccc\") == false);\n}\n"
+      ]
+    ]
+  },
+  "11": {
+    "task_id": 59,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:37:8: error: expected constructor, destructor, or type conversion before ‘(’ token\n   37 | sprintf(buffer, \"Largest prime factor of 13195 is %d\", largest_prime_factor(13195));\n      |        ^\ntest.cpp:38:7: error: expected constructor, destructor, or type conversion before ‘(’ token\n   38 | printf(\"%s\\n\", buffer);\n      |       ^\ntest.cpp:40:8: error: expected constructor, destructor, or type conversion before ‘(’ token\n   40 | sprintf(buffer, \"Largest prime factor of 2048 is %d\", largest_prime_factor(2048));\n      |        ^\ntest.cpp:41:7: error: expected constructor, destructor, or type conversion before ‘(’ token\n   41 | printf(\"%s\\n\", buffer);\n      |       ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <cmath>\n\nint largest_prime_factor(int n) {\n    // Begin to write code\n    int i = 2;\n    while (i * i <= n) {\n        while (n % i == 0 and n > i) {\n            n = n / i;\n        }\n        i++;\n    }\n    return n;\n}\n\n// Test case for largest_prime_factor\nchar buffer[512];\nsprintf(buffer, \"Largest prime factor of 13195 is %d\", largest_prime_factor(13195));\nprintf(\"%s\\n\", buffer);\n\nsprintf(buffer, \"Largest prime factor of 2048 is %d\", largest_prime_factor(2048));\nprintf(\"%s\\n\", buffer);\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (largest_prime_factor(15) == 5);\n    assert (largest_prime_factor(27) == 3);\n    assert (largest_prime_factor(63) == 7);\n    assert (largest_prime_factor(330) == 11);\n    assert (largest_prime_factor(13195) == 29);\n}\n"
+      ]
+    ]
+  },
+  "12": {
+    "task_id": 74,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:50:6: error: ambiguating new declaration of ‘bool total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   50 | bool total_match(vector<string> a,vector<string>b){\n      |      ^~~~~~~~~~~\ntest.cpp:26:16: note: old declaration ‘std::vector<std::__cxx11::basic_string<char> > total_match(std::vector<std::__cxx11::basic_string<char> >, std::vector<std::__cxx11::basic_string<char> >)’\n   26 | vector<string> total_match(vector<string> lst1, vector<string> lst2) {\n      |                ^~~~~~~~~~~\nIn file included from test.cpp:49:\ntest.cpp: In function ‘int main()’:\ntest.cpp:59:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   59 |     assert (total_match(total_match({}, {}) , {}));\n      |     ^~~~~~\ntest.cpp:60:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   60 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:61:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   61 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:62:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   62 |     assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n      |     ^~~~~~\ntest.cpp:63:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   63 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n      |     ^~~~~~\ntest.cpp:64:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   64 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n      |     ^~~~~~\ntest.cpp:65:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   65 |     assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n      |     ^~~~~~\ntest.cpp:66:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   66 |     assert (total_match(total_match({}, {\"this\"}) , {}));\n      |     ^~~~~~\ntest.cpp:67:5: error: invalid static_cast from type ‘std::vector<std::__cxx11::basic_string<char> >’ to type ‘bool’\n   67 |     assert (total_match(total_match({\"this\"}, {}) , {}));\n      |     ^~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\nvector<string> total_match(vector<string> lst1, vector<string> lst2) {\n    // Code to calculate the total number of characters in lst1\n    int num1 = 0;\n    for (int i = 0; i < lst1.size(); i++) {\n        num1 += lst1[i].length();\n    }\n\n    // Code to calculate the total number of characters in lst2\n    int num2 = 0;\n    for (int i = 0; i < lst2.size(); i++) {\n        num2 += lst2[i].length();\n    }\n\n    // Compare the two totals and return the shorter vector\n    if (num1 < num2) {\n        return lst1;\n    } else if (num2 < num1) {\n        return lst2;\n    } else {\n        return lst1;\n    }\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool total_match(vector<string> a,vector<string>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (total_match(total_match({}, {}) , {}));\n    assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n    assert (total_match(total_match({\"hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"}));\n    assert (total_match(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"}) , {\"4\"}));\n    assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"Hi\"}) , {\"hI\", \"Hi\"}));\n    assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n    assert (total_match(total_match({\"hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n    assert (total_match(total_match({}, {\"this\"}) , {}));\n    assert (total_match(total_match({\"this\"}, {}) , {}));\n}\n"
+      ]
+    ]
+  },
+  "13": {
+    "task_id": 77,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<iostream>\n#include<math.h>\n\nbool isCube(int a) {\n    int i = 0;\n    for (; i*i*i <= abs(a); i++)\n        if (i*i*i == abs(a)) return true;\n    return false;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (isCube(1) == true);\n    assert (isCube(2) == false);\n    assert (isCube(-1) == true);\n    assert (isCube(64) == true);\n    assert (isCube(180) == false);\n    assert (isCube(1000) == true);\n    assert (isCube(0) == true);\n    assert (isCube(1729) == false);\n}\n"
+      ]
+    ]
+  },
+  "14": {
+    "task_id": 84,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:39: int main(): Assertion `solve(1000) == \"1\"' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<string>\nusing namespace std;\n\nstring solve(int N) {\n    string str, bi = \"\";\n    str = to_string(N);\n    int i, sum = 0;\n    {\n        int i = 0;\n        for (; i < str.length(); i++)\n            sum += str[i] - 48;\n    }\n    return bi;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (solve(1000) == \"1\");\n    assert (solve(150) == \"110\");\n    assert (solve(147) == \"1100\");\n    assert (solve(333) == \"1001\");\n    assert (solve(963) == \"10010\");\n}\n"
+      ]
+    ]
+  },
+  "15": {
+    "task_id": 94,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\nint largest_prime_sum(vector<int> lst) {\n    int largest = 0;\n    for (int i = 0; i < lst.size(); i++) {\n        if (lst[i] > largest) {\n            bool prime = true;\n            for (int j = 2; j * j <= lst[i]; j++) {\n                if (lst[i] % j == 0) {\n                    prime = false;\n                    break;\n                }\n            }\n            if (prime) {\n                largest = lst[i];\n            }\n        }\n    }\n    int sum = 0;\n    while (largest > 0) {\n        sum += largest % 10;\n        largest /= 10;\n    }\n    return sum;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (largest_prime_sum({0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3}) == 10);\n    assert (largest_prime_sum({1,0,1,8,2,4597,2,1,3,40,1,2,1,2,4,2,5,1}) == 25);\n    assert (largest_prime_sum({1,3,1,32,5107,34,83278,109,163,23,2323,32,30,1,9,3}) == 13);\n    assert (largest_prime_sum({0,724,32,71,99,32,6,0,5,91,83,0,5,6}) == 11);\n    assert (largest_prime_sum({0,81,12,3,1,21}) == 3);\n    assert (largest_prime_sum({0,8,1,2,1,7}) == 7);\n    assert (largest_prime_sum({8191}) == 19);\n    assert (largest_prime_sum({8191, 123456, 127, 7}) == 19);\n    assert (largest_prime_sum({127, 97, 8192}) == 10);\n}\n"
+      ]
+    ]
+  },
+  "16": {
+    "task_id": 110,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::string exchange(std::vector<int>, std::vector<int>)’:\ntest.cpp:49:28: error: type ‘__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type’ {aka ‘int’} argument given to ‘delete’, expected pointer\n   49 |             delete (lst2[j]);\n      |                            ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\nstring exchange(vector<int> lst1,vector<int> lst2){\n    int num=0;\n    {\n        int i=0;\n        for (;i<lst1.size();i++)\n        if (lst1[i]%2==0) num+=1;\n    }\n        \n    if(num==0)return \"NO\";\n        \n    int k,flag=0;\n    for (k=0;k<lst2.size();k++){\n        if(lst2[k]%2!=0){\n            flag=1;\n            break;\n        }\n    }\n    \n   if(flag==1)return \"NO\";\n        \n   int i,j;\n   for (i=0;i<lst1.size();i++)\n    for (j=0;j<lst2.size();j++)\n        if (lst1[i]==lst2[j]){\n            delete (lst2[j]);\n            break;\n        }\n   \n   return \"YES\";\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (exchange({1, 2, 3, 4}, {1, 2, 3, 4}) == \"YES\");\n    assert (exchange({1, 2, 3, 4}, {1, 5, 3, 4}) == \"NO\");\n    assert (exchange({1, 2, 3, 4}, {2, 1, 4, 3}) == \"YES\" );\n    assert (exchange({5, 7, 3}, {2, 6, 4}) == \"YES\");\n    assert (exchange({5, 7, 3}, {2, 6, 3}) == \"NO\" );\n    assert (exchange({3, 2, 6, 1, 8, 9}, {3, 5, 5, 1, 1, 1}) == \"NO\");\n    assert (exchange({100, 200}, {200, 200}) == \"YES\");\n}\n"
+      ]
+    ]
+  },
+  "17": {
+    "task_id": 112,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:3: error: ‘Sure’ does not name a type\n   21 |   Sure, here is the code you requested, in the designated format, and without any modifications or how it was requested:\n      |   ^~~~\ntest.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > reverse_delete(std::string, std::string)’:\ntest.cpp:45:10: error: could not convert ‘n’ from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘std::vector<std::__cxx11::basic_string<char> >’\n   45 |   return n;\n      |          ^\n      |          |\n      |          std::string {aka std::__cxx11::basic_string<char>}\ntest.cpp:47:10: error: could not convert ‘\"False\"’ from ‘const char [6]’ to ‘std::vector<std::__cxx11::basic_string<char> >’\n   47 |   return \"False\";\n      |          ^~~~~~~\n      |          |\n      |          const char [6]\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n  Sure, here is the code you requested, in the designated format, and without any modifications or how it was requested:\n\n#include <iostream>\n#include <string>\n#include <algorithm>\n#include <vector>\n\nusing namespace std;\n\nvector<string> reverse_delete(string s, string c)\n{\n\tstring n = \"\";\n\n\tfor (int i = 0; i < s.length(); i++)\n\t{\n\t\tif (find(c.begin(), c.end(), s[i]) == c.end())\n\t\t{\n\t\t\tn = n + s[i];\n\t\t}\n\t}\n\n\t// This check will determine whether the final 'n' string is a palindrome or not\n\t// A palindrome is a string that reads the same forward and backward\n\tif (n == string(n.rbegin(), n.rend()))\n\t\treturn n;\n\telse\n\t\treturn \"False\";\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool reverse_delete(vector<string> a,vector<string>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (reverse_delete(reverse_delete(\"abcde\",\"ae\") , {\"bcd\",\"False\"}));\n    assert (reverse_delete(reverse_delete(\"abcdef\", \"b\") , {\"acdef\",\"False\"}));\n    assert (reverse_delete(reverse_delete(\"abcdedcba\",\"ab\") , {\"cdedc\",\"True\"}));\n    assert (reverse_delete(reverse_delete(\"dwik\",\"w\") , {\"dik\",\"False\"}));\n    assert (reverse_delete(reverse_delete(\"a\",\"a\") , {\"\",\"True\"}));\n    assert (reverse_delete(reverse_delete(\"abcdedcba\",\"\") , {\"abcdedcba\",\"True\"}));\n    assert (reverse_delete(reverse_delete(\"abcdedcba\",\"v\") , {\"abcdedcba\",\"True\"}));\n    assert (reverse_delete(reverse_delete(\"vabba\",\"v\") , {\"abba\",\"True\"}));\n    assert (reverse_delete(reverse_delete(\"mamma\", \"mia\") , {\"\", \"True\"}));\n}\n"
+      ]
+    ]
+  },
+  "18": {
+    "task_id": 124,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n#include <string>\n\nusing namespace std;\n\nbool valid_date(string date) {\n    int mm, dd, yy, i;\n\n    if (date.length() != 10) {\n        return false;\n    }\n\n    // Check if the date is in the correct format\n    for (i = 0; i < 10; i++) {\n        if (i == 2 || i == 5) {\n            if (date[i] != '-') {\n                return false;\n            }\n        }\n    }\n\n    // Check if the month is valid\n    mm = stoi(date.substr(0, 2));\n    if (mm < 1 || mm > 12) {\n        return false;\n    }\n\n    // Check if the day is valid\n    dd = stoi(date.substr(3, 2));\n    if (dd < 1 || dd > 31) {\n        return false;\n    }\n\n    // Check if the year is valid\n    yy = stoi(date.substr(6, 4));\n    if (yy < 1 || yy > 9999) {\n        return false;\n    }\n\n    // Check if the date is a valid calendar date\n    if (mm == 2) {\n        if (dd > 28) {\n            return false;\n        }\n    } else if (mm % 2 == 0) {\n        if (dd > 30) {\n            return false;\n        }\n    } else {\n        if (dd > 31) {\n            return false;\n        }\n    }\n\n    return true;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (valid_date(\"03-11-2000\") == true);\n    assert (valid_date(\"15-01-2012\") == false);\n    assert (valid_date(\"04-0-2040\") == false);\n    assert (valid_date(\"06-04-2020\") == true);\n    assert (valid_date(\"01-01-2007\") == true);\n    assert (valid_date(\"03-32-2011\") == false);\n    assert (valid_date(\"\") == false);\n    assert (valid_date(\"04-31-3000\") == false);\n    assert (valid_date(\"06-06-2005\") == true);\n    assert (valid_date(\"21-31-2000\") == false);\n    assert (valid_date(\"04-12-2003\") == true);\n    assert (valid_date(\"04122003\") == false);\n    assert (valid_date(\"20030412\") == false);\n    assert (valid_date(\"2003-04\") == false);\n    assert (valid_date(\"2003-04-12\") == false);\n    assert (valid_date(\"04-2003\") == false);\n}\n"
+      ]
+    ]
+  },
+  "19": {
+    "task_id": 125,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:60: int main(): Assertion `split_words(split_words(\"Hello,world!\") , {\"Hello\",\"world!\"})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\n\nstd::vector<std::string> split_words(const std::string& txt)\n{\n    std::vector<std::string> out;\n    std::string current;\n\n    for (size_t i = 0; i < txt.length(); i++) {\n        if (txt[i] == ' ') {\n            if (!current.empty()) {\n                out.push_back(current);\n                current.clear();\n            }\n        } else {\n            current += txt[i];\n        }\n    }\n\n    if (!current.empty()) {\n        out.push_back(current);\n    }\n\n    return out;\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool split_words(vector<string> a,vector<string>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (split_words(split_words(\"Hello world!\") , {\"Hello\",\"world!\"}));\n    assert (split_words(split_words(\"Hello,world!\") , {\"Hello\",\"world!\"}));\n    assert (split_words(split_words(\"Hello world,!\") , {\"Hello\",\"world,!\"}));\n    assert (split_words(split_words(\"Hello,Hello,world !\") , {\"Hello,Hello,world\",\"!\"}));\n    assert (split_words(split_words(\"abcdef\") , {\"3\"}));\n    assert (split_words(split_words(\"aaabb\") , {\"2\"}));\n    assert (split_words(split_words(\"aaaBb\") , {\"1\"}));\n    assert (split_words(split_words(\"\") ,{\"0\"}));\n}\n"
+      ]
+    ]
+  },
+  "20": {
+    "task_id": 129,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:40: int main(): Assertion `minPath(minPath({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 3) , {1, 2, 1})' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<iostream>\n#include<vector>\nusing namespace std;\n\nvector<int> minPath(vector<vector<int>> grid, int k) {\n    // Your code here\n    return {};\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool minPath(vector<int> a,vector<int>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (minPath(minPath({{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 3) , {1, 2, 1}));\n    assert (minPath(minPath({{5, 9, 3}, {4, 1, 6}, {7, 8, 2}}, 1) , {1}));\n    assert (minPath(minPath({{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}, 4) , {1, 2, 1, 2}));\n    assert (minPath(minPath({{6, 4, 13, 10}, {5, 7, 12, 1}, {3, 16, 11, 15}, {8, 14, 9, 2}}, 7) , {1, 10, 1, 10, 1, 10, 1}));\n    assert (minPath(minPath({{8, 14, 9, 2}, {6, 4, 13, 15}, {5, 7, 1, 12}, {3, 10, 11, 16}}, 5) , {1, 7, 1, 7, 1}));\n    assert (minPath(minPath({{11, 8, 7, 2}, {5, 16, 14, 4}, {9, 3, 15, 6}, {12, 13, 10, 1}}, 9) , {1, 6, 1, 6, 1, 6, 1, 6, 1}));\n    assert (minPath(minPath({{12, 13, 10, 1}, {9, 3, 15, 6}, {5, 16, 14, 4}, {11, 8, 7, 2}}, 12) , {1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6}));\n    assert (minPath(minPath({{2, 7, 4}, {3, 1, 5}, {6, 8, 9}}, 8) , {1, 3, 1, 3, 1, 3, 1, 3}));\n    assert (minPath(minPath({{6, 1, 5}, {3, 8, 9}, {2, 7, 4}}, 8) , {1, 5, 1, 5, 1, 5, 1, 5}));\n    assert (minPath(minPath({{1, 2}, {3, 4}}, 10) , {1, 2, 1, 2, 1, 2, 1, 2, 1, 2}));\n    assert (minPath(minPath({{1, 3}, {3, 2}}, 10) , {1, 3, 1, 3, 1, 3, 1, 3, 1, 3}));\n}\n"
+      ]
+    ]
+  },
+  "21": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:22:1: error: ‘Complete’ does not name a type\n   22 | Complete code (including all the content of the code I provided and the code you generated)\n      | ^~~~~~~~\nIn file included from /usr/include/features.h:461,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:39,\n                 from /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:524,\n                 from /usr/include/c++/9/cstdlib:41,\n                 from /usr/include/c++/9/stdlib.h:36,\n                 from test.cpp:2:\n/usr/include/assert.h: In function ‘boost::any compare_one(boost::any, boost::any)’:\n/usr/include/assert.h:66:1: error: expected unqualified-id before string constant\n   66 | __BEGIN_DECLS\n      | ^~~~~~~~~~~~~\n/usr/include/assert.h:66:1: error: expected ‘;’ before string constant\n/usr/include/assert.h:66:1: error: expected ‘;’ before ‘{’ token\n   66 | __BEGIN_DECLS\n      | ^~~~~~~~~~~~~\n/usr/include/assert.h:66:1: error: expected primary-expression before ‘{’ token\n/usr/include/assert.h:66:1: error: expected ‘)’ before ‘{’ token\ntest.cpp:68:17: note: to match this ‘(’\n   68 |             for (\n      |                 ^\ntest.cpp:71:11: error: a function-definition is not allowed here before ‘{’ token\n   71 | int main(){\n      |           ^\ntest.cpp:80:1: error: expected ‘}’ at end of input\n   80 | }\n      | ^\ntest.cpp:66:55: note: to match this ‘{’\n   66 |         if (find(s.begin(), s.end(), ',') != s.end()) {\n      |                                                       ^\ntest.cpp:80:1: error: expected ‘}’ at end of input\n   80 | }\n      | ^\ntest.cpp:63:37: note: to match this ‘{’\n   63 |     if (b.type() == typeid(string)) {\n      |                                     ^\ntest.cpp:80:1: error: expected ‘}’ at end of input\n   80 | }\n      | ^\ntest.cpp:41:52: note: to match this ‘{’\n   41 | boost::any compare_one(boost::any a, boost::any b) {\n      |                                                    ^\ntest.cpp:80:1: warning: control reaches end of non-void function [-Wreturn-type]\n   80 | }\n      | ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n\nComplete code (including all the content of the code I provided and the code you generated)\n-----------------------------\n/*\nCreate a function that takes integers, floats, or strings representing\nreal numbers, and returns the larger variable in its given variable type.\nReturn \"None\" if the values are equal.\nNote: If a real number is represented as a string, the floating point might be . or ,\n\ncompare_one(1, 2.5) ➞ 2.5\ncompare_one(1, \"2,3\") ➞ \"2,3\"\ncompare_one(\"5,1\", \"6\") ➞ \"6\"\ncompare_one(\"1\", 1) ➞ \"None\"\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n#include<boost/any.hpp>\nusing namespace std;\n\nboost::any compare_one(boost::any a, boost::any b) {\n    double numa, numb;\n    boost::any out;\n\n    if (a.type() == typeid(string)) {\n        string s;\n        s = boost::any_cast<string>(a);\n        if (find(s.begin(), s.end(), ',') != s.end()) {\n            int i = 0;\n            for (; i < s.length(); i++)\n                if (s[i] == ',')\n                    s = s.substr(0, i) + '.' + s.substr(i + 1);\n        }\n        numa = atof(s.c_str());\n    }\n    else if (a.type() == typeid(double)) {\n        numa = boost::any_cast<double>(a);\n    }\n    else if (a.type() == typeid(int)) {\n        numa = boost::any_cast<int>(a);\n    }\n\n    if (b.type() == typeid(string)) {\n        string s;\n        s = boost::any_cast<string>(b);\n        if (find(s.begin(), s.end(), ',') != s.end()) {\n            int i = 0;\n            for (\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (boost::any_cast<int>(compare_one(1, 2)) == 2);\n    assert (boost::any_cast<double>(compare_one(1, 2.5))== 2.5);\n    assert (boost::any_cast<int>(compare_one(2, 3)) == 3);\n    assert (boost::any_cast<int>(compare_one(5, 6)) == 6);\n    assert (boost::any_cast<string>(compare_one(1, string(\"2,3\")))== \"2,3\");\n    assert (boost::any_cast<string>(compare_one(string(\"5,1\"), string(\"6\"))) == \"6\");\n    assert (boost::any_cast<string>(compare_one(string(\"1\"), string(\"2\"))) == \"2\");\n    assert (boost::any_cast<string>(compare_one(string(\"1\"), 1)) == \"None\");\n}\n"
+      ]
+    ]
+  },
+  "22": {
+    "task_id": 142,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:38: int main(): Assertion `sumSquares({1,2,3}) == 6' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include <iostream>\n#include <vector>\n\nint sumSquares(std::vector<int> lst) {\n    int sum = 0;\n    for (int i = 0; i < lst.size(); ++i) {\n        if (i % 3 == 0) {\n            sum += lst[i] * lst[i];\n        } else if (i % 4 == 0 && i % 3 != 0) {\n            sum += lst[i] * lst[i] * lst[i];\n        }\n    }\n    return sum;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sumSquares({1,2,3}) == 6);\n    assert (sumSquares({1,4,9}) == 14);\n    assert (sumSquares({}) == 0);\n    assert (sumSquares({1,1,1,1,1,1,1,1,1}) == 9);\n    assert (sumSquares({-1,-1,-1,-1,-1,-1,-1,-1,-1}) == -3);\n    assert (sumSquares({0}) == 0);\n    assert (sumSquares({-1,-5,2,-1,-5}) == -126);\n    assert (sumSquares({-56,-99,1,0,-2}) == 3030);\n    assert (sumSquares({-1,0,0,0,0,0,0,0,-1}) == 0);\n    assert (sumSquares({-16, -9, -2, 36, 36, 26, -20, 25, -40, 20, -4, 12, -26, 35, 37}) == -14196);\n    assert (sumSquares({-1, -3, 17, -1, -15, 13, -1, 14, -14, -12, -5, 14, -14, 6, 13, 11, 16, 16, 4, 10}) == -1448);\n}\n"
+      ]
+    ]
+  },
+  "23": {
+    "task_id": 145,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp:21:1: error: ‘Complete’ does not name a type\n   21 | Complete code:\n      | ^~~~~~~~\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\nComplete code:\n-----------------------------\n#include<stdio.h>\n#include<math.h>\n#include<vector>\n#include<string>\n\nusing namespace std;\n\nvector<int> order_by_points(vector<int> nums) {\n    vector<int> sumdigit{};\n    for (int i = 0; i < nums.size(); i++) {\n        string w = to_string(abs(nums[i]));\n        int sum = 0;\n        {\n            int j = 1;\n            for (; j < w.length(); j++)\n                sum += w[j] - 48;\n        }\n        if (nums[i] > 0) sum += w[0] - 48;\n        sumdigit.push_back(sum);\n    }\n\n    sort(sumdigit.begin(), sumdigit.end(), greater<int>());\n\n    vector<int> ordered_nums;\n    for (int i = 0; i < sumdigit.size(); i++) {\n        ordered_nums.push_back(nums[i]);\n    }\n\n    return ordered_nums;\n}\n\n#undef NDEBUG\n#include<assert.h>\nbool order_by_points(vector<int> a,vector<int>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (order_by_points(order_by_points({1, 11, -1, -11, -12}) , {-1, -11, 1, -12, 11}));\n    assert (order_by_points(order_by_points({1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46}) , {0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457}));\n    assert (order_by_points(order_by_points({}) , {}));\n    assert (order_by_points(order_by_points({1, -11, -32, 43, 54, -98, 2, -3}) , {-3, -32, -98, -11, 1, 2, 43, 54}));\n    assert (order_by_points(order_by_points({1,2,3,4,5,6,7,8,9,10,11}) , {1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9}));\n    assert (order_by_points(order_by_points({0,6,6,-76,-21,23,4}) , {-76, -21, 0, 4, 23, 6, 6}));\n    \n}\n"
+      ]
+    ]
+  },
+  "24": {
+    "task_id": 147,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:53: int main(): Assertion `get_matrix_triples(5) == 1' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<vector>\nusing namespace std;\n\nint get_matrix_triples(int n) {\n    vector<int> a;\n    vector<vector<int>> sum{{0, 0, 0}};\n    vector<vector<int>> sum2{{0, 0, 0}};\n\n    int i = 1;\n    while (i <= n) {\n        a.push_back((i * i - i + 1) % 3);\n        sum.push_back(sum[sum.size() - 1]);\n        sum[i][a[i - 1]] += 1;\n        i++;\n    }\n\n    int count = 0;\n    for (int i = 0; i < n - 2; i++) {\n        for (int j = i + 1; j < n - 1; j++) {\n            for (int k = j + 1; k < n; k++) {\n                if (a[i] + a[j] + a[k] % 3 == 0) {\n                    count++;\n                }\n            }\n        }\n    }\n\n    return count;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (get_matrix_triples(5) == 1);\n    assert (get_matrix_triples(6) == 4);\n    assert (get_matrix_triples(10) == 36);\n    assert (get_matrix_triples(100) == 53361);\n}\n"
+      ]
+    ]
+  },
+  "25": {
+    "task_id": 149,
+    "passed": false,
+    "result": "failed: compilation error: test.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > sorted_list_sum(std::vector<std::__cxx11::basic_string<char> >)’:\ntest.cpp:27:6: error: expected ‘;’ before ‘to’\n   27 | begin to write code}\n      |      ^~~\n      |      ;\ntest.cpp:27:16: error: statement cannot resolve address of overloaded function\n   27 | begin to write code}\n      |                ^~~~\ntest.cpp:27:20: warning: no return statement in function returning non-void [-Wreturn-type]\n   27 | begin to write code}\n      |                    ^\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<algorithm>\nusing namespace std;\nvector<string> sorted_list_sum(vector<string> lst){\nbegin to write code}\n\n#undef NDEBUG\n#include<assert.h>\nbool sorted_list_sum(vector<string> a,vector<string>b){\n    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n    {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n    assert (sorted_list_sum(sorted_list_sum({\"aa\", \"a\", \"aaa\"}) , {\"aa\"}));\n    assert (sorted_list_sum(sorted_list_sum({\"school\", \"AI\", \"asdf\", \"b\"}) , {\"AI\", \"asdf\", \"school\"}));\n    assert (sorted_list_sum(sorted_list_sum({\"d\", \"b\", \"c\", \"a\"}) , {}));\n    assert (sorted_list_sum(sorted_list_sum({\"d\", \"dcba\", \"abcd\", \"a\"}) , {\"abcd\", \"dcba\"}));\n    assert (sorted_list_sum(sorted_list_sum({\"AI\", \"ai\", \"au\"}) , {\"AI\", \"ai\", \"au\"}));\n    assert (sorted_list_sum(sorted_list_sum({\"a\", \"b\", \"b\", \"c\", \"c\", \"a\"}) , {}));\n    assert (sorted_list_sum(sorted_list_sum({\"aaaa\", \"bbbb\", \"dd\", \"cc\"}) , {\"cc\", \"dd\", \"aaaa\", \"bbbb\"}));\n}\n"
+      ]
+    ]
+  },
+  "26": {
+    "task_id": 160,
+    "passed": false,
+    "result": "failed: a.out: test.cpp:54: int main(): Assertion `do_algebra({\"**\", \"*\", \"+\"}, {2, 3, 4, 5}) == 37' failed.\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer",
+    "evaluation_codes": [
+      [
+        "using namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<cmath>\n#include<math.h>\n#include<numeric>\n#include<stdio.h>\n#include<vector>\n#include<set>\n#include<map>\n#include<queue>\n#include<stack>\n#include<list>\n#include<deque>\n#include<string>\n#include<climits>\n#include<cstring>\n#include<iostream>\n#include<sstream>\n#include<fstream>\n#include<stdio.h>\n#include<math.h>\n#include<vector>\n#include<string>\nusing namespace std;\n#include<algorithm>\n#include<stdlib.h>\nint do_algebra(vector<string> operato, vector<int> operand){\n    vector<int> num={};\n    vector<int> posto={};\n    {\n        int i=0;\n        for (;i<operand.size();i++)\n            posto.push_back(i);\n    }\n    {\n        int i=0;\n        for (;i<operato.size();i++)\n            if (operato[i]==\"**\") \n            {\n            while (posto[posto[i]]!=posto[i]) posto[i]=posto[posto[i]];\n            while (posto[posto[i+1]]!=posto[i+1]) posto[i+1]=posto[posto[i+1]];\n            operand[posto[i]]=pow(operand[posto[i]],operand[posto[i+1]]);\n            posto[i+1]=posto[i];\n            }\n    }\n    for (int i=0;i<operato.size();i++)\n        // begin to write code\n    return 0;\n}\n\n#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (do_algebra({\"**\", \"*\", \"+\"}, {2, 3, 4, 5}) == 37);\n    assert (do_algebra({\"+\", \"*\", \"-\"}, {2, 3, 4, 5}) == 9);\n    assert (do_algebra({\"//\", \"*\"}, {7, 3, 4}) == 8);\n}\n"
+      ]
+    ]
+  }
+}
