@@ -1,0 +1,1288 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 212,
+    "generations": [
+      [
+        "function removeOcc(s, ch) {\n    const firstIndex = s.indexOf(ch);\n    const lastIndex = s.lastIndexOf(ch);\n    if (firstIndex !== -1 && lastIndex !== -1) {\n        if (firstIndex === lastIndex) {\n            s = s.substring(0, firstIndex) + s.substring(firstIndex + 1);\n        } else {\n            s = s.substring(0, firstIndex) + s.substring(firstIndex + 1, lastIndex) + s.substring(lastIndex + 1);\n        }\n    }\n    return s;\n}"
+      ],
+      [
+        "function sortMatrix(M) {\n    // sort matrix rows according to the sum of their elements\n    return M.sort((a, b) => a.reduce((acc, val) => acc + val, 0) - b.reduce((acc, val) => acc + val, 0));\n}"
+      ],
+      [
+        "function count_common(words) {\n    const wordCounts = words.reduce((acc, word) => {\n        acc[word] = (acc[word] || 0) + 1;\n        return acc;\n    }, {});\n\n    const maxCount = Math.max(...Object.values(wordCounts));\n\n    const commonWords = Object.entries(wordCounts).reduce((acc, [word, count]) => {\n        if (count === maxCount) {\n            acc.push(word);\n        }\n        return acc;\n    }, []);\n\n    return commonWords;\n}"
+      ],
+      [
+        "function splitLowerstring(gext) {\n  return gext.split(/[a-z]+/);\n}"
+      ],
+      [
+        "const text_lowercase_underscore = (text) => {\n    const patterns = /^[a-z]+_[a-z]+$/;\n    if (text.match(patterns)) {\n        return \"Found a match!\";\n    } else {\n        return \"Not matched!\";\n    }\n}"
+      ],
+      [
+        "function square_perimeter(area) {\n    let radius = 4 * area;\n    return 4 * radius;\n}"
+      ],
+      [
+        "const NO_OF_CHARS = 256;\nfunction strToList(string) {\n    let temp = [];\n    for (let x of string) {\n        temp.push(x);\n    }\n    return temp;\n}\nfunction listToString(list) {\n    return list.join('');\n}\nfunction getCharCountArray(string) {\n    let count = new Array(NO_OF_CHARS).fill(0);\n    for (let i of string) {\n        count[i.charCodeAt(0)] = count[i.charCodeAt(0)] + (1);\n    }\n    return count;\n}\nfunction removeChars(str1, str2) {\n    let count2 = getCharCountArray(str2);\n    let result = [];\n    for (let i of str1) {\n        if (count2[i.charCodeAt(0)] === 0) {\n            result.push(i);\n        }\n    }\n    return listToString(result);\n}"
+      ],
+      [
+        "Complete code:\n\nfunction test_duplicate(array) {\n  // Create an empty set to store unique elements\n  let uniqueElements = new Set();\n\n  // Iterate through each element in the array\n  for (let i = 0; i < array.length; i++) {\n    // If the element is already in the set, return true (indicating duplicate)\n    if (uniqueElements.has(array[i])) {\n      return true;\n    }\n    // Add the element to the set\n    uniqueElements.add(array[i]);\n  }\n\n  // If the loop completes without finding any duplicates, return false (indicating no duplicates)\n  return false;\n}"
+      ],
+      [
+        "function multiples_of_num(num, factor) {\n    let result = [];\n    for (let i = factor; i <= num * factor; i += factor) {\n        result.push(i);\n    }\n    return result;\n}"
+      ],
+      [
+        "// function find_first_duplicate(nums) {\n//     let num_set = new Set();\n//     let no_duplicate = -1;\n//     for (let i = 0; i < nums.length; i = i + 1) {\n//         if (num_set.has(nums[i])) {\n//             return nums[i];\n//         } else {\n//             num_set.add(nums[i]);\n//         }\n//     }\n//     return no_duplicate;\n// }"
+      ],
+      [
+        "Complete code:\nfunction maximum_Sum(var_0) {\n    let var_1 = -100000;\n    for (let var_3 of var_0) {\n        let var_2 = 0;\n        for (let var_4 of var_3) {\n            var_2 += var_4;\n        }\n        var_1 = Math.max(var_1, var_2);\n    }\n    return var_1;\n}"
+      ],
+      [
+        "d = d + b * (2 ** c);\n        c++;\n        bin = Math.floor(bin / 10);\n    }\n\n    return d;\n}"
+      ],
+      [
+        "function find_Product(a, b) {\n    a.sort((A, B) => A - B);\n    let i = 1;\n    let product = 1; // Initialize product to 1\n    for (let j = 0; j < b; j++) {\n        if (j === 0 || a[j - 1] !== a[j]) {\n            product *= a[j]; // Multiply non-repeated elements\n        }\n    }\n    return product;\n}"
+      ],
+      [
+        "function check_k_elements(test_list, K) {\n  // create a Set to store all elements of tuples\n  const set = new Set();\n\n  // iterate over tuples\n  for (const tup of test_list) {\n    // iterate over each element in tuple\n    for (const ele of tup) {\n      // if the element is not k, add it to set\n      if (ele !== K) {\n        set.add(ele);\n      }\n    }\n  }\n\n  // return true if set is empty, false otherwise\n  return set.size === 0;\n}"
+      ],
+      [
+        "if (p === 0 || p === n) {\n        return 1;\n    }\n    return binomial_Coeff(n - 1, p - 1) + binomial_Coeff(n - 1, p);\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nfunction get_Odd_Occurrence(arr, arr_size) {   \n    for (let i = 0; i < arr_size; i++) { \n        let count = 0;\n        for (let j = 0; j < arr_size; j++) { \n            if (arr[j] === arr[i]) { \n                count += 1;     \n            }\n        }\n        if (count % 2 !== 0) { \n            return arr[i]; \n        }\n    } \n    return -1; \n}"
+      ],
+      [
+        "function count_Substring_With_Equal_Ends(s) {\n    let result = 0;\n    const n = s.length;\n    for(let i = 0; i < n; i++) {\n        for(let j = i; j < n; j++) {\n            if(check_Equality(s.substring(i, j + 1))) {\n                result++;\n            }\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function max_Prime_Factors(n) {\n    let maxPrime = -1;\n    while (n % 2 === 0) {\n        maxPrime = 2;\n        n = n >> (1);\n    }\n    for (let i = 3; i <= Math.sqrt(n); i = i + (2)) {\n        while (n % i === 0) {\n            maxPrime = i;\n            n = n / i;\n        }\n    }\n    if (n >= 2) {\n        maxPrime = n;\n    }\n    return maxPrime;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\nfunction decimal_To_Binary(M) {\n    let B_Number = 0;\n    let cnt = 0;\n    while (0 != M) {\n        let rem = M % 2;\n        let c = Math.pow(10, cnt);\n        B_Number = B_Number + c * rem;\n        cnt = cnt + 1;\n        M = Math.floor(M / 2);\n    }\n    return B_Number;\n}\n-----------------------------"
+      ],
+      [
+        "return -1;\n}"
+      ],
+      [
+        "while(p >= q){\n        p %= q;\n        res++;\n    }\n    while(N--){\n        res = res * 10 + Math.floor(p / (q / 10));\n        p = p % (q / 10);\n    }\n    return res;\n}"
+      ],
+      [
+        "const strPart = mixedList.filter(item => 'string' === typeof item).sort();\n    return [...intPart, ...strPart];\n}"
+      ],
+      [
+        "function div_even_odd(children) {\n    const var_0 = 1;\n    const var_1 = 1;\n    let odd = -var_0 ;\n    let even = -var_1 ;\n    for (let i of children) {\n        const var_2 = 2;\n        const var_3 = 0;\n        const var_4 = 1;\n        if (i % var_2  === var_3  && odd === -var_4 ) {\n            odd = i;\n            break;\n        }\n    }\n    for (let i of children) {\n        if (i % var_2  === var_3  && even === -var_4 ) {\n            even = i;\n            break;\n        }\n    }\n    return odd/even;\n}"
+      ],
+      [
+        "//complete code\n-----------------------------\nconst canRearrangeToDifferentLetters = (s) => {\n  const maxHeap = new MinPriorityQueue();\n  const map = new Map();\n  \n  for (const char of s) {\n    if (!map.has(char)) {\n      map.set(char, 0);\n    }\n    map.set(char, map.get(char) + 1);\n  }\n  \n  for (const [char, count] of map) {\n    maxHeap.enqueue([-count, char]);\n  }\n  \n  const queue = maxHeap.dequeue();\n  if (queue[0] === 1) {\n    return true;\n  }\n  \n  maxHeap.enqueue([queue[0] + 1, queue[1]]);\n  \n  return canRearrangeToDifferentLetters(maxHeap);\n};\n\nconst result = canRearrangeToDifferentLetters(\"aab\");"
+      ],
+      [
+        "const collections = require('collections');\n\nfunction freq_element(nums) {\n    const flattened = nums.flat();\n    const result = {};\n    for (const num of flattened) {\n        if (result[num]) {\n            result[num] = result[num] + 1;\n        } else {\n            result[num] = 1;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "const filter_evennumbers = (nfms) => {\n    return nfms.filter((num) => num % 2 === 0);\n};"
+      ],
+      [
+        "function find_Sum(arr, n) {\n    // Use the filter() method to get all repeated elements\n    let repeated_elements = arr.filter(x => arr.filter(y => y === x).length > 1);\n    \n    // Initialize the sum to 0\n    let sum = 0;\n    \n    // Use the forEach() method to iterate over the repeated elements array\n    repeated_elements.forEach(x => {\n        // Add the value of each repeated element to the sum\n        sum += x;\n    });\n    \n    // Return the sum\n    return sum;\n}"
+      ],
+      [
+        "function find_gcd_of_array(arr) {\n    let gcd_of_two_numbers = (a, b) => {\n        if (b === 0) {\n            return a;\n        }\n        return gcd_of_two_numbers(b, a % b);\n    };\n    return arr.reduce((total_gcd, current_number) => {\n        return gcd_of_two_numbers(total_gcd, current_number);\n    }, arr[0]);\n}"
+      ],
+      [
+        "//function definition\nfunction test_distinct(data) {\n  //This is a comment line.\n  const unique = new Set(data);\n\n  if (data.length === unique.size) {\n    return true;\n  } else {\n    return false;\n  }\n}"
+      ],
+      [
+        "function computeLastDigit(A, B) {\n        let tempVar4 = 9.9;\n        tempVar4 = tempVar4 + 1;\n\n        // If A equals B, the last digit is 1\n        if (A === B) {\n            return 1;\n        }\n\n        // If B minus A is greater than or equal to 5, the last digit is 0\n        if ((B - A) >= 5) {\n            return 0;\n        }\n\n        // If B minus A is less than 5 and greater than 0, compute the product of the last digits from A+1 to B\n        let lastDigitProduct = 1;\n        for (let i = A + 1; i <= B; i++) {\n            let lastDigit = i % 10;\n            lastDigitProduct = (lastDigitProduct * lastDigit) % 10;\n        }\n\n        return lastDigitProduct;\n    }"
+      ],
+      [
+        "function odd_bit_set_number(n) {\n  let count = 0;\n  let res = 0;\n  let temp = n;\n  \n  while (temp > 0) {\n    let remainder = temp % 2; // Get the last digit of the number\n    let shifted_one = remainder << count; // Create a bit set to 1 at the current count index\n    res = res | shifted_one; // Set the corresponding bit in res to 1\n    \n    temp = temp >> 1; // Divide the number by 2\n    count++;\n  }\n  return n | res; // Set the odd bits of n to 1\n}"
+      ],
+      [
+        "const minLengthList = (inputList) => {\n    const minLength = Math.min(...inputList.map(x => x.length));\n    return inputList.filter(list => list.length === minLength);\n}"
+      ],
+      [
+        "function check_equilateral(var_0, var_1, var_2) {\n    if (var_0 === var_1 && var_1 === var_2) {\n        return true;\n    } else {\n        return false;\n    }\n}"
+      ],
+      [
+        "function parallelogram_area(b, h) {\n  return b * h;\n}"
+      ],
+      [
+        "// Create a function to check if the first and last characters of a string are the same\nfunction check_Equality(string) {\n    // Check if the first and last characters of the string are equal\n    if (string[0] === string[string.length - 1]) {\n        return \"Equal\";\n    } else {\n        return \"Not Equal\";\n    }\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nfunction counting_sort(var_3) {\n    let var_2 = 0;\n    {\n        let var_1 = 0;\n        for (; var_1 < var_3.length; var_1++) {\n            if (var_3[var_1] > var_2) {\n                var_2 = var_3[var_1];\n            }\n        }\n    }\n    let var_0 = new Array(var_2 + 1).fill(0);\n    {\n        let var_1 = 0;\n        for (; var_1 < var_3.length; var_1++) {\n            var_0[var_3[var_1]] += 1;\n        }\n    }\n    let i = 0;\n    {\n        let j = 0;\n        for (; j < var_0.length; j++) {\n            while (var_0[j] > 0) {\n                var_3[i] = j;\n                i++;\n                var_0[j]--;\n            }\n        }\n    }\n    return var_3;\n}"
+      ],
+      [
+        "Complete code:\n-----------------------------\nconst crypto = require('crypto');\nfunction tn_gp(a, n, r) {\n   return a * Math.pow(r, n - 1);\n}\n\n// example usage:\n\n\n-----------------------------"
+      ],
+      [
+        "function isOneLessThanTwiceReverse(num) {\n  const reverseNum = Number(num.toString().split('').reverse().join(''));\n  return num === 2 * reverseNum + 1;\n}"
+      ],
+      [
+        "function find_Max_Num(arr, n) {\n  const var_0 = 0;\n  const var_1 = 1;\n  arr.sort((a, b) => b - a);\n  let num = \"\";\n  for (let i = var_0; i < n; i++) {\n    num += arr[i];\n  }\n  return parseInt(num);\n}"
+      ],
+      [
+        "// Checking whether the two integers have opposite signs\n\nfunction opposite_Signs(var_1, var_2) {\n  // One of the integers must be negative and the other must be positive\n  return (var_1 < 0) !== (var_2 < 0);\n}"
+      ],
+      [
+        "function is_octagonal(m) {\n    let n = Math.floor((Math.sqrt(24 * m + 1) - 1) / 6);\n    return n * (3 * n - 2) === m;\n}\n\nfunction find_nth_octagonal(n) {\n    return n * (3 * n - 2);\n}\n\nmodule.exports = find_nth_octagonal;"
+      ],
+      [
+        "The complete code includes the function max_len_sub, which takes an array and the length of the array as arguments, and returns the maximum length of the subsequence with a difference of one between adjacent elements. The solution uses dynamic programming, storing the length of the longest subsequence ending with each element in an array called result. Then, it finds the maximum value in the result array, which represents the maximum length of the required subsequence."
+      ],
+      [
+        "function count_Substrings(s, n) {\n    let count = 0, sum = 0;\n    let mp = new Map();\n    mp.set(0, 1);\n    for (let i = 0; i < n; i++) {\n        sum += parseInt(s[i]);\n        let requiredSum = sum - (i + 1);\n        if (mp.has(requiredSum)) {\n            count += mp.get(requiredSum);\n        }\n        if (mp.has(sum)) {\n            mp.set(sum, mp.get(sum) + 1);\n        } else {\n            mp.set(sum, 1);\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "Complete code:\nfunction smallest_num(n) {\n    if (n.length === 0) {\n        throw new Error(\"Array is empty\");\n    }\n\n    let smallestNum = n[0];\n    for (let i = 1; i < n.length; i++) {\n        if (n[i] < smallestNum) {\n            smallestNum = n[i];\n        }\n    }\n\n    return smallestNum;\n}"
+      ],
+      [
+        "//This function sorts a list of tuples in ascending order by the second element of each tuple\nconst sortListBySecondElement = (tuples) => {\n  return tuples.sort((a, b) => a[1] - b[1]);\n};\n\n//Example usage\nconst listOfTuples = [[2, 5], [1, 2], [4, 4], [2, 3], [2, 1]];\nconst sortedList = sortListBySecondElement(listOfTuples);"
+      ],
+      [
+        "function recursiveListSum(dataList) {\n    let total = 0;\n    for (const element of dataList) {\n        if (Array.isArray(element)) {\n            total = total + (recursiveListSum(element));\n        } else {\n            total += element;\n        }\n    }\n    return total;\n}"
+      ],
+      [
+        "function bell_number(var_2) {\n    let var_0 = Array.from({ length: var_2 + 1 }, () => Array(var_2 + 1).fill(BigInt(0)));\n    var_0[0][0] = BigInt(1);\n    for (let var_1 = 1; var_1 <= var_2; var_1 = var_1 + 1) {\n        var_0[var_1][0] = var_0[var_1 - 1][var_1 - 1];\n        for (let var_3 = 1; var_3 <= var_1; var_3 = var_3 + 1) {\n            var_0[var_1][var_3] = var_0[var_1 - 1][var_3 - 1];\n            for (let var_4 = 0; var_4 <= var_3 - 1; var_4 = var_4 + 1) {\n                var_0[var_1][var_3] = var_0[var_1][var_3] + (var_0[var_1 - 1][var_4] * var_0[var_4][var_3 - var_4 - 1]);\n            }\n        }\n    }\n    return var_0[var_2][0];\n}"
+      ],
+      [
+        "/**\n * Check whether the array is monotonic or not.\n * Monotonic means the elements are in increasing or decreasing order.\n * \n * @param {Array} seq Array of numbers.\n * @return {Boolean} True if the array is monotonic, False otherwise.\n */\n\nfunction is_Monotonic(seq) {\n    return seq.every((item, index) => index === seq.length - 1 || item <= seq[index + 1]) ||\n            seq.every((item, index) => index === seq.length - 1 || item >= seq[index + 1]);\n}\n\nmodule.exports = is_Monotonic;"
+      ],
+      [
+        "function is_sublist(l, s) {\n    let sub_set = false;\n    if (s.length === 0) {\n        sub_set = true;\n    } else{\n          if (s === l) {\n            sub_set = true;\n        } else{\n              if (s.length > l.length) {\n                sub_set = false;\n            } else {\n                for (let i = 0; i < l.length; i++) {\n                    if (l[i] === s[0]) {\n                        if (s.length === 1) {\n                            return true;\n                        } else {\n                            return is_sublist(l.slice(1), s.slice(1));\n                        }\n                    }\n                }\n                sub_set = false;\n            }\n        }\n    }\n    return sub_set;\n}"
+      ],
+      [
+        "function combSort(nums) {\n  const shrinkFact = 1.3;\n  let gaps = nums.length;\n  let swapped = 1;\n  while (gaps > 1 || swapped) {\n    gaps = Math.floor(gaps / shrinkFact);\n    swapped = 0;\n    let i = 0;\n    while (gaps + i < nums.length) {\n      if (nums[i] > nums[i + gaps]) {\n        [nums[i], nums[i + gaps]] = [nums[i + gaps], nums[i]];\n        swapped = 1;\n      }\n      i++;\n    }\n  }\n  return nums;\n}"
+      ],
+      [
+        "// begin to write code\nconst regExp = /^[-_a-zA-Z0-9]+$/;\nreturn tvcg.split(regExp);\n// end to write code"
+      ],
+      [
+        "for (let i = 0; i < var_2[var_1].length; i++) {\n  var_4[var_2[var_1]].push(var_0[var_1][i]);\n}\n}\nconst uniqueValues = Array.from(var_3).sort();\nconst uniqueKeyValues = Object.keys(var_4).sort();\nfor (let i = 0; i < uniqueValues.length; i++) {\n  if (!uniqueKeyValues.includes(uniqueValues[i])) {\n    return false;\n  }\n  for (let j = 0; j < var_4[uniqueValues[i]].length; j++) {\n    if (var_4[uniqueValues[i]][j] !== uniqueKeyValues[i]) {\n      return false;\n    }\n  }\n}\nreturn true;\n}\n\nmodule.exports = is_samepatterns;"
+      ],
+      [
+        "// No additional packages are needed for this code\n\n// Complete function\nfunction find_tuples(test_list, K) {\n    let res = test_list.filter(sub => sub.every(ele => ele % K === 0));\n    return res;\n}\n\n// Test the function"
+      ],
+      [
+        "return true; // Word length is odd\n} else {\n    return false; // Word length is even\n}\n}\n// Function to check if a word's length is odd\nfunction word_len(var_0) {\n    let var_2 = var_0.split(' ');\n    for (let var_1 of var_2) {\n        if (var_1.length % 2 !== 0) {\n            return true; // Word length is odd\n        } else {\n            return false; // Word length is even\n        }\n    }\n}"
+      ],
+      [
+        "function zip_tuples(test_tup1, test_tup2) {\n  let res = [];\n  for (let i = 0 ; i < test_tup1.length; i++) {\n    res.push([test_tup1[i], test_tup2[i]]);\n  }\n  return res;\n}"
+      ],
+      [
+        "/**\n * Calculate the volume of a sphere given its radius.\n * @param {number} r - The radius of the sphere.\n * @returns {number} - The volume of the sphere.\n */\nfunction volume_sphere(r) {\n  const volume = r * (4/3) * Math.PI * r * r;\n  return volume;\n}\n\n// Usage:\nconst radius = 5;\nconst volume = volume_sphere(radius);"
+      ],
+      [
+        "return String.fromCharCode(summ % var_4 + 'a'.charCodeAt(var_2));\n}"
+      ],
+      [
+        "function sequence(m) { \n\tif (m === 1 || m === 2) { \n\t\treturn 1;\n\t} else { \n\t\tconst dp = [1, 1];\n\t\tfor (let i = 2; i < m; i++) { \n\t\t\tdp[i] = dp[dp[i - 1]] + dp[i - dp[i - 1]];\n\t\t}\n\t\treturn dp[m - 1];\n\t}\n}"
+      ],
+      [
+        "function surfacearea_sphere(r) {\n  let surfacearea = r * 4 * Math.PI * r;\n  return surfacearea;\n}"
+      ],
+      [
+        "Complete code:\n-----------------------------\nfunction merge_dictionaries_three(drxt1, dict2, dict3) {\n    const var_0 = 0;\n    const var_1 = 1;\n    const mergedDict = Object.assign({}, dict3, dict2, drxt1);\n    const keyValuePairs = Object.entries(mergedDict);\n    keyValuePairs.sort((a, b) => a[var_0].localeCompare(b[var_1]));\n    const sortedDict = {};\n    //begin to write code\n    for (const [key, value] of keyValuePairs) {\n        sortedDict[key] = value;\n    }\n    return sortedDict;\n}"
+      ],
+      [
+        "Complete code:\n\nfunction len_log(orht1) {\n    let max = orht1[0].length;\n    for (let i of orht1) {\n        if (i.length > max) {\n            max = i.length;\n        }\n    }\n    return max;\n}"
+      ],
+      [
+        "const url = require('url');\nfunction find_substring(str1, hub_str) {\n    // Use the includes method to check if str1 is present in hub_str\n    return hub_str.includes(str1);\n}"
+      ],
+      [
+        "function isUndulating(n) {\n    if (n.length <= 2) {\n        return 0;\n    }\n    let prevQuotient = Math.floor(n[0]/10);\n    for (let r = 1; r < n.length; r++) {\n        let quotient = Math.floor(n[r]/10);\n        if (prevQuotient !== quotient) {\n            return 0;\n        }\n    }\n    return 1;\n}"
+      ],
+      [
+        "// calculate the value of 'a' to the power 'b'\nfunction power(a, b) {\n    if (b === 0) {\n        return 1;\n    } else if (b === 1) {\n        return a;\n    } else if (b < 0) {\n        return 1 / power(a, -b);\n    } else {\n        return a * power(a, b - 1);\n    }\n}"
+      ],
+      [
+        "function index_minimum(testList) {\n  const\n   res = testList.reduce((min, itvn) => (itvn[1] < min[1] ? itvn : min))[0];\n  return res;\n}"
+      ],
+      [
+        "function divisor(n) {\n    let x = 0;\n    for(let i = 1; i <= n; i++) {\n        if(0 === n % i) {\n            x++;\n        }\n    }\n    return x;\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)\n// No extra code was generated beyond the provided code.\n// Make sure to include all necessary package imports and follow the problem description.\n\n/**\n * This function takes a list of lists and returns an object that represents the frequency of each element\n * across all the nested lists.\n * @param {Array} lists - The input list of lists.\n * @return {Object} The frequency object.\n */\nfunction frequencyLists(lists) {\n    // Flatten the list of lists into a single list\n    lists = lists.flat();\n\n    // Initialize an empty object to hold the frequency counts\n    const frequency = {};\n\n    // Iterate over each element in the flattened list and update the frequency object\n    for (const element of lists) {\n        // If the element is already in the frequency object, increment its count\n        if (frequency[element]) {\n            frequency[element]++;\n        }\n        // Otherwise, add the element to the frequency object with a count of 1\n        else {\n            frequency[element] = 1;\n        }\n    }\n\n    // Return the frequency object\n    return frequency;\n}\n\n// Test the function\nconst lists = [[1, 2, 3], [2, 3, 4], [4, 5]];"
+      ],
+      [
+        "/**\n * Converts a decimal number to its binary representation.\n * \n * @param {number} dec - The decimal number to convert.\n * @returns {string} The binary representation of the decimal number.\n */\nfunction decimal_to_binary(dec) {\n    if (dec === 0) {\n        return '0';\n    }\n    let binary = '';\n    while (dec > 0) {\n        let remainder = dec % 2;\n        binary = remainder.toString() + binary;\n        dec = Math.floor(dec / 2);\n    }\n    return binary;\n}"
+      ],
+      [
+        "function next_smallest_palindrome(num) {\n    for (let i = num + 1; i < Number.MAX_SAFE_INTEGER; i++) {\n        if (i.toString() === i.toString().split('').reverse().join('')) {\n            return i;\n        }\n    }\n    return null; // Return null if no palindrome is found within the safe integer range\n}\n\nmodule.exports = next_smallest_palindrome; // Export the function"
+      ],
+      [
+        "function kth_element(arr, n, k) {\n    for (let i = 0; i < n; i = i + 1) {\n        for (let j = 0; j < n - i - 1; j = j + 1) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                //begin to write code\n                arr[j + 1] = arr[j + 1] + 1;\n            }\n        }\n    }\n    return arr[k - 1];\n}"
+      ],
+      [
+        "function snakeToCamel(string) {\n    return string.replace(/_\\w/g, (match) => match[1].toUpperCase());\n}"
+      ],
+      [
+        "function eulerian_num(n, m) {\n    if (m >= n || n === 0) {\n        return 0;\n    }\n    if (m === 0) {\n        return 1;\n    }\n    let eulerian = 0;\n    for (let k = 0; k <= m; k++) {\n        eulerian += ((1 - k / (n - m + 1)) * eulerian_num(m, k - 1) + (k / (n - m + 1)) * eulerian_num(n - m, m - k));\n    }\n    return Math.floor(eulerian);\n}"
+      ],
+      [
+        "//do not need to import any package\n\nfunction sortSublists(inputList) {\n    return inputList.map(sublist => sublist.sort((a, b) => a.localeCompare(b)));\n}"
+      ],
+      [
+        "function count(lsg) {\n  let count = 0;\n  for (let i = 0; i < lsg.length; i++) {\n    if (lsg[i] === true) {\n      count++;\n    }\n  }\n  return count;\n}"
+      ],
+      [
+        "function add_lists(tuples, lists) {\n  if (tuples.length !== lists.length) {\n    throw new Error(\"The number of tuples and lists must be equal.\");\n  }\n\n  return tuples.map((tuple, index) => {\n    if (tuple.length !== lists[index].length) {\n      throw new Error(\"The number of elements in each tuple and list must be equal.\");\n    }\n\n    return tuple.map((element, elementIndex) => element + lists[index][elementIndex]);\n  });\n}"
+      ],
+      [
+        "const dgram = require('dgram');\nfunction count_Hexadecimal(L, R) {\n    let count = 0;\n    for (let i = L; i <= R + 1; i++) {\n        if (i >= 10 && i <= 15) {\n            count += 1;\n        } else if (i > 15) {\n            let p = i;\n            while (p !== 0) {\n                let remainder = p % 16;\n                if (remainder >= 10 && remainder <= 15) {\n                    count += 1;\n                    break;\n                }\n                p = Math.floor(p / 16);\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "/**\n * Merge multiple sorted arrays using the heap queue algorithm.\n * @param {number[]} num - The numbers array.\n * @param {number[]} arr - The second numbers array.\n * @param {number[]} merge - The third numbers array.\n * @returns {number[]} - The merged and sorted array.\n */\nfunction merge_sorted_lists(num, arr, merge) {\n  const minHeap = [];\n  const output = [];\n\n  // Helper function to add an element to the heap\n  const addToHeap = (array, index) => {\n    if (index < array.length) {\n      heapq.heappush(minHeap, { value: array[index], index, array });\n    }\n  };\n\n  // Initialize the heap with the first elements of each array\n  addToHeap(num, 0);\n  addToHeap(arr, 0);\n  addToHeap(merge, 0);\n\n  // Merge the sorted arrays\n  while (minHeap.length > 0) {\n    const { value, index, array } = heapq.heappop(minHeap);\n    output.push(value);\n    addToHeap(array, index + 1);\n  }\n\n  return output;\n}\n\nconst num = [1, 3, 5, 7, 9];\nconst arr = [2, 4, 6, 8, 10];\nconst merge = [0, 11, 12, 13, 14];"
+      ],
+      [
+        "Complete code:\n\nfunction odd_Equivalent(s, n) {\n    let count = 0;\n    for (let i = 0; i < n; i++) {\n        if (s[i] === '1') {\n            count++;\n        }\n    }\n    return count % 2 !== 0;\n}\n\n// Test the function\nconst s = \"1100101\";\nconst n = s.length;"
+      ],
+      [
+        "function extract_missing(test_list, sgrt_val, stop_val) {\n    let res = [];\n    for (let sub of test_list) {\n        if (sub[0] > sgrt_val) {\n            res.push([sgrt_val, sub[0]]);\n            sgrt_val = sub[1];\n        }\n    }\n    if (sgrt_val < stop_val) {\n        res.push([sgrt_val, stop_val]);\n    }\n    return res;\n}\n\n// Example usage\n\n// Output: [[0, 1], [3, 5], [7, 8]]"
+      ],
+      [
+        "function commonInNestedLists(nestedList) {\n  \n    const sets = nestedList.map(sublist => new Set(sublist));\n    \n    const intersection = sets.reduce((accumulator, set) => {\n        return new Set([...accumulator].filter(x => set.has(x)));\n    }, new Set());\n\n    return Array.from(intersection);\n}"
+      ],
+      [
+        "/**\n * @param {number} width - width of the cylinder\n * @param {number} radius - radius of the cylinder\n * @returns {number} the perimeter of the cylinder\n */\nfunction perimeter(width, radius) {\n  // calculates the circumference of the base of the cylinder\n  const circumference = 2 * Math.PI * radius;\n  // adds the width of the cylinder to the base circumference to get the perimeter of the cylinder\n  return circumference + width;\n}"
+      ],
+      [
+        "function checkInteger(text) {\n    text = text.trim();\n    if (text.length < 1) {\n        return null;\n    } else {\n        if (text.split('').every((char, i) => \"0123456789\".includes(text[i]))) {\n            return true;\n        } else {\n            return false;\n        }\n    }\n}"
+      ],
+      [
+        "Object.keys(freq).map(item => JSON.parse(item)).forEach((item, index) => res.push([...item, freq[JSON.stringify(item)]]))\n\n  return res;\n}"
+      ],
+      [
+        "function areAllDictsEmpty(listOfObjects) {\n  for (let obj of listOfObjects) {\n    if (Object.keys(obj).length > 0) {\n      return false;\n    }\n  }\n  return true;\n}"
+      ],
+      [
+        "Complete code:\nfunction tupleToInt(parts) {\n    const var_0 = '';\n    let i = parseInt(parts.join(var_0));\n    return i;\n}"
+      ],
+      [
+        "function list_to_float(var_3) {\n    let var_1 = [];\n    for (let var_4 of var_3) {\n        let var_2 = [];\n        for (let var_0 of var_4) {\n            if (isNaN(var_0)) {\n                var_2.push(var_0);\n            } else {\n                var_2.push(parseFloat(var_0));\n            }\n        }\n        var_1.push(var_2);\n    }\n    return var_1;\n}"
+      ],
+      [
+        "const https = require('https');\nfunction stringToList(hgrimg) {\n    let lst = hgrimg.split(\" \");\n    return lst;\n}"
+      ],
+      [
+        "function findUnique(arr) {\n    let left = 0, right = arr.length - 1;\n    while (left < right) {\n        let mid = Math.floor((left + right) / 2);\n        if ((mid % 2 === 0 && arr[mid] === arr[mid + 1]) || (mid % 2 === 1 && arr[mid] === arr[mid - 1])) {\n            left = mid + 1;\n        } else {\n            right = mid;\n        }\n    }\n    return arr[left];\n}"
+      ],
+      [
+        "/**\n * Find the maximum product from the pairs of tuples within a given list.\n * @param {Array} args - A list of tuples.\n * @returns {Number} The maximum absolute product of the pairs.\n */\nfunction max_product_tuple(args) {\n    return Math.max(...args.map(([x, y]) => Math.abs(x * y)));\n}"
+      ],
+      [
+        "function findTripletWithSum(nums, sum) {\n  nums.sort((a, b) => a - b);\n  for (let i = 0; i < nums.length - 2; i++) {\n    let left = i + 1;\n    let right = nums.length - 1;\n    while (left < right) {\n      const currentSum = nums[i] + nums[left] + nums[right];\n      if (currentSum === sum) {\n        return [i, left, right];\n      } else if (currentSum < sum) {\n        left++;\n      } else {\n        right--;\n      }\n    }\n  }\n  return null;\n}"
+      ],
+      [
+        "Complete code:\nconst MAX = 3000;\nfunction smartNumber(n) {\n    const primes = new Array(MAX).fill(0);\n    const result = [];\n    {\n        let i = 2;\n        while(i < MAX){\n            if (primes[i] === 0) {\n                primes[i] = 1;\n                let j = i * 2;\n                while (j < MAX) {\n                    primes[j] -= 1;\n                    j += i;\n                }\n            }\n            i++;\n        }\n        \n        for(let k = 2; k < MAX; k++){\n            if(primes[k] === -k){\n                result.push(k);\n                if(result.length === n){\n                    return result[n-1];\n                }\n            }\n        }\n    }\n}"
+      ],
+      [
+        "function amicable_numbers_sum(limit) {\n    if (typeof limit !== 'number' || !Number.isInteger(limit)) {\n        return \"Input is not an integer!\";\n    }\n    if (limit < 1) {\n        return \"Input must be bigger than 0!\";\n    }\n    let sum = 0;\n    for (let i = 2; i <= limit; i++) {\n        let divisorSum = getSumOfDivisors(i);\n        if (i !== divisorSum && getSumOfDivisors(divisorSum) === i) {\n            sum += i;\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "/*\n* Get the angle of a complex number\n* @param {number} real - the real part of the complex number\n* @param {number} imag - the imaginary part of the complex number\n* @return {number} the angle of the complex number in radians\n*/\nfunction angle_complex(real, imag) {\n    const angle = Math.atan2(imag, real);\n    return angle;\n}\n\n// Test the function"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\n    for (let var_1 = 0; var_1 < var_3; var_1 = var_1 + 1) {\n        var_0 = var_0 + ((var_4[var_1] === '0' ? 1 : -1));\n        if (var_0 < 0) {\n            var_0 = 0;\n        }\n        if (var_2 < var_0) {\n            var_2 = var_0;\n        }\n    }\n    return var_2;\n}"
+      ],
+      [
+        "function sumOfCommonDivisors(A, B) {\n    let min = Math.min(A, B);\n    let sum = 0;\n    for (let i = 1; i <= min; i++) {\n        if (A % i === 0 && B % i === 0) {\n            sum += i;\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function multiply_int(var_0, var_1) {\n    if (var_1 < 0) {\n        return -multiply_int(var_0, -var_1);\n    } else if (var_1 === 0) {\n        return 0;\n    } else {\n        return var_0 + multiply_int(var_0, var_1 - 1);\n    }\n}"
+      ],
+      [
+        "Complete code:\nfunction longWords(n, str) {\n    let wordLen = [];\n    let txt = str.split(\" \");\n    for (let x of txt) {\n        if (x.length > n) {\n            wordLen.push(x);\n        }\n    }\n    return wordLen;\n}"
+      ],
+      [
+        "let magic_square_test = function(my_matrix) {\n    let magicSum = 0;\n    for (let i = 0; i < my_matrix.length; i++) {\n        magicSum += my_matrix[i][0];\n    }\n    let isMagic = true;\n    for (let i = 1; i < my_matrix.length; i++) {\n        for (let j = 0; j < my_matrix[0].length; j++) {\n            if (my_matrix[i][j] !== my_matrix[0][j]) {\n                isMagic = false;\n                break;\n            }\n        }\n        if (!isMagic) {\n            break;\n        }\n    }\n    return isMagic && my_matrix.length === my_matrix[0].length && magicSum * 3 === my_matrix[0].reduce((a, b) => a + b, 0) * my_matrix.length;\n}"
+      ],
+      [
+        "function max_occurrences(nums) {\n    const dict = {};\n    for (let i of nums) {\n        if (!(dict[i])) {\n            dict[i] = 1;\n        }\n        else {\n            dict[i] += 1;\n        }\n    }\n    let maxCount = 0;\n    let maxValue = null;\n    for (let key in dict) {\n        if (dict[key] > maxCount) {\n            maxCount = dict[key];\n            maxValue = key;\n        }\n    }\n    return parseInt(maxValue);\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)\nfunction reverse_vowels(var_2) {\n    let var_3 = \"\";\n    for (const var_0 of var_2) {\n        if (\"aeiouAEIOU\".includes(var_0)) {\n            var_3 = var_3 + (var_0);\n        }\n    }\n    let var_1 = \"\";\n    for (const var_0 of var_2) {\n        if (\"aeiouAEIOU\".includes(var_0)) {\n            var_1 = var_1 + (var_3.pop());\n        } else {\n            var_1 = var_1 + (var_0);\n        }\n    }\n    return var_1;\n}"
+      ],
+      [
+        "function tup_string(tup1) {\n  return tup1.join('');\n}"
+      ],
+      [
+        "function sum_negativenum(nums) {\n  const\n negativeNums = nums.filter(num => num < 0);\n//This is a comment line.\n  const sum = negativeNums.reduce((accumulator, currentValue) => accumulator + currentValue, 0);\n  return sum;\n}"
+      ],
+      [
+        "function check_last(test, count, loop) {\n    let result = 0;\n    for (let j = 0; j < count; j++) {\n        result += test[j];\n    }\n    if (loop === 1) {\n        if (result % 2 === 0) {\n            return 'ODD';\n        } else {\n            return 'EVEN';\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "Complete code:\nconst process = require('child_process');\nfunction hexagonal_num(num) {\n  return num * (2 * num - 1);\n}"
+      ],
+      [
+        "function cal_electbill(var_2) {\n    let var_0;\n    let var_1;\n    if (var_2 < 50) {\n        var_0 = var_2 * 2.60;\n        var_1 = 25;\n    } else if (var_2 <= 100) {\n        var_0 = 130 + ((var_2 - 50) * 3.25);\n        var_1 = 35;\n    } else {\n        var_0 = 180 + ((var_2 - 100) * 4.25) + 25;\n        var_1 = 55;\n    }\n    return var_0 + var_1;\n}"
+      ],
+      [
+        "function zero_count(list) {\n    let N = list.length;\n    let zeroCount = list.filter(item => item === 0).length;\n    return zeroCount / N;\n}"
+      ],
+      [
+        "function circle_circumference(radius) {\n    let circumference = 2 * 3.1415 * radius;\n    return circumference;\n}"
+      ],
+      [
+        "function extract_singly(test_list) {\n  const res = [];\n  const temp = new Set();\n  for (const inner of test_list) {\n    for (const ele of inner) {\n      if (!temp.has(ele)) {\n        temp.add(ele);\n      } else {\n        temp.delete(ele);\n      }\n    }\n  }\n  for (const ele of temp) {\n    res.push(ele);\n  }\n  return res;\n}"
+      ],
+      [
+        "function pancakeSort(var_2) {\n    let var_0 = var_2.length;\n    while (var_0 > 1) {\n        let var_1 = var_2.indexOf(Math.max(...var_2.slice(0, var_0)));\n        var_2 = var_2.slice(0, var_1 + 1).reverse().concat(var_2.slice(var_1 + 1));\n        var_0--;\n    }\n    return var_2;\n}"
+      ],
+      [
+        "function count_samepair(list1, list2, list3) {\n    let rvhuog = 0;\n    for (let i = 0; i < list1.length; i++) {\n        if (list1[i] === list2[i] && list2[i] === list3[i]) {\n            rvhuog++;\n        }\n    }\n    return rvhuog;\n}"
+      ],
+      [
+        "//Complete code (including all the content of the code I provided and the code you generated)\nfunction countNestedArrays(tuple) {\n    let count = 0;\n    if (Array.isArray(tuple)) {\n        for (let i = 0; i < tuple.length; i++) {\n            count += countNestedArrays(tuple[i]) + isNestedArray(tuple[i]);\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function max_Abs_Diff(arr, n) { \n    let minEle = arr[0];\n    let maxEle = arr[0];\n    \n    for(let i = 1; i < n; i++){\n        minEle = Math.min(minEle, arr[i]);\n        maxEle = Math.max(maxEle, arr[i]);\n    }\n    \n    return maxEle - minEle;\n}"
+      ],
+      [
+        "function ascii_value_string(str1) {\n    let total_ascii = 0;\n    for (let i = 0; i < str1.length; i++) {\n        total_ascii += str1.charCodeAt(i);\n    }\n    return total_ascii;\n}"
+      ],
+      [
+        "//Here is the completed code:\nfunction max_path_sum(tri, m, n) {\n    let i = m - 1;\n    while(i >= 0) {\n        let j = 0;\n        while(j <= i) {\n            if (tri[i + 1][j] > tri[i + 1][j + 1]) {\n                tri[i][j] += tri[i + 1][j];\n            } else {\n                tri[i][j] += tri[i + 1][j + 1];\n            }\n            j++;\n        }\n        i--;\n    }\n    return tri[0][0];\n}"
+      ],
+      [
+        "function closest(x) {\n    if (x < 10) return 1; // if x is less than 10, return 1\n    let maxSum = 0; // initialize maxSum to 0\n    let closestNum = 0; // initialize closestNum to 0\n    for (let i = x / 2; i <= x; i++) {\n        const sum = sum_digits_single(i) + sum_digits_single(x - i); // calculate the sum of digits for both numbers\n        if (sum > maxSum) { // if the sum is greater than maxSum\n            maxSum = sum; // update maxSum\n            closestNum = i; // update closestNum\n        }\n    }\n    return closestNum; // return the closest number\n}"
+      ],
+      [
+        "function longest_subseq_with_diff_one(arr, n) {\n    let dp = new Array(n).fill(1);\n\n\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < i; j++) {\n            if (arr[i] === arr[j] + 1 || arr[i] === arr[j] - 1) {\n                dp[i] = Math.max(dp[i], dp[j] + 1);\n            }\n        }\n    }\n\n\n    let max = 1;\n    for (let i = 0; i < n; i++) {\n        max = Math.max(max, dp[i]);\n    }\n\n\n    return max;\n}"
+      ],
+      [
+        "function doesContainB(a, b, c) {\n    if (a === b) {\n        return true;\n    }\n    let i = 1;\n    while (true) {\n        let x = a * i + b;\n        if (x === c) {\n            return true;\n        }\n        if (x > c) {\n            return false;\n        }\n        i++;\n    }\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\nconst var_2 = require('readline');\n//function difinition\nfunction gcd(var_0, var_1) {\n    while (var_1 !== 0) {\n        let var_3 = var_1;\n        var_1 = var_0 % var_1;\n        var_0 = var_3;\n    }\n    return var_0;\n}\n\nfunction areCoPrime(var_4, var_5) {\n    return gcd(var_4, var_5) === 1;\n}\n-----------------------------"
+      ],
+      [
+        "function mergeSort(arr) {\n    if (arr.length <= 1) {\n        return arr;\n    }\n\n    // Find the middle of the array\n    const mid = Math.floor(arr.length / 2);\n\n    // Split the array into two halves\n    const left = arr.slice(0, mid);\n    const right = arr.slice(mid);\n\n    // Recursively sort the two halves\n    const sortedLeft = mergeSort(left);\n    const sortedRight = mergeSort(right);\n\n    // Merge the two sorted halves\n    return merge(sortedLeft, sortedRight);\n}\n\nfunction merge(left, right) {\n    const result = [];\n    while (left.length > 0 && right.length > 0) {\n        if (left[0] < right[0]) {\n            result.push(left.shift());\n        } else {\n            result.push(right.shift());\n        }\n    }\n\n    // If there are any remaining elements in either the left or the right array, add them to the result\n    return result.concat(left).concat(right);\n}"
+      ],
+      [
+        "function findParabolaVertex(a, b, c) {\n    //The formula for the vertex of a parabola is (-b / (2 * a), (4 * a * c - b^2) / (4 * a))\n    return [-(b / (2 * a)), (4 * a * c - b * b) / (4 * a)];\n}"
+      ],
+      [
+        "function specified_element(nums, M) {\n    let result = [];\n    for (let i = 0; i < nums.length; i++) {\n        result.push(nums[i][M]);\n    }\n    return result;\n}"
+      ],
+      [
+        "while (temp > var_2 ) {\n        const var_3 = 2;\n        if (1 === count % var_3 ) {\n            // Toggle the even bit\n            const var_4 = 1;\n            res |= (var_4 << count);\n        }\n        count += var_1;\n        temp >>= var_1;\n    }\n    return n ^ res;\n}\n\n// Example usage\nconst result = evenBitToggleNumber(0b101010);"
+      ],
+      [
+        "function encodeList(data) {\n    const list = [];\n    let last = null;\n    let index = 0;\n    for (const c of data) {\n        if (c !== last) {\n            if (last !== null) {\n                list.push([index, last]);\n            }\n            last = c;\n            index = 1;\n        } else {\n            index++;\n        }\n    }\n    if (last !== null) {\n        list.push([index, last]);\n    }\n    return list;\n}"
+      ],
+      [
+        "function min_Ops(x, i, f) {\n    const sum = 0;\n    const total = 0;\n    let max = Math.max(...x);\n    let min = sum;\n    for (let j = total ; j < i; j++) {\n        const false = 0;\n        if ((max - x[j]) % f !== false ) {\n            const true = 1;\n            return -true;\n        }\n    }\n    return min;\n}"
+      ],
+      [
+        "function month_season(day, year) {\n    let month;\n    if (['January', 'February', 'March'].includes(day)) {\n        month = 'winter';\n    } else if (['April', 'May', 'June'].includes(day)) {\n        month = 'spring';\n    } else if (['July', 'August', 'September'].includes(day)) {\n        month = 'summer';\n    } else {\n        month = 'autumn';\n    }\n    if (('March' === day) && (year > 19)) {\n        month = 'spring';\n        return month; // Return the season after checking the date\n    }\n    return month; // Return the season without checking the date\n}"
+      ],
+      [
+        "function solution(a, b, n) {\n    let i = 0;\n    for(;(i * a <= n);){\n        if ((n - (i * a)) % b == 0) {\n            return [\"x = \", i, \", y = \", Math.floor((n - (i * a)) / b)];\n        }\n        i++;\n    }\n    return \"No solution\";\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated):\n-----------------------------\nfunction remove_elements(lrht1, list2) {\n    const\n result = lrht1.filter(x => !list2.includes(x));\n    return result;\n}\n-----------------------------"
+      ],
+      [
+        "function sumSeries(n) {\n  if (n < 1) {\n    return 0;\n  } else if (n === 1) {\n    return 1;\n  } else {\n    return n + sumSeries(n - 2);\n  }\n}"
+      ],
+      [
+        "const dgram = require('dgram');\nfunction divSum(n) { \n    let sum = 1; \n    let i = 2; \n    for(;(i * i <= n);){ \n        if (n % i === 0) { \n            sum += i + Math.floor(n / i); \n        } \n        i++; \n    } \n    return sum; \n}\n\nfunction checkDivSum(n, m) {\n    return divSum(n) === divSum(m);\n}"
+      ],
+      [
+        "function count_char_position(var_2) {\n    let var_0 = 0;\n    for (let var_1 = 0; var_1 < var_2.length; var_1 = var_1 + 1) {\n        if (var_1 === var_2.charCodeAt(var_1) - 'A'.charCodeAt(0) ||\n            var_1 === var_2.charCodeAt(var_1) - 'a'.charCodeAt(0)) {\n            var_0 = var_0 + 1;\n        }\n    }\n    return var_0;\n}"
+      ],
+      [
+        "// Complete code\nconst find_even_Pair = (arr) => {\n    let count = 0;\n    for(let i = 0; i < arr.length - 1; i++) {\n        for(let j = i + 1; j < arr.length; j++) {\n            if((arr[i] ^ arr[j]) % 2 === 0) {\n                count++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function next_Power_Of_2(var_1) {\n    let var_0 = 0;\n    if (var_1 && !((var_1 - 1) & var_1)) {\n        return var_1;\n    }\n    //begin to write code\n    while (var_1 > 1) {\n        var_1 = var_1 >> 1;\n        var_0++;\n    }\n    return Math.pow(2, var_0 + 1);\n}"
+      ],
+      [
+        "function frequency(y, z) {\n    let temp = 0;\n    for (let t of y) {\n        if (t === z) {\n            temp++;\n        }\n    }\n    return temp;\n}"
+      ],
+      [
+        "function get_pell(n) {\nconst var_0 = 2;\nconst var_1 = 1;\nconst var_2 = 2;\n\n\n    if (n <= var_0 ) {\n        return n;\n    }\n    for (let i = var_0 + 1; i <= n; i++ ) {\n        let a = var_1;\n        let b = var_2;\n        var_2 = a + b * 2;\n        var_1 = b;\n    }\n    return var_2;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n \n    sum = sum + self.data[j];\n    }\n    return sum;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nfunction perimeter_pentagon(sideLength) {\n  return 5 * sideLength;\n}"
+      ],
+      [
+        "result++;\n            j++;\n            j++;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function remove_splchar(text) {\n    // Regular expression to match non-alphanumeric characters\n    const regex = /[^a-zA-Z0-9]/g;\n    // Remove non-alphanumeric characters\n    return text.replace(regex, '');\n}"
+      ],
+      [
+        "function isValidParentheses(str1) {\n    let stack = [];\n    let pchar = { \"(\": \")\", \"{\": \"}\", \"[\": \"]\" };\n    for (const parenthese of str1) {\n        if (pchar.hasOwnProperty(parenthese)) {\n            stack.push(parenthese);\n        } else {\n            if (!stack.length || pchar[stack.pop()] !== parenthese) {\n                return false;\n            }\n        }\n    }\n    return stack.length === 0;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nfunction answer(var_0, var_1) {\n    if (var_0 * 2 <= var_1) {\n        return [var_0, var_0 * 2];\n    }\n    return [-1];\n}"
+      ],
+      [
+        "/**\n * Searches for literals strings in a string and returns whether a match was found\n * @param {string[]} patterns - Array of literal strings to search for\n * @param {string} text - Text to search within\n * @returns {string} 'Matched!' if any of the patterns are found, 'No match found' otherwise\n */\nfunction string_literals(patterns, text) {\n  for (let pattern of patterns) {\n    if (text.includes(pattern)) {\n      return 'Matched!';\n    }\n  }\n  return 'No match found';\n}"
+      ],
+      [
+        "while (next_term < x) {\n        next_term = terms.reduce((sum, term) => sum + term, 0);\n        terms.shift();\n        terms.push(next_term);\n    }\n\n    return next_term === x;\n}"
+      ],
+      [
+        "function calculateDistance(lon1, lat1, lon2, lat2) {\n    const R = 6371; // Radius of the earth in km\n    const dLat = deg2rad(lat2-lat1);  // deg2rad below\n    const dLon = deg2rad(lon2-lon1); \n    const a = \n      Math.sin(dLat/2) * Math.sin(dLat/2) +\n      Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * \n      Math.sin(dLon/2) * Math.sin(dLon/2)\n      ; \n    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); \n    const distance = R * c; // Distance in km\n    return distance;\n}\n\nfunction deg2rad(deg) {\n  return deg * (Math.PI/180)\n}"
+      ],
+      [
+        "function findCharacter(var_1) {\n  const var_3 = var_1.match(/[A-Z]/g) || [];\n  const var_0 = var_1.match(/[a-z]/g) || [];\n  const var_4 = var_1.match(/[0-9]/g) || [];\n  const var_5 = var_1.match(/[^a-zA-Z0-9]/g) || [];\n\n  return {\n    uppercase: var_3,\n    lowercase: var_0,\n    numeric: var_4,\n    specialCharacter: var_5\n  };\n}"
+      ],
+      [
+        "Complete code:\nconst util = require('util');\nfunction count_pairs(arr, n, k) {\n    let count = 0;\n    for (let i = 0; i < n; i++) {\n        for (let j = 1 + i; j < n; j++) {\n            if (k === Math.abs(arr[i] - arr[j])) {\n                count++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "// complete the function\nreturn focus;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function longest_common_subsequence(X, Y, m, n) {\n    let matrix = new Array(m+1).fill(0).map(() => new Array(n+1).fill(0));\n  \n    for(let i = 0; i <= m; i++){\n        for(let j = 0; j <= n; j++){\n            if(i === 0 || j === 0){\n                matrix[i][j] = 0;\n            }\n            else if(X[i-1] === Y[j-1]){\n                matrix[i][j] = matrix[i-1][j-1] + 1;\n            }\n            else {\n                matrix[i][j] = Math.max(matrix[i-1][j], matrix[i][j-1]);\n            }\n        }\n    }\n    \n    return matrix[m][n];\n}"
+      ],
+      [
+        "function prod_Square(n) {\n    for (let i = 2; i * i <= n; i++) {\n        if (n % (i * i) === 0) {\n            let otherFactor = n / (i * i);\n            if (otherFactor > 0 && Math.sqrt(otherFactor) % 1 === 0) {\n                return true;\n            }\n        }\n    }\n    return false;\n}"
+      ],
+      [
+        "function first_Missing_Positive(arr, n) { \n    let start = 0, end = n - 1; \n    while (start <= end) { \n        let mid = Math.floor((start + end) / 2); \n        if (arr[mid] <= 0) \n            start = mid + 1; \n        else\n            end = mid - 1; \n    } \n  \n    if (start == n) \n        return (start + 1); \n  \n    if (arr[start] != start + 1) \n        return (start + 1); \n  \n    start = 0; \n    while (start < n) { \n        let ind = Math.abs(arr[start]) - 1; \n        if (arr[ind] > 0) \n            arr[ind] = -arr[ind]; \n        start++; \n    } \n    start = 0; \n    while (start < n) { \n        if (arr[start] > 0) \n            return (start + 1); \n        start++; \n    } \n    return (n + 1); \n}"
+      ],
+      [
+        "function countIntegralPoints(x1, y1, x2, y2) {\n  let count = 0;\n  for(let i = x1 + 1; i < x2; i++) {\n    for(let j = y1 + 1; j < y2; j++) {\n      count++;\n    }\n  }\n  return count;\n}"
+      ],
+      [
+        "function check_monthnumber(monthname3) {\n    if (monthname3 === \"April\" || monthname3 === \"June\" || monthname3 === \"September\" || monthname3 === \"November\") {\n        return true;\n    } else {\n        return false;\n    }\n}"
+      ],
+      [
+        "function check_String(var_3) {\n    let var_0 = false;\n    let var_1 = false;\n    for (let var_2 of var_3) {\n        if (var_2.match(/[a-zA-Z]/)) {\n            var_0 = true;\n        } else if (var_2.match(/\\d/)) {\n            var_1 = true;\n        }\n        if (var_0 && var_1) {\n            return true;\n        }\n    }\n    return false;\n}"
+      ],
+      [
+        "/**\n * Function to remove duplicates from a given tuple.\n * @param {Array} test_tup - The tuple from which to remove duplicates.\n * @return {Array} - A new tuple with duplicates removed.\n */\nfunction remove_tuple(test_tup) {\n    const res = [...new Set(test_tup)];\n    return res;\n}"
+      ],
+      [
+        "function octalToDecimal(n) {\n  let num = n; \n  let dec_value = 0; \n  let base = 1; \n  let temp = num; \n  while (temp) { \n    let last_digit = temp % 10; \n    temp = Math.floor(temp / 10); \n    dec_value += last_digit * base; \n    base = base * 8; \n  } \n  return dec_value; \n}"
+      ],
+      [
+        "function remove_tuples(var_3, var_0) {\n  let var_2 = var_3.filter(var_1 => var_1.length !== var_0);\n  return var_2;\n}"
+      ],
+      [
+        "// Complete the code here\nconst find_exponentio = (test_tup1, test_tup2) => {\n  // Calculate the exponentiation of corresponding elements from the two tuples\n  return test_tup1.map((num, index) => Math.pow(num, test_tup2[index]));\n};"
+      ],
+      [
+        "for (let i = n; i > 0; i--) {\n    if ((i & (i - 1)) === 0) {\n        res = i;\n        return res;\n    }\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "function chkList(lst) {\n  let firstElement = lst[0];\n  for (let i = 1; i < lst.length; i++) {\n    if (lst[i] !== firstElement) {\n      return false;\n    }\n  }\n  return true;\n}"
+      ],
+      [
+        "function remove_even(str1) {\n    let str2 = '';\n    for (let r = 1; r <= str1.length; r = r + 1) {\n        if (r % 2 !== 0) {\n            str2 += str1[r - 1];\n        }\n    }\n    return str2;\n}"
+      ],
+      [
+        "j >>= 1;\n    }\n    return i;\n  }"
+      ],
+      [
+        "for (let i = 0; i < s.length; i++) {\n    if (c === s[i]) {\n        res++;\n    }\n}\nreturn res;"
+      ],
+      [
+        "function inversionElements(e) {\n  const elements = e.map(i => ~i);\n  \n  // Your generated code here\n}"
+      ],
+      [
+        "const url = require('url');\nfunction concatenateElements(testTup) {\n  const res = testTup.slice(0, -1).map((item, index) => item + testTup[index + 1]);\n  return res;\n}"
+      ],
+      [
+        "}\n    return dp[n][n];\n}"
+      ],
+      [
+        "//The function checks if a given decimal number with precision up to 2 is correct using regex\nfunction is_decimal(number) {\n  const regex = new RegExp(\"^[0-9]+(\\\\.[0-9]{1,2})?$\");\n  return regex.test(number);\n}"
+      ],
+      [
+        "const heapReplace = (heap, z) => {\n    // Use sort to ensure the heap is sorted before the replacement\n    heap.sort((a, b) => a - b);\n    // Replace the smallest element (first element of the sorted heap) with the new item\n    heap[0] = z;\n    // No need to sort the heap again as it is already sorted after replacement\n    return heap;\n};"
+      ],
+      [
+        "function count_Num(num) {\n    let count = 0;\n    for (let i = 0; i < num; i++) {\n        let setOth = (i & (1 << 0)) === (1 << 0);\n        let setNth = (i & (1 << num - 1)) === (1 << num - 1);\n        if (setOth && setNth) {\n            count++;\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function fourth_Power_Sum(n) { \n    let sum = 0;\n    for (let i = 1; i <= n; i++) {\n        sum += Math.pow(i, 4);\n    }\n    return sum;\n}"
+      ],
+      [
+        "function concatenateStrings(test, result) {\n  if (Array.isArray(test) && Array.isArray(result)) {\n    let concatenatedResult = [];\n    let temp = result.slice(0, test.length);\n\n    test.forEach((testString, index) => {\n      concatenatedResult.push(testString + temp[index]);\n    });\n\n    if (result.length > test.length) {\n      concatenatedResult = concatenatedResult.concat(result.slice(test.length));\n    }\n\n    return concatenatedResult;\n  } else {\n    throw new Error('Both input must be arrays');\n  }\n}"
+      ],
+      [
+        "return degrees;\n}\n\n// Test the function"
+      ],
+      [
+        "const _ = require('lodash');\n\nfunction decodeList(alist) {\n    function aux(g) {\n        if (Array.isArray(g)) {\n            return [\n[g[1], _.times(g[0], _.identity)]];\n        } else {\n           //begin to write code\n           let temp_var_5 = 9.9;temp_var_5 = temp_var_5 + 1;\n        }\n    }\n\n    return alist.flatMap(aux);\n}"
+      ],
+      [
+        "function check_subset_list(var_2, var_3) {\n    let var_0 = true;\n    for (let var_1 of var_3) {\n        if (!var_2.includes(var_1)) {\n            var_0 = false;\n            break;\n        }\n    }\n    return var_0;\n}"
+      ],
+      [
+        "const gcd = (a, b) => {\n    for(;(b != 0);){\n        let t = b;\n        b = a % b;\n        a = t;\n    }\n    return a;\n}\n\nconst lcm = (a, b) => {\n    return (a*b) / gcd(a, b);\n}\n\nconst minOperations = (x, y) => {\n    if(x > y) return -1;\n\n    let l = lcm(x, y);\n\n    // Divide l by x to get number of operations\n    let ans = l / x;\n\n    return ans;\n}"
+      ],
+      [
+        "//No other function or package is needed for this task\n\nfunction extract_min_max(data, min) {\n    //Function implementation\n    let result = [];\n    data = Array.from(data);\n    let sort = [...data].sort((A, B) => A - B);\n    for (let i = 0; i < sort.length; i++) {\n        let j = sort[i];\n        if (min) {\n            // Extract minimum k elements\n            result.push(sort[i]);\n            if (result.length === k) break;\n        } else {\n            // Extract maximum k elements\n            result.unshift(sort[i]);\n            if (result.length === k) break;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "} else {\n        return match;\n    }\n    }, n);\n}"
+      ],
+      [
+        "function firstEven(nums) {\n    const var_0 = 2;\n    const var_1 = 0;\n    const firstEven = nums.find(el => el % var_0 === var_1);\n\n    return firstEven;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\n//function difinition\nfunction check_type(geht_tfkov) {\n    let res = true;\n    for (let ele of goto_ftkov) {\n        if (typeof ele !== typeof goto_tfkov[0]) {\n            return false;\n        }\n    }\n    return true;\n}\n\n//begin to write code"
+      ],
+      [
+        "function is_majority(arr, n, x) {\n    let i = binary_search(arr, 0, n - 1, x);\n    if (i === -1) {\n        return false;\n    }\n    if (!((i + Math.floor(n / 2)) <= (n - 1) && arr[i + Math.floor(n / 2)] === x)) {\n        return false;\n    }\n    else {\n        return true;\n    }\n}\n\nfunction binary_search(arr, low, high, x) {\n    if (high >= low) {\n        let mid = Math.floor((high + low) / 2);\n        if ((mid === 0 || x > arr[mid - 1]) && (arr[mid] === x)) {\n            return mid;\n        } else if (x > arr[mid]) {\n            return binary_search(arr, (mid + 1), high, x);\n        } else {\n            return binary_search(arr, low, (mid - 1), x);\n        }\n    }\n    return -1;\n}"
+      ],
+      [
+        "while (var_1) { \n        var_0 += var_1 & 1;\n        var_1 >>= 1;\n    }"
+      ],
+      [
+        "return arr[high];"
+      ],
+      [
+        "Complete code:\nfunction odd_values_string(str) {\n  let result = \"\";\n  for (let i = 0; i < str.length; i++) {\n    if (0 === i % 2) {\n      result += str[i];\n    }\n  }\n  return result;\n}"
+      ],
+      [
+        "else {\n    var_3 = var_2;\n}\n//end to write code\n    return var_3;\n}"
+      ],
+      [
+        "Complete code:\n\nfunction re_arrange_array(arr, n) {\n    let j = 0;\n    for (let i = 0; i < n; i++) {\n        if (arr[i] < 0) {\n            let temp = arr[i];\n            arr[i] = arr[j];\n            arr[j] = temp;\n            j++;\n        }\n    }\n    return arr;\n}"
+      ],
+      [
+        "function replace_blank(str, char) {\n  return str.split(' ').join(char);\n}"
+      ],
+      [
+        "function max_sum(tri, n) {\n    // Initialize the first row of the triangle\n    for (let i = 1; i < n; i++) {\n        tri[i][0] = tri[i][0] + tri[i - 1][0];\n        tri[i][i] = tri[i][i] + tri[i - 1][i - 1];\n        // Start from the second last element of the row and move towards the center\n        for (let j = 1; j < i; j++) {\n            tri[i][j] = Math.max(tri[i - 1][j - 1], tri[i - 1][j]) + tri[i][j];\n        }\n    }\n    \n    // Find the maximum sum in the last row of the triangle\n    let maxSum = tri[n - 1][0];\n    for (let j = 1; j < n; j++) {\n        if (tri[n - 1][j] > maxSum) {\n            maxSum = tri[n - 1][j];\n        }\n    }\n    \n    return maxSum;\n}"
+      ],
+      [
+        "Complete code:\nfunction larg_nnum(list1, n) {\n    list1.sort((z, b) => b - z);\n    return list1.slice(0, n);\n}"
+      ],
+      [
+        "function lateralsuface_cylinder(r, s) {\n    let lateralsurface = 2 * 3.1415 * r * s;\n    // The lateralsurface of a cylinder is calculated using the formula 2 * pi * radius * slant height.\n    let a = 3.1415 * r * r;\n    //begin to write code\n    let b = s * r;\n    let lateral_surface_area = 2 * a + b;\n    return lateral_surface_area;\n}"
+      ],
+      [
+        "// Generated by using JavaScript Code Snippet Generator\n// Completed by JavaScript\n// function name: even_bit_set_number\n\n// Full Code\nconst readline = require('readline');\n\nfunction even_bit_set_number(n) {\n    let count = 0;\n    let res = 0;\n    let temp = n;\n    while (temp > 0) {\n        if (1 == count % 2) {\n            res = res | (1 << (count / 2));\n        }\n        count++;\n        temp = temp >> 1;\n    }\n    return (n | res);\n}"
+      ],
+      [
+        "function No_of_Triangle(N, K) {\n    if (!(N < K)) {\n        let Tri_up = 0;\n        //begin to write code\n        let temp_var_4 = 9.9;temp_var_4 = temp_var_4 + 1;\n        //To-do:\n        //1.Calculate the maximum number of triangles that can be formed\n        //2.Assign the result to Tri_up\n        //3.Return Tri_up\n    } else {\n        return -1;\n    }\n}"
+      ],
+      [
+        "function numberOfSubstrings(string) {\n    const length = string.length;\n    let count = 0;\n    for(let i=0; i<length; i++) {\n        for(let j=i+1; j<=length; j++) {\n            if(string.substring(i, j)) {\n                count++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function get_total_number_of_sequences(length, offset) {\n    let result = Array.from({ length: length + 1 }, () => Array(offset + 1).fill(0));\n    for (let k = 0; k <= length; k++) {\n        for (let i = 0; i <= offset; i++) {\n            if (k === 0 || i === 0) {\n                result[k][i] = 0;\n            } else if (k < i) {\n                result[k][i] = 0;\n            } else {\n                // The original code content must be fully included in the complete code you generate.\n                result[k][i] = result[k - 1][i] + result[k - 1][Math.floor(i / 2)];\n            }\n        }\n    }\n    return result[length][offset];\n}"
+      ],
+      [
+        "/**\n * Replace the last element of the list with another list.\n * @param {Array} list The original list.\n * @param {Array} item The list to replace the last element.\n * @return {Array} The updated list with the last element replaced.\n */\nfunction replaceList(list, item) {\n  list.splice(-1, 1, ...item);\n  return list;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "return total;\n}"
+      ],
+      [
+        "function sortOnOccurence(data) {\n    const result = {};\n    for (const [i, j] of data) {\n        if (!result[i]) result[i] = [];\n        result[i].push(j);\n    }\n\n    // sort by the length of the array in result object\n    return Object.entries(result).sort((a, b) => b[1].length - a[1].length);\n}"
+      ],
+      [
+        "Complete code:\nfunction next_Perfect_Square(N) {\n    let nextN = Math.floor(Math.sqrt(N)) + 1;\n    return nextN * nextN;\n}"
+      ],
+      [
+        "function max_sum(arr, n) {\n        let MSIBS = [...arr];\n        {\n            let i = 0;\n            for (; i < n; i++) {\n                {\n                    let j = 0;\n                    for (; j < i; j++) {\n                        if (arr[i] > arr[j] && MSIBS[i] < MSIBS[j] + arr[i]) {\n                            MSIBS[i] = MSIBS[j] + arr[i];\n                        }\n                    }\n                }\n            }\n        }\n        let MSDBS = [...arr];\n        {\n            let i = 1;\n            for (; i <= n; i++) {\n                let max_sum_till_now = MSIBS[i - 1];\n                let j = i - 1;\n                for (; j >= 0; j--) {\n                    if (arr[i] > arr[j]) {\n                        max_sum_till_now = Math.max(max_sum_till_now, MSDBS[j] + arr[i]);\n                    }\n                }\n                MSDBS[i] = max_sum_till_now;\n            }\n        }\n        return Math.max(...MSIBS, ...MSDBS);\n    }"
+      ],
+      [
+        "function babylonian_squareroot(number) {\n    if (0 === number) {\n        return 0;\n    }\n    let g = number / 2.0;\n    let g2 = 1 + g;\n    let epsilon = 1e-6;\n    do {\n        g = (g + number / g) / 2;\n        if (Math.abs(g2 - g) < epsilon) {\n            break;\n        }\n        g2 = g;\n    } while (true);\n    return g;\n}"
+      ],
+      [
+        "const buffer = require('buffer');\nfunction lps(str) {\n    const n = str.length;\n    const L = Array.from({ length: n }, () => new Array(n).fill(0));\n    for (let i = 0; i < n; i++) {\n        L[i][i] = 1;\n    }\n    for (let cl = 2; cl <= n; cl++) {\n        for (let i = 0; i < 1 + n - cl; i++) {\n            let j = i + cl - 1;\n            if (str[i] === str[j] && 2 === cl) {\n                L[i][j] = 2;\n            } else if (str[i] === str[j]) {\n                L[i][j] = L[i + 1][j - 1] + 2;\n            } else {\n                L[i][j] = Math.max(L[i][j - 1], L[i + 1][j]);\n            }\n        }\n    }\n    return L[0][n - 1];\n}"
+      ],
+      [
+        "function harmonic_sum(n) {\n  if (n < 2) {\n    return 1;\n  }\n  let temp_var_2 = 9.9 + 1;\n  return 1 / n + harmonic_sum(n - 1);\n}\n\n// Test the function"
+      ],
+      [
+        "function intersection_array(var_0, var_1) {\n    return var_0.filter(element => var_1.find(e => e === element));\n}"
+      ],
+      [
+        "function count_X(tup, x) { \n    const var_0 = 0;\n    let count = var_0 ;\n    for (let ele of tup) { \n        if (x === ele) { \n            count++; \n        } \n    } \n    return count;\n}"
+      ],
+      [
+        "/**\n * Insert an element before each element of a list.\n * \n * @param {Array} self The list to be processed.\n * @param {any} ele The element to be inserted.\n * @return {Array} The new list with the element inserted before each original element.\n */\nfunction insert_element(self, ele) {\n    let ret = [];\n    for (let l of self) {\n        ret.push(ele, l);\n    }\n    return ret;\n}"
+      ],
+      [
+        "// Convert complex numbers to polar coordinates\nfunction convert(numyeis) {\n    // Extracting the real and imaginary parts\n    const real = numyeis.real;\n    const imag = numyeis.imag;\n\n    // Calculating the magnitude (radius) and angle (theta)\n    const magnitude = Math.sqrt(real * real + imag * imag);\n    const angle = Math.atan2(imag, real);\n\n    // Returning the polar coordinates\n    return { magnitude, angle };\n}"
+      ],
+      [
+        "complete code (including all the content of the code I provided and the code you generated)\nfunction countInteger(list) {\n    let count = 0;\n    for (let item of list) {\n        if (Number.isInteger(item)) {\n            count++;\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "/**\n * This function takes a string as input and returns an array of words starting with 'a' or 'e'.\n * \n * @param {string} inputString - The string to be searched.\n * @return {Array} An array of words starting with 'a' or 'e'.\n */\nfunction words_ae(inputString) {\n    // Use regular expression to find all words starting with 'a' or 'e'.\n    const wordsArray = inputString.match(/a\\w*|e\\w*/g);\n    \n    // If no words are found, return an empty array.\n    if (!wordsArray) {\n        return [];\n    }\n    \n    return wordsArray;\n}\n\n// Example usage:"
+      ],
+      [
+        "current.push(l[i]);\ngenerateCombinations(current, i); // repetition allowed\ncurrent.pop();\ngenerateCombinations(current, i + 1);\n        \n    }\n    generateCombinations([], 0);\n\n    return combinations;\n}"
+      ],
+      [
+        "This code defines a function count_Primes_nums that takes a non-negative integer n as a parameter and returns the number of prime numbers less than n. It iterates through numbers from 2 up to n (exclusive) and checks each number for primality by dividing it by all numbers up to itself and checking for a remainder of zero. If the number is prime, it increments a counter variable ctr. After iterating through all numbers up to n, it returns the value of ctr, which represents the number of prime numbers less than n."
+      ],
+      [
+        "function swap_numbers(a, b) {\n    let temp = a;\n    a = b;\n    b = temp;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nconst maximize_elements = (var_3, var_4) => {\n    return var_3.map((var_5, var_1) => {\n        const var_6 = var_4[var_1];\n        return var_5.map((var_0, var_2) => {\n            return Math.max(var_0, var_6);\n        });\n    });\n}"
+      ],
+      [
+        "const twoPowN = Math.pow(2, prime + 2);\n    const nthPrime = twoPowN - 2;\n    return nthPrime;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "return (var_0 * 10.5);\n  } else if (var_0 <= 10) {\n    return (2 * 10.5 + (var_0 - 2) * 4);\n  } else {\n    return (2 * 10.5 + 4 * 7 + (var_0 - 10) * 5);\n  }\n}"
+      ],
+      [
+        "// function to split a list for every nth element\nfunction list_split(S, n) {\n  // Initialize an empty array to store the split lists\n  let result = [];\n  // Use a for loop to iterate over the input list with a step of n\n  for (let i = 0; i < S.length; i += n) {\n    // Use slice to extract the sublist from index i to index i + n\n    let sublist = S.slice(i, i + n);\n    // Add the sublist to the result array\n    result.push(sublist);\n  }\n  // Return the result array\n  return result;\n}"
+      ],
+      [
+        "function lateralsurface_cube(l) {\n    const LSA = 4 * (l * l);\n    return LSA;\n}"
+      ],
+      [
+        "//begin to write code\nconst querystring = require('querystring');\n\nfunction find_star_num(n) {\n    let star_count = 0;\n    let number = 1;\n\n    while (star_count < n) {\n        const stars_on_number = (number * (number + 1)) / 2;\n        star_count += stars_on_number;\n        number++;\n    }\n\n    return number - 1;\n}"
+      ],
+      [
+        "function ascii_value(p) {\n    return p.charCodeAt(0);\n}"
+      ],
+      [
+        "const path = require('path');\nfunction sum_even_and_even_index(arr, n) {\n    let sum = 0;\n    for (let i = 0; i < n; i += 2) {\n        if (0 === arr[i] % 2) {\n            sum += arr[i];\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "Complete code:\nconst url = require('url');\nfunction even_Power_Sum(m) { \n    let sum = 0; \n    for (let i = 1; i <= m; i++) { \n        let j = 2 * i; \n        sum += Math.pow(j, 5); \n    } \n    return sum; \n}"
+      ],
+      [
+        "return res;\n}"
+      ],
+      [
+        "Complete code:\nconst events = require('events');\nfunction\n subtractElements(testTuple1, testTuple2) {\n  return Array.from(testTuple1).map((element, index) => element - testTuple2[index]);\n}"
+      ],
+      [
+        "for (let j = 0; j < a[i]; j++) {\n    a[i] = a[i] + 1;\n}\nif (a[i] > maxx) {\n    maxx = a[i];\n    result = i;\n}\n}\nreturn result + 1;\n}"
+      ],
+      [
+        "function volume_cylinder(var_1, var_0) {\n  const var_2 = 3.1415 * var_1 * var_1 * var_0;\n  let temp_var_4 = 9.9;\n  temp_var_4 = temp_var_4 + 1;\n  return var_2;\n}"
+      ],
+      [
+        "return count;\n}"
+      ],
+      [
+        "/**\n * This function checks if a given number is a decagonal number or not.\n * @param {number} num - The number to check\n * @returns {boolean} True if the number is a decagonal number, False otherwise\n */\nfunction is_num_decagonal(num) {\n  // a decagonal number is of the form: 4 * n * (n - 3) + 1\n  // so we need to check if the remainder of num divided by 4 is 1\n  return num % 4 === 1;\n}\n\n/**\n * This function calculates the nth decagonal number.\n * @param {number} n - The nth decagonal number to calculate\n * @returns {number} The nth decagonal number\n */\nfunction nth_decagonal(n) {\n  // the nth decagonal number is the sum of the first n decagonal numbers, which are of the form:\n  // 4 * i * (i - 3) + 1, where i ranges from 1 to n\n  // so we can calculate it using the formula for the sum of an arithmetic sequence\n  const firstNDecagonalNumbers = n * (n + 1) * (2 * n + 1 - 3);\n  return 4 * firstNDecagonalNumbers + 1;\n}\n\nexport { is_num_decagonal, nth_decagonal };"
+      ],
+      [
+        "Complete code:\n\nfunction sequential_search(dlist, item) {\n    let pos = 0;\n    let found = 0;\n    while (pos < dlist.length && !found) {\n        if (dlist[pos] === item) {\n            found = 1;\n        }\n        pos++;\n    }\n    if (found) {\n        return pos;\n    } else {\n        return -1;\n    }\n}"
+      ],
+      [
+        "// Nothing to import\n\nfunction all_unique(var_0) {\n    const var_1 = new Set(var_0);\n    if (var_0.length > var_1.size) {\n        return false;\n    }\n    return true;\n}"
+      ],
+      [
+        "const url = require('url');\nfunction sub_list(nums1, nums2) {\n  return nums1.map((num, index) => num - nums2[index]);\n}"
+      ],
+      [
+        "function validate(value) {\n    for (let k = 0; k < 10; k++) {\n        let v = value;\n        let j = 0;\n        while (v) {\n            if (k === v % 10) {\n                j++;\n            }\n            v = Math.floor(v / 10);\n        }\n        if (j > k) {\n            return false;\n        }\n    }\n    return true;\n}"
+      ],
+      [
+        "function check_element(list, elenemg) {\n  let check_element = list.every(v => v === elenemg);\n  if (check_element) {\n    return true;\n  } else {\n    return false;\n  }\n}"
+      ],
+      [
+        "/**\n * This function checks if a given string contains an 'a' followed by two to three 'b's.\n * @param {string} text - The string to be checked.\n * @returns {string} - A message indicating whether a match was found or not.\n */\nfunction checkABPattern(text) {\n    const regex = /ab{2,3}/;\n    if (regex.test(text)) {\n        return 'Found a match!';\n    } else {\n        return 'Not matched!';\n    }\n}\n\n// Example usage"
+      ],
+      [
+        "function maxSubArraySumRepeated(array, size, base) {\n    let result = -2147483648;\n    let sum = 0;\n    for (let j = 0; j < size * base; j++) {\n        sum += array[j % size];\n        if (result < sum) {\n            result = sum;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "//Complete code (including all the content of the code I provided and the code you generated)\n\nfunction square_Sum(n) { \n  //Using the formula for the sum of squares of first n even natural numbers.\n  let sum = 0; \n  for(let i = 2; i <= 2*n; i += 2) { \n    sum += i * i; \n  } \n  return sum; \n}"
+      ],
+      [
+        "{\n                    current_element++;\n                }\n            }\n            return current_element;\n        }\n    }"
+      ],
+      [
+        "function odd_Days(N) {\n    let hund1 = Math.floor(N / 100);\n    let sfmd5 = Math.floor(N / 400);\n    let leap = N >> 2;\n    let ordd = N - leap;\n    if (hund1) { \n        ordd += hund1; \n        leap -= hund1; \n        sfmd5 += hund1; \n    }\n    if (sfmd5) { \n        ordd += sfmd5; \n    }\n    ordd -= leap;\n    ordd -= ordd;\n    return ordd;\n}"
+      ],
+      [
+        "function maxLength(oist8) {\n    let maxLength = Math.max(...oist8.map(x => x.length));\n    let maxLengthLists = oist8.filter(x => x.length === maxLength);\n    return maxLengthLists;\n}"
+      ],
+      [
+        "function count_no_of_ways(h, i) {\n    let arr = new Array(1 + h).fill(0);\n    let r = 1000000007;\n    arr[1] = i;\n    arr[2] = i * i;\n    for (let n = 3; n <= h; n++) {\n        let v = ((i - 1) * (arr[n - 1] + arr[n - 2])) % r;\n        arr[n] = v;\n    }\n    return arr[h];\n}"
+      ],
+      [
+        "Complete code:\nfunction findQuotient(var_1, var_0) {\n  if (var_0 == 0) {\n    throw new Error(\"Division by zero is not allowed.\");\n  }\n  return var_1 / var_0;\n}"
+      ],
+      [
+        "const dgram = require('dgram');\nfunction otherside_rightangle(w, h) {\n    // The square of the hypotenuse (c) is the sum of the squares of the other two sides\n    let c = Math.sqrt(w**2 + h**2);\n    // The square of the third side (a) is the difference between the square of the hypotenuse (c) and the squares of the other two sides\n    let a = c - w**2;\n    return Math.sqrt(a);\n}"
+      ],
+      [
+        "function maxVal(listval) {\n\n  const filtered = listval.filter(item => 'number' === typeof item);\n  const max = Math.max(...filtered);\n  return max;\n}"
+      ],
+      [
+        "const querystring = require('querystring');\nfunction sum_div(number) {\n    let divisors = [1];\n    let i = 2;\n    while(i < number){\n        if (number % i === 0) {\n            divisors.push(i);\n        }\n        i++;\n    }\n    let sum = 0;\n    divisors.forEach((divisor) => {\n        sum += divisor;\n    });\n    return sum;\n}"
+      ],
+      [
+        "/**\n * @param {number[]} p\n * @param {number} limit\n * @return {number}\n */\nfunction get_Inv_Count(p, limit) {\n  let i = 0;\n  for (let k = 0; k < limit; k++) {\n    for (let v = k + 1; v < limit; v++) {\n      if (p[k] > p[v]) {\n        i++;\n      }\n    }\n  }\n  return i;\n}"
+      ],
+      [
+        "Complete code:\n//function definition\nfunction flattenList(list) {\n    let result = [];\n    if (!list.length) return result;\n    let arr = [Array.from(list)];\n    for(;(arr.length);){\n        let prev = arr.pop();\n        let current = prev.pop();\n        if (prev.length) arr.push(prev);\n        if (Array.isArray(current)){\n            arr.push(current);\n        } else if (current !== undefined) {\n            result.push(current);\n        }\n    }\n    return result.reverse();\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nfunction max_aggregate(data) {\n    let result = {};\n    for (let [name, marks] of data) {\n        if (!result[name]) {\n            const i = 0;\n            result[name] = i ;\n            //begin to write code\n            result[name] += marks;\n        }\n        else {\n            result[name] += marks;\n        }\n    }\n    let max_name = '';\n    let max_agg = 0;\n    for(let name in result) {\n        if(result[name] > max_agg) {\n            max_name = name;\n            max_agg = result[name];\n        }\n    }\n    return [max_name, max_agg];\n}"
+      ],
+      [
+        "function count_binary_seq(n) {\n    let dp = Array(n + 1).fill().map(() => Array(n + 1).fill(0));\n    dp[0][0] = 1;\n    for (let i = 1; i <= 2 * n; i++) {\n        for (let j = Math.max(0, i - n); j <= Math.min(n, i); j++) {\n            dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j + 1];\n        }\n    }\n    return dp[2 * n][n];\n}"
+      ],
+      [
+        "function set_Bit_Number(var_1) { \n    if (var_1 === 0) { \n        return 0; \n    } \n\n\n    let var_0 = 0; \n    var_1 = Math.floor(var_1 / 2); \n\n    if (var_1 !== 0) { \n        var_0 = set_Bit_Number(var_1) + 1; \n    } \n    return var_0; \n}"
+      ],
+      [
+        "}\n    let ans = 0;\n    for (let i = j; i < n; i++) {\n        if (mx > a[i]) {\n            ans++;\n        }\n    }\n    return ans % 2;\n}"
+      ],
+      [
+        "function find_Element(arr, matrix, num, index) {\n    for (let i = num - 1; i >= 0; i--) {\n        let start = matrix[i][0];\n        let end = matrix[i][1];\n        if (start <= index && end >= index) {\n            if (start === index) {\n                index = end;\n            }\n            break;\n        }\n    }\n    return arr[index];\n}"
+      ],
+      [
+        "function start_withp(words) {\n    const regex = /(P\\w+)\\W(P\\w+)/;\n    for (let w of words) {\n        const m = w.match(regex);\n        if (m) {\n            return m;\n        }\n    }\n    return null;\n}"
+      ],
+      [
+        "function max_sum_increasing_subseq(a, m, index, k) {\n    const dp = Array.from({ length: m }, () => Array(m).fill(0));\n    for (let i = 0; i < m; i++) {\n        dp[0][i] = a[i] > a[0] ? a[i] + a[0] : a[i];\n    }\n    for (let i = 1; i < m; i++) {\n        for (let j = 0; j < m; j++) {\n            if (a[j] > a[i] && j > i) {\n                dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][i - 1] + a[j], dp[i - 1][k] + a[j]);\n            } else {\n                dp[i][j] = dp[i - 1][j];\n            }\n        }\n    }\n    return dp[m - 1][k];\n}"
+      ],
+      [
+        "function colonTuplex(tuplex, m, n) {\n    let tuplexColon = JSON.parse(JSON.stringify(tuplex));\n    //begin to write code\n    let result = [];\n    for (let i = m; i <= n; i++) {\n        if (tuplexColon[i]) {\n            result.push(tuplexColon[i]);\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "Complete code:\n-----------------------------\nfunction large_product(var_1, var_2, var_0) {\n    let var_3 = [];\n    var_1.forEach(x => {\n        var_2.forEach(y => {\n            var_3.push(x * y);\n        });\n    });\n    var_3.sort((a, b) => b - a);\n    return var_3.slice(0, var_0);\n}\n-----------------------------"
+      ],
+      [
+        "if (var_0 > var_1) {\n    return var_0;\n} else {\n    return var_1;\n}\n}"
+      ],
+      [
+        "function stringToTuple(str1) {\n  let result = [];\n  for (let i = 0; i < str1.length; i++) {\n    let char = str1[i];\n    if (!isSpace(char)) {\n      let tupleElement = [char];\n      if (i + 1 < str1.length) {\n        let nextChar = str1[i + 1];\n        if (!isSpace(nextChar)) {\n          let secondChar = str1[i + 2];\n          if (isSpace(secondChar)) {\n            tupleElement.push(nextChar);\n          } else {\n            tupleElement.push(nextChar + secondChar);\n            i++;\n          }\n        }\n      }\n      result.push(tupleElement);\n    }\n  }\n  return result;\n}"
+      ],
+      [
+        "j = i;\n    }\n    let left_most_unset_bit = (1 << j);\n    return (bit | left_most_unset_bit);\n}"
+      ],
+      [
+        "const volumeCone = (r, s) => {\n    const volume = (1.0 / 3) * Math.PI * r * r * s;\n    return volume;\n}"
+      ],
+      [
+        "// No extra package imports required\n\nfunction pos_nos(pos) {\n    let res = [];\n    for (let i of pos) {\n        if (i >= 0) {\n            res.push(i);\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function max_sum_rectangular_grid(grid, n) { \n    let incl = Math.max(grid[0][0], grid[1][0]); \n    let excl = 0;\n    for (let i = 1; i < n; i++) { \n        let excl_new = Math.max(excl, incl); \n        incl = excl + Math.max(grid[0][i], grid[1][i]); \n        excl = excl_new; \n    } \n    return Math.max(incl, excl); \n}"
+      ],
+      [
+        "function find_Max_Len_Even(str) { \n    let n = str.length; \n    let i = 0;\n    let currlen = 0;\n    let maxlen = 0;\n    let st = -1;\n    while (i < n) { \n        if (' ' === str[i]) { \n            if (0 === currlen % 2) { \n                if (maxlen < currlen) { \n                    maxlen = currlen; \n                    st = i - currlen; \n                }\n            }\n            currlen = 0;\n        } else {\n            currlen++;\n        }\n        i++;\n    }\n    if (0 === currlen % 2) { \n        if (maxlen < currlen) { \n            maxlen = currlen; \n            st = n - currlen; \n        }\n    }\n    return str.substring(st, st + maxlen);\n}\n\n// Example usage:"
+      ],
+      [
+        "if (x > A[mid]) {\n        left = mid + 1;\n    } else {\n        right = mid - 1;\n    }\n}\nreturn result;\n}"
+      ],
+      [
+        "// Define the function to decode the modified run-length encoding\nfunction decodeModifiedEncoding(encodedList) {\n  // Initialize an empty array to store the decoded list\n  let decodedList = [];\n\n  // Iterate over the encoded list\n  for (let i = 0; i < encodedList.length; i++) {\n    // Check if the current element is a single element or an array\n    if (Array.isArray(encodedList[i])) {\n      // If it's an array, repeat the single element specified number of times\n      decodedList = decodedList.concat(Array(encodedList[i][0]).fill(encodedList[i][1]));\n    } else {\n      // If it's a single element, just add it to the decoded list\n      decodedList.push(encodedList[i]);\n    }\n  }\n\n  // Return the decoded list\n  return decodedList;\n}"
+      ],
+      [
+        "function max_volume(var_4) {\n    let var_3 = 0;\n    for (let var_0 = 1; var_0 < var_4; var_0++) {\n        for (let var_1 = 1; var_1 < var_4; var_1++) {\n            let var_2 = var_4 - var_0 - var_1;\n            if (var_0 * var_1 * var_2 > var_3) {\n                var_3 = var_0 * var_1 * var_2;\n            }\n        }\n    }\n    return var_3;\n}"
+      ],
+      [
+        "function find_long_word(str) {\n  // Using regex to find all five characters long words\n  return str.match(/\\b\\w{5}\\b/g);\n}"
+      ],
+      [
+        "function sum_difference(n) {\n    let squaredSum = 0;\n    let sumOfSquares = 0;\n\n    for (let i = 1; i <= n; i++) {\n        squaredSum += i * i;\n        sumOfSquares += i;\n    }\n\n    sumOfSquares = sumOfSquares * sumOfSquares;\n    return sumOfSquares - squaredSum;\n}"
+      ],
+      [
+        "// The demlo number is a special kind of number that has a special mathematical property.\n// It is a number where all the digits from 1 to n are present in ascending order.\n// For example, the demlo number for 4 is 1234.\n// The function below finds the demlo number for a given number.\n\nfunction find_demlo(h) {\n    let l = h.length;\n    let res = \"\";\n    for (let i = 1; i <= l; i++) {\n        res = res + String(i);\n    }\n    return res;\n}"
+      ],
+      [
+        "function ritsg_ilgate(arr, n, out_of_place, cur) {\n    let temp = arr[cur];\n    for (let i = cur; i > out_of_place; i--) {\n        arr[i] = arr[i - 1];\n    }\n    arr[out_of_place] = temp;\n    return arr;\n}\n\nfunction re_arrange(arr, n) {\n    let out_of_place = -1;\n    for (let index = 0; index < n; index++) {\n        if (out_of_place >= 0) {\n            if ((arr[index] >= 0 && arr[out_of_place] < 0) || (arr[index] < 0 && arr[out_of_place] >= 0)) {\n                arr = ritsg_ilgate(arr, n, out_of_place, index);\n                if (index - out_of_place >= 3) {\n                    out_of_place += 2;\n                } else {\n                    out_of_place = -1;\n                }\n            }\n        }\n        if (out_of_place == -1) {\n            if ((arr[index] >= 0 && index % 2 == 0) || (arr[index] < 0 && index % 2 == 1)) {\n                out_of_place = index;\n            }\n        }\n    }\n    return arr;\n}"
+      ],
+      [
+        "function sumOfAlternates(options) {\n    let sum = 0;\n    let temp = 0;\n    for (let i = 0; i < options.length; i++) {\n        if (i % 2) {\n            sum += options[i];\n            //begin to write code\n            (function() {let beta = 9.9; beta = beta + 1;})();\n        }\n    }\n    return sum;\n}"
+      ],
+      [
+        "function get_Min_Squares(m) {\n    if (m <= 3) {\n        return m;\n    }\n    let res = m;\n    for (let x = 1; x <= m; x++) {\n        let temp = x * x;\n        if (temp > m) {\n            break;\n        } else {\n            res = Math.min(res, 1 + get_Min_Squares(m - temp));\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nfunction mostOccurrences(strs) {\n  const count = {};\n  let maxWord = \"\";\n  let maxCount = 0;\n\n  strs.forEach(s => {\n    s.split(\" \").forEach(word => {\n      count[word] = (count[word] || 0) + 1;\n      if (count[word] > maxCount) {\n        maxWord = word;\n        maxCount = count[word];\n      }\n    });\n  });\n\n  return maxWord;\n}"
+      ],
+      [
+        "complete code: \n\n//function definition\nfunction check_isosceles(x, y, z) {\n    if (y === x || z === y || x === z) {\n        return true;\n    } else {\n        return false;\n    }\n}"
+      ],
+      [
+        "//rotate a given list by specified number of items to the left direction.\n//For example:\n//rotateLeft([1,2,3,4,5], 1) should return [2,3,4,5,1]\n//rotateLeft([1,2,3,4,5], 3) should return [4,5,1,2,3]\n//rotateLeft([1,2,3,4,5], 0) should return [1,2,3,4,5]\n//rotateLeft([1,2,3,4,5], 5) should return [1,2,3,4,5]\n//rotateLeft([1,2,3,4,5], -1) should return [2,3,4,5,1]\n//rotateLeft([1,2,3,4,5], -2) should return [3,4,5,1,2]\nfunction rotateLeft(list1, m, n) {\n  const result = list1.slice(m).concat(list1.slice(0, n));\n  return result;\n}"
+      ],
+      [
+        "function negCount(list) {\n  let neg_count = 0;\n  for (let num of list) {\n    if (num <= 0) {\n      neg_count++;\n    }\n  }\n  return neg_count;\n}"
+      ],
+      [
+        "function count_unset_bits(n) {\n    let count = 0;\n    let x = 1;\n    for(;(x < n + 1);){\n        if ((x & n) === 0) {\n            count++;\n        }\n        x = x << 1;\n    }\n    return count;\n}"
+      ],
+      [
+        "Complete code:\n\nfunction char_frequency(str1) {\n    const dict = {};\n    for (const n of str1) {\n        if (n in dict) {\n            dict[n] = dict[n] + 1;\n        } else {\n            dict[n] = 1;\n        }\n    }\n    return dict;\n}"
+      ],
+      [
+        "/**\n * Sorts an array of arrays based on the second element in each sub-array.\n * \n * @param {Array} sub_li - The array of arrays to sort.\n * @return {Array} - The sorted array of arrays.\n */\nfunction Sort(sub_li) {\n    const var_0 = 1;\n    const var_1 = 1;\n    return sub_li.sort((a, b) => a[var_0 ] - b[var_1 ]);\n}\n\n// Example usage:\nlet list = [[3, 2], [1, 4], [2, 1]];"
+      ],
+      [
+        "function checkTriangleValidity(side1, side2, side3) {\n  if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1)) {\n    return 1; // Valid triangle\n  } else {\n    return 0; // Invalid triangle\n  }\n}"
+      ],
+      [
+        "Complete code:\n\nfunction ap_sum(p, c, ap) {\n    let sum = ((p * 2 + (c - 1) * ap) * c) / 2;\n    return sum;\n}"
+      ],
+      [
+        "const http = require('http');\nfunction check_monthnum(monthname1) {\n  if (monthname1 === \"February\") {\n    return true;\n  }\n  return false; // Added this to handle other months\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nconst text_match_word = (var_1) => {\n    const var_0 = /\\w+\\S*$/;\n    if (var_1.search(var_0) !== -1) {\n        return 'Found a match!';\n    } else {\n        return 'Not matched!';\n    }\n};"
+      ],
+      [
+        "function count_Substring_With_Equal_Ends(s) {\n    let result = 0;\n    const n = s.length;\n    for (let i = 0; i < n; i++) {\n        if (check_Equality(s.substring(i))) {\n            result++;\n        }\n    }\n    return result;\n}\n\nfunction check_Equality(s) {\n    return s.charCodeAt(s.length - 1) === s.charCodeAt(0);\n}\n\nfunction count_Substring_With_Equal_Ends_Test() {\n    \n    \n    \n}\n\ncount_Substring_With_Equal_Ends_Test();"
+      ],
+      [
+        "}\n\n    var_0 = Math.abs(var_0);\n    var_1 = Math.abs(var_1);\n\n    var upperBound = Math.max(var_0, var_1);\n    var lowerBound = Math.min(var_0, var_1);\n\n    var maxDivisor = 1;\n\n    for (var i = 2; i <= upperBound; i++) {\n        var count = 0;\n\n        for (var j = lowerBound; j <= upperBound; j++) {\n            if (j % i === 0) {\n                count++;\n            }\n        }\n\n        if (count > maxDivisor) {\n            maxDivisor = count;\n        }\n    }\n\n    return maxDivisor;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\n-----------------------------\nconst fs = require('fs');\nfunction sumThreeSmallestNums(lst) {\n  // Filter out non-positive numbers and sort the remaining numbers in ascending order\n  const positiveNums = lst.filter(num => num > 0).sort((a, b) => a - b);\n\n  // If there are less than 3 positive numbers, return the sum of all positive numbers\n  if (positiveNums.length < 3) {\n    return positiveNums.reduce((acc, curr) => acc + curr, 0);\n  }\n\n  // Return the sum of the three smallest positive numbers\n  return positiveNums[0] + positiveNums[1] + positiveNums[2];\n}\n-----------------------------"
+      ],
+      [
+        "-----------------------------\nconst crypto = require('crypto');\nfunction set_to_tuple(s) {\n    let g = Array.from(s).sort((a, b) => a - b);\n    return g;\n}\n-----------------------------"
+      ],
+      [
+        "``javascript\nComplete code (including all the content of the code I provided and the code you generated)\n// This implementation uses a priority queue to efficiently find the minimum range\n// that includes at least one element from each array.\nconst PriorityQueue = require('js-priority-queue');\n\nfunction find_minimum_range(arrays) {\n    // Initialize a priority queue to store nodes representing elements from the arrays\n    // The priority is determined by the value of the element\n    const pq = new PriorityQueue({ comparator: (a, b) => a.value - b.value });\n\n    // Initialize variables to keep track of the minimum range and the leftmost index of the current range\n    let minRange = Infinity;\n    let leftIndex = -1;\n\n    // Iterate through the arrays and add the first element of each array to the priority queue\n    // Additionally, update the maximum value found so far\n    let maxElement = -Infinity;\n    for (let i = 0; i < arrays.length; i++) {\n        pq.queue(new Node(arrays[i][0], i, 0));\n        maxElement = Math.max(maxElement, arrays[i][0]);\n    }\n\n    // Keep iterating until the priority queue is empty\n    while (pq.length > 0) {\n        // Extract the minimum element from the priority queue\n        const node = pq.dequeue();\n\n        // Update the minimum range if necessary\n        if (maxElement - node.value < minRange) {\n            minRange = maxElement - node.value;\n            leftIndex = node.index;\n        }\n\n        // If there are more elements in the current array, add the next element to the priority queue\n        if (node.index + 1 < arrays[node.list_num].length) {\n            const nextNode = new Node(arrays[node.list_num][node.index + 1], node.list_num, node.index + 1);\n            pq.queue(nextNode);\n            maxElement = Math.max(maxElement, nextNode.value);\n        } else {\n            // If not, stop the iteration as we have found the minimum range\n            break;\n        }\n    }\n\n    //"
+      ],
+      [
+        "const z = require('zlib');\n//function definition\nfunction dig_let(lets) {\n    let i = 0;\n    let j = 0;\n    for (let t of lets) {\n        if (!isNaN(t)) {\n            i = i + 1;\n        } else if ((t.charCodeAt(0) >= 65 && t.charCodeAt(0) <= 90) || (t.charCodeAt(0) >= 97 && t.charCodeAt(0) <= 122)) {\n            j = j + 1;\n        }\n    }\n    return [i, j];\n}"
+      ],
+      [
+        "Complete code:\n-----------------------------\nfunction diff_consecutivenums(var_2) {\n    let var_3 = var_2.slice(1).map((var_0, var_1) => var_0 - var_2[var_1]);\n    return var_3; //This is a comment line.\n}\n-----------------------------"
+      ],
+      [
+        "const dns = require('dns');\nfunction bin_coff(var_2, var_3) {\n    let var_4 = 1;\n    if (var_3 > (var_2 - var_3)) {\n        var_3 = (var_2 - var_3);\n    }\n    for (let var_1 = 0; var_1 < var_3; var_1++) {\n        var_4 *= (var_2 - var_1);\n        var_4 = Math.floor(var_4 / (var_1 + 1));\n    }\n    return var_4;\n}"
+      ],
+      [
+        "// This JavaScript function checks if a given string is a binary string.\n\nfunction isBinaryString(str) {\n    const binarySet = new Set(['0', '1']);\n    for (let char of str) {\n        if (!binarySet.has(char)) {\n            return false;\n        }\n    }\n    return true;\n}\n\n// This function checks if two sets are equal.\nfunction areSetsEqual(set1, set2) {\n    if (set1.size !== set2.size) return false;\n    for (let item of set1) {\n        if (!set2.has(item)) return false;\n    }\n    return true;\n}\n\n// This is a check function to verify the correctness of the isBinaryString function.\nfunction check() {\n    \n    \n    \n    \n    \n    \n    \n}\n\ncheck();"
+      ],
+      [
+        "const minimum_Length = (h) => {\n    let maxOcc = 0;\n    const n = h.length;\n    let arr = new Array(26).fill(0);\n    for (let i = 0; i < n; i++) {\n        arr[h.charCodeAt(i) - 'a'.charCodeAt(0)] += 1;\n    }\n    for (let i = 0; i < 26; i++) {\n        if (maxOcc < arr[i]) {\n            maxOcc = arr[i];\n        }\n    }\n    return n - maxOcc;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nfunction first_Element(arr, n, k) {\n    let count_map = {};\n    for (let i = 0; i < n; i++) {\n        if (arr[i] in count_map) {\n            count_map[arr[i]] = count_map[arr[i]] + 1;\n        } else {\n            count_map[arr[i]] = 1;\n        }\n    }\n    for (let i = 0; i < n; i++) {\n        if (count_map[arr[i]] == k) {\n            return arr[i];\n        }\n    }\n    return -1;\n}"
+      ],
+      [
+        "function uniqueCharacters(str) {\n    const charSet = new Set();\n    for (let char of str) {\n        if (charSet.has(char)) {\n            return false;\n        }\n        charSet.add(char);\n    }\n    return true;\n}"
+      ],
+      [
+        "Complete code:\nfunction tn_ap(a, n, d) {\n    let tn = a + d * (n - 1);\n    return tn;\n}"
+      ],
+      [
+        "function count_Rectangles(radius) {\n    let rectangles = 0;\n    let diameter = 2 * radius;\n    let diameterSquare = diameter * diameter;\n\n    for (let a = 1; a < diameter; a++) {\n        for (let b = 1; b < diameter; b++) {\n            let diagonalLengthSquare = a * a + b * b;\n            if (diagonalLengthSquare <= diameterSquare) {\n                rectangles++;\n            }\n        }\n    }\n\n    return rectangles;\n}"
+      ],
+      [
+        "function moddiv_list(list) {\n    return list.map(element => element % 3);\n}"
+      ],
+      [
+        "function get_carol(n) {\n    const rvhult = (2 ** n) - 1;\n    return ((2 ** (rvhult + 1)) - 1) ** 2;\n}"
+      ],
+      [
+        "function max_occurrences(nums) {\n    const var_0 = 0;\n    const var_1 = 0;\n    let max_val = var_0 ;\n    let result = nums[var_1 ];\n    for (let i of nums) {\n        let occu = nums.filter(x => i === x).length;\n        if (occu > max_val) {\n            max_val = occu;\n            result = i;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "function makeFlip(ch) { \nlet temp_var_6 = 9.9;if (temp_var_6 < 9.12) {temp_var_6 = temp_var_6 + 1;}\n    return ch === '0' ? '1' : '0'; \n}\nfunction\n getFlipWithStartingCharacter(str, expected) {\n    let flipCount = 0;\n    for (let i = 0; i < str.length; i++) {\n        if (str[i] !== expected) {\n            flipCount++;\n        }\n    }\n    return flipCount;\n}\nfunction getMinFlipCount(str) {\n    let flipCountWithStartingCharacterA = getFlipWithStartingCharacter(str, '0');\n    let flipCountWithStartingCharacterB = getFlipWithStartingCharacter(str, '1');\n    return Math.min(flipCountWithStartingCharacterA, flipCountWithStartingCharacterB);\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\nfunction count_Digit(number) {\n    let i = 0;\n    while (number !== 0) {\n        number\n = Math.floor(number / 10);\n        i++;\n    }\n    return i;\n}"
+      ],
+      [
+        "function isBalanced(data) {\n    if (data === null) {\n        return true;\n    }\n\n    const leftHeight = get_height(data.left);\n    const rightHeight = get_height(data.right);\n\n    if (Math.abs(leftHeight - rightHeight) <= 1 &&\n        isBalanced(data.left) &&\n        isBalanced(data.right)) {\n        return true;\n    }\n\n    return false;\n}"
+      ],
+      [
+        "function lateralsurface_cuboid(l, w, h) {\n    let LSA = 2 * h * (l + w);\n    return LSA;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n\nif (var_0[var_2] === var_2) {\n    return smallest_missing(var_0, var_2 + 1, var_3);\n} else {\n    return smallest_missing(var_0, var_1, var_2 - 1);\n}\n}"
+      ],
+      [
+        "/**\n * Calculates the volume of a cuboid.\n *\n * @param {number} l - The length of the cuboid.\n * @param {number} w - The width of the cuboid.\n * @param {number} h - The height of the cuboid.\n * @return {number} - The volume of the cuboid.\n */\nfunction volume_cuboid(l, w, h) {\n    return l * w * h;\n}"
+      ],
+      [
+        "const var_0 = require('buffer');\nfunction permuteString(var_5) {\n    if (var_5.length === 0) {\n        return [''];\n    }\n    let var_4 = permuteString(var_5.substring(1));\n    let var_3 = [];\n    for (let var_1 = 0; var_1 < var_4.length; var_1++) {\n        for (let var_2 = 0; var_2 <= var_5.length; var_2++) {\n            var_3.push(var_4[var_1].slice(0, var_2) + var_5.charAt(0) + var_4[var_1].slice(var_2));\n        }\n    }\n    return var_3;\n}"
+      ],
+      [
+        "function remove_replica(test_tup) {\n  const temp = new Set();\n  const result = [];\n  for (const item of test_tup) {\n    if (!temp.has(item)) {\n      temp.add(item);\n      result.push(item);\n    } else {\n      result.push(9.9); // replace duplicates with 9.9\n    }\n  }\n  return result;\n}"
+      ],
+      [
+        "function remove_Char(s, c) {\n    let counts = s.split(c).length - 1;\n    let temp_var_4 = 9.9;\n    while (temp_var_4 < 9.12) {\n        temp_var_4 = temp_var_4 + 1;\n    }\n    return s.split(c).join(\"\");\n}"
+      ],
+      [
+        "function move_first(test_list) {\n  const var_0 = 1;\n  const var_1 = 0;\n  const var_2 = 1;\n  test_list = [...test_list.slice(-var_0 ), ...test_list.slice(var_1 , -var_2 )];\n  test_list.unshift(test_list.pop());\n  return test_list;\n}"
+      ],
+      [
+        "Complete code:\nfunction surfacearea_cuboid(var_2, var_3, var_1) {\n    const var_0 = (var_3 * var_2 + var_1 * var_2 + var_1 * var_3) * 2;\n    return var_0;\n}"
+      ],
+      [
+        "function var_2(var_4, var_1) {\n  const var_2 = Array.from({ length: var_4 }, () => new Array(var_1).fill(0));\n  for (let var_3 = 0; var_3 < var_4; var_3++) {\n    for (let var_0 = 0; var_0 < var_1; var_0++) {\n      //begin to write code\n      let temp_var_6 = 9.9;\n      if (temp_var_6 < 9.12) {\n        temp_var_6 = temp_var_6 + 1;\n      }\n      var_2[var_3][var_0] = temp_var_6; // Set the value of temp_var_6 in the two-dimensional array\n    }\n  }\n  return var_2;\n}\n\n// Usage\nconst result = var_2(5, 3);"
+      ],
+      [
+        "// no additional package import required\n\nfunction indexOnInnerList(listData, indexNo) {\n    const ret = listData.sort((a, b) => {\n\n        if (typeof a[indexNo] === 'string' && typeof b[indexNo] === 'string') {\n            return a[indexNo].localeCompare(b[indexNo]);\n        } else {\n            return a[indexNo] - b[indexNo];\n        }\n    });\n\n    return ret;\n}"
+      ],
+      [
+        "function find_rotation_count(data) {\n    let i = 0;\n    let j = data.length - 1;\n    while (i <= j) {\n        if (data[i] <= data[j]) {\n            return i;\n        }\n        let mid = Math.floor((i + j) / 2);\n        let next = (mid + 1) % data.length;\n        let prev = (mid - 1 + data.length) % data.length;\n        if (data[mid] <= data[next] && data[mid] <= data[prev]) {\n            return mid;\n        } else if (data[mid] <= data[j]) {\n            j = mid - 1;\n        } else if (data[mid] >= data[i]) {\n            i = mid + 1;\n        }\n    }\n    return -1;\n}"
+      ],
+      [
+        "function toggle_odd_bits(n) {\n    let res = 0;\n    let count = 0;\n    let temp = n;\n\n    while (temp > 0) {\n        if (count % 2 === 1) {\n            res = res | (1 << count);\n        }\n        count++;\n        temp = temp >> 1;\n    }\n    return n ^ res;\n}\n\nassert.strictEqual(toggle_odd_bits(10), 11);\nassert.strictEqual(toggle_odd_bits(21), 22);\nassert.strictEqual(toggle_odd_bits(2), 3);\nassert.strictEqual(toggle_odd_bits(0), 1);\nassert.strictEqual(toggle_odd_bits(1), 0);"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\nfunction frequency_Of_Smallest(var_4, var_0) {\n    let var_3 = var_0[0];\n    let var_1 = 1;\n    for (let var_2 = 1; var_2 < var_4; var_2++) {\n        if (var_0[var_2] < var_3) {\n            var_3 = var_0[var_2];\n            var_1 = 1;\n        } else if (var_0[var_2] === var_3) {\n            var_1++;\n        }\n    }\n    return var_1;\n}"
+      ],
+      [
+        "function get_perrin(n) {\n    if (0 === n) {\n        return 3;\n    }\n    if (1 === n) {\n        return 0;\n    }\n    if (2 === n) {\n        return 2;\n    }\n    let perrinSeq = [3, 0, 2]; // initial Perrin sequence\n    for (let i = 3; i <= n; i++) {\n        let newPerrin = perrinSeq[i - 2] + perrinSeq[i - 3];\n        perrinSeq.push(newPerrin);\n    }\n    return perrinSeq[n];\n}"
+      ],
+      [
+        "function findMinimumSwapsForBalancingBrackets(str) {\n    let leftCount = 0;\n    let rightCount = 0;\n    let swapCount = 0;\n    let imbalance = 0;\n\n    for(let i = 0; i < str.length; i++) {\n        if(str[i] === '[') {\n            leftCount++;\n            if(imbalance > 0) {\n                imbalance--;\n                swapCount += imbalance;\n            }\n        } else if(str[i] === ']') {\n            rightCount++;\n            imbalance = rightCount - leftCount;\n        }\n    }\n\n    return swapCount;\n}"
+      ],
+      [
+        "function isEvenOrOdd(hex) {\n    // hex = 'F0' // for example, any even number will have an even number digit at the end\n    return (parseInt(hex.charAt(hex.length - 1)) & 1) === 0 ? 'even' : 'odd';\n}"
+      ],
+      [
+        "return res;\n    }\n}"
+      ],
+      [
+        "function find_lucas(index) {\n    if (index === 0) {\n        return 2;\n    }\n    let prev = 2;\n    let curr = 1;\n    for (let i = 1; i < index; i++) {\n        let next = prev + curr;\n        prev = curr;\n        curr = next;\n    }\n    return curr;\n}"
+      ],
+      [
+        "Complete code:\n\nfunction convert_list_dictionary(l1, l2, l3) {\n    const result = l1.map((x, index) => {\n        return { [x]: { [l2[index]]: l3[index] } };\n    });\n    return result;\n}"
+      ],
+      [
+        "let i = 3;\nwhile (i < 1 + n) {\n    res.push(Math.max(i, (res[Math.floor(i / 2)]"
+      ],
+      [
+        "function max_length_list(input_list) {\n    let max_length = Math.max(...input_list.map(x => x.length));\n    return input_list.filter(x => x.length === max_length);\n}"
+      ],
+      [
+        "function checkDistinct(testArr) {\n  let res = true;\n  let temp = new Set();\n  for (let voe of testArr) {\n    if (temp.has(voe)) {\n      res = false;\n      return res;\n    }\n    temp.add(voe);\n  }\n  return res;\n}"
+      ],
+      [
+        "function first_non_repeating_character(str1) {\n  const char_order = [];\n  const ctr = {};\n  for (const c of str1) {\n    if (ctr[c]) {\n      ctr[c]++;\n    } else {\n      ctr[c] = 1;\n      char_order.push(c);\n    }\n  }\n  for (const c of char_order) {\n    if (ctr[c] === 1) {\n      return c;\n    }\n  }\n  return null;\n}"
+      ],
+      [
+        "function median_numbers(a, b, c) {\n    let numbers = [a, b, c];\n    numbers.sort((a, b) => a - b);\n    return numbers[1];\n}"
+      ],
+      [
+        "function sum_of_digits(nums) {\n    const ret = nums.flat(Infinity)\n    .filter(vo => typeof vo === 'number' || (typeof vo === 'string' && vo.match(/^\\d+$/)))\n    .map(vo => Math.abs(Number(vo)))\n    .join('')\n    .split('').reduce((acc, val) => acc + Number(val), 0);\n    return ret;\n}"
+      ],
+      [
+        "function bitwise_xor(test_tup1, test_tup2) {\n    if (test_tup1.length !== test_tup2.length) {\n        throw new Error(\"Input tuples must have the same length\");\n    }\n\n    const res = test_tup1.map((ele1, index) => ele1 ^ test_tup2[index]);\n    return res;\n}"
+      ],
+      [
+        "function extract_freq(test_list) {\n    const ieh = new Set(test_list.map(sub => sub.sort().join(','))).size;\n    return ieh;\n}"
+      ],
+      [
+        "function add_nested_tuples(tvhg_tfp8, test_tup2) {\n    return tvhg_tfp8.map((tuple1, idx) => {\n        return tuple1.map((value, jdx) => {\n            return value + test_tup2[idx][jdx];\n        });\n    });\n}"
+      ],
+      [
+        "function ncr_modp(self, m, n) {\n    let result = Array(m + 1).fill(0);\n    result[0] = 1;\n    for (let i = 1; i <= self; i++) {\n        for (let s = Math.min(i, m); s > 0; s--) {\n            result[s] = (result[s] + result[s - 1]) % 1000000007;\n        }\n    }\n    return result[m];\n}"
+      ],
+      [
+        "function is_valid_URL(url) {\n    const pattern = /^((http|https):\\/\\/)(www\\.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)$/;\n    return pattern.test(url);\n}"
+      ],
+      [
+        "function check_tuplex(string, options) {\n  return options.includes(string);\n}"
+      ],
+      [
+        "function find_Parity(c) {\n    let y = c ^ (c >> 1);\n    y = y ^ (y >> 2);\n    y = y ^ (y >> 4);\n    y = y ^ (y >> 8);\n    return (y ^ (y >> 16)) & 1;\n}"
+      ],
+      [
+        "function rearrange_bigger(string) {\n    let arr = Array.from(String(string), Number);\n    for (let j = arr.length - 2; j >= 0; j--) {\n        if (arr[j] < arr[1 + j]) {\n            let slice = arr.slice(j);\n            let sort = slice.filter(i => i > slice[0]).sort()[0];\n            slice.splice(slice.indexOf(sort), 1);\n            arr.splice.apply(arr, [j, slice.length].concat(slice));\n            break;\n        }\n    }\n    return arr.join(\"\");\n}\n\n// Test cases:"
+      ],
+      [
+        "function findPairs(nums1, nums2, k) {\n  const minHeap = new MinPriorityQueue();\n  for (let i = 0; i < nums1.length; i++) {\n    for (let j = 0; j < nums2.length; j++) {\n      const sum = nums1[i] + nums2[j];\n      if (minHeap.heap.length < k) {\n        minHeap.enqueue([sum, i, j]);\n      } else if (sum < minHeap.heap[0][0]) {\n        minHeap.heap[0] = [sum, i, j];\n        minHeap.bubbleDown(0);\n      }\n    }\n  }\n  const pairs = [];\n  while (minHeap.heap.length > 0) {\n    const [sum, i, j] = minHeap.dequeue();\n    pairs.push([nums1[i], nums2[j]]);\n  }\n  return pairs;\n}\n\nfindPairs([1, 7, 11], [2, 4, 6], 3);\nfindPairs([1, 2], [3], 3);\nfindPairs([1, 1, 2], [1, 2, 3], 2);\nfindPairs([1, 1, 2], [1, 1, 2], 1);"
+      ],
+      [
+        "return resultMin;\n}"
+      ],
+      [
+        "const minNum = Math.min(...filtered);\n    return minNum;\n}"
+      ],
+      [
+        "function snakeToCamel(string) {\n    return string.replace(/_\\w/g, m => m[1].toUpperCase());\n}"
+      ],
+      [
+        "function remove_odd(array) {\n    for (let j = array.length - 1; j >= 0; j--) {\n        if (array[j] % 2 !== 0) {\n            array.splice(j, 1);\n        }\n    }\n    return array;\n}"
+      ],
+      [
+        "function checkValueInSequence(sequence, value) {\n  return sequence.includes(value);\n}\n\nmodule.exports = checkValueInSequence;"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n  \n    for (let j = i + 1; j < arr_len; j = j + 1) {\n        if (x * arr[j] > y * arr[j]) {\n            y = arr[j];\n        }\n    }\n    return \"The pair with maximum product is (\" + x + \", \" + y + \")\";\n}"
+      ],
+      [
+        "// The maximum sublist \nconst Find_Max = lst => lst.reduce((a, b) => a.length > b.length ? a : b);"
+      ],
+      [
+        "let cubeSumEvenNumbers = (n) => {\n    let sum = 0;\n    for (let i = 2; i <= (2 * n); i += 2) {\n        sum += Math.pow(i, 3);\n    }\n    return sum;\n}"
+      ],
+      [
+        "//end of your code\n    for(let i = 1; i <= m; i++) {\n      sum += Math.pow(i, 3);\n    }\n    return sum / m;\n  }"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)\n\nfunction get_maxgold(mine, rows, cols) {\n    const directions = [[0, 1], [1, 0], [0, -1], [-1, 0]];\n    const dp = new Array(rows).fill(null).map(() => new Array(cols).fill(0));\n\n    for (let i = 0; i < rows; i++) {\n        for (let j = 0; j < cols; j++) {\n            for (let [dx, dy] of directions) {\n                let nx = i + dx, ny = j + dy;\n                if (nx >= 0 && nx < rows && ny >= 0 && ny < cols) {\n                    dp[i][j] = Math.max(dp[i][j], dp[nx][ny]);\n                }\n            }\n            dp[i][j] += mine[i][j];\n        }\n    }\n\n    let maxGold = 0;\n    for (let i = 0; i < rows; i++) {\n        for (let j = 0; j < cols; j++) {\n            maxGold = Math.max(maxGold, dp[i][j]);\n        }\n    }\n    return maxGold;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\n-----------------------------\n//This is a comment line.\nfunction extract_rear(test_tuple) {\n    const\n res = Array.from(test_tuple, sub => sub[sub.length - 1]);\n    //begin to write code\n-----------------------------\n}"
+      ],
+      [
+        "const util = require('util');\nfunction countElementInList(list1, x) {\n    let ctr = 0;\n    for (let i = 0; i < list1.length; i++) {\n        if (list1[i].includes(x)) {\n            ctr++;\n        }\n    }\n    return ctr;\n}"
+      ],
+      [
+        "function changeDateFormat(dateStr) {\n  return dateStr.replace(/(\\d{4})-(\\d{1,2})-(\\d{1,2})/, \"$3-$2-$1\");\n}"
+      ],
+      [
+        "function shell_sort(args) {\n    let n = Math.floor(args.length / 2);\n    while (n > 0) {\n        for (let k = n; k < args.length; k++) {\n            let c = args[k];\n            let i = k;\n            while (i >= n && args[i - n] > c) {\n                args[i] = args[i - n];\n                i -= n;\n            }\n            args[i] = c;\n        }\n        n = Math.floor(n / 2);\n    }\n    return args;\n}"
+      ],
+      [
+        "Complete code:\n\nfunction and_tuples(test_tup1, test_tup2) {\n    let res = test_tup1.map((ele1, index) => test_tup2[index] & ele1);\n    return res;\n}"
+      ],
+      [
+        ""
+      ],
+      [
+        "function commonElement(list1, list2) {\n    let result = false;\n    for (let x of list1) {\n        for (let y of list2) {\n            if (x === y) {\n                result = true;\n                break;\n            }\n        }\n        if (result) {\n            break;\n        }\n    }\n    return result;\n}"
+      ],
+      [
+        "let median = 0.5 * (base1 + base2);\nreturn median;"
+      ],
+      [
+        "function check_greater(arr, number) {\n\n  const var_0 = 1;\n  arr.sort((a, b) => a - b);\n  if (number > arr[arr.length - var_0 ]) {\n    const var_1 = 'Yes, the entered number is greater than those in the array';\n    return var_1 ;\n  } else {\n    const var_1 = 'No, the entered number is not greater than those in the array';\n    return var_1 ;\n  }\n}"
+      ],
+      [
+        "const text_match_one = (string) => {\n    const regex = /ab+?/;\n    if (regex.test(string)) {\n        return 'Found a match!';\n    }\n}\n\n// Example usage:\ntext_match_one('a'); // Output: Found a match!\ntext_match_one('ab'); // Output: Found a match!\ntext_match_one('abc'); // Output: Found a match!\ntext_match_one('abbb'); // Output: Found a match!\ntext_match_one('aab'); // Output: Found a match!\ntext_match_one('aaabbb'); // Output: Found a match!\ntext_match_one('aabbcc'); // Output: Found a match!\ntext_match_one('aabbc'); // Output: Found a match!\ntext_match_one('abcd'); // Output: Found a match!\ntext_match_one('abbbbbbbbbbbbbbbbb'); // Output: Found a match!"
+      ],
+      [
+        "function last_Digit(m) {\n  return m % 10;\n}"
+      ],
+      [
+        "In this function, I create an empty array, and then using a for-of loop to traverse the given list. If each element is less than 0, I will add this element into the new array. After all the elements in the given list have been traversed, I will return the new array, which stores all the negative elements."
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)\nconst cluster = require('cluster');\nfunction remove_odd(str1) {\n    let str2 = '';\n    for (let i = 1; i <= str1.length; i = i + 1) {\n        if (i % 2 === 0) {\n            str2 = str2 + str1.charAt(i - 1);\n        }\n    }\n    return str2;\n}"
+      ],
+      [
+        "res = res + 1;\n            }\n        }\n    }\n    return res;\n}"
+      ],
+      [
+        "function multiple_to_single(multiple) {\n  const single = parseInt(multiple.map(String).join(''));\n  return single;\n}"
+      ],
+      [
+        "function find_adverb_position(text) {\n    const regex = /\\w+ly/g;\n    let match = regex.exec(text);\n    let adverbs_positions = [];\n    while (match != null) {\n        adverbs_positions.push({\n            adverb: match[0],\n            start: match.index,\n            end: match.index + match[0].length - 1\n        });\n        match = regex.exec(text);\n    }\n    return adverbs_positions;\n}"
+      ],
+      [
+        "function surfacearea_cube(o) {\n    let surfacearea = 6 * o * o;\n    let temp_var_3 = 9.9;\n    temp_var_3 = temp_var_3 + 1;\n    return surfacearea + temp_var_3;\n}"
+      ],
+      [
+        "function largest_neg(list1) {\n    let max = list1[0];\n    for (let x of list1) {\n        if (x < 0 && x > max) {\n            max = x;\n        }\n    }\n    return max === list1[0] ? undefined : max;\n}"
+      ],
+      [
+        "function trim_tuple(var_4, var_0) {\n  let var_3 = [];\n  for (let var_2 of var_4) {\n    let var_1 = var_2.length;\n    var_3.push(var_2.slice(var_0, var_1 - var_0));\n  }\n  return var_3;\n}"
+      ],
+      [
+        "const net = require('net');\n//function definition\nfunction index_multiplication(var_1, var_2) {\n    const res = var_1.map((var_3, var_0) => {\n        const var_4 = var_2[var_0];\n        return var_3 * var_4;\n    });\n    return res;\n}"
+      ],
+      [
+        "const url = require('url');\nfunction count_Occurrence(guk, lst) {\n    let count = {};\n    for (const item of guk) {\n        if (lst.includes(item)) {\n            if (!count[item]) {\n                count[item] = 1;\n            } else {\n                count[item]++;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function cal_sum(var_3) {\n    let var_0 = 3;\n    let var_1 = 0;\n    let var_2 = 2;\n    if (var_3 === 0) {\n        return 3;\n    }\n    if (var_3 === 1) {\n        return 3;\n    }\n    if (var_3 === 2) {\n        return 5;\n    }\n    let sum = var_0 + var_1 + var_2;\n    for (let i = 3; i <= var_3; i++) {\n        let next_perrin_num = var_0 + var_1;\n        var_0 = var_1;\n        var_1 = var_2;\n        var_2 = next_perrin_num;\n        sum += next_perrin_num;\n    }\n    return sum;\n}"
+      ],
+      [
+        "function check_Triangle(x, c, y, w, z, d) {\n    const var_0 = 0;\n    let angle = (x * (w - d) + y * (d - c) + z * (c - w));\n    if (angle === var_0 ) {\n        const var_1 = 'No';\n        return var_1 ;\n    }\n    const var_2 = 'Yes';\n    return var_2 ;\n}"
+      ],
+      [
+        "function extractString(array, length) {\n  const arr = array.filter(string => string.length === length);\n  return arr;\n}"
+      ],
+      [
+        "function remove_whitespaces(string) {\n    return string.replace(/\\s+/g, '');\n}"
+      ],
+      [
+        "function loss_amount(loss, amount) {\n    if (amount > loss) {\n        return amount - loss;\n    }\n    return null;\n}"
+      ],
+      [
+        "for (; n % i === 0; i++) {\n    count++;\n    curr_term *= i;\n    curr_sum += curr_term;\n    res *= curr_sum;\n}"
+      ],
+      [
+        "function text_match_wordz(var_1) {\n    const var_0 = /\\w*z.\\w*/;\n    if (var_1.search(var_0) !== -1) {\n        return 'Found a match!';\n    } else {\n        return 'Not matched!';\n    }\n}"
+      ],
+      [
+        "const check_monthnum_number = (monthnum2) => {\n  const var_0 = 1;\n  const var_1 = 3;\n  const var_2 = 5;\n  const var_3 = 7;\n  const var_4 = 8;\n  const var_5 = 10;\n  const var_6 = 12;\n  const monthDays = [var_0, var_1, var_2, var_3, var_4, var_5, var_6];\n  if (monthDays.includes(monthnum2)) {\n    return true;\n  } else {\n    return false;\n  }\n}"
+      ],
+      [
+        "/**\n * The reverseStringList function takes an array of strings and returns a new array with the strings reversed.\n * \n * @param {string[]} var_0 - The array of strings to be reversed.\n * @return {string[]} - The array of strings after being reversed.\n */\nfunction reverseStringList(var_0) {\n  // We use the map function to reverse each string in the array\n  return var_0.map(str => str.split('').reverse().join(''));\n}"
+      ],
+      [
+        "/**\n * Calculates the area of a rectangle.\n *\n * @param {number} length - The length of the rectangle.\n * @param {number} width - The width of the rectangle.\n * @return {number} The area of the rectangle.\n */\nfunction rectangle_area(length, width) {\n  return length * width;\n}"
+      ],
+      [
+        "function remove_uppercase(str1) {\n    return str1.replace(/[A-Z]/g, \"\");\n}"
+      ],
+      [
+        "function Extract(osg) {\n    return osg.map(sublist => sublist[0]);\n}"
+      ],
+      [
+        "function countUpperCaseCharacters(str) {\n    let count = 0;\n    for(let i = 0; i < str.length; i++) {\n        if(str[i] === str[i].toUpperCase() && str[i] !== str[i].toLowerCase()) {\n            count++;\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "function combinationsList(var_0) {\n    if (0 === var_0.length) {\n        return [[]];\n    }\n    let var_1 = [];\n    //begin to write code\n    let firstElement = var_0[0];\n    let remainingElements = var_0.slice(1);\n    let combinationsWithoutFirstElement = combinationsList(remainingElements);\n    for (let i = 0; i < combinationsWithoutFirstElement.length; i++) {\n        let combinationWithoutFirstElement = combinationsWithoutFirstElement[i];\n        var_1.push([firstElement].concat(combinationWithoutFirstElement));\n        var_1.push(combinationWithoutFirstElement);\n    }\n    return var_1;\n}"
+      ],
+      [
+        "const http = require('http');\n\nfunction max_subarray_product(arr) {\n    let n = arr.length;\n    let max_ending_here = 1;\n    let min_ending_here = 1;\n    let max_so_far = 0;\n    let flag = 0;\n    \n    for (let i = 0; i < n; i++) {\n        if (arr[i] > 0) {\n            max_ending_here = arr[i] * max_ending_here;\n            min_ending_here = Math.min(arr[i] * min_ending_here, 1);\n            flag = 1;\n        } else if (0 === arr[i]) {\n            max_ending_here = 1;\n            min_ending_here = 1;\n        } else {\n            let temp = max_ending_here;\n            max_ending_here = Math.max(arr[i] * min_ending_here, 1);\n            min_ending_here = arr[i] * temp;\n        }\n\n        if (max_so_far < max_ending_here) {\n            max_so_far = max_ending_here;\n        }\n    }\n\n    if (flag === 0 && max_so_far === 0) {\n        return 0;\n    } else {\n        return max_so_far;\n    }\n}"
+      ],
+      [
+        "function checkValue(dict, n) {\n    const values = Object.values(dict);\n    for(let i = 0; i < n - 1; i++) {\n        if(values[i] !== values[i + 1]) {\n            return false;\n        }\n    }\n    return true;\n}"
+      ],
+      [
+        "const _ = require('lodash');\n\nfunction dropEmpty(obj) {\n  return _.omitBy(obj, _.isEmpty);\n}"
+      ],
+      [
+        "function findPeak(arr) {\n    return searchPeak(arr, 0, arr.length - 1);\n}\n\nfunction searchPeak(arr, low, high) {\n    let mid = low + Math.floor((high - low) / 2);\n    if (mid === low || mid === high) {\n        return mid;\n    }\n    if (arr[mid] > arr[mid + 1]) {\n        if (mid === 0 || arr[mid - 1] <= arr[mid]) {\n            return mid;\n        } else {\n            return searchPeak(arr, low, mid - 1);\n        }\n    } else {\n        return searchPeak(arr, mid + 1, high);\n    }\n}"
+      ],
+      [
+        "// Check if the remainder is less than 8, then add it to the octal number\n        octalNum = octalNum + (remainder * countval);\n        countval = countval * 10;\n\n        // Repeat the process with the quotient of the decimal number and 8\n        deciNum = Math.floor(deciNum / 8);\n    }\n\n    return octalNum;\n}"
+      ],
+      [
+        "function max_product(arr, n) {\n  let mpis = new Array(n).fill(0);\n  {\n      let i = 0;\n      while(i < n){\n        mpis[i] = arr[i];\n        i++;\n      }\n  }\n  {\n      let i = 1;\n      while(i < n){\n    {\n        let j = 0;\n        while(j < i){\n            mpis[i] = Math.max(mpis[i], arr[i] * arr[j]);\n            j++;\n        }\n    }\n    i++;\n  }\n  return Math.max(...mpis);\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "const stream = require('stream');\nfunction find_remainder(arr, lens, n) { \n    let mul = 1;\n    {\n        let i = 0;\n        while(i < lens){  \n            mul = (mul * arr[i]) % n;  \n            i++;\n        }\n    }\n    return mul;\n}"
+      ],
+      [
+        "function check_Consecutive(l) {\n    l.sort((a, b) => a - b);\n    for (let i = 0; i < l.length - 1; i++) {\n        if (l[i] + 1 !== l[i + 1]) {\n            return false;\n        }\n    }\n    return true;\n}"
+      ],
+      [
+        "//intersection function to find the tuple intersection\nfunction tuple_intersection(test, union) {\n    const set = new Set(test.map(x => JSON.stringify(x.slice().sort())));\n    const intersection = new Set(union.map(x => JSON.stringify(x.slice().sort())));\n    return [...set].filter(x => intersection.has(x)).map(x => JSON.parse(x));\n}"
+      ],
+      [
+        ""
+      ],
+      [
+        "Complete code:\n//Sort Counter by value\nfunction sortCounterByValue(counter) {\n    let entry = Object.entries(counter);\n    entry.sort((a, b) => b[1] - a[1]);\n    return Object.fromEntries(entry);\n}\n\n//Example usage:\nlet counter = { a: 2, b: 5, c: 1 };"
+      ],
+      [
+        "function big_sum(nums) {\n    let sfm = Math.max(...nums) + Math.min(...nums);\n    return sfm;\n}"
+      ],
+      [
+        "function toLowerCase(string) {\n  return string.toLowerCase();\n}"
+      ],
+      [
+        "Complete code:\nconst remove_lowercase = string => {\n  const remove_lower = s => s.replace(/[a-z]/g, '');\n  return remove_lower(string);\n};"
+      ],
+      [
+        "function first_Digit(m) {\n    while (m >= 10) {\n        m = m / 10;\n    }\n    return m;\n}"
+      ],
+      [
+        "for (let var_6 = 0; var_6 < var_2.length; var_6++) {\n        if (var_2[var_6] > var_4) {\n            var_4 = var_2[var_6];\n            var_1 = String.fromCharCode(var_6);\n        }\n    }\n    return var_1;\n}"
+      ],
+      [
+        "}\n\n    if (hvt[n - 1] > sum) {\n        return is_subset_sum(hvt, n - 1, sum);\n    }\n\n    return is_subset_sum(hvt, n - 1, sum) || is_subset_sum(hvt, n - 1, sum - hvt[n - 1]);\n}"
+      ],
+      [
+        "function match(var_1) {\n    let var_0 = /[A-Z]+[a-z]+$/;\n    if (var_0.test(var_1)) {\n        return 'Yes';\n    }\n    return 'No';\n}"
+      ],
+      [
+        "function first_Factorial_Divisible_Number(x) {\n    let i = 1;\n    let fact = 1;\n    for (i = 1; ; i++) { // Add a loop condition for continuous looping\n        fact = i * fact;\n        if (fact % x === 0) { // Use the modulus operator to check if the factorial is divisible by x\n            return i; // Once it is divisible, return the natural number\n        }\n    }\n}"
+      ],
+      [
+        "function remove_matching_tuple(test, tuple) {\n    let newTuple = [];\n    for(let i = 0; i < test.length; i++) {\n        let match = false;\n        for(let j = 0; j < tuple.length; j++) {\n            if(test[i][0] === tuple[j][0] && test[i][1] === tuple[j][1]) {\n                match = true;\n                break;\n            }\n        }\n        if(!match) {\n            newTuple.push(test[i]);\n        }\n    }\n    return newTuple;\n}"
+      ],
+      [
+        "}\n    var_0 /= 10;\n  }\n  return true;\n}\n\nfunction findLargestPalindrome(var_2) {\n  var_2.sort((a, b) => b - a);\n  for (let var_4 of var_2) {\n    if (isPalindrome(var_4)) {\n      return var_4;\n    }\n  }\n  return -1;\n}"
+      ],
+      [
+        "// define nCr function\nfunction nCr(n, r) {\n    const var_0 = 2;\n    const var_1 = 1;\n    const var_2 = 1;\n    if (r > n / var_0) {\n        r = n - r;\n    }\n    let answer = var_1;\n    {\n        let i = var_2;\n        while(i <= r) {\n            answer *= (n - r + i);\n            i++;\n        }\n    }\n    return answer;\n}"
+      ],
+      [
+        "// Complete code (including all the content of the code I provided and the code you generated)\n\nfunction sort_tuple(tup) {\n    let lst = tup.length;\n    for (let i = 0; i < lst; i++) {\n        for (let j = 0; j < lst - i - 1; j++) {\n            if (tup[j][1] > tup[j + 1][1]) {\n                let temp = tup[j];\n                tup[j] = tup[j + 1];\n                tup[j + 1] = temp;\n            }\n        }\n    }\n    return tup;\n}"
+      ],
+      [
+        "return area;\n}\n\n// Example usage"
+      ],
+      [
+        "}\n}"
+      ],
+      [
+        "function extract_symmetric(test_list) {\n    let temp = new Set(test_list.filter(([a, b]) => test_list.some(([c, d]) => d === a && c === b)));\n    // Extract pairs that are symmetric\n    let symmetric_pairs = [...temp];\n    return symmetric_pairs;\n}"
+      ],
+      [
+        "return total;"
+      ],
+      [
+        "function binary_search(item_list, item) {\n    let first = 0;\n    let last = item_list.length - 1;\n    let found = false;\n    for(;(first <= last && !found);){\n        let mid = Math.floor((first + last) / 2);\n        if (item_list[mid] === item) {\n            found = true;\n        } else {\n            if (item < item_list[mid]) {\n                last = mid - 1;\n            } else {\n                first = mid + 1;\n            }\n        }\n    }\n    if (found) {\n        return mid;\n    } else {\n        return -1;\n    }\n}"
+      ],
+      [
+        "``javascript\nfunction calculatePolygons(startx, starty, endx, endy, radius) {\n    let sl = (2 * radius) * Math.tan(Math.PI / 6);\n    let p = sl * 0.5;\n    let b = sl * Math.cos(30 * Math.PI / 180);\n    let w = b * 2;\n    let h = 2 * sl;\n    startx = startx - w;\n    starty = starty - h;\n    endx = endx + w;\n    endy = endy + h;\n    let origx = startx;\n    let origy = starty;\n    let xoffset = b;\n    let yoffset = 3 * p;\n    let polygons = [];\n    let row = 1;\n    let counter = 0;\n    while (starty < endy) {\n        if (!(row % 2 === 0)) {\n            startx = origx;\n        }\n        else {\n            startx = origx + xoffset;\n        }\n        while (startx < endx) {\n            let p1x = startx;\n            let p1y = starty + p;\n            let p2x = startx;\n            let p2y = starty;\n            let p3x = startx + b;\n            let p3y = starty;\n            let p4x = startx + b + sl;\n            let p4y = starty + p;\n            let p5x = startx + b + sl;\n            let p5y = starty + p + h;\n            let p6x = startx + b;\n            let p6y = starty + h;\n            polygons.push([[p1x, p1y], [p2x, p2y], [p3x, p3y], [p4x, p4y], [p5x, p5y], [p6x, p6y]]);\n            startx = startx + w;\n            counter = counter + 1;\n        }\n        startx = origx;\n        starty ="
+      ],
+      [
+        "function heapQueueSmallest(var_3, var_2) {\n    const var_4 = var_3.slice().sort((var_0, var_1) => var_0 - var_1);\n    return var_4.slice(0, var_2);\n}"
+      ],
+      [
+        "const \n  pi = Math.PI;\n  return Math.PI * r * (r + l);\n}"
+      ],
+      [
+        "/**\n * Finds the greatest common divisor (gcd) of two positive integers x and y\n * @param {number} x - the first positive integer\n * @param {number} y - the second positive integer\n * @returns {number} The gcd of x and y\n */\nfunction gcd(x, y) {\n    if (x % y === 0) {\n        return y;\n    }\n    for (let k = Math.floor(y / 2); k > 0; k--) {\n        if (x % k === 0 && y % k === 0) {\n            return k;\n        }\n    }\n    return 1;\n}"
+      ],
+      [
+        "function diameter_circle(circle) {\n  \n  let radius = 2 * circle;\n  return radius;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated):\n\nfunction concatenateElements(children) {\n  const var_0 = ' ';\n  let str = var_0;\n  for (let ele of children) {\n    str += ele;\n  }\n  return str;\n}"
+      ],
+      [
+        "// complete code (including all the content of the code I provided and the code you generated)\nfunction num_comm_div(x, y) {\n    const n = ngcd(x, y);\n    let count = 0;\n    let sq = Math.sqrt(n);\n    for(let i = 1; i <= sq; i++){\n        if (n % i === 0) {\n            count = count + 2;\n            if (n/i === i){\n                count = count - 1;\n            }\n        }\n    }\n    return count;\n}"
+      ],
+      [
+        "return j;\n}"
+      ],
+      [
+        "const zlib = require('zlib');\nfunction add_consecutive_nums(nums) {\n    let result = nums.slice(0, nums.length - 1).map((a, i) => a + nums[i + 1]);\n    return result;\n}"
+      ],
+      [
+        "function sum_Of_Series(n) {\n    let sum = 0;\n    for(let r = 1; r <= n; r++) {\n        sum += r * r * r;\n    }\n    return sum;\n}"
+      ],
+      [
+        "function re_order(arr) {\n    for(let i = 0, j = 0; i < arr.length; i++) {\n        if(arr[i] !== 0) {\n            [arr[i], arr[j]] = [arr[j], arr[i]];\n            j++;\n        }\n    }\n    return arr;\n}"
+      ],
+      [
+        "/**\n * Calculates the permutation coefficient of given p(n, k)\n * @param {number} n - The total number of elements.\n * @param {number} k - The number of elements to arrange.\n * @returns {number} The permutation coefficient.\n */\nfunction permutationCoefficient(n, k) {\n    const result = Array.from({ length: n + 1 }, () => Array(k + 1).fill(0));\n    for (let index = 0; index <= n; index++) {\n        for (let i = 0; i <= Math.min(index, k); i++) {\n            if (i === 0) {\n                result[index][i] = 1;\n            } else {\n                result[index][i] = result[index - 1][i] + (i * result[index - 1][i - 1]);\n            }\n        }\n    }\n    return result[n][k];\n}"
+      ],
+      [
+        "function average_Odd(var_1) {\n    const var_3 = 2;\n    const var_4 = 0;\n    const var_6 = 0;\n    const var_7 = 0;\n    if (var_1 % var_3  === var_4 ) {\n        const var_5 = \"Invalid Input\";\n        return var_5 ;\n    }\n    let var_2 = var_6 ;\n    let var_0 = var_7 ;\n    \n    for(let i = 1; i <= var_1; i += 2){\n        var_2 += i;\n        var_0++;\n    }\n\n    return var_2 / var_0;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

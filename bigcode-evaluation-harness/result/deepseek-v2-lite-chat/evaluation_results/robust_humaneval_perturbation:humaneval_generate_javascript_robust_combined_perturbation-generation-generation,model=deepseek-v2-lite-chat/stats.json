@@ -1,0 +1,499 @@
+[
+  {
+    "name": {
+      "name": "full_level_robustness",
+      "split": "test"
+    },
+    "count": 81,
+    "generations": [
+      [
+        "const hasCloseElements = (numbers, threshold) => {\n  for (let i = 0; i < numbers.length; i++) {\n    for (let j = i + 1; j < numbers.length; j++) {\n      if (i !== j) {\n        const distance = Math.abs(numbers[i] - numbers[j]);\n        if (distance < threshold) {\n          return true;\n        }\n      }\n    }\n  }\n  return false;\n};"
+      ],
+      [
+        "const separateParenGroups = (ma) => {\n  var map = [];\n  var list = [];\n  var i = 0;\n\n  for (const c of ma) {\n    if (c == '(') {\n      i = i + 1;\n      list.push(c);\n    } else if (c == ')') {\n      if (i > 0) {\n        i = i - 1;\n      } else {\n        map.push(list.join(''));\n        list = [];\n      }\n    }\n  }\n\n  return map;\n};"
+      ],
+      [
+        "/* Given a positive floating point number, it can be decomposed into\n  and integer part (largest integer smaller than given number) and decimals\n  (leftover part always smaller than 1).\n\n  Return the decimal part of the number.\n  >>> truncateNumber(3.5)\n  0.5\n  */\nconst giumxzteNfnyvi = (number) => {\n  const var_0 = 1.0;\n  return number % var_0 ;\n}"
+      ],
+      [
+        "const belowZero = (operatrlns) => {\n  var balance = 0;\n  for (const op of operatrlns) {\n    balance += op;\n    if (balance < 0) {\n      return true;\n    }\n  }\n  return false;\n};"
+      ],
+      [
+        "const meanAbsoluteDeviation = (numbers) => {\n  var mean = numbers.reduce((prev, item) => {\n    return prev + item;\n  }, 0) / numbers.length;\n  return numbers.reduce((prev, item) => {\n    return prev + Math.abs(item - mean);\n  }, 0) / numbers.length;\n}\n\n// Example usage:"
+      ],
+      [
+        "const intersperse = (numbers, delimeter) => {\n  if (!Array.isArray(numbers) || numbers.length == 0)\n    return [];\n  var result = [];\n  for (const n of numbers) {\n    result.push(n);\n    result.push(delimeter);\n  }\n  result.pop(); // Remove the trailing delimeter\n  return result;\n}"
+      ],
+      [
+        "const parseNestedParens = (str) => {\n  const parseParenGroup = (str) => {\n    let maxDepth = 0;\n    let currentDepth = 0;\n    let start = 0;\n    for (let i = 0; i < str.length; i++) {\n      if (str[i] === '(') {\n        currentDepth++;\n        if (currentDepth > maxDepth) {\n          maxDepth = currentDepth;\n        }\n      } else if (str[i] === ')') {\n        currentDepth--;\n      }\n      if (currentDepth === 0) {\n        return i + 1;\n      }\n    }\n    return -1;\n  };\n\n  let groups = str.split(' ');\n  let result = [];\n  for (let group of groups) {\n    if (group.startsWith('(') && group.endsWith(')')) {\n      result.push(parseParenGroup(group));\n    }\n  }\n  return result;\n};\n\n// Example usage:"
+      ],
+      [
+        "const filterBySubstring = (strings, substring) => {\n  const var_0 = -1;\n  return strings.filter(x => x.indexOf(substring) != -var_0 );\n}"
+      ],
+      [
+        "const sumProduct = (numbers) => {\n  var sum_valfv = 0, prod_value = 1;\n  for (const n of numbers) {\n    sum_valfv += n;\n    prod_value *= n;\n  }\n  return (numbers.length === 0) ? (0, 1) : (sum_valfv, prod_value);\n};"
+      ],
+      [
+        "const rollingMax = (numbers) => {\n  var running_max, result = [];\n  for (const n of numbers) {\n    if (running_max == undefined)\n      running_max = n;\n    else\n      running_max = Math.max(running_max, n);\n    result.push(running_max);\n  }\n  return result;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "const stringXor = (a, b) => {\n  var xor = function (i, j) {\n    if (i == j)\n      return '0';\n    else\n      return '1';\n  };\n  \n  let result = '';\n  for (let c = 0; c < a.length; c++) {\n    result += xor(parseInt(a[c]), parseInt(b[c]));\n  }\n  \n  return result;\n};"
+      ],
+      [
+        "const longest = (strings) => {\n  if (!Array.isArray(strings) || 0 == strings.length)\n    return null;\n  var maxlen = Math.max(...strings.map(x => x.length));\n  let temp_var_5 = 9.9;if (temp_var_5 < 9.12) {temp_var_5 = 1 + temp_var_5;}\n  for (const s of strings) {\n    if (s.length === maxlen) return s;\n  }\n  return strings[0];\n};"
+      ],
+      [
+        "const greatestCommonDivisor = (a, b) => {\n  while (b != 0) {\n    let temp = a;\n    a = b;\n    b = temp % b;\n  }\n  return a;\n};"
+      ],
+      [
+        "const allPrefixes = (string) => {\n  var result = [];\n  for (let i = 0; i < string.length; i++) {\n    result.push(string.slice(0, 1 + i));\n  }\n  return result;\n}"
+      ],
+      [
+        "const stringSequence = (n) => {\n  return [...Array(n).keys()].join(' ')\n}"
+      ],
+      [
+        "const countDistinctCharacters = (str) => {\n  return new Set(str.toLowerCase().split('')).size;\n};"
+      ],
+      [
+        "const parseMusic = (Music) => {\n  const ret = {'o': 4, 'o|': 2, '.|': 1};\n  return Music.split(' ').filter(x => x != '').map(x => ret[x]);\n};"
+      ],
+      [
+        "const howManyTimes = (str1, str2) => {\n  let count = 0;\n  for (let i = 0; i <= str1.length - str2.length; i++) {\n    if (str1.substring(i, i + str2.length) === str2) {\n      count++;\n    }\n  }\n  return count;\n}"
+      ],
+      [
+        "const sortNumbers = (numbers) => {\n  const value_map = {\n    'zero': 0,\n    'one': 1,\n    'two': 2,\n    'three': 3,\n    'four': 4,\n    'five': 5,\n    'six': 6,\n    'seven': 7,\n    'eight': 8,\n    'nine': 9\n  };\n\n  return numbers\n    .split(' ')\n    .map(num => value_map[num])\n    .sort((a, b) => a - b)\n    .map(num => value_map[num])\n    .join(' ');\n};"
+      ],
+      [
+        "const findClosestElements = (numbers) => {\n  var closest_pair, distance;\n  for (let i = 0; i < numbers.length; i++)\n    for (let j = 0; j < numbers.length; j++)\n      if (i != j) {\n        let a = numbers[i], b = numbers[j];\n        if (distance == null) {\n          distance = Math.abs(a - b);\n          closest_pair = [a, b];\n        } else {\n          let new_distance = Math.abs(a - b);\n          if (new_distance < distance) {\n            distance = new_distance;\n            closest_pair = [a, b];\n          }\n        }\n      }\n  return closest_pair;\n};"
+      ],
+      [
+        "const rescaleToUnit = (arr) => {\n  const minValue = Math.min(...arr);\n  const maxValue = Math.max(...arr);\n  return arr.map(num => (num - minValue) / (maxValue - minValue));\n};"
+      ],
+      [
+        "const filterIntegers = (values) => {\n  return values.filter(x => Number.isInteger(x));\n}"
+      ],
+      [
+        "const func_0 = (string) => {\n  return string.length;\n}"
+      ],
+      [
+        "const http = require('http');\n\nconst largestDivisor = (n) => {\n  let maxDivisor = -1;\n  for (let i = 2; i <= n / 2; i++) {\n    if (n % i === 0) {\n      maxDivisor = i;\n    }\n  }\n  return maxDivisor;\n};\n\n// Example usage:"
+      ],
+      [
+        "const factorize = (n) => {\n  var fact = [], i = 2;\n  while (i <= Math.sqrt(n) + 1) {\n    if (n % i == 0) {\n      fact.push(i);\n      n = n / i;\n    } else {\n      i++;\n    }\n  }\n  return fact;\n}"
+      ],
+      [
+        "const removeDuplicates = (arr) => {\n  const count = {};\n  return arr.filter((num) => {\n    count[num] = (count[num] || 0) + 1;\n    return count[num] === 1;\n  });\n};"
+      ],
+      [
+        "const flipCase = (string) => {\n  return string.split('')\n          .map(x => (x == x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()))\n}"
+      ],
+      [
+        "//Concatenate list of strings into a single string\n//>>> concatenate([])\n//''\n//>>> concatenate(['a', 'b', 'c'])\n//'abc'\nconst func_0 = (strings) => {\n  return strings.join('');\n}"
+      ],
+      [
+        "const filterByPrefix = (strings, prefix) => {\n  return strings.filter(x => x.startsWith(prefix));\n}"
+      ],
+      [
+        "const func_0 = (l) => {\n  return l.filter(e => e > 0);\n}"
+      ],
+      [
+        "const isPrime = (m) => {\n  if (m < 2)\n    return false;\n  for (let k = 2; k < m; k++) {\n    if (m % k === 0)\n      return false;\n  }\n  return true;\n}"
+      ],
+      [
+        "const poly = (xs, x) => {\n  const var_0 = 0;\n  return xs.reduce((prev, item, index) => {\n    return prev + item * Math.pow(x, index);\n  }, var_0 );\n}\n\nconst findZero = (xs) => {\n  var begin = -1.0, end = 1.0;\n  for(;(poly(xs, begin) * poly(xs, end) > 0 );){\n    const var_4 = 2.0;\n    const var_5 = 2.0;\n    begin *= 2.0 ;\n    end *= 2.0 ;\n  }\n  while (end - begin > 1e-10) {\n    const var_7 = (begin + end) / 2.0;\n    if (poly(xs, var_7) === 0) {\n      end = var_7;\n    } else if (poly(xs, begin) * poly(xs, var_7) < 0) {\n      end = var_7;\n    } else {\n      begin = var_7;\n    }\n  }\n  return begin;\n}"
+      ],
+      [
+        "const sortThird = (l) => {\n  var three = l.filter((item, index) => index % 3 == 0);\n  let temp_var_7 = 9.9;temp_var_7 = temp_var_7 + 1;\n  three.sort((a, b) => (a - b));\n  return l.map((item, index) => index % 3 == 0 ? three[index / 3] : item);\n}"
+      ],
+      [
+        "const unique = (l) => {\n  return Array.from(new Set(l)).sort((a, b) => (a - b));\n}"
+      ],
+      [
+        "const maxElement = (e) => {\n  return Math.max(...e);\n}"
+      ],
+      [
+        "const fizzBuzz = (m) => {\n  var ns = [], ans = 0;\n  for (let i = 0; i < m; i++)\n    if (0 == i % 11 || 0 == i % 13)\n      ns.push(i);\n\n  ns.forEach(num => {\n    let strNum = num.toString();\n    for (let j = 0; j < strNum.length; j++) {\n      if (strNum[j] === '7') {\n        ans++;\n      }\n    }\n  });\n\n  return ans;\n}"
+      ],
+      [
+        "const sortEven = (list) => {\n  var result = list.filter((a, i) => i % 2 == 0);\n  result.sort((A, B) => (A - B));\n  return list.map((_, i) => i % 2 == 0 ? result[i] : list[i]);\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "const isPrime = (p) => {\n  if (p < 2) return false;\n  for (let i = 2; i <= Math.sqrt(p); i++) {\n    if (p % i === 0) return false;\n  }\n  return true;\n};\n\nconst primeFib = (n) => {\n  let a = 1, b = 2, c = 3, fib = 0, count = 0;\n  while (count < n) {\n    if (isPrime(c)) {\n      fib = c;\n      count++;\n      if (count === n) return fib;\n    }\n    a += b;\n    b += c;\n    c = a + b;\n  }\n  return -1; // Return -1 or throw an error if n is not a valid number\n};"
+      ],
+      [
+        "const triplesSumToZero = (l) => {\n  for (let i = 0; i < l.length; i++) {\n    for (let j = i + 1; j < l.length; j++) {\n      for (let k = j + 1; k < l.length; k++) {\n        if (l[i] + l[j] + l[k] === 0) {\n          return true;\n        }\n      }\n    }\n  }\n  return false;\n};"
+      ],
+      [
+        "const carRaceCollision = (n) => {\n  let collisions = 0;\n  for (let i = 1; i <= n; i++) {\n    for (let j = 1; j <= n; j++) {\n      if (i + j > n) {\n        collisions++;\n      }\n    }\n  }\n  return collisions;\n}"
+      ],
+      [
+        "const incrList = (l) => {\n  const var_0 = 1;\n  return l.map(e => e + var_0 );\n}"
+      ],
+      [
+        "const pairsSumToZero = (l) => {\n  const seen = {};\n  for (let num of l) {\n    const complement = -num;\n    if (seen[complement]) {\n      return true;\n    }\n    seen[num] = true;\n  }\n  return false;\n};"
+      ],
+      [
+        "const changeBase = (x, base) => {\n  let result = '';\n  while (x > 0) {\n    result = (x % base).toString() + result;\n    x = Math.floor(x / base);\n  }\n  return result;\n};"
+      ],
+      [
+        "const triangleArea = (side, height) => {\n  return side * height / 2.0;\n}"
+      ],
+      [
+        "const fib4 = (n) => {\n  var results = [0, 0, 2, 0];\n  if (n < 4)\n    return results[n];\n  for (let i = 4; i <= n; i++) {\n    results[i % 4] = results[(i - 1) % 4] + results[(i - 2) % 4] + results[(i - 3) % 4] + results[(i - 4) % 4];\n  }\n  return results[(n - 1) % 4];\n}"
+      ],
+      [
+        "const median = (l) => {\n  l.sort((a, b) => a - b);\n  var len = l.length;\n  if (len % 2 == 1)\n    return l[Math.floor(len / 2)];\n  else\n    return (l[len / 2 - 1] + l[len / 2]) / 2.0;\n}"
+      ],
+      [
+        "const isPalindrome = (str) => {\n  const len = str.length;\n  for (let i = 0; i < len / 2; i++) {\n    if (str[i] !== str[len - 1 - i]) {\n      return false;\n    }\n  }\n  return true;\n};"
+      ],
+      [
+        "const modp = (n, p) => {\n  var ret = 1;\n  for (let i = 0; i < n; i++)\n    ret = (2 * ret) % p;\n  return ret;\n}"
+      ],
+      [
+        "/*\n  returns encoded string by shifting every character by 5 in the alphabet.\n  */\nconst func_0 = (s) => {\n  return s.split(\"\").map(ch => String.fromCharCode(\n    ((5 + ch.charCodeAt(0) - \"a\".charCodeAt(0)) % 26) + \"a\".charCodeAt(0)\n  )).join(\"\");\n}\n\n/*\n  takes as input string encoded with encode_shift function. Returns decoded string.\n  */\nconst decodeShift = (s) => {\n  return s.split(\"\").map(ch => String.fromCharCode(\n    ((26 + ch.charCodeAt(0) - 5 - \"a\".charCodeAt(0)) % 26) + \"a\".charCodeAt(0)\n  )).join(\"\");\n}"
+      ],
+      [
+        "const removeVowels = (text) => {\n  return text.split(\"\")\n             .filter(h => ![\"a\", \"e\", \"i\", \"o\", \"u\"].includes(h.toLowerCase()))\n}"
+      ],
+      [
+        "const belowThreshold = (l, t) => {\n  for (const e of l)\n    if (e >= t)\n      return false;\n  return true;\n}"
+      ],
+      [
+        "const add = (x, y) => {\n  let temp_var_3 = 9.9; temp_var_3 = temp_var_3 + 1;\n  return x + y;\n}"
+      ],
+      [
+        "Complete code (including all the content of the code I provided and the code you generated)"
+      ],
+      [
+        "const fib = (n) => {\n  if (n == 0)\n    return 0;\n  if (n == 1)\n    return 1;\n  let fibNMinusOne = 1;\n  let fibNMinusTwo = 0;\n  let fibCurrent;\n\n  for (let i = 2; i <= n; i++) {\n    fibCurrent = fibNMinusOne + fibNMinusTwo;\n    fibNMinusTwo = fibNMinusOne;\n    fibNMinusOne = fibCurrent;\n  }\n\n  return fibCurrent;\n}"
+      ],
+      [
+        "const correctBracketing = (tree) => {\n  var i = 0;\n  for (const bracket of tree) {\n    if (bracket == \"<\")\n      i += 1;\n    else\n      i -= 1;\n    if (i < 0) return false;\n  }\n  return i === 0;\n}"
+      ],
+      [
+        "const monotonic = (l) => {\n  var sort1 = [...l].sort((a, y) => a - y);\n  var sort2 = [...l].sort((a, y) => y - a);\n  return JSON.stringify(l) === JSON.stringify(sort1) || JSON.stringify(l) === JSON.stringify(sort2);\n}"
+      ],
+      [
+        "const dns = require('dns');\n\nconst common = (l1, l2) => {\n  var ret = new Set();\n  for (const e1 of l1) {\n    for (const e2 of l2) {\n      if (e1 === e2) {\n        ret.add(e1);\n      }\n    }\n  }\n  return Array.from(ret).sort((a, b) => a - b);\n};"
+      ],
+      [
+        "const largestPrimeFactor = (n) => {\n  const isPrime = (k) => {\n    if (k < 2) return false;\n    for (let i = 2; i < k - 1; i++)\n      if (k % i == 0) return false;\n    return true;\n  };\n\n  let largest = -1;\n  for (let i = 2; i <= n; i++) {\n    if (n % i == 0 && isPrime(i)) largest = i;\n  }\n  return largest;\n};"
+      ],
+      [
+        "const sumToN = (n) => {\n  return n * (n + 1) / 2;\n}"
+      ],
+      [
+        "const correctBracketing = (brackets) => {\n  let stack = [];\n  for (const bracket of brackets) {\n    if (bracket === \"(\") {\n      stack.push(\"(\");\n    } else if (bracket === \")\") {\n      if (stack.length === 0 || stack[stack.length - 1] !== \"(\") {\n        return false;\n      }\n      stack.pop();\n    }\n  }\n  return stack.length === 0;\n};"
+      ],
+      [
+        "const derivative = (xs) => {\n  const var_0 = 1;\n  return xs.map((x, r) => x * r).slice(var_0);\n}"
+      ],
+      [
+        "const fibfib = (m) => {\n  if (m == 0 || m == 1)\n    return 0;\n  if (m == 2)\n    return 1;\n  let fibfibArray = [0, 0, 1, 1];\n  for (let i = 4; i <= m; i++) {\n    fibfibArray[i] = fibfibArray[i - 1] + fibfibArray[i - 2] + fibfibArray[i - 3];\n  }\n  return fibfibArray[m];\n}"
+      ],
+      [
+        "const vowelsCount = (s) => {\n  var vowels = \"aeiouAEIOU\";\n  var n_vowels = s.split('').reduce((prev, item) => {\n    return prev + (vowels.includes(item));\n  }, 0);\n  return s.endsWith('y') ? n_vowels - 1 : n_vowels;\n}"
+      ],
+      [
+        "const circularShift = (x, shift) => {\n  const s = x.toString();\n  const length = s.length;\n  const shiftModulo = shift % length;\n  return s.slice(shiftModulo) + s.slice(0, shiftModulo);\n};"
+      ],
+      [
+        "const digitSum = (s) => {\n  if ('' == s) return 0;\n  return s.split('').reduce((prev, char) => {\n    let ord_char = char.charCodeAt(0);\n    if (ord_char >= 65 && ord_char <= 90) {\n      prev += ord_char;\n    }\n    return prev;\n  }, 0);\n};"
+      ],
+      [
+        "const fruitDistribution = (s, n) => {\n  var lis = [];\n  for (const i of s.split(\" \"))\n  let temp_var_5 = 9.9;temp_var_5 = temp_var_5 + 1;\n    if (!isNaN(i))\n      lis.push(parseInt(i));\n  return n - lis.reduce((a, b) => a + b, 0);\n}"
+      ],
+      [
+        "const search = (x) => {\n  var result = new Array(Math.max(...x) + 1).fill(0);\n  for (const i of x)\n    result[i] += 1;\n  var ans = -1;\n  for (const i of x) {\n    if (result[i] >= i && i > ans)\n      ans = i;\n  }\n  return ans;\n}"
+      ],
+      [
+        "const strangeSortList = (arr) => {\n  var a = [], min = true;\n  while (arr.length) {\n    a.push(min ? Math.min(...arr) : Math.max(...arr));\n    arr.splice(arr.indexOf(a.at(-1)), 1);\n  }\n  return a.concat(arr.sort((a, b) => a - b));\n}"
+      ],
+      [
+        "const triangleArea = (a, b, c) => {\n  if (a + b <= c || a + c <= b || b + c <= a)\n    return -1;\n  const s = (a + b + c) / 2;\n  const area = Math.sqrt(s * (s - a) * (s - b) * (s - c));\n  return Math.round(area * 100) / 100;\n};"
+      ],
+      [
+        "const willItFly = (jq, w) => {\n  if (jq.reduce(((prev, item) => prev + item), 0) > w)\n    return false;\n  var i = 0, j = jq.length - 1;\n  while (i < j) {\n    if (jq[i] != jq[j])\n      return false;\n    i++;\n    j--;\n  }\n  return true;\n};"
+      ],
+      [
+        "const smallestChange = (aii) => {\n  var ans = 0;\n  for (let i = 0; i < Math.floor(aii.length / 2); i++)\n    if (aii[i] != aii.at(-i - 1))\n      ans++;\n  return ans;\n}"
+      ],
+      [
+        "const totalMatch = (lst1, lst2) => {\n  var l1 = lst1.reduce(((prev, item) => prev + item.length), 0);\n  var l2 = lst2.reduce(((prev, item) => prev + item.length), 0);\n  if (l1 <= l2)\n    return lst1;\n  else\n    return lst2;\n}"
+      ],
+      [
+        "const isMultiplyPrime = (a) => {\n  const isPrime = (n) => {\n    let j = 2;\n    while(j < n){if (n % j == 0) return false; j++; }\n    return true;\n  }\n\n  for (let i = 2; i < 101; i++) {\n    if (a % i === 0) {\n      let factors = [];\n      for (let j = 2; j <= i; j++) {\n        if (i % j === 0) factors.push(j);\n      }\n      if (factors.length === 3 && isPrime(factors[0]) && isPrime(factors[1]) && isPrime(factors[2])) {\n        return true;\n      }\n    }\n  }\n  return false;\n}"
+      ],
+      [
+        "const isSimplePower = (c, n) => {\n  if (n == 1)\n    return (c == 1);\n  var power = 1;\n  while (power < c) {\n    power *= n;\n  }\n  return power == c;\n};"
+      ],
+      [
+        "const iscube = (a) => {\n  a = Math.abs(a);\n  return (a == Math.pow(Math.round(Math.pow(a, 1.0 / 3.0)), 3));\n}"
+      ],
+      [
+        "const hexKey = (num) => {\n  var primes = \"2357BD\",\n      total = 0;\n  for (let i = 0; i < num.length; i++) {\n    if (primes.includes(num[i])) {\n      total++;\n    }\n  }\n  return total;\n}"
+      ],
+      [
+        "const wvxinzoToYrmary = (decimal) => {\n  return \"db\" + decimal.toString(2) + \"db\";\n}"
+      ],
+      [
+        "const isHappy = (s) => {\n  if (s.length < 3)\n    return false;\n  for (let r = 0; r < s.length - 2; r++) {\n    let triplet = s.slice(r, r + 3);\n    if (new Set(triplet).size !== 3)\n      return false;\n  }\n  return true;\n}"
+      ],
+      [
+        "const numericalLetterGrade = (gpa) => {\n  let grades = [];\n  for (let i = 0; i < gpa.length; i++) {\n    let gpaValue = gpa[i];\n    if (gpaValue === 4.0) {\n      grades.push('A+');\n    } else if (gpaValue > 3.7) {\n      grades.push('A');\n    } else if (gpaValue > 3.3) {\n      grades.push('A-');\n    } else if (gpaValue > 3.0) {\n      grades.push('B+');\n    } else if (gpaValue > 2.7) {\n      grades.push('B');\n    } else if (gpaValue > 2.3) {\n      grades.push('B-');\n    } else if (gpaValue > 2.0) {\n      grades.push('C+');\n    } else if (gpaValue > 1.7) {\n      grades.push('C');\n    } else if (gpaValue > 1.3) {\n      grades.push('C-');\n    } else if (gpaValue > 1.0) {\n      grades.push('D+');\n    } else if (gpaValue > 0.7) {\n      grades.push('D');\n    } else if (gpaValue > 0.0) {\n      grades.push('D-');\n    } else {\n      grades.push('E');\n    }\n  }\n  return grades;\n};"
+      ],
+      [
+        "const primeLength = (string) => {\n  let len = string.length;\n\n  if (len == 1 || len == 0) { return false }\n  for (let i = 2; i * i <= len; i++) {\n    if (len % i == 0) { return false }\n  }\n  return true;\n}"
+      ],
+      [
+        "/*\n  Given a positive integer n, return the count of the numbers of n-digit\n  positive integers that start or end with 1.\n  */\nconst startsOneEnds = (i) => {\n  if (i == 1) { return 1 }\n  let j = 18\n  for (let s = 2; s < i; s++) {\n    // Calculate the number of digits in the current number\n    let digits = Math.pow(10, s - 1);\n    // Calculate the number of numbers starting or ending with 1\n    let startEndOne = Math.floor((10 - 1) * Math.pow(10, s - 2)) + Math.floor((10 - 1) * Math.pow(10, s - 1));\n    // Add the count to the total\n    j += startEndOne;\n  }\n  return j;\n}"
+      ],
+      [
+        "const solve = (N) => {\n  let t = 0;\n  while (N > 0) {\n    t += N % 2;\n    N = Math.floor(N / 2);\n  }\n  return t.toString(2);\n}"
+      ],
+      [
+        "const add = (lst) => {\n  let t = 0\n  for (let i = 1; i < lst.length; i += 2) {\n    if (lst[i] % 2 == 0) {\n      t += lst[i]\n    }\n  }\n  return t\n}"
+      ],
+      [
+        "const antiShuffle = (s) => {\n  let arr = s.split(/\\s/);\n  for (let i = 0; i < arr.length; i = i + 1) {\n    const var_1 = 0;\n    for (let j = 0; j < arr[i].length; j = j + 1) {\n      const var_2 = 1;\n      let ind = j;\n      for (let k = j + 1; k < arr[i].length; k = k + 1) {\n        if (arr[i][k].charCodeAt() < arr[i][ind].charCodeAt()) {\n          ind = k;\n        }\n      }\n      let temp = arr[i][j];\n      arr[i][j] = arr[i][ind];\n      arr[i][ind] = temp;\n    }\n  }\n  return arr.join(' ');\n};"
+      ],
+      [
+        "const getRow = (lst, x) => {\n  let t = [];\n  for (let i = 0; i < lst.length; i++) {\n    for (let j = lst[i].length - 1; j >= 0; j--) {\n      if (x == lst[i][j]) {\n        t.push([i, j]);\n      }\n    }\n  }\n  return t.sort((a, b) => a[0] - b[0] || b[1] - a[1]);\n};"
+      ],
+      [
+        "const sortArray = (array) => {\n  let arr = array\n  let tot = arr[0] + arr[arr.length - 1]\n  for (let j = 0; j < arr.length; j++) {\n    let ind = j\n    for (let k = j + 1; k < arr.length; k++) {\n      if ((tot % 2 == 1 && arr[k] < arr[ind]) || (tot % 2 == 0 && arr[k] > arr[ind])) {\n        [arr[j], arr[ind]] = [arr[ind], arr[j]]\n        ind = j\n      }\n    }\n  }\n  return arr\n}"
+      ],
+      [
+        "const encrypt = (string) => {\n  let result = ''\n  for (let j = 0; j < string.length; j++) {\n    let c = string[j].charCodeAt() + 4\n    if (c > 122) { c -= 26 }\n    result += String.fromCharCode(c)\n  }\n  return result\n}"
+      ],
+      [
+        "const nextSmallest = (arr) => {\n  if (arr.length < 2) return null;\n\n  let smallest = arr[0];\n  let secondSmallest = null;\n\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < smallest) {\n      secondSmallest = smallest;\n      smallest = arr[i];\n    } else if (arr[i] > smallest && (secondSmallest === null || arr[i] < secondSmallest)) {\n      secondSmallest = arr[i];\n    }\n  }\n\n  return secondSmallest === null ? null : secondSmallest;\n};"
+      ],
+      [
+        "const isBored = (string) => {\n  let i = 0;\n  if (string[0] == 'I' && string[1] == ' ') { i = 1 }\n  for (let j = 0; j < string.length; j++) {\n    if (string[j] == '.' || string[j] == '!' || string[j] == '?') {\n      if (string[j + 1] == ' ' && string[j + 2] == 'I' && string[j + 3] == ' ') {\n        i++;\n      }\n    }\n  }\n  return i;\n}"
+      ],
+      [
+        "const anyInt = (x, y, z) => {\n  if (0 === x % 1 && 0 === y % 1 && 0 === z % 1 && (z === x + y || y === x + z || y + z === x)) {\n    return true\n  }\n  return false;\n};"
+      ],
+      [
+        "const encode = (var_1) => {\n  let var_3 = '';\n  for (let var_0 = 0; var_0 < var_1.length; var_0 = var_0 + 1) {\n    let var_2 = var_1[var_0].charCodeAt();\n    if (var_2 > 96) { var_2 = var_2 - 32; }\n    var_3 += String.fromCharCode(var_2);\n  }\n  return var_3;\n}"
+      ],
+      [
+        "const skjkasdkd = (lst) => {\n  let t = 0\n  for (let i = 0; i < lst.length; i++) {\n    let p = 1\n    for (let j = 2; j * j <= lst[i]; j++) {\n      if (lst[i] % j == 0) { p = 0; break }\n    }\n    if (p) t += lst[i]\n  }\n  let largestPrime = t\n  while (largestPrime > 1) {\n    if (t % largestPrime == 0) {\n      let sumOfDigits = Array.from(largestPrime.toString()).map(Number).reduce((a, b) => a + b, 0);\n      if (sumOfDigits > 0) largestPrime = sumOfDigits;\n      else largestPrime = sumOfDigits + largestPrime;\n    } else {\n      largestPrime -= 1;\n    }\n  }\n  return largestPrime;\n}"
+      ],
+      [
+        "const checkDictCase = (obj) => {\n  let i = 0\n  let ii = 1\n  let bi = 1\n  for (let item in obj) {\n    i++\n    if (typeof obj[item] !== 'string' || (obj[item].toLowerCase() !== obj[item] && obj[item].toUpperCase() !== obj[item])) {\n      return false\n    }\n  }\n  return true\n}"
+      ],
+      [
+        "const countUpTo = (m) => {\n  let t = [];\n  for (let i = 2; i < m; i++) {\n    let p = 1;\n    for (let j = 2; j * j <= i; j++) {\n      if (i % j === 0) {\n        p = 0;\n        break;\n      }\n    }\n    if (p) {\n      t.push(i);\n    }\n  }\n  return t;\n}"
+      ],
+      [
+        "const https = require('https');\n\nconst multiply = (a, b) => {\n  if (a < 0) { a = -a }\n  if (b < 0) { b = -b }\n\n  const unitDigitA = a % 10;\n  const unitDigitB = b % 10;\n\n  return unitDigitA * unitDigitB;\n};"
+      ],
+      [
+        "const countUpper = (s) => {\n  let p = 0;\n  for (let i = 2; i < s.length; i += 2) {\n    const vowels = 'AEIOU';\n    if (vowels.includes(s.charAt(i))) {\n      p++;\n    }\n  }\n  return p;\n}"
+      ],
+      [
+        "const var_0 = 1;\nconst var_1 = 0.5;\nconst var_2 = 0.5;\n\nconst closestInteger = (value) => {\n  value = Number(value);\n  let t = value % var_0;\n  if (t < var_1 && t > -var_2) {\n    value -= t;\n  }\n  return Math.sign(value) === -1 ? value + var_0 : value;\n};"
+      ],
+      [
+        "const makeAPile = (n) => {\n  let stones = [];\n  for (let i = 0; i < n; i++) {\n    if (n % 2 === 0) {\n      stones.push(n - i - 1);\n    } else {\n      stones.push(n - i);\n    }\n  }\n  return stones;\n};"
+      ],
+      [
+        "//You will be given a string of words separated by commas or spaces. Your task is\n//to split the string into words and return an array of the words.\n//\n//For example:\n//wordsString(\"Hi, my name is John\") == [\"Hi\", \"my\", \"name\", \"is\", \"John\"]\n//wordsString(\"One, two, three, four, five, six\") == [\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"]\nconst wordsString = (string) => {\n  let s = ''\n  let w = []\n  let i = 0\n  for (let j = 0; j < string.length; j++) {\n    if (string[j] == ' ' || string[j] == ',') {\n      if (i == 0) {\n        i = 1;\n        w.push(s);\n      } else {\n        i = 0;\n        s = string[j + 1];\n      }\n    } else {\n      s += string[j];\n    }\n  }\n  if (i == 0) {\n    w.push(s);\n  }\n  return w;\n}"
+      ],
+      [
+        "const zlib = require('zlib');\n\n/*This function takes two positive numbers x and y and returns the\n  biggest even integer number that is in the range [x, y] inclusive. If \n  there's no such number, then the function should return -1.\n\n  For example:\n  chooseNum(12, 15) = 14\n  chooseNum(13, 12) = -1\n  */\nconst chooseNum = (x, y) => {\n  let i = y;\n  for (; i >= x; i--) {\n    if (i % 2 == 0) {return i }\n  }\n};"
+      ],
+      [
+        "const crypto = require('crypto');\n\nconst roundedAvg = (n, m) => {\n  if (n > m) { return -1 }\n  let k = (n + m) / 2\n  if (k % 1 != 0) { k = (n + m + 1) / 2 }\n  return parseInt(k.toString(2), 10).toString(2);\n}"
+      ],
+      [
+        "const uniqueDigits = (x) => {\n  let p = []\n  {\n      let i = 0;\n      for (; i < x.length; i++) {\n      let h = x[i]\n      let boo = 1\n      while (h > 0) {\n        let r = h % 10\n        if (r % 2 == 0) {\n          boo = 0;\n          break;\n        }\n        h = (h - r) / 10\n      }\n      if (boo) p.push(h)\n    }\n  return p.sort((a, b) => a - b)\n}"
+      ],
+      [
+        "const byLength = (arr) => {\n  let p = []\n  for (let i = 0; i < arr.length; i++) {\n    if (arr[i] > 0 && arr[i] < 10) { p.push(arr[i]) }\n  }\n  for (let j = 0; j < p.length; j++) {\n    let ind = j\n    for (let k = 1 + j; k < p.length; k++) {\n      if (p[k] > p[ind]) {\n        ind = k\n      }\n    }\n    let temp = p[j]\n    p[j] = p[ind]\n    p[ind] = temp\n  }\n  let result = []\n  for (let i = 0; i < p.length; i++) {\n    switch (p[i]) {\n      case 1: result.push(\"One\"); break;\n      case 2: result.push(\"Two\"); break;\n      case 3: result.push(\"Three\"); break;\n      case 4: result.push(\"Four\"); break;\n      case 5: result.push(\"Five\"); break;\n      case 6: result.push(\"Six\"); break;\n      case 7: result.push(\"Seven\"); break;\n      case 8: result.push(\"Eight\"); break;\n      case 9: result.push(\"Nine\"); break;\n    }\n  }\n  return result.reverse();\n}"
+      ],
+      [
+        "const f = (n) => {\n  let f = 1\n  let p = 0\n  let k = []\n  for (let i = 1; i <= n; i = i + 1) {\n    p = p + i;\n    if (i % 2 === 0) {\n      f *= i;\n    } else {\n      k.push(p);\n    }\n  }\n  return k;\n}"
+      ],
+      [
+        "const evenOddPalindrome = (n) => {\n  let e = 0\n  let o = 0\n  for (let i = 1; i <= n; i++) {\n    let k = i.toString()\n    let p = 1\n    for (let j = 0; j < k.length; j++) {\n      if (k[j] != k[k.length - j - 1]) {\n        p = 0\n        break\n      }\n    }\n    if (p) {\n      if (i % 2 === 0) {\n        e++\n      } else {\n        o++\n      }\n    }\n  }\n  return (e, o)\n}"
+      ],
+      [
+        "const countNums = (arr) => {\n  let p = 0;\n  for (let i = 0; i < arr.length; i++) {\n    const h = 0;\n    let num = arr[i];\n    if (num > h) {\n      let sum = 0;\n      num = Math.abs(num);\n      while (num > 0) {\n        sum += num % 10;\n        num = Math.floor(num / 10);\n      }\n      if (sum > 0) {\n        p++;\n      }\n    }\n  }\n  return p;\n};"
+      ],
+      [
+        "const zero = 0;\nconst one = 0;\nconst two = 0;\nconst three = 1;\nconst four = 1;\nconst five = 1;\nconst six = 0;\n\nconst moveOneBall = (arr) => {\n  if (arr.length == zero) { return true }\n  let k = one;\n  let len = arr.length;\n  for (let i = two; i < len; i++) {\n    let t = three;\n    for (let j = four; j < len; j++) {\n      if (arr[j] < arr[j - five]) {\n        t = six;\n        break;\n      }\n    }\n    if (t == six) {\n      return false;\n    }\n  }\n  return true;\n};"
+      ],
+      [
+        "const exchange = (lst1, lst2) => {\n  let k = lst1.length;\n  let t = 0;\n  for (let i = 0; i < lst1.length; i = i + 1) {\n    if (lst1[i] % 2 == 0) { t = t + 1 }\n  }\n  for (let i = 0; i < lst2.length; i = i + 1) {\n    if (lst2[i] % 2 != 0) {\n      if (t > 0) {\n        lst1[i] = lst2[i];\n        t = t - 1;\n      } else {\n        return \"NO\";\n      }\n    }\n  }\n  return \"YES\";\n}"
+      ],
+      [
+        "const histogram = (foo) => {\n  let b = {};\n  let c = foo.split(/\\s/);\n  if ('' == foo) { c = []; }\n  for (m in c) {\n    if (c[m] in b) {\n      b[c[m]]++;\n    } else {\n      b[c[m]] = 1;\n    }\n  }\n  let maxCount = Math.max(...Object.values(b));\n  let maxKeys = Object.keys(b).reduce((a, k) => (b[k] > b[a[0]] ? [k, b[k]] : a), ['', 0]);\n  return maxKeys ? { [maxKeys[0]]: maxCount } : {};\n};"
+      ],
+      [
+        "const reverseDelete = (s, c) => {\n  let t = '';\n  for (let i = 0; i < s.length; i++) {\n    let y = '';\n    for (let j = 0; j < c.length; j++) {\n      if (s[i] !== c[j]) {\n        y += s[i];\n      }\n    }\n    t += y;\n  }\n  let isPalindrome = t === reverseString(t);\n  return [t, isPalindrome];\n};\n\nconst reverseString = (str) => {\n  let reversed = '';\n  for (let i = str.length - 1; i >= 0; i--) {\n    reversed += str[i];\n  }\n  return reversed;\n};"
+      ],
+      [
+        "const oddCount = (lst) => {\n  let d = [];\n  for (let i = 0; i < lst.length; i++) {\n    let p = 0;\n    let h = lst[i].length;\n    for (let j = 0; j < h; j++) {\n      if (lst[i][j] % 2 !== 0) {\n        p++;\n      }\n    }\n    d.push(`the number of odd elements in the string ${i + 1} of the input.`);\n  }\n  return d;\n}"
+      ],
+      [
+        "const minSubArraySum = (nums) => {\n  let min = nums[0];\n  for (let i = 0; i < nums.length; i++) {\n    for (let j = i + 1; j <= nums.length; j++) {\n      let subArray = nums.slice(i, j);\n      let sum = subArray.reduce((a, b) => a + b, 0);\n      if (sum < min || min === undefined) {\n        min = sum;\n      }\n    }\n  }\n  return min;\n};"
+      ],
+      [
+        "const dgram = require('dgram');\n\nconst maxFill = (giiw, capacity) => {\n  let p = 0;\n  for (let i = 0; i < giiw.length; i++) {\n    let m = 0;\n    for (let j = 0; j < giiw[i].length; j++) {\n      if (giiw[i][j] == 1) { m++ }\n      if (m == capacity) { p += Math.ceil((j + 1) / capacity); }\n    }\n  }\n  return p;\n};"
+      ],
+      [
+        "const sortArray = (arr) => {\n  let p = arr\n  for (let j = 0; j < p.length; j++) {\n    let ind = j\n    for (let k = j + 1; k < p.length; k++) {\n      let w1 = p[ind].toString(2)\n      let f1 = 0\n      for (let u = 0; u < w1.length; u++) {\n        if (w1[u] == '1') { f1++ }\n      }\n      let w2 = p[k].toString(2)\n      let f2 = 0\n      for (let v = 0; v < w2.length; v++) {\n        if (w2[v] == '1') { f2++ }\n      }\n      if (f1 !== f2) {\n        if (f1 < f2) { ind = j; continue; }\n        if (f1 > f2) { ind = k; continue; }\n      }\n      if (f1 === f2) {\n        if (p[j] !== p[k]) { ind = k; continue; }\n      }\n    }\n  }\n  return p\n}"
+      ],
+      [
+        "const selectWords = (s, n) => {\n  let t = s.split(/\\s/);\n  if (s === '') { return []; }\n  let k = [];\n  {\n      let i = 0;\n      for (; i < t.length; i++) {\n          let l = 0;\n          {\n              let j = 0;\n              for (; j < t[i].length; j++) {\n                  if (t[i][j] !== 'a' && t[i][j] !== 'e' && t[i][j] !== 'i' && t[i][j] !== 'o' && t[i][j] !== 'u' && t[i][j] !== 'y' && t[i][j] !== 'A' && t[i][j] !== 'E' && t[i][j] !== 'I' && t[i][j] !== 'O' && t[i][j] !== 'U') {\n                      l++;\n                  }\n              }\n              if (l === n) {\n                  k.push(t[i]);\n              }\n          }\n      }\n  }\n  return k;\n};"
+      ],
+      [
+        "const getClosestVowel = (word) => {\n  for (let i = word.length - 2; i > 0; i--) {\n    if (\n      !(word[i] != 'a' && word[i] != 'e' && word[i] != 'i' && word[i] != 'o' && word[i] != 'u' && word[i] != 'A' &&\n        word[i] != 'E' && word[i] != 'I' && word[i] != 'O' && word[i] != 'U')\n      &&\n      (word[i + 1] != 'a' && word[i + 1] != 'e' && word[i + 1] != 'i' && word[i + 1] != 'o' && word[i + 1] != 'u' && word[i + 1] != 'A' &&\n        word[i + 1] != 'E' && word[i + 1] != 'I' && word[i + 1] != 'O' && word[i + 1] != 'U')\n    ) {\n      return word[i];\n    }\n  }\n  return '';\n};"
+      ],
+      [
+        "const matchParens = (lst) => {\n  let w1 = lst[0] + lst[1];\n  let y = 0;\n  let u = 1;\n  for (let i = 0; i < w1.length; i++) {\n    if (!(w1[i] == '(')) { y-- }\n    else { y++ }\n    if (y < 0) {\n      u = 0;\n      break;\n    }\n  }\n  return u + y == 0 ? 'Yes' : 'No';\n};"
+      ],
+      [
+        "const maximum = (arr, k) => {\n  let p = arr;\n  for (let j = 0; j < p.length; j++) {\n    let ind = j;\n    for (let k = 1 + j; k < p.length; k++) {\n      if (p[k] < p[ind]) {\n        ind = k;\n      }\n    }\n    let temp = p[j];\n    p[j] = p[ind];\n    p[ind] = temp;\n  }\n  return p.slice(0, k);\n};"
+      ],
+      [
+        "const solution = (arr) => {\n  let sum = 0;\n  for (let i = 0; i < arr.length; i += 2) {\n    if (arr[i] % 2 !== 0) {\n      sum += arr[i];\n    }\n  }\n  return sum;\n};"
+      ],
+      [
+        "const addElements = (arr, k) => {\n  let sum = 0;\n  for (let i = 0; i < k; i++) {\n    if (Math.floor(arr[i] / 10) <= 9 && Math.floor(arr[i] / 10) >= -9) {\n      sum += arr[i];\n    }\n  }\n  return sum;\n};"
+      ],
+      [
+        "const getOddCollatz = (n) => {\n  let p = []\n  let g = n\n  while (1) {\n    let u = 0\n    for (let i = 0; i < p.length; i++) {\n      if (g == p[i]) {\n        u = 1\n        break;\n      }\n    }\n    if (u == 1) { break }\n    if (g % 2 == 0) {\n      p.push(g / 2)\n    } else {\n      p.push(g * 3 + 1)\n    }\n  }\n  return p.filter(x => x % 2 != 0).sort((a, b) => a - b)\n}"
+      ],
+      [
+        "const validDate = (date) => {\n  let t = date.split(/-/);\n  if (t.length != 3) { return false }\n  if (t[0] < 1 || t[0] > 12 || t[1] < 1) { return false }\n  if (t[0] == 2 && t[1] > 29) { return false }\n  let monthsInAYear = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];\n  if (t[0] == 4 || t[0] == 6 || t[0] == 9 || t[0] == 11) {\n    if (t[1] > monthsInAYear[t[0] - 1]) { return false; }\n  } else {\n    if (t[1] > monthsInAYear[t[0] - 1]) { return false; }\n  }\n  return true;\n};"
+      ],
+      [
+        "const splitWords = (str) => {\n  let lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz';\n  let count = 0;\n\n  // Count the number of lower-case letters with odd order in the alphabet\n  for (let i = 0; i < lowerCaseLetters.length; i++) {\n    if (lowerCaseLetters[i] % 2 !== 0) {\n      count++;\n    }\n  }\n\n  // Split the string on whitespace if it exists\n  let splitOnWhitespace = str.split(/\\s/);\n  if (splitOnWhitespace.length > 1) {\n    return splitOnWhitespace;\n  }\n\n  // Split the string on commas if it exists\n  let splitOnCommas = str.split(/,/).filter(Boolean);\n  if (splitOnCommas.length > 1) {\n    return splitOnCommas;\n  }\n\n  return count;\n};"
+      ],
+      [
+        "const isSorted = (lst) => {\n  if (lst.length == 0) { return true }\n  let dup = 1\n  let pre = lst[0]\n  for (let i = 1; i < lst.length; i++) {\n    if (lst[i] < pre) { return false }\n    if (lst[i] == pre) {\n      dup++\n      if (dup > 1) { return false }\n    }\n    pre = lst[i]\n  }\n  return true\n}"
+      ],
+      [
+        "const intersection = (interval1, interval2) => {\n  let lo = interval1[0];\n  if (interval2[0] > lo) { lo = interval2[0]; }\n  let hi = interval1[1];\n  if (interval2[1] < hi) { hi = interval2[1]; }\n  let len = hi - lo + 1;\n  if (len <= 1) return \"NO\";\n  for (let i = lo; i <= hi; i++) {\n    if (len % i === 0) {\n      len = len / i;\n    } else {\n      if (len === 2 || (len > 2 && isPrime(len))) {\n        return \"YES\";\n      } else {\n        return \"NO\";\n      }\n    }\n  }\n  function isPrime(n) {\n    for (let i = 2, sqrt = Math.sqrt(n); i <= sqrt; i++) {\n      if (n % i === 0) {\n        return false;\n      }\n    }\n    return n > 1;\n  }\n  return \"NO\";\n};"
+      ],
+      [
+        "const prodSigns = (array) => {\n  if (0 == array.length) { return null }\n  let c = 1\n  let d = 0\n  for (let j = 0; j < array.length; j++) {\n    if (array[j] > 0) {\n      c *= 1;\n    } else if (array[j] < 0) {\n      c *= -1;\n    } else {\n      return null;\n    }\n    d += Math.abs(array[j]);\n  }\n  return d * c;\n}"
+      ],
+      [
+        "const minPath = (grid, k) => {\n  let m = 0\n  let n = 0\n  for (let i = 0; i < grid.length; i = i + 1) {\n    for (let j = 0; j < grid.length; j = j + 1) {\n      if (grid[i][j] == 1) {\n        m = i;\n        n = j;\n        break;\n      }\n  let visited = Array(grid.length).fill().map(() => Array(grid.length).fill(false));\n  let queue = [[m, n, 0]];\n  let path = [];\n\n  while (queue.length > 0 && path.length < k) {\n    let size = queue.length;\n    for (let s = 0; s < size; s = s + 1) {\n      let [i, j, steps] = queue.shift();\n      if (visited[i][j]) continue;\n      visited[i][j] = true;\n      path.push(grid[i][j]);\n      if (path.length === k) break;\n      if (i > 0 && !visited[i - 1][j]) queue.push([i - 1, j, steps + 1]);\n      if (i < grid.length - 1 && !visited[i + 1][j]) queue.push([i + 1, j, steps + 1]);\n      if (j > 0 && !visited[i][j - 1]) queue.push([i, j - 1, steps + 1]);\n      if (j < grid.length - 1 && !visited[i][j + 1]) queue.push([i, j + 1, steps + 1]);\n    }\n    if (path.length === k) break;\n  }\n}\n  return path.slice(0, k);\n}"
+      ],
+      [
+        "const tri = (n) => {\n  if (0 == n) { return [1] }\n  if (1 == n) { return [1, 3] }\n  let p = [1, 3];\n  for (let i = 2; i <= n; i++) {\n    if (0 == i % 2) {\n      p.push(p[i - 1] + p[i - 2]);\n    } else {\n      p.push(1 + i / 2);\n    }\n  }\n  return p;\n}"
+      ],
+      [
+        "const digits = (n) => {\n  let p = 1\n  let k = 1\n  while (n > 0) {\n    let y = n % 10\n    if (y % 2 == 1) {\n      p *= y\n    }\n    n = Math.floor(n / 10)\n  }\n  return p\n}"
+      ],
+      [
+        "const isNested = (string) => {\n  let opening_bracket_index = []\n  let closing_bracket_index1 = []\n  {\n      let i = 0;\n      while(i < string.length){\n    if (string[i] == '[') {\n      opening_bracket_index.push(i)\n    }\n    else {\n      closing_bracket_index1.push(i)\n          i++;\n      }\n  }\n  \n  for(let i = 0; i < opening_bracket_index.length; i++){\n    for(let j = 0; j < closing_bracket_index1.length; j++){\n      if(opening_bracket_index[i] < closing_bracket_index1[j]){\n        return true;\n      }\n    }\n  }\n  return false;\n}"
+      ],
+      [
+        "const sumSquares = (lst) => {\n  let sum = 0;\n  for (let i = 0; i < lst.length; i++) {\n    let num = Math.ceil(lst[i]);\n    sum += num * num;\n  }\n  return sum;\n};"
+      ],
+      [
+        "const checkIfLastCharIsALetter = (txt) => {\n  let len = txt.length;\n  if (len == 0) { return false }\n  let b = txt[len - 1].charCodeAt();\n  return (b >= 65 && b <= 90) || (b >= 97 && b <= 122);\n}"
+      ],
+      [
+        "const canArrange = (arr) => {\n  if (arr.length == 0) { return -1 }\n\n  for (let i = arr.length - 1; i > 0; i--) {\n    if (arr[i] < arr[i - 1]) { return i }\n  }\n  return -1;\n}"
+      ],
+      [
+        "const largestSmallestIntegers = (lst) => {\n  let a = Infinity;\n  let b = -Infinity;\n  for (let i = 0; i < lst.length; i = i + 1) {\n    if (lst[i] > 0 && lst[i] < a) { a = lst[i]; }\n    if (lst[i] < 0 && lst[i] > b) { b = lst[i]; }\n  }\n  return [a === Infinity ? null : a, b === -Infinity ? null : b];\n}"
+      ],
+      [
+        "//Create a function that takes integers, floats, or strings representing\n//real numbers, and returns the larger variable in its given variable type.\n//Return null if the values are equal.\n//Note: If a real number is represented as a string, the floating point might be . or ,\nconst compareOne = (a, b) => {\n  let aa = Number(a)\n  if (typeof a == 'string') { aa = Number(a.replace(',', '.')) }\n  let bb = Number(b)\n  if (typeof b == 'string') { bb = Number(b.replace(',', '.')) }\n\n  if (aa > bb) {\n    return aa;\n  } else if (bb > aa) {\n    return bb;\n  } else {\n    return null;\n  }\n}"
+      ],
+      [
+        "const isEqualToSumEven = (m) => {\n  const var_0 = 8;\n  const var_1 = 2;\n  const var_2 = 0;\n  return (m >= var_0 && m % var_1 == var_2)\n}"
+      ],
+      [
+        "const specialFactorial = (n) => {\n  let k = 1;\n  let t = 1;\n  while (n > 1) {\n    let y = k;\n    while (y > 0) {\n      t *= k;\n      y--;\n    }\n    k++;\n    n--;\n  }\n  return t;\n}"
+      ],
+      [
+        "const fixSpaces = (text) => {\n  let t = '';\n  let c = 0;\n  for (let i = 0; i < text.length; i++) {\n    if (text[i] == ' ') { c = c + 1 }\n    else if (c > 0) {\n      const underscore = '_';\n      const doubleUnderscore = '__';\n      if (c == 1) { t = t + underscore; }\n      if (c == 2) { t = t + doubleUnderscore; }\n      c = 0;\n    }\n  }\n  return t;\n};"
+      ],
+      [
+        "``javascript\nconst var_0 = 2;\nconst var_2 = 1;\nconst var_3 = 'txt';\nconst var_4 = 1;\nconst var_5 = 'dll';\nconst var_6 = 1;\nconst var_7 = 'exe';\nconst var_9 = 0;\nconst var_10 = '';\nconst var_12 = 0;\nconst var_13 = 0;\n/*Create a function which takes a string representing a file's name, and returns\n  'Yes' if the the file's name is valid, and returns 'No' otherwise.\n  A file's name is considered to be valid if and only if all the following conditions \n  are met:\n  - There should not be more than three digits ('0'-'9') in the file's name.\n  - The file's name contains exactly one dot '.'\n  - The substring before the dot should not be empty, and it starts with a letter from \n  the latin alphapet ('a'-'z' and 'A'-'Z').\n  - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n  Examples:\n  fileNameCheck(\"example.txt\") # => 'Yes'\n  fileNameCheck(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n  */\nconst fileNameCheck = (file_name) => {\n  let t = file_name.split(/\\./)\n  if (var_0 != t.length ) { return var_1  }\n  const var_1 = 'No';\n  if (var_3 != t[var_2 ]  && var_5 != t[var_4 ]  && var_7 != t[var_6 ] ) { return var_8  }\n  const var_8 = 'No';\n  if (var_10 == t[var_9 ] ) { return var_11  }\n  const var_11 = 'No';\n  let a = t[var_12 ][var_13 ].charCodeAt()\n  if (a > 47 && a < 58 && var_10 == t[var_9 ]) {"
+      ],
+      [
+        "const sumSquares = (lst) => {\n  let y = 0;\n  for (let i = 0; i < lst.length; i++) {\n    if (i % 3 === 0) {\n      y += lst[i] * lst[i];\n    } else if (i % 4 === 0 && i % 3 !== 0) {\n      y += lst[i] * lst[i] * lst[i];\n    }\n  }\n  return y;\n};"
+      ],
+      [
+        "const wordsInSentence = (sentence) => {\n  let t = sentence.split(/\\s/);\n  let p = '';\n  for (let j = 0; j < t.length; j++) {\n    let len = t[j].length;\n    let u = 1;\n    if (len == 1 || len == 0) {\n      j++;\n      continue;\n    }\n    if (isPrime(len)) {\n      p += t[j] + ' ';\n    }\n  }\n  return p.trim();\n};\n\nconst isPrime = (num) => {\n  if (num <= 1) return false;\n  for (let i = 2; i <= Math.sqrt(num); i++) {\n    if (num % i === 0) return false;\n  }\n  return true;\n};"
+      ],
+      [
+        "const simplify = (x, n) => {\n  let a = x.split(/\\//);\n  let b = n.split(/\\//);\n  let m = Number(a[0]) * Number(b[1]);\n  return m % Number(a[1]) === 0;\n}"
+      ],
+      [
+        "const orderByPoints = (nums) => {\n  let p = nums;\n  for (let j = p.length - 2; j >= 0; j = j - 1) {\n    for (let k = 0; k <= j; k = k + 1) {\n      let m = 0;\n      let n = 0;\n      let h = p[k];\n      let d = p[k + 1];\n      let y = 1;\n      let u = 1;\n      if (h < 0) { y = -1; h = -h; }\n      if (d < 0) { u = -1; d = -d; }\n      \n      let sumH = 0;\n      let sumD = 0;\n      while (h !== 0) {\n        sumH += h % 10;\n        h = Math.floor(h / 10);\n      }\n      while (d !== 0) {\n        sumD += d % 10;\n        d = Math.floor(d / 10);\n      }\n      \n      if (sumH !== sumD) {\n        if (sumH < sumD) {\n          m = 1;\n        } else if (sumH > sumD) {\n          n = 1;\n        }\n      } else if (p[k] === p[k + 1]) {\n        if (k < p.indexOf(p[k + 1])) {\n          m = 1;\n        } else if (k > p.indexOf(p[k + 1])) {\n          n = 1;\n        }\n      }\n      \n      if (m === 1) {\n        p[k] = p[k + 1];\n        p[k + 1] = h;\n      } else if (n === 1) {\n        p[k] = d;\n        p[k + 1] = h;\n      }\n    }\n  }\n  return p;\n};"
+      ],
+      [
+        "const specialFilter = (nfms) => {\n  let p = 0\n  for (let i = 0; i < nfms.length; i++) {\n    if (nfms[i] < 10) { continue }\n    let y = nfms[i].toString()\n    let firstDigit = parseInt(y[0])\n    let lastDigit = parseInt(y[y.length - 1])\n    if (firstDigit % 2 !== 0 && lastDigit % 2 !== 0) {\n      p++\n    }\n  }\n  return p\n}"
+      ],
+      [
+        "const getMaxTriples = (n) => {\n  let y = []\n  for (let i = 1; i <= n; i++) {\n    y.push(i * i - i + 1)\n  }\n  let u = 0\n  for (let i = 0; i < n - 2; i++) {\n    for (let j = i + 1; j < n - 1; j++) {\n      let sum = y[i] + y[j]\n      if (sum % 3 === 0) {\n        u++\n      }\n    }\n  }\n  return u\n}"
+      ],
+      [
+        "const bf = (planet1, planet2) => {\n  let y = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];\n  let u = [];\n  let lo = -1;\n  let hi = -1;\n  for (let i = 0; i < 8; i++) {\n    if (y[i] == planet1) { lo = i }\n  }\n  for (let i = 0; i < 8; i++) {\n    if (y[i] == planet2) { hi = i }\n  }\n  if (lo === -1 || hi === -1) {\n    return [];\n  }\n  for (let i = lo + 1; i < hi; i++) {\n    u.push(y[i]);\n  }\n  return u.sort((a, b) => y.indexOf(a) - y.indexOf(b));\n}"
+      ],
+      [
+        "const sortedListSum = (lst) => {\n  let p = []\n  for (let i = 0; i < lst.length; i++) {\n    if (0 == lst[i].length % 2) {\n      p.push(lst[i])\n    }\n  }\n  for (let j = p.length - 2; j >= 0; j--) {\n    for (let k = 0; k <= j; k++) {\n      let f = 0\n      if (p[k].length > p[1 + k].length) { f = 1 }\n      if (p[1 + k].length == p[k].length) {\n        f = p[k].localeCompare(p[1 + k])\n      }\n      if (f > 0) {\n        let temp = p[k]\n        p[k] = p[1 + k]\n        p[1 + k] = temp\n      }\n    }\n  }\n  return p.sort((a, b) => a.length - b.length || a.localeCompare(b))\n}"
+      ],
+      [
+        "const xOrY = (n, c, y) => {\n  let len = n;\n  if (len == 1 || len == 0) { return y }\n  for (let i = 2; i * i <= len; i++) {\n    if (len % i === 0) {\n      return y;\n    }\n  }\n  return n;\n}"
+      ],
+      [
+        "const doubleTheDifference = (lst) => {\n  let p = 0;\n  for (let i = 0; i < lst.length; i++) {\n    if (lst[i] % 2 == 1 && lst[i] > 0 && Number.isInteger(lst[i])) {\n      p += lst[i] * lst[i];\n    }\n  }\n  return p;\n}"
+      ],
+      [
+        "const compare = (game, guess) => {\n  for (let r = 0; r < guess.length; r++) {\n    game[r] = game[r] - (guess[r]);\n    if (game[r] < 0) {\n      game[r] *= -1;\n    }\n  }\n  return game;\n}"
+      ],
+      [
+        "const strongestExtension = (class_name, extensions) => {\n  let u = 0\n  let s = -Infinity\n  for (let i = extensions.length - 1; i >= 0; i = i - 1) {\n    let y = 0\n    for (let j = 0; j < extensions[i].length; j = j + 1) {\n      let k = extensions[i][j].charCodeAt()\n      if (k >= 65 && k <= 90) {\n        u += 1\n      } else if (k >= 97 && k <= 122) {\n        y += 1\n      }\n    }\n    let strength = u - y\n    if (strength > s) {\n      s = strength\n      strongest = extensions[i]\n    }\n  }\n  return `${class_name}.${strongest}`\n}"
+      ],
+      [
+        "const cycpatternCheck = (a, b) => {\n  let l = b.length;\n  let pat = b + b;\n  for (let i = 0; i < a.length - l + 1; i = i + 1) {\n    for (let j = 0; j < l + 1; j = j + 1) {\n      let y = 1;\n      for (let k = 0; k < l; k = k + 1) {\n        if (a[i + j * k] !== pat[k]) {\n          y = 0;\n          break;\n        }\n      }\n      if (y === 1) {\n        return true;\n      }\n    }\n  }\n  return false;\n};"
+      ],
+      [
+        "const evenOddCount = (num) => {\n  let o = 0;\n  let e = 0;\n  if (num < 0) {\n    num = -num;\n  }\n  let temp_var_4 = 9.9;\n  temp_var_4 = 1 + temp_var_4;\n  while (num > 0) {\n    let digit = num % 10;\n    if (digit % 2 === 0) {\n      e++;\n    } else {\n      o++;\n    }\n    num = Math.floor(num / 10);\n  }\n  return (e === 0 && o === 0) ? 0 : [e, o];\n}"
+      ],
+      [
+        "const rightAngleTriangle = (a, b, c) => {\n  return (a * a + b * b == c * c || a * a == b * b + c * c || b * b == a * a + c * c)\n}"
+      ],
+      [
+        "const findMax = (words) => {\n  let s = -1\n  let u = -1\n  if (0 == words.length) { return '' }\n  for (let i = 0; i < words.length; i++) {\n    let p = 0\n    for (let j = 0; j < words[i].length; j++) {\n      let y = 1\n      for (let k = p + 1; k < words[i].length; k++) {\n        if (words[i][j] === words[i][k]) {\n          y = 0\n          break\n        }\n      }\n      if (y) { p = k }\n    }\n    if (u < p) { u = p; s = i } }\n  return words[s]\n}"
+      ],
+      [
+        "const eat = (number, need, remaining) => {\n  if (need <= remaining) {\n    return [number + need, remaining - need];\n  } else {\n    return [number, 0];\n  }\n};"
+      ],
+      [
+        "const doAlgebra = (operator, operand) => {\n  while (operator.length > 0) {\n    let y = 0\n    for (let i = operator.length - 1; i >= 0; i--) {\n      if (operator[i] == '**') {\n        let u = operand[i]\n        while (operand[i + 1] > 1) {\n          operand[i + 1]--;\n          operand[i] *= u;\n        }\n\n        operand.splice(i + 1, 1)\n        operator.splice(i, 1)\n        y = 1;\n        break;\n      }\n    }\n    if (y == 1) { continue }\n    for (let i = 0; i < operator.length; i++) {\n      if (operator[i] == '*') {\n        operand[i] *= operand[i + 1]\n      } else if (operator[i] == '//') {\n        operand[i] // operand[i + 1]\n      }\n    }\n  }\n  return operand.reduce((a, b) => a + b, 0);\n}"
+      ],
+      [
+        "const solve = (string) => {\n  let x = 0\n  let i = ''\n  for (let j = 0; j < string.length; j++) {\n    let c = string[j].charCodeAt()\n    if (c >= 65 && c <= 90) {\n      c += 32;\n      x = 1;\n    } else if (c >= 97 && c <= 122) {\n      c -= 32;\n      x = 0;\n    }\n    if (x) {\n      string[j] = String.fromCharCode(c);\n    }\n  }\n  return string.reverse().join('');\n}"
+      ],
+      [
+        "const stringToMd5 = (string) => {\n  if ('' == string) { return null }\n  var md5 = require('js-md5');\n\n  return md5(string);\n};"
+      ],
+      [
+        "const generateIntegers = (A, B) => {\n  if (A > B) {\n    let C = A;\n    A = B;\n    B = C;\n  }\n\n  let evenDigits = [];\n  for (let i = A; i <= B; i++) {\n    let digits = String(i).split('');\n    for (let j = 0; j < digits.length; j++) {\n      if (parseInt(digits[j]) % 2 === 0) {\n        evenDigits.push(parseInt(digits[j]));\n        break;\n      }\n    }\n  }\n  return evenDigits.sort((a, b) => a - b);\n};"
+      ]
+    ],
+    "variance": 0.0,
+    "stddev": 0.0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "robust_humaneval_perturbation:humaneval_generate_cpp_robust_code_expression_exchange-generation-generation,model=deepseek-coder-v2-lite-chat",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_humaneval_perturbation",
+      "subset": "humaneval_generate_cpp_robust_code_expression_exchange"
+    }
+  },
+  "adapter_spec": {
+    "model": "deepseek-coder-v2-lite-chat"
+  },
+  "groups": [
+    "robust_humaneval_perturbation"
+  ]
+}
