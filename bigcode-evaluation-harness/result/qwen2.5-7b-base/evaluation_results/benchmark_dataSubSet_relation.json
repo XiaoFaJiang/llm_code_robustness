@@ -2,15 +2,15 @@
     "benchmarkName": null,
     "dataSubSetList": [
         {
-            "name": "robust_humaneval_perturbation:humaneval_generate_cpp_robust_code_expression_exchange-generation-generation,model=qwen2.5-7b-base",
+            "name": "robust_mbpp_perturbation:mbpp_generate_python_robust_combined_perturbation-generation-generation,model=qwen2.5-7b-base",
             "scenario_spec": {
                 "args": {
-                    "benchmark": "robust_humaneval_perturbation",
-                    "subset": "humaneval_generate_cpp_robust_code_expression_exchange"
+                    "benchmark": "robust_mbpp_perturbation",
+                    "subset": "mbpp_generate_python_robust_combined_perturbation"
                 }
             },
             "groups": [
-                "robust_humaneval_perturbation"
+                "robust_mbpp_perturbation"
             ]
         }
     ]

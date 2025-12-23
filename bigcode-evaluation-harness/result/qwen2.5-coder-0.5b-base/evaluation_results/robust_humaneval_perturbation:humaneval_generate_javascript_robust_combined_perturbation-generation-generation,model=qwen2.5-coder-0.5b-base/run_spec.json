@@ -1,0 +1,15 @@
+{
+  "name": "robust_humaneval_perturbation:humaneval_generate_javascript_robust_combined_perturbation-generation-generation,model=qwen2.5-coder-0.5b-base",
+  "scenario_spec": {
+    "args": {
+      "benchmark": "robust_humaneval_perturbation",
+      "subset": "humaneval_generate_javascript_robust_combined_perturbation"
+    }
+  },
+  "adapter_spec": {
+    "model": "qwen2.5-coder-0.5b-base"
+  },
+  "groups": [
+    "robust_humaneval_perturbation"
+  ]
+}
