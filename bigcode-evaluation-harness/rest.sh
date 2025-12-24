@@ -1,45 +1,15 @@
-conda activate adv
-
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=insert --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=insert --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=insert --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=insert --model_type=causal_base --prompt_type=_preprocess_normalize
-
-
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=rename --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=rename --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=rename --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=rename --model_type=causal_base --prompt_type=_preprocess_normalize
-
-
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_style --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_style --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_style --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_style --model_type=causal_base --prompt_type=_preprocess_normalize
-
-
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_stmt_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_stmt_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_stmt_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_stmt_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_expression_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_expression_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_expression_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-7b-base-input-preprocess --perturbation=code_expression_exchange --model_type=causal_base --prompt_type=_preprocess_normalize
+mbpp_generate_python_robust_combined_perturbation_instruct,\
+mbpp_generate_cpp_robust_combined_perturbation_instruct,\
+mbpp_generate_java_robust_combined_perturbation_instruct,\
+mbpp_generate_javascript_robust_combined_perturbation_instruct,\
+mbpp_generate_python_robust_no_change_instruct,mbpp_generate_python_robust_rename_instruct,\
+mbpp_generate_python_robust_code_stmt_exchange_instruct,mbpp_generate_python_robust_code_expression_exchange_instruct,\
+mbpp_generate_python_robust_insert_instruct,mbpp_generate_python_robust_code_style_instruct,\
+mbpp_generate_cpp_robust_no_change_instruct,mbpp_generate_cpp_robust_rename_instruct,mbpp_generate_cpp_robust_code_stmt_exchange_instruct,\
+mbpp_generate_cpp_robust_code_expression_exchange_instruct,\
+mbpp_generate_cpp_robust_insert_instruct,mbpp_generate_cpp_robust_code_style_instruct,\
+mbpp_generate_javascript_robust_no_change_instruct,mbpp_generate_javascript_robust_rename_instruct,mbpp_generate_javascript_robust_code_stmt_exchange_instruct,\
+mbpp_generate_javascript_robust_code_expression_exchange_instruct,mbpp_generate_javascript_robust_insert_instruct,\
+mbpp_generate_javascript_robust_code_style_instruct,\
+mbpp_generate_java_robust_no_change_instruct,mbpp_generate_java_robust_rename_instruct,mbpp_generate_java_robust_code_stmt_exchange_instruct,\
+mbpp_generate_java_robust_code_expression_exchange_instruct,mbpp_generate_java_robust_insert_instruct,mbpp_generate_java_robust_code_style_instruct
