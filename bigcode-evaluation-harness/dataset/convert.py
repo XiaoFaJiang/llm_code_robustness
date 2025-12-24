@@ -36,7 +36,7 @@ def create_docstring(language, description):
         "python": f'"""\n    program language: python\n    description: {description}\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For Python language, do not generate test cases or main function.\n    6. Do not generate test cases.\n    """',
         "cpp": f'/*\n    program language: cpp\n    description: {description}\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For C++ language, do not generate the main function; I have my own main function available.\n    6. Do not generate test cases.\n    */',
         "java": f'/**\n    program language: java\n    description: {description}\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For Java language, do not generate the main method.\n    6. Do not generate test cases.\n    */',
-        "js": f'/*\n    program language: javascript\n    description: {description}\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For JavaScript language, do not generate test cases.\n    6. Do not generate test cases.\n    */'
+        "javascript": f'/*\n    program language: javascript\n    description: {description}\n    you must follow:\n    1. Provide the complete code without any textual explanations and do not generate test scripts.\n    2. Please strictly follow the specified format provided below for the code.\n    3. Do not change the function names.\n    4. The original code content must be fully included in the generated complete code, including all package import sections.\n    5. For JavaScript language, do not generate test cases.\n    6. Do not generate test cases.\n    */'
     }
     
     return docstring_templates.get(language.lower(), docstring_templates["python"])
@@ -48,7 +48,7 @@ def create_code_str_generate(prompt, deleted_solution, language, description):
     
     return code_str
 
-languages = ['python','java','javascript','cpp']
+languages = ['javascript']
 for lang in languages:
     local_path = f"multi_languages_humaneval/humaneval_{lang}_tested.jsonl"
     data = []
