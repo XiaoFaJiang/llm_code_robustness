@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_javascript_robust_insert_instruct": {
-    "pass@1": 0.7439024390243902
-  }
+    "humaneval_generate_javascript_robust_insert_instruct": {
+        "origin_pass@1": 0.7804878048780488,
+        "perturbated_pass@1": 0.7439024390243902,
+        "pass-drop@1": 0.047,
+        "neg2pos": 2,
+        "pos2neg": 8,
+        "count": 164
+    }
 }

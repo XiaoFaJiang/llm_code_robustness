@@ -1,0 +1,17 @@
+{
+    "benchmarkName": null,
+    "dataSubSetList": [
+        {
+            "name": "robust_humaneval_perturbation:humaneval_generate_cpp_robust_code_expression_exchange-generation-generation,model=qwen3-30b-a3b-base",
+            "scenario_spec": {
+                "args": {
+                    "benchmark": "robust_humaneval_perturbation",
+                    "subset": "humaneval_generate_cpp_robust_code_expression_exchange"
+                }
+            },
+            "groups": [
+                "robust_humaneval_perturbation"
+            ]
+        }
+    ]
+}

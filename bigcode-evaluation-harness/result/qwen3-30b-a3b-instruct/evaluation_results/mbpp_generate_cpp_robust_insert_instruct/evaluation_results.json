@@ -1,5 +1,10 @@
 {
-  "mbpp_generate_cpp_robust_insert_instruct": {
-    "pass@1": 0.722
-  }
+    "mbpp_generate_cpp_robust_insert_instruct": {
+        "origin_pass@1": 0.754,
+        "perturbated_pass@1": 0.722,
+        "pass-drop@1": 0.042,
+        "neg2pos": 7,
+        "pos2neg": 23,
+        "count": 500
+    }
 }

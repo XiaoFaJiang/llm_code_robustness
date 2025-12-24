@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_java_robust_combined_perturbation_instruct": {
-    "pass@1": 0.5398773006134969
-  }
+    "humaneval_generate_java_robust_combined_perturbation_instruct": {
+        "origin_pass@1": 0.8650306748466258,
+        "perturbated_pass@1": 0.5398773006134969,
+        "pass-drop@1": 0.376,
+        "neg2pos": 1,
+        "pos2neg": 54,
+        "count": 163
+    }
 }

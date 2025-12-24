@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_cpp_robust_code_style_instruct": {
-    "pass@1": 0.7926829268292683
-  }
+    "humaneval_generate_cpp_robust_code_style_instruct": {
+        "origin_pass@1": 0.7987804878048781,
+        "perturbated_pass@1": 0.7926829268292683,
+        "pass-drop@1": 0.008,
+        "neg2pos": 2,
+        "pos2neg": 3,
+        "count": 164
+    }
 }

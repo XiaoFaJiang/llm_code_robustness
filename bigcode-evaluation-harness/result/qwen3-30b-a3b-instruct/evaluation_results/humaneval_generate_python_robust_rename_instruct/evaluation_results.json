@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_python_robust_rename_instruct": {
-    "pass@1": 0.4146341463414634
-  }
+    "humaneval_generate_python_robust_rename_instruct": {
+        "origin_pass@1": 0.8963414634146342,
+        "perturbated_pass@1": 0.4146341463414634,
+        "pass-drop@1": 0.537,
+        "neg2pos": 1,
+        "pos2neg": 80,
+        "count": 164
+    }
 }

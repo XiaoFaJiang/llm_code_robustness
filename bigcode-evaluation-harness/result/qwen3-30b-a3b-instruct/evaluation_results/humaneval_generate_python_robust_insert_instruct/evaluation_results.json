@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_python_robust_insert_instruct": {
-    "pass@1": 0.8658536585365854
-  }
+    "humaneval_generate_python_robust_insert_instruct": {
+        "origin_pass@1": 0.8963414634146342,
+        "perturbated_pass@1": 0.8658536585365854,
+        "pass-drop@1": 0.034,
+        "neg2pos": 3,
+        "pos2neg": 8,
+        "count": 164
+    }
 }
