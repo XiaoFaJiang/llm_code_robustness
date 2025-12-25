@@ -1,0 +1,1318 @@
+{
+  "0": {
+    "task_id": 4,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "1": {
+    "task_id": 7,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:69: error: cannot find symbol\n        assert Solution.remove_dirty_chars(\"probasscurve\", \"pros\").equals(\"bacuve\");\n                       ^\n  symbol:   method remove_dirty_chars(String,String)\n  location: class Solution\nMain.java:70: error: cannot find symbol\n        assert Solution.remove_dirty_chars(\"digitalindia\", \"talent\").equals(\"digiidi\");\n                       ^\n  symbol:   method remove_dirty_chars(String,String)\n  location: class Solution\nMain.java:71: error: cannot find symbol\n        assert Solution.remove_dirty_chars(\"exoticmiles\", \"toxic\").equals(\"emles\");\n                       ^\n  symbol:   method remove_dirty_chars(String,String)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "2": {
+    "task_id": 10,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "3": {
+    "task_id": 11,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "4": {
+    "task_id": 13,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "5": {
+    "task_id": 14,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "6": {
+    "task_id": 18,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "7": {
+    "task_id": 19,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "8": {
+    "task_id": 21,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: illegal start of expression\npublic class Main{\n^\nMain.java:49: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "9": {
+    "task_id": 22,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "10": {
+    "task_id": 23,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "11": {
+    "task_id": 25,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "12": {
+    "task_id": 28,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:59: error: cannot find symbol\n        assert solution.rearrangeString(\"aab\").rearrangeString(\"aba\");\n                                              ^\n  symbol:   method rearrangeString(String)\n  location: class String\nMain.java:60: error: cannot find symbol\n        assert solution.rearrangeString(\"aabb\").rearrangeString(\"abab\");\n                                               ^\n  symbol:   method rearrangeString(String)\n  location: class String\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "13": {
+    "task_id": 34,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "14": {
+    "task_id": 37,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "15": {
+    "task_id": 43,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "16": {
+    "task_id": 45,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:23: error: cannot find symbol\n        assert !Solution.check(70);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:24: error: cannot find symbol\n        assert !Solution.check(23);\n                        ^\n  symbol:   method check(int)\n  location: class Solution\nMain.java:25: error: cannot find symbol\n        assert Solution.check(73);\n                       ^\n  symbol:   method check(int)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "17": {
+    "task_id": 46,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:41: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "18": {
+    "task_id": 49,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "19": {
+    "task_id": 50,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "20": {
+    "task_id": 56,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "21": {
+    "task_id": 57,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "22": {
+    "task_id": 58,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: illegal start of expression\npublic class Main{\n^\nMain.java:51: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "23": {
+    "task_id": 60,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:32: error: illegal start of expression\n            wfor(;(gaps + i < nums.length);){\n                 ^\nMain.java:32: error: not a statement\n            wfor(;(gaps + i < nums.length);){\n                  ^\nMain.java:32: error: illegal start of expression\n            wfor(;(gaps + i < nums.length);){\n                                           ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "24": {
+    "task_id": 63,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:62: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "25": {
+    "task_id": 70,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:25: error: invalid method declaration; return type required\n    public Pair(T first, U second) {\n           ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "26": {
+    "task_id": 72,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "27": {
+    "task_id": 81,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:37: error: illegal start of expression\npublic class Main{\n^\nMain.java:43: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "28": {
+    "task_id": 85,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "29": {
+    "task_id": 89,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "30": {
+    "task_id": 90,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "31": {
+    "task_id": 98,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "32": {
+    "task_id": 108,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "33": {
+    "task_id": 111,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: illegal start of expression\npublic class Main{\n^\nMain.java:48: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "34": {
+    "task_id": 112,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "35": {
+    "task_id": 114,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:37: error: illegal start of expression\npublic class Main{\n^\nMain.java:44: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "36": {
+    "task_id": 115,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "37": {
+    "task_id": 118,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "38": {
+    "task_id": 123,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "39": {
+    "task_id": 130,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: illegal start of statement\n            }\n            ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "40": {
+    "task_id": 131,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "41": {
+    "task_id": 133,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "42": {
+    "task_id": 134,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "43": {
+    "task_id": 136,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "44": {
+    "task_id": 137,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:39: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(35) == 17;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\nMain.java:40: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(7) == 7;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\nMain.java:41: error: cannot find symbol\n        assert solution.sumDigitsTwoParts(100) == 19;\n                       ^\n  symbol:   method sumDigitsTwoParts(int)\n  location: variable solution of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "45": {
+    "task_id": 138,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "46": {
+    "task_id": 140,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:23: error: cannot find symbol\n        assert Solution.isCoprime(17,13) == true;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:24: error: cannot find symbol\n        assert Solution.isCoprime(15,21) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\nMain.java:25: error: cannot find symbol\n        assert Solution.isCoprime(25,45) == false;\n                       ^\n  symbol:   method isCoprime(int,int)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "47": {
+    "task_id": 141,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:37: error: cannot find symbol\n        assert solution.mergeSort(list1).equals(sortedList1);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\nMain.java:41: error: cannot find symbol\n        assert solution.mergeSort(list2).equals(sortedList2);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\nMain.java:45: error: cannot find symbol\n        assert solution.mergeSort(list3).equals(sortedList3);\n                       ^\n  symbol:   method mergeSort(List<Integer>)\n  location: variable solution of type Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "48": {
+    "task_id": 144,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "49": {
+    "task_id": 146,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:51: error: <identifier> expected\n            result.add(group);\n                      ^\nMain.java:51: error: <identifier> expected\n            result.add(group);\n                            ^\nMain.java:53: error: class, interface, enum, or record expected\n        return result;\n        ^\nMain.java:54: error: class, interface, enum, or record expected\n    }\n    ^\n4 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "50": {
+    "task_id": 147,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "51": {
+    "task_id": 149,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "52": {
+    "task_id": 153,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:26: error: cannot find symbol\n        assert !Solution.areEquivalent(36,57);\n                        ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\nMain.java:27: error: cannot find symbol\n        assert !Solution.areEquivalent(2,4);\n                        ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\nMain.java:28: error: cannot find symbol\n        assert Solution.areEquivalent(23,47);\n                       ^\n  symbol:   method areEquivalent(int,int)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "53": {
+    "task_id": 154,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "54": {
+    "task_id": 155,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "55": {
+    "task_id": 156,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "56": {
+    "task_id": 158,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "57": {
+    "task_id": 159,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "58": {
+    "task_id": 161,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "59": {
+    "task_id": 168,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "60": {
+    "task_id": 170,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "61": {
+    "task_id": 172,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "62": {
+    "task_id": 178,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 6\n\tat Solution.firstMissingPositive(Main.java:52)\n\tat Main.main(Main.java:75)\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "63": {
+    "task_id": 183,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "64": {
+    "task_id": 184,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "65": {
+    "task_id": 186,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "66": {
+    "task_id": 188,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "67": {
+    "task_id": 191,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "68": {
+    "task_id": 192,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "69": {
+    "task_id": 193,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "70": {
+    "task_id": 195,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "71": {
+    "task_id": 196,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:52: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "72": {
+    "task_id": 201,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "73": {
+    "task_id": 202,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "74": {
+    "task_id": 204,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:48: error: cannot find symbol\ndecodeList(2); decodeList(1);}});\n^\n  symbol: method decodeList(int)\nMain.java:48: error: cannot find symbol\ndecodeList(2); decodeList(1);}});\n               ^\n  symbol: method decodeList(int)\nMain.java:47: error: cannot find symbol\n        test1.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test1 of type List<Object>\nMain.java:49: error: cannot find symbol\n        test1.decodeList(2);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:50: error: cannot find symbol\n        test1.decodeList(3);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:52: error: cannot find symbol\ndecodeList(2); decodeList(4);}});\n^\n  symbol: method decodeList(int)\nMain.java:52: error: cannot find symbol\ndecodeList(2); decodeList(4);}});\n               ^\n  symbol: method decodeList(int)\nMain.java:51: error: cannot find symbol\n        test1.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test1 of type List<Object>\nMain.java:53: error: cannot find symbol\n        test1.decodeList(5);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:54: error: cannot find symbol\n        test1.decodeList(1);\n             ^\n  symbol:   method decodeList(int)\n  location: variable test1 of type List<Object>\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n               ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                              ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                             ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                            ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                           ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                                          ^\n  symbol: method decodeList(int)\nMain.java:56: error: cannot find symbol\ndecodeList(1); decodeList(1); decodeList(2); decodeList(3); decodeList(4); decodeList(4); decodeList(5); decodeList(1);}}));\n                                                                                                         ^\n  symbol: method decodeList(int)\nMain.java:59: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:60: error: cannot find symbol\n        test2.decodeList('u');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:61: error: cannot find symbol\n        test2.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:62: error: cannot find symbol\n        test2.decodeList('o');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:63: error: cannot find symbol\n        test2.decodeList('m');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:64: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:65: error: cannot find symbol\n        test2.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:66: error: cannot find symbol\n        test2.decodeList('i');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:67: error: cannot find symbol\n        test2.decodeList('c');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:68: error: cannot find symbol\n        test2.decodeList('a');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:70: error: cannot find symbol\n decodeList(2); decodeList('l');}});\n ^\n  symbol: method decodeList(int)\nMain.java:70: error: cannot find symbol\n decodeList(2); decodeList('l');}});\n                ^\n  symbol: method decodeList(char)\nMain.java:69: error: cannot find symbol\n        test2.decodeList(new ArrayList<Object>(){{\n             ^\n  symbol:   method decodeList(<anonymous ArrayList<Object>>)\n  location: variable test2 of type List<Object>\nMain.java:71: error: cannot find symbol\n        test2.decodeList('y');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test2 of type List<Object>\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                 ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                  ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                   ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                    ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                     ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                      ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                       ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                        ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                         ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                          ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                                           ^\n  symbol: method decodeList(char)\nMain.java:73: error: cannot find symbol\ndecodeList('a'); decodeList('u'); decodeList('t'); decodeList('o'); decodeList('m'); decodeList('a'); decodeList('t'); decodeList('i'); decodeList('c'); decodeList('a'); decodeList('l'); decodeList('l'); decodeList('y');}}));\n                                                                                                                                                                                                            ^\n  symbol: method decodeList(char)\nMain.java:76: error: cannot find symbol\n        test3.decodeList('p');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:77: error: cannot find symbol\n        test3.decodeList('y');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:78: error: cannot find symbol\n        test3.decodeList('t');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:79: error: cannot find symbol\n        test3.decodeList('h');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:80: error: cannot find symbol\n        test3.decodeList('o');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:81: error: cannot find symbol\n        test3.decodeList('n');\n             ^\n  symbol:   method decodeList(char)\n  location: variable test3 of type List<Object>\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n^\n  symbol: method decodeList(char)\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                 ^\n  symbol: method decodeList(char)\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                  ^\n  symbol: method decodeList(char)\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                   ^\n  symbol: method decodeList(char)\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                                    ^\n  symbol: method decodeList(char)\nMain.java:83: error: cannot find symbol\ndecodeList('p'); decodeList('y'); decodeList('t'); decodeList('h'); decodeList('o'); decodeList('n');}}));\n                                                                                     ^\n  symbol: method decodeList(char)\nNote: Main.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n57 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "75": {
+    "task_id": 208,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:54: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "76": {
+    "task_id": 209,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "77": {
+    "task_id": 213,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "78": {
+    "task_id": 214,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "79": {
+    "task_id": 215,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "80": {
+    "task_id": 218,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "81": {
+    "task_id": 220,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:59: error: illegal start of expression\npublic class Main{\n^\nMain.java:66: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "82": {
+    "task_id": 221,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "83": {
+    "task_id": 224,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "84": {
+    "task_id": 228,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:52: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "85": {
+    "task_id": 230,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "86": {
+    "task_id": 231,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "87": {
+    "task_id": 234,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "88": {
+    "task_id": 235,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "89": {
+    "task_id": 236,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "90": {
+    "task_id": 243,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "91": {
+    "task_id": 245,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "92": {
+    "task_id": 248,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:59: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "93": {
+    "task_id": 250,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "94": {
+    "task_id": 254,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: cannot find symbol\n        list1.listSplit('a');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:48: error: cannot find symbol\n        list1.listSplit('b');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:49: error: cannot find symbol\n        list1.listSplit('c');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:50: error: cannot find symbol\n        list1.listSplit('d');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:51: error: cannot find symbol\n        list1.listSplit('e');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:52: error: cannot find symbol\n        list1.listSplit('f');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:53: error: cannot find symbol\n        list1.listSplit('g');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:54: error: cannot find symbol\n        list1.listSplit('h');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:55: error: cannot find symbol\n        list1.listSplit('i');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:56: error: cannot find symbol\n        list1.listSplit('j');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:57: error: cannot find symbol\n        list1.listSplit('k');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:58: error: cannot find symbol\n        list1.listSplit('l');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:59: error: cannot find symbol\n        list1.listSplit('m');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:60: error: cannot find symbol\n        list1.listSplit('n');\n             ^\n  symbol:   method listSplit(char)\n  location: variable list1 of type List<Object>\nMain.java:65: error: cannot find symbol\n            list2.listSplit(i);\n                 ^\n  symbol:   method listSplit(int)\n  location: variable list2 of type List<Object>\nMain.java:70: error: cannot find symbol\n        list3.listSplit(\"python\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:71: error: cannot find symbol\n        list3.listSplit(\"java\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:72: error: cannot find symbol\n        list3.listSplit(\"C\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:73: error: cannot find symbol\n        list3.listSplit(\"C++\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:74: error: cannot find symbol\n        list3.listSplit(\"DBMS\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\nMain.java:75: error: cannot find symbol\n        list3.listSplit(\"SQL\");\n             ^\n  symbol:   method listSplit(String)\n  location: variable list3 of type List<Object>\n21 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "95": {
+    "task_id": 259,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "96": {
+    "task_id": 260,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "97": {
+    "task_id": 262,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "98": {
+    "task_id": 264,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:41: error: illegal start of expression\npublic class Main{\n^\nMain.java:48: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "99": {
+    "task_id": 269,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "100": {
+    "task_id": 271,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:66: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "101": {
+    "task_id": 272,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "102": {
+    "task_id": 275,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "103": {
+    "task_id": 277,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "104": {
+    "task_id": 284,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "105": {
+    "task_id": 285,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:50: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "106": {
+    "task_id": 286,
+    "passed": false,
+    "result": "failed: Exception in thread \"main\" java.lang.UnsupportedOperationException\n\tat java.base/java.util.AbstractList.remove(AbstractList.java:169)\n\tat Solution.flattenList(Main.java:30)\n\tat Main.main(Main.java:47)\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "107": {
+    "task_id": 289,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "108": {
+    "task_id": 292,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:45: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "109": {
+    "task_id": 295,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "110": {
+    "task_id": 300,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "111": {
+    "task_id": 303,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "112": {
+    "task_id": 304,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "113": {
+    "task_id": 305,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "114": {
+    "task_id": 306,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:41: error: illegal start of expression\npublic class Main{\n^\nMain.java:94: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "115": {
+    "task_id": 307,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "116": {
+    "task_id": 308,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:40: error: cannot find symbol\nfindLongWord(\"strem\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:42: error: cannot find symbol\nfindLongWord(\"Ultra\");}});\n^\n  symbol: method findLongWord(String)\nMain.java:44: error: cannot find symbol\nfindLongWord(\"Media\");}});\n^\n  symbol: method findLongWord(String)\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "117": {
+    "task_id": 309,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "118": {
+    "task_id": 310,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: cannot find symbol\n        assert solution.find_demlo(\"111111\").find_demlo(\"12345654321\");\n                                            ^\n  symbol:   method find_demlo(String)\n  location: class String\nMain.java:44: error: cannot find symbol\n        assert solution.find_demlo(\"1111\").find_demlo(\"1234321\");\n                                          ^\n  symbol:   method find_demlo(String)\n  location: class String\nMain.java:45: error: cannot find symbol\n        assert solution.find_demlo(\"13333122222\").find_demlo(\"123456789101110987654321\");\n                                                 ^\n  symbol:   method find_demlo(String)\n  location: class String\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "119": {
+    "task_id": 311,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "120": {
+    "task_id": 312,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "121": {
+    "task_id": 313,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "122": {
+    "task_id": 314,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "123": {
+    "task_id": 319,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "124": {
+    "task_id": 320,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "125": {
+    "task_id": 327,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "126": {
+    "task_id": 329,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "127": {
+    "task_id": 331,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:13: error: invalid method declaration; return type required\n    public Node(int value, int listNum, int index) {\n           ^\nMain.java:23: error: implicitly declared classes are a preview feature and are disabled by default.\n    public static int[] findMinimumRange(int[][] list) {\n                  ^\n  (use --enable-preview to enable implicitly declared classes)\nMain.java:60: error: class, interface, enum, or record expected\n}\n^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "128": {
+    "task_id": 334,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "129": {
+    "task_id": 337,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:30: error: cannot find symbol\n        assert Solution.findWays(4) == 2;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:31: error: cannot find symbol\n        assert Solution.findWays(6) == 5;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\nMain.java:32: error: cannot find symbol\n        assert Solution.findWays(8) == 14;\n                       ^\n  symbol:   method findWays(int)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "130": {
+    "task_id": 339,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "131": {
+    "task_id": 340,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "132": {
+    "task_id": 341,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "133": {
+    "task_id": 344,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:49: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "134": {
+    "task_id": 347,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "135": {
+    "task_id": 353,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:24: error: illegal start of expression\n    public static int minFlips(String str) {\n    ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "136": {
+    "task_id": 354,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "137": {
+    "task_id": 355,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "138": {
+    "task_id": 357,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "139": {
+    "task_id": 363,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "140": {
+    "task_id": 365,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:36: error: illegal start of type\n        return testArr;\n        ^\nMain.java:36: error: <identifier> expected\n        return testArr;\n                      ^\nMain.java:38: error: class, interface, enum, or record expected\n}\n^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "141": {
+    "task_id": 366,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: cannot find symbol\n        assert solution.remove_Char(\"aba\",'a').remove_Char(\"b\");\n                                              ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:43: error: cannot find symbol\n        assert solution.remove_Char(\"toggle\",'g').remove_Char(\"tole\");\n                                                 ^\n  symbol:   method remove_Char(String)\n  location: class String\nMain.java:44: error: cannot find symbol\n        assert solution.remove_Char(\"aabbc\",'b').remove_Char(\"aac\");\n                                                ^\n  symbol:   method remove_Char(String)\n  location: class String\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "142": {
+    "task_id": 369,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:55: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "143": {
+    "task_id": 371,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "144": {
+    "task_id": 372,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "145": {
+    "task_id": 373,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "146": {
+    "task_id": 377,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "147": {
+    "task_id": 380,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:58: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "148": {
+    "task_id": 381,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "149": {
+    "task_id": 388,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "150": {
+    "task_id": 390,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:58: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "151": {
+    "task_id": 391,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:47: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "152": {
+    "task_id": 396,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "153": {
+    "task_id": 397,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "154": {
+    "task_id": 401,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: cannot find symbol\n        list1.remove_odd(1);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:43: error: cannot find symbol\n        list1.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:44: error: cannot find symbol\n        list1.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list1 of type ArrayList<Integer>\nMain.java:47: error: cannot find symbol\nremove_odd(2);}});\n^\n  symbol: method remove_odd(int)\nMain.java:50: error: cannot find symbol\n        list2.remove_odd(2);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:51: error: cannot find symbol\n        list2.remove_odd(4);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:52: error: cannot find symbol\n        list2.remove_odd(6);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list2 of type ArrayList<Integer>\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n^\n  symbol: method remove_odd(int)\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n               ^\n  symbol: method remove_odd(int)\nMain.java:55: error: cannot find symbol\nremove_odd(2); remove_odd(4); remove_odd(6);}});\n                              ^\n  symbol: method remove_odd(int)\nMain.java:58: error: cannot find symbol\n        list3.remove_odd(10);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:59: error: cannot find symbol\n        list3.remove_odd(20);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:60: error: cannot find symbol\n        list3.remove_odd(3);\n             ^\n  symbol:   method remove_odd(int)\n  location: variable list3 of type ArrayList<Integer>\nMain.java:63: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n^\n  symbol: method remove_odd(int)\nMain.java:63: error: cannot find symbol\nremove_odd(10); remove_odd(20);}});\n                ^\n  symbol: method remove_odd(int)\n15 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "155": {
+    "task_id": 404,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:51: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "156": {
+    "task_id": 409,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "157": {
+    "task_id": 411,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "158": {
+    "task_id": 412,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "159": {
+    "task_id": 417,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:56: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "160": {
+    "task_id": 418,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "161": {
+    "task_id": 426,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:43: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "162": {
+    "task_id": 427,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:54: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "163": {
+    "task_id": 434,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "164": {
+    "task_id": 442,
+    "passed": false,
+    "result": "failed: wrong answer",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "165": {
+    "task_id": 450,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "166": {
+    "task_id": 452,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "167": {
+    "task_id": 456,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "168": {
+    "task_id": 457,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:67: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "169": {
+    "task_id": 458,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:58: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "170": {
+    "task_id": 459,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "171": {
+    "task_id": 460,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:41: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "172": {
+    "task_id": 461,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:36: error: illegal start of expression\npublic class Main{\n^\nMain.java:42: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "173": {
+    "task_id": 468,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "174": {
+    "task_id": 469,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "175": {
+    "task_id": 472,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:44: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "176": {
+    "task_id": 474,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:31: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 232, 54545, 999991}, 4) == 54545;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\nMain.java:32: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 2, 3, 4, 5, 50}, 6) == 5;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\nMain.java:33: error: cannot find symbol\n        assert Solution.largest_palindrome(new Integer[]{1, 3, 7, 9, 45}, 5)  == 9;\n                       ^\n  symbol:   method largest_palindrome(Integer[],int)\n  location: class Solution\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "177": {
+    "task_id": 475,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:31: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "178": {
+    "task_id": 478,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:38: error: illegal start of expression\npublic class Main{\n^\nMain.java:44: error: reached end of file while parsing\n}\n ^\n2 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "179": {
+    "task_id": 481,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "180": {
+    "task_id": 482,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: illegal start of expression\n            wfor(;(startx < endx);){\n                 ^\nMain.java:46: error: not a statement\n            wfor(;(startx < endx);){\n                  ^\nMain.java:46: error: illegal start of expression\n            wfor(;(startx < endx);){\n                                  ^\n3 errors\n",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "181": {
+    "task_id": 487,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:46: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "182": {
+    "task_id": 490,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "183": {
+    "task_id": 492,
+    "passed": false,
+    "result": "timed out",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "184": {
+    "task_id": 493,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:42: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for_var_outer"
+  },
+  "185": {
+    "task_id": 495,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:53: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  },
+  "186": {
+    "task_id": 498,
+    "passed": true,
+    "result": "passed",
+    "completion_id": 0,
+    "perturbation_type": "while2for"
+  },
+  "187": {
+    "task_id": 499,
+    "passed": false,
+    "result": "failed: compilation error: Main.java:52: error: reached end of file while parsing\n}\n ^\n1 error\n",
+    "completion_id": 0,
+    "perturbation_type": "for2while"
+  }
+}
