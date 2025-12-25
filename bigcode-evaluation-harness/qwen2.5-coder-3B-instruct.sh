@@ -9,7 +9,7 @@ MODEL_SERIES=qwen2.5
 MODEL_PATH=/data1/model/qwen/Qwen/Qwen2.5-Coder-3B-Instruct
 
 
-python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
+#python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
   --save_generations \
   --precision=bf16 \
   --model_series=qwen2.5 \

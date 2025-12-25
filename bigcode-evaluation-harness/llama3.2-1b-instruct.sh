@@ -3,13 +3,13 @@ export CUDA_VISIBLE_DEVICES=2
 export OPENAI_BASE_URL='http://210.28.134.32:8800/v1/chat/completions'
 export MODEL_ID=Llama-3.2-1B-Instruct
 export concurrency=15
-MODEL_NAME=llama3.2-8b-instruct
+MODEL_NAME=llama3.2-1b-instruct
 MODEL_TYPE=causal_chat
 MODEL_SERIES=llama3.2
 MODEL_PATH=/data1/model/llama3/meta-llama/Llama-3.2-1B-Instruct
 
 
-python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
+#python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
   --save_generations \
   --precision=bf16 \
   --model_series=${MODEL_SERIES} \

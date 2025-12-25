@@ -11,6 +11,8 @@ for nowdir in os.listdir():
         name = str(list(res.keys())[0])
         newline['Test Case'] = name
         newline.update(res[name])
+        if "combined_perturbation" in nowdir:
+            print(res)
         df.loc[len(df)] = newline
 
 model_name = os.path.dirname(os.getcwd()).split('/')[-1]

@@ -55,6 +55,7 @@ if __name__ == '__main__':
     for k,v in perturbed_cases.items():
         index = str(v['task_id'])
         match_cases += 1
+        #print(original_cases[index])
         if original_cases[index]['passed'] == True:
             assert original_cases[index]['task_id'] == int(index)
             match_passes += 1

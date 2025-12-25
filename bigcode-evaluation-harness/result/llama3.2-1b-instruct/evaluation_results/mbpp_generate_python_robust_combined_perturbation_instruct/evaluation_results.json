@@ -1,5 +1,10 @@
 {
-  "mbpp_generate_python_robust_combined_perturbation_instruct": {
-    "pass@1": 0.31157894736842107
-  }
+    "mbpp_generate_python_robust_combined_perturbation_instruct": {
+        "origin_pass@1": 0.4189473684210526,
+        "perturbated_pass@1": 0.31157894736842107,
+        "pass-drop@1": 0.256,
+        "neg2pos": 32,
+        "pos2neg": 83,
+        "count": 475
+    }
 }

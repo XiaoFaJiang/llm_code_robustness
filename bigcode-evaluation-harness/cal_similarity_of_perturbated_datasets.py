@@ -20,8 +20,9 @@ def get_dataset(dataset,model_type,language,perturbation):
         p.init_pretrained_model()
         p.preprocess_code('',language)
         perturbate = {'rename':p.rename_perturbation,'code_stmt_exchange':p.code_stmt_perturbtion,\
-                                'code_expression_exchange':p.code_expression_perturbtion,'insert':p.insert_perturbation,\
-                                    'code_style':p.code_style_perturbtion,'no_change':p.no_change_perturbation}
+                           'code_expression_exchange':p.code_expression_perturbtion,'insert':p.insert_perturbation,\
+                            'code_style':p.code_style_perturbtion,'no_change':p.no_change_perturbation,\
+                            'combined_perturbation':p.real_combined_perturbation}
         patterns = {'python':re.compile(r'assert.+',re.DOTALL),\
                         'java':re.compile(r'public\s+class\s+Main\s*\{.*\}',re.DOTALL),\
                             'javascript':re.compile(r'const\s+\w+\s*\=\s*\(\s*\)\s*=>\s*.*',re.DOTALL),\
@@ -80,9 +81,10 @@ def get_dataset(dataset,model_type,language,perturbation):
 if __name__ == '__main__':
     tokenizer = AutoTokenizer.from_pretrained("/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B-Instruct")
     LANGAUGES = ['cpp','python','java','javascript']
-    for perturbation in ["rename","code_stmt_exchange","code_expression_exchange","code_style","insert"]:
+    now_dataset = "humaneval"
+    for perturbation in ["combined_perturbation","rename","code_style","code_expression_exchange","code_stmt_exchange","insert"]:
         for lang in LANGAUGES:
-            dataset = json.load(open(f'dataset/mbpp_{lang}_tested.json'))
+            dataset = json.load(open(f'dataset/{now_dataset}_{lang}_tested.json'))
             perturbated_dataset = get_dataset(dataset,"instruct",lang,perturbation)
             codebleu = [0 for _ in range(len(perturbated_dataset))]
             for i in range(len(perturbated_dataset)):
@@ -91,6 +93,6 @@ if __name__ == '__main__':
                 perturbed_code = perturbated_dataset[i]['code_str']
                 cb = compute_metrics((tokenizer(original_code,return_tensors="pt").input_ids,tokenizer(perturbed_code, return_tensors="pt").input_ids),tokenizer,lang)
                 codebleu[i] = cb['CodeBLEU']
+            
             print(lang,perturbation,min(codebleu),max(codebleu),sum(codebleu)/len(codebleu))
-            json.dump(codebleu,open(f"dataset/original_perturbed_similarity/{lang}_{perturbation}.json","w"),indent=4)
-    
+            json.dump(codebleu,open(f"dataset/original_perturbed_similarity/{now_dataset}_{lang}_{perturbation}.json","w"),indent=4)    
