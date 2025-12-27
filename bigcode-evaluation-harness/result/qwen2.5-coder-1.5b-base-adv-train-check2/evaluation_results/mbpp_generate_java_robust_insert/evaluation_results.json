@@ -1,5 +1,10 @@
 {
-  "mbpp_generate_java_robust_insert": {
-    "pass@1": 0.708
-  }
+    "mbpp_generate_java_robust_insert": {
+        "origin_pass@1": 0.722,
+        "perturbated_pass@1": 0.708,
+        "pass-drop@1": 0.019,
+        "neg2pos": 9,
+        "pos2neg": 16,
+        "count": 500
+    }
 }

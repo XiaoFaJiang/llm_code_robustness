@@ -1,7 +1,7 @@
 
 
 ### model
-model_name_or_path: /data1/model/qwen/Qwen/Qwen2.5-Coder-1.5B
+model_name_or_path: /data1/model/qwen/Qwen/Qwen2.5-Coder-3B
 trust_remote_code: true
 
 ### method
@@ -22,7 +22,7 @@ preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
-output_dir: saves/qwen2.5-coder-1.5B-Base/lora/sft
+output_dir: saves/qwen2.5-coder-3B-Base/lora/sft
 logging_steps: 5
 save_steps: 100
 plot_loss: true

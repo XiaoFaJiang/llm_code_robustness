@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_python_robust_combined_perturbation": {
-    "pass@1": 0.36419753086419754
-  }
+    "humaneval_generate_python_robust_combined_perturbation": {
+        "origin_pass@1": 0.7407407407407407,
+        "perturbated_pass@1": 0.36419753086419754,
+        "pass-drop@1": 0.508,
+        "neg2pos": 3,
+        "pos2neg": 64,
+        "count": 162
+    }
 }
