@@ -1,5 +1,10 @@
 {
-  "humaneval_generate_javascript_robust_code_stmt_exchange": {
-    "pass@1": 0.22413793103448276
-  }
+    "humaneval_generate_javascript_robust_code_stmt_exchange": {
+        "origin_pass@1": 0.5,
+        "perturbated_pass@1": 0.22413793103448276,
+        "pass-drop@1": 0.552,
+        "neg2pos": 3,
+        "pos2neg": 19,
+        "count": 58
+    }
 }

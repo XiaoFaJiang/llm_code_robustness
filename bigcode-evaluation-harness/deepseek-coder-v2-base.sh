@@ -9,7 +9,7 @@ MODEL_SERIES=deepseek-v2
 MODEL_PATH=/data1/model/deepseek/deepseek-ai/DeepSeek-Coder-V2-Lite-base
 
 
-python main.py  --api 'http://127.0.0.1:8800/v1/completions' --allow_code_execution \
+#python main.py  --api 'http://127.0.0.1:8800/v1/completions' --allow_code_execution \
   --save_generations \
   --precision=bf16 \
   --model_series=${MODEL_SERIES} \
@@ -49,7 +49,7 @@ humaneval_generate_java_robust_code_expression_exchange,humaneval_generate_java_
 
 # 定义要处理的语言列表
 languages=("cpp" "python" "java" "javascript")
-perturbations=("combined_perturbation")
+perturbations=("combined_perturbation" "code_style" "insert" "rename" "code_stmt_exchange" "code_expression_exchange")
 
 # 使用for循环遍历所有语言
 for language in "${languages[@]}"; do
@@ -75,7 +75,7 @@ for language in "${languages[@]}"; do
     echo "Processing $language..."
     for perturbation in "${perturbations[@]}"; do
         echo "Process $perturbation..."
-        python calculate_pass_drop.py \
+        #python calculate_pass_drop.py \
             --language="$language" \
             --model_name=${MODEL_NAME} \
             --perturbation=${perturbation} \
