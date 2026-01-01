@@ -1,56 +1,76 @@
 conda activate adv
-export CUDA_VISIBLE_DEVICES=0
-python main.py  --allow_code_execution --save_generations --precision=bf16 --model_series=qwen2.5 --model_type=causal_chat --model_name=qwen2.5-coder-0.5b-instruct --model_path=/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B-Instruct \
-  --tasks=mbpp_generate_python_robust_no_change_instruct,mbpp_generate_python_robust_rename_instruct,\
-mbpp_generate_python_robust_code_stmt_exchange_instruct,mbpp_generate_python_robust_code_expression_exchange_instruct,\
-mbpp_generate_python_robust_insert_instruct,mbpp_generate_python_robust_code_style_instruct,\
-mbpp_generate_cpp_robust_no_change_instruct,mbpp_generate_cpp_robust_rename_instruct,mbpp_generate_cpp_robust_code_stmt_exchange_instruct,\
-mbpp_generate_cpp_robust_code_expression_exchange_instruct,\
-mbpp_generate_cpp_robust_insert_instruct,mbpp_generate_cpp_robust_code_style_instruct,\
-mbpp_generate_javascript_robust_no_change_instruct,mbpp_generate_javascript_robust_rename_instruct,mbpp_generate_javascript_robust_code_stmt_exchange_instruct,\
-mbpp_generate_javascript_robust_code_expression_exchange_instruct,mbpp_generate_javascript_robust_insert_instruct,\
-mbpp_generate_javascript_robust_code_style_instruct,\
-mbpp_generate_java_robust_no_change_instruct,mbpp_generate_java_robust_rename_instruct,mbpp_generate_java_robust_code_stmt_exchange_instruct,\
-mbpp_generate_java_robust_code_expression_exchange_instruct,mbpp_generate_java_robust_insert_instruct,mbpp_generate_java_robust_code_style_instruct
+export CUDA_VISIBLE_DEVICES=2
+export OPENAI_BASE_URL='http://210.28.134.32:8800/v1/chat/completions'
+export MODEL_ID=Qwen2.5-Coder-0.5B-Instruct
+export concurrency=15
+MODEL_NAME=qwen2.5-coder-0.5b-instruct
+MODEL_TYPE=causal_chat
+MODEL_SERIES=qwen2.5
+MODEL_PATH=/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B-Instruct
 
 
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-0.5b-instruct --perturbation=rename --model_type=causal_chat
+python main.py  --api 'http://127.0.0.1:8800/v1/chat/completions' --allow_code_execution \
+  --save_generations \
+  --precision=bf16 \
+  --model_series=qwen2.5 \
+  --model_type=${MODEL_TYPE} \
+  --model_name=${MODEL_NAME} \
+  --model_path=/data1/model/qwen/Qwen/Qwen2.5-Coder-0.5B-Instruct \
+  --tasks=mbpp_generate_python_robust_combined_perturbation_instruct,\
+mbpp_generate_cpp_robust_combined_perturbation_instruct,\
+mbpp_generate_java_robust_combined_perturbation_instruct,\
+mbpp_generate_javascript_robust_combined_perturbation_instruct,\
+humaneval_generate_python_robust_combined_perturbation_instruct,\
+humaneval_generate_cpp_robust_combined_perturbation_instruct,\
+humaneval_generate_java_robust_combined_perturbation_instruct,\
+humaneval_generate_javascript_robust_combined_perturbation_instruct,\
+humaneval_generate_python_robust_no_change_instruct,humaneval_generate_python_robust_rename_instruct,\
+humaneval_generate_python_robust_code_stmt_exchange_instruct,humaneval_generate_python_robust_code_expression_exchange_instruct,\
+humaneval_generate_python_robust_insert_instruct,humaneval_generate_python_robust_code_style_instruct,\
+humaneval_generate_cpp_robust_no_change_instruct,humaneval_generate_cpp_robust_rename_instruct,humaneval_generate_cpp_robust_code_stmt_exchange_instruct,\
+humaneval_generate_cpp_robust_code_expression_exchange_instruct,\
+humaneval_generate_cpp_robust_insert_instruct,humaneval_generate_cpp_robust_code_style_instruct,\
+humaneval_generate_javascript_robust_no_change_instruct,humaneval_generate_javascript_robust_rename_instruct,humaneval_generate_javascript_robust_code_stmt_exchange_instruct,\
+humaneval_generate_javascript_robust_code_expression_exchange_instruct,humaneval_generate_javascript_robust_insert_instruct,\
+humaneval_generate_javascript_robust_code_style_instruct,\
+humaneval_generate_java_robust_no_change_instruct,humaneval_generate_java_robust_rename_instruct,humaneval_generate_java_robust_code_stmt_exchange_instruct,\
+humaneval_generate_java_robust_code_expression_exchange_instruct,humaneval_generate_java_robust_insert_instruct,humaneval_generate_java_robust_code_style_instruct
 
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_stmt_exchange --model_type=causal_chat
+# 定义要处理的语言列表
+languages=("cpp" "python" "java" "javascript")
+perturbations=("combined_perturbation")
 
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_expression_exchange --model_type=causal_chat
+# 使用for循环遍历所有语言
+for language in "${languages[@]}"; do
+    echo "Processing $language..."
+    for perturbation in "${perturbations[@]}"; do
+        echo "Process $perturbation..."
+        python calculate_pass_drop.py \
+            --language="$language" \
+            --model_name=${MODEL_NAME} \
+            --perturbation=${perturbation} \
+            --model_type=${MODEL_TYPE}
+      echo "Completed processing $language perturbation $perturbation dataset mbpp"
+      echo "------------------------------"
+    done 
+done
 
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-0.5b-instruct --perturbation=insert --model_type=causal_chat
+# 定义要处理的语言列表
+languages=("cpp" "python" "java" "javascript")
+perturbations=("combined_perturbation" "code_style" "insert" "rename" "code_stmt_exchange" "code_expression_exchange")
 
-python calculate_pass_drop.py --language=cpp --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_style --model_type=causal_chat
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-0.5b-instruct --perturbation=rename --model_type=causal_chat
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_stmt_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_expression_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-0.5b-instruct --perturbation=insert --model_type=causal_chat
-
-python calculate_pass_drop.py --language=java --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_style --model_type=causal_chat
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-0.5b-instruct --perturbation=rename --model_type=causal_chat
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_stmt_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_expression_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-0.5b-instruct --perturbation=insert --model_type=causal_chat
-
-python calculate_pass_drop.py --language=javascript --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_style --model_type=causal_chat
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-0.5b-instruct --perturbation=rename --model_type=causal_chat
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_stmt_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_expression_exchange --model_type=causal_chat
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-0.5b-instruct --perturbation=insert --model_type=causal_chat
-
-python calculate_pass_drop.py --language=python --model_name=qwen2.5-coder-0.5b-instruct --perturbation=code_style --model_type=causal_chat
-
+# 使用for循环遍历所有语言
+for language in "${languages[@]}"; do
+    echo "Processing $language..."
+    for perturbation in "${perturbations[@]}"; do
+        echo "Process $perturbation..."
+        python calculate_pass_drop.py \
+            --language="$language" \
+            --model_name=${MODEL_NAME} \
+            --perturbation=${perturbation} \
+            --model_type=${MODEL_TYPE} \
+            --dataset='humaneval'
+      echo "Completed processing $language perturbation $perturbation dataset humaneval"
+      echo "------------------------------"
+    done 
+done

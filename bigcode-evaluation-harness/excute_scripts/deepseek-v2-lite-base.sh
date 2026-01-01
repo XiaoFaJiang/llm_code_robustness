@@ -1,50 +1,76 @@
 conda activate adv
-export CUDA_VISIBLE_DEVICES=4,5,6,7,8
-python main.py  --allow_code_execution --save_generations --precision=bf16 --model_type=causal_base --model_series=deepseek-v2 --model_name=deepseek-v2-lite-base --model_path=/data1/model/deepseek/deepseek-ai/DeepSeek-V2-Lite\
-  --trust_remote_code\
-  --tasks=mbpp_generate_java_robust_rename,mbpp_generate_java_robust_insert,mbpp_generate_cpp_robust_no_change,mbpp_generate_cpp_robust_rename,mbpp_generate_cpp_robust_code_stmt_exchange,\
-mbpp_generate_cpp_robust_code_expression_exchange,mbpp_generate_cpp_robust_insert,mbpp_generate_cpp_robust_code_style
+export CUDA_VISIBLE_DEVICES=2
+export OPENAI_BASE_URL='http://210.28.134.32:8800/v1/completions'
+export MODEL_ID=DeepSeek-V2-Lite
+export concurrency=15
+MODEL_NAME=deepseek-v2-lite-base
+MODEL_TYPE=causal_base
+MODEL_SERIES=deepseek-v2
+MODEL_PATH=/data1/model/deepseek/deepseek-ai/DeepSeek-V2-Lite
 
 
+python main.py  --api 'http://127.0.0.1:8800/v1/completions' --allow_code_execution \
+  --save_generations \
+  --precision=bf16 \
+  --model_series=${MODEL_SERIES} \
+  --model_type=${MODEL_TYPE} \
+  --model_name=${MODEL_NAME} \
+  --model_path=${MODEL_PATH} \
+  --tasks=mbpp_generate_python_robust_combined_perturbation,\
+mbpp_generate_cpp_robust_combined_perturbation,\
+mbpp_generate_java_robust_combined_perturbation,\
+mbpp_generate_javascript_robust_combined_perturbation,\
+humaneval_generate_python_robust_combined_perturbation,\
+humaneval_generate_cpp_robust_combined_perturbation,\
+humaneval_generate_java_robust_combined_perturbation,\
+humaneval_generate_javascript_robust_combined_perturbation,\
+humaneval_generate_python_robust_no_change,humaneval_generate_python_robust_rename,\
+humaneval_generate_python_robust_code_stmt_exchange,humaneval_generate_python_robust_code_expression_exchange,\
+humaneval_generate_python_robust_insert,humaneval_generate_python_robust_code_style,\
+humaneval_generate_cpp_robust_no_change,humaneval_generate_cpp_robust_rename,humaneval_generate_cpp_robust_code_stmt_exchange,\
+humaneval_generate_cpp_robust_code_expression_exchange,\
+humaneval_generate_cpp_robust_insert,humaneval_generate_cpp_robust_code_style,\
+humaneval_generate_javascript_robust_no_change,humaneval_generate_javascript_robust_rename,humaneval_generate_javascript_robust_code_stmt_exchange,\
+humaneval_generate_javascript_robust_code_expression_exchange,humaneval_generate_javascript_robust_insert,\
+humaneval_generate_javascript_robust_code_style,\
+humaneval_generate_java_robust_no_change,humaneval_generate_java_robust_rename,humaneval_generate_java_robust_code_stmt_exchange,\
+humaneval_generate_java_robust_code_expression_exchange,humaneval_generate_java_robust_insert,humaneval_generate_java_robust_code_style
 
-python calculate_pass_drop.py --language=cpp --model_name=deepseek-v2-lite-base --perturbation=rename --model_type=causal_base
+# 定义要处理的语言列表
+languages=("cpp" "python" "java" "javascript")
+perturbations=("combined_perturbation")
 
-python calculate_pass_drop.py --language=cpp --model_name=deepseek-v2-lite-base --perturbation=code_stmt_exchange --model_type=causal_base
+# 使用for循环遍历所有语言
+for language in "${languages[@]}"; do
+    echo "Processing $language..."
+    for perturbation in "${perturbations[@]}"; do
+        echo "Process $perturbation..."
+        python calculate_pass_drop.py \
+            --language="$language" \
+            --model_name=${MODEL_NAME} \
+            --perturbation=${perturbation} \
+            --model_type=${MODEL_TYPE}
+      echo "Completed processing $language perturbation $perturbation dataset mbpp"
+      echo "------------------------------"
+    done 
+done
 
-python calculate_pass_drop.py --language=cpp --model_name=deepseek-v2-lite-base --perturbation=code_expression_exchange --model_type=causal_base
+# 定义要处理的语言列表
+languages=("cpp" "python" "java" "javascript")
+perturbations=("combined_perturbation" "code_style" "insert" "rename" "code_stmt_exchange" "code_expression_exchange")
 
-python calculate_pass_drop.py --language=cpp --model_name=deepseek-v2-lite-base --perturbation=insert --model_type=causal_base
-
-python calculate_pass_drop.py --language=cpp --model_name=deepseek-v2-lite-base --perturbation=code_style --model_type=causal_base
-
-python calculate_pass_drop.py --language=java --model_name=deepseek-v2-lite-base --perturbation=rename --model_type=causal_base
-
-python calculate_pass_drop.py --language=java --model_name=deepseek-v2-lite-base --perturbation=code_stmt_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=java --model_name=deepseek-v2-lite-base --perturbation=code_expression_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=java --model_name=deepseek-v2-lite-base --perturbation=insert --model_type=causal_base
-
-python calculate_pass_drop.py --language=java --model_name=deepseek-v2-lite-base --perturbation=code_style --model_type=causal_base
-
-
-python calculate_pass_drop.py --language=javascript --model_name=deepseek-v2-lite-base --perturbation=rename --model_type=causal_base
-
-python calculate_pass_drop.py --language=javascript --model_name=deepseek-v2-lite-base --perturbation=code_stmt_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=javascript --model_name=deepseek-v2-lite-base --perturbation=code_expression_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=javascript --model_name=deepseek-v2-lite-base --perturbation=insert --model_type=causal_base
-
-python calculate_pass_drop.py --language=javascript --model_name=deepseek-v2-lite-base --perturbation=code_style --model_type=causal_base
-
-python calculate_pass_drop.py --language=python --model_name=deepseek-v2-lite-base --perturbation=rename --model_type=causal_base
-
-python calculate_pass_drop.py --language=python --model_name=deepseek-v2-lite-base --perturbation=code_stmt_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=python --model_name=deepseek-v2-lite-base --perturbation=code_expression_exchange --model_type=causal_base
-
-python calculate_pass_drop.py --language=python --model_name=deepseek-v2-lite-base --perturbation=insert --model_type=causal_base
-
-python calculate_pass_drop.py --language=python --model_name=deepseek-v2-lite-base --perturbation=code_style --model_type=causal_base
-#跑完了 
+# 使用for循环遍历所有语言
+for language in "${languages[@]}"; do
+    echo "Processing $language..."
+    for perturbation in "${perturbations[@]}"; do
+        echo "Process $perturbation..."
+        python calculate_pass_drop.py \
+            --language="$language" \
+            --model_name=${MODEL_NAME} \
+            --perturbation=${perturbation} \
+            --model_type=${MODEL_TYPE} \
+            --dataset='humaneval'
+      echo "Completed processing $language perturbation $perturbation dataset humaneval"
+      echo "------------------------------"
+    done 
+done
