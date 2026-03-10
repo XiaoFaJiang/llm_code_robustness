@@ -744,5 +744,55 @@
       "prompt": "prompt",
       "response": "response"
     }
+  },
+  "mbpp_adv_dpo_train_standard_demo": {
+    "file_name": "train_dpo_standard_demo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "mbpp_adv_dpo_train_standard_instruct": {
+    "file_name": "train_dpo_standard_instruct.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "mbpp_adv_dpo_valid_standard_instruct":{
+    "file_name": "valid_dpo_standard_instruct.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "mbpp_adv_dpo_train_standard_base": {
+    "file_name": "train_dpo_standard_base.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "mbpp_adv_dpo_valid_standard_base":{
+    "file_name": "valid_dpo_standard_base.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
   }
 }

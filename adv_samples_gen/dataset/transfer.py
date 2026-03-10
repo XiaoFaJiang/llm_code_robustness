@@ -116,9 +116,9 @@ def remove_comments_and_docstrings(code_str):
     
     return '\n'.join(result_lines)
 
-split = "valid"
+split = "valid_dpo"
 data = []
-with open(f"{split}_base.jsonl","r") as f:
+with open(f"{split}.jsonl","r") as f:
     for line in f:
         data.append(json.loads(line))
 
@@ -126,7 +126,7 @@ rewrite_data = []
 cnt = 0
 for k,v in enumerate(data):
     st1 = v["code_str_generate"]
-    st2 = v["Adversarial truth"]
+    st2 = v["adv_truth"]
     removed_st1 = remove_comments_and_docstrings(st1)
     removed_st2 = remove_comments_and_docstrings(st2)
     if removed_st2.find(removed_st1) != -1:
@@ -135,12 +135,12 @@ for k,v in enumerate(data):
             print('empty')
         item = {
             'prompt': st1,
-            "response": removed_st2,
-            'truth':st2
+            "chosen": removed_st2,
+            "rejected": v["adv_rejected"],
         }
         rewrite_data.append(item)
 
-with open(f"{split}_base_test.jsonl","w") as f:
+with open(f"{split}_test.jsonl","w") as f:
     for line in rewrite_data:
         f.write(json.dumps(line) + "\n")
 

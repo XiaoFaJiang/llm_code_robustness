@@ -3,7 +3,7 @@ import os
 #读取json文件
 
 data = []
-file_catagory = "valid_base"
+file_catagory = "valid_dpo"
 with open(f"{file_catagory}.jsonl","r") as f:
     for oneline in f:
         data.append(json.loads(oneline))
@@ -26,14 +26,25 @@ for lang in ['cpp','python','java','javascript']:
 
 
 count = 0
+skipped_same_truth_rejected = 0
+skipped_func_not_found = 0
 
 f_data = []
 for index,onecode in enumerate(data):
-    code = onecode['Adversarial Code']
+    code = onecode['adv_code']
     codelines = code.split("\n")
     lang = onecode['lang']
     task_id = onecode['task_id']
     description = descriptions[lang][task_id]
+
+    # CRITICAL: Verify adv_truth != adv_prediction before processing (Bug 2 fix)
+    adv_truth = onecode.get('adv_truth', '')
+    adv_prediction = onecode.get('adv_prediction', '')
+    if adv_truth == adv_prediction:
+        skipped_same_truth_rejected += 1
+        print(f"Skipping sample {index}: adv_truth == adv_prediction (length={len(adv_truth)})")
+        continue
+
     doc_first = "'''" if lang == "python" else "/*"
     doc_second = "'''" if lang == "python" else "*/"
     f = False
@@ -67,11 +78,25 @@ for index,onecode in enumerate(data):
     if f:
         xx = {}
         xx['code_str_generate'] = "\n".join(codelines)
-        xx['Adversarial truth'] = data[index]['Adversarial truth']
+        xx['adv_truth'] = adv_truth  # Use pre-extracted value
+        xx["adv_rejected"] = adv_prediction  # Use pre-extracted value
         f_data.append(xx)
+    else:
+        skipped_func_not_found += 1
 
-print(count)
-with open(f"{file_catagory}.jsonl","w") as f:
+print("\n" + "="*60)
+print("CONVERT.PY STATISTICS")
+print("="*60)
+print(f"Input samples:                {len(data)}")
+print(f"Successfully converted:       {count}")
+print(f"Skipped - Same truth/rejected: {skipped_same_truth_rejected}")
+print(f"Skipped - Function not found:  {skipped_func_not_found}")
+print(f"Output samples:               {len(f_data)}")
+print("="*60)
+
+with open(f"{file_catagory}_base.jsonl","w") as f:
     for oneline in f_data:
         f.write(json.dumps(oneline) + "\n")
+
+print(f"\nSuccessfully saved to {file_catagory}.jsonl")
         

@@ -4,7 +4,7 @@ import json
 local_dir = "./"
 model_to_df = {}
 for x_dir in os.listdir(local_dir):
-    if (x_dir.endswith("chat") or x_dir.endswith("instruct")) and os.path.isdir(x_dir):
+    if ("instruct" in x_dir or "chat" in x_dir) and os.path.isdir(x_dir):
         df = pd.DataFrame(columns = ['Test Case','neg2pos','pos2neg','count','origin_pass@1','perturbated_pass@1','pass-drop@1'])
         for y_dir in os.listdir(x_dir):
             if y_dir == "evaluation_results":

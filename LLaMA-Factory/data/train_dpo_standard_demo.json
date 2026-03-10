@@ -1,0 +1,34 @@
+[ 
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "\nThis is a code generation task. Please help me write the code. The programming language for the code is python. In the code, I have already provided a portion of it, and the remaining part needs to be completed by you. The placeholder 'begin to write code' is where you begin to complete the code.\nThe prompt for the code is: Write a python function to count negative numbers in a list.\nThe code content is:\n-----------------------------\ndef neg(list):\n  neg_count= 0\n  for num in list: \n  #begin to write code\n\n-----------------------------\n\nRequirements:\n1. I only need the function and related package import, don't generate any other imformations such as examples usage or test cases.\n2. Follow the specified format strictly below.\n3. Do not change the function name.\n4. The original code content must be fully included in the complete code you generate.\n5. Mind indent in python code. \n\nFormat:\n```python\nComplete code (including all the content of the code I provided and the code you generated)\n```\n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "def neg(list):\n  neg_count= 0\n  for num in list: \n    if num <= 0: \n      neg_count += 1\n  return neg_count "
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "        \n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "\nThis is a code generation task. Please help me write the code. The programming language for the code is cpp. In the code, I have already provided a portion of it, and the remaining part needs to be completed by you. The placeholder 'begin to write code' is where you begin to complete the code.\nThe prompt for the code is: Write a cpp function to find the first even number in a given list of numbers.\nThe code content is:\n-----------------------------\n#include<cassert>\n#include <iostream>\n#include <vector>\nlong first_even(const std::vector<long>& nums) {\n    for (long num : nums) {\n        if (0 == num % 2) {\n            return num;\n//begin to write code\n\n-----------------------------\n\nRequirements:\n1. I only need the function and related package import, don't generate any other imformations such as examples usage or test cases.\n2. Follow the specified format strictly below.\n3. Do not change the function name.\n4. The original code content must be fully included in the complete code you generate.\n5. Do not generate a main function, as I have my own main function available. \n\nFormat:\n```cpp\nComplete code (including all the content of the code I provided and the code you generated)\n```\n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "#include<cassert>\n#include <iostream>\n#include <vector>\n\nlong first_even(const std::vector<long>& nums) {\n    for (long num : nums) {\n        if (0 == num % 2) {\n            return num;\n        }\n    }\n    return -1;\n}\n\n\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "\nusing namespace std;\n#include<stdlib.h>\n#include<algorithm>\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<iostream>\n\nlong first_even(const std::vector<long>& nums) {\n    for (long num : nums) {\n        if (0 == num % 2) {\n            return num;\n        }\n    }\n    return -1; // Return -1 if no even number is found\n}\n\n"
+    }
+  }
+]
