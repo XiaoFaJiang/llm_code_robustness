@@ -1,7 +1,7 @@
 
 
 ### model
-model_name_or_path: /data1/ljc/qwen/Qwen/Qwen2.5-Coder-1.5B-Instruct
+model_name_or_path: /data1/ljc/qwen/Qwen/Qwen2.5-Coder-3B-Instruct
 trust_remote_code: true
 
 ### method
@@ -13,7 +13,7 @@ lora_target: all
 deepspeed: examples/deepspeed/ds_z2_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
 
 ### dataset
-dataset: mbpp_adv_samples_train
+dataset: mbpp_adv_samples_train_instruct
 template: default
 cutoff_len: 2048
 max_samples: 3000
@@ -22,7 +22,7 @@ preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
-output_dir: saves/qwen2.5-coder-1.5B-instruct/lora/sft-stage1
+output_dir: saves/qwen2.5-coder-3B-instruct/lora/sft
 logging_steps: 5
 save_steps: 100
 plot_loss: true
@@ -31,7 +31,7 @@ save_only_model: false
 report_to: none  # choices: [none, wandb, tensorboard, swanlab, mlflow]
 
 ### train
-per_device_train_batch_size: 8
+per_device_train_batch_size: 4
 gradient_accumulation_steps: 2
 learning_rate: 5e-6
 num_train_epochs: 3.0
@@ -42,7 +42,7 @@ ddp_timeout: 180000000
 resume_from_checkpoint: null
 
 ### eval
-eval_dataset: mbpp_adv_samples_valid
+eval_dataset: mbpp_adv_samples_valid_instruct
 per_device_eval_batch_size: 1
 eval_strategy: steps
 eval_steps: 100

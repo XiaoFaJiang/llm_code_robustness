@@ -731,15 +731,29 @@
     },
     "folder": "python"
   },
-  "mbpp_adv_samples_train":{
+  "mbpp_adv_samples_train_base":{
     "file_name": "train_base_test.jsonl",
     "columns": {
       "prompt": "prompt",
       "response": "response"
     }
   },
-  "mbpp_adv_samples_valid":{
+  "mbpp_adv_samples_valid_base":{
     "file_name": "valid_base_test.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "mbpp_adv_samples_train_instruct":{
+    "file_name": "train_instruct.jsonl",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "mbpp_adv_samples_valid_instruct":{
+    "file_name": "valid_instruct.jsonl",
     "columns": {
       "prompt": "prompt",
       "response": "response"

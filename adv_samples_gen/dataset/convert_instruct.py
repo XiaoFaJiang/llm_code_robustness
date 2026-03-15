@@ -6,7 +6,7 @@ import os
 #读取json文件
 
 data = []
-file_catagory = "valid_dpo"
+file_catagory = "train"
 with open(f"{file_catagory}.jsonl","r") as f:
     for oneline in f:
         data.append(json.loads(oneline))
@@ -33,13 +33,13 @@ skipped_same_truth_rejected = 0
 
 f_data = []
 for index,onecode in enumerate(data):
-    code = onecode['adv_code']
+    code = onecode['Adversarial Code']
     lang = onecode['lang']
     task_id = onecode['task_id']
     description = descriptions[lang][task_id]
 
     # CRITICAL: Verify adv_truth != adv_prediction before processing (Bug 2 fix)
-    adv_truth = onecode.get('adv_truth', '')
+    adv_truth = onecode.get('Adversarial truth', '')
     adv_prediction = onecode.get('adv_prediction', '')
     if adv_truth == adv_prediction:
         skipped_same_truth_rejected += 1
@@ -78,8 +78,7 @@ Complete code (including all the content of the code I provided and the code you
 """
     xx = {}
     xx['prompt'] = prompt
-    xx['adv_truth'] = adv_truth  # Use pre-extracted value
-    xx["adv_rejected"] = adv_prediction  # Use pre-extracted value
+    xx['response'] = adv_truth  # Use pre-extracted value
     f_data.append(xx)
 
 print("\n" + "="*60)
